@@ -1514,6 +1514,14 @@ The user reported: “Já eliminei os caches. Registre a decisão e atualize a p
 
 The input manifest also reconciles already-received scoped owner classifications, video review and repository Packages screenshot. Aggregate findings remain open pending their remaining final-scope, rights, custody and operational conditions. The revised source invalidates prior broad-input results, preserved byte-for-byte in [Run 04](../../../docs/validation/harness-publication-blockers/run-04/). Only newly executed bounded review and local suite diagnostics are recorded for this revision; no native rerun, workflow execution, permission expansion or publication occurred. Task statuses and approved planning content are unchanged.
 
+### Public opening and approved internal control test — 2026-11-17
+
+The owner authorized the actual public opening and main protection. Both were verified on unchanged main `c13b2f9a8e3188a2e3f74e6a84f87c7ad59189aa` within 55 seconds. Existing last-push approval and conversation-resolution rules were preserved; CODEOWNER review was enabled. The native private vulnerability reporting feature is now enabled by separate owner instruction, confirmed by service readback. Activation does not establish external report receipt or confidentiality testing.
+
+The owner approved replacing the unavailable external-account exercise with an actual internal test: Elvis authors a test PR, Everton reviews; no merge or release. The same existing governed operational follow-up is used. This is an appended execution record, not new product behavior, a new functional SDD plan or fabricated stage approval. Historical approvals, tasks and results remain unchanged. The final positive test revision restores the functional fixture exactly and retains only truthful documentary follow-up; new results never assert their own future review, merge or external acceptance.
+
+See the [internal control-test record](../../../docs/validation/harness-publication-blockers/internal-controls-01/README.md). External fork/noncollaborator token behavior, external report receipt/exclusion and full external Plugin installation remain pending. Negative fixture content is intentional only on the test branch and must not be merged. A future real approval and subsequent stale-review check are still pending.
+
 ## Validation evidence
 
 R3 now records ten actual partial check results from run-r3-01: CHECK-009 fails at the aggregate guard, and the other nine remain unverified for their explicit missing evidence. Six findings remain open and no final individual scenario assessment is fabricated. The exact R2 ledger is preserved in the Tasks R3 entry snapshot; R1/R2 outcomes remain historical.
