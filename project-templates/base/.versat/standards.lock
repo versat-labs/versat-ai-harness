@@ -1,6 +1,6 @@
 schema_version: 1
 harness:
-  version: 0.0.0
+  version: 0.4.0
   commit: unresolved
 resolved_at: unresolved
 standards: []
