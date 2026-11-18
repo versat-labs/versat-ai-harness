@@ -1,0 +1,1490 @@
+===== PAGE 194 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            13. Gráfica (KUDE)                                                      
+            Este capítulo contempla los requisitos mínimos que deben observar y cumplir los facturadores
+            electrónicos para estructurar las representaciones gráficas.            
+                                                                                    
+                                                                                    
+              13.1.  Definición y alcance del KuDE:                                 
+                                                                                    
+            Se entiende por representación gráfica al contenido de un DE (KuDE), la cual puede ser entregada
+            al receptor no electrónico o consumidor final en formato físico o digitalizado. Es un documento
+            tributario auxiliar que expresa de manera simplificada una transacción que ha sido respaldada por
+            un DE. Cabe señalar que su naturaleza simplificada obedece a que el KuDE contiene sólo algunos
+            campos representativos del DE.                                          
+                                                                                    
+            El KuDE tiene como propósitos, los siguientes:                          
+                                                                                    
+              •  Constituirse en el documento tributario físico de una transacción respaldada por un DE
+                 emitido por facturador electrónico, a un receptor no electrónico o consumidor final.
+              •  Amparar el traslado de las mercaderías entre los locales del emisor o entre las instalaciones
+                 de este y el receptor comprador.                                   
+              •  Constituirse en el documento tributario físico que respalda o soporta los créditos fiscales
+                                                                                    
+                 del receptor que no es facturador electrónico de SIFEN. Cabe señalar que el receptor se
+                 obliga a consultar y/o comprobar la existencia del DTE en SIFEN, tomando en consideración
+                 algunos campos presentes en el cuerpo del KuDE como criterios de consulta.
+                                                                                    
+                                                                                    
+              13.2.  Características y funcionalidades                              
+                                                                                    
+            Entre las características y funcionalidades del KuDE, se encuentran las siguientes:
+                                                                                    
+              •  KuDE posibilita la consulta pública del DTE en la página web de SIFEN con el llenado de la
+                 información impresa del CDC o con la lectura del QR Code impreso.  
+              •  La generación del KuDE cuando se trata del facturador electrónico debe ser realizada
+                 directamente en los sistemas de facturación, y en la base de datos oficial del SIFEN.
+                 Igualmente puede ser consultada mediante la solución gratuita provista por este sistema.
+              •  No puede existir información en el KuDE que no forme parte del formato del DE firmado
+                 (XML), salvo las que se mencionen en el presente capítulo.         
+              •  La duración del papel del KuDE así como su impresión y legibilidad debe ser de un plazo no
+                                                                                    
+                 menor a seis (6) meses.                                            
+                                                                                    
+              13.3.  Denominación de los KuDE                                       
+                                                                                    
+                                                                                    
+            Cada documento electrónico deberá tener la denominación según corresponda a su tipo, conforme
+            a los enunciados citados a continuación:                                
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 195 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+              •  KuDE de Factura Electrónica                                        
+                                                                                    
+              •  KuDE de Factura de Exportación Electrónica                         
+              •  KuDE de Factura de Importación Electrónica                         
+              •  KuDE de Autofactura Electrónica                                    
+              •  KuDE de Nota de Débito Electrónica                                 
+              •  KuDE de Nota de Crédito Electrónica                                
+              •  KuDE de Nota de Remisión Electrónica                               
+                                                                                    
+                                                                                    
+            La representación gráfica de cada documento electrónico puede contar con una o varias páginas
+            enumeradas. Debiendo indicar para el caso de varias páginas el número de la página en relación con
+            el total. Ejemplo: 2/5. Para el caso de los subtotales o totales debe indicarlos en la última página y
+                                                                                    
+            el código QR debe ser impreso, al menos, en la primera página.          
+                                                                                    
+              13.4.  Estructura del KuDE                                            
+                                                                                    
+                                                                                    
+            Independiente del formato, el KuDE estará compuesto por la siguiente estructura:
+              •  Campos del encabezado.                                             
+              •  Campos que describen los ítems de la operación, los precios, descuentos y valor total por
+                                                                                    
+                 ítem e impuestos.                                                  
+              •  Campos subtotales y totales de la transacción documentada, totales de liquidación de IVA,
+                 total en guaraníes.                                                
+              •  Campos de información propia de la consulta en SIFEN de la SET.    
+              •  Código QR.                                                         
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     194              
+                                                                                    
+                                                                                    
+
+===== PAGE 196 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                 13.4.1. Campos del encabezado del KuDE                             
+                                                                                    
+                                                                                    
+            En esta sección de la estructura del KuDE se encuentran los siguientes campos:
+                            Datos del emisor:        Datos de timbrado:             
+                            Nombre o razón social del emisor: D105 RUC del emisor: D101
+            Espacio reservado para                                                  
+                            Nombre fantasía: D106    Timbrado Nº: C004              
+            el logo del emisor                                                      
+                            Descripción de actividad: D131 Fecha de inicio de vigencia: C008
+            (opcional)                                                              
+                            Dirección: D107          Fecha de fin de vigencia:C009  
+                            Descripción ciudad: D116 Número de documento: C007      
+            Datos generales:                                                        
+            Fecha y hora de emisión: D002                                           
+            Descripción de condición de la operación: E602                          
+            Número de cuotas: E644 (Para operaciones a crédito)                     
+            Descripción de moneda de la operación: D016                             
+            Tipo de cambio: D018                                                    
+            Datos del receptor:                                                     
+            RUC del contribuyente: D206 (si D201=1)                                 
+            Nº de Doc de Identidad: D210 (si D201=2)                                
+            Nombre/razón social: D211                                               
+            Dirección: D213                                                         
+            Teléfono: D214                                                          
+            Correo electrónico: D216                                                
+            Descripción del tipo de transacción: D012                               
+            Ejemplo de encabezado de KuDE de FE:                                    
+                         KuDE DE FACTURA ELECTRÓNICA                                
+                                                         RUC: 2365438-8             
+              LOGO                                                                  
+                           Marta Anahi Bordon Vidal     Timbrado Nº 1000332         
+                            Soluciones Informáticas  Fecha de Inicio de Vigencia: 01/07/2018
+                         Reparación de Equipos Informáticos Fecha de Fin de Vigencia: 31/07/2019
+                          Avenida González Vidal #1434 Factura Electrónica Nº 001-001-0000001
+                            Ciudad: Asunción                                        
+                                                        Ciudad: Asunción            
+            Fecha y hora de Emisión:                                                
+                                Condición de Venta: Contado Crédito                 
+            AAAA-MM-DDThh:mm:ss                        X                            
+            Cuotas:             Moneda: PYG        Tipo de Cambio:                  
+  Encabezado                                                                        
+            RUC/Documento de Identidad Nº: 1131421-4                                
+            Nombre o Razón Social: Belén Bosco                                      
+            Dirección: Mcal. López y Yegros                                         
+            Teléfono: 021 123 456            Correo Electrónico: belbosco@gmail.com 
+            Tipo de Operación: Venta de Mercadería                                  
+                                                                                    
+            septiembre de 2019                                     195              
+                                                                                    
+                                                                                    
+
+===== PAGE 197 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                 13.4.2. Campos que describen los ítems de la operación del KuDE    
+                                                                                    
+                                                                                    
+            En esta sección de la estructura del KuDE se encuentran los siguientes campos:
+             Código Descripción Descripción Cantidad Precio Descuent Descripción Descripción Descripción
+              del del producto de la      unitario o del de la forma de la forma de la forma
+             ítem  y/o servicio unidad de       producto de      de      de         
+                            medida              por ítem afectación afectación afectación
+                                                       tributaria tributaria tributaria
+                                                        del IVA del IVA del IVA     
+             Campo                                                                  
+                             Campo  Campo Campo  Campo  Campo   Campo   Campo       
+             E701- Campo E708                                                       
+                             E710   E711   E721  EA002 E732 (0%) E732 (5%) E732 (10%)
+             E707                                                                   
+            Ejemplo de ítems operación de KuDE (FE)                                 
+             Art           Unidad de       Precio           Valor de Venta          
+      Datos       Descripción       Cantidad     Descuento                          
+             Cod            medida         Unitario     Exentas 5%  10%             
+     Operación                                                                      
+            INF012 Disco duro UNI     1    110.000        0    0    110.000         
+                 13.4.3. Campos que describen los subtotales y totales de la transacción documentada y
+                    liquidación de IVA                                              
+            En esta sección de la estructura del KuDE se encuentran los siguientes campos:
+                                                                                    
+                                                 Exentas   5%      10%              
+             Subtotal                          Campo F002 Campo F004 Campo F005     
+             Total de la operación:                              Campo F007         
+             Total en Guaraníes                                  Campo F022         
+             Liquidación IVA:                                                       
+             (5%): Campo F014                                                       
+             (10%): Campo F015                                                      
+             Total de IVA: Campo F016                                               
+                                                                                    
+            Ejemplo de subtotales y totales de KuDE (FE)                            
+            SUBTOTAL:                                              110.000          
+    Subtotales                                                                      
+            TOTAL A PAGAR:                                         110.000          
+    Y totales                                                                       
+            TOTAL EN GUARANIES                                     110.000          
+            LIQUIDACIÓN IVA: (5%)      (10%)  10.000 TOTAL IVA:     10.000          
+                 13.4.4. Campos de información propia de la consulta en SIFEN de la SET
+            Los campos de Información propios de la consulta en SIFEN               
+                                                                                    
+              •  En el portal ingresar en Servicios y consultas                     
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     196              
+                                                                                    
+                                                                                    
+
+===== PAGE 198 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                   o  Producción: https://ekuatia.set.gov.py/consultas/             
+                   o  Test: https://ekuatia.set.gov.py/consultas-test/              
+                                                                                    
+              •  CDC en once grupos de 4 posiciones.                                
+            En esta sección de la estructura del KuDE se encuentran los siguientes campos:
+                                                                                    
+                                                                                    
+                                                       Ver información del QR,      
+               Información de consulta en SIFEN                                     
+                                                       delineamientos, conformación 
+                                                       y validación del QR          
+                 13.4.5. Información adicional de interés para el emisor            
+                                                                                    
+                                                                                    
+            Este es un espacio libre de utilización del emisor facturador electrónico con referencia a información
+            de los demás campos del DE, información comercial promocional o mensajes personalizados al
+            receptor: Campo J003. Esta información no debe ser enviada en el archivo XML a SIFEN.
+                                                                                    
+            No puede existir información propia de la operación que haya sido generada en el archivo
+            electrónico firmado digitalmente.                                       
+                                                                                    
+              13.5.  KuDE                                                           
+                                                                                    
+                                                                                    
+            Los contribuyentes podrán utilizar para la representación gráfica en el KuDE cualquier formato y
+            tamaño de papel estándar que se ajuste a sus necesidades. Las gráficas siguientes muestran
+            modelos referenciales de KuDE para cada tipo de documento electrónico, sin embargo, cada
+            contribuyente puede incluir otros campos presentes en el formato XML. Los campos obligatorios,
+            que se deben mostrar, son los que están especificados por las reglamentaciones emitidas por la
+            Administración Tributaria,                                              
+                                                                                    
+              •  Factura Electrónica (FE): Gráfica N° 09                            
+              •  Nota de Crédito Electrónica (NCE): Grafica N° 10                   
+              •  Nota de Débito Electrónica (NDE): Gráfica N° 11                    
+              •  Autofactura Electrónica (AFE): Gráfica N° 12                       
+                                                                                    
+              •  Nota de Remisión Electrónica (NRE): Gráfica N° 13                  
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     197              
+                                                                                    
+                                                                                    
+
+===== PAGE 199 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                            Gráfica Nº 09 – KuDE FE Formato 1 convencional          
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     198              
+                                                                                    
+                                                                                    
+
+===== PAGE 200 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                            Gráfica Nº 10 – KuDE NCE Formato 1 convencional         
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     199              
+                                                                                    
+                                                                                    
+
+===== PAGE 201 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                            Gráfica Nº 11 – KuDE NDE Formato 1 convencional         
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     200              
+                                                                                    
+                                                                                    
+
+===== PAGE 202 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                            Gráfica Nº 12 – KuDE AFE Formato 1 convencional         
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     201              
+                                                                                    
+                                                                                    
+
+===== PAGE 203 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                            Gráfica Nº 13 – KuDE NRE Formato 1 convencional         
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     202              
+                                                                                    
+                                                                                    
+
+===== PAGE 204 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+              13.6.  KuDE (cinta de papel)                                          
+            El formato de cinta de papel se constituye en el más adecuado para ventas al consumidor final
+                                                                                    
+            (como supermercados, farmacias, restaurantes, estaciones de servicio, etc.)
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                            Gráfica Nº 14 – KuDE FE Formato 2 (cinta de papel)      
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     203              
+                                                                                    
+                                                                                    
+
+===== PAGE 205 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+              13.7.  Cinta papel resumen del KuDE                                   
+                                                                                    
+                                                                                    
+            Si el consumidor pide se permite la impresión de un KuDE resumen que no trae el detalle de los
+            ítems de las mercaderías y el detalle del impuesto, solo con la información de la cantidad Total de
+            ítems y monto total. En la consulta pública del portal e-Kuatia por el CDC o en la consulta pública
+            por QR Code, el consumidor podrá imprimir el KuDE completo con los detalles de ítems y el
+                                                                                    
+            impuesto.                                                               
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                             Gráfica Nº 15 – Cinta papel resumen del KuDE           
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     204              
+                                                                                    
+                                                                                    
+
+===== PAGE 206 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+              13.8.  Código bidimensional (QR)                                      
+                                                                                    
+                                                                                    
+                 13.8.1. Delineamientos del QR Code                                 
+                                                                                    
+            La imagen impresa del QR debe tener mínimamente 25 mm (veinticinco milímetros) de ancho, de
+            los cuales, 22 mm son para el contenido y 3 mm de margen seguro (quiet zone). Queda a criterio
+            del emisor si desea un tamaño mayor, en tal caso, el margen seguro debe ser el 10% del ancho total.
+                                                                                    
+            El contenido de este código es cargado en el campo J002 del archivo de DE correspondiente.
+            El código QR que será impreso en el KUDE, obedece al estándar internacional ISO/IEC 18004.
+                                                                                    
+            Para la generación del QR Code es necesario que previamente el contribuyente sea un facturador
+            electrónico autorizado por la SET y que haya obtenido de la Administración Tributaria, el Código de
+            Seguridad (CSC).                                                        
+                                                                                    
+            Este código estará compuesto de 32 dígitos alfanuméricos, es generado por el SIFEN y entregado al
+            facturador electrónico al momento de su ingreso. Sirve para garantizar la seguridad y autoría del
+            QR. Este código es de conocimiento exclusivo de la Administración Tributaria y del contribuyente,
+            permitiéndose hasta dos códigos de seguridad en estado activo.          
+                                                                                    
+                                                                                    
+                 13.8.2. Conformación del Código QR                                 
+                                                                                    
+            Este código está formado por un conjunto de información adicional a fin de asegurar la autoría de
+                                                                                    
+            un documento electrónico, que puede no haber sido transmitido al SIFEN. 
+                                                                                    
+            Esta imagen contendrá:                                                  
+                                                                                    
+            1. Dirección de la página web de consulta de la SET:                    
+              •  Producción: https://ekuatia.set.gov.py/consultas/qr?               
+              •  Test: https://ekuatia.set.gov.py/consultas-test/qr?                
+                                                                                    
+            2. Conjunto de parámetros del DE:                                       
+              •  Versión del QR                                                     
+              •  Código de Control (Id), contenido en el campo A002                 
+              •  Fecha y hora de emisión del DE (dFeEmiDE), contenido en el campo D002
+              •  Identificación del receptor, valor del campo D205 o D210, según corresponda.
+              •  F013, Total general de la operación                                
+              •  F016, Liquidación total del IVA                                    
+                                                                                    
+              •  Cantidad de Ítems del DE, se obtiene contando la cantidad de ocurrencias del campo E701.
+              •  Hash de la Firma, DigestValue contenido en el campo XS17.          
+              •  Id del Código entregado por el SIFEN (IdCSC).                      
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     205              
+                                                                                    
+                                                                                    
+
+===== PAGE 207 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            3. Código Hash de los parámetros que forman el punto 2 del QR utilizando el algoritmo SHA256.
+                                                                                    
+                                                                                    
+            A continuación, se muestra un cuadro descriptivo para mejor comprensión.
+                                                                                    
+                                                                                    
+                                                            Incluir en Incluir en   
+                                       Incluido      Longitud                       
+                Parámetro   Descripción      ID Campo       el Hash la URL          
+                                       en el DE      máxima                         
+                                                             del QR del QR          
+                            Versión de la                                           
+                 nVersion   generación del Sí AA002    3      Sí     Sí             
+                               QR                                                   
+                              CDC del                                               
+                   Id      correspondiente Sí  A002    44     Sí     Sí             
+                               DE                                                   
+                           Fecha y hora de                                          
+                dFeEmiDE                Sí     D002    19     Sí     Sí             
+                            emisión del DE                                          
+                           Identificación del                                       
+                                              D206 o                                
+             dRucRec/dNumIDRec receptor o Sí           20     Sí    (*)             
+                                               D210                                 
+                              cliente                                               
+                           Total general de                                         
+                dTotGralOpe             Sí     F014    23     Sí    (*)             
+                            la operación                                            
+                           Liquidación total                                        
+                                        Sí     F017    23     Sí    (*)             
+                 dTotIVA      del IVA                                               
+                                              Cuenta                                
+                            Cantidad de       sobre el                              
+                 cItems                 No             3      Sí    (*)             
+                            items en el DE    campo                                 
+                                               E701                                 
+                           Hash de la firma                                         
+                DigestValue             Sí     XS17    -      Sí     Sí             
+                            digital del DE                                          
+                           Identificador del                                        
+                  IdCSC    código entregado No  -      4      Sí     Sí             
+                            por el SIFEN                                            
+                           Código Hash de                                           
+                 cHashQR                No      -      -      No     Sí             
+                           los parámetros                                           
+            (*) En caso de que estos campos no contengan valor completar con un “0” 
+                 13.8.3. Metodología para la generación del Código QR               
+              •  Los siguientes campos deben ser convertidos a su equivalente hexadecimal
+                 o  Fecha de Emisión                                                
+                 o  DigestValue de la Firma Digital                                 
+              •  El valor de todos los parámetros identificados en el cuadro precedente, deben ser
+                 concatenados y aplicar el algoritmo SHA-256, para determinar el Código Hash
+            septiembre de 2019                                     206              
+
+===== PAGE 208 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+              •  El valor Hash del QR, debe estar en hexadecimal.                   
+                                                                                    
+            Ejemplo:                                                                
+                                                                                    
+              Parámetro      Contenido - Ejemplo      Equivalente Hexadecimal       
+              nVersion           150                        No                      
+                Id    0144444401700100100145282201701251587326 No                   
+                                 0988                                               
+              dFeEmiDE       2017-01-25T09:35:17 323031372d30312d32355430393a33353a3137
+             dRucRec/dId        88899990                    No                      
+               enRec                                                                
+              dTotOpe           300000                      No                      
+               dTotIVA           27272                      No                      
+               cItems             2                         No                      
+              DigestValue yzGYhUx1/XYYzksWB+fPR3Qc50c= 797a4759685578312f5859597a6b7357422b6650
+                                                        523351633530633d            
+               IdcSC             0001                       No                      
+                CSC     ABCD0000000000000000000000000000    No                      
+                 13.8.4. Ejemplo de generación del Código QR                        
+                                                                                    
+                                                                                    
+                   13.8.4.1. Paso 1 - Concatenar los datos:                         
+                                                                                    
+                                                                                    
+                      nVersion=150&Id=0144444401700100100145282201701251587326098   
+                      8&dFeEmiDE=323031372d30312d32355430393a33353a3137&dRucRec     
+                      =88899990&dTotGralOpe=300000&dTotIVA=27272&cItems=2&DigestV   
+                      alue=797a4759685578312f5859597a6b7357422b6650523351633530633  
+                      d&IdCSC=0001                                                  
+                                                                                    
+            Si no se informan cualquiera de los siguientes campos: dTotGralOpe, dTotIVA se debe completar
+            con 0 (cero).                                                           
+                                                                                    
+                   13.8.4.2. Paso 2 – Concatenar al final de los datos, del paso 1, el Código Secreto del
+                        Contribuyente:                                              
+                                                                                    
+                                                                                    
+                                                                                    
+                      nVersion=150&Id=0144444401700100100145282201701251587326098   
+                      8&dFeEmiDE=323031372d30312d32355430393a33353a3137&dRucRec     
+                      =88899990&dTotGralOpe=300000&dTotIVA=27272&cItems=2&DigestV   
+                      alue=797a4759685578312f5859597a6b7357422b6650523351633530633  
+                      d&IdCSC=0001ABCD0000000000000000000000000000                  
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     207              
+                                                                                    
+                                                                                    
+
+===== PAGE 209 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            En este ejemplo el código secreto del contribuyente es el correspondiente al IdCSC = 0001. Si el
+            contribuyente tiene más de un código secreto activo, deberá especificar el IdCSC correspondiente
+                                                                                    
+            al código que utilizará.                                                
+            El código de seguridad solo se utiliza para generar el código hash que luego será concatenado a los
+            datos del paso 1. Por ningún motivo el contribuyente debe compartir su código de seguridad, ni
+                                                                                    
+            enviar concatenado como parte de la URL del código QR.                  
+                   13.8.4.3. Paso 3 – Generar el Hash con los datos del paso 2:     
+                                                                                    
+                                                                                    
+                 Para la generación del código Hash se toman los datos generados en el Paso 2 y se le aplica
+                 el algoritmo SHA-256, el cual debe devolver un valor en codificación hexadecimal.
+                                                                                    
+                  97ddbb3c1e7d65af03a70ffe21f2b34846ab1c89e0566c35222086766b7374ed  
+                                                                                    
+                   13.8.4.4. Paso 4 – Generar la URL para la imagen QR:             
+                                                                                    
+            La URL final que será utilizada para generar la imagen QR es el resultado de la concatenación
+            siguiente:                                                              
+                                                                                    
+                   URL QR = URL Consulta QR + Datos del Paso 1 + Hash generado en el paso 3
+                                                                                    
+            Donde,                                                                  
+                 URL Consulta QR:                                                   
+                                                                                    
+                 Ambiente de Producción: https://www.ekuatia.set.gov.py/consultas/qr?
+                 Ambiente de Test: https://www.ekuatia.set.gov.py/consultas-test/qr?
+                                                                                    
+                                                                                    
+                 Datos del Paso 1:                                                  
+                                                                                    
+                 nVersion=142&Id=01444444017001001001452822017012515873260988&dFeEmiDE
+                 =323031372d30312d32355430393a33353a3137&dRucRec=88899990&dTotGralOpe=
+                 300000&dTotIVA=27272&cItems=2&DigestValue=797a4759685578312f5859597a6b7
+                 357422b6650523351633530633d&IdCSC=0001                             
+                                                                                    
+                 Hash generado en el paso 3 (con su nombre de parámetro):           
+                                                                                    
+                 cHashQR=97ddbb3c1e7d65af03a70ffe21f2b34846ab1c89e0566c35222086766b7374e
+                 d                                                                  
+                                                                                    
+                 URL QR:                                                            
+                 https://ekuatia.set.gov.py/consultas/qr?nVersion=150&Id=014444440170010010014528
+                 22017012515873260988&dFeEmiDE=323031372d30312d32355430393a33353a3137&
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     208              
+                                                                                    
+                                                                                    
+
+===== PAGE 210 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                 dRucRec=88899990&dTotGralOpe=300000&dTotIVA=27272&cItems=2&DigestValue=7
+                 97a4759685578312f5859597a6b7357422b6650523351633530633d&IdCSC=0001&cHa
+                 shQR=97ddbb3c1e7d65af03a70ffe21f2b34846ab1c89e0566c35222086766b7374ed
+                                                                                    
+                                                                                    
+                                                                                    
+                 Imagen QR:                                                         
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                   13.8.4.5. Paso 5 – Insertar la URL del paso 4 en el XML:         
+                                                                                    
+                                                                                    
+            Antes de la inserción de la URL en el XML, se deberá reemplazar los símbolos “&” por su equivalente
+            en código html, el cual es “&amp;”.                                     
+                                                                                    
+            De esta manera la URL que se debe insertar en el XML, como valor del elemento <dCarQR> queda
+            como sigue:                                                             
+                                                                                    
+                                                                                    
+                 https://ekuatia.set.gov.py/consultas/qr?nVersion=150&amp;Id=01444444017001001001
+                 452822017012515873260988&amp;dFeEmiDE=323031372d30312d32355430393a333
+                 53a3137&amp;dRucRec=88899990&amp;dTotGralOpe=300000&amp;dTotIVA=27272
+                 &amp;cItems=2&amp;DigestValue=797a4759685578312f5859597a6b7357422b66505
+                 23351633530633d&amp;IdCSC=0001&amp;cHashQR=97ddbb3c1e7d65af03a70ffe21f
+                 2b34846ab1c89e0566c35222086766b7374ed                              
+                                                                                    
+                                                                                    
+                 13.8.5. Mensajes desplegados en consulta del QR                    
+                                                                                    
+              a) El DTE existe en el SIFEN con situación Aprobado o Aprobado con observaciones
+                 (Extemporáneo) – se presenta el KuDE en Cinta (para B2C) o consulta por pestañas (B2B o
+                 B2G)                                                               
+                                                                                    
+                                                                                    
+              b) El DE no existe en el SIFEN                                        
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     209              
+                                                                                    
+                                                                                    
+
+===== PAGE 211 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            CDC no existente en el SIFEN, consulte con el emisor del documento.     
+                                                                                    
+            • Número del DTE: 001-001-00145282                                      
+            • Tipo: Factura Electrónica                                             
+            • Emisor: Empresa X – Emisor electrónico                                
+                                                                                    
+            • RUC Emisor: 44444401-7                                                
+            • Fecha de emisión: 25/01/2018 09:35:30                                 
+            • Cantidad de ítems: 2                                                  
+            • Monto Total: 300.000                                                  
+            • Monto Total IVA: 27272.00                                             
+                                                                                    
+                                                                                    
+              c) El QR no es válido                                                 
+                                                                                    
+            Código QR inválido, consulte con el emisor del DE.                      
+                                                                                    
+            14. Operación de Contingencia (Futuro)                                  
+                                                                                    
+            15. CODIFICACIONES                                                      
+                                                                                    
+            Se describen a continuación las tablas de codificaciones del sistema, para su utilización en el XML.
+                                                                                    
+                                    TABLA 1 – TIPO DE REGIMEN                       
+            Código    Descripción                                                   
+                                                                                    
+                1     Régimen de Turismo                                            
+                2     Importador                                                    
+                3     Exportador                                                    
+                4     Maquila                                                       
+                5     Ley N° 60/90                                                  
+                                                                                    
+                6     Régimen del Pequeño Productor                                 
+                7     Régimen del Mediano Productor                                 
+                8     Régimen Contable                                              
+                                                                                    
+                                                                                    
+                         TABLA 2.1 – DEPARTAMENTOS, DISTRITOS Y CIUDADES            
+            Enlace: https://ekuatia.set.gov.py/portal/ekuatia/documentacion/documentaciontecnica
+            Archivo: CODIGO DE REFERENCIA GEOGRAFICA.xlsx                           
+                                                                                    
+                                                                                    
+                                                                                    
+                                   TABLA 2.2 - CIUDADES                             
+            Se incluirá un link de descarga dado el volumen del contenido.          
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     210              
+                                                                                    
+                                                                                    
+
+===== PAGE 212 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                              TABLA 3 – ACTIVIDADES ECONÓMICAS                      
+            https://servicios.set.gov.py/eset-publico/consultarActividadEconomicaIService.do
+                                                                                    
+                                                                                    
+                               TABLA 4 – CODIFICACION DE PAISES                     
+            Utilizaremos el estándar Internacional ISO 3166-1.                      
+            Remitimos archivo en formato XSD con el estándar mencionado.            
+            Referencia: https://es.wikipedia.org/wiki/ISO_3166-1#C%C3%B3digos_ISO_3166-1
+                                                                                    
+                          TABLA 5 – CODIFICACION DE UNIDADES DE MEDIDA              
+                        Código Representación   Descripción                         
+                         87         m             Metros                            
+                                                                                    
+                         2366      CPM          Costo por Mil                       
+                         2329       UI       Unidad Internacional                   
+                         110       M3          Metros cúbicos                       
+                         77        UNI            Unidad                            
+                         86         g             Gramos                            
+                         89        LT              Litros                           
+                         90        MG            Miligramos                         
+                                                                                    
+                         91        CM           Centimetros                         
+                         92        CM2       Centimetros cuadrados                  
+                         93        CM3        Centimetros cubicos                   
+                         94        PUL           Pulgadas                           
+                         96        MM2       Milímetros cuadrados                   
+                                              Kilogramos s/ metro                   
+                                  kg/m²                                             
+                         79                      cuadrado                           
+                         97        AA              Año                              
+                         98        ME              Mes                              
+                         99        TN            Tonelada                           
+                         100       Hs              Hora                             
+                         101        Mi            Minuto                            
+                         104       DET          Determinación                       
+                         103       Ya             Yardas                            
+                         108       MT             Metros                            
+                                                                                    
+                         109       M2         Metros cuadrados                      
+                         95        MM            Milímetros                         
+                         666       Se            Segundo                            
+                         102        Di             Día                              
+                         83         kg           Kilogramos                         
+                         88        ML             Mililitros                        
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     211              
+                                                                                    
+                                                                                    
+
+===== PAGE 213 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                         625       Km            Kilómetros                         
+                                                                                    
+                         660        ml          Metro lineal                        
+                         885       GL        Unidad Medida Global                   
+                         891       pm            Por Milaje                         
+                         869        ha           Hectáreas                          
+                         569      ración          Ración                            
+                                                                                    
+                               TABLA 6 – CODIGOS DE AFECTACION                      
+               Código                       Descripción                             
+                 1       Gravado IVA                                                
+                                                                                    
+                 2       Exonerado (Art.83 - 125)                                   
+                 3       Exento                                                     
+                 4       Gravado parcial                                            
+                                                                                    
+                                TABLA 7 – CATEGORIAS DEL ISC                        
+               Código                       Descripción                             
+                         Sección I - (Cigarrillos, Tabacos, Esencias y Otros derivados del
+                  1                                                                 
+                         Tabaco)                                                    
+                  2      Sección II - (Bebidas con y sin alcohol)                   
+                  3      Sección III - (Alcoholes y Derivados del alcohol)          
+                  4      Sección IV- (Combustibles)                                 
+                  5      Sección V- (Artículos considerados de lujo)                
+                                                                                    
+                                  TABLA 8 – TASAS DEL ISC                           
+                          Tasas del ISC según Decretos N° 4344/04, N°               
+                                                                                    
+                          5158/10, N° 4693/15, N° 4693/15, N° 4694/15               
+                            Código         Porcentaje                               
+                              1              1%                                     
+                              2              5%                                     
+                              3              9%                                     
+                              4              10%                                    
+                              5              11%                                    
+                              6              13%                                    
+                              7              16%                                    
+                              8              18%                                    
+                              9              20%                                    
+                             10              24%                                    
+                             11              34%                                    
+                                                                                    
+                             12              38%                                    
+                                                                                    
+                                TABLA 9 – TIPOS DE VEHÍCULOS                        
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     212              
+                                                                                    
+                                                                                    
+
+===== PAGE 214 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            Agregaremos un link de descarga con la codificación a fin de agilizar su implementación.
+                                                                                    
+                                                                                    
+                        TABLA 10 – CONDICIONES DE NEGOCIACION - INCOTERMS           
+                      Código                       Descripción                      
+            CFR                       Costo y flete                                 
+            CIF                       Costo, seguro y flete                         
+            CIP                       Transporte y seguro pagados hasta             
+            CPT                       Transporte pagado hasta                       
+            DAP                       Entregada en lugar convenido                  
+            DAT                       Entregada en terminal                         
+            DDP                       Entregada derechos pagados                    
+            EXW                       En fabrica                                    
+            FAS                       Franco al costado del buque                   
+            FCA                       Franco transportista                          
+            FOB                       Franco a bordo                                
+                                                                                    
+                                                                                    
+                               TABLA 11 – REGÍMENES ADUANEROS                       
+            http://www.aduana.gov.py/3123-4-circuitos-de-regimenes.html             
+                                                                                    
+            Referencia a tablas estándares                                          
+                                                                                    
+              •  Tabla de Nomenclatura Común del Mercosur:                          
+                 Referencias: http://www.sice.oas.org/Trade/MRCSRS/Resolutions/Res7006.pdf
+                                                                                    
+                          https://sarem.mercosur.int/nomenclatura                   
+                                                                                    
+              •  Tabla de códigos para países: Identificada por la Tabla 4          
+                                                                                    
+                 Estándar Internacional de normalización ISO 3166-1. Código Alfa-3  
+              •  Tabla de códigos para monedas:                                     
+                                                                                    
+                 Estándar Internacional de normalización ISO 4217                   
+                                                                                    
+                 Referencia: https://www.currency-iso.org/en/home/tables/table-a1.html
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     213              
+                                                                                    
+                                                                                    
+
+===== PAGE 215 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            16. GLOSARIO TÉCNICO                                                    
+                                                                                    
+                                                                                    
+                Término                      Significado                            
+             Administración                                                         
+                          Subsecretaría de Estado de Tributación (SET)              
+             Tributaria (AT)                                                        
+             Archivo                                                                
+                          Archivo electrónico (XML) con los datos de una factura. No ha sido
+             Electrónico de                                                         
+                          aún firmado digitalmente.                                 
+             Factura                                                                
+                          Business to Business, acrónimo comúnmente utilizado para describir
+             B2B                                                                    
+                          las operaciones entre empresas.                           
+                          Business to Consumer, acrónimo comúnmente utilizado para  
+             B2C                                                                    
+                          describir las operaciones entre una empresa a un consumidor final.
+                          Business to Government, acrónimo comúnmente utilizado para
+             B2G          describir las operaciones entre una empresa y una entidad de
+                          gobierno.                                                 
+                          Business to Foreign, acrónimo del tipo de operación para describir
+             B2F          los servicios prestados por una empresa nacional a una empresa o
+                          persona física del exterior.                              
+                          Es todo mensaje de datos u otro registro emitido por una entidad
+             Certificado  legalmente habilitada para el efecto y que confirma la vinculación
+             Digital      entre el titular de una firma digital y los datos de creación de la
+                          misma.                                                    
+             Código    de Número de 44 dígitos generado dentro del sistema del emisor el cual
+             Control del DTE permite identificar de manera inequívoca a un DTE, evitando
+             (CDC)        duplicidad en el envío de documentos a la SET.            
+                          Un código QR (del inglés Quick Response Code, Código de   
+             Código QR    respuesta rápida) es un módulo para almacenar información en una
+                          matriz de puntos o en un código de barras bidimensional.  
+                          Es el documento emitido y firmado digitalmente por un emisor
+                          electrónico que aún no ha sido aprobado para su uso por parte de la
+             Documento                                                              
+                          Administración Tributaria, y en consecuencia no ha ingresado al
+             Electrónico (DE)                                                       
+                          SIFEN. Es un documento que, de acuerdo a la ley comercial, registra
+                          una operación.                                            
+             Documento                                                              
+             Tributario   Es el documento electrónico con aprobación de uso por parte de la
+             Electrónico  Administración Tributaria, e ingresado al SIFEN.          
+             (DTE)                                                                  
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     214              
+                                                                                    
+                                                                                    
+
+===== PAGE 216 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                Término                      Significado                            
+                                                                                    
+             Documentos   Son los DE que pueden complementar a la factura electrónica: nota
+             Asociados    de crédito y nota de débito.                              
+                                                                                    
+                          Contribuyente que genera el archivo electrónico, lo firma 
+             Emisor       electrónicamente y lo remite para solicitar la competente autorización
+                          de uso.                                                   
+                          La planificación de recursos empresariales (ERP, por sus siglas en
+             ERP          inglés) es la gestión integrada de los procesos de negocio básicos,
+                          a menudo en tiempo real y mediada por software y tecnología.
+                          Es el DTE que respalda la compra y venta de bienes y servicios.
+                          Consta de un archivo electrónico que atiende simultáneamente a las
+                                                                                    
+                          siguientes exigencias:                                    
+             Factura         - Es un documento electrónico                          
+             Electrónica     - Tiene el formato XML de factura electrónica de acuerdo con
+                              las definiciones legales e infra legales.             
+                             - Después de validado de acuerdo con las reglas fue aprobado
+                              y, en consecuencia, autorizado para fines fiscales.   
+                          Contribuyente autorizado por la Administración Tributaria para emitir
+             Facturador                                                             
+                          y recibir DTE, y que en consecuencia adquiere la naturaleza de
+             Electrónico                                                            
+                          emisor y receptor.                                        
+                          Firma electrónica certificada por un prestador acreditado, que ha
+                          sido creada usando medios que el titular mantiene bajo su exclusivo
+                          control, de manera que se vincule únicamente al mismo y a los datos
+             Firma Digital                                                          
+                          a los que se refiere, permitiendo la detección posterior de cualquier
+                          modificación, verificando la identidad del titular e impidiendo que
+                          desconozca la integridad del documento y su autoría.      
+                          Palabra compuesta por dos abreviaturas. La primera abreviatura Ku
+             KuDE         extraída de la palabra Kuatia, en guaraní que significa papel, más la
+                          segunda abreviatura DE, propia de Documento Electrónico.  
+                          Ley No 125/1991 “Que establece el Nuevo Régimen Tributario” y sus
+             Ley Tributaria                                                         
+                          modificaciones.                                           
+             Otros                                                                  
+                          Son los DTE que respaldan operaciones con incidencia tributaria
+             documentos                                                             
+                          tales como: nota de remisión, autofacturas, y comprobantes de
+             tributarios                                                            
+                          retención.                                                
+             electrónicos                                                           
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     215              
+                                                                                    
+                                                                                    
+
+===== PAGE 217 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                Término                      Significado                            
+             Prestador de                                                           
+                          Entidad prestadora de servicios de certificación de firmas digitales
+             Servicios de                                                           
+                          autorizada por la Dirección General de Firma Digital y Comercio
+             Certificación                                                          
+                          Electrónico del Ministerio de Industria y Comercio.       
+             (PSC)                                                                  
+                          Destinatario de la factura, pudiendo ser nacional o extranjero,
+             Receptor     persona natural o jurídica. Reglas de validación específicas deberán
+                          ser construidas para caso de nacionales.                  
+                          Expresión de los DE en formato físico o digital. Es la representación
+             Representación impresa del DE en formado susceptible de ser visualizado, remitido
+             Gráfica      por correo electrónico o impreso de ser requerido. Incluye un código
+                          QR para facilitar su validación.                          
+             RUC          Registro Único del Contribuyente                          
+                          Sistema de Facturación Electrónica Nacional; se encarga de
+             SIFEN        recepcionar, autorizar, almacenar y disponer los servicios de
+                          consulta de los DTE.                                      
+             Sistema                                                                
+                          Sistema de Gestión Tributaria Marangatu                   
+             Marangatu                                                              
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     216              
+                                                                                    
+                                                                                    
+

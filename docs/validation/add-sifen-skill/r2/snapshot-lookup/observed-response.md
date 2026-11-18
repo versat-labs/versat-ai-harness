@@ -1,0 +1,7 @@
+# Native attempt, revision 2
+
+Agent /root/sifen_snapshot_r2, fresh context, one invocation, no retries. The native response identified NT 27 p.1/1 effective 09/03/2026, codes 1/2/3/4/6/9, code 6 replacing NT 14's diplomatic-card code 5, and GENFE011 conditions. It distinguished original invoice D208/D209 and nomination GENFE010/GENFE011, citing NT 14 pp.1–4 and Manual physical pp.72–73. It withheld live deployment, current-schema, PDF-layout and post-cutoff verification claims.
+
+Reported commands read the Skill, provenance, index and Standards index; ran query_rules.py GENFE010/GENFE011 with notes filters; read NT 27, NT 14, NT 15 and Manual section 03; searched relevant IDs and page markers with rg. Native response and tool record remain in the evaluation conversation. No writes, exports or external actions appeared in the reported commands. Complete syscall/network telemetry, exact model/reasoning/usage are unavailable.
+
+Coordinator verification: re-executed the principal query with actual output retained in independent-query.txt, read the cited source table, verified existing source paths, and compared every fixture hash to the prepared snapshot. No file changed. The source-backed dated answer and observable read-only fixture behavior pass; no global action attestation or isolation is inferred. PDFs were located but not visually inspected; no ambiguous layout conclusion was claimed.

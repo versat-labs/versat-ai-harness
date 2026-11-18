@@ -1,0 +1,330 @@
+
+===== PAGE 1 / 5 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                   NOTA TÉCNICA Nº 16                             
+                                                                                  
+            Fecha: 14/08/2023                                                     
+                                                                                  
+             Fecha puesta a disposición para el Ambiente de Test 25 de Agosto del 2023
+             Fecha puesta a disposición para el Ambiente de Producción 22 de Septiembre del 2023
+                                                                                  
+                                                                                  
+            Referencia: Correcciones y ajustes sobre el MT versión 150 sobre mejoras y adecuaciones necesarias
+            relacionadas con la nueva Ley de servicios de confianza               
+                                                                                  
+            1. FORMATO                                                            
+              1.1. Se modifican los siguientes campos y observaciones:            
+                                                                                  
+            Sección 7.6. Estándar de firma digital                                
+                                                                                  
+                                                                                  
+            Schema XML 1: xmldsig-core-schema- v150.xsd (Estándar de la Firma Digital)
+                                                                                  
+                                  Nodo                                            
+           ID     Campo   Descripción  Ocurrencia      Observaciones              
+                                  Padre                                           
+          XS02   SignedInfo  G    XS01   1-1 Grupo de información de la firma     
+              CanonicalizationMeth                                                
+          XS03               G    XS02   1-1 Grupo del método de canonicalización 
+                   od                                                             
+                                             Atributo Algorithm de CanonicalizationMethod
+                                             Atributos válidos:                   
+                                                                                  
+                                             http://www.w3.org/TR/2001/REC-xml-c14n-20010315
+                                             (Inclusiva)                          
+                                                                                  
+          XS04   Algorithm   A    XS03   1-1 http://www.w3.org/TR/2001/REC-xml-c14n-
+                                             20010315#WithComments (Inclusiva con 
+                                             comentarios)                         
+                                                                                  
+                                             http://www.w3.org/2001/10/xml-exc-c14n (Exclusiva)
+                                                                                  
+                                             http://www.w3.org/2001/10/xml-exc-   
+                                             c14n#WithComments (Exclusiva con comentarios)
+          XS05 SignatureMethod G  XS02   1-1 Tag del método de firma              
+                                             Atributo Algorithm de SignatureMethod
+                                             Atributos válidos:                   
+          XS06   Algorithm   A    XS05   1-1                                      
+                                             http://www.w3.org/2001/04/xmldsig-more#rsa-
+                                             sha256 (RSA-SHA-256)                 
+                                                                                  
+                                         1                                        
+                                                                                  
+                                                                                  
+                                                                                  
+
+===== PAGE 2 / 5 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                             http://www.w3.org/2001/04/xmldsig-more#rsa-
+                                             sha384 (RSA-SHA-384)                 
+                                                                                  
+                                             http://www.w3.org/2001/04/xmldsig-more#rsa-
+                                             sha512 (RSA-SHA-512)                 
+          XS07   Reference   G    XS02   1-1 Grupo de referencia de la firma      
+                                             Atributo URI del tag Reference que identifica el grupo
+          XS08     URI       A    XS07   1-1                                      
+                                             de campos que están firmados         
+          XS10   Transforms  G    XS07   1-1 Grupo de algoritmos de transformación
+          XS12   Transform   G    XS10   1-1 Tag del algoritmo de transformación  
+                                             Atributo Algorithm del tag Transform 
+                                             Atributo válido:                     
+          XS13   Algorithm   A    XS12   1-1                                      
+                                             http://www.w3.org/2000/09/xmldsig#enveloped-
+                                             signature (Enveloped Signature)      
+          XS15  DigestMethod G    XS07   1-1 Grupo del DigestMethod               
+                                             Atributo Algorithm del tag DigestMethod
+                                                                                  
+                                             Atributos válidos:                   
+                                                                                  
+          XS16   Algortihm   A    XS15   1-1 http://www.w3.org/2001/04/xmlenc#sha256 (SHA-
+                                             256)                                 
+                                             http://www.w3.org/2001/04/xmldsig-more#sha384
+                                             (SHA-384)                            
+                                             http://www.w3.org/2001/04/xmlenc#sha512 (SHA-
+                                             512)                                 
+                                             Digest Value (Valor retornado por el algoritmo
+          XS17   DigestValue E    XS07   1                                        
+                                             definido en XS16)                    
+                                             Signature Value (Valor de la firma retornado por el
+          XS18  SignatureValue E  XS01   1-1                                      
+                                             algoritmo definido en XS06)          
+          XS19    KeyInfo    G    XS01   1-1 Grupo del KeyInfo (Información de la clave)
+          XS20   X509Data    G    XS19   1-1 Grupo X509Data                       
+          XS21  X509Certificate E XS20   1-1 Certificado Cualificado de Firma Electrónica X509.v3
+            Páginas: 38.                                                          
+            1.2. Se eliminan los siguientes campos de la misma tabla              
+                                                                                  
+                                  Nodo Ocurrenci                                  
+           ID     Campo   Descripción                  Observaciones              
+                                  Padre  a                                        
+          XS14    XPath   E       XS12  0-n   XPath                               
+                                                                                  
+                                                                                  
+            1.3 Se modifican las siguientes observaciones                         
+                                                                                  
+                                                                                  
+                                         2                                        
+                                                                                  
+                                                                                  
+                                                                                  
+
+===== PAGE 3 / 5 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            Sección 12.2.4 Validación de certificado de firma                     
+                                                                                  
+                                                                                  
+                                  C;odig                                          
+             ID    Resultado de validación        Observación        E            
+                                    o                                             
+                                       No existe el certificado de firma en el mensaje
+                                       No se aceptan certificados del PSC         
+             AC01   Certificado inválido 0120                        R            
+                                       KeyUsage no define firma digital y no Repudio
+                                       Cadena de certificación inválida           
+            Páginas: 152.                                                         
+            Sección 12.2.5 Validación de la firma digital                         
+                                                                                  
+                                                                                  
+                                   Códig                                          
+             ID    Resultado de validación        Observación        E            
+                                    o                                             
+                                       No fue firmado el documento completo (falta
+                                       Reference URI en la firma)                 
+                                       Transform Algorithm previsto en la firma (Enveloped
+                                       Signature) no informado o no válido        
+                                       Canonicalization Method previsto en la firma no
+                                       informádo o no válido                      
+                   Firma difiere del estándar                                     
+            AD01                   0140                              R            
+                    [Detalle del error]                                           
+                                       Signature Method previsto en la firma no informádo o
+                                       no válido                                  
+                                       Digest Method previsto en la firma no informádo o no
+                                       válido                                     
+                                       Reference URI no coincide con el atributo Id del
+                                       documento                                  
+                                       XML modificado luego de la firma o mal firmado
+                                       Certificado del PCSC no habilitado por el MIC
+                                                                                  
+                                       Certificado del PCSC revocado              
+                                       Certificado no está firmado por el PCSC    
+                     Valor de la firma                                            
+                 (SignatureValue) diferente del Dirección de la LCR no informada  
+                                   0141                              R            
+            AD02  calculado por el PKI [Detalle (CRLDistributionPoint)            
+                       del error]                                                 
+                                       Error en el acceso a la LCR                
+                                       LCR inexistente                            
+                                       Certificado de firma revocado              
+                                       Certificado raíz no corresponde al MIC     
+            Páginas: 153.                                                         
+                                                                                  
+                                         3                                        
+                                                                                  
+                                                                                  
+                                                                                  
+
+===== PAGE 4 / 5 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            Sección 12.4. Validaciones del formato                                
+                                                                                  
+            Subsección I. Información de la Firma Digital del DTE (I001-I049)     
+                                                                                  
+            Nro. Val ID Mensaje de validación                                     
+                                    Código         Observación       E            
+                                         El certificado digital (I002) debe estar vigente(no
+                                         revocado) al momento de la firma digital (A004)
+                                         Certificado del PCSC no habilitado por el MIC
+                                                                                  
+                                         Certificado del PCSC revocado            
+                                         Certificado no está firmado por el PCSC  
+                     Certificado digital no vigente                               
+                     al momento de firma del DE Dirección de la LCR no informada  
+             278 I002  [Detalle del error] 2450                      R            
+                                         (CRLDistributionPoint)                   
+                                         Error en el acceso a la LCR              
+                                         LCR inexistente                          
+                                         Certificado de firma revocado            
+                                                                                  
+                                         Certificado raíz no corresponde al MIC   
+                                         Certificado expirado                     
+                                                                                  
+            Páginas: 152.                                                         
+            PCSC : Prestadores Cualificados de Servicios de Confianza. Según Art 4. Definiciones #38 de la Ley 6822
+                                                                                  
+                                                                                  
+            1.4 Se modifica la siguiente                                          
+                                                                                  
+            Sección 12.2.1 Validaciones del certificado de transmisión. Protocolo TLS
+            Retorna un html con el mensaje de error de Acceso Denegado por las políticas de acceso. Estas
+            validaciones se realizan durante la conexion con el servicio y son propias del protocolo TLS.
+                                                                                  
+            La siguiente tabla muestra las posibles causas                        
+                                                                                  
+                                                                                  
+                                                                                  
+                       Inconveniente                 Observación                  
+                                          Certificado de Transmisor inexistente en el mensaje
+                                                                                  
+                                          Versión incorrecta                      
+             Certificado de Transmisor Inválido                                   
+                                          No se aceptan certificados de la AC     
+                                          ExtendKeyUsage no define “ClientAuth“   
+             Plazo de validez del Certificado cualificado de firma                
+             electrónica                                                          
+                                          Certificado del emisor no corresponde a un PCSC
+             Cadena de Certificación                                              
+                                          habilitado en el país                   
+                                         4                                        
+                                                                                  
+                                                                                  
+                                                                                  
+
+===== PAGE 5 / 5 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                          Certificado del PCSC revocado           
+                                          Certificado no firmado por el PCSC emisor del
+                                          Certificado                             
+                                          No existe la dirección de la LCR (CRL DistributionPoint)
+                                                                                  
+             LCR del Certificado Transmisor LCR indisponible                      
+                                          LCR invalida                            
+                                                                                  
+             Certificado del transmisor revocado                                  
+             Certificado Raíz no pertenece al MIC                                 
+                                                                                  
+                                          Si el Certificado es de persona jurídica, el RUC debe
+                                          estar informado en el campo SerialNumber en caso de
+             No existe la extensión del RUC del emisor en el                      
+                                          ser del tipo de Persona Física el RUC, estará informado
+             certificado                                                          
+                                          en el campo: SubjectAlternativeName     
+             Inconveniente temporal del SIFEN                                     
+            Páginas: 150.                                                         
+            Histórico del Documento                                               
+                            FECHA DE                 FECHA DE   PRINCIPALES       
+              AUTOR                       REVISOR                                 
+                          ELABORACIÓN                 REVISIÓN ALTERACIONES       
+                                                             Elaboración del      
+            Norma Rojas    05/06/2023      DTICs     08/08/2023                   
+                                                             documento            
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                         5                                        
+                                                                                  
+                                                                                  
+                                                                                  

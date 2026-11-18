@@ -64,6 +64,7 @@ skill_names=(
   "project-audit"
   "architecture-review"
   "project-maintenance"
+  "sifen-electronic-documentation"
 )
 
 for skill_name in "${skill_names[@]}"; do
@@ -91,6 +92,9 @@ if command -v "${validation_python}" >/dev/null 2>&1; then
       failures=$((failures + 1))
     fi
     if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" -m unittest discover -s "${repo_root}/tests/execution" -p 'test_*.py'; then
+      failures=$((failures + 1))
+    fi
+    if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" -m unittest discover -s "${repo_root}/tests/skills" -p 'test_sifen_documentation.py'; then
       failures=$((failures + 1))
     fi
   else

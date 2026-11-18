@@ -1,0 +1,858 @@
+
+===== PAGE 1 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+             Recomendaciones             y mejores      prácticas                 
+                                                                                  
+                                 para   SIFEN                                     
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                          Guía  para  el desarrollador                            
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                 Octubre   2024                                   
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       1          
+                                                                                  
+                                                                                  
+
+===== PAGE 2 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          Índice                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          Introducción                                                 3          
+          Generación de los Documentos Electrónicos                    4          
+          Generación de Lotes de Documentos Electrónicos               5          
+            Servicios Web Asíncronos:                                  5          
+            Recomendaciones                                            5          
+                                                                                  
+            Lote no encolado para procesamiento                        6          
+               Motivos de rechazo                                      6          
+               Motivos de bloqueo                                      6          
+            Invocación de Web Service Asíncronos                       7          
+                                                                                  
+               recibe-lote                                             8          
+               consulta-lote                                          10          
+               consulta                                               12          
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       2          
+                                                                                  
+                                                                                  
+
+===== PAGE 3 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          Introducción                                                            
+                                                                                  
+          Este documento está orientado al usuario desarrollador de servicios web de integración con
+          SIFEN, es una aplicación práctica de lo especificado en el Manual Técnico de Sistema de
+                                                                                  
+          Facturación Electrónica Nacional referente a la recepción de documentos electrónicos (DE)
+          por lotes. Se da por entendido que el usuario tiene los conocimientos necesarios y
+          suficientes de las siguientes normas y estándares:                      
+                                                                                  
+            ●  XML                                                                
+            ●  SOAP, versión 1.2                                                  
+            ●  HTTP                                                               
+            ●  Protocolo de seguridad TLS versión 1.2, con autenticación mutua    
+                                                                                  
+            ●  Estándar de certificado y firma digital                            
+                 ○  Estándar de Firma: XML Digital Signature, formato Enveloped W3C
+                 ○  Certificado Digital: Expedido por una de las PSC habilitados en la República
+                    del Paraguay, estándar http://www.w3.org/2000/09/xmldsig#X509Data
+                 ○  Tamaño de la Clave Criptográfica: RSA 2048, para cifrado por software.
+                 ○  Función Criptográfica Asimétrica: RSA conforme a              
+                    https://www.w3.org/TR/2002/REC-xmlenc-core20021210/Overview.html#rsa-
+                    1_5 .                                                         
+                 ○  Función de “message digest”: SHA-2                            
+                                                                                  
+                    https://www.w3.org/TR/2002/REC-xmlenc-core-20021210/Overview.html#sha
+                    256                                                           
+                 ○  Codificación: Base64 https://www.w3.org/TR/xmldsig-core1/#sec-Base-64
+                 ○  Transformaciones exigidas: Útil para canonizar el XML enviado, con el
+                    propósito de realizar la validación correcta de la firma digital: Enveloped,
+                    https://www.w3.org/TR/xmldsig-core1/#sec-EnvelopedSignature C14N,
+                    http://www.w3.org/2001/10/xml-exc-c14n#                       
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       3          
+                                                                                  
+                                                                                  
+
+===== PAGE 4 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          Generación de los Documentos Electrónicos                               
+                                                                                  
+          Para mayor información se debe consultar el Manual Técnico en la versión que se está
+          utilizando, por ejemplo para el MT 150                                  
+                                                                                  
+                                                                                  
+          <rDE xmlns="http://ekuatia.set.gov.py/sifen/xsd"                        
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                   
+          xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd siRecepDE_v150.xsd">
+                                                                                  
+                                                                                  
+          Tener precaución de NO incorporar:                                      
+                                                                                  
+                                                                                  
+            1. Espacios en blanco en el inicio o en el final de campos numéricos y alfanuméricos.
+            2. Comentarios, anotaciones y documentaciones, léase las etiquetas annotation y
+               documentation.                                                     
+            3. Caracteres de formato de archivo, como line-feed, carriage return, tab, espacios
+               entre etiquetas.                                                   
+            4. Prefijos en el namespace de las etiquetas.                         
+            5. Etiquetas de campos que no contengan valor, sean estas numéricas, que contienen
+                                                                                  
+               ceros, vacíos o blancos para campos del tipo alfanumérico. Están excluidos de esta
+               regla todos aquellos campos identificados como obligatorios en los distintos formatos
+               de archivo XML, la obligatoriedad de los mismos se encuentra plenamente detallada
+               en el manual técnico.                                              
+            6. Valores negativos o caracteres no numéricos en campos numéricos.   
+            7. El nombre de los campos es sensible a minúsculas y mayúsculas, por lo que deben
+               ser comunicados de la misma forma en la que se visualiza en el manual técnico.
+               Ejemplo: el grupo gOpeDE, es diferente a GopeDE, a gopede y a cualquier otra
+               combinación distinta a la inicial.                                 
+                                                                                  
+                                                                                  
+                                                                                  
+               La DNIT disponibiliza una herramienta para pre validación del DE en tiempo de
+               desarrollo, utilidad para detectar campos incorrectos en el XML.   
+                                                                                  
+               Prevalidador SIFEN: https://ekuatia.set.gov.py/prevalidador/       
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       4          
+                                                                                  
+                                                                                  
+
+===== PAGE 5 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          Generación de Lotes de Documentos Electrónicos                          
+                                                                                  
+          Los documentos electrónicos se envían a SIFEN en lotes, el procesamiento de los lotes se
+          realiza a través de la recepción de varios DE en un archivo comprimido para procesarlos de
+                                                                                  
+          forma asíncrona. El resultado del procesamiento de un lote se debe consultar en un
+          segundo momento, separado del envío.                                    
+                                                                                  
+                                                                                  
+          Servicios Web Asíncronos:                                               
+                                                                                  
+                                                                                  
+          Tener en cuenta los dominios para cada ambiente:                        
+                                                                                  
+            1. Ambiente de Producción: sifen.set.gov.py                           
+            2. Ambiente de Test (pruebas) : sifen-test.set.gov.py                 
+                                                                                  
+            ●  Recepción lote DE                                                  
+               Recibe el lote de DE (hasta 50 DE) para procesarlos en una cola de espera.
+               https://{ambiente}/de/ws/async/recibe-lote.wsdl                    
+                                                                                  
+                                                                                  
+            ●  Consulta resultado lote                                            
+               Consulta el estado de un lote recibido previamente.                
+               https://{ambiente}/de/ws/consultas/consulta-lote.wsdl              
+                                                                                  
+            ●  Consulta por CDC                                                   
+               Consulta un DE, si está aprobado retorna el XML del DE.            
+               https://{ambiente}/de/ws/consultas/consulta.wsdl                   
+                                                                                  
+                                                                                  
+          Para obtener el WSDL de cada servicio, agregar al final de cada url ?wsdl, por ejemplo para
+          la consulta de resultado lote el wsdl se obtiene con la siguiente url:  
+          https://{ambiente}/de/ws/consultas/consulta-lote.wsdl?wsdl              
+                                                                                  
+          La descripción de estructuras y las restricciones de los contenidos de los documentos XML
+          se encuentran especificados en el Manual Técnico, correspondiente a la versión, y en los
+          schemas XSD de SIFEN que están publicados en http://ekuatia.set.gov.py/sifen/xsd
+                                                                                  
+                                                                                  
+                                                                                  
+          Recomendaciones                                                         
+                                                                                  
+            1. Enviar la máxima cantidad posible de documentos en un lote (hasta 50 documentos).
+            2. Verificar la respuesta de la recepción del lote, considerando los siguientes códigos
+                                                                                  
+               de respuesta:                                                      
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       5          
+                                                                                  
+                                                                                  
+
+===== PAGE 6 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                 a. Lote recibido con éxito (0300), el lote será procesado, se debe consultar el
+                                                                                  
+                    estado, a través del número de lote retornado, para obtener el detalle de los
+                    documentos enviados.                                          
+                 b. Lote no encolado para procesamiento (0301), el lote NO será procesado,
+                    verificar la sección "Lote no encolado para procesamiento".   
+            3. Cuando se envía un lote y no se recibe respuesta del SIFEN por algún corte en la
+               comunicación, se puede consultar el lote con un CDC que fue enviado en el lote
+               respectivo. De esta manera obtendrá el resultado del estado del lote y el número de
+               lote correspondiente. Utilizar esta opción solo en caso de no recibir el Número de
+                                                                                  
+               Lote como respuesta al envío.                                      
+            4. La consulta de un lote recibido se debe realizar luego de pasado un periodo de
+               tiempo no muy corto de la recepción, teniendo en cuenta que SIFEN tiene una cola
+               de procesamiento que puede variar de acuerdo a la fecha y horas pico de las
+               actividades comerciales. Si bien el procesamiento por cada DE está definido cercano
+               a los 1 segundo, se recomienda comenzar a realizar la consulta pasados los 10
+               minutos de la recepción y luego a intervalos regulares no menores a 10 minutos.
+            5. Nunca se debe enviar un mismo CDC sin haber tenido la respuesta definitiva de
+               SIFEN (Aprobado, Aprobado con Observación o Rechazado), es decir, consultar el
+                                                                                  
+               resultado del procesamiento del lote con el WS de consulta de lote. Así también
+               tener en cuenta las reglas de bloqueo de RUC por envíos duplicados de DE.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          Lote no encolado para procesamiento                                     
+                                                                                  
+          Motivos de rechazo                                                      
+               La recepción de un lote se puede rechazar por los siguientes motivos:
+                                                                                  
+                                                                                  
+                 a. Haber envíado DE con distintos RUC emisores.                  
+                    Se debe enviar documentos de un solo RUC emisor por lote.     
+                 b. Haber envíado DE de distintos tipos.                          
+                    Se debe enviar documentos de un solo tipo de documento por lote (solo
+                    Factura Electrónica, solo Nota de Crédito, etc).              
+                 c. Haber enviado más de 50 DE en un mismo lote                   
+                 d. Estar bloqueado por envío duplicado, ver Motivos de bloqueo   
+                 e. El tamaño del archivo comprimido enviado supera el tamaño permitido.
+                                                                                  
+                    El mensaje de datos de entrada del WS no debe superar 1000 KB.
+                                                                                  
+                                                                                  
+          Motivos de bloqueo                                                      
+               Las siguientes operaciones generan bloqueo de recepción de documentos por RUC
+               Emisor de 10 a 60 minutos, según la cantidad de reincidencia. Esto puede generar
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       6          
+                                                                                  
+                                                                                  
+
+===== PAGE 7 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+               algún esquema de penalización en el futuro. Los motivos del bloqueo temporal de
+                                                                                  
+               recepción por RUC son:                                             
+                                                                                  
+                 f. Enviar lotes vacíos o con contenido no válido.                
+                 g. Enviar el mismo CDC varias veces en un mismo lote.            
+                 h. Enviar el mismo CDC varias veces en lotes distintos y que aún se encuentren
+                    en procesamiento.                                             
+                    Antes de volver a enviar un DE (mismo CDC enviado) se debe verificar que
+                    no esté aún en procesamiento, con la consulta de lote.        
+                                                                                  
+                 i. Enviar varias veces un mismo lote.                            
+                                                                                  
+                                                                                  
+                                                                                  
+          Invocación de Web Service Asíncronos                                    
+                                                                                  
+                                                                                  
+            1. Se debe prestar mucha atención a los namespace especificados para cada servicio
+               web.                                                               
+            2. Se realiza una autenticación mutua con SIFEN a través de un certificado digital
+               emitido por una PSC habilitada. El medio para establecer esta comunicación es la
+               Internet, apoyado en la utilización del protocolo de seguridad TLS versión 1.2, con
+               autenticación mutua.                                               
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                       Configuración de conexión para autenticación mutua (en Postman)
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       7          
+                                                                                  
+                                                                                  
+
+===== PAGE 8 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          recibe-lote                                                             
+          Recepción de DE por lotes, para consumir este servicio, el cliente deberá construir la
+          estructura en XML, según el schema WS_SiRecepLoteDE.xsd y comprimir dicho archivo.
+          Cabe aclarar que el lote podrá contener hasta 50 DE del mismo tipo (ejemplo: Facturas
+                                                                                  
+          Electrónicas), cada uno de ellos debe estar firmado.                    
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                Invocación POST (en Postman)                      
+                                                                                  
+                                                                                  
+          Request Body                                                            
+          Pasos para crear el Body para la invocación del servicio:               
+                                                                                  
+            1. Crear la estructura del lote                                       
+                                                                                  
+               <rLoteDE>                                                          
+               …                                                                  
+               </rLoteDE>                                                         
+                                                                                  
+                                                                                  
+            2. Insertar los DE firmados en la estructura del lote                 
+               <rLoteDE>                                                          
+                    <rDE>...</rDE>                                                
+                    <rDE>...</rDE>                                                
+                    …                                                             
+               </rLoteDE>                                                         
+                                                                                  
+                                                                                  
+            3. Comprimir el contenido de la estructura del lote “rLoteDE”         
+            4. Convertir el contenido comprimido a Base64                         
+            5. Crear el envelope soap, teniendo en cuenta los namespace especificados
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       8          
+                                                                                  
+                                                                                  
+
+===== PAGE 9 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+               <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+               xmlns:xsd="http://ekuatia.set.gov.py/sifen/xsd">                   
+                <soap:Header/>                                                    
+                <soap:Body<                                                       
+                   <xsd:rEnvioLote>                                               
+                     <xsd:dId>20240926</xsd:dId>                                  
+                                                                                  
+                       <xsd:xDE>{Aquí va el Base64 del punto 4}</xsd:xDE>         
+                   </xsd:rEnvioLote>                                              
+                </soap:Body>                                                      
+               </soap:Envelope>                                                   
+                                                                                  
+                                                                                  
+            6. Verificar la respuesta de la invocación “rResEnviLoteDe”           
+                                                                                  
+               <?xml version="1.0" encoding="UTF-8"?>                             
+               <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"> 
+                 <env:Header/>                                                    
+                 <env:Body>                                                       
+                                                                                  
+                    <ns2:rResEnviLoteDe xmlns:ns2="http://ekuatia.set.gov.py/sifen/xsd">
+                       <ns2:dFecProc>2024-10-08T14:51:21-03:00</ns2:dFecProc>     
+                       <ns2:dCodRes>0300</ns2:dCodRes>                            
+                       <ns2:dMsgRes>Lote recibido con &#233;xito</ns2:dMsgRes>    
+                       <ns2:dProtConsLote>11158097383597290</ns2:dProtConsLote>   
+                       <ns2:dTpoProces>0</ns2:dTpoProces>                         
+                                                                                  
+                    </ns2:rResEnviLoteDe>                                         
+                 </env:Body>                                                      
+               </env:Envelope>                                                    
+                                                                                  
+          Response                                                                
+                                                                                  
+          La respuesta, se debe analizar el campo “dCodRes”, puede indicar una de las situaciones
+          siguientes                                                              
+                                                                                  
+            1. Lote recibido con éxito (0300), el lote será procesado, se debe consultar el estado
+               para obtener el detalle de los documentos enviados. Se sugiere comenzar a
+               consultar un lote enviado pasado 10 minutos desde el envío.        
+            2. Lote no encolado para procesamiento (0301), el lote NO será procesado, verificar la
+               sección "Lote no encolado para procesamiento".                     
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       9          
+                                                                                  
+                                                                                  
+
+===== PAGE 10 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          consulta-lote                                                           
+          Devuelve el resultado del procesamiento de cada uno de los DE contenidos en un lote.
+          Según el schema WS_SiConsLote.xsd.                                      
+                                                                                  
+                                                                                  
+                                                                                  
+          Request Body                                                            
+          La consulta se realiza por el valor del campo “dProtConsLote” que forma parte del
+          response de la recepción del lote.                                      
+                                                                                  
+                                                                                  
+               <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+                                                                                  
+               xmlns:xsd="http://ekuatia.set.gov.py/sifen/xsd">                   
+                <soap:Header/>                                                    
+                <soap:Body>                                                       
+                   <xsd:rEnviConsLoteDe>                                          
+                     <xsd:dId>1</xsd:dId>                                         
+                     <xsd:dProtConsLote>11158097383597290</xsd:dProtConsLote>     
+                                                                                  
+               </xsd:rEnviConsLoteDe>                                             
+                </soap:Body>                                                      
+               </soap:Envelope>                                                   
+                                                                                  
+          Response                                                                
+          La respuesta, se debe analizar el campo “dCodResLot”, puede indicar una de las cuatro
+                                                                                  
+          situaciones siguientes:                                                 
+                                                                                  
+            1. No existe número de lote consultado. 0360 Número del Lote inexistente
+            2. No se ha culminado el procesamiento de los DE. 0361 Lote en procesamiento. Debe
+               consultar nuevamente el lote, se sugiere consultar a intervalos mínimos de 10
+               minutos. En momentos de alta carga el procesamiento puede ocurrir entre 1 a 24
+               horas posteriores a la recepción.                                  
+            3. Consulta extemporánea de Lote. 0364 La consulta del lote contempla un plazo de
+               hasta 48 horas posteriores al envío del mismo. Una vez superado el tiempo, deberá
+                                                                                  
+               consultar cada CDC del lote mediante la WS Consulta DE             
+            4. Éxito en la consulta. 0362 Procesamiento de lote concluido.        
+               La respuesta también contiene el contenedor del DE, definido en el Schema.
+                                                                                  
+                                                                                  
+                                                                                  
+            A. En procesamiento                                                   
+                                                                                  
+                                                                                  
+          <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">      
+            <env:Header/>                                                         
+                                                                                  
+                                                                                  
+                                                                      10          
+                                                                                  
+                                                                                  
+
+===== PAGE 11 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            <env:Body>                                                            
+                                                                                  
+               <ns2:rResEnviConsLoteDe xmlns:ns2="http://ekuatia.set.gov.py/sifen/xsd">
+                  <ns2:dFecProc>2024-10-08T14:53:53-03:00</ns2:dFecProc>          
+                  <ns2:dCodResLot>0361</ns2:dCodResLot>                           
+                  <ns2:dMsgResLot>Lote {11158097383597290} en procesamiento       
+                  </ns2:dMsgResLot>                                               
+               </ns2:rResEnviConsLoteDe>                                          
+                                                                                  
+            </env:Body>                                                           
+          </env:Envelope>                                                         
+                                                                                  
+                                                                                  
+            B. Procesamiento concluido                                            
+               Se indica el detalle del procesamiento CDC en el elemento “gResProcLote”
+                                                                                  
+                                                                                  
+          <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">      
+            <env:Header/>                                                         
+            <env:Body>                                                            
+               <ns2:rResEnviConsLoteDe xmlns:ns2="http://ekuatia.set.gov.py/sifen/xsd">
+                  <ns2:dFecProc>2024-10-08T03:58:16-03:00</ns2:dFecProc>          
+                                                                                  
+                  <ns2:dCodResLot>0362</ns2:dCodResLot>                           
+                  <ns2:dMsgResLot>Procesamiento de lote {11444651783497640} concluido
+                  </ns2:dMsgResLot>                                               
+                  <ns2:gResProcLote>                                              
+                     <ns2:id>07800252985001001000311822024021016361562161</ns2:id>
+                     <ns2:dEstRes>Rechazado</ns2:dEstRes>                         
+                                                                                  
+                     <ns2:gResProc>                                               
+                        <ns2:dCodRes>0160</ns2:dCodRes>                           
+                        <ns2:dMsgRes>XML malformado: [El valor del elemento: dDirRec es
+          invalido, El valor del elemento: dDirLocEnt es invalido]                
+                        </ns2:dMsgRes>                                            
+                     </ns2:gResProc>                                              
+                                                                                  
+                  </ns2:gResProcLote>                                             
+               </ns2:rResEnviConsLoteDe>                                          
+            </env:Body>                                                           
+          </env:Envelope>                                                         
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                       11         
+                                                                                  
+                                                                                  
+
+===== PAGE 12 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          consulta                                                                
+          Devuelve el XML de un DE que está en estado aprobado. Según el schema   
+          WS_SiConsDE.xsd                                                         
+                                                                                  
+                                                                                  
+                                                                                  
+          Request Body                                                            
+          La consulta se realiza por el valor del campo “dCDC”.                   
+                                                                                  
+          <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"     
+          xmlns:xsd="http://ekuatia.set.gov.py/sifen/xsd"                         
+          xmlns:si="http://ekuatia.set.gov.py/sifen/xsd">                         
+                                                                                  
+            <soap:Header/>                                                        
+            <soap:Body>                                                           
+              <xsd:rEnviConsDeRequest>                                            
+                 <xsd:dId>12</xsd:dId>                                            
+                 <xsd:dCDC>01028052080001001000013622023100111644108186</xsd:dCDC>
+              </xsd:rEnviConsDeRequest>                                           
+                                                                                  
+            </soap:Body>                                                          
+          </soap:Envelope>                                                        
+                                                                                  
+                                                                                  
+          Response                                                                
+          La respuesta, se debe analizar el campo “dCodRes”, puede indicar una de las dos situaciones
+                                                                                  
+          siguientes:                                                             
+            1. 0420 El DE no existe o no está aprobado, se debe volver a enviar el DE para su
+               procesamiento, tener en cuenta el resultado de la consulta por lote antes de enviar
+               nuevamente.                                                        
+            2. 0422 Existe como DTE, está aprobado, se responde el contenido XML del DE en
+               “xContenDE”                                                        
+                                                                                  
+                                                                                  
+                                                                                  
+            A. No existe                                                          
+                                                                                  
+          <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">      
+             <env:Header/>                                                        
+             <env:Body>                                                           
+                <ns2:rEnviConsDeResponse xmlns:ns2="http://ekuatia.set.gov.py/sifen/xsd">
+                   <ns2:dFecProc>2024-10-09T09:28:39-03:00</ns2:dFecProc>         
+                                                                                  
+                   <ns2:dCodRes>0420</ns2:dCodRes>                                
+                   <ns2:dMsgRes>Documento No Existe en SIFEN o ha sido Rechazado  
+                   </ns2:dMsgRes>                                                 
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                      12          
+                                                                                  
+                                                                                  
+
+===== PAGE 13 / 13 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                </ns2:rEnviConsDeResponse>                                        
+                                                                                  
+             </env:Body>                                                          
+          </env:Envelope>                                                         
+                                                                                  
+                                                                                  
+            B. Existe                                                             
+                                                                                  
+          <env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">      
+                                                                                  
+             <env:Header/>                                                        
+             <env:Body>                                                           
+                <ns2:rEnviConsDeResponse xmlns:ns2="http://ekuatia.set.gov.py/sifen/xsd">
+                   <ns2:dFecProc>2023-10-02T15:13:52-03:00</ns2:dFecProc>         
+                   <ns2:dCodRes>0422</ns2:dCodRes>                                
+                                                                                  
+                   <ns2:dMsgRes>CDC encontrado</ns2:dMsgRes>                      
+                   <ns2:xContenDE>{contenido XML del DE}</ns2:xContenDE>          
+             </ns2:rEnviConsDeResponse>                                           
+          </env:Body>                                                             
+          </env:Envelope>                                                         
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                      13          
+                                                                                  
+                                                                                  
