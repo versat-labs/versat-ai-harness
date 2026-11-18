@@ -1,0 +1,138 @@
+Exit code: 0
+
+### extracted-text/notes/NT_E_KUATIA_014_MT_V150X.txt:75
+      69:                                                                 Obligatorio si
+      70:                                                                 GENFE004=2
+      71:                                                                 1=Cédula paraguaya
+      72:                                                                 2=Pasaporte
+      73:                                Tipo de                          3=Cédula extranjera
+      74:                        iTipIDRec documento de                   4=Carnet de
+>     75:             GDE GENFE010                  GENFE001 N    1    0-1
+      76:                                identidad del                    residencia
+      77:                                receptor                         5=Tarjeta Diplomática
+      78:                                                                 de exoneración fiscal
+      79:                                                                 9=Otro
+      80:
+      81: ===== PAGE 2 / 4 =====
+
+### extracted-text/notes/NT_E_KUATIA_014_MT_V150X.txt:91
+      85:
+      86:
+      87:
+      88:                                             Sistema Integrado de Facturación Electrónica Nacional
+      89:
+      90:                                                                 Obligatorio si existe el
+>     91:                                                                 campo GENFE010
+      92:                                                                 1= “Cédula paraguaya”
+      93:                                                                 2= “Pasaporte”
+      94:                                                                 3= “Cédula extranjera”
+      95:                                Descripción del                  4= “Carnet de
+      96:                        dDTipIDRec tipo de                       residencia”
+      97:             GDE GENFE011                  GENFE001 A   9-41  0-1
+
+### extracted-text/notes/NT_E_KUATIA_014_MT_V150X.txt:101
+      95:                                Descripción del                  4= “Carnet de
+      96:                        dDTipIDRec tipo de                       residencia”
+      97:             GDE GENFE011                  GENFE001 A   9-41  0-1
+      98:                                documento de                     5= “Tarjeta
+      99:                                identidad                        Diplomática de
+     100:                                                                 exoneración fiscal”
+>    101:                                                                 Si GENFE010=9 Se
+     102:                                                                 deberá informar el
+     103:                                                                 tipo de documento de
+     104:                                                                 identidad del receptor
+     105:                                Número de
+     106:                        dNumIDRec                                Obligatorio si
+     107:             GDE GENFE012       documento de GENFE001 A 1-20  0-1
+
+### extracted-text/notes/NT_E_KUATIA_014_MT_V150X.txt:248
+     242:                      Dígito Verificador del RUC del
+     243:                                          4463
+     244:                                               El Dígito Verificador ingresado no
+     245:                                                                         R
+     246:                      receptor incorrecto      corresponde al módulo 11 del RUC
+     247:                      Es obligatorio informar el tipo de Si la naturaleza del receptor es NO
+>    248:               GENFE010 documento de identidad del 4464 contribuyente (GENFE004=2), el tipo de R
+     249:                      receptor                 documento de identidad debe ser informado
+     250:                                               Si la naturaleza del receptor es contribuyente
+     251:               GENFE010a
+     252:                      Tipo de documento de identidad
+     253:                                          4465
+     254:                                               (GENFE004=1), el tipo de documento de
+
+### extracted-text/notes/NT_E_KUATIA_014_MT_V150X.txt:251
+     245:                                                                         R
+     246:                      receptor incorrecto      corresponde al módulo 11 del RUC
+     247:                      Es obligatorio informar el tipo de Si la naturaleza del receptor es NO
+     248:               GENFE010 documento de identidad del 4464 contribuyente (GENFE004=2), el tipo de R
+     249:                      receptor                 documento de identidad debe ser informado
+     250:                                               Si la naturaleza del receptor es contribuyente
+>    251:               GENFE010a
+     252:                      Tipo de documento de identidad
+     253:                                          4465
+     254:                                               (GENFE004=1), el tipo de documento de
+     255:                                                                         R
+     256:                      del receptor no requerido identidad del receptor (GENFE010) no debe
+     257:                                               ser informado
+
+### extracted-text/notes/NT_E_KUATIA_014_MT_V150X.txt:256
+     250:                                               Si la naturaleza del receptor es contribuyente
+     251:               GENFE010a
+     252:                      Tipo de documento de identidad
+     253:                                          4465
+     254:                                               (GENFE004=1), el tipo de documento de
+     255:                                                                         R
+>    256:                      del receptor no requerido identidad del receptor (GENFE010) no debe
+     257:                                               ser informado
+     258:                      Descripción del tipo de
+     259:                                               La descripción del tipo de documento de
+     260:               GENFE011
+     261:                      documento de identidad del
+     262:                                          4466 identidad del receptor no coincidente con lo R
+
+### extracted-text/notes/NT_E_KUATIA_014_MT_V150X.txt:264
+     258:                      Descripción del tipo de
+     259:                                               La descripción del tipo de documento de
+     260:               GENFE011
+     261:                      documento de identidad del
+     262:                                          4466 identidad del receptor no coincidente con lo R
+     263:                      receptor no corresponde al
+>    264:                                               informado en el campo GENFE010
+     265:                      código
+     266:                      Es obligatorio informar el número Si la naturaleza del receptor es NO
+     267:               GENFE012 de documento de identidad del 4467 contribuyente (GENFE004=2), el número de R
+     268:                      receptor                 documento de identidad debe ser informado
+     269:                      El RUC del Emisor del evento no El RUC del Emisor de la Factura Electrónica
+     270:               GENFE002d corresponde al emisor de la 4468 debe ser el mismo que el RUC del Emisor del R
+
+### extracted-text/notes/NT_E_KUATIA_027_MT_V150.txt:46
+      40:                                                               4=Carnet de residencia
+      41:                               receptor
+      42:                                                               6=Tarjeta Diplomática
+      43:                                                               de exoneración fiscal
+      44:                                                               9=Otro
+      45:                                                               Obligatorio si existe el
+>     46:                                                               campo GENFE010
+      47:                                                               1= “Cédula paraguaya”
+      48:                                                               2= “Pasaporte”
+      49:                                                               3= “Cédula extranjera”
+      50:                              Descripción del
+      51:                                                               4= “Carnet de
+      52:                GENFE           tipo de GENFE0
+
+### extracted-text/notes/NT_E_KUATIA_027_MT_V150.txt:58
+      52:                GENFE           tipo de GENFE0
+      53:            GDE      dDTipIDRec                A     9-41  0-1 residencia”
+      54:                 011          documento de 01
+      55:                                                               6= “Tarjeta Diplomática
+      56:                               identidad
+      57:                                                               de exoneración fiscal”
+>     58:                                                               Si GENFE010=9 Se
+      59:                                                               deberá informar el tipo
+      60:                                                               de documento de
+      61:                                                               identidad del receptor
+      62:             Histórico del Documento
+      63:                          FECHA DE               FECHA DE
+      64:              AUTOR                    REVISOR            PRINCIPALES ALTERACIONES
+
+9 match(es).

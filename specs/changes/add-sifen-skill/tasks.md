@@ -69,10 +69,10 @@ validation:
   results:
   - check: CHECK-001
     result: pass
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
-    revision: Approved Tasks R2 working-tree snapshot, 2026-11-18; bound input hashes
-    input_digest_before: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
-    input_digest_after: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
+    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
+    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
+    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
@@ -80,10 +80,10 @@ validation:
       observed: true
   - check: CHECK-002
     result: unverified
-    evidence: docs/validation/add-sifen-skill/r2/review.md
-    revision: Approved Tasks R2 working-tree snapshot, 2026-11-18; bound input hashes
-    input_digest_before: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
-    input_digest_after: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
+    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
+    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
+    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
@@ -91,10 +91,10 @@ validation:
       observed: true
   - check: CHECK-003
     result: pass
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
-    revision: Approved Tasks R2 working-tree snapshot, 2026-11-18; bound input hashes
-    input_digest_before: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
-    input_digest_after: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
+    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
+    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
+    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
@@ -102,10 +102,10 @@ validation:
       observed: true
   - check: CHECK-004
     result: pass
-    evidence: docs/validation/add-sifen-skill/r2/snapshot-lookup/observed-response.md
-    revision: Approved Tasks R2 working-tree snapshot, 2026-11-18; bound input hashes
-    input_digest_before: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
-    input_digest_after: 41fc5daa6756699284a13de3251d6e21e3309c2a4c0249c04e0476f290880df6
+    evidence: docs/validation/add-sifen-skill/ci-portability/supervised.md
+    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
+    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
@@ -120,7 +120,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
+    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
     explanation: Current technical/source-boundary observations satisfy the mapped
       behavior.
   - obligation:
@@ -131,7 +131,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
+    evidence: docs/validation/add-sifen-skill/ci-portability/supervised.md
     explanation: Current technical/source-boundary observations satisfy the mapped
       behavior.
   - obligation:
@@ -142,7 +142,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/r2/review.md
+    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
     explanation: Technical observations recorded; the required source-permission review
       remains unverified under CHECK-002.
   - obligation:
@@ -154,7 +154,7 @@ validation:
     - CHECK-001
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/r2/review.md
+    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
     explanation: Technical observations recorded; the required source-permission review
       remains unverified under CHECK-002.
   - obligation:
@@ -164,7 +164,7 @@ validation:
     result: unverified
     checks:
     - CHECK-002
-    evidence: docs/validation/add-sifen-skill/r2/review.md
+    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
     explanation: Technical observations recorded; the required source-permission review
       remains unverified under CHECK-002.
   - obligation:
@@ -174,7 +174,7 @@ validation:
     result: unverified
     checks:
     - CHECK-002
-    evidence: docs/validation/add-sifen-skill/r2/review.md
+    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
     explanation: Technical observations recorded; the required source-permission review
       remains unverified under CHECK-002.
   - obligation:
@@ -185,7 +185,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/r2/review.md
+    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
     explanation: Technical observations recorded; the required source-permission review
       remains unverified under CHECK-002.
   - obligation:
@@ -195,7 +195,7 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
+    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
     explanation: Current technical/source-boundary observations satisfy the mapped
       behavior.
   - obligation:
@@ -205,7 +205,7 @@ validation:
     result: pass
     checks:
     - CHECK-003
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
+    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
     explanation: Current technical/source-boundary observations satisfy the mapped
       behavior.
   - obligation:
@@ -217,7 +217,7 @@ validation:
     - CHECK-001
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
+    evidence: docs/validation/add-sifen-skill/ci-portability/supervised.md
     explanation: Current technical/source-boundary observations satisfy the mapped
       behavior.
   - obligation:
@@ -228,7 +228,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/add-sifen-skill/r2/full-validation.txt
+    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
     explanation: All existing entry points and full maintained suites plus 15 SIFEN
       tests pass.
   findings:
@@ -351,3 +351,5 @@ Tasks revision 2 approved in this chat with “Aprovado”; existing implementat
 Revision 2 validation completed on 2026-11-18. The complete runner passes (131 validator, 48 execution, 15 SIFEN tests). Two fresh sequential supervised attempts passed observable criteria with unchanged fixtures and matching check input hashes. Evidence: docs/validation/add-sifen-skill/r2/. FIND-001 remains open; no archival or publication readiness is claimed.
 
 Official-source follow-up: the developer supplied the DNIT technical-documentation URL. Public access and Manual/NT 27 download links were verified; the inspected page reserves rights and supplies no express repackaging grant. See r2/official-source-verification.md. FIND-001 remains open for distribution acceptance; no new planning revision is required for this evidence update.
+
+The CI portability correction replaced three packaged accented target names with ASCII names, including inventory paths. Source bytes and historical filenames were verified. The four checks were rerun on the current PR base and their input evidence refreshed. FIND-001 remains open. See docs/validation/add-sifen-skill/ci-portability/.

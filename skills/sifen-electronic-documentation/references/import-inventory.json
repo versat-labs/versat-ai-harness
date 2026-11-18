@@ -91,7 +91,7 @@
       "source": "references/fontes-originais/Guía de Mejores Prácticas para la Gestión del Envío de DE.pdf",
       "source_sha256": "6aa46da4affdf94aae56c558537e4fde0fc3a26a532d6ca7eb633f7e17412313",
       "disposition": "preserved-source-bytes",
-      "target": "references/original-sources/Guía de Mejores Prácticas para la Gestión del Envío de DE.pdf"
+      "target": "references/original-sources/best-practices-for-submitting-de.pdf"
     },
     {
       "source": "references/fontes-originais/Listado Checksum MD5 de las versiones del Manual Tecnico.pdf",
@@ -103,7 +103,7 @@
       "source": "references/fontes-originais/Manual Técnico Versión 150.pdf",
       "source_sha256": "976cd88c05c31041ee86db1667e1b426e2d9ddf675d941973d5918cbdc5427c6",
       "disposition": "preserved-source-bytes",
-      "target": "references/original-sources/Manual Técnico Versión 150.pdf"
+      "target": "references/original-sources/technical-manual-v150.pdf"
     },
     {
       "source": "references/fontes-originais/NT_E_KUATIA_001_MT_V150.pdf",
@@ -295,7 +295,7 @@
       "source": "references/texto-extraido/guias/Guía de Mejores Prácticas para la Gestión del Envío de DE.txt",
       "source_sha256": "32b8175d60d93b8bfa7f24f4b771efeae0436749de358de917a157011e0d7607",
       "disposition": "preserved-source-bytes",
-      "target": "references/extracted-text/guides/Guía de Mejores Prácticas para la Gestión del Envío de DE.txt"
+      "target": "references/extracted-text/guides/best-practices-for-submitting-de.txt"
     },
     {
       "source": "references/texto-extraido/manual/00-indices-e-controle-de-versoes.txt",
