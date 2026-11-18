@@ -8,9 +8,9 @@ The developer stated in this change's conversation: “Use a msm licença das ou
 
 ## Terms and distribution status
 
-The current Harness has no adopted root public license; its repository-wide Apache-2.0 candidate remains inactive. After the initial same-regime instruction, the developer explicitly directed “use a licenca apache 2.0” on 2026-11-17. Apache-2.0 is applied to this skill’s authored code and documentation under [LICENSE-SCOPE.md](../LICENSE-SCOPE.md), with the full text in [LICENSE](../LICENSE) and attribution in [NOTICE](../NOTICE). Official imported material is excluded from that grant. The authorization and declared authorship are available in the change conversation; no separate ownership assignment or third-party permission is inferred.
+The developer directed Apache-2.0 for this skill's authored material on 2026-11-17. The [license scope](../LICENSE-SCOPE.md) identifies those files and the official materials excluded from the grant.
 
-Official documents and their extracts retain their origin. No third-party redistribution permission was supplied in the source folder. Public distribution clearance remains **deferred**, with the repository maintainer responsible for identifying and reviewing applicable source terms before distribution. Neither an official-looking filename, public availability, source hashes nor planning approval establishes those rights. No new license is assigned to those files. Local import and validation do not constitute release or publication clearance.
+The developer approved redistribution of the reviewed SIFEN corpus and the attribution wording on 2026-11-18. See the [official-material notice](attribution-notice.md) and [per-file attribution inventory](official-source-attribution.csv) for the DNIT source URLs, parent publications, and DNIT-reported HTTP Last-Modified timestamps when available. These timestamps describe the published files and are distinct from substantive document dates and effective dates. The review identified Decree 4064/2015, article 38 and Annex II, as the basis for redistribution of these identified materials. The approval covers the reviewed corpus in the public draft PR and Versat's internal operational use.
 
 ## Inventory and transformations
 

@@ -18,4 +18,4 @@ The following imported official/third-party material is not relicensed by this g
 - `references/source-manifest.csv` (preserved original evidence).
 - Official quotations, identifiers and source notices embedded in authored commentary retain their respective source status.
 
-The import inventory marks preserved-source bytes separately from adapted authored files. Public redistribution clearance for the official corpus remains deferred pending applicable source terms and review. Apache-2.0 on authored material does not supply those third-party permissions. This scope applies only to this skill; no repository-wide Apache adoption, release or consumer migration is made.
+The import inventory marks preserved-source bytes separately from adapted authored files. The reviewed official corpus carries its separate [DNIT attribution and terms](references/attribution-notice.md), with [per-file source records](references/official-source-attribution.csv). This Apache-2.0 scope applies only to the authored material identified above.

@@ -42,7 +42,7 @@ tasks:
   - REQ-002
   - REQ-003
   - REQ-004
-  status: blocked
+  status: completed
 - id: TASK-006
   description: Prepare the validated dossier for documentary delivery in the same
     branch.
@@ -51,7 +51,7 @@ tasks:
   - REQ-002
   - REQ-003
   - REQ-004
-  status: blocked
+  status: pending
 review:
   revision: 2
   state: approved
@@ -69,21 +69,21 @@ validation:
   results:
   - check: CHECK-001
     result: pass
-    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
-    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
-    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
-    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/full-validation.txt
+    revision: Approved Tasks R2 attribution snapshot; bound input hashes
+    input_digest_before: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
+    input_digest_after: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
         tax services
       observed: true
   - check: CHECK-002
-    result: unverified
-    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
-    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
-    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
-    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    result: pass
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/license-verification.txt
+    revision: Approved Tasks R2 attribution snapshot; bound input hashes
+    input_digest_before: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
+    input_digest_after: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
@@ -91,10 +91,10 @@ validation:
       observed: true
   - check: CHECK-003
     result: pass
-    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
-    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
-    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
-    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/full-validation.txt
+    revision: Approved Tasks R2 attribution snapshot; bound input hashes
+    input_digest_before: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
+    input_digest_after: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
@@ -102,10 +102,10 @@ validation:
       observed: true
   - check: CHECK-004
     result: pass
-    evidence: docs/validation/add-sifen-skill/ci-portability/supervised.md
-    revision: 'PR #42 portability correction on main base c13b2f9a; bound input hashes'
-    input_digest_before: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
-    input_digest_after: 64ae25d58d31b583d1604451486aefcd53b55f560d2fab934369b084fbab1793
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/supervised.md
+    revision: Approved Tasks R2 attribution snapshot; bound input hashes
+    input_digest_before: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
+    input_digest_after: ca134c3417911389cc055eb6d89fd4eb69a85fb4ee2b8627ee42e32f22e5ef0b
     context:
       execution: local
       environment: macOS; Python validation venv; standard-library utilities; no live
@@ -120,9 +120,9 @@ validation:
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
-    explanation: Current technical/source-boundary observations satisfy the mapped
-      behavior.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/full-validation.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-001
@@ -131,63 +131,63 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/ci-portability/supervised.md
-    explanation: Current technical/source-boundary observations satisfy the mapped
-      behavior.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/supervised.md
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-002
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
-    explanation: Technical observations recorded; the required source-permission review
-      remains unverified under CHECK-002.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/license-verification.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-002
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
-    explanation: Technical observations recorded; the required source-permission review
-      remains unverified under CHECK-002.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/license-verification.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-002
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
-    explanation: Technical observations recorded; the required source-permission review
-      remains unverified under CHECK-002.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/license-verification.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-003
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
-    explanation: Technical observations recorded; the required source-permission review
-      remains unverified under CHECK-002.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/license-verification.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-003
         scenario: 2
-    result: unverified
+    result: pass
     checks:
     - CHECK-002
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/ci-portability/review.md
-    explanation: Technical observations recorded; the required source-permission review
-      remains unverified under CHECK-002.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/license-verification.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-003
@@ -195,9 +195,9 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
-    explanation: Current technical/source-boundary observations satisfy the mapped
-      behavior.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/full-validation.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-004
@@ -205,9 +205,9 @@ validation:
     result: pass
     checks:
     - CHECK-003
-    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
-    explanation: Current technical/source-boundary observations satisfy the mapped
-      behavior.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/full-validation.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       local:
         requirement: REQ-004
@@ -217,9 +217,9 @@ validation:
     - CHECK-001
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/add-sifen-skill/ci-portability/supervised.md
-    explanation: Current technical/source-boundary observations satisfy the mapped
-      behavior.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/supervised.md
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   - obligation:
       regression:
         impact: 1
@@ -228,9 +228,9 @@ validation:
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/add-sifen-skill/ci-portability/full-validation.txt
-    explanation: All existing entry points and full maintained suites plus 15 SIFEN
-      tests pass.
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/full-validation.txt
+    explanation: The mapped checks passed against the current input snapshot. The
+      original implementation behaviors and the approved attribution were verified.
   findings:
   - id: FIND-001
     source:
@@ -238,8 +238,8 @@ validation:
         requirement: REQ-002
         scenario: 3
     category: missing
-    state: open
-    evidence: docs/validation/add-sifen-skill/rights-review/README.md
+    state: resolved
+    evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/license-verification.txt
     description: Decree 4064/2015 art. 38 and Annex II provide a candidate statutory
       redistribution basis. All 33 DNIT originals match exactly, both XMLs match their
       archive members, and 38 text extracts are mapped to their parent PDFs. Scope
@@ -251,6 +251,10 @@ validation:
     - TASK-006
     checks:
     - CHECK-002
+    resolution: The developer approved the reviewed corpus and exact notice in the
+      change conversation. The decision is recorded in rights-review/review-decision.md.
+      The approved notice is installed, all 73 rows carry source attribution and reported
+      update dates, original bytes match, and current CHECK-002 passed.
 closure: active
 ---
 
@@ -260,7 +264,7 @@ closure: active
 - [x] TASK-002 — Import and adapt the portable English skill, references and optional adapter guidance.
 - [x] TASK-003 — Adapt lookup and export utilities and add maintained behavior tests.
 - [x] TASK-004 — Integrate package discovery, the full validation runner and aligned usage documentation.
-- [ ] TASK-005 — Execute the approved checks and assess every acceptance and regression obligation.
+- [x] TASK-005 — Execute the approved checks and assess every acceptance and regression obligation.
 - [ ] TASK-006 — Prepare the validated dossier for documentary delivery in the same branch.
 
 ## Dependencies and completion conditions
@@ -346,6 +350,8 @@ Historical execution is retained under docs/validation/add-sifen-skill/. Input s
 
 The item-by-item rights review verified the official provenance and mapped Decree 4064/2015 to the corpus. See docs/validation/add-sifen-skill/rights-review/. The third-party notice is a draft. CHECK-002 remains unverified and FIND-001 open for the required licensing acceptance review and notice implementation. This supplemental evidence does not replace the prior execution or change the approved Tasks digest.
 
+The developer approved the reviewed redistribution scope and attribution. Current CHECK-001 through CHECK-004 passed against the applied notice snapshot. FIND-001 is resolved and the acceptance work is complete. Earlier results above are historical. Evidence: docs/validation/add-sifen-skill/rights-review/applied-validation/.
+
 ## Delivery
 
 Closure remains active. No documentary archival, PR publication, remote CI, merge or release is claimed.
@@ -357,3 +363,5 @@ Revision 2 validation completed on 2026-11-18. The complete runner passes (131 v
 Official-source follow-up: the developer supplied the DNIT technical-documentation URL. Public access and Manual/NT 27 download links were verified; the inspected page reserves rights and supplies no express repackaging grant. See r2/official-source-verification.md. FIND-001 remains open for distribution acceptance; no new planning revision is required for this evidence update.
 
 The CI portability correction replaced three packaged accented target names with ASCII names, including inventory paths. Source bytes and historical filenames were verified. The four checks were rerun on the current PR base and their input evidence refreshed. FIND-001 remains open. See docs/validation/add-sifen-skill/ci-portability/.
+
+PR #42 remains a draft with the dossier active. Documentary closure (TASK-006) is pending.

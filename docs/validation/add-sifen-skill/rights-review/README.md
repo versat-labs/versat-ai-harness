@@ -1,6 +1,6 @@
 # DNIT item-by-item rights review
 
-Reviewed 2026-11-18 against PR #42 head `aba801b98363bd796a2b3f16056561d0c3732c96`. Intended consumption is internal to Versat. The branch carrying the copies is publicly accessible, so the actual hosting surface is public. Technical evidence review by Codex. Maintainer disposition remains **defer**, pending an observed licensing acceptance review and implementation of the notice on the distributed surface.
+Reviewed 2026-11-18 against PR #42 head `aba801b98363bd796a2b3f16056561d0c3732c96`. Intended consumption is internal to Versat. The branch carrying the copies is publicly accessible, so the actual hosting surface is public. Technical evidence review by Codex. This file preserves the original review rationale. The developer decision is now recorded in review-decision.md, and the notice has been applied to the skill.
 
 ## Review packet
 
