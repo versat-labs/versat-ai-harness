@@ -21,3 +21,9 @@ Historical records and approvals are unchanged. This follow-up does not claim th
 The current B revision restores the template exactly to main. Its remaining diff consists only of this operation record and the appended Progress entry in the existing dossier. The original approval metadata and all prior results are preserved. The local positive archive preflight passed before A was submitted; the final B suite and actual remote CI must pass before asking Everton to approve. This record does not claim his approval or the later stale-review transition has occurred.
 
 For Everton: review the restored template/no-functional-change diff, the negative CI observation and the pending external-test limits; approve the latest passing head as your own account. Do not merge. A later authorized evidence update can then verify dismissal of that actual approval. The report channel is enabled, but no external report or handler receipt is claimed.
+
+## Review refresh exercise — 2026-11-18
+
+Everton approved revision B (`5eff2e63cd1b61712d1a90920c7153d341c6dadc`) at 2026-11-18 19:01:39 UTC; [review 5963166974](https://github.com/versat-labs/versat-ai-harness/pull/41#pullrequestreview-5963166974) is the actual service record. Before this update, GitHub reported `APPROVED` and `CLEAN`, with the required CI successful and no merge performed.
+
+The owner authorized this documentary commit to exercise automatic stale-review dismissal. This is revision C; it changes only this operation record. The expected subsequent observation is dismissal of the previous approval and a renewed review requirement, followed by passing CI and an actual new approval. Those subsequent outcomes are not claimed by this commit. Do not merge or create a release. External-user cases remain pending.
