@@ -51,7 +51,7 @@ tasks:
   - REQ-002
   - REQ-003
   - REQ-004
-  status: pending
+  status: completed
 review:
   revision: 2
   state: approved
@@ -255,7 +255,7 @@ validation:
       change conversation. The decision is recorded in rights-review/review-decision.md.
       The approved notice is installed, all 73 rows carry source attribution and reported
       update dates, original bytes match, and current CHECK-002 passed.
-closure: active
+closure: prepared
 ---
 
 # Tasks
@@ -265,7 +265,7 @@ closure: active
 - [x] TASK-003 — Adapt lookup and export utilities and add maintained behavior tests.
 - [x] TASK-004 — Integrate package discovery, the full validation runner and aligned usage documentation.
 - [x] TASK-005 — Execute the approved checks and assess every acceptance and regression obligation.
-- [ ] TASK-006 — Prepare the validated dossier for documentary delivery in the same branch.
+- [x] TASK-006 — Prepare the validated dossier for documentary delivery in the same branch.
 
 ## Dependencies and completion conditions
 
@@ -364,4 +364,4 @@ Official-source follow-up: the developer supplied the DNIT technical-documentati
 
 The CI portability correction replaced three packaged accented target names with ASCII names, including inventory paths. Source bytes and historical filenames were verified. The four checks were rerun on the current PR base and their input evidence refreshed. FIND-001 remains open. See docs/validation/add-sifen-skill/ci-portability/.
 
-PR #42 remains a draft with the dossier active. Documentary closure (TASK-006) is pending.
+PR #42 remains a draft. The GitHub Actions run for 096f532 passed on Ubuntu before archival (run 44386496487, job 135092378261). Documentary closure is prepared in this branch. The dossier is stored under specs/archive/add-sifen-skill/.
