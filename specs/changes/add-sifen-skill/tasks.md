@@ -239,11 +239,13 @@ validation:
         scenario: 3
     category: missing
     state: open
-    evidence: docs/validation/add-sifen-skill/r2/official-source-verification.md
-    description: Official DNIT publication and unauthenticated access verified. Express
-      permission/equivalent reviewed basis for repackaging the official corpus remains
-      unverified; inspected page reserves rights. Apache authorization covers authored
-      material only. Maintainer follow-up before distribution.
+    evidence: docs/validation/add-sifen-skill/rights-review/README.md
+    description: Decree 4064/2015 art. 38 and Annex II provide a candidate statutory
+      redistribution basis. All 33 DNIT originals match exactly, both XMLs match their
+      archive members, and 38 text extracts are mapped to their parent PDFs. Scope
+      and third-party notice still require an observed licensing acceptance review
+      and implementation before public distribution can be cleared. Business use is
+      internal; the PR branch is public.
     tasks:
     - TASK-005
     - TASK-006
@@ -341,6 +343,8 @@ TASK-001 through TASK-004 were implemented locally under revision 1. TASK-001 an
 ## Validation evidence
 
 Historical execution is retained under docs/validation/add-sifen-skill/. Input snapshots for the four original checks matched at execution time. Subsequent scoped licensing edits make those runs historical; they are not rebound to current inputs. Tasks revision 2 is approved. Current results and all ten local assessments plus retained regression are recorded in metadata. All technical checks passed; CHECK-002 remains unverified for third-party source permission. TASK-005 and TASK-006 remain blocked; closure stays active. Final post-license automated results are recorded separately; see implementation-report.md for observed results and unresolved obligations.
+
+The item-by-item rights review verified the official provenance and mapped Decree 4064/2015 to the corpus. See docs/validation/add-sifen-skill/rights-review/. The third-party notice is a draft. CHECK-002 remains unverified and FIND-001 open for the required licensing acceptance review and notice implementation. This supplemental evidence does not replace the prior execution or change the approved Tasks digest.
 
 ## Delivery
 
