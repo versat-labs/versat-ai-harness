@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-008",
+  "result": "unverified",
+  "recorded_at": "2026-11-16T18:16:18.217086+00:00",
+  "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "method": "Partial approved R3 private verification: actual local inspection, restricted hashes, bounded metadata and complete maintained suites; missing human/client/service outcomes remain explicit. Within-boundary evidence rechecks follow the before snapshot.",
+  "explanation": "Current handoff implements old-base eligibility, shared triage, genuine future test delivery, OP-CTRL-01/02, unchanged 900-second transition and stop behavior. Twenty-one procedure boundary cases reviewed without platform execution. Actual private exit evidence remains missing; not ready for transition.",
+  "supporting_evidence": [
+    "within-boundary/walkthroughs.json",
+    "within-boundary/semantic-review.json",
+    "private-prerequisites.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

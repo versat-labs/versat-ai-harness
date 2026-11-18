@@ -1,0 +1,6 @@
+{
+  "mutation": "Disposable VERSION 0.0.0",
+  "exit": 1,
+  "expected_rejection": true,
+  "root_unchanged": true
+}

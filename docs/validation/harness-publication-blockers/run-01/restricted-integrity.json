@@ -1,0 +1,16 @@
+{
+  "record": "HPR-PRIVATE-01",
+  "recorded_at": "2026-11-14T18:17:15.061360+00:00",
+  "scope": "Read-only verification of existing original manifest; no raw payload collection or replication",
+  "assessment_hash_matches": true,
+  "manifest_hash_matches": true,
+  "manifest_entries": 96,
+  "missing_files": 0,
+  "changed_files": 0,
+  "local_git_status": "Original area untracked",
+  "remote_exact_assessment_path": "HTTP 404 during current attempt",
+  "durable_remote_preservation": "unverified",
+  "actual_reviewer_access": "unverified",
+  "result": "unverified",
+  "limit": "Hashes and local readability do not establish permission, reviewer acceptance or durable custody."
+}

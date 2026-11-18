@@ -1,0 +1,8 @@
+{
+  "prior_count": 22,
+  "current_count": 22,
+  "identical_after_recorded_refspec_mapping": true,
+  "mismatched": [],
+  "mapping": "The preserved inventory collector fetched refs/pull/<number>/head into refs/audit/pr/<number>. Comparing raw ref names produced an apparent naming difference; the original collector line 97 proves this mapping. Initial raw comparison is preserved.",
+  "limits": "All 22 source refs match; this does not refresh service bodies, package coverage or expired/deleted objects."
+}

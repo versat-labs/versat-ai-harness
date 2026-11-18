@@ -1,0 +1,38 @@
+{
+  "record": "HPB-EXPOSURE-RIGHTS-R3-01",
+  "scope": "Focused local exposure/provenance review plus actual owner participation confirmation; not full delivery or public clearance.",
+  "source_files_at_review": 1863,
+  "focused_delta": 236,
+  "groups": {
+    "G1": 11,
+    "G2": 4,
+    "G4": 4,
+    "G6": 217
+  },
+  "unchanged_attested": 1627,
+  "exact_content_copies": 7,
+  "legal_texts_unchanged": 16,
+  "dependency_licenses_unchanged": 7,
+  "new_credential_patterns_found": 0,
+  "new_internal_links_or_emails_in_delta": 0,
+  "environment_path_occurrences": 413,
+  "environment_path_files": 61,
+  "normalized_environment_paths": 34,
+  "owner_decisions_required": [
+    "R3-E1",
+    "R3-E2"
+  ],
+  "participant_confirmation": "HPB-PARTICIPATION-R3-01; received, not an operation authorization",
+  "remaining_evidence_gaps": [
+    "durable restricted custody and actual final reviewer access/acceptance",
+    "complete repository-related package and integration coverage",
+    "final post-CI exposure refresh",
+    "remaining operational/private preparation acceptance"
+  ],
+  "prior_owner_decisions_preserved": true,
+  "publication": false,
+  "github_mutations": 0,
+  "workflows_executed": 0,
+  "current_report_appendix": "This run adds 11 safe report files, included separately in the final restricted inventory. No earlier evidence file is altered.",
+  "scope_status": "Partial review; two owner decisions and actual external/custody evidence remain outstanding."
+}

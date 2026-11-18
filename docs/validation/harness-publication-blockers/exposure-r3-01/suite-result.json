@@ -1,0 +1,13 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=<pinned-validation-python> ./scripts/validate/run.sh",
+  "exit_code": 1,
+  "tests": {
+    "validators": 131,
+    "execution": 48
+  },
+  "scope": "Preparation root only; local diagnostics after participation/status changes. No native-client or GitHub workflow execution.",
+  "aggregate_limit": "Actual open findings, retained CHECK-009 failure and stale prior check inputs prevent a readiness pass.",
+  "authentic_raw_evidence": "HPB-EXPOSURE-RIGHTS-R3-01",
+  "raw_stdout_sha256": "1b1309b41ce3d0cf54009990ec258e6d1bf580d3cbdec413e9ed22d7d0a42f09",
+  "raw_stderr_sha256": "0291c9210f7d9aad06be666b60b4483c1b68ae9eb71d883d9820b8c488b94c61"
+}

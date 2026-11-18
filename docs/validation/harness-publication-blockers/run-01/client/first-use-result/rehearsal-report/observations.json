@@ -1,0 +1,35 @@
+{
+  "scenario": "first-use",
+  "change": "payment-validation-tests",
+  "stage": "Proposal/Requirements",
+  "revision": 1,
+  "review": "awaiting-approval",
+  "provider": "<installed-private-candidate>",
+  "harness_version": "0.4.0",
+  "standards_index_and_lock_digests_verified": true,
+  "validator_argv": [
+    "<validation-python>",
+    "<installed-private-candidate>/validators/sdd/validate.py",
+    "--root",
+    "<synthetic-consumer>",
+    "--change",
+    "payment-validation-tests",
+    "--phase",
+    "planning",
+    "--json"
+  ],
+  "validator_exit_code": 0,
+  "attempts": 1,
+  "artifacts": [
+    "specs/changes/payment-validation-tests/proposal.md",
+    "specs/changes/payment-validation-tests/requirements.md"
+  ],
+  "unavailable_observations": [
+    "Human approval has not been received.",
+    "Product tests were inspected but not run during this planning-only scenario.",
+    "No Git repository or remote CI, PR, merge or deployment evidence is available.",
+    "Independent coordinator evaluation and full native runtime telemetry are not available to this scenario agent.",
+    "Temporary fixture location is not a security isolation boundary."
+  ],
+  "boundaries": "Only synthetic consumer artifacts were written; provider was read only; no external connectors, credentials, real repositories, remote publication or other agents were used."
+}

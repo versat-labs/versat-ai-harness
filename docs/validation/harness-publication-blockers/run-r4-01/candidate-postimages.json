@@ -1,0 +1,17 @@
+{
+  "files": {
+    "VERSION": true,
+    "plugin.json": true,
+    ".codex-plugin/plugin.json": true,
+    ".agents/plugins/marketplace.json": true,
+    "project-templates/base/.versat/standards.lock": true,
+    "CHANGELOG.md": true,
+    "LICENSE": true,
+    "NOTICE": true,
+    "THIRD-PARTY-NOTICES.md": true
+  },
+  "candidate_version": "0.4.0",
+  "canonical_version": "0.3.0",
+  "patch_check_exit": 0,
+  "effective_adoption": false
+}

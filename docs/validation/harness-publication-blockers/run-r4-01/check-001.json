@@ -1,0 +1,18 @@
+{
+  "check": "CHECK-001",
+  "result": "pass",
+  "scope": "Approved R4 private preparation; future service outcomes unexecuted",
+  "method": {
+    "kind": "review",
+    "procedure": "Verify the exact remotely preserved restricted revision, technical integrity result and attributable non-author approval together; reconcile baseline/candidate identities. Accept custody without an extra comment, custom form or reviewer rerun. Test the missing record, changed digest and mismatched approval boundaries; never claim commands or specialist work from an empty review body.",
+    "reason": "The actual approval and exact retrievable evidence support custody; hashes alone or admin membership do not establish it."
+  },
+  "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "observations": "Exact private revision and manifest match; read-only verifier passed for 575 source files / 543 delivery files / 42 archived Git files; actual non-author approval reobserved. Missing/hash/approval boundaries reviewed. R4 preservation accepted; old failed criterion unchanged.",
+  "evidence": [
+    "docs/validation/harness-publication-blockers/run-r4-01/preservation.json",
+    "docs/validation/harness-publication-blockers/run-r4-01/walkthroughs.json"
+  ],
+  "suite_candidate_input": null
+}

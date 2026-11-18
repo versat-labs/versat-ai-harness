@@ -1,0 +1,13 @@
+{
+  "local": 31,
+  "retained": 40,
+  "assessed": 71,
+  "checks": 10,
+  "resolved_private_findings": 6,
+  "public_operations_executed": false,
+  "suite_counts": [
+    131,
+    48
+  ],
+  "closure": "active"
+}

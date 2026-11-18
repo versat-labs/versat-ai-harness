@@ -1,0 +1,11 @@
+{
+  "check": "CHECK-009",
+  "result": "fail",
+  "method": "Actual scoped local review, integrity verification and maintained preparation suite, with missing evidence explicitly retained.",
+  "explanation": "All 179 maintained preparation-root tests passed. Aggregate validation exited 1 on actual open findings and stale earlier results after the participant/status change. Candidate/native/full final acceptance was not rerun in this focused review; this is not a delivery pass.",
+  "input_digest_before": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+  "input_digest_after": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+  "restricted_record": "HPB-EXPOSURE-RIGHTS-R3-01",
+  "participation_record": "HPB-PARTICIPATION-R3-01",
+  "scope": "Partial; no full scenario acceptance, GitHub mutation, workflow or publication."
+}

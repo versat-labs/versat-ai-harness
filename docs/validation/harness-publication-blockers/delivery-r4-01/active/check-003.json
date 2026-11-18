@@ -1,0 +1,17 @@
+{
+  "check": "CHECK-003",
+  "result": "pass",
+  "scope": "Current local delivery review, not main integration/publication",
+  "input_digest_before": "0847656ff63fc92f0c769487c827d72614bc8583a134e19fbe410ab35687f016",
+  "input_digest_after": "0847656ff63fc92f0c769487c827d72614bc8583a134e19fbe410ab35687f016",
+  "observations": "Verified all 16 approved texts/seven dependency texts and nine approved preimages in entry record; all nine postimages now match in local root. Reverse applicability passes and duplicate application is rejected. No changed legal wording or new grant.",
+  "baseline_evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-003.json",
+  "current_evidence": [
+    "identity-and-application.json",
+    "source-delta.json",
+    "behavior-reuse.json",
+    "review.json",
+    "suite.json"
+  ],
+  "limitations": "R4 public service outcomes and remote freshness remain unexecuted/dated; original failed checks and earlier roots unchanged."
+}

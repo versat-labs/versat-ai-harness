@@ -1,0 +1,14 @@
+* @elviszoz
+
+/.github/CODEOWNERS @elviszoz @evertonspohrversat
+/AGENTS.md @elviszoz @evertonspohrversat
+/skills/ @elviszoz @evertonspohrversat
+/agents/ @elviszoz @evertonspohrversat
+/project-templates/ @elviszoz @evertonspohrversat
+/standards/ @elviszoz @evertonspohrversat
+/sdd/ @elviszoz @evertonspohrversat
+/docs/decisions/ @elviszoz @evertonspohrversat
+/validators/ @elviszoz @evertonspohrversat
+/tests/ @elviszoz @evertonspohrversat
+/scripts/validate/ @elviszoz @evertonspohrversat
+/requirements-validation.txt @elviszoz @evertonspohrversat

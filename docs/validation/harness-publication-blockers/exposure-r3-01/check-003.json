@@ -1,0 +1,11 @@
+{
+  "check": "CHECK-003",
+  "result": "unverified",
+  "method": "Actual scoped local review, integrity verification and maintained preparation suite, with missing evidence explicitly retained.",
+  "explanation": "Unchanged 16 candidate texts, seven dependency notices, nine preimages and adoption patch verified. No code, dependency, binary or new legal text added. Seven copies match previously attested content. New first-party documentary/evidence scope and this review appendix require bounded R3-E1 confirmation; prior D1/D2 remains valid for its original scope. No effective adoption or new full candidate/client rehearsal.",
+  "input_digest_before": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+  "input_digest_after": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+  "restricted_record": "HPB-EXPOSURE-RIGHTS-R3-01",
+  "participation_record": "HPB-PARTICIPATION-R3-01",
+  "scope": "Partial; no full scenario acceptance, GitHub mutation, workflow or publication."
+}

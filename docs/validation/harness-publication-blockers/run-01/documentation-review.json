@@ -1,0 +1,15 @@
+{
+  "files": [
+    "README.md",
+    "README.pt.md",
+    "README.es.md",
+    "docs/architecture/overview.md",
+    "docs/user-docs/guides/security-reporting.md",
+    "docs/user-docs/guides/security-reporting.pt.md",
+    "docs/user-docs/guides/security-reporting.es.md",
+    "docs/handoffs/harness-publication-blockers/README.md"
+  ],
+  "local_links_and_anchors": 114,
+  "result": "pass for changed documentation links and whitespace only",
+  "semantic_review": "EN/PT/ES navigation points to the same current deferred handoff. No license/adoption/public reporting claim changed. Restricted records/URLs/payloads are absent from the new handoff and input manifest. Historical sensitivity remains unresolved; CHECK-007 is not fully passed."
+}

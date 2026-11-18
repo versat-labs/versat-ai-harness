@@ -18,9 +18,9 @@ One versioned root Plugin combines canonical Standards, the SDD lifecycle, five 
 
 ## Origin and current boundaries
 
-The [ADRs](../decisions/README.md) record the package and process decisions. The current source includes unreleased SDD v3 assurance and explicit test execution beyond the published 0.3.0 tag. VERSION/manifests remain 0.3.0 during preparation; 0.4.0 is a private candidate, not an available release. Marketplace identity and consumer pins are unchanged.
+The [ADRs](../decisions/README.md) record the package and process decisions. The current source includes unreleased SDD v3 assurance and explicit test execution beyond the published 0.3.0 tag. VERSION/manifests now declare the local 0.4.0 delivery candidate; its catalog references v0.4.0 without creating or activating that release. Marketplace identity, installed copies and consumer pins are unchanged.
 
-The [Apache candidate](../licensing/candidates/apache-2.0/APPROVAL.md) has actual text approval, but is not adopted. Third-party terms and unrelated destination-project licenses remain separate. Confidentiality, actual controls and external-user verification still limit public readiness. The Harness does not supply automatic publication, consumer upgrades or an operational workflow engine. Structural validation cannot authenticate human approval or prove behavior, remote CI or merge.
+The [Apache candidate](../licensing/candidates/apache-2.0/APPROVAL.md) has actual text approval and its license/notices are applied locally; main integration and public distribution remain pending. Third-party terms and unrelated destination-project licenses remain separate. Confidentiality, actual controls and external-user verification still limit public readiness. The Harness does not supply automatic publication, consumer upgrades or an operational workflow engine. Structural validation cannot authenticate human approval or prove behavior, remote CI or merge.
 
 ## Applicability and alternatives
 

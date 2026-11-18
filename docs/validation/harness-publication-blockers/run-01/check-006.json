@@ -1,0 +1,17 @@
+{
+  "check": "CHECK-006",
+  "result": "pass",
+  "recorded_at": "2026-11-14T18:21:22.648957+00:00",
+  "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "procedure": "Current bounded technical/review observations; see explanation and supporting run artifacts. This partial attempt does not represent unexecuted substeps as executed.",
+  "explanation": "Pass for private candidate only: exact installation, one native first-use Gate 1 evaluation and five failure/migration/recovery cases passed; source and workspace preserved. Native evaluation plus independent verification finished within 600 seconds, suite within 2400. One coordinator report-count assertion correction is retained; no native retry.",
+  "supporting_evidence": [
+    "client/case-a-first-use.json",
+    "client/other-cases-summary.json",
+    "client/installation.json",
+    "client/input-before.json",
+    "client/input-after.json"
+  ],
+  "limits": "No remote changes, actual human rights/security review, publication or completed-H03 claim."
+}

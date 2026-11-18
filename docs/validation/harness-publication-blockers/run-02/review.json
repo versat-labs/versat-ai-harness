@@ -1,0 +1,18 @@
+{
+  "approved_digests": {
+    "proposal": "d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb",
+    "design": "67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7",
+    "tasks": "1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7"
+  },
+  "input_snapshots_unchanged_during_checks": true,
+  "private_inventory_integrity_verified": 320,
+  "handoff_links": 7,
+  "private_payloads_exported": false,
+  "full_preparation_suite_exit": 1,
+  "validator_tests": 131,
+  "execution_tests": 48,
+  "strategy_consumer_validation": "pass; 9 Standards and 13 snapshots",
+  "remote_mutations": 0,
+  "native_invocations_this_run": 0,
+  "old_passes_rehashed": false
+}

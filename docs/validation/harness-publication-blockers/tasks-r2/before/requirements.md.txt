@@ -1,0 +1,202 @@
+---
+sdd_version: 3
+change: harness-publication-blockers
+requirements:
+- id: REQ-001
+  statement: Establish an exact, current and privately reviewable baseline for each unresolved publication prerequisite.
+  acceptance:
+  - Given the merged preparation and HPR-PRIVATE-01, reconcile the exact source commit, candidate text/patch identities,
+    remote surfaces and dated observations into a blocker register with scope, evidence revision/access, accountable
+    reviewer and capacity, status, next action and observable exit condition; reuse existing ownership decisions
+    without treating them as specialist clearance.
+  - Given an inaccessible or changed restricted record, retain the last observation as historical and the current
+    result as unverified; obtain scoped access or a review by an authorized custodian rather than copying sensitive
+    evidence into the prospective public repository or treating an opaque reference as proof.
+  - Given a claimed resolution, an authorized reviewer can inspect the underlying evidence and its limits; a scan,
+    owner declaration, old approval or structural pass alone cannot close the blocker. New collection and permission
+    expansion require a bounded reviewed scope and the applicable authority.
+- id: REQ-002
+  statement: Complete the previously inaccessible publication-surface review and verify that the review still covers
+    the exact intended exposure.
+  acceptance:
+  - Given the prior 16-category assessment, refresh all categories and investigate the recorded package listings,
+    cache payloads, external attachment bodies and integration payload gaps. Record actual reviewed content or demonstrated
+    absence with method, date and limits; HTTP errors, empty partial listings and unavailable payloads are not proof
+    of absence.
+  - Given current files, reachable/deleted history, branches/tags, releases/assets, LFS, fixtures, SDD/evaluation
+    records, issues/PRs/comments/attachments, wiki/discussions/Pages, packages and CI logs/artifacts/caches, bind
+    the reviewed inventory to the actual prospective exposure, including new planning and review artifacts; a clean
+    release ZIP or default-branch tree does not clear other surfaces.
+  - Given new refs, artifacts, attachments, permissions or source changes after review, identify affected categories,
+    invalidate their clearance and repeat the affected review. If required access cannot be obtained, retain an
+    open blocker with its owner and stop dependent publication; do not close this work by relabelling the gap as
+    optional.
+- id: REQ-003
+  statement: Resolve the confidentiality and immutable-history conflict through an attributable decision before
+    any exposure.
+  acceptance:
+  - Given an internal-reference indicator or sensitive-history finding, an authorized reviewer determines its actual
+    sensitivity and exposure scope in restricted storage. A non-sensitive finding can close only with review evidence;
+    a sensitive finding requires an approved, feasible treatment and verification, not a blanket acceptance of confidential
+    disclosure.
+  - Given a proposed treatment, compare its effect on the existing-repository direction, original approvals, evidence
+    retention, reachable copies and recovery. Preserve authentic restricted originals and an attributable correspondence
+    for any proposed changed public surface; deleting or moving a current file does not resolve historical exposure.
+  - Given a treatment that fits the approved scope and is specifically authorized, verify the exact affected surfaces
+    after execution before closing the finding. If it requires destructive cleanup, history rewriting, a different
+    destination, lost provenance or a material licensing change, keep publication deferred and reopen the relevant
+    planning gate with the concrete decision; this plan does not select or authorize those operations.
+  - Given an unresolved treatment, rejected review or failed reinspection, leave the associated requirement incomplete
+    and publication deferred. Producing a decision memo or an additional defer assessment alone does not satisfy
+    resolution of the confidentiality blocker.
+- id: REQ-004
+  statement: Refresh rights, third-party and exact candidate applicability evidence without adopting a license.
+  acceptance:
+  - Given the approved Apache R1 wording, seven preserved dependency-license texts and the nine-file adoption patch,
+    review source and distribution changes since their bounded baseline, record actual grants/notices and reviewer
+    capacity, and distinguish unchanged text approval from rights to the final proposed tree; preserve the original
+    approval and package identities.
+  - Given missing rights, incompatible terms, unconfirmed review capacity, changed candidate wording or a patch/preimage
+    mismatch, stop dependent adoption and resolve the specific evidence or renewed review requirement; do not silently
+    rebase the approved candidate, overwrite its approval, invent an effective date or rely on old passes.
+  - Given a consistent reviewed candidate, record its source, patch, preimages, resulting test-tree identity and
+    intended exact version separately from the unchanged canonical root. Any authorized rehearsal uses a disposable
+    private copy, verifies matching package resources and preserves third-party notices; no root license, tag, release
+    or consumer migration is implied.
+- id: REQ-005
+  statement: Prepare and verify contribution controls for GitHub Free through a bounded, separately authorized visibility-before-protection
+    transition.
+  acceptance:
+  - Given the private repository on the selected GitHub Free path, inspect every accessible control and token/secret
+    boundary, preserve actual errors and distinguish configuration from enforcement. Before exposure, prepare the
+    exact protection/readback/test/containment envelope, confirm existing operator capability and a real eligible
+    non-author CODEOWNER arrangement, and complete all feasible private prerequisites. Missing private paid capability
+    is not itself a blocker to the reviewed R2 transition, but unavailable evidence or an unworkable reviewer/operator
+    arrangement blocks visibility.
+  - Given a separately authorized visibility-and-protection operation with all private prerequisites cleared, freeze
+    ordinary human/automated writes and merges, capture the exact SHA/refs and timestamps, make the existing repository
+    public, then immediately apply and read back the approved main rule in the same attended session, within a maximum
+    of 15 minutes. Require PR plus one eligible non-author CODEOWNER approval, stale-review dismissal, the actual
+    structural-validation check/app source, administrator enforcement, no review bypass, and no force push/deletion.
+    Preserve stronger controls. The temporary deviation is specific to this repository and sequence; public exposure
+    during the interval is an explicit residual risk, not equivalent protection.
+  - Given successful protection readback, execute only separately authorized synthetic PR/CI/review operations to
+    observe failing-check and absent-review denial, then passing-check plus eligible real review and permitted mergeability
+    without merging; verify public fork token/secret boundaries. Ordinary integration, release and verified-control
+    claims remain blocked until required observations succeed. On activation/readback failure, timeout, SHA drift
+    or enforcement failure, stop rollout, maintain the coordinated freeze and preserve evidence for an explicit
+    owner containment decision; no automatic visibility reversal, deletion, permission expansion or plan upgrade.
+    Pending public outcomes remain unverified, never passed or optional.
+- id: REQ-006
+  statement: Resolve confidential-reporting prerequisites while preserving audience-specific verification and explicit
+    message authority.
+  acceptance:
+  - Given the intended public Harness reporting route, confirm its actual destination, accountable responder, allowed
+    recipients, intended reporter, access prerequisites and platform/visibility dependencies. Reuse the existing
+    maintainer decision and prior limited H02 evidence without treating another repository or internal email receipt
+    as public Harness verification.
+  - Given a separately authorized route configuration or synthetic test, use a non-sensitive marker and the intended
+    available audience, observe private receipt by authorized recipients and denial to unauthorized viewers, and
+    retain minimal restricted evidence. No message, endpoint activation or permission change follows merely from
+    planning approval or a general diagnostic request.
+  - Given a route that cannot be exercised for the public audience until visibility changes, verify the available
+    private prerequisites and bind the remaining public test to the later authorized operation. Missing/failed receipt
+    or access keeps that claim unverified; retain the existing safe request-for-private-instructions fallback, with
+    no invented endpoint, internal address, SLA or retention period.
+- id: REQ-007
+  statement: Produce an evidence-based pre-publication decision that cannot conceal unresolved blockers or premature
+    public claims.
+  acceptance:
+  - Given the final private preparation, reconcile all exact rights/surface/confidentiality dispositions, reporting
+    prerequisites, candidate/source identities, required checks and actual reviewers. Require the R2 transition
+    envelope, feasible write freeze, real actors and explicit temporary-deviation review. Only the selected protection
+    activation/enforcement and genuinely public-audience checks move after visibility; all other pre-exposure blockers
+    remain blocking. Preparation can be ready for separately authorized transition, not verified-public or completed
+    H03.
+  - Given every post-visibility obligation, retain an accountable owner, trigger, audience, expected evidence, deadline
+    where applicable and failure/containment response. Activation/readback must follow visibility immediately within
+    15 minutes and enforcement must be observed before ordinary integration or release. Separate private preparation
+    acceptance from still-open operational controls, reporting and external-use outcomes; never close them from
+    a handoff or old pass.
+  - Given a later operational request, present exact scoped authority and drift checks for private adoption/integration,
+    the visibility-plus-immediate-protection interval, public enforcement/reporting/external-use verification, then
+    exact tag/release and independent consumer migration. Exact reviewed license/notices and source clearance must
+    precede visibility. Exposure cannot be rolled back by reverting metadata or visibility. Adoption, visibility,
+    release and real consumer-migration execution remain outside this successor; their controls follow-up is mandatory
+    and separately authorized.
+- id: REQ-008
+  statement: Preserve package behavior, usable guides and independent product boundaries during blocker resolution.
+  acceptance:
+  - Given any later authorized change to current guidance or a rehearsal candidate, preserve the canonical root,
+    marketplace and Plugin identities, explicit exact-version installation/update/recovery and matching Skills/Standards/SDD/templates/validators.
+    Retest affected behavior including missing resources/version and failed-update recovery; historical client passes
+    do not establish current or anonymous use.
+  - Given changed community instructions or status, keep English, Portuguese and Spanish semantically aligned, verify
+    local links/anchors and representative affected steps, and preserve a self-contained contribution/reporting
+    route without private links or payloads; unobserved behavior stays labelled pending. Technical planning artifacts
+    remain English only.
+  - Given other products, organization defaults or destination projects, preserve their independent terms, delivery,
+    access and review contracts; do not absorb Platform/Workspace/Discover/CRM, organization rollout, hiring or
+    commercial work, add a mirror/SDK, repin installed consumers or weaken maintained validation suites.
+- id: REQ-009
+  statement: Retain immutable predecessor evidence and validate new resolution claims with fresh, non-circular evidence.
+  acceptance:
+  - Given the archived predecessor and approved candidate, preserve their bytes and genuine review records; record
+    this successor under its own ID. New safe status records identify which dated observations they supersede without
+    rewriting historical approvals, results or source hashes; sensitive evidence stays in the approved restricted
+    system.
+  - Given a new resolution claim, record actual method, inputs, environment/audience, before/after identities, result
+    and reviewer limits; retain failed attempts and rerun affected checks after drift. Missing execution is unverified
+    and not not-applicable; no old result or edited label becomes acceptance of this successor.
+  - Given delivery validation, use meaningful current evidence for every local and retained scenario and the complete
+    required package suites. Keep pre-merge work independent of its own final merge/publication; assess post-publication
+    obligations as handoff completeness only and never as executed public outcomes.
+- id: REQ-010
+  statement: Reopen Gate 1 for R2 and preserve distinct authority for revised planning, implementation and operational
+    publication.
+  acceptance:
+  - Given the request to replan for GitHub Free, revise only Proposal/Requirements to R2 awaiting approval with
+    null approval; preserve exact R1 artifacts and actual progress, mark dependent Design/Tasks reviews superseded
+    and identify the handoff as historical. Run local diagnostics without implementing the revised policy, revising
+    downstream substantive content, changing Standards/license/manifests, triggering remote workflows, changing
+    permissions or publishing.
+  - Given approval of the presented R2 pair, revise only Design and affected check/exception mappings; revise Tasks
+    only after renewed Design approval, and resume implementation only after renewed Tasks approval plus explicit
+    execution authority. Historical approval and implementation authorization do not automatically extend to the
+    changed sequence.
+  - Given the reviewed transition and later operational request, obtain specific authority for adoption, visibility,
+    exact protection settings, synthetic PR/CI/review activity, reporting messages and eventual release as applicable.
+    Planning approval, platform capability, historical owner decisions or admin permission never imply authorization.
+    No subscription purchase, privilege expansion, destructive remedy or consumer migration is authorized by this
+    revision.
+---
+
+# Requirements
+
+## Actors and context
+
+The accountable owner reviews scope and gates; authorized technical, rights and security reviewers inspect the relevant evidence in their actual capacities. An administrator executes only separately authorized operations. The intended external reporter/contributor and current internal consumer have different access boundaries. No contact, credential or sensitive payload is reproduced here.
+
+## Functional requirements
+
+REQ-001 establishes the current blocker/evidence baseline. REQ-002 and REQ-003 resolve inaccessible surfaces and confidentiality/history disposition. REQ-004 refreshes rights and candidate applicability. REQ-005 and REQ-006 establish effective controls and reporting prerequisites. REQ-007 defines the resulting pre-publication decision and separately authorized operational handoff.
+
+## Non-functional requirements
+
+REQ-008 retains usable package/guidance and independent products. REQ-009 preserves attribution and current evidence; REQ-010 enforces the current Gate 1 boundary and later authority. Resolve policy through canonical Standards rather than copying it into a new Skill or distribution mechanism.
+
+## Acceptance scenarios
+
+The frontmatter arrays are normative one-based scenarios. Design must map every local scenario and retained impact obligation to meaningful checks, with justified exclusions only where applicable. Reuse existing mechanical tests; missing live evidence cannot be replaced by file-presence checks. Preserve missing access, uncertain rights, confidential history, denied permissions, route failure, source drift and failed-update recovery cases.
+
+Current authorization permits no acceptance execution beyond bounded planning diagnostics. Later implementation must distinguish actual blocker resolution from an assessment that simply restates defer. Public visibility, anonymous install/update/contribution, public-audience reporting and post-visibility controls remain unverified until the separately authorized operations actually occur. The pre-publication handoff is testable before merge; it is not evidence those future operations succeeded.
+
+## Constraints and assumptions
+
+- Only Proposal and Requirements are created now, in English. Gate 1 acceptance unlocks Design, not implementation, adoption or publication.
+- Existing repository, canonical root, Apache direction, third-party terms, marketplace/Plugin identities and reviewed 0.4.0 candidate intent remain; root and installed consumers are not repinned.
+- Historical approvals and evidence remain byte-identical. No waiver of confidentiality or silent destructive cleanup is permitted; an infeasible treatment requires explicit replanning.
+- The approved restricted evidence system is reused subject to actual access verification. Raw payload review/collection is future bounded work, not a side effect of this planning request.
+- Actual control corrections, channel setup and synthetic messages need concrete scope and authority even after the SDD plan is approved. Public release and effective adoption are outside this successor.
+- Documentation and preparation can be reviewed privately while publication remains deferred. Completion of this successor requires the defined pre-publication exit conditions, not merely another defer report.
+- Other repositories, product licenses, organization defaults and commercial/hiring initiatives remain independent.

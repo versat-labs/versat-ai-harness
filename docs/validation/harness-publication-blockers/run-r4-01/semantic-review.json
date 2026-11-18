@@ -1,0 +1,20 @@
+{
+  "exact_rule_matches_approved_design": true,
+  "specific_owner_entries_preserved": 12,
+  "general_owners": [
+    "@elviszoz",
+    "@evertonspohrversat"
+  ],
+  "current_main_eligible_pair": {
+    "author": "@evertonspohrversat",
+    "reviewer": "@elviszoz",
+    "participation": "already confirmed; no new request"
+  },
+  "rule_scope": "One non-author CODEOWNER approval; same rule covers reciprocal and external-author cases; actual OP-CTRL-01 plus shared-rule mapping still required publicly.",
+  "translations": "EN/PT/ES compared: both named maintainers, one handler receipt, both applicable access, no duplicated replies/notifications or simulated handover, explicit unverified route and safe fallback. Same authority and public/private meaning; no private evidence URL added.",
+  "historical_preservation": 1673,
+  "third_party_texts": "16 exact approved texts include unchanged seven dependency texts",
+  "links_checked": 167,
+  "whitespace": "tracked diff and all changed/new text files checked",
+  "no_independent_product_change": true
+}

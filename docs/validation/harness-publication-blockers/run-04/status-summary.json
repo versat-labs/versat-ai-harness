@@ -1,0 +1,18 @@
+{
+  "record": "HPB-CACHE-REMOVAL-001",
+  "manifest_revision": 3,
+  "private_integrity_sha256": "010f1a9d7b7c3514eb08873d490313339bf9ecd5d2bb29424a68f0e35a919781",
+  "cache_listing": {
+    "method": "paginated repository GET using existing access",
+    "response_pages": 1,
+    "total_count": 0
+  },
+  "disposition": "Owner reports deletion; current absence verified; original contents not inspected or preserved.",
+  "prior_results_preserved": true,
+  "all_tasks_statuses_unchanged": true,
+  "aggregate_blockers_closed": 0,
+  "agent_remote_mutations": 0,
+  "workflow_runs_triggered": 0,
+  "permission_expansions": 0,
+  "publication": false
+}

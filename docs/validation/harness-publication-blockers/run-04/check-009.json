@@ -1,0 +1,13 @@
+{
+  "check": "CHECK-009",
+  "result": "fail",
+  "observed_at": "2026-11-14T22:38:39.441302+00:00",
+  "input_digest_before": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+  "input_digest_after": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+  "explanation": "Complete preparation validation ran: all 131 validator and 48 execution tests passed. Aggregate failed on open acceptance prerequisites. No candidate/client rerun performed; no full CHECK-009 success is claimed.",
+  "scope": "Only actually executed bounded review/local suite. Missing full-scope scenarios, remote operations and native candidate/client reruns remain unverified.",
+  "method": "Actual ./scripts/validate/run.sh with pinned Python; local suite only.",
+  "evidence": [
+    "suite-preparation.json"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "inventory": "executed within authorized boundary",
+  "private_bound_files_verified": 320,
+  "raw_payloads_exported": false,
+  "links_verified": 11,
+  "approved_plan_digests_unchanged": true,
+  "preexisting_tracked_changes": [
+    "README.es.md",
+    "README.md",
+    "README.pt.md",
+    "docs/architecture/overview.md",
+    "docs/user-docs/guides/security-reporting.es.md",
+    "docs/user-docs/guides/security-reporting.md",
+    "docs/user-docs/guides/security-reporting.pt.md"
+  ],
+  "unit_tests_passed": 179,
+  "aggregate_status": "fail on six actual open operational findings; no stale input findings",
+  "results": 8,
+  "native_reruns": 0,
+  "remote_mutations": 0
+}

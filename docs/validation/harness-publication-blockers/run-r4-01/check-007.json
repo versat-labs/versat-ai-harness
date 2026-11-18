@@ -1,0 +1,19 @@
+{
+  "check": "CHECK-007",
+  "result": "pass",
+  "scope": "Approved R4 private preparation; future service outcomes unexecuted",
+  "method": {
+    "kind": "review",
+    "procedure": "Check affected EN/PT/ES meaning, paths/anchors and actual changed usage steps; share CHECK-006 evidence instead of a second walkthrough. Preserve original decisions, specific owners, concrete legal text and independent products. No private payload/URL, self-approval, two-approval requirement or unobserved public/notification claim may enter public guides.",
+    "reason": "Semantic audience and translation review complements mechanical link and identity checks."
+  },
+  "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "observations": "Affected English/Portuguese/Spanish guides and current handoff reviewed for equivalent actual state, non-author review and shared reporting semantics; links/anchors and changed/new text whitespace checked. Frozen history/texts preserved; no new private Strategy URL/credential indicator or independent product change.",
+  "evidence": [
+    "docs/validation/harness-publication-blockers/run-r4-01/semantic-review.json",
+    "docs/validation/harness-publication-blockers/run-r4-01/links.json",
+    "docs/validation/harness-publication-blockers/run-r4-01/delta-indicators.json"
+  ],
+  "suite_candidate_input": null
+}

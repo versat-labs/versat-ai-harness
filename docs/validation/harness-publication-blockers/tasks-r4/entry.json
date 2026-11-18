@@ -1,0 +1,15 @@
+{
+  "original_sha256": {
+    "proposal": "09a4322a22139b3add2d597a785f4a540d8e0c6e20d7ab2c037993605d0fcd8d",
+    "requirements": "c6ffcc2f90ed0c4494e3aa48f62317509734e7a1d742d317021007d7d0091566",
+    "design": "0249005ec60275ac74b26d002db59039793f2dac11df34644c8484d39960ddcf",
+    "tasks": "61a78ac92f200a359ce0487fa1c49ef8107082c05d5fe72d99c5d55b806fa647"
+  },
+  "digests": {
+    "proposal": "6c25ef18e914a1a72186f74bf9895dbfc2bae3d4f8ba8cd3afb8401288031a8b",
+    "design": "e50bbb215cb77a601aff92acf1db70fa3ae50e32dd518066b3960c3ca9522134",
+    "tasks": "5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114"
+  },
+  "date": "2026-11-17",
+  "quote": "Entendi. Aprovo o Design R4. Prepare somente as Tasks R4, usando \u201cpreserva\u00e7\u00e3o das evid\u00eancias\u201d no lugar de \u201ccust\u00f3dia\u201d, sem implementar, alterar o GitHub ou publicar."
+}

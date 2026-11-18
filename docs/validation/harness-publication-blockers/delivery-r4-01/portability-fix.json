@@ -1,0 +1,5 @@
+{
+  "observation": "Initial transfer matched every file but its input digest differed because a source-only empty validators/sdd/__pycache__ directory was hashed.",
+  "treatment": "Preserved that empty generated directory outside the distribution; no file or history deleted, no validator change.",
+  "fresh_validation": "Fresh portable-stage local review/input snapshots and replay archive guard required; earlier attempt remains recorded privately."
+}

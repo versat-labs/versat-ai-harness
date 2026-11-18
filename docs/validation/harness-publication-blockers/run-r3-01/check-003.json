@@ -1,0 +1,18 @@
+{
+  "check": "CHECK-003",
+  "result": "unverified",
+  "recorded_at": "2026-11-16T18:16:18.216541+00:00",
+  "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "method": "Partial approved R3 private verification: actual local inspection, restricted hashes, bounded metadata and complete maintained suites; missing human/client/service outcomes remain explicit. Within-boundary evidence rechecks follow the before snapshot.",
+  "explanation": "Sixteen approved candidate texts, nine preimages and unchanged patch verified; disposable application and nine postimages match, wrong preimage rejected. D1/D2 preserved for original scope. New/changed rights delta and final reviewer/custody acceptance remain incomplete.",
+  "supporting_evidence": [
+    "within-boundary/candidate-integrity.json",
+    "patch-check.json",
+    "candidate-postimages.json",
+    "patch-mismatch.json",
+    "within-boundary/rights-delta.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

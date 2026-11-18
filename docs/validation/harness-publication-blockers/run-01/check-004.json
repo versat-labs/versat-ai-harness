@@ -1,0 +1,13 @@
+{
+  "check": "CHECK-004",
+  "result": "unverified",
+  "recorded_at": "2026-11-14T18:21:22.648957+00:00",
+  "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "procedure": "Current bounded technical/review observations; see explanation and supporting run artifacts. This partial attempt does not represent unexecuted substeps as executed.",
+  "explanation": "Unverified effective enforcement: private main is unprotected; protection/ruleset reads return capability 403. No configuration or synthetic PR test executed. Concrete operation envelope prepared.",
+  "supporting_evidence": [
+    "controls-reporting-observations.json"
+  ],
+  "limits": "No remote changes, actual human rights/security review, publication or completed-H03 claim."
+}

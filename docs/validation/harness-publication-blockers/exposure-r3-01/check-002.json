@@ -1,0 +1,11 @@
+{
+  "check": "CHECK-002",
+  "result": "unverified",
+  "method": "Actual scoped local review, integrity verification and maintained preparation suite, with missing evidence explicitly retained.",
+  "explanation": "Focused source delta (236 files, with 217 evidence records) was inventoried and technically triaged; 16 surface categories reconciled against dated evidence. No credential-pattern, new email/internal link or private strategy payload identified in the new delta. Environment-path metadata awaits owner classification R3-E2. Complete final package/integration and post-CI surfaces remain unverified; no blanket confidentiality clearance.",
+  "input_digest_before": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+  "input_digest_after": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+  "restricted_record": "HPB-EXPOSURE-RIGHTS-R3-01",
+  "participation_record": "HPB-PARTICIPATION-R3-01",
+  "scope": "Partial; no full scenario acceptance, GitHub mutation, workflow or publication."
+}

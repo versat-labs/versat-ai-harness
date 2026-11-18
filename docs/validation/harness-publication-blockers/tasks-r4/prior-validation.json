@@ -1,0 +1,238 @@
+{
+  "plan_digest": "5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/exposure-r3-01/check-001.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping",
+      "input_digest_before": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "input_digest_after": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review, 179 maintained tests; no new remote observations or workflow/native invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/exposure-r3-01/check-002.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping",
+      "input_digest_before": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "input_digest_after": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review, 179 maintained tests; no new remote observations or workflow/native invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/exposure-r3-01/check-003.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping",
+      "input_digest_before": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "input_digest_after": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review, 179 maintained tests; no new remote observations or workflow/native invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/run-r3-01/check-004.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot",
+      "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access GETs; no remote workflow or native client invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/run-r3-01/check-005.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot",
+      "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access GETs; no remote workflow or native client invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-006",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/run-r3-01/check-006.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot",
+      "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access GETs; no remote workflow or native client invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-007",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/run-r3-01/check-007.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot",
+      "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access GETs; no remote workflow or native client invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-008",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/run-r3-01/check-008.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot",
+      "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access GETs; no remote workflow or native client invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-009",
+      "result": "fail",
+      "evidence": "docs/validation/harness-publication-blockers/exposure-r3-01/check-009.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping",
+      "input_digest_before": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "input_digest_after": "c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review, 179 maintained tests; no new remote observations or workflow/native invocation",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-010",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/run-r3-01/check-010.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot",
+      "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+      "context": {
+        "execution": "local",
+        "environment": "Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access GETs; no remote workflow or native client invocation",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "HPB-001 evidence-access"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Original inventory and predecessor evidence remain intact locally. Scoped owner decisions and video review are now recorded; durable remote custody and final-scope reviewer access/acceptance remain unverified. The exact R3 exposure/provenance packet and actual owner decisions are now preserved locally under explicit authority and verified; no remote custody is implied. Remaining exit: Exact immutable revision and reviewer-readable originals are confirmed; local readability/admin access alone is insufficient.",
+      "tasks": [
+        "TASK-001",
+        "TASK-002",
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-001"
+      ]
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "HPB-002 surface-review"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Original inventory preserved. Owner supplied an empty repository Packages view and reviewed both identified videos. Owner reports removing the two caches; a successful paginated GET now returns zero entries. Cache contents were never inspected. Complete package coverage, final source/ref reconciliation and remaining category acceptance are still pending. Remaining exit: All 16 current exposure categories and formerly inaccessible bodies have attributable complete review or demonstrated absence.",
+      "tasks": [
+        "TASK-002",
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "HPB-003 confidentiality"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Prior VAL classifications remain valid. R3-E2 now classifies environment paths in the 61 reviewed technical files as non-confidential historical metadata. The reviewed local delta has no additional identified sensitivity decision pending; complete final exposure/package/integration reconciliation and actual acceptance remain open. Remaining exit: Every actual finding has attributable non-sensitive disposition or verified authorized treatment; destructive/history/destination changes reopen planning.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ]
+    },
+    {
+      "id": "FIND-004",
+      "source": {
+        "plan": "HPB-004 rights"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "D1/D2 and R3-E1 now support the original and exactly reviewed new first-party source scopes. R3-E1 binds the 1,874-file snapshot/247-file delta; 16 legal texts, seven notices and nine preimages remain unchanged. Whole-distribution/custody/final-current-scope reconciliation remains incomplete. Remaining exit: Current rights, candidate applicability and review capacity support the exact proposed scope; no approval transfers to unseen content.",
+      "tasks": [
+        "TASK-004"
+      ],
+      "checks": [
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-005",
+      "source": {
+        "plan": "HPB-005 free-transition-prerequisites; historical private-controls finding retained under R2"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "R3 general fallback applied locally, 12 specific entries preserved. Main still uses Elvis-only fallback. Owner confirms Everton as future PR author and Elvis as reviewer, with both available for future tests. Operator/session, coordinated writer freeze and final private clearance remain outstanding. Remaining exit: Exact local ownership/guidance and actual private inputs verified; public enforcement remains separately mandatory and unverified.",
+      "tasks": [
+        "TASK-005"
+      ],
+      "checks": [
+        "CHECK-004"
+      ]
+    },
+    {
+      "id": "FIND-006",
+      "source": {
+        "plan": "HPB-006 reporting"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Shared triage and future test participation confirmed by the owner for both maintainers; existing admin roles observed separately. Actual report access/notification/receipt, handler and acknowledged handover remain unverified. Remaining exit: Feasible per-person private prerequisites evidenced and public activation/access/receipt/handover/exclusion protocol assigned; no role-to-receipt inference.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-005"
+      ]
+    }
+  ]
+}

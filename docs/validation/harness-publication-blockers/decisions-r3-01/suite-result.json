@@ -1,0 +1,9 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=<pinned-validation-python> ./scripts/validate/run.sh",
+  "exit_code": 1,
+  "validator_tests_passed": 131,
+  "execution_tests_passed": 48,
+  "scope": "Decision bookkeeping; no GitHub workflow or candidate/native-client execution",
+  "aggregate": "Incomplete acceptance and stale earlier check inputs; no approval/schema failure",
+  "diagnostic_copy": "Local Harness root normalized in public-safe outputs; no original record altered"
+}

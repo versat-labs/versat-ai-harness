@@ -1,0 +1,28 @@
+{
+  "changed_requirement_ids": [
+    "REQ-005",
+    "REQ-006",
+    "REQ-010"
+  ],
+  "stable_requirements": 10,
+  "stable_local_scenarios": 31,
+  "retained_obligations": 40,
+  "impact_delta": "One explicit supersession of R2 general ownership/triage baseline; original impact items unchanged.",
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "specs/changes/harness-publication-blockers/design.md",
+    "specs/changes/harness-publication-blockers/proposal.md",
+    "specs/changes/harness-publication-blockers/requirements.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_existing_files": 1736,
+  "r2_validation_ledger_exactly_preserved": true,
+  "task_statuses_preserved": true,
+  "frozen_packets_unchanged": true,
+  "local_links_checked": 72,
+  "broken_links": [],
+  "git_diff_check": "pass",
+  "github_mutations": 0,
+  "publication": false,
+  "new_sensitive_collection": false
+}

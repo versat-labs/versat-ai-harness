@@ -1,0 +1,46 @@
+{
+  "input_digest": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+  "approved_stage_digests": {
+    "proposal": "d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb",
+    "design": "67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7",
+    "tasks": "1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7"
+  },
+  "selected": {
+    "command": [
+      "<pinned-python>",
+      "validators/sdd/validate.py",
+      "--root",
+      ".",
+      "--change",
+      "harness-publication-blockers",
+      "--phase",
+      "implementation",
+      "--json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\n  \"status\": \"fail\",\n  \"phase\": \"implementation\",\n  \"checked\": [\n    \"harness-publication-blockers\"\n  ],\n  \"findings\": [\n    {\n      \"code\": \"VALIDATION_FAILED\",\n      \"message\": \"CHECK-009 has a recorded failure\",\n      \"path\": \"<preparation-root>/specs/changes/harness-publication-blockers/tasks.md\",\n      \"severity\": \"error\"\n    },\n    {\n      \"code\": \"ACCEPTANCE_GAP\",\n      \"message\": \"FIND-001: Original inventory and predecessor evidence remain intact locally. Scoped owner decisions and video review are now recorded; durable remote custody and final-scope reviewer access/acceptance remain unverified.\",\n      \"path\": \"<preparation-root>/specs/changes/harness-publication-blockers/tasks.md\",\n      \"severity\": \"error\"\n    },\n    {\n      \"code\": \"ACCEPTANCE_GAP\",\n      \"message\": \"FIND-002: Original inventory preserved. Owner supplied an empty repository Packages view and reviewed both identified videos. Owner reports removing the two caches; a successful paginated GET now returns zero entries. Cache contents were never inspected. Complete package coverage, final source/ref reconciliation and remaining category acceptance are still pending.\",\n      \"path\": \"<preparation-root>/specs/changes/harness-publication-blockers/tasks.md\",\n      \"severity\": \"error\"\n    },\n    {\n      \"code\": \"ACCEPTANCE_GAP\",\n      \"message\": \"FIND-003: All four owner-classification questions from the seven deduplicated values have attributable decisions; three technical fixture/false-positive groups remain documented. Final exposure reconciliation and complete requirement assessment remain pending; no disclosure waiver or broad rights clearance inferred.\",\n      \"path\": \"<preparation-root>/specs/changes/harness-publication-blockers/tasks.md\",\n      \"severity\": \"error\"\n    },\n    {\n      \"code\": \"ACCEPTANCE_GAP\",\n      \"message\": \"FIND-004: Sixteen approved texts, including seven dependency texts, and nine preimages match; current final-scope rights review remains open.\",\n      \"path\": \"<preparation-root>/specs/changes/harness-publication-blockers/tasks.md\",\n      \"severity\": \"error\"\n    },\n    {\n      \"code\": \"ACCEPTANCE_GAP\",\n      \"message\": \"FIND-005: Current main is unprotected; protection and ruleset reads return capability HTTP 403.\",\n      \"path\": \"<preparation-root>/specs/changes/harness-publication-blockers/tasks.md\",\n      \"severity\": \"error\"\n    },\n    {\n      \"code\": \"ACCEPTANCE_GAP\",\n      \"message\": \"FIND-006: Private repository PVR read returns 404; actual public receipt/access remains unverified.\",\n      \"path\": \"<preparation-root>/specs/changes/harness-publication-blockers/tasks.md\",\n      \"severity\": \"error\"\n    }\n  ],\n  \"warnings\": [],\n  \"metrics\": {\n    \"harness-publication-blockers\": {\n      \"local_scenarios\": 31,\n      \"regression_obligations\": 40,\n      \"assessed\": 0,\n      \"results\": 2,\n      \"open_findings\": 6,\n      \"stale_results\": 0,\n      \"requirements\": {\n        \"REQ-001\": \"unverified\",\n        \"REQ-002\": \"unverified\",\n        \"REQ-003\": \"unverified\",\n        \"REQ-004\": \"unverified\",\n        \"REQ-005\": \"unverified\",\n        \"REQ-006\": \"unverified\",\n        \"REQ-007\": \"unverified\",\n        \"REQ-008\": \"unverified\",\n        \"REQ-009\": \"unverified\",\n        \"REQ-010\": \"unverified\"\n      }\n    }\n  },\n  \"live_archives\": [],\n  \"archive_required\": [],\n  \"scope\": \"Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.\"\n}\n",
+    "stderr": ""
+  },
+  "unit_tests_passed": 179,
+  "aggregate_exit": 1,
+  "open_acceptance_findings": 6,
+  "current_results": 2,
+  "prior_results_preserved_not_rehashed": true,
+  "local_links_checked": 40,
+  "private_values_exported": false,
+  "diff_check": {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "native_reruns": 0,
+  "github_workflows_executed": 0,
+  "permission_expansions": 0,
+  "agent_remote_writes": 0,
+  "publication": false
+}

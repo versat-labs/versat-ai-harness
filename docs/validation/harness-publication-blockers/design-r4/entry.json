@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-17",
+  "user_quote": "Sim, aprovo a Proposal e os Requirements R4. Ajuste somente o Design para refletir a simplifica\u00e7\u00e3o, sem implementar, alterar o GitHub ou publicar.",
+  "approved_proposal_digest": "6c25ef18e914a1a72186f74bf9895dbfc2bae3d4f8ba8cd3afb8401288031a8b",
+  "original_sha256": {
+    "proposal": "c2e5cadbdc65c458825fc7aaba6cb0696ed3552154e8aa50c4001c4302f07b81",
+    "requirements": "c6ffcc2f90ed0c4494e3aa48f62317509734e7a1d742d317021007d7d0091566",
+    "design": "4e953b53e70679b15225321dedd0dd193d3107e29ab2a13fe12a30eb66aa7708",
+    "tasks": "61a78ac92f200a359ce0487fa1c49ef8107082c05d5fe72d99c5d55b806fa647"
+  },
+  "provider_anchors": {
+    "sdd/process.md": "488b63b3ad26e4779db69d4b6ea9bd28b629936f58ccb42493cdaa99c940ccdb",
+    "sdd/metadata.md": "788c3a0ae8ac265a66546d3dddbf35e2c0c81bfa932940f3e5eae34990a0a064",
+    "sdd/workflows/new-change.md": "3fed9300f21ecc17d799b188179efb5a149a0afec4a91098f613a007c40f7cd4",
+    "standards/index.yaml": "0a70db972dc3ba14cecf27a1617e404f63ab32ec1222ae8632c30698ecbcccee",
+    "validators/sdd/validate.py": "94f152e14dbe1dbb60fcd3d0ef40ba896fd9a71234d28d44ac8ba1d172d329bb"
+  },
+  "rule_body_sha256": "f91ccee7709cbfe4be968e51bcfe96feba3d3f4691395eac1d6331282e671307",
+  "scope": "Proposal approval bookkeeping and Design R4 only; no Tasks or implementation changes"
+}

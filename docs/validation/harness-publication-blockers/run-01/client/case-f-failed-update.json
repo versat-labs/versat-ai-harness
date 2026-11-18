@@ -1,0 +1,30 @@
+{
+  "result": "pass",
+  "failed_update": {
+    "argv": [
+      "/Applications/Codex.app/Contents/Resources/codex",
+      "plugin",
+      "add",
+      "versat-ai-harness@versat-internal",
+      "--json"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Error: plugin source path is not a directory: <existing-personal-test-catalog>/nonexistent-update-source\n\nCaused by:\n    plugin source path is not a directory: <existing-personal-test-catalog>/nonexistent-update-source\n",
+    "elapsed_seconds": 0.022036075592041016
+  },
+  "cache_retained": true,
+  "consumer_config_retained": true,
+  "previous_compatible_pair_reverified": {
+    "argv": [
+      "bash",
+      "scripts/validate/run.sh"
+    ],
+    "exit": 0,
+    "stdout": "{\"result\": \"pass\", \"version\": \"0.4.0\", \"commit\": \"293007892bab864e1f92960adb9747199078dd0f\", \"standards\": [\"core/agent-artifacts.md\", \"core/contribution.md\", \"core/documentation.md\", \"core/git.md\", \"core/language.md\", \"core/licensing-publication.md\", \"core/observability.md\", \"core/security.md\", \"core/testing.md\", \"domains/finance.md\", \"profiles/software.md\", \"technologies/python.md\"]}\n{\"result\": \"pass\", \"scope\": \"full\", \"report\": \"<private-rehearsal>/migration-consumer/.versat/validation-runs/7d1f717c6f0b48d2aea470d7bed9d9df/result.json\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 0.32002902030944824
+  },
+  "elapsed_seconds": 0.4463469982147217,
+  "scope": "Failed personal update; retained verified candidate 0.4.0 provider/config, not arbitrary downgrade to released 0.3.0."
+}

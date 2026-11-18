@@ -1,0 +1,13 @@
+{
+  "check": "CHECK-004",
+  "result": "unverified",
+  "observed_at": "2026-11-14T18:40:38.330688+00:00",
+  "input_digest_before": "5a68467166a20d9c4057713632fe9548bb08492cd4d9b71965b011663886e027",
+  "input_digest_after": "5a68467166a20d9c4057713632fe9548bb08492cd4d9b71965b011663886e027",
+  "method": "Bounded current review of executed restricted inventory and safe handoff; only CHECK-009 additionally runs the full package command. Unexecuted substeps are explicitly unverified.",
+  "explanation": "Current inventory observed private-main control capability errors. No mutation or real allowed/denied PR enforcement test; protection is unresolved.",
+  "evidence": [
+    "inventory-summary.json"
+  ],
+  "scope": "No rights/security approval, remote delivery, enforcement, report receipt, publication or complete successor acceptance inferred."
+}

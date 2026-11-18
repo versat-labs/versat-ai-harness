@@ -1,0 +1,23 @@
+{
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "specs/changes/harness-publication-blockers/design.md",
+    "specs/changes/harness-publication-blockers/proposal.md"
+  ],
+  "unchanged_existing_files": 1759,
+  "requirements_tasks_bytes_unchanged": true,
+  "proposal_approved_digest_unchanged": true,
+  "required_checks": 10,
+  "local_positions": 31,
+  "retained_obligations": 40,
+  "required_input_output_scopes_unchanged": true,
+  "exact_protection_body_unchanged": true,
+  "prior_frozen_evidence_preserved": true,
+  "ci_prerequisite_source_verified": true,
+  "links_checked": 57,
+  "broken_links": [],
+  "new_adr_required": false,
+  "github_operations": 0,
+  "implementation": false,
+  "publication": false
+}

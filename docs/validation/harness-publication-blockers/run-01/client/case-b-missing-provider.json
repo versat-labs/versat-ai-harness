@@ -1,0 +1,15 @@
+{
+  "result": "pass",
+  "observed": {
+    "argv": [
+      "bash",
+      "scripts/validate/run.sh"
+    ],
+    "exit": 2,
+    "stdout": "",
+    "stderr": "/Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '<private-rehearsal>/provider-does-not-exist/scripts/testing/provider.py': [Errno 2] No such file or directory\n",
+    "elapsed_seconds": 0.02183222770690918
+  },
+  "elapsed_seconds": 0.02193617820739746,
+  "scope": "Actual maintained consumer wrapper; absent local provider, not remote authorization."
+}

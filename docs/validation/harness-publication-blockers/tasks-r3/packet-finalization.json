@@ -1,0 +1,5 @@
+{
+  "initial_attempt": "The coordinator link check ran before its referenced local-review.json output was written and stopped on that one pending output link.",
+  "correction": "Check source links normally, write the review output, then verify its existence before hashing the final packet. No product, validator, test or substantive plan change was needed.",
+  "scope": "Packet assembly only; separate from the successful maintained tests and pending Gate 3 diagnostic."
+}

@@ -1,0 +1,1402 @@
+---
+sdd_version: 3
+change: harness-publication-blockers
+requirements:
+- REQ-001
+- REQ-002
+- REQ-003
+- REQ-004
+- REQ-005
+- REQ-006
+- REQ-007
+- REQ-008
+- REQ-009
+- REQ-010
+adrs:
+- ADR-0011
+- ADR-0016
+validation:
+- id: CHECK-001
+  description: Evidence identity and ordinary independent custody acceptance
+  requirements:
+  - REQ-001
+  - REQ-004
+  - REQ-007
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: Verify the exact remotely preserved restricted revision, technical integrity result and attributable
+      non-author approval together; reconcile baseline/candidate identities. Accept custody without an extra comment,
+      custom form or reviewer rerun. Test the missing record, changed digest and mismatched approval boundaries;
+      never claim commands or specialist work from an empty review body.
+    reason: The actual approval and exact retrievable evidence support custody; hashes alone or admin membership
+      do not establish it.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-002
+  description: Final exposure delta and existing classifications
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: Reconcile all 16 exposure categories using existing evidence plus changed, mutable or unresolved
+      scope. Refresh refs/service listings after final relevant CI; inspect only content needing review. Preserve
+      owner classifications and cache deletion. Restrict package/integration collection to this repository exposure
+      or writers. An unresolved plausible exposure, failed relevant read or real secret blocks; unrelated private
+      services and unchanged reviewed payloads do not create repeat audits.
+    reason: Exposure and sensitivity need bounded actual observations and semantic review, not merely a clean source
+      scan.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-003
+  description: Rights reuse and exact candidate applicability
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-004
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: Reuse D1/D2 and R3-E1 for unchanged first-party scope and prior approved Apache wording; compare
+      substantive distribution/source delta, all 16 candidate texts, seven dependency texts and nine patch preimages.
+      Review only new rights/term conflicts; preserve external notices. Verify patch applicability in a disposable
+      root when required, never silently rebase approval or adopt the license in preparation.
+    reason: Existing attributable rights evidence is reused; genuinely missing grants or legal uncertainty still
+      need the appropriate specific reviewer.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-004
+  description: Prepared transition and minimal actual control verification
+  requirements:
+  - REQ-005
+  - REQ-007
+  - REQ-008
+  required: true
+  method:
+    kind: review
+    procedure: Verify existing shared-owner mapping and current base eligibility, already confirmed participants,
+      safe fork workflow, final operator/freeze and exact protection body. Review the retained 15-minute transition
+      and failure stops. Use OP-CTRL-01 for one representative public PR sequence and OP-CTRL-02 configuration mapping,
+      not two additional owner permutations. Private readiness is separate from unexecuted public enforcement.
+    reason: Local mapping and planned operation cannot prove service enforcement; one real sequence plus applicable
+      configuration covers the shared owner rule without redundant PRs.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-005
+  description: Shared access and single confidential-report receipt
+  requirements:
+  - REQ-006
+  - REQ-007
+  required: true
+  method:
+    kind: review
+    procedure: Reuse both confirmed triage maintainers. Verify applicable access for both, one accountable handler,
+      the intended route and safe fallback. Plan one authorized non-sensitive public marker with intended-reporter
+      submission, actual handler receipt and unauthorized-viewer exclusion. Do not require duplicate notifications/replies
+      or a simulated handover; a real access or receipt failure still blocks the verified-route claim.
+    reason: Access configuration supports recipient eligibility but does not prove receipt; one actual receipt and
+      exclusion observation supplies the missing operational evidence.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-006
+  description: Affected package/client behavior with bounded evidence reuse
+  requirements:
+  - REQ-004
+  - REQ-007
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: manual
+    procedure: Compare exact inputs/runtime/behavior to existing private rehearsal. Reuse unchanged outcomes with
+      an applicability record; rerun only affected installation, resource, first-use, version, migration or recovery
+      cases under the retained bounded protocol. A changed candidate or runtime is not covered by old hashes; no
+      mandatory fresh full client cycle follows solely from plan or receipt bookkeeping.
+    reason: Native behavior needs real applicable evidence; documentation-only changes do not justify repeating
+      an unrelated client exercise.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-007
+  description: Coherent public guides and preserved boundaries
+  requirements:
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: Check affected EN/PT/ES meaning, paths/anchors and actual changed usage steps; share CHECK-006 evidence
+      instead of a second walkthrough. Preserve original decisions, specific owners, concrete legal text and independent
+      products. No private payload/URL, self-approval, two-approval requirement or unobserved public/notification
+      claim may enter public guides.
+    reason: Semantic audience and translation review complements mechanical link and identity checks.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-008
+  description: Three-group readiness and distinct opening follow-up
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: Use one concise decision record for final candidate, final exposure and authorized protected opening.
+      Reuse approved custody/owner decisions; keep only specific missing results and responsible actors. Walk failure/timeout/drift
+      boundaries. Public controls, one report and anonymous access/basic use remain opening follow-up; versioned
+      release and consumer migration remain later independent work.
+    reason: A readiness decision must reconcile real gaps and operation authority without multiplying forms or reporting
+      pending public outcomes as executed.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-009
+  description: Required final suite without duplicate identical-root runs
+  requirements:
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: automated
+    procedure: Run PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh
+      once per distinct final tested package root in the verified pinned environment. Use the final disposable candidate
+      for adoption rehearsal; repeat for another root only if material test-affecting differences make that result
+      inapplicable. Preserve full Plugin/SDD results, stdout/stderr, exit and nonzero counts for both maintained
+      suites. No skip/targeted substitute; later delivery uses the trusted-baseline archive guard.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-010
+  description: R4 approval, replacement coverage and truthful evidence
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-008
+  - REQ-009
+  - REQ-010
+  required: true
+  method:
+    kind: review
+    procedure: Verify the approved R4 paired digest, current Design chain and unchanged Tasks until separately approved
+      revision. Preserve all 31 local and 40 retained mappings. Check explicit R4 custody, delta-review, representative-control,
+      single-receipt and evidence-reuse replacements; retain R2 timing and R3 ownership. Consolidate evidence links
+      without invented passes or transferred approvals; no Tasks implementation ledger is populated during Design.
+    reason: Structural coverage does not authenticate approval, operation authority or the actual result; semantic
+      review prevents an apparent simplification from concealing a real gap.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+coverage:
+- scenario:
+    requirement: REQ-001
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-001
+- scenario:
+    requirement: REQ-001
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-001
+- scenario:
+    requirement: REQ-001
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-001
+  - CHECK-010
+- scenario:
+    requirement: REQ-002
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-002
+- scenario:
+    requirement: REQ-002
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-007
+- scenario:
+    requirement: REQ-002
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-008
+- scenario:
+    requirement: REQ-003
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-002
+- scenario:
+    requirement: REQ-003
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-010
+- scenario:
+    requirement: REQ-003
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-008
+- scenario:
+    requirement: REQ-003
+    scenario: 4
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-008
+- scenario:
+    requirement: REQ-004
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-003
+- scenario:
+    requirement: REQ-004
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-003
+- scenario:
+    requirement: REQ-004
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-003
+  - CHECK-006
+- scenario:
+    requirement: REQ-005
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-005
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-005
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-006
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-005
+  - CHECK-010
+- scenario:
+    requirement: REQ-006
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-005
+  - CHECK-010
+- scenario:
+    requirement: REQ-006
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-005
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-007
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-008
+- scenario:
+    requirement: REQ-007
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-005
+  - CHECK-008
+- scenario:
+    requirement: REQ-007
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-008
+- scenario:
+    requirement: REQ-008
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-006
+  - CHECK-009
+- scenario:
+    requirement: REQ-008
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-007
+- scenario:
+    requirement: REQ-008
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-007
+  - CHECK-010
+- scenario:
+    requirement: REQ-009
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-007
+  - CHECK-010
+- scenario:
+    requirement: REQ-009
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-001
+  - CHECK-010
+- scenario:
+    requirement: REQ-009
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-009
+  - CHECK-010
+- scenario:
+    requirement: REQ-010
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-010
+- scenario:
+    requirement: REQ-010
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-010
+- scenario:
+    requirement: REQ-010
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-010
+regression:
+- obligation:
+    impact: 1
+    scenario: 1
+  checks:
+  - CHECK-003
+  - CHECK-007
+  rationale: Retain approved wording, third-party scope and actual text-review capacity; new work resolves current
+    applicability rather than recreating the delivered candidate. Assess the retained outcome against current inputs;
+    preserve historical execution as provenance rather than replaying its approval event. R4 permits shared evidence
+    and applicability review for unchanged inputs; preserve the obligation without requiring an additional human
+    form or repeating a historical approval.
+- obligation:
+    impact: 1
+    scenario: 2
+  checks:
+  - CHECK-003
+  - CHECK-007
+  rationale: Retain approved wording, third-party scope and actual text-review capacity; new work resolves current
+    applicability rather than recreating the delivered candidate. Assess the retained outcome against current inputs;
+    preserve historical execution as provenance rather than replaying its approval event. R4 permits shared evidence
+    and applicability review for unchanged inputs; preserve the obligation without requiring an additional human
+    form or repeating a historical approval.
+- obligation:
+    impact: 1
+    scenario: 3
+  checks:
+  - CHECK-003
+  - CHECK-010
+  rationale: Retain approved wording, third-party scope and actual text-review capacity; new work resolves current
+    applicability rather than recreating the delivered candidate. Assess the retained outcome against current inputs;
+    preserve historical execution as provenance rather than replaying its approval event. R4 permits shared evidence
+    and applicability review for unchanged inputs; preserve the obligation without requiring an additional human
+    form or repeating a historical approval.
+- obligation:
+    impact: 2
+    scenario: 1
+  checks:
+  - CHECK-001
+  - CHECK-003
+  rationale: Extend the bounded rights assessment to resolution of remaining and changed evidence for the final
+    candidate. Assess the retained outcome against current inputs; preserve historical execution as provenance rather
+    than replaying its approval event. R4 permits shared evidence and applicability review for unchanged inputs;
+    preserve the obligation without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 2
+    scenario: 2
+  checks:
+  - CHECK-001
+  - CHECK-003
+  rationale: Extend the bounded rights assessment to resolution of remaining and changed evidence for the final
+    candidate. Assess the retained outcome against current inputs; preserve historical execution as provenance rather
+    than replaying its approval event. R4 permits shared evidence and applicability review for unchanged inputs;
+    preserve the obligation without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 2
+    scenario: 3
+  checks:
+  - CHECK-001
+  - CHECK-003
+  rationale: Extend the bounded rights assessment to resolution of remaining and changed evidence for the final
+    candidate. Assess the retained outcome against current inputs; preserve historical execution as provenance rather
+    than replaying its approval event. R4 permits shared evidence and applicability review for unchanged inputs;
+    preserve the obligation without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 3
+    scenario: 1
+  checks:
+  - CHECK-002
+  rationale: Complete inaccessible-surface and confidentiality disposition work, retaining the full exposure boundary
+    and explicit remediation gates. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 3
+    scenario: 2
+  checks:
+  - CHECK-002
+  rationale: Complete inaccessible-surface and confidentiality disposition work, retaining the full exposure boundary
+    and explicit remediation gates. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 3
+    scenario: 3
+  checks:
+  - CHECK-002
+  - CHECK-008
+  rationale: Complete inaccessible-surface and confidentiality disposition work, retaining the full exposure boundary
+    and explicit remediation gates. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 4
+    scenario: 1
+  checks:
+  - CHECK-003
+  - CHECK-006
+  rationale: Retain canonical package identity, exact references, migration and recovery; no new release or root
+    adoption is selected here. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 4
+    scenario: 2
+  checks:
+  - CHECK-003
+  - CHECK-006
+  rationale: Retain canonical package identity, exact references, migration and recovery; no new release or root
+    adoption is selected here. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 4
+    scenario: 3
+  checks:
+  - CHECK-006
+  rationale: Retain canonical package identity, exact references, migration and recovery; no new release or root
+    adoption is selected here. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 5
+    scenario: 1
+  checks:
+  - CHECK-006
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event. R4 permits shared
+    evidence and applicability review for unchanged inputs; preserve the obligation without requiring an additional
+    human form or repeating a historical approval.
+- obligation:
+    impact: 5
+    scenario: 2
+  checks:
+  - CHECK-006
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event. R4 permits shared
+    evidence and applicability review for unchanged inputs; preserve the obligation without requiring an additional
+    human form or repeating a historical approval.
+- obligation:
+    impact: 5
+    scenario: 3
+  checks:
+  - CHECK-006
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event. R4 permits shared
+    evidence and applicability review for unchanged inputs; preserve the obligation without requiring an additional
+    human form or repeating a historical approval.
+- obligation:
+    impact: 5
+    scenario: 4
+  checks:
+  - CHECK-008
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event. R4 permits shared
+    evidence and applicability review for unchanged inputs; preserve the obligation without requiring an additional
+    human form or repeating a historical approval.
+- obligation:
+    impact: 6
+    scenario: 1
+  checks:
+  - CHECK-004
+  - CHECK-007
+  rationale: Resolve effective control gaps while retaining self-contained contributions, provenance and operation-specific
+    authorization. Assess the retained outcome against current inputs; preserve historical execution as provenance
+    rather than replaying its approval event. Under approved R2, preserve the contribution control target and real
+    evidence requirement while reviewing feasible private prerequisites and the mandatory public activation/enforcement
+    handoff separately; no paid-private prerequisite or false public pass. R4 permits shared evidence and applicability
+    review for unchanged inputs; preserve the obligation without requiring an additional human form or repeating
+    a historical approval.
+- obligation:
+    impact: 6
+    scenario: 2
+  checks:
+  - CHECK-004
+  rationale: Resolve effective control gaps while retaining self-contained contributions, provenance and operation-specific
+    authorization. Assess the retained outcome against current inputs; preserve historical execution as provenance
+    rather than replaying its approval event. Under approved R2, preserve the contribution control target and real
+    evidence requirement while reviewing feasible private prerequisites and the mandatory public activation/enforcement
+    handoff separately; no paid-private prerequisite or false public pass. R4 permits shared evidence and applicability
+    review for unchanged inputs; preserve the obligation without requiring an additional human form or repeating
+    a historical approval.
+- obligation:
+    impact: 6
+    scenario: 3
+  checks:
+  - CHECK-004
+  - CHECK-010
+  rationale: Resolve effective control gaps while retaining self-contained contributions, provenance and operation-specific
+    authorization. Assess the retained outcome against current inputs; preserve historical execution as provenance
+    rather than replaying its approval event. Under approved R2, preserve the contribution control target and real
+    evidence requirement while reviewing feasible private prerequisites and the mandatory public activation/enforcement
+    handoff separately; no paid-private prerequisite or false public pass. R4 permits shared evidence and applicability
+    review for unchanged inputs; preserve the obligation without requiring an additional human form or repeating
+    a historical approval.
+- obligation:
+    impact: 7
+    scenario: 1
+  checks:
+  - CHECK-005
+  - CHECK-007
+  rationale: Resolve route prerequisites and bind genuinely visibility-dependent checks to later operations without
+    widening prior pilot evidence. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 7
+    scenario: 2
+  checks:
+  - CHECK-005
+  rationale: Resolve route prerequisites and bind genuinely visibility-dependent checks to later operations without
+    widening prior pilot evidence. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 7
+    scenario: 3
+  checks:
+  - CHECK-005
+  - CHECK-008
+  rationale: Resolve route prerequisites and bind genuinely visibility-dependent checks to later operations without
+    widening prior pilot evidence. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 8
+    scenario: 1
+  checks:
+  - CHECK-007
+  rationale: Retain safe multilingual maintained guides and actual usage verification if changes affect them. Assess
+    the retained outcome against current inputs; preserve historical execution as provenance rather than replaying
+    its approval event. R4 permits shared evidence and applicability review for unchanged inputs; preserve the obligation
+    without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 8
+    scenario: 2
+  checks:
+  - CHECK-007
+  rationale: Retain safe multilingual maintained guides and actual usage verification if changes affect them. Assess
+    the retained outcome against current inputs; preserve historical execution as provenance rather than replaying
+    its approval event. R4 permits shared evidence and applicability review for unchanged inputs; preserve the obligation
+    without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 8
+    scenario: 3
+  checks:
+  - CHECK-007
+  rationale: Retain safe multilingual maintained guides and actual usage verification if changes affect them. Assess
+    the retained outcome against current inputs; preserve historical execution as provenance rather than replaying
+    its approval event. R4 permits shared evidence and applicability review for unchanged inputs; preserve the obligation
+    without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 9
+    scenario: 1
+  checks:
+  - CHECK-001
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 9
+    scenario: 2
+  checks:
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 9
+    scenario: 3
+  checks:
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 9
+    scenario: 4
+  checks:
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event. R4 permits shared evidence and applicability review
+    for unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 10
+    scenario: 1
+  checks:
+  - CHECK-007
+  - CHECK-010
+  rationale: Obtain an attributable confidentiality treatment while preserving delivered approvals and restricted
+    evidence; destructive remedies remain outside the approved scope. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event. R4 permits shared
+    evidence and applicability review for unchanged inputs; preserve the obligation without requiring an additional
+    human form or repeating a historical approval.
+- obligation:
+    impact: 10
+    scenario: 2
+  checks:
+  - CHECK-003
+  - CHECK-007
+  rationale: Obtain an attributable confidentiality treatment while preserving delivered approvals and restricted
+    evidence; destructive remedies remain outside the approved scope. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event. R4 permits shared
+    evidence and applicability review for unchanged inputs; preserve the obligation without requiring an additional
+    human form or repeating a historical approval.
+- obligation:
+    impact: 10
+    scenario: 3
+  checks:
+  - CHECK-002
+  - CHECK-007
+  rationale: Obtain an attributable confidentiality treatment while preserving delivered approvals and restricted
+    evidence; destructive remedies remain outside the approved scope. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event. R4 permits shared
+    evidence and applicability review for unchanged inputs; preserve the obligation without requiring an additional
+    human form or repeating a historical approval.
+- obligation:
+    impact: 11
+    scenario: 1
+  checks:
+  - CHECK-007
+  rationale: Retain independent product and organization boundaries and required enforcement suites. Assess the
+    retained outcome against current inputs; preserve historical execution as provenance rather than replaying its
+    approval event. R4 permits shared evidence and applicability review for unchanged inputs; preserve the obligation
+    without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 11
+    scenario: 2
+  checks:
+  - CHECK-007
+  rationale: Retain independent product and organization boundaries and required enforcement suites. Assess the
+    retained outcome against current inputs; preserve historical execution as provenance rather than replaying its
+    approval event. R4 permits shared evidence and applicability review for unchanged inputs; preserve the obligation
+    without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 11
+    scenario: 3
+  checks:
+  - CHECK-007
+  - CHECK-009
+  rationale: Retain independent product and organization boundaries and required enforcement suites. Assess the
+    retained outcome against current inputs; preserve historical execution as provenance rather than replaying its
+    approval event. R4 permits shared evidence and applicability review for unchanged inputs; preserve the obligation
+    without requiring an additional human form or repeating a historical approval.
+- obligation:
+    impact: 12
+    scenario: 1
+  checks:
+  - CHECK-010
+  rationale: Apply the same three gates and exact authorization boundaries to the new change without transferring
+    predecessor approvals. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event. R4 permits shared evidence and applicability review for
+    unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 12
+    scenario: 2
+  checks:
+  - CHECK-010
+  rationale: Apply the same three gates and exact authorization boundaries to the new change without transferring
+    predecessor approvals. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event. R4 permits shared evidence and applicability review for
+    unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 12
+    scenario: 3
+  checks:
+  - CHECK-010
+  rationale: Apply the same three gates and exact authorization boundaries to the new change without transferring
+    predecessor approvals. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event. R4 permits shared evidence and applicability review for
+    unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 13
+    scenario: 0
+  checks:
+  - CHECK-008
+  rationale: Retain the effective operational boundary and complete validation entry point; no change to these sources
+    is authorized at Gate 1. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event. R4 permits shared evidence and applicability review for
+    unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+- obligation:
+    impact: 14
+    scenario: 0
+  checks:
+  - CHECK-009
+  rationale: Retain the effective operational boundary and complete validation entry point; no change to these sources
+    is authorized at Gate 1. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event. R4 permits shared evidence and applicability review for
+    unchanged inputs; preserve the obligation without requiring an additional human form or repeating a historical
+    approval.
+review:
+  revision: 4
+  state: awaiting-approval
+  blockers: []
+  upstream:
+    proposal: 6c25ef18e914a1a72186f74bf9895dbfc2bae3d4f8ba8cd3afb8401288031a8b
+  approval: null
+---
+# Design R4 — proportional publication readiness
+
+## Current state and authorized scope
+
+Proposal/Requirements R4 was approved on 2026-11-17 at digest `6c25ef18e914a1a72186f74bf9895dbfc2bae3d4f8ba8cd3afb8401288031a8b`. The user's exact instruction authorizes Design only. This replaces the R3 Design's custody attestation, repeated collection, multiplied control/receipt tests and unconditional duplicate rehearsal provisions. Original Design R3, its approvals and results remain preserved. Tasks remains byte-identical and superseded; this phase does not change implementation, live handoffs, GitHub or publication.
+
+The active source worktree remains based on `4a56181d3597c5d345a7639f013547e1700420cb`, with declared 0.3.0 and the existing exact provider anchors. R3 ownership/guidance edits already exist locally; do not reapply them. The other attached Harness checkout is an older unrelated branch, not the current implementation target. Existing prepared Apache text, seven dependency notices, nine-file patch and private 0.4.0 rehearsal remain evidence, not adoption or release.
+
+Private evidence HPB-CUSTODY-DELIVERY-01 is remotely preserved at `39ee0a0081769503a323f37bf9675ce7c02ec77d`, integrity manifest `671e38bbcf451285f809a006ed8a3801fb7c2f69f9dc412bc1707639137638f3`. Technical readback verified 575 source files represented by 543 delivery files. Everton's APPROVED review was observed at 2026-11-17 17:40:31 UTC; its empty body does not attest a command execution or specialist audit. These are recorded prior observations, not new remote checks in Design.
+
+D1/D2 and R3-E1, VAL-002/005/006/007 and R3-E2, cache removal, reviewed videos, shared triage, future Harness PR authorship/review and participation remain valid for their recorded scope. No repeated owner declaration or extra reviewer comment is required. Root adoption, final exposure and public controls/reporting/use remain to be executed under later authority.
+
+## Components and three readiness groups
+
+Reuse existing files, inventories, validators and the exact prepared rule body. No new service, evidence store, scanner, global policy or architecture boundary is introduced; ADR-0011 and ADR-0016 still apply without amendment.
+
+| Group | Existing components and concrete result | Checks / boundary |
+|---|---|---|
+| Final candidate | Approved Apache candidate/patch, notices, shared CODEOWNERS, public guides and package. Later integrate exact reviewed terms on main with actual non-author review and passing relevant checks. | CHECK-003/006/007/009. Rehearsal does not adopt a license; integration needs separate authority. |
+| Final exposure | Existing 16-category inventory, source/refs, restricted decisions and fresh mutable listings. Review changed, unresolved or plausibly exposed material after final relevant private CI. | CHECK-001/002/003. Unknown relevant exposure or a real secret/rights defect blocks; unchanged decisions are reused. |
+| Protected opening | Existing transition body, confirmed maintainers, an actual operator/session and coordinated freeze. Open, protect/read back immediately, then verify enforcement, reporting and anonymous access/basic use. | CHECK-004/005/008/010. Public results remain unverified until authorized operation; release/migration are later. |
+
+These are presentation groups, not a reduction of known safety conditions. Keep stable finding IDs: FIND-001 uses the approved replacement custody criterion; FIND-002/003/004 feed candidate/exposure and FIND-005/006 feed opening/follow-up. Do not mark historic results passed in Design. Subsequent authorized implementation records the new disposition and which criterion it supersedes.
+
+## Evidence, custody and review reuse
+
+A single consolidated restricted record may bind source/candidate identity, method/date, actual reviewer and capacity, result/limits, finding disposition and next action. Existing immutable records remain intact. The safe Harness manifest carries only opaque record IDs/digests and necessary state; no private URLs, report bodies or raw service payloads. One record may support multiple checks and machine-readable scenario assessments.
+
+Custody acceptance requires the combination of exact remote preservation, retrievable originals, technical integrity verification and attributable non-author approval of the delivery. The observed combination above meets the revised criterion without another comment, form or human verifier run. A missing original, hash mismatch, mismatched approval/revision or specifically reported access failure reopens the actual gap. A merge is neither inferred nor newly mandatory for this criterion while the exact restricted revision remains retrievable; retention/cleanup must preserve it.
+
+Do not interpret custody approval as specialist rights/security clearance or execution of unstated commands. Reuse owner classifications and first-party declarations without extending them to unseen material or third-party rights. Missing rights, incompatible terms, changed approved text or a preimage mismatch still stop affected adoption. Request a new decision only for the concrete new conflict; no blanket new certification is introduced.
+
+Historical results may be cited with an applicability comparison of their actual source, inputs, runtime and scope. Do not change old digests to manufacture freshness. If current check inputs changed only through documentation, a fresh applicability review can reference the earlier behavioral observation while binding the current review inputs and clearly identifying its limited scope. Changed relevant behavior needs a new execution, not an applicability assertion.
+
+## Exposure review procedure
+
+1. Reconcile the final candidate/source and refs with the existing inventory, including reachable historical/deleted blobs, branches/tags, releases/assets/LFS, fixtures/governance records, issues/PRs/comments/attachments, optional sites, packages, CI outputs and relevant integrations.
+2. Reuse cleared unchanged content. Refresh mutable listings after the last relevant private CI and inspect new/changed or unresolved objects. No repeat video review or recovery of deleted cache payloads; new caches remain reviewable. Distinguish observed absent, reviewed and unavailable with method/date and pagination limits.
+3. For Packages/integrations, establish the connection to this repository's public exposure or ability to write/publish through it. Inspect relevant settings/publishing configuration using existing access. Do not expand into unrelated organization registries or external private payloads just to prove universal absence. A 403 is not absence: if it leaves plausible exposure unresolved, identify that exact missing observation and custodian before opening.
+4. Review new indicators semantically. Existing accepted historical references remain accepted. Actual secrets, confidential data or insufficient rights require approved treatment and reinspection; moving current files does not clear history. Destructive remediation, history rewrite, a new destination or license change remains outside this Design.
+
+## Ownership and protected opening
+
+Both @elviszoz and @evertonspohrversat remain general CODEOWNERS, with all 12 specific entries preserved. One eligible non-author approval is required; no self-approval, nominal authorship or bypass. Existing local R3 edits are reused. Current base ownership controls eligibility: while the base fallback has Elvis alone, Everton actually authors the Harness PR and Elvis reviews it, as already confirmed. Re-read the effective base after authorized integration.
+
+| Actual author after shared fallback is effective | Eligible owner |
+|---|---|
+| Elvis | Everton |
+| Everton | Elvis |
+| Another contributor | Either eligible owner |
+
+Use this matrix with actual base CODEOWNERS and platform configuration; it is not a request for three test PRs. Confirm the real operator/session and short write freeze near the operation, not by asking everyone to repeat participation now. The freeze covers maintainer/agent/bot writes, ordinary merges/releases and privileged contribution processing. Inspect queued work and safe fork workflow boundaries before opening. Do not implicitly disable workflows, revoke credentials or expand access. Public reads/forks and unsolicited contributions cannot be frozen.
+
+The approved repository-specific deviation HPB-FREE-TRANSITION-R2 remains: private reviewed preparation/adoption followed by separately authorized public visibility and immediate protection/readback within 15 minutes. It does not promise enforced private protection on Free, authorize any write now or weaken another repository's controls. Preserve applicable stronger rules; no automatic restart of an expired session.
+
+| State | Evidence / permitted next step | Failure response |
+|---|---|---|
+| Private preparation | Complete applicable candidate/exposure checks, reused custody/decisions and executable opening procedure. | Specific unresolved private prerequisite blocks visibility. |
+| Private adopted candidate | Actual approved terms/notices on reviewed main, real review/checks and post-CI exposure refresh. | Invalid license/rights/source or failed check blocks opening. |
+| Ready for authorized opening | Final identities, operator, feasible freeze, existing capability and explicit visibility-plus-protection authority. | Drift, unsafe automation or missing authority stops the operation. |
+| Public, protection unverified | Immediately reconcile/apply/read back protection within 900 seconds. | Failure/unknown outcome/timeout: stop rollout, retain freeze and request scoped containment. |
+| Public, protection configured | Execute only authorized representative enforcement, reporting and anonymous access/use verification. | Failed/missing observations remain unverified and block ordinary merges/releases. |
+| Opening verification complete | Record exact observed outcomes and remaining release-specific work. | No automatic tag/release, consumer migration or claim that all H03 work is complete. |
+
+#### Exact proposed main rule
+
+Reuse the body prepared in HPB-CONTROLS-01, with fresh before-state reconciliation. Future target: `PUT /repos/versat-labs/versat-ai-harness/branches/main/protection`, GitHub API version `2026-03-10`, JSON. This is a reviewable specification, not a request executed in Design:
+
+```json
+{
+  "required_status_checks": {
+    "strict": false,
+    "contexts": [],
+    "checks": [{"context": "structural-validation", "app_id": 15368}]
+  },
+  "enforce_admins": true,
+  "required_pull_request_reviews": {
+    "dismiss_stale_reviews": true,
+    "require_code_owner_reviews": true,
+    "required_approving_review_count": 1,
+    "bypass_pull_request_allowances": {"users": [], "teams": [], "apps": []}
+  },
+  "restrictions": null,
+  "allow_force_pushes": false,
+  "allow_deletions": false
+}
+```
+
+`15368` is the observed GitHub Actions app, not an arbitrary status publisher; reverify its identity before use. `strict: false` adds no branch-up-to-date requirement; `contexts: []` accompanies explicit `checks`. `restrictions: null` adds no push allowlist or repository grant. This body creates the approved minimum on an otherwise unprotected branch. It must not erase stronger pre-existing checks/reviews/restrictions. If fresh reads reveal a stronger/different rule, retain it and obtain review of the exact necessary delta before writing; do not overwrite blindly. A 403 is not an empty configuration. Source contract: [GitHub protection API](https://docs.github.com/en/rest/branches/branch-protection).
+
+Retain workflow `contents: read`, read-only defaults, no Actions PR approvals, no secrets/write-token forwarding to untrusted forks and no privileged `pull_request_target` execution of contributor code. Local `.github/workflows/validate.yml` identifies the `structural-validation` job. Do not add signing, merge queues, a new Actions allowlist, release automation or unrelated policy. Any needed correction beyond this reviewed envelope stops for its own concrete authority.
+
+#### Attended visibility and readback operation
+
+No activation is performed in this phase. The later operator must hold explicit scope covering the exact visibility action and rule correction together, using an existing account with the necessary capability. Before final confirmation in the repository's visibility settings, record a monotonic timer and UTC timestamp `t0`; starting before confirmation conservatively includes visibility-request delay. Immediately verify repository identity and public visibility with a fresh read. Unknown outcome is not a reason to repeat the visibility action.
+
+Before opening, retain all accessible protection/rules reads and the known capability failures. Immediately after opening, reread main SHA, classic protection, paginated repository/inherited rulesets and active rules for main. A successful explicit unprotected response can support creation; an unreadable or conflicting rule cannot. Use the prepared body only if that read supports it; if a stronger effective policy already meets the contract, preserve it and verify it without writing. This reconciliation and readback count toward the same 15 minutes, not an additional window.
+
+For the reviewed correction, allow one application attempt followed by bounded readback. Require service success and independent readback of main `protected`, the actual check/app requirement, approval count, code-owner/stale-review flags, administrator enforcement, bypass lists and force-push/deletion denial; inspect effective inherited rules as well. Confirm no unintended weaker/extra change and no main SHA drift. Transient GET readback may be repeated within the remaining deadline, with requests bounded to 10 seconds and no more than one poll per 5 seconds. A failed/unknown mutation is followed by read-only reconciliation, not an automatic duplicate write. Record all attempts; there is no retry budget beyond `t0 + 900 seconds`. CI completion is not required inside this activation window; it happens only after verified protection.
+
+On failed correction, contradictory readback, lost connectivity, deadline expiry or SHA drift, stop further rollout and record the actual observed state and unknowns. Maintain the coordinated freeze, preserve evidence and involve the accountable owner for a separately authorized repair/containment. Do not claim the repository became private or safe merely because the timer expired. Public exposure can continue; any return to private is a separate decision that cannot retract copies and does not enable Free private protection. No automatic rule deletion, weaker restore, history rewrite, permission change or purchase. A new session does not silently reset the allowance.
+
+
+### OP-CTRL-01 — one representative enforcement sequence
+
+Later authorized execution uses one genuine external-author fork PR against the actual public base and one eligible non-author owner. Reuse a suitable independently governed contribution if it meets the exact observations; otherwise prepare one bounded test contribution. Its workflow/CI must exercise the actual required non-draft path. A draft-only or invalid fixture cannot demonstrate allowed mergeability. The current archive-required CI needs a genuinely reviewed affected dossier and delivery evidence on the positive revision; reuse the existing authorized SDD lifecycle rather than fabricate approvals or disable the guard. No fixture/dossier/PR is created now.
+
+For the existing synthetic option, change only `project-templates/base/.versat/standards.lock` and genuinely necessary test-dossier/evidence files. Reconfirm the base fixture and owners. A: set `harness.version` to `0.0.0` to observe the maintained version-alignment check fail and mergeability blocked. B: restore the exact version, retaining a harmless identifying YAML comment; observe actual required-check success with no approval and blocked mergeability, then one real eligible owner approval and allowed mergeability without merging. C: change that comment; observe stale approval dismissal, renewed checks and blocked mergeability, then one renewed eligible approval and allowed mergeability. Refresh genuine positive local delivery evidence for changed inputs; do not forge green evidence for A. An unrelated failing check is investigated rather than bypassed.
+
+Inspect workflow revision and available fork-run permission metadata/logs to confirm read-only token policy and no secret forwarding/privileged contributor-code execution. Do not dump secrets or attempt secret access. Record exact base/head, check/app, review and mergeability states. Unknown mergeability is not success. If the external participant, safe run approval or a valid positive fixture is unavailable, report that concrete limitation; no impersonation, access grant, merge or main deletion is permitted. Future authority covers actual bounded commits, CI, notifications/reviews and any separately requested cleanup.
+
+### OP-CTRL-02 — shared-rule mapping, no duplicate PR permutations
+
+R4 supersedes the two additional reciprocal-author test PRs. Review both named accounts' existing applicable access, complete effective CODEOWNERS mapping (general fallback and specific patterns), one-approval setting, code-owner/stale-review enforcement and empty bypass. Combine this with the actual OP-CTRL-01 sequence to verify the common rule's applicability to the owner matrix. Do not claim two account-specific service experiments occurred.
+
+Any different rule, missing general fallback, ineligible owner or contradictory observed behavior defeats that inference and requires a targeted follow-up under its own authority. Configuration alone never substitutes for OP-CTRL-01's real denied/allowed sequence. The 15-minute limit covers initial protection readback, not later CI/test duration. This Design does not execute either procedure.
+
+## Shared reporting with one receipt test
+
+Retain repository-native confidential reporting and the safe request-for-private-instructions fallback. Reuse the confirmed Elvis/Everton shared triage; Elvis coordinates, either may be the accountable handler. Verify applicable recipient access for both from actual service configuration/access evidence. Repository admin membership and CODEOWNERS alone are not delivery evidence. Do not demand duplicate notifications, replies or a staged handover solely as acceptance paperwork.
+
+During the separately authorized opening follow-up, an intended reporter submits one non-sensitive marker to the actual Harness route. Observe receipt by an accountable authorized handler and denial to an unauthorized viewer, retaining only minimal private evidence. Both maintainers must have applicable access; a real access failure still needs resolution. One receipt is sufficient for delivery, not evidence that both people received notifications. Record who handles the report; actual unavailability/handover is coordinated and recorded if it occurs. No SLA or specialist qualification is invented.
+
+Unavailable public route before visibility is an explicit post-opening obligation, not an impossible private acceptance test. Wrong repository/audience, missing receipt, unexpected public visibility or missing authorized access blocks the verified-route claim and further ordinary rollout. Preserve fallback and seek scoped correction. Do not send a marker, configure an endpoint or change permissions in this phase.
+
+## Package, guides and release boundaries
+
+Keep canonical package/marketplace identities, reviewed license text and exact source/version references. The existing nine-file adoption patch is applied only in a disposable copy for an authorized rehearsal; root adoption needs separate authority. A changed preimage or legal wording stops for specific review, not silent rebasing.
+
+CHECK-006 compares final relevant resources, runtime and behavior with existing first-use/install/update/recovery evidence. Unchanged applicable cases are reused. Actual package/Skill/installer/runtime changes trigger affected native cases; an evidence receipt or plan-only edit does not trigger a full installation cycle. If a native run is needed, use the existing separately namespaced private test installation and synthetic consumer, not workspace settings. Retain the approved bounds: one new-intent invocation, no automatic retry, 600 seconds for that invocation, 300 seconds per remaining case and 2,400 seconds for the suite. Preserve every failed/unverified outcome. Missing test context is not permission to improvise a production installer.
+
+Public opening verifies anonymous access and basic obtain/install/use against the exact reviewed public commit; private rehearsals cannot prove that audience. A tag-specific release, marketplace repin and real consumer migration follow later separate authority, with explicit version/update/recovery verification. Do not block visibility on creating that later release or claim it exists. Public EN/PT/ES guides must truthfully identify available references and route status, without private dependencies. No unrelated product, organization setting or consumer is changed.
+
+## Evidence and validation design
+
+Retain ten stable check IDs, all 31 local acceptance positions and 40 retained obligations. The mapping is machine traceability, not 71 separate human sign-offs or reports. One consolidated result file can serve several checks/assessments with exact anchors; keep each actual method/result/input identity and scope clear. No assessment is populated or old finding closed during Design.
+
+Declared input roots and excluded output subtree remain unchanged. Before/after check digests bind the actual current source; candidate roots cannot borrow preparation-root digests. The current dossier is handled by stage/plan digests under the canonical snapshot contract. Keep external observation dates, exact private revisions and safe manifest identity separately; a local hash cannot authenticate a service or human. Save new results in a fresh excluded run directory and preserve prior failures. Later drift invalidates affected evidence only.
+
+| Check | Procedure and relevant error/boundary coverage |
+|---|---|
+| CHECK-001 | Use combined preservation/integrity/approval evidence; missing original, wrong digest or approval mismatch remains open. Empty review body is accepted without inventing a human verifier run. |
+| CHECK-002 | Reconcile all actual exposure categories with delta review and fresh mutable listings; incomplete pagination, inaccessible plausible exposure, changed ref or real sensitive content blocks. No recovery of deleted caches or unrelated-service audit. |
+| CHECK-003 | Reuse approved own-material/text evidence; verify substantive delta, third-party notices and exact preimages. Missing grant, incompatible term or changed wording stops adoption. |
+| CHECK-004 | Review existing base eligibility, safe fork workflow, prepared protection and current operation envelope. Actual service verification is OP-CTRL-01 plus shared-rule mapping; failure/timeout/drift keeps the corresponding operational claim unverified. |
+| CHECK-005 | Verify both recipients' applicable access, one real receipt and unauthorized-viewer exclusion in the authorized public operation. No double receipt or simulated handover prerequisite; actual failures still stop. |
+| CHECK-006 | Record applicability of earlier client evidence and execute affected native cases only when needed. Preserve missing resource/ref and failed-update/recovery behavior and original failures. |
+| CHECK-007 | Review affected translations, links and representative usage, sharing CHECK-006 evidence. Preserve exact historical approval/legal bytes, safe audience claims and independent boundaries. |
+| CHECK-008 | Produce one three-group decision with concrete next actions and distinct public follow-up. Missing authority, freeze, rights or exposure prevents opening; no circular own-merge/release prerequisite. |
+| CHECK-009 | Run the unchanged complete package validation entry point once per distinct final tested root; rerun for genuinely different test inputs, not duplicate names for identical content. Keep actual exits/counts, both maintained suites and later trusted-baseline archive/CI checks. |
+| CHECK-010 | Verify approved R4 digest/current Design, unchanged Tasks until its gate, retained mappings and explicit replacements. A rule change does not turn a failed old check into a pass or grant operation authority. |
+
+The current environment is Python 3.11.4 with pinned PyYAML/jsonschema; verify it before execution or recreate an isolated environment from unchanged dependency pins if unavailable. Existing validator/execution suites are reused, not weakened or replaced by prose checks. A positive operational fixture must satisfy the same actual non-draft CI path; its pre-merge evidence cannot claim the future service outcome under observation. Private preparation checks may assess complete public handoffs, but must label public enforcement/receipt/use unexecuted until observed.
+
+## Replacement mapping and alternatives
+
+| Approved R4 replacement | Design location / checks |
+|---|---|
+| Ordinary independent custody approval without extra attestation | Evidence/custody; CHECK-001/010. |
+| Cleared decisions and unchanged evidence reused; only actual delta/gaps reviewed | Exposure/package procedures; CHECK-002/003/006/007. |
+| One real enforcement sequence instead of three PRs | OP-CTRL-01/02; CHECK-004/008/010. |
+| Both recipients eligible, one actual report receipt, real handover only when needed | Reporting; CHECK-005/008. |
+| Shared evidence and one full run per distinct final root | Validation design; CHECK-009/010 and existing coverage/regression arrays. |
+| Release/migration separated from visibility, opening smoke checks retained | Three groups/package boundaries; CHECK-006/008. |
+
+Retaining every R3 ceremony would conflict with the approved simplification. Accepting only a clean scan, role assignment or generic approval without exact evidence would discard real safeguards and is rejected. Rewriting validators, removing failed historical records or changing global Standards is unnecessary. One representative live sequence plus applicable configuration is selected; add targeted observations only for an actual exception. No new architecture ADR is required because boundaries and canonical responsibilities are unchanged.
+
+## Rollout, recovery and stopping point
+
+After Design approval, revise only affected Tasks and mappings, retaining prior implementation/results. Implementation resumes only after its current gates and explicit authority. Then reconcile actual findings under the revised criteria and perform the affected local preparation. Existing live handoffs and old ledgers remain historical until that work; do not treat this Design document as their implementation.
+
+Private integration/adoption, public visibility/protection/test messages and later releases remain separately authorized operations. On failed/unknown protection mutation, timeout, drift or enforcement failure retain the freeze and request a concrete owner containment decision. No automatic retry beyond the bounded readback, weaker rules, visibility reversal, history deletion or permission expansion. Reverting metadata cannot retract public copies or license grants.
+
+## Planning review
+
+Current status — 2026-11-16: Design R3 awaits Gate 2 approval with null approval and approved Proposal R3 bound above. Tasks R2 remains superseded and byte-identical in this phase. The shared-owner, non-author review and individual triage evidence design is reviewable; the R2 Free timing and protection body remain unchanged. Actual custody, participants, private acceptance and public outcomes remain unverified where stated. Earlier entries preserve historical review states.
+
+Preserved structured R1 review:
+
+```json
+{
+  "revision": 1,
+  "state": "approved",
+  "blockers": [],
+  "upstream": {
+    "proposal": "d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb"
+  },
+  "approval": {
+    "source": "User reply in this chat on 2026-11-14 explicitly approving Design R1 and authorizing Tasks preparation only",
+    "quote": "Sim, aprovo o Design R1 de harness-publication-blockers. Prepare somente as Tasks, sem iniciar a implementação ou publicar.",
+    "revision": 1,
+    "digest": "67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7"
+  }
+}
+```
+
+Design R1 is awaiting approval with approval null and the approved Proposal digest bound above. No unresolved Design alternative is hidden: the selected approach requires effective private protection and stops if the owner cannot provide it; no budget, access expansion or operation is approved here. Other operational evidence remains work for later authorized implementation, not a Design pass or a resolved blocker.
+
+No new ADR is proposed because the design applies ADR-0011/0016 without changing architecture, destination, license direction or evidence boundary. A required material remedy will reopen the appropriate gate before implementation. Only Design and Gate 1 approval bookkeeping are written now. Tasks, implementation, sensitive collection, messages, remote changes and publication remain suspended.
+
+Actual preparation diagnostics on 2026-11-14:
+
+- Selected `validators/sdd/validate.py --root . --change harness-publication-blockers --phase planning --json`, using the verified pinned Python environment: exit 0/pass, no findings or warnings; 31 local scenarios and 40 retained obligations.
+- `PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/versat-pr36-validation-venv/bin/python ./scripts/validate/run.sh`: exit 0; Plugin/SDD pass, 131 validator tests and 48 execution tests pass. Existing historical legacy/v2 inventory warnings remain; no exemption, suite or validator changed.
+- Full review of this Design and approval bookkeeping; 19 local Markdown links resolve across the dossier, explicit new-file whitespace checks and `git diff --check` pass. All 1,551 pre-existing tracked files remain byte-identical. Requirements bytes and the combined approved Proposal digest remain unchanged. Coverage contains each of 31 local and 40 retained obligations exactly once, with no exclusions.
+- Canonical Design R1 digest: `67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7`. It identifies the presented revision and is not approval.
+
+The bounded metadata reads and local regression tests above are Design preparation only; CHECK-001 through CHECK-010 remain planned implementation checks. No Task file, implementation ledger, changed living guide, new ADR, candidate application, sensitive collection, test message, remote write or publication occurred. Gate 2 remains awaiting the user's approval, which permits Tasks preparation only.
+
+### Gate 2 approval — 2026-11-14
+
+The user explicitly approved the presented Design: “Sim, aprovo o Design R1 de harness-publication-blockers. Prepare somente as Tasks, sem iniciar a implementação ou publicar.” The Design and upstream Proposal digests were reverified unchanged before recording approval. This authorizes Tasks preparation only; implementation and publication remain suspended. Earlier pending statements preserve presentation history. No operational prerequisite is resolved by this approval.
+
+### Design R2 presentation — 2026-11-16
+
+The user approved Proposal/Requirements R2 and requested Design only. This revision replaces the R1 private-capability prerequisite with the approved bounded Free/public transition, exact rule, time/failure contract, actor eligibility and separate private versus public evidence scopes. All ten required checks, 31 local scenarios and 40 retained obligations remain mapped; no test/exclusion/validator rule is weakened. No new ADR is required for the unchanged component boundaries. Only planning approval/status and diagnostic records accompany this Design. No new task plan, implementation ledger, client rehearsal, operation, workflow, message, adoption or publication was performed. Gate 2 approval permits Tasks R2 preparation only.
+
+### R2 local diagnostics — 2026-11-16
+
+Canonical Design R2 digest: `83e45f9a4ffa40e570c864686f38654cc31e08b57c85a4b468a77b717f1f6ab1`. Review remains awaiting approval, approval null. The approved Proposal/Requirements R2 digest remains `429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32`; Requirements and Tasks bytes are unchanged from this phase's entry. Tasks still binds its historical R1 approvals/plan and remains superseded.
+
+The [diagnostic packet](../../../docs/validation/harness-publication-blockers/design-r2/README.md) preserves the entry snapshots, full planning report and required local suite outputs. All 179 maintained tests passed (131 validator and 48 execution); Plugin validation passed. Aggregate exit was 1: Design/Tasks approvals are pending, a historical failed check remains, two old input snapshots are stale and six real acceptance findings remain open. No schema, reference, coverage, approval-staleness or new gate-sequence diagnostic was reported. The 31 local scenarios and 40 retained obligations have required mappings; no exclusions were added. Operational preparation and public enforcement are not certified by these diagnostics.
+
+The exact proposed rule parses as JSON and equals the earlier prepared correction. Full semantic/diff review, current local links, whitespace and frozen R1/R2 evidence checks passed. Only Proposal approval bookkeeping, Design and the handoff status notice changed among the 1,659 entry files; the other 1,656 are unchanged. New diagnostic artifacts are additional exposure-review inputs, not blanket clearance. No GitHub settings, workflows, tasks, implementation, installed consumers or publication changed. Approval of this Design permits Tasks R2 preparation only.
+
+### Gate 2 R2 approval — 2026-11-16
+
+The user approved the presented Design: “Sim, aprovo o Design R2 de harness-publication-blockers. Prepare somente as Tasks R2, sem iniciar a implementação, alterar o GitHub ou publicar.” The Design and Proposal R2 digests were reverified unchanged before recording approval. Current structured Design review is approved; earlier pending statements preserve presentation history. This authorizes Tasks R2 preparation only, not implementation, GitHub changes or publication.
+
+### R3 dependency supersession — 2026-11-16
+
+Proposal/Requirements R3 reopens shared ownership/triage scope. This document retains R2 substantive content and its original upstream digests; its current review is superseded, not a drafted or approved R3 stage. Prior actual review follows. No old result, input hash or finding is relabelled as R3 acceptance. Independent read-only private checks remain permitted under the latest request; changed-scope implementation awaits renewed gates and explicit authority.
+
+```json
+{
+  "revision": 2,
+  "state": "superseded",
+  "blockers": [
+    "Proposal/Requirements R3 awaiting Gate 1; shared CODEOWNERS/triage scope requires renewed downstream review."
+  ],
+  "upstream": {
+    "proposal": "429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32"
+  },
+  "approval": null
+}
+```
+
+### Design R3 presentation — 2026-11-16
+
+The actual Proposal/Requirements R3 approval is recorded at its unchanged paired digest. This Design specifies the one-line general ownership change, current-base integration constraint, symmetric eligible review, shared triage/handler/handover with individual evidence and actual public follow-up. It identifies the real operational-test dossier prerequisite imposed by archive-required CI and bounds two reciprocal-author PRs in addition to the existing external-fork test, all separately authorized later. It does not disable or bypass any guard. All ten checks, 31 local positions and 40 retained obligations remain, with explicit ownership/triage replacement cases. No new ADR is required for unchanged boundaries. Tasks, actual CODEOWNERS, guides, provider, workflow, candidate and all historical evidence are unchanged in this phase. Gate 2 approval permits Tasks R3 only.
+
+### R3 local diagnostics — 2026-11-16
+
+Presented Design R3 digest: `a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f`. Review is awaiting Gate 2 with null approval and the unchanged approved Proposal/Requirements R3 digest. Requirements and Tasks remain byte-identical to entry; no new execution ledger or result was written. The previous ten results/six findings remain historical and open, not R3 passes.
+
+The [review packet](../../../docs/validation/harness-publication-blockers/design-r3/README.md) preserves before files, source inventory, structural diagnostics and complete local suite outputs. All 179 tests passed (131 validator, 48 execution). Aggregate exit was 1 from two missing downstream approvals, the Tasks dependency blocker, historical CHECK-009 failure, ten stale R2 snapshots and six real acceptance gaps. No schema, reference, coverage or approved Proposal mismatch was reported. No validator/test/requirement was weakened.
+
+Manual scope review confirmed ten required checks, 31 local positions, all 40 retained obligations, unchanged declared input/output scopes and the exact unchanged protection JSON. Fifty-seven local links/anchors and whitespace checks passed. Only Proposal approval bookkeeping, Design R3 and the current handoff status notice changed among existing files; 1,759 other entry files and all prior frozen packets remain unchanged. The operational fixture delivery prerequisite is grounded in the current non-draft CI/archive-selection source, not a remote observation or exemption.
+
+No CODEOWNERS application, installed consumer change, native rehearsal, GitHub operation, workflow/message, publication or archival occurred. Both reciprocal public test PRs and the existing external-fork test require their actual later scoped authority and genuine review/evidence. Gate 2 approval unlocks Tasks R3 only.
+
+### Gate 2 R3 approval — 2026-11-16
+
+The user replied “sim” to: “Você aprova o Design R3 para preparar somente as Tasks R3?” The current Design and upstream Proposal/Requirements digests were reverified unchanged before recording this actual approval. It permits Tasks R3 preparation only, not implementation, CODEOWNERS application, GitHub operations or publication. Earlier awaiting-approval entries preserve the presentation history.
+
+### R4 planning reopening — 2026-11-17
+
+Substantive R3 content and actual results remain unchanged; its review is superseded pending the revised upstream plan. Previous review:
+
+```json
+{
+  "revision": 3,
+  "state": "approved",
+  "blockers": [],
+  "upstream": {
+    "proposal": "6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e"
+  },
+  "approval": {
+    "source": "User reply in this chat on 2026-11-16 to the explicit Design R3 approval question, authorizing Tasks R3 only",
+    "quote": "sim",
+    "revision": 3,
+    "digest": "a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f"
+  }
+}
+```
+
+### Design R4 presentation — 2026-11-17
+
+Gate 1 R4 is approved at the recorded paired digest. This Design alone implements the planning simplification, with ten check IDs and complete local/retained mappings. Current Design review awaits Gate 2; no approval is inferred. Tasks, implemented files, existing handoffs, provider/Standards, exact rule JSON and GitHub remain unchanged. Historical R1–R3 text below the Planning review heading describes those dated reviews; its approvals do not approve R4.
+
+### R4 local diagnostics — 2026-11-17
+
+Design R4 digest: `e50bbb215cb77a601aff92acf1db70fa3ae50e32dd518066b3960c3ca9522134`, awaiting Gate 2. [Local diagnostics](../../../docs/validation/harness-publication-blockers/design-r4/README.md) record 179 passing maintained tests, unchanged Requirements/Tasks/provider/rule identities, and complete 31-local/40-retained mappings. Aggregate exit remains 1 for pending downstream approvals and retained incomplete/stale historical evidence, without schema/reference/coverage errors. The approval of Proposal R4 is bound to its unchanged digest; no implementation or service outcome is claimed.

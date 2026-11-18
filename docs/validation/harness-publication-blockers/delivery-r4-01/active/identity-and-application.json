@@ -1,0 +1,17 @@
+{
+  "original_r4_run_intact": true,
+  "preservation_verifier": {
+    "status": "pass",
+    "source_files": 575,
+    "forensic_archive_files": 42,
+    "delivery_files": 543,
+    "remote_custody_or_review_proven": false
+  },
+  "remote_observation_reused_from": "2026-11-17 / run-r4-01; no fresh remote claim",
+  "candidate_texts": 16,
+  "dependency_texts": 7,
+  "exact_local_postimages": 9,
+  "reverse_check_exit": 0,
+  "duplicate_application_rejected": 1,
+  "release_or_main_adoption": false
+}

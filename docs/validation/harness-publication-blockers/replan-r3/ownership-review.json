@@ -1,0 +1,17 @@
+{
+  "actual_file_sha256": "cd1a70acd08400c27efb075e6f9fa1f3d123854dcfc911ebf5ee520860e59125",
+  "proposed_patch_sha256": "947f2cdcd17620abad3fa982ee4134d6f632a1b7dad2d5d1be3e070f81d3a333",
+  "patch_check_exit": 0,
+  "applied": false,
+  "specific_entries": 12,
+  "existing_specific_entries_already_name_both": true,
+  "general_fallback_change": "* @elviszoz -> * @elviszoz @evertonspohrversat",
+  "review_cases": [
+    "Elvis authors: Everton reviews",
+    "Everton authors: Elvis reviews",
+    "External author: either eligible owner reviews",
+    "Self-approval cannot satisfy the requirement",
+    "Current base owners govern until the change is integrated"
+  ],
+  "limits": "Local proposal review only; no GitHub enforcement/receipt/availability result."
+}

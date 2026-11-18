@@ -1,0 +1,1 @@
+Synthetic evaluation only. Use the supplied exact Harness snapshot and its Standards index. Follow the versat-sdd skill, preserve approval gates and do not access external services. The existing approval records are synthetic fixture setup, never real-human evidence.

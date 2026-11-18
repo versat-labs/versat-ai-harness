@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "phase": "implementation",
+  "checked": [
+    "harness-publication-blockers"
+  ],
+  "findings": [],
+  "warnings": [],
+  "metrics": {
+    "harness-publication-blockers": {
+      "local_scenarios": 31,
+      "regression_obligations": 40,
+      "assessed": 0,
+      "results": 0,
+      "open_findings": 0,
+      "stale_results": 0,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "unverified",
+        "REQ-003": "unverified",
+        "REQ-004": "unverified",
+        "REQ-005": "unverified",
+        "REQ-006": "unverified",
+        "REQ-007": "unverified",
+        "REQ-008": "unverified",
+        "REQ-009": "unverified",
+        "REQ-010": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

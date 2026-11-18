@@ -1,0 +1,36 @@
+{
+  "changed_existing_files": [
+    ".github/CODEOWNERS",
+    "README.es.md",
+    "README.md",
+    "README.pt.md",
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "docs/handoffs/harness-publication-blockers/review-inputs.json",
+    "docs/handoffs/harness-publication-blockers/transition.md",
+    "docs/user-docs/guides/security-reporting.es.md",
+    "docs/user-docs/guides/security-reporting.md",
+    "docs/user-docs/guides/security-reporting.pt.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_existing_files": 1798,
+  "all_stage_digests_unchanged": true,
+  "all_preexisting_evidence_unchanged": true,
+  "three_recent_frozen_packet_manifests_verified": true,
+  "local_links_checked": 64,
+  "final_implementation_exit": 1,
+  "diagnostic_codes": [
+    "VALIDATION_FAILED",
+    "ACCEPTANCE_GAP",
+    "ACCEPTANCE_GAP",
+    "ACCEPTANCE_GAP",
+    "ACCEPTANCE_GAP",
+    "ACCEPTANCE_GAP",
+    "ACCEPTANCE_GAP"
+  ],
+  "stale_results": 0,
+  "task_completion": "Nine blocked, TASK-007 in progress, all unchecked",
+  "public_operations": 0,
+  "workflow_execution": 0,
+  "publication": false,
+  "restricted_originals_written": false
+}

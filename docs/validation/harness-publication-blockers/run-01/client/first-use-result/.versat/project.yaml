@@ -1,0 +1,11 @@
+project:
+  criticality: medium
+  description: Synthetic evaluation consumer
+  domain: finance
+  name: payment-fixture
+  owner: Synthetic evaluator
+  profile: software
+  visibility: private
+schema_version: 1
+technologies:
+- python

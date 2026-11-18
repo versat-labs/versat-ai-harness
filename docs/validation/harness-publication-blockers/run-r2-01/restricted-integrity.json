@@ -1,0 +1,86 @@
+{
+  "scope": "Read-only local hash verification; no restricted originals modified/copied. Remote durability and reviewer receipt remain unverified.",
+  "original_bindings": {
+    "assessment_sha256": true,
+    "integrity_manifest_sha256": false
+  },
+  "records": [
+    {
+      "record": "attempt-01",
+      "manifest_sha256": "d4e568584c943995011f18d4f1f1b7bd60da66370ad775369de2b4d1faf1fe6f",
+      "files": 33,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "inventory-01",
+      "manifest_sha256": "7ceb4f25bb7776bdf4269c78154da1ec82151292bc7052180ec883f8ed654046",
+      "files": 320,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "decisions-01",
+      "manifest_sha256": "f58eaa33d55376a6a60f3c3d9b1d6c6fa14cc2bd12641b89d71eab91d0507363",
+      "files": 3,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "decisions-02",
+      "manifest_sha256": "2ddf18d41742b58e42a31a2c680bc3ccc86a965523cede58fc07c871f82ac4d9",
+      "files": 3,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "decisions-03",
+      "manifest_sha256": "505ac0090e617ba0a36b3783b66350150857b413a050e8ba621caccba91e4c12",
+      "files": 3,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "decisions-04",
+      "manifest_sha256": "de816e811907a8c37d71b7086a4cf4cacf6291f9acd638b447f28f5317c6825e",
+      "files": 3,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "decisions-05",
+      "manifest_sha256": "78c22e9e0553dc8e220d59661e36b1126e3818a54a7016f8a5364940f111f556",
+      "files": 3,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "custodian-evidence-01",
+      "manifest_sha256": "4e37d12e9a2cd6240dbc5c5c1337c6341147b539684f478b070fbd327154a635",
+      "files": 5,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "cache-removal-01",
+      "manifest_sha256": "010f1a9d7b7c3514eb08873d490313339bf9ecd5d2bb29424a68f0e35a919781",
+      "files": 4,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "rights-review-02",
+      "manifest_sha256": "587c337ed52d9438f5aa29a394495a664d74fe199643f1eba61dde1538de3a28",
+      "files": 19,
+      "missing_or_changed": 0,
+      "matches": true
+    },
+    {
+      "record": "controls-review-01",
+      "manifest_sha256": "385e4a9cf9609b25027ad7c5df42602a5aad95ab4ab9f477f9e6fa2016a454cd",
+      "files": 29,
+      "missing_or_changed": 0,
+      "matches": true
+    }
+  ]
+}

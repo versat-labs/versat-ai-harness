@@ -1,0 +1,165 @@
+{
+  "scope": "Bounded metadata GETs only using existing access. No bodies/logs/packages/attachments downloaded; no remote mutation or workflow execution. Connector used for repository and maintainer roles; CLI complements missing control/cache metadata capabilities. Transport errors remain unavailable.",
+  "results": {
+    "main": {
+      "name": "main",
+      "endpoint": "repos/versat-labs/versat-ai-harness/branches/main",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:45.903250+00:00",
+      "exit_code": 1,
+      "pagination": "single object",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "protection": {
+      "name": "protection",
+      "endpoint": "repos/versat-labs/versat-ai-harness/branches/main/protection",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:45.903399+00:00",
+      "exit_code": 1,
+      "pagination": "single object",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "rulesets": {
+      "name": "rulesets",
+      "endpoint": "repos/versat-labs/versat-ai-harness/rulesets?includes_parents=true&per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:45.903547+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "active-rules": {
+      "name": "active-rules",
+      "endpoint": "repos/versat-labs/versat-ai-harness/rules/branches/main?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:45.905432+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "workflow-permissions": {
+      "name": "workflow-permissions",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/permissions/workflow",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.105411+00:00",
+      "exit_code": 1,
+      "pagination": "single object",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "fork-policy": {
+      "name": "fork-policy",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/permissions/fork-pr-workflows-private-repos",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.105481+00:00",
+      "exit_code": 1,
+      "pagination": "single object",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "caches": {
+      "name": "caches",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/caches?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.105625+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "artifacts": {
+      "name": "artifacts",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/artifacts?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.105739+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "releases": {
+      "name": "releases",
+      "endpoint": "repos/versat-labs/versat-ai-harness/releases?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.164298+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "refs": {
+      "name": "refs",
+      "endpoint": "repos/versat-labs/versat-ai-harness/git/matching-refs/?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.168694+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "pvr": {
+      "name": "pvr",
+      "endpoint": "repos/versat-labs/versat-ai-harness/private-vulnerability-reporting",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.168811+00:00",
+      "exit_code": 1,
+      "pagination": "single object",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "active-runs": {
+      "name": "active-runs",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/runs?status=in_progress&per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.169762+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "queued-runs": {
+      "name": "queued-runs",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/runs?status=queued&per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T18:08:46.223515+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    }
+  },
+  "actor_consent": "not established by permissions",
+  "freeze": "not established by empty run queues",
+  "public_enforcement": "unverified",
+  "public_reporting": "unverified"
+}

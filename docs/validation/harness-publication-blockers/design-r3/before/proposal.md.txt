@@ -1,0 +1,484 @@
+---
+sdd_version: 3
+change: harness-publication-blockers
+status: proposed
+owner: '@elviszoz'
+summary: Resolve Harness publication prerequisites on GitHub Free with Elvis and Everton as repository-wide CODEOWNERS
+  and shared security triage, retaining one eligible non-author approval and the bounded visibility/protection transition.
+risk: high
+impact:
+  state: assessed
+  summary: Preserve all 38 predecessor scenarios and two existing contract obligations, retaining the R2 Free transition.
+    R3 replaces only the single default CODEOWNER/general triage assignment with both named maintainers and explicit
+    cross-review; no self-approval, weaker control or operational success is introduced.
+  items:
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-001
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: preserve
+    targets:
+    - REQ-004
+    - REQ-009
+    reason: Retain approved wording, third-party scope and actual text-review capacity; new work resolves current
+      applicability rather than recreating the delivered candidate.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-002
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: extend
+    targets:
+    - REQ-001
+    - REQ-004
+    reason: Extend the bounded rights assessment to resolution of remaining and changed evidence for the final candidate.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-003
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: extend
+    targets:
+    - REQ-001
+    - REQ-002
+    - REQ-003
+    reason: Complete inaccessible-surface and confidentiality disposition work, retaining the full exposure boundary
+      and explicit remediation gates.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-004
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: preserve
+    targets:
+    - REQ-004
+    - REQ-008
+    reason: Retain canonical package identity, exact references, migration and recovery; no new release or root
+      adoption is selected here.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-005
+      scenarios:
+      - 1
+      - 2
+      - 3
+      - 4
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: preserve
+    targets:
+    - REQ-007
+    - REQ-008
+    - REQ-009
+    reason: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+      historical scenarios are not reenacted as new public successes.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-006
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: extend
+    targets:
+    - REQ-005
+    - REQ-008
+    reason: Resolve effective control gaps while retaining self-contained contributions, provenance and operation-specific
+      authorization.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-007
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: extend
+    targets:
+    - REQ-006
+    reason: Resolve route prerequisites and bind genuinely visibility-dependent checks to later operations without
+      widening prior pilot evidence.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-008
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: preserve
+    targets:
+    - REQ-008
+    - REQ-009
+    reason: Retain safe multilingual maintained guides and actual usage verification if changes affect them.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-009
+      scenarios:
+      - 1
+      - 2
+      - 3
+      - 4
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: extend
+    targets:
+    - REQ-001
+    - REQ-007
+    - REQ-009
+    reason: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+      valid history, not clearance.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-010
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: extend
+    targets:
+    - REQ-003
+    - REQ-009
+    reason: Obtain an attributable confidentiality treatment while preserving delivered approvals and restricted
+      evidence; destructive remedies remain outside the approved scope.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-011
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: preserve
+    targets:
+    - REQ-008
+    reason: Retain independent product and organization boundaries and required enforcement suites.
+  - source:
+      change: harness-publication-readiness
+      requirement: REQ-012
+      scenarios:
+      - 1
+      - 2
+      - 3
+      requirements_digest: 5b0d0bc483ce8c45094ee7f09dd41ed0f0d416d84565d1d3646cf69881b70004
+    current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## Current contract baseline'
+    effect: preserve
+    targets:
+    - REQ-010
+    reason: Apply the same three gates and exact authorization boundaries to the new change without transferring
+      predecessor approvals.
+  - current_contract:
+      path: docs/handoffs/harness-publication-readiness/README.md
+      locator: '## Separately authorized operational sequence'
+      digest: 1a77e7645fb1674d91d0e4d68516eb539e72bedab43a0a4b368a9d4e2ea5c0d8
+    effect: preserve
+    targets:
+    - REQ-001
+    - REQ-007
+    reason: Retain the effective operational boundary and complete validation entry point; no change to these sources
+      is authorized at Gate 1.
+  - current_contract:
+      path: scripts/validate/run.sh
+      locator: validation_python=
+      digest: 7cc5d5a3f20927618b613b37090cf792669e0920ffbbf9c60db8f0147e43c013
+    effect: preserve
+    targets:
+    - REQ-008
+    - REQ-009
+    reason: Retain the effective operational boundary and complete validation entry point; no change to these sources
+      is authorized at Gate 1.
+  - current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## R1 controls baseline and intentional supersession'
+    effect: supersede
+    targets:
+    - REQ-005
+    - REQ-007
+    - REQ-010
+    reason: The owner requests GitHub Free and visibility before protection. Replace the R1 private-capability prerequisite
+      with a bounded explicitly authorized transition, preserving confidentiality/rights prerequisites, the protection
+      target and required enforcement observations. Existing evidence is historical; downstream checks must be revised
+      after Gate 1.
+  - current_contract:
+      change: harness-publication-blockers
+      artifact: proposal
+      locator: '## R2 ownership baseline and R3 replacement'
+    effect: supersede
+    targets:
+    - REQ-005
+    - REQ-006
+    - REQ-010
+    reason: Owner requests both existing maintainers as general CODEOWNERS and security triage. Replace the prior
+      requirement to retain the single default owner and generic recipient arrangement; preserve independent non-author
+      review, actual receipt/access verification, existing narrower assignments and the approved R2 timing/control
+      strength. Design must map replacement cases after Gate 1.
+review:
+  revision: 3
+  state: awaiting-approval
+  blockers: []
+  upstream: {}
+  approval: null
+---
+
+# Proposal
+
+## Context and problem
+
+Current planning revision: R3, awaiting Gate 1 approval on 2026-11-16. The owner requested both Elvis and Everton as CODEOWNERS and security-triage maintainers, requiring one approval from someone other than the PR author, with no GitHub changes or publication. This selects the target arrangement and authorizes its planning, not approval of unseen R3 artifacts or actual participant availability. R2 approvals, implementation results and six open findings are preserved. Dependent Design/Tasks R2 reviews are superseded; independent bounded read-only private checks may continue under the current instruction.
+
+The public-Harness preparation was already delivered in [PR #39](https://github.com/versat-labs/versat-ai-harness/pull/39), merged on 2026-11-13 at `4a56181d3597c5d345a7639f013547e1700420cb`. The predecessor is [harness-publication-readiness](../../archive/harness-publication-readiness/proposal.md), with three recorded R1 approvals and completed private preparation. Its outcome remains `prepared / defer-publication`: inaccessible surfaces, confidential-history disposition, effective controls and public reporting are unresolved. Repeating its Proposal or declaring its preparation tests to be public clearance would not resolve those gaps.
+
+This new change addresses the outstanding prerequisites of H01-H03. It preserves the existing repository/root Plugin, the selected Apache direction for eligible first-party material, third-party terms and the separate preparation/adoption/publication boundary in [ADR-0016](../../../docs/decisions/0016-public-harness-preparation-boundary.md). It does not supersede that ADR or the predecessor's historical approvals. The eventual current blocker status may supersede dated observations only through new attributable evidence.
+
+## Expected outcome
+
+An exact, reviewable resolution of pre-publication blockers, supported by accessible restricted evidence and actual rights/security/control review, plus a bounded handoff for later authorized adoption/publication and mandatory external verification. The exit is stronger than another completed assessment marked defer: every in-scope pre-publication blocker must meet its exit condition before this successor can claim completion. If the existing-repository approach cannot be cleared within scope, report the unresolved decision and replan; do not manufacture completion.
+
+Some observations inherently require public visibility. This change must establish their feasible private prerequisites and test handoff, while retaining the public outcomes as unverified. It cannot assert verified public controls, public availability or completed H03 from a handoff. R2 deliberately moves protection activation and actual service-enforcement checks after visibility on GitHub Free, while retaining every feasible private prerequisite and all rights/confidentiality reviews before exposure.
+
+The current deliverable is Proposal/Requirements R3, an exact unapplied one-line CODEOWNERS proposal, read-only private follow-up and review-status bookkeeping. R2 Free timing, protection target and publication boundaries remain unchanged. No substantive Design/Tasks content or implemented ownership/reporting route is revised at Gate 1.
+
+## Scope
+
+- Reconcile the merged source, approved wording/patch and prior restricted record; refresh each blocker with owner, actual review capacity, evidence access and observable exit condition.
+- Complete unavailable-surface review and establish a reviewed treatment for confidentiality/history findings without exposing their contents in Harness.
+- Refresh rights, notices and candidate applicability against the final proposed distribution scope; retain exact candidate approval and historical evidence.
+- Prepare and review private control prerequisites and the exact GitHub Free public-transition envelope. Move protection activation/readback and actual enforcement verification to the separately authorized post-visibility operation; preserve the same required protection and reporting outcomes.
+- Plan `@elviszoz` and `@evertonspohrversat` as the general CODEOWNERS and shared Harness security-triage maintainers. Preserve one eligible non-author approval, stale-review dismissal, required checks and stronger existing controls; no self-approval or bypass.
+- Preserve package behavior, multilingual guidance and independent products; define current validation and explicit later operational acceptance without adopting or publishing anything in this successor.
+
+## Out of scope
+
+Current authorization: continue independent bounded read-only private prerequisite checks; prepare Proposal/Requirements R3 and the unapplied ownership delta; preserve exact R2 artifacts and evidence; supersede dependent reviews and update the handoff status notice. No R3 implementation, substantive Design/Tasks revision, CODEOWNERS application, reporting-route configuration, guide/Standard/provider change, license adoption, new sensitive payload collection, GitHub mutation, remote workflow/message, access expansion, spending, commit/push/PR/merge, publication or consumer migration. Local planning diagnostics are permitted. The prior implementation instruction does not preapprove changed R3 behavior. Existing independent evidence may be inspected without treating it as R3 acceptance.
+
+Proposed future scope excludes effective root-license adoption, public visibility, tag/release publication, real consumer migration, cross-product/organization rollout, new destinations/mirrors/SDKs and destructive history remediation. An exact control correction, reporting setup/test or newly scoped restricted collection may be planned here, but requires its own operational authority before execution. A material remedy affecting history, original approvals, destination or licensing reopens the applicable gate and, where necessary, a successor decision; Gate 1 does not preapprove that remedy.
+
+## Work tracking
+
+- Reuse active change ID `harness-publication-blockers`. Its original R1 planning/implementation history is retained; the predecessor remains uniquely archived and unchanged. No new issue, branch or PR is created for this revision.
+- Related delivered work: [PR #39](https://github.com/versat-labs/versat-ai-harness/pull/39), H01 [#34](https://github.com/versat-labs/versat-ai-harness/issues/34), H02 [#35](https://github.com/versat-labs/versat-ai-harness/issues/35). These are provenance, not new work authorizations or issues to reopen.
+- No new issue or Shortcut Story is assigned or created. No fabricated ID. No open Harness PR was returned by the scoped query on 2026-11-14.
+- Local branch `codex/harness-publication-blockers`, isolated worktree, based on fetched main `4a56181d3597c5d345a7639f013547e1700420cb`. The existing predecessor checkout was preserved. Fetch changed only local refs; no remote write occurred.
+
+## Repository and Standards context
+
+Harness is the provider repository; no root consumer project identity or lockfile exists to invent. Declared VERSION/manifests remain 0.3.0, but this exact merged source implements SDD v3. Use its own [skill](../../../skills/versat-sdd/SKILL.md), [process](../../../sdd/process.md), [New change procedure](../../../sdd/workflows/new-change.md), [metadata](../../../sdd/metadata.md), v3 templates/schemas and [validator](../../../validators/sdd/README.md). An installed 0.3.0 release is not a substitute for this source snapshot. No provider upgrade occurs.
+
+Resolve applicable core Standards through [the index](../../../standards/index.yaml), including licensing/publication, contribution, security, Git, testing, documentation and language. Root [AGENTS](../../../AGENTS.md) applies; no more-specific instruction applies to this dossier. Preserve the [architecture](../../../docs/architecture/overview.md), root-package ADR-0011 and ADR-0016 boundaries. Python is the observed validation runtime; no consumer profile or application stack is fabricated.
+
+| Provider anchor | SHA-256 at the selected source |
+|---|---|
+| `sdd/process.md` | `488b63b3ad26e4779db69d4b6ea9bd28b629936f58ccb42493cdaa99c940ccdb` |
+| `sdd/metadata.md` | `788c3a0ae8ac265a66546d3dddbf35e2c0c81bfa932940f3e5eae34990a0a064` |
+| `sdd/workflows/new-change.md` | `3fed9300f21ecc17d799b188179efb5a149a0afec4a91098f613a007c40f7cd4` |
+| `standards/index.yaml` | `0a70db972dc3ba14cecf27a1617e404f63ab32ec1222ae8632c30698ecbcccee` |
+| `validators/sdd/validate.py` | `94f152e14dbe1dbb60fcd3d0ef40ba896fd9a71234d28d44ac8ba1d172d329bb` |
+
+## Current contract baseline
+
+Inspected 2026-11-14 at the merged source above. New remote observations establish PR #39 merge and source state; the underlying exposure/control observations below are dated predecessor evidence, not a fresh operational audit.
+
+| Contract | Observed evidence and consequence |
+|---|---|
+| Delivery | Predecessor Proposal/Requirements, Design and Tasks R1 have recorded approvals; eight tasks and ten preparation checks are recorded complete. The archived dossier and PR #39 merge are distinct evidence. No historical approval transfers to this successor. |
+| Outstanding exposure | The [handoff](../../../docs/handoffs/harness-publication-readiness/README.md) records a 16-category assessment, six inaccessible package-type listings, two uninspected cache payloads, external attachment/integration gaps and internal-reference history. These are starting gaps, not fresh absence/sensitivity findings. |
+| Evidence boundary | [Review inputs](../../../docs/handoffs/harness-publication-readiness/review-inputs.json) bind opaque HPR-PRIVATE-01 and its restricted assessment. Public-safe metadata is available; the underlying private record and current reviewer access were not re-audited in this planning. Old collection/access approval is historical. |
+| Terms/candidate | [Apache R1 approval](../../../docs/licensing/candidates/apache-2.0/APPROVAL.md) binds the exact 16-file text package; [adoption metadata](../../../docs/handoffs/harness-publication-readiness/adoption.json) binds the nine-file patch, preimages and intended 0.4.0 candidate. Root remains 0.3.0, without applied root LICENSE/NOTICE; no new adoption is inferred from merge. |
+| Controls | Local CODEOWNERS and CI require review and run complete validation with the archive guard. That source configuration does not establish effective remote enforcement, bypass restrictions or public fork behavior. Prior gaps remain unverified until refreshed. |
+| Reporting | The maintained security guide uses intended public PVR and a safe fallback; the handoff records unverified public Harness reporting. Prior organization pilot/internal receipt do not prove this audience. No synthetic message is sent at Gate 1. |
+| Package/use | Canonical root and exact references remain; the predecessor records private 0.4.0 rehearsal, first-use Gate 1, failure/migration/recovery cases and unchanged real consumers. No public access or current-runtime claim follows. |
+| Enforcement | `scripts/validate/run.sh` runs plugin/SDD validation and maintained validator/execution suites. Existing tests cover v3 planning/impact/evidence freshness, CI baseline/archive gates, execution and consumer recovery. They do not inspect live rights, remote payloads, control enforcement or confidential receipt. Design must add meaningful reviewed evidence procedures for those gaps, without weakening suites. |
+
+The impact ledger classifies every one of the predecessor's 38 scenarios exactly once, retaining current invariants and extending unresolved work. Its H01/H02/root-package/user-documentation origins were inspected in the prior assessment and remain preserved through this delivered successor; this change introduces no independent alteration to those historical dossiers. Historical stage events are provenance, not instructions to repeat already delivered work. Two additional current obligations bind the operational handoff and complete validation entry point. R2 adds one explicit supersession of the successor R1 control timing; R3 adds the explicit ownership/triage replacement captured below. The predecessor scenarios and all 40 retained obligations remain; this is not retirement of a failing test or a global Standards exception.
+
+## Impact and risks
+
+- Confidentiality/history may make the existing-repository publication infeasible without a new owner decision. Do not assume that references are harmless or authorize disclosure; do not promise clearance before evidence.
+- GitHub Free does not provide the selected private protection capability; R2 removes an upgrade from the selected path. Protection will be unavailable during the visibility-to-activation interval. A coordinated write freeze is a procedural precaution, not equivalent enforcement; configuration failure after opening leaves real public exposure and blocks completion/release.
+- Reporting depends on audience and visibility. Keep genuinely post-publication tests explicit while completing every feasible private prerequisite; do not create circular pre-merge tasks.
+- Rights and release scope can drift after text approval. Preserve immutable candidate approvals; review changed source/patch identities and actual capacity separately.
+- New evidence may itself be sensitive. Restricted originals and access checks stay outside prospective public trees/history; safe summaries use minimal opaque references.
+- Full package diagnostics verify mechanical regressions, not specialist review or public usability. New acceptance evidence must be attributable to the actual inputs and authorized action.
+
+## Ownership and Design decisions
+
+Accountable coordinator remains `@elviszoz`. The owner selects `@elviszoz` and `@evertonspohrversat` as general CODEOWNERS and shared security-triage maintainers for this repository only. Their observed existing admin access is not expanded. Elvis-authored PRs require Everton’s eligible review; Everton-authored PRs require Elvis’s; an external author may receive the required approval from either eligible owner. Actual blocking reviews, required checks and stronger existing requirements still apply. Named responsibility is not proof of availability, notification delivery, private-report access or receipt, nor a legal/security qualification.
+
+Gate 1 R3 has no unresolved target-role or self-approval choice: both maintainers, one non-author approval, no bypass. The exact fallback proposal is `* @elviszoz @evertonspohrversat`; all existing specific entries already list both and remain unchanged. This is a planned source edit for later approved implementation, not an applied ownership rule. Design R3 must reconcile eligible review before and after integration, shared triage duties/access/notification evidence, audience-specific public receipt and replacement checks. Operator/reviewer availability, custody and final surface/rights clearance remain operational prerequisites. A shared triage roster does not require two PR approvals or two responses to each report; neither maintainer’s role can be claimed operationally verified from CODEOWNERS alone.
+
+## R1 controls baseline and intentional supersession
+
+The accepted R1 Design required effective protection while private, treated missing private capability as a CHECK-004 blocker, and rejected public-first activation. TASK-005 implemented that order. Original stage digests are Proposal `d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb`, Design `67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7`, and Tasks `1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7`. [Exact pre-revision artifacts](../../../docs/validation/harness-publication-blockers/replan-r2/r1/integrity.json) preserve the approved text and subsequent progress before this edit.
+
+R2 intentionally supersedes only that ordering/capability prerequisite. It preserves existing-repository scope, rights, confidentiality, exact license adoption, protection strength, independent real review and actual verification. ADR-0016's preparation/adoption/publication boundary remains. Earlier claims that a paid private capability is the selected route are historical while replanning; neither they nor this draft authorize execution.
+
+Private record HPB-CONTROLS-01 observed on 2026-11-14: private repository, main unprotected, feature-related 403 on protection/rules endpoints, known Actions check source and an author/CODEOWNER eligibility gap. No fresh repository or billing observation was made for R2. Owner rights decisions and cache-removal evidence retain their exact original scope; new planning files and later drift still need review before exposure.
+
+GitHub documents [classic protection for public repositories on Free](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule), consulted 2026-11-16. This supports the selected plan, not a claim that protection is already active. [Visibility changes expose code and Actions history/logs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility); public forks are not retracted by returning to private.
+
+## Proposed GitHub Free transition contract
+
+1. While private, complete exact surface/history/rights/confidentiality review, reporting prerequisites and candidate validation. Include all new R2 artifacts and any new CI outputs. Resolve an eligible real author/reviewer arrangement, operator availability and existing administrative capability; no impersonation, permission expansion or blanket bypass. A missing prerequisite stops before visibility.
+2. Prepare the exact main protection correction, readback criteria, bounded synthetic PR verification and failure response. Preserve any stronger controls discovered in fresh reads. No subscription upgrade or paid-plan prerequisite is selected. Confirm actual Free/public capability and unchanged branch identity immediately before the future operation.
+3. Complete separately authorized private integration/adoption of the reviewed Apache candidate and verify its exact resulting tree, notices, manifests and required checks before visibility. Planning approval applies no license. Private PR reviews and checks remain mandatory even when service enforcement is unavailable; retain attributable human verification rather than claiming technical enforcement.
+4. Record a repository-specific temporary deviation from the default-branch protection requirement in the Git Standard and the incomplete-controls publication gate in the Licensing and Publication Standard. It covers only the agreed private preparation/integration and the bounded visibility-to-protection transition; all other safeguards and products remain unchanged. R2 approval reviews this proposed exception, not an operational grant or a general relaxation of either Standard. Design must make its scope, owner, trigger and termination auditable.
+5. For the later authorized transition, coordinator `@elviszoz` records the exact final SHA/refs and confirms a coordinated freeze on human and automated pushes, merges, releases and privileged processing of incoming contributions. Confirm the freeze is feasible with existing access; it is not a technical lock or a guarantee against compromise. Maintain it from final clearance until protection is verified. Anonymous copying/forking cannot be frozen after opening.
+6. Under explicit authority for both visibility and immediate protection, make the existing repository public and immediately apply/read back the reviewed main rule in the same attended session. Proposed maximum visibility-to-successful-readback interval: 15 minutes. Record actual timestamps and SHA stability. Keep PR/CODEOWNER approval, stale-review dismissal, the observed structural-validation source, administrator enforcement, empty bypass, and force-push/deletion denial. Do not publish a release/tag or announce verified availability in this interval.
+7. After verified configuration, allow only the separately authorized non-sensitive test branch/PR operations needed to observe failing-check and missing-review denial, then successful-check plus real eligible review and permitted mergeability, without merging. Verify public fork token/secret boundaries and complete reporting/external-use follow-up. Main remains frozen for ordinary integration until required control observations succeed. Release/announcement/consumer migration require their own authority and prerequisites.
+8. If activation/readback fails, the 15-minute interval expires, branch identity changes, or enforcement fails, stop the rollout, keep the coordinated freeze, preserve evidence and have the accountable owner decide a specific containment/correction. The timed exception expires; do not silently extend it or mark the requirement passed. No automatic deletion, history rewrite, permission expansion, return to private or billing change. Returning to private would require its own decision and cannot retract copies or restore Free private protection. Public exposure may continue while containment is decided; this residual risk is part of the R2 review.
+
+The preparation exit can only be ready for a separately authorized transition, conditional on complete private prerequisites and the reviewed operation envelope. Actual main enforcement remains an open mandatory operational outcome until observed. Required protections are deferred in sequence, not waived. Design R2 must revise CHECK-004 and affected CHECK-008/009/010 mappings and handoff claims; Tasks R2 follows only after its approval. No old control finding is closed by this reclassification alone.
+
+## R2 ownership baseline and R3 replacement
+
+R2 instructed this successor to retain existing CODEOWNERS. The current `.github/CODEOWNERS` SHA-256 is `cd1a70acd08400c27efb075e6f9fa1f3d123854dcfc911ebf5ee520860e59125`. Its fallback is `* @elviszoz`; all 12 specific assignments name Elvis and Everton. Docs/specs/root README therefore use Elvis alone today. R2's eligible private PR arrangement is an actual Everton-authored PR reviewed by Elvis; it does not let Everton satisfy owner review on an Elvis-authored default-covered change. The [exact R2 snapshot](../../../docs/validation/harness-publication-blockers/replan-r3/r2/proposal.md.txt) and preserved [Design](../../../docs/validation/harness-publication-blockers/replan-r3/r2/design.md.txt) retain that contract and genuine approvals.
+
+R3 replaces the fallback-only asymmetry with both named maintainers for all paths and makes the shared reporting-triage responsibility explicit. The [one-line proposed patch](../../../docs/validation/harness-publication-blockers/replan-r3/codeowners.proposed.patch) leaves existing specific assignments intact. Actual GitHub owner selection comes from the applicable base-branch file; an unmerged source patch cannot retroactively supply a missing eligible review for its own PR. Later integration must use the current valid reviewer arrangement and separate PR authority until the new file is effective. No nominal author substitution, self-approval, exception bypass, role grant or organization-wide change is introduced.
+
+The current [security guide](../../../docs/user-docs/guides/security-reporting.md), SHA-256 `806e1ef83fe222795c2554839fae00393479fa1cba7bd66c06173837f7633035`, identifies Elvis as accountable contact and existing CODEOWNERS for triage. R3 names both as maintainers responsible for monitoring incoming reports, coordinating triage and recording an accountable handler, with an explicit handover when one is unavailable. It preserves the safe fallback, actual intended-reporter/recipient boundaries and separate public test. Later Design must specify how to observe each named maintainer’s applicable access and notification/receipt participation without inventing a mailbox, SLA, retention period or a second required PR approval. Public-only verification remains pending until the separately authorized public operation; no message is sent in planning.
+
+Replacement cases for Design: Elvis-authored PR requires Everton; Everton-authored PR requires Elvis; external-authored PR accepts one eligible owner; self-approval/missing owner/failing or stale checks do not satisfy the gate; a later commit dismisses stale approval; base-branch ownership governs the transition. Triage checks must distinguish owner designation from configured access/receipt, record unavailability and handover, and retain confidentiality for an unauthorized viewer. Existing tests cover generic SDD/CI boundaries, not actual GitHub enforcement or private report receipt. No provider test is weakened or replaced by a prose assertion.
+
+Independent private follow-up on 2026-11-16 confirmed the existing evidence system is private and both maintainers have existing administrator access. The scoped local evidence has 526 untracked files and zero tracked files; the exact predecessor assessment path returned remote 404. This does not prove no backup exists elsewhere, but it supplies no durable exact-revision custody or actual human acceptance. [Private follow-up](../../../docs/validation/harness-publication-blockers/replan-r3/private-followup.json) records the bounded observations and concrete remaining actions. No original payload or private URL is copied to Harness, and no existing human decision is requested again for unchanged scope.
+
+## Proposal acceptance criterion
+
+The paired Requirements establish observable resolution, failure and boundary outcomes, retained impact and a clear distinction between pre-publication closure and later operational verification. Gate 1 approval permits Design only. Implementation cannot be reported complete while an in-scope pre-publication prerequisite remains unresolved; public-dependent checks remain mandatory external follow-up with no false pass.
+
+## Planning review
+
+Stage: Proposal/Requirements R1. Review: awaiting approval; approval null; no Gate 1 scope blocker. Operational blockers remain open as described above. The user's request authorizes preparation, not approval of these unseen files. No Design, Tasks, implementation ledger, license adoption or publication is performed.
+
+Observed preparation checks on 2026-11-14, using Python 3.11.4, PyYAML 6.0.2 and jsonschema 4.23.0 with the five verified source anchors above:
+
+- `PYTHONDONTWRITEBYTECODE=1 /private/tmp/versat-pr36-validation-venv/bin/python validators/sdd/validate.py --root . --change harness-publication-blockers --phase planning --json`: exit 0, pass, no findings or warnings; 31 local scenarios and 40 retained obligations (38 predecessor scenarios plus two current contracts).
+- `PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/versat-pr36-validation-venv/bin/python ./scripts/validate/run.sh`: final exit 0; Plugin and SDD validation pass, 131 validator tests and 48 execution tests pass. Historical legacy/v2 inventory warnings remain; no exemption or test was changed. The full command was repeated after clarifying that adoption/publication execution is outside scope while separately authorized control verification can belong to later implementation.
+- Full review of both new files, 15 valid local Markdown links, explicit untracked whitespace checks and `git diff --check`: pass. All 1,551 pre-existing tracked files remain byte-identical. The only new repository files are Proposal and Requirements; all 38 predecessor acceptance positions are classified exactly once.
+- Canonical combined Proposal/Requirements R1 digest: `d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb`. Obtain it with the same provider's `--change harness-publication-blockers --digest proposal`. This identifies the presented revision; it is not approval.
+
+These are local planning diagnostics and maintained regression tests, not execution of the proposed resolution work or fresh operational clearance. No new implementation acceptance ledger, sensitive collection, remote CI run, control change, message, publication or consumer migration occurred. Gate 1 remains awaiting the user's review; approval is null.
+
+### Gate 1 approval — 2026-11-14
+
+The user explicitly approved the presented pair: “Sim, aprovo a Proposal e os Requirements R1 de harness-publication-blockers. Avance somente ao Design, sem iniciar a implementação ou publicar.” The combined digest was reverified unchanged before recording approval. This authorizes Design only. Earlier pending statements preserve the presentation history; current structured review is approved. Tasks, implementation and publication remain unauthorized.
+
+### Gate 1 reopened — 2026-11-16, R2
+
+The owner requested GitHub Free with public visibility before control activation. This is a material requirement/timing change, not approval of unseen R2 documents or authority to publish. Current Proposal/Requirements R2 is awaiting approval; Design/Tasks R1 reviews are superseded, their substantive contents and actual progress remain historical. Implementation is suspended pending renewed approvals. Historical R1 review records above remain authentic and do not approve R2.
+
+Preserved structured R1 approval:
+
+```json
+{
+  "source": "User reply in this chat on 2026-11-14 explicitly approving Proposal/Requirements R1 and authorizing Design only",
+  "quote": "Sim, aprovo a Proposal e os Requirements R1 de harness-publication-blockers. Avance somente ao Design, sem iniciar a implementação ou publicar.",
+  "revision": 1,
+  "digest": "d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb"
+}
+```
+
+The updated rights/surface input includes these edits and new snapshot/evidence files. Prior exact-tree confirmations must be reconciled for this delta; unchanged owner decisions are not re-requested. No source-independent new rights or confidentiality conclusion is inferred.
+
+### R2 local review and diagnostics — 2026-11-16
+
+Proposal/Requirements R2 digest: `429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32`. Current review is awaiting approval with null approval. Design and Tasks retain their R1 canonical content digests above; only review metadata/history was changed. Requirements semantics change only REQ-005, REQ-007 and REQ-010. All 38 predecessor scenarios and 40 retained obligations remain represented; the new explicit supersession records replacement timing rather than a test exemption.
+
+The [local diagnostic record](../../../docs/validation/harness-publication-blockers/replan-r2/README.md) preserves the first unavailable-dependency attempt, fresh planning diagnostics, required suite output, exact R1 snapshots and manual scope/integrity checks. The pinned direct dependencies were installed in a new temporary environment; no provider/source dependency declaration changed. All 179 maintained tests passed (131 validator, 48 execution). The aggregate command exited 1: three current approvals are missing after reopening, one historical check failure is retained, two prior input snapshots are stale and six real acceptance findings remain open. No schema/reference/coverage diagnostic was reported. These are explicit readiness blockers, not new passes or permission to execute. No validator or result was weakened to make the aggregate green.
+
+Full diff/semantic review, local link/whitespace checks and snapshot integrity were checked. Apart from the paired revision and downstream/handoff status bookkeeping, the other 1,639 files from the previous 1,644-file rights snapshot are unchanged. New evidence files and changed planning/status files require final exposure/rights reconciliation. No remote workflow or service mutation occurred. Gate 1 approval unlocks Design R2 only.
+
+### Gate 1 R2 approval — 2026-11-16
+
+The user approved the presented R2 pair: “Sim, aprovo a Proposal e os Requirements R2 de harness-publication-blockers. Prepare somente o Design R2, sem iniciar a implementação, alterar o GitHub ou publicar.” The canonical paired digest was reverified as `429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32` before recording this approval. Current structured review is approved; earlier awaiting-approval statements preserve presentation history. Only Design R2 preparation is authorized. Tasks R1 remains superseded; implementation, GitHub changes and publication remain suspended.
+
+### R3 reopening — 2026-11-16
+
+The owner requested the shared-owner/shared-triage revision with non-author approval. Proposal/Requirements R3 is presented for Gate 1, not approved. The previous actual Proposal R2 approval is preserved here and in the immutable entry snapshot:
+
+```json
+{
+  "revision": 2,
+  "state": "approved",
+  "blockers": [],
+  "upstream": {},
+  "approval": {
+    "source": "User reply in this chat on 2026-11-16 approving the presented Proposal/Requirements R2 and authorizing Design R2 only",
+    "quote": "Sim, aprovo a Proposal e os Requirements R2 de harness-publication-blockers. Prepare somente o Design R2, sem iniciar a implementação, alterar o GitHub ou publicar.",
+    "revision": 2,
+    "digest": "429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32"
+  }
+}
+```
+
+R2 Free timing, exact candidate, privacy/rights requirements and all historical outcomes remain. Design/Tasks substantive content and the ten prior results/six findings are retained; current reviews are superseded. The bounded read-only private observations are not execution or acceptance of R3.
+
+### R3 local diagnostics — 2026-11-16
+
+Canonical Proposal/Requirements R3 digest: `6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e`. The pair is awaiting Gate 1 approval with null approval. Design and Tasks remain superseded at their unchanged R2 substantive digests; the ten R2 results, six open findings and all actual approval history are preserved without relabelling.
+
+The [review packet](../../../docs/validation/harness-publication-blockers/replan-r3/README.md) retains exact pre-revision artifacts, local/private observations, the unapplied one-line patch and current diagnostics. The required local suite passed 131 validator tests and 48 execution tests. Aggregate exit was 1 from reopened approvals/dependent review blockers, the retained CHECK-009 failure, ten stale R2 input snapshots and six real acceptance gaps. No schema/reference/coverage error was reported. These findings are not removed to obtain a green planning report.
+
+Only REQ-005, REQ-006 and REQ-010 change semantically. All ten IDs, 31 local positions and 40 retained obligations remain; one reviewed-baseline supersession adds explicit replacement owner/triage cases for later Design. Seventy-two local links/anchors and whitespace checks passed. Five existing files changed: Proposal/Requirements, Design/Tasks review bookkeeping and the handoff status notice; 1,736 other entry files remain unchanged. CODEOWNERS, provider/Standards/workflow, implemented guides, candidate and frozen evidence remain unchanged.
+
+The read-only private follow-up narrows custody/access facts without implying actual reviewer acceptance: existing private system, existing admin access for both maintainers, 526 scoped untracked local files and remote 404 for the exact predecessor record. No GitHub mutation, permission expansion, workflow/message, publication, archival or changed-scope implementation occurred. Approval of this pair unlocks Design R3 only.

@@ -1,0 +1,8 @@
+{
+  "prior_count": 22,
+  "current_count": 22,
+  "identical_after_recorded_refspec_mapping": true,
+  "mismatched": [],
+  "mapping": "Original collector preserves refs/pull/<n>/head as refs/audit/pr/<n>. No new fetch or change to originals.",
+  "limits": "Ref metadata only; does not refresh service payloads, full package coverage or unreachable objects."
+}

@@ -1,0 +1,42 @@
+harness:
+  commit: development-snapshot:5fe5830cb8f490741755ed8ca2019ffbc3cf21634561a23864d200acd1467fd0
+  version: 0.4.0
+resolved_at: synthetic-evaluation
+schema_version: 1
+standards:
+- digest: cb54e704af8d32f42b302eaaefe06fa289ca2eb8136960e3330af49614f4444e
+  path: core/agent-artifacts.md
+  version: 0.4.0
+- digest: dd1748e2f35b45a79fcff75254b2e56fa56e8a0d0b4dbfb7adfc72020fd26869
+  path: core/contribution.md
+  version: 0.4.0
+- digest: f81e9a85570e4cd5699e113395e80bc92fba13401e57e8b7186bc6cd6bc785e0
+  path: core/documentation.md
+  version: 0.4.0
+- digest: 4c8959b2640e22dfc3a392a6183c39fd4725cadcf3bb79e19cbf70df12ac2308
+  path: core/git.md
+  version: 0.4.0
+- digest: a287cabaf0609331541afd18cc1b3f3d1aead42642446263fe44bc3bc9100f3f
+  path: core/language.md
+  version: 0.4.0
+- digest: 71c58205d5932aecddaa333d792a4cfa2b1dd61fac5e0054dace97e8db1b9762
+  path: core/licensing-publication.md
+  version: 0.4.0
+- digest: a1dbb2936bda6eec0a7d42d4af2e910cb0f1b8e3a08f6f3fb7d8af71f6e83096
+  path: core/observability.md
+  version: 0.4.0
+- digest: 9ffd01b20b90e4b592305f63055624f229bf8b79ef06a02d4e07963faef9aa80
+  path: core/security.md
+  version: 0.4.0
+- digest: 64cb9352084ba2023883f2ef2c91aa42378b73f40547dc78b5aa9ef2fee08a07
+  path: core/testing.md
+  version: 0.4.0
+- digest: 33921aee357df52169511066d20b59e615b5147ab6829ff6bd77f33de94c6840
+  path: domains/finance.md
+  version: 0.4.0
+- digest: d5aa8fba9f96902fbb01e01865bff8ee9a92f0ca7e61a5fd6b3ac55d83dc804b
+  path: profiles/software.md
+  version: 0.4.0
+- digest: d4ae5ad21c365984c2a720ae35beaddd18276ef5b05648dad9dd02395f79289f
+  path: technologies/python.md
+  version: 0.4.0

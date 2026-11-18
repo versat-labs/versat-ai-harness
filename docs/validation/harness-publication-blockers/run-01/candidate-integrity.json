@@ -1,0 +1,163 @@
+{
+  "observed_at": "2026-11-14T18:12:24.048816+00:00",
+  "source_commit": "4a56181d3597c5d345a7639f013547e1700420cb",
+  "patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+  "expected_patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+  "candidate_texts": [
+    {
+      "path": "docs/licensing/candidates/apache-2.0/LICENSE.txt",
+      "expected": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "actual": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/candidates/apache-2.0/NOTICE.txt",
+      "expected": "ff43bbc1f6467a783cff030a8ed6442cf2dda21c289754cec828714ff2b63edb",
+      "actual": "ff43bbc1f6467a783cff030a8ed6442cf2dda21c289754cec828714ff2b63edb",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/candidates/apache-2.0/THIRD-PARTY-NOTICES.md",
+      "expected": "aeec31268f118df212e48c0e678d8c7e51211c8441b9cee1fc70a018ca23f3da",
+      "actual": "aeec31268f118df212e48c0e678d8c7e51211c8441b9cee1fc70a018ca23f3da",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/candidates/apache-2.0/SCOPE.md",
+      "expected": "db94f1fcad7e1bcf1bc54d3cb92fec2cde6b412fc18b9ead51b7e16f5dab128d",
+      "actual": "db94f1fcad7e1bcf1bc54d3cb92fec2cde6b412fc18b9ead51b7e16f5dab128d",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/candidates/apache-2.0/README.md",
+      "expected": "94c1327f0b61872eed3200b6f8f2cdf55bd317f00fbe223971b803002e934614",
+      "actual": "94c1327f0b61872eed3200b6f8f2cdf55bd317f00fbe223971b803002e934614",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/candidates/apache-2.0/scope-files.csv",
+      "expected": "f95c199589522821dc2c860b7a2f57f20a9888f435fc4c62ebb28be6fe9bca9e",
+      "actual": "f95c199589522821dc2c860b7a2f57f20a9888f435fc4c62ebb28be6fe9bca9e",
+      "matches": true
+    },
+    {
+      "path": "docs/user-docs/guides/contributing.md",
+      "expected": "4fb9391c841c7d6ca7db7354d323cd3e2dd988fbe7d35e9ca01fce3559de8333",
+      "actual": "4fb9391c841c7d6ca7db7354d323cd3e2dd988fbe7d35e9ca01fce3559de8333",
+      "matches": true
+    },
+    {
+      "path": "docs/user-docs/guides/contributing.pt.md",
+      "expected": "da4fb4214b4879a5f504507facc738c88a939b10b9e4f80088266e10009310ea",
+      "actual": "da4fb4214b4879a5f504507facc738c88a939b10b9e4f80088266e10009310ea",
+      "matches": true
+    },
+    {
+      "path": "docs/user-docs/guides/contributing.es.md",
+      "expected": "e7146201715441b35396b685491004637d7b1960d011e9a02af3e43a48b2eb05",
+      "actual": "e7146201715441b35396b685491004637d7b1960d011e9a02af3e43a48b2eb05",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/technical-review/dependency-license-texts/PyYAML-6.0.2-LICENSE.txt",
+      "expected": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+      "actual": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/technical-review/dependency-license-texts/attrs-26.1.0-LICENSE.txt",
+      "expected": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "actual": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/technical-review/dependency-license-texts/jsonschema-4.23.0-COPYING.txt",
+      "expected": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+      "actual": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/technical-review/dependency-license-texts/jsonschema-specifications-2025.9.1-COPYING.txt",
+      "expected": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "actual": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/technical-review/dependency-license-texts/referencing-0.37.0-COPYING.txt",
+      "expected": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "actual": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/technical-review/dependency-license-texts/rpds-py-2026.9.1-LICENSE.txt",
+      "expected": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+      "actual": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+      "matches": true
+    },
+    {
+      "path": "docs/licensing/technical-review/dependency-license-texts/typing_extensions-4.16.0-LICENSE.txt",
+      "expected": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "actual": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "matches": true
+    }
+  ],
+  "candidate_text_count": 16,
+  "dependency_texts": 7,
+  "preimages": [
+    {
+      "path": "VERSION",
+      "expected": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0",
+      "actual": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0",
+      "matches": true
+    },
+    {
+      "path": "plugin.json",
+      "expected": "0c3649e1eb092ad84d5df689dafa597e3cef55ccd43934a03ba47ef266d58bb1",
+      "actual": "0c3649e1eb092ad84d5df689dafa597e3cef55ccd43934a03ba47ef266d58bb1",
+      "matches": true
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "expected": "0d0c2f2a6e9558476d52a7fa7524310bc9e2743082b8681de75ccf04c41f838e",
+      "actual": "0d0c2f2a6e9558476d52a7fa7524310bc9e2743082b8681de75ccf04c41f838e",
+      "matches": true
+    },
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "expected": "b841b7e59e1875a81ff17279825d9906909d57f4a23489c8030ecce88cd5d919",
+      "actual": "b841b7e59e1875a81ff17279825d9906909d57f4a23489c8030ecce88cd5d919",
+      "matches": true
+    },
+    {
+      "path": "project-templates/base/.versat/standards.lock",
+      "expected": "5628fcdba72c425532b7bd57660afc5f2f7b3846e42625b6d345c41012daf7ee",
+      "actual": "5628fcdba72c425532b7bd57660afc5f2f7b3846e42625b6d345c41012daf7ee",
+      "matches": true
+    },
+    {
+      "path": "CHANGELOG.md",
+      "expected": "fdf322ec3c6f7c666467c3604b2484efda9e40ced4926c0dfbbc9c5b5f3ce55d",
+      "actual": "fdf322ec3c6f7c666467c3604b2484efda9e40ced4926c0dfbbc9c5b5f3ce55d",
+      "matches": true
+    },
+    {
+      "path": "LICENSE",
+      "expected": null,
+      "actual": null,
+      "matches": true
+    },
+    {
+      "path": "NOTICE",
+      "expected": null,
+      "actual": null,
+      "matches": true
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "expected": null,
+      "actual": null,
+      "matches": true
+    }
+  ],
+  "scope": "Integrity/applicability only; current rights and restricted review incomplete; no root adoption."
+}

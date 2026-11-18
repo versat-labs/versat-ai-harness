@@ -1,0 +1,15 @@
+{
+  "README.md": "4304b17baa76ab3d8bf0cb1840be672dceb28ee336f4cd1c00b6c163dd7e0e1d",
+  "before/design.md.txt": "d9c684349634a59eb704bd92333c7a0e52298efbca5b17497107b5c64544d34f",
+  "before/handoff.md.txt": "1dc9e9ce6f1e8d27510669fd4e164943f4e999c623476b8e9344f51a6cd1c137",
+  "before/proposal.md.txt": "c44c56b27d0a19c8d71192bd5dfb0d71ef91e6a4fc4ba4a3466ce97dfa63df56",
+  "before/requirements.md.txt": "68e1bff9503cd342e8bf4d53e05cbc764105be718bdfecc7ca689b2161fef6d4",
+  "before/tasks.md.txt": "1f21ae23dcf1642ad791971bc67bbbe7a9c2b6a6a76fd17896220c4b6ce66dea",
+  "before/validation-r1.json": "2ad3285cc539878f4781c61a3d4f3f52373afba3f5dfea2b9326cb2ea7a2c5d9",
+  "local-review.json": "0f52f031e2c46bdcadf9ca36c25f8678eb1c698d108a7c7737567b24cbb2286c",
+  "planning.json": "720948546ae928d48633ee0c78dcab672cd728f6b75255ad66d15daaba99bf42",
+  "source-before.json": "9f7c8b5ebc121d1c4f7838174396c621490a749a44023f2470ad04a65e311a64",
+  "suite-result.json": "cb099dd38f1ed7c3ece316e5a109e2bd4ba0f25b4dea8f934c4c1ba964a55e35",
+  "suite.stderr": "8d115eb2e355f1ffeb063e6e867009922313db7e7594d9279554b260cd5fb0c3",
+  "suite.stdout": "d94cbe57c01c0fc74fa1d524664ff28523554f3578b50280a9dd32620ada7e82"
+}

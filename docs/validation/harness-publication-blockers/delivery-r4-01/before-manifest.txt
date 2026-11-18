@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "revision": 8,
+  "observed_at": "2026-11-17T19:59:00.590809+00:00",
+  "change": "harness-publication-blockers",
+  "source_base_commit": "4a56181d3597c5d345a7639f013547e1700420cb",
+  "candidate": {
+    "version": "0.4.0",
+    "preparation_version": "0.3.0",
+    "text_package_digest": "894308c5f1921f28677d55d39b9bf5fb386467dc652e5dca5908d54756fe9f48",
+    "patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+    "effective_adoption": false
+  },
+  "restricted_evidence": {
+    "predecessor_id": "HPR-PRIVATE-01",
+    "assessment_sha256": "284e32a79cff971238c354e94a4ef01dcd87e22ae8ac9df5fbc83e54f2075943",
+    "integrity_manifest_sha256": "01ce4a4c21248c88715a227b8763e7c8ae85a16c39ed39b0960f49a56bb09c62",
+    "local_hashes_verified": true,
+    "remote_exact_path_status": "Exact private remote revision reobserved, technical integrity verified and independent approval accepted under R4; not merged.",
+    "new_record_id": "HPB-R4-PRIVATE-01",
+    "new_record_revision": "39ee0a0081769503a323f37bf9675ce7c02ec77d",
+    "new_record_digest": "671e38bbcf451285f809a006ed8a3801fb7c2f69f9dc412bc1707639137638f3",
+    "new_collection": "Bounded repository-only GETs retained in restricted R4 record; no new sensitive report or payload sent.",
+    "pending_local_inventory": {
+      "id": "HPB-PRIVATE-01",
+      "revision": 1,
+      "assessment_sha256": "af8a09698bf974130bedb5887397501e55cc441f17d8a391190a217d6f4832b2",
+      "integrity_sha256": "7ceb4f25bb7776bdf4269c78154da1ec82151292bc7052180ec883f8ed654046",
+      "state": "Included in exact remotely preserved package; R4 preservation acceptance satisfied.",
+      "local_owner_readable": true,
+      "bound_files": 320
+    },
+    "binding_limit": "R4 evidence-preservation acceptance met for exact package. No command execution or specialist capacity inferred from empty approval body; future changed scope requires its applicable evidence.",
+    "supplementary_records": [
+      {
+        "id": "HPB-DECISION-001",
+        "revision": 1,
+        "integrity_sha256": "f58eaa33d55376a6a60f3c3d9b1d6c6fa14cc2bd12641b89d71eab91d0507363",
+        "bound_files": 3,
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      },
+      {
+        "id": "HPB-DECISION-002",
+        "revision": 1,
+        "integrity_sha256": "2ddf18d41742b58e42a31a2c680bc3ccc86a965523cede58fc07c871f82ac4d9",
+        "bound_files": 3,
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      },
+      {
+        "id": "HPB-DECISION-003",
+        "revision": 1,
+        "integrity_sha256": "505ac0090e617ba0a36b3783b66350150857b413a050e8ba621caccba91e4c12",
+        "bound_files": 3,
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      },
+      {
+        "id": "HPB-DECISION-004",
+        "revision": 1,
+        "integrity_sha256": "de816e811907a8c37d71b7086a4cf4cacf6291f9acd638b447f28f5317c6825e",
+        "bound_files": 3,
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      },
+      {
+        "id": "HPB-CUSTODIAN-EVIDENCE-001",
+        "revision": 1,
+        "integrity_sha256": "4e37d12e9a2cd6240dbc5c5c1337c6341147b539684f478b070fbd327154a635",
+        "bound_files": 5,
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      },
+      {
+        "id": "HPB-CACHE-REMOVAL-001",
+        "revision": 1,
+        "integrity_sha256": "010f1a9d7b7c3514eb08873d490313339bf9ecd5d2bb29424a68f0e35a919781",
+        "bound_files": 4,
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      },
+      {
+        "id": "HPB-DECISION-005",
+        "revision": 1,
+        "integrity_sha256": "78c22e9e0553dc8e220d59661e36b1126e3818a54a7016f8a5364940f111f556",
+        "bound_files": 3,
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      },
+      {
+        "id": "HPB-EXPOSURE-RIGHTS-R3-01",
+        "revision": 1,
+        "integrity_sha256": "107196f87620a26a4cd9210090703cbdd27d3c00f0812ecd489441d698acc91c",
+        "decision_id": "HPB-DECISION-R3-01",
+        "decision_integrity_sha256": "05a9e0e8a9248e63e501a737a7b98fb630290cf397638fd916aa817848b6c541",
+        "evidence_preservation": "Included in the exact privately preserved package; historical originals and original decision scopes unchanged."
+      }
+    ]
+  },
+  "reviewers": [
+    {
+      "actor": "Codex",
+      "capacity": "bounded technical/documentary observations only"
+    },
+    {
+      "actor": "@elviszoz",
+      "capacity": "Accountable owner/company approver; scoped classifications/video review, UI/cache evidence and bounded D1/D2 provenance attestation. No specialist qualification or final new-scope acceptance inferred. Owner-selected general CODEOWNER/shared security triage, retaining accountable coordination; future PR review, shared triage and test availability confirmed in HPB-PARTICIPATION-R3-01; actual operations remain unperformed."
+    },
+    {
+      "actor": "@evertonspohrversat",
+      "capacity": "Shared CODEOWNER/triage participant confirmed; existing admin role observed 2026-11-16. Actual independent approval of preserved evidence observed 2026-11-17. Future Harness authorship/report receipt remain separate operations; no specialist qualification inferred."
+    }
+  ],
+  "categories": [
+    {
+      "category": "working-tree",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Current delta from the 1,874-file owner-reviewed snapshot is first-party planning, handoff/reporting prose and technical evidence; exact final inventory is in run-r4-01. No new executable behavior/dependency/legal text.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "reachable-history-and-deleted-content",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "All 22 remote ref identities match the preserved forensic inventory; reuse earlier reachable history and accepted VAL classifications. No history rewrite or unreachable-object claim.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "branches-tags",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "1 branch, 2 tags, 19 PR heads unchanged after recorded refspec mapping.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "releases-assets",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Successful fresh paginated listing: zero releases/assets.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "lfs",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "No change to reviewed reachable refs or executable/source distribution; prior no-pointer/no-binary observation remains applicable. Generated local bytecode preserved outside distribution.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "fixtures-sdd-validation",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Earlier material and accepted reference/path decisions retained; new R4 plan/evidence reviewed as first-party technical records. Historical failures remain failures.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "issues-prs-comments-reviews",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Fresh 33 issue/PR records, 19 PRs, 2 issue comments, 0 inline/commit comments and all 19 review listings match previously reviewed substantive fields.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "attachments-other-external-links",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "No changed remote bodies or new attachment URLs; reuse explicit owner video review and VAL-005/006. No unrelated private Slack content exposed.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "wiki-discussions-pages",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Fresh successful repository GET: has_wiki, has_discussions and has_pages all false.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "packages",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Owner repository-view absence remains scoped evidence; unchanged refs/workflow and no new runs/releases or publishing path support reuse. Insufficient-scope API attempt is not absence. Unlinked independently private registries excluded under R4. Final post-CI repository-view refresh remains required.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "ci-logs",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "All 58 run IDs/attempts/head SHA/update/status/conclusion match acquired reviewed inventory; reuse 115 log entries and accepted historical metadata. Later private CI needs delta review.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "ci-artifacts",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Successful fresh paginated listing: zero artifacts.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "ci-caches",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Successful fresh paginated listing: zero caches. Owner deletion retained; contents never inspected and no recovery attempted.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "metadata-integrations",
+      "current_review": "reconciled",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Fresh hooks/deployments/environments listings empty, main/workflow unchanged, tokens read-only and no fork secret/write forwarding. No unrelated org app audit. Confirm all actual writers idle at attended operation.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "effective-controls",
+      "current_review": "prepared-operational-follow-up",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Main protected=false. Prepared exact rule unchanged; public activation/readback and representative enforcement remain future operations, not a private-state feature blocker.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    },
+    {
+      "category": "public-harness-reporting",
+      "current_review": "prepared-operational-follow-up",
+      "record": "HPB-R4-PRIVATE-01",
+      "limits": "Private-state endpoint returns 404. Shared triage confirmed; executable one-report/access/exclusion procedure and fallback prepared. No public receipt claimed.",
+      "publication_clearance": false,
+      "preparation_disposition": "reconciled for approved R4 scope; later opening requires final mutable refresh"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "HPB-001",
+      "category": "evidence-access",
+      "state": "resolved-private-preparation",
+      "tasks": [
+        "TASK-001",
+        "TASK-002",
+        "TASK-003"
+      ],
+      "observation": "See current R4 consolidated evidence and scoped finding resolution; historical gaps remain in prior ledger.",
+      "owner": "@elviszoz",
+      "next_action": "Perform only separately authorized adoption/integration and final refresh/opening follow-up.",
+      "exit_condition": "Approved R4 private preparation criterion; no future public outcome inferred."
+    },
+    {
+      "id": "HPB-002",
+      "category": "surface-review",
+      "state": "resolved-private-preparation",
+      "tasks": [
+        "TASK-002",
+        "TASK-003"
+      ],
+      "observation": "See current R4 consolidated evidence and scoped finding resolution; historical gaps remain in prior ledger.",
+      "owner": "@elviszoz",
+      "next_action": "Perform only separately authorized adoption/integration and final refresh/opening follow-up.",
+      "exit_condition": "Approved R4 private preparation criterion; no future public outcome inferred."
+    },
+    {
+      "id": "HPB-003",
+      "category": "confidentiality",
+      "state": "resolved-private-preparation",
+      "tasks": [
+        "TASK-003"
+      ],
+      "observation": "See current R4 consolidated evidence and scoped finding resolution; historical gaps remain in prior ledger.",
+      "owner": "@elviszoz",
+      "next_action": "Perform only separately authorized adoption/integration and final refresh/opening follow-up.",
+      "exit_condition": "Approved R4 private preparation criterion; no future public outcome inferred."
+    },
+    {
+      "id": "HPB-004",
+      "category": "rights",
+      "state": "resolved-private-preparation",
+      "tasks": [
+        "TASK-004"
+      ],
+      "observation": "See current R4 consolidated evidence and scoped finding resolution; historical gaps remain in prior ledger.",
+      "owner": "@elviszoz",
+      "next_action": "Perform only separately authorized adoption/integration and final refresh/opening follow-up.",
+      "exit_condition": "Approved R4 private preparation criterion; no future public outcome inferred."
+    },
+    {
+      "id": "HPB-005",
+      "category": "free-transition-prerequisites",
+      "state": "resolved-private-preparation",
+      "tasks": [
+        "TASK-005"
+      ],
+      "observation": "See current R4 consolidated evidence and scoped finding resolution; historical gaps remain in prior ledger.",
+      "owner": "@elviszoz",
+      "next_action": "Perform only separately authorized adoption/integration and final refresh/opening follow-up.",
+      "exit_condition": "Approved R4 private preparation criterion; no future public outcome inferred."
+    },
+    {
+      "id": "HPB-006",
+      "category": "reporting",
+      "state": "resolved-private-preparation",
+      "tasks": [
+        "TASK-006"
+      ],
+      "observation": "See current R4 consolidated evidence and scoped finding resolution; historical gaps remain in prior ledger.",
+      "owner": "@elviszoz",
+      "next_action": "Perform only separately authorized adoption/integration and final refresh/opening follow-up.",
+      "exit_condition": "Approved R4 private preparation criterion; no future public outcome inferred."
+    }
+  ],
+  "disposition": "Private R4 preparation reconciled; verify final check results in Tasks before delivery. No publication or GitHub operation authority.",
+  "snapshot_contract": "Current manifest is a check input. Raw private data remains restricted; excluded run outputs record actual input digests and results.",
+  "historical_observation_date": "2026-11-14; category entries remain dated unless expressly refreshed below",
+  "planning_revision": 4,
+  "authority": {
+    "implementation": "User approved Tasks R4 and authorized private implementation only on 2026-11-17.",
+    "github_mutations": false,
+    "publication": false,
+    "messages": false,
+    "effective_adoption": false
+  },
+  "rights_attestation": {
+    "record": "HPB-DECISION-005",
+    "rights_record": "HPB-RIGHTS-02",
+    "revision": 1,
+    "source_inventory_sha256": "3d4e693e4597266e4ff00238d0f0e961e5a9542f52f2a7e9f4b422bb07411e1d",
+    "source_files": 1644,
+    "delta_rows": 295,
+    "own_material_groups": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6"
+    ],
+    "D1": "Owner confirmed own material produced for Versat E.A.S., including generated under direction.",
+    "D2": "Owner knows of no other restrictions.",
+    "limit": "Exact reviewed first-party snapshot; no blanket grant over changed/new or third-party material."
+  },
+  "current_metadata": {
+    "record": "HPB-R4-PRIVATE-01",
+    "observed_on": "2026-11-17",
+    "safe_summary": "docs/validation/harness-publication-blockers/run-r4-01/surface-reconciliation.json",
+    "limits": "Fresh bounded GETs plus applicable existing evidence; public controls/reporting and final post-CI refresh unexecuted."
+  },
+  "transition": {
+    "deviation": "HPB-FREE-TRANSITION-R2",
+    "repository": "versat-labs/versat-ai-harness",
+    "branch": "main",
+    "scope": "Named private preparation/adoption PRs and attended transition session only; no global Standards change.",
+    "coordinator": "@elviszoz",
+    "private_preparation": "R4 reconciliation recorded; final local checks in current Tasks ledger",
+    "public_enforcement": "Unexecuted: one OP-CTRL-01 representative sequence plus OP-CTRL-02 shared-rule mapping",
+    "public_reporting": "unverified / not executed",
+    "rule_body_sha256": "f91ccee7709cbfe4be968e51bcfe96feba3d3f4691395eac1d6331282e671307",
+    "activation_deadline_seconds": 900,
+    "t0": null,
+    "protection_readback_at": null,
+    "operator_consent": null,
+    "eligible_author_reviewer_consent": {
+      "author": "@evertonspohrversat",
+      "reviewer": "@elviszoz",
+      "source": "HPB-PARTICIPATION-R3-01",
+      "state": "owner-confirmed; no PR/review performed"
+    },
+    "external_test_author_consent": null,
+    "freeze_agreement": null,
+    "authority": "Separate visibility and correction authority required together; no public action currently authorized.",
+    "fixture_delivery": "Reuse suitable genuine governed contribution or prepare bounded genuine delivery evidence for the one actual representative PR; no extra reciprocal-owner PRs.",
+    "confirmed_participation_source": "HPB-PARTICIPATION-R3-01; do not request again"
+  },
+  "shared_ownership": {
+    "record": "HPB-R3-LOCAL-01",
+    "source": "owner-approved R3",
+    "general_codeowners": [
+      "@elviszoz",
+      "@evertonspohrversat"
+    ],
+    "local_fallback_applied": true,
+    "specific_entries_preserved": 12,
+    "local_codeowners_sha256": "381bbb166ad87cc76ddfd5b5d868ffaebaa447c075be43bac645bda05583e0ea",
+    "main_fallback": "* @elviszoz",
+    "base_adoption": "unverified / not performed",
+    "required_approvals": 1,
+    "author_self_approval_sufficient": false,
+    "private_integration": "Owner confirms Everton will actually open the future PR and Elvis will review under the current Elvis-only main fallback. No PR/review or base adoption performed."
+  },
+  "security_triage": {
+    "coordinator": "@elviszoz",
+    "maintainers": [
+      {
+        "actor": "@elviszoz",
+        "capacity": "Owner-selected shared monitoring, triage and coordination",
+        "existing_repository_role": "admin",
+        "role_observed_on": "2026-11-16",
+        "evidence": "HPB-R3-LOCAL-01",
+        "availability_confirmed": true,
+        "public_report_access": "unverified / not executed",
+        "availability_source": "HPB-PARTICIPATION-R3-01; owner-reported shared triage and future test availability",
+        "receipt_requirement": "One actual accountable handler receipt overall; applicable access required for both. No duplicate notification requirement."
+      },
+      {
+        "actor": "@evertonspohrversat",
+        "capacity": "Owner-selected shared monitoring, triage and coordination",
+        "existing_repository_role": "admin",
+        "role_observed_on": "2026-11-16",
+        "evidence": "HPB-R3-LOCAL-01",
+        "availability_confirmed": true,
+        "public_report_access": "unverified / not executed",
+        "availability_source": "HPB-PARTICIPATION-R3-01; owner-reported shared triage and future test availability",
+        "receipt_requirement": "One actual accountable handler receipt overall; applicable access required for both. No duplicate notification requirement."
+      }
+    ],
+    "actual_handler": null,
+    "handover_acknowledgement": null,
+    "protocol": "One authorized non-sensitive public marker, applicable access for both maintainers, actual receipt by one accountable handler and unauthorized-viewer exclusion. Record a real handover only when needed.",
+    "public_status": "unverified / not executed"
+  },
+  "participation_confirmation": {
+    "record": "HPB-PARTICIPATION-R3-01",
+    "source": "Actual user reply in this chat on 2026-11-16; owner reports Everton confirmation and both maintainers’ participation",
+    "recorded_at": "2026-11-16T18:31:04.773507+00:00",
+    "private_pr_author": "@evertonspohrversat",
+    "private_pr_reviewer": "@elviszoz",
+    "shared_triage_confirmed": [
+      "@elviszoz",
+      "@evertonspohrversat"
+    ],
+    "future_test_availability": "confirmed by owner for both maintainers",
+    "github_operations_authorized": false,
+    "actual_pr_review": false,
+    "actual_report_receipt": false,
+    "actual_handover_acknowledgement": false,
+    "limits": "Participation confirmation reused; actual session/operator/freeze and external reporter/viewer identities are confirmed near separately authorized operation. No public outcome inferred."
+  },
+  "owner_decisions_r3": {
+    "record": "HPB-DECISION-R3-01",
+    "reviewed_packet": "HPB-EXPOSURE-RIGHTS-R3-01",
+    "reviewed_source_files": 1874,
+    "reviewed_delta_files": 247,
+    "reviewed_final_source_sha256": "7901eb1b9d3575de8310340bd5019381d03d9151738c1ea81228e31dc345e00f",
+    "decision_integrity_sha256": "05a9e0e8a9248e63e501a737a7b98fb630290cf397638fd916aa817848b6c541",
+    "reviewer": "@elviszoz",
+    "capacity": "Accountable owner/company representative, as previously declared; no independent specialist qualification inferred",
+    "R3-E1": "Confirmed: reviewed new first-party R2/R3 material was produced for Versat E.A.S., including generated-under-direction material, with no additional restriction stated for that scope.",
+    "R3-E2": "Confirmed: local user/worktree/temporary-directory paths in the 61 reviewed technical records may remain as non-confidential historical metadata.",
+    "state": "received; do not request the same decisions again",
+    "limits": "Preserve third-party terms and original decisions. No blanket approval of unseen material, full surface clearance, publication or operation authority."
+  }
+}

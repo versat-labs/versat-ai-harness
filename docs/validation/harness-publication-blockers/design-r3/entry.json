@@ -1,0 +1,8 @@
+{
+  "date": "2026-11-16",
+  "approval_quote": "sim",
+  "approved_proposal_digest": "6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e",
+  "scope": "Design R3 only; no Tasks revision, source ownership edit, GitHub operation or publication.",
+  "ci_design_finding": "Non-draft workflow enables --require-archive; validator rejects empty dossier selection. Positive operational test heads need genuine approved fixture delivery records, not draft/bypass or synthetic approvals.",
+  "new_operational_followup": "OP-CTRL-02: at most two reciprocal-author test PRs, separate later authority; OP-CTRL-01 external fork retained."
+}

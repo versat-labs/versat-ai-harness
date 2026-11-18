@@ -2,13 +2,15 @@
 
 [English](licensing.md) | [Português](licensing.pt.md) | [Español](licensing.es.md)
 
-El Harness prepara un candidato Apache-2.0 para código, documentación y plantillas propias elegibles. **No está adoptado**, y la versión 0.4.0 **no está disponible**. El candidato propietario anterior es histórico; su aprobación no aprueba el texto nuevo. Revise el [candidato concreto](../../licensing/candidates/apache-2.0/APPROVAL.md), sus avisos, alcance y hashes de archivos.
+La licencia y los avisos aprobados están aplicados solamente en la rama local de entrega 0.4.0; integración en main y release siguen pendientes. Consulte la [licencia raíz](../../../LICENSE), el [aviso](../../../NOTICE), los [avisos de terceros](../../../THIRD-PARTY-NOTICES.md) y el [handoff actual](../../handoffs/harness-publication-blockers/README.md). Las aprobaciones y el texto de contribución preservados describen su etapa original; este estado actual no los reescribe.
 
 ## Preparar y revisar
 
 Identifique componente/revisión, material propio y de terceros, distribución prevista y permisos/avisos aplicables. La [política canónica](../../../standards/core/licensing-publication.md) rige la revisión. Revisores autorizados consultan evidencia sensible en almacenamiento restringido; esta orientación pública no depende de registros ni formación privados para explicar el proceso.
 
 Los términos Apache propuestos permiten uso general y comercial, modificación, redistribución y forks del material cubierto, sujetos a sus condiciones. Los terceros conservan sus términos. La herramienta no impone su licencia al material independiente del proyecto de destino; las plantillas copiadas mantienen las obligaciones aplicables. No se introduce CLA, DCO ni cesión de propiedad intelectual adicional. El texto oficial inglés rige el candidato, incluidas contribuciones, patentes, avisos, marcas y garantías; estas traducciones son explicativas.
+
+Solo para este Harness, el handoff R2 aprobado selecciona GitHub Free con una secuencia delimitada: completar primero la revisión privada y la adopción/integración exacta; después autorizar por separado la visibilidad pública y la protección/verificación inmediata de main en un máximo de 15 minutos. Las verificaciones reales de controles públicos, reporte y uso externo siguen siendo obligatorias antes de una release posterior. Esta excepción de secuencia no exime derechos, confidencialidad ni revisión humana y no modifica el Standard canónico. Consulte el [handoff actual](../../handoffs/harness-publication-blockers/README.md).
 
 ## Probar una revisión
 

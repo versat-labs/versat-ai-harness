@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-005",
+  "result": "unverified",
+  "recorded_at": "2026-11-16T17:21:21.926868+00:00",
+  "input_digest_before": "bfa6d73ea861de844e3e6554baed4332362e67d96d0264f8cc1697f16f58de35",
+  "input_digest_after": "bfa6d73ea861de844e3e6554baed4332362e67d96d0264f8cc1697f16f58de35",
+  "procedure": "Partial implementation verification and explicit prerequisite/evidence review under approved Design R2; executed substeps and unavailable substeps are distinguished below. No omitted actual service/client/human outcome is a simulated pass.",
+  "explanation": "Actual private PVR 404 and current documented public boundary retained; private recipient/triage confirmation remains missing. Safe fallback and exact public activation/receipt/exclusion protocol are prepared, with no message/configuration operation.",
+  "supporting_evidence": [
+    "remote-metadata.json",
+    "walkthroughs.json",
+    "participant-option.md"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

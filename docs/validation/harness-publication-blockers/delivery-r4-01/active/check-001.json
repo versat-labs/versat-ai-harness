@@ -1,0 +1,17 @@
+{
+  "check": "CHECK-001",
+  "result": "pass",
+  "scope": "Current local delivery review, not main integration/publication",
+  "input_digest_before": "0847656ff63fc92f0c769487c827d72614bc8583a134e19fbe410ab35687f016",
+  "input_digest_after": "0847656ff63fc92f0c769487c827d72614bc8583a134e19fbe410ab35687f016",
+  "observations": "Exact originals and intact R4 report reverified locally; actual private revision/reviewer observation reused at its recorded date. No new remote access or approval claimed.",
+  "baseline_evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-001.json",
+  "current_evidence": [
+    "identity-and-application.json",
+    "source-delta.json",
+    "behavior-reuse.json",
+    "review.json",
+    "suite.json"
+  ],
+  "limitations": "R4 public service outcomes and remote freshness remain unexecuted/dated; original failed checks and earlier roots unchanged."
+}

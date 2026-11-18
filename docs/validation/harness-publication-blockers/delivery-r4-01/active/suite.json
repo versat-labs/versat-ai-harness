@@ -1,0 +1,9 @@
+{
+  "exit": 0,
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh",
+  "root": "actual local 0.4.0 delivery branch before documentary move",
+  "counts": [
+    131,
+    48
+  ]
+}

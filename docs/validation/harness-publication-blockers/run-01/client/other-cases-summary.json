@@ -1,0 +1,13 @@
+{
+  "cases": {
+    "case-b-missing-provider": "pass",
+    "case-c-unavailable-version": "pass",
+    "case-d-missing-resources": "pass",
+    "case-e-explicit-migration": "pass",
+    "case-f-failed-update": "pass"
+  },
+  "workspace_unchanged": true,
+  "personal_cache_unchanged": true,
+  "catalog_restored": true,
+  "suite_elapsed_seconds": 164.05947589874268
+}

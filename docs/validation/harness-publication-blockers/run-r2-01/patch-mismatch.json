@@ -1,0 +1,7 @@
+{
+  "fixture": "Disposable copy with VERSION changed to 0.0.0",
+  "exit_code": 1,
+  "expected": "nonzero; do not rebase/regenerate patch",
+  "stderr": "error: patch failed: VERSION:1\nerror: VERSION: patch does not apply\n",
+  "canonical_root_unchanged": true
+}

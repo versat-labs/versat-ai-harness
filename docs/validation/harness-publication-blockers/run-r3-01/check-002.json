@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-002",
+  "result": "unverified",
+  "recorded_at": "2026-11-16T18:16:18.216430+00:00",
+  "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "method": "Partial approved R3 private verification: actual local inspection, restricted hashes, bounded metadata and complete maintained suites; missing human/client/service outcomes remain explicit. Within-boundary evidence rechecks follow the before snapshot.",
+  "explanation": "All 22 refs match the preserved collector mapping; current caches/artifacts/releases absent. Owner classifications/video/deletion evidence retained without recovering deleted payloads. Complete final 16-category, package/body/integration review remains outstanding.",
+  "supporting_evidence": [
+    "remote-metadata-network.json",
+    "ref-reconciliation.json",
+    "within-boundary/rights-delta.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

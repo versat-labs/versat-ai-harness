@@ -1,0 +1,33 @@
+{
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "docs/handoffs/harness-publication-blockers/review-inputs.json",
+    "docs/user-docs/guides/security-reporting.es.md",
+    "docs/user-docs/guides/security-reporting.md",
+    "docs/user-docs/guides/security-reporting.pt.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_existing_files": 1857,
+  "approved_stage_digests_unchanged": true,
+  "previous_frozen_evidence_preserved": true,
+  "fresh_partial_checks": [
+    "CHECK-001",
+    "CHECK-002",
+    "CHECK-003",
+    "CHECK-009"
+  ],
+  "other_prior_results_stale": 6,
+  "tests_passed": 179,
+  "candidate_native_tests": "not rerun; final prerequisites unavailable",
+  "delivery_exit": 1,
+  "github_mutations": 0,
+  "workflows_executed": 0,
+  "publication": false,
+  "restricted_record": "HPB-EXPOSURE-RIGHTS-R3-01",
+  "restricted_persistence": {
+    "state": "blocked by automatic approval review; staged local packet retained",
+    "reason": "Specific transfer of potentially sensitive evidence to the selected private repository requires explicit user approval.",
+    "destination_copy_created": false,
+    "git_commit_push": false
+  }
+}

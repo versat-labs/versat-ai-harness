@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-17",
+  "anchors": {
+    "sdd/process.md": "488b63b3ad26e4779db69d4b6ea9bd28b629936f58ccb42493cdaa99c940ccdb",
+    "sdd/metadata.md": "788c3a0ae8ac265a66546d3dddbf35e2c0c81bfa932940f3e5eae34990a0a064",
+    "sdd/workflows/new-change.md": "3fed9300f21ecc17d799b188179efb5a149a0afec4a91098f613a007c40f7cd4",
+    "standards/index.yaml": "0a70db972dc3ba14cecf27a1617e404f63ab32ec1222ae8632c30698ecbcccee",
+    "validators/sdd/validate.py": "94f152e14dbe1dbb60fcd3d0ef40ba896fd9a71234d28d44ac8ba1d172d329bb"
+  },
+  "original_sha256": {
+    "proposal": "a84344a3efb51f5319819020a18ec4662e5be377f1b975e756186c69c76718a9",
+    "requirements": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+    "design": "fc0d863e566e0a29ebe4922119d76208f7c765845cdbf747176c9b604f253ce0",
+    "tasks": "1883fa5cb47f0e309390fa48c2f374494a1db8590243f32fc1e67d4aaaeeab37"
+  },
+  "authority": "Owner request for local plan simplification; no GitHub mutation or publication",
+  "scope": "R4 Proposal/Requirements and dependent status only"
+}

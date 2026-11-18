@@ -1,0 +1,41 @@
+{
+  "changed": {
+    ".agents/plugins/marketplace.json": "2a037f09d56f6914642e4ec5aa4e5de74ab56f41cbbc74b8ee28b40e57402051",
+    ".codex-plugin/plugin.json": "d45217456eca650042c3018db963f1638224f34a9e15af8af55cfab754c17f96",
+    "CHANGELOG.md": "4d69754f2a696fd1e684ca9b712856478b44eaf8d47b399cb532bb5ea5ad1c14",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "ff43bbc1f6467a783cff030a8ed6442cf2dda21c289754cec828714ff2b63edb",
+    "README.es.md": "b6f39ac6beaedf2f19884582bb8b6bcb071ca58c83d87f878e7e0428fbc0acff",
+    "README.md": "40e5dcb1292025b650d0aeffd5429f8013f8df84f64df85b60d79377ed866a29",
+    "README.pt.md": "e7b5ab216f03e8c180b5217e542751f94c3e6a163639b58703ea7e3b7591534f",
+    "THIRD-PARTY-NOTICES.md": "b8a4b3ed529821275c419a79ec7da300c84b0d0d4380e886ada2436a77829081",
+    "VERSION": "40b8eb4000a913a7791090535f291d3d369874162a89ef3c9e3d4e887a1b9e79",
+    "docs/architecture/overview.md": "18ffddd7dc321aeef1c90bf3f60536e668833a03297aa4e6f34b951370017404",
+    "docs/handoffs/harness-publication-blockers/README.md": "f8d8b3ba3dd06137e4e4b00a49dd669cf929f1720194acb8441db61c5fd0bafe",
+    "docs/handoffs/harness-publication-blockers/review-inputs.json": "0249390f4552fb031f1824caad706bb3ebed3019dcd36b379c2a3a5d61b7d816",
+    "docs/handoffs/harness-publication-blockers/transition.md": "0f645cb846af027c633b90e783aae6817d780088cec8aae504e0bcd1d4579449",
+    "docs/product/overview.es.md": "3442bc9ff73a92015842e0f19158b7741217e29130401b668e43ca6740f53ccf",
+    "docs/product/overview.md": "eb12cbd138f4b8a34d6360bcbf8d553a506dffbb1e11e8fe0ee13eecfeb70947",
+    "docs/product/overview.pt.md": "e56340bcc23ff6d685363443e25e351b17ed059c439f909b25ae4cb3fd926307",
+    "docs/user-docs/guides/licensing.es.md": "4fd4e203ef37b8aac06efb6ec47a3a1b54124ce00552962ea7505b564f4ea359",
+    "docs/user-docs/guides/licensing.md": "ded4478201e70fed17596b5795561c72c6e0cfab4f78de0e090b7541ab03b40a",
+    "docs/user-docs/guides/licensing.pt.md": "e9d6c53e9b7788d1930b360a17664b538ea12abc3b09f010f63a2e801fdc57ad",
+    "docs/user-docs/guides/workspace-setup.es.md": "e7bf12da5186d75e55ebe356c5942e7ec0fa2059f2c6c01591703644bf8ea3c3",
+    "docs/user-docs/guides/workspace-setup.md": "1f7eef9a0dc5a5c3b63b6baf7e4ed508c1ab645321f2bfb823bf8ada1d103e77",
+    "docs/user-docs/guides/workspace-setup.pt.md": "4512a77efbffa779bc76d2d1db77be26c3a4785412a9986f0846d6f2f1b562ba",
+    "plugin.json": "d6dae0eed41a74119f04cc1228801efd5979fce662cf3f8129047b1184ffc8fd",
+    "project-templates/base/.versat/standards.lock": "8fa5f17637c5a7120da84ae6dd0f29f790692382678c1852ceef00398e74d5d1",
+    "specs/archive/harness-publication-blockers/design.md": "fd9b5e5b4e9c47dc18d97c8e7bba82128906c2e52aef54a139e2bec9b1ab9eef",
+    "specs/archive/harness-publication-blockers/proposal.md": "09a4322a22139b3add2d597a785f4a540d8e0c6e20d7ab2c037993605d0fcd8d",
+    "specs/archive/harness-publication-blockers/requirements.md": "c6ffcc2f90ed0c4494e3aa48f62317509734e7a1d742d317021007d7d0091566",
+    "specs/archive/harness-publication-blockers/tasks.md": "00a31146385af39254b46b6437e26ccef6fef35a6a8d7b537776b4886b97f426"
+  },
+  "removed_by_unique_archive_move": [
+    "specs/changes/harness-publication-blockers/design.md",
+    "specs/changes/harness-publication-blockers/proposal.md",
+    "specs/changes/harness-publication-blockers/requirements.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "assessment": "Exact approved patch plus first-party delivery/status translations and local bookkeeping only; no new executable behavior, external material, dependency, private payload or credential indicator. Existing D1/D2/R3-E1/VAL/R3-E2 classifications retained without new grant. Remote surfaces require refresh after eventual private CI.",
+  "frozen_candidate_texts_unchanged": true
+}

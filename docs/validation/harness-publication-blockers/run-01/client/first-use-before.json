@@ -1,0 +1,9 @@
+{
+  ".versat/project.yaml": "4cbd00521f5fd475a738a5c95ae90ed4f7872ae0a6932f38ce75024abcb854ef",
+  ".versat/standards.lock": "e04c3579c406a647b06c61935ecf4d28c8586717cf9cbf3048637997ecb99d25",
+  ".versat/validation.yaml": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+  "AGENTS.md": "6733230917c63d4f0db82a76df80ad071a76ad51e1994cc0cb14ea55bd32050b",
+  "specs/product/payment.md": "46a4d95d4458d55ce93d10aae8bdadcb9c60263aecf16f1bb3dd8163df955aaf",
+  "src/payment.py": "359cc89fa307dfd42bbe6f7052783dc9c890ff2483986ea73a94e079099f539b",
+  "tests/test_payment.py": "33a188ac152d4d7e5b8972a936d6680b16d4cf2191c91b5affff5826d3bc0f40"
+}

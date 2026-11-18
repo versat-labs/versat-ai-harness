@@ -1,0 +1,54 @@
+# Harness publication blockers — current operational handoff
+
+> Current planning status, 2026-11-16: Proposal/Requirements R3 is approved; [Design R3](../../../specs/changes/harness-publication-blockers/design.md) awaits Gate 2 for shared general CODEOWNERS, non-author approval and individual triage evidence. Tasks R2 remains superseded. The R2 implementation record below is historical; no ownership/route change is applied. GitHub operations, publication and changed-scope implementation remain outside this Design phase. [Design review packet](../../validation/harness-publication-blockers/design-r3/README.md).
+
+Updated 2026-11-16 for approved R2. The user authorized implementation with “Implemente.” after all three planning gates. **Private preparation is partial; publication remains deferred.** GitHub writes, messages, workflows, license adoption, integration, visibility, releases and consumer migration retain their separate authorization boundaries.
+
+The approved GitHub Free order is: private clearance and separately authorized exact adoption/integration; post-CI exposure refresh; final write freeze; separately authorized visibility plus immediate main protection/readback within 15 minutes; actual public enforcement, reporting and exact-commit external-use checks; later separately authorized release and independent migrations. A paid private-protection upgrade is no longer a prerequisite. The [operation procedure](transition.md) and [exact proposed body](main-protection.proposed.json) implement that handoff; neither executes it.
+
+## Evidence and identities
+
+Source base remains `4a56181d3597c5d345a7639f013547e1700420cb`; root version is 0.3.0. The 0.4.0 candidate is a private rehearsal, not an adopted or available release. All 16 [approved candidate files](../../licensing/candidates/apache-2.0/APPROVAL.md), seven included dependency texts and the [nine-file patch/preimages](../harness-publication-readiness/adoption.json) remain exact. No root license or installed consumer was changed.
+
+The [review-input manifest](review-inputs.json) binds safe identities and actual observation times. [R2 run 01](../../validation/harness-publication-blockers/run-r2-01/README.md) retains fresh evidence and its limits. [R1 run 01](../../validation/harness-publication-blockers/run-01/README.md), [inventory run 02](../../validation/harness-publication-blockers/run-02/README.md), [owner-review run 03](../../validation/harness-publication-blockers/run-03/README.md), [cache run 04](../../validation/harness-publication-blockers/run-04/README.md) and the [pre-R2 handoff](../../validation/harness-publication-blockers/run-r2-01/before-handoff.txt) remain immutable dated history. R1 client passes do not certify the revised final candidate.
+
+Current metadata reads confirm private visibility, unchanged main, unprotected main, capability-limited protection/rules reads, the expected GitHub Actions check/app, no current caches/artifacts/releases and no queued/in-progress runs at observation time. Workflow and CODEOWNERS hashes match local source. These are bounded observations, not freeze agreement or complete public-surface clearance. Public rules and reporting remain unverified.
+
+## Remaining private preparation findings
+
+| Finding | Preserved decision / actual progress | Missing exit evidence and owner |
+|---|---|---|
+| HPB-001 / FIND-001 — custody/access | Local predecessor and inventory originals and supplementary decision hashes remain intact. | @elviszoz: durable custody of the exact immutable records and attributable final-scope reviewer access/acceptance. Local readability and admin role are insufficient. Remote preservation has no implicit push authority. |
+| HPB-002 / FIND-002 — complete surface | Repository Packages screenshot was empty; two reviewed videos retain owner clearance. Cache deletion was performed by the owner; fresh GET still shows zero caches. | @elviszoz with technical reconciliation: complete package-coverage and all 16 categories against final source/refs and later CI outputs. Deleted cache payloads were never inspected; do not recover them or request their download. |
+| HPB-003 / FIND-003 — confidentiality | VAL-002, VAL-005, VAL-006 and VAL-007 have scoped owner decisions; documented fixtures/false positives remain separate. | Reconcile those decisions against exact final exposure and review only new/changed or unresolved material. Historical strategy content stays private; no blanket disclosure waiver. |
+| HPB-004 / FIND-004 — rights | D1/D2 confirm own material in reviewed G1–G6, including material generated under owner direction, and no other known restrictions. Texts/patch remain exact. | Reconcile the later source delta and preserve original third-party wording/notices. The [current delta](../../validation/harness-publication-blockers/run-r2-01/rights-delta.json) distinguishes unchanged attested files from changed/new files; no identical attestation is requested again. |
+| HPB-005 / FIND-005 — Free transition | R2 replaces private paid-capability enforcement with actual private prerequisites and the bounded public operation. Exact body and OP-CTRL-01 are prepared. | Confirm real author/reviewer/operator participation, feasible human/automation freeze and final private clearance. Public activation/enforcement stays mandatory and unexecuted. Admin permissions alone do not establish participation. |
+| HPB-006 / FIND-006 — reporting | Repository-native PVR remains intended; private 404 is retained as a visibility-bound observation. Safe fallback and accountable contact remain. | Confirm actual security recipients, triage and participation; execute the later separately authorized public receipt/exclusion test. A prior pilot or existing owner assignment does not prove receipt. |
+
+All six aggregate findings remain open. The manifest and this table are safe indexes, not substitutes for restricted originals or actual review. No technical test alone closes them.
+
+## Owner decisions already applied
+
+Institutional contact/history, the private workspace collaboration link, reviewed videos and the historical repository/issue reference retain their exact approved treatment. The institutional address is not an active security channel. Private strategy contents are not part of the public package. No historical deletion, source rewrite or video re-review is requested for unchanged scope.
+
+D1/D2 bind `HPB-RIGHTS-02` revision 1: 1,644 source files and 295 delta entries. They cover first-party portions only. Apache wording, dependency licenses and any embedded third-party material retain their sources and terms. Screenshots, videos, interpreters, wheels and action implementations are outside the source-only distribution. New R2 files are reviewed as a delta, without changing the original declaration.
+
+## Restricted evidence and collection boundaries
+
+Continue using the existing restricted system selected by [ADR-0016](../../decisions/0016-public-harness-preparation-boundary.md), not a new destination. Preserve HPR-PRIVATE-01 and HPB-PRIVATE-01 originals; record actual immutable revision/digests and reviewer capacity. Remote delivery, access expansion and new sensitive collection require their exact applicable authority. No raw private URLs, payloads, internal addresses or report bodies belong in Harness.
+
+The existing bounded inventory covers current source/history/refs, releases/assets/LFS, fixtures/governance/evaluations, issues/PRs/comments/reviews/direct attachments, optional sites/discussions, repository-related packages, CI logs/artifacts/caches and relevant metadata/integrations. Retain pagination, method, access limits and observation times for every category. Stop at unrelated repositories, external integration boundaries, unsupported extraction or new access requirements. Failed reads are unavailable, not absent. Reconcile newly changed scope before collecting it; use inspectable custodian evidence where direct access is unavailable.
+
+The source snapshot and current cache absence do not prove all history or external copies safe. New CI can create caches/logs/artifacts. Final refresh follows the last private CI run before the transition. A local record or opaque ID does not establish durable remote custody or actual reviewer acceptance.
+
+## Operational sequence and verification
+
+Follow [transition.md](transition.md) for `HPB-FREE-TRANSITION-R2`, named sessions, eligible real participants, final freeze, one rule attempt, bounded readback and mandatory OP-CTRL-01. The 15-minute deadline starts immediately before final visibility confirmation. Timeout/drift/unknown mutation stops rollout; maintain the freeze and preserve evidence. Owner-authorized containment is separate; no automatic private reversal or weaker rules.
+
+The public security route remains unverified. [English](../../user-docs/guides/security-reporting.md), [Portuguese](../../user-docs/guides/security-reporting.pt.md) and [Spanish](../../user-docs/guides/security-reporting.es.md) guidance preserves the request-for-private-instructions fallback. Confirm recipients and triage privately; public activation/marker receipt/unauthorized-viewer exclusion requires separate authority. No test message has been sent.
+
+## Resume and acceptance
+
+Use the approved [Tasks R2](../../../specs/changes/harness-publication-blockers/tasks.md), truthful progress and six stable finding IDs. Implementation is authorized within that plan; do not ask for the same planning approval again. Confirm missing inputs before dependent work; independent bounded preparation may continue.
+
+Final acceptance needs ten current checks and individual assessments of 31 local plus 40 retained obligations. The private client rehearsal waits for a valid final candidate and reviewed input set, preserving its one-attempt/time limits and prior outcomes. Later source/manifest/remote drift invalidates affected results; never rehash an old pass. Before any delivery claim, satisfy actual private prerequisites and leave public-only outcomes explicitly unverified until observed. Archival, PR/merge, adoption, visibility and release are distinct actions with their own authority.

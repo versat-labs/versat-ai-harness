@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-16T18:08:30.275045+00:00",
+  "authority": {
+    "source": "User instruction in this chat on 2026-11-16 following Tasks R3 approval",
+    "quote": "Fa\u00e7a a implementa\u00e7\u00e3o privada das Tasks R3.",
+    "scope": "Approved local/private preparation; separate public-operation boundaries remain."
+  },
+  "head": "4a56181d3597c5d345a7639f013547e1700420cb",
+  "branch": "codex/harness-publication-blockers",
+  "anchors": {
+    "sdd/process.md": "488b63b3ad26e4779db69d4b6ea9bd28b629936f58ccb42493cdaa99c940ccdb",
+    "sdd/metadata.md": "788c3a0ae8ac265a66546d3dddbf35e2c0c81bfa932940f3e5eae34990a0a064",
+    "sdd/workflows/new-change.md": "3fed9300f21ecc17d799b188179efb5a149a0afec4a91098f613a007c40f7cd4",
+    "standards/index.yaml": "0a70db972dc3ba14cecf27a1617e404f63ab32ec1222ae8632c30698ecbcccee",
+    "validators/sdd/validate.py": "94f152e14dbe1dbb60fcd3d0ef40ba896fd9a71234d28d44ac8ba1d172d329bb"
+  },
+  "digests": {
+    "proposal": "6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e",
+    "design": "a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f",
+    "tasks": "5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114"
+  },
+  "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "dependencies": {
+    "PyYAML": "6.0.2",
+    "jsonschema": "4.23.0"
+  },
+  "version": "0.3.0"
+}

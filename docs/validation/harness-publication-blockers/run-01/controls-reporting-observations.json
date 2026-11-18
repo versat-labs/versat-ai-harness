@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-11-14T18:21:22.648957+00:00",
+  "observation_window": "Current implementation turn on 2026-11-14; bounded read-only observations before this record",
+  "harness_visibility": "private",
+  "main": {
+    "sha": "4a56181d3597c5d345a7639f013547e1700420cb",
+    "protected": false
+  },
+  "protection_read": {
+    "http": 403,
+    "category": "plan capability limitation"
+  },
+  "rulesets_read": {
+    "http": 403,
+    "category": "plan capability limitation"
+  },
+  "observed_existing_check": {
+    "name": "structural-validation",
+    "app_slug": "github-actions",
+    "app_id": 15368,
+    "conclusion": "success",
+    "scope": "Merged baseline, not successor CI or enforcement"
+  },
+  "permissions": {
+    "elviszoz": "admin",
+    "evertonspohrversat": "admin"
+  },
+  "pvr_read": {
+    "http": 404,
+    "enabled": null,
+    "limit": "Private-state 404 is not proof of public configuration or receipt"
+  },
+  "v0_4_0_tag_read": {
+    "http": 404,
+    "scope": "Exact ref only; supported by actual unavailable-version client case"
+  },
+  "code_review": {
+    "workflow_token": "contents: read",
+    "trigger": "pull_request and main push",
+    "privileged_pull_request_target": false,
+    "secret_references_in_workflow": false,
+    "limits": "Source inspection is not platform/fork enforcement"
+  },
+  "remote_mutations": [],
+  "messages_sent": 0,
+  "public_tests_executed": false,
+  "official_sources": [
+    "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches",
+    "https://docs.github.com/en/code-security/concepts/vulnerability-reporting-and-management/repository-security-advisories"
+  ],
+  "review_eligibility_limit": "For a root plugin.json change, the catch-all CODEOWNER is @elviszoz. An @elviszoz-authored test cannot satisfy that CODEOWNER review through self-approval. A valid existing non-author arrangement must be confirmed before the test; another admin is not automatically an applicable CODEOWNER. No reviewer action is impersonated."
+}

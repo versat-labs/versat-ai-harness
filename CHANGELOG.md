@@ -6,6 +6,17 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+## [0.4.0] - Private preparation candidate (unreleased)
+
+### Prepared
+
+- public Apache-2.0 candidate for eligible first-party Harness material, with retained third-party notices and independent destination-project terms;
+- multilingual contribution, reporting, setup and recovery guidance with explicit pending external-user verification;
+- separate preparation, adoption and operational handoff with private evidence and no automatic consumer migration.
+
+This candidate entry does not assert a release date, effective adoption, public availability or completion of missing checks. The following previously unreleased source capabilities are included in the candidate review.
+
+
 ### Added
 
 - explicit configured project suite execution, structured test counts, bounded attempt logs and current SDD evidence fragments;

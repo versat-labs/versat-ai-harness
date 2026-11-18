@@ -1,0 +1,23 @@
+{
+  "record": "HPB-R4-PRIVATE-01",
+  "observed_on": "2026-11-17",
+  "revision": "39ee0a0081769503a323f37bf9675ce7c02ec77d",
+  "manifest_sha256": "671e38bbcf451285f809a006ed8a3801fb7c2f69f9dc412bc1707639137638f3",
+  "technical_result": {
+    "status": "pass",
+    "source_files": 575,
+    "forensic_archive_files": 42,
+    "delivery_files": 543,
+    "remote_custody_or_review_proven": false
+  },
+  "non_author_review": {
+    "actor": "@evertonspohrversat",
+    "state": "APPROVED",
+    "submitted_at": "2026-11-17T17:40:31Z",
+    "body_empty": true
+  },
+  "private_remote_revision_reobserved": true,
+  "originals_retrievable_and_hash_verified": true,
+  "R4_acceptance": "satisfied",
+  "limits": "Technical verifier alone does not authenticate remote preservation/review. Combined with fresh private repository, matching PR head and attributable approval observations, R4 acceptance is met. Empty body proves no command execution or specialist audit. PR remains open/unmerged."
+}

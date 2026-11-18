@@ -1,0 +1,15 @@
+{
+  "check": "CHECK-006",
+  "result": "unverified",
+  "recorded_at": "2026-11-16T18:16:18.216834+00:00",
+  "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "method": "Partial approved R3 private verification: actual local inspection, restricted hashes, bounded metadata and complete maintained suites; missing human/client/service outcomes remain explicit. Within-boundary evidence rechecks follow the before snapshot.",
+  "explanation": "Final reviewed candidate/input prerequisites remain unavailable. No fresh native invocation or installed consumer change attempted; R1 client outcomes remain historical. Disposable patch success is not client behavior acceptance.",
+  "supporting_evidence": [
+    "candidate-postimages.json",
+    "private-prerequisites.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

@@ -1,0 +1,15 @@
+# R3 owner decisions and local persistence
+
+Date: 2026-11-16. The user explicitly authorized saving the previously presented packet at the exact local restricted destination and accepted both R3-E1 and R3-E2. [Receipt](receipt.json) records the actual quotes, reviewer capacity, reviewed source identity and limits. **Both specific decision requests are resolved for the reviewed scope.** No repeated confirmation is needed for the same material.
+
+The original HPB-EXPOSURE-RIGHTS-R3-01 packet was copied exactly into the existing selected restricted system and hash-verified. HPB-DECISION-R3-01 is appended under `decisions/`, preserving all original snapshots, earlier pending forms and the prior automatic approval rejection. The new explicit authorization resolved that rejection; it did not authorize Git operations. No commit, push, GitHub mutation, workflow, publication, effective adoption or historical rewrite occurred.
+
+R3-E1 confirms the reviewed new first-party R2/R3 documentary/evidence material as produced for Versat E.A.S., including work under owner direction, with no additional restriction stated. Original third-party terms remain. R3-E2 permits the local account/worktree/temporary-directory paths in 61 reviewed records to remain as non-confidential historical metadata. The accepted scope binds the 1,874-file source snapshot and 247-file delta; no unseen substantive addition or unrelated private content is cleared.
+
+The current manifest, handoff and Tasks progress now record these decisions and narrow the remaining conditions. Broader custody, full exposure/package/integration, final current-scope review and operational acceptance remain incomplete. Local preservation is not proof of durable remote custody or actual final reviewer access. Six aggregate findings remain open for their broader remainder; neither specific owner decision is still missing.
+
+[Prior ledger](prior-ledger.json) preserves the actual earlier results. Current manifest bookkeeping makes their input snapshots stale; they are not rehashed into fresh passes. [Entry](entry.json) binds unchanged planning approvals. Local suite and delivery diagnostic results are recorded separately after actual execution. This receipt does not claim a new candidate/native-client rehearsal, final scenario acceptance or task completion.
+
+## Actual diagnostics
+
+The required local suite passed all 179 tests (131 validator and 48 execution). Its aggregate exit is 1; [delivery diagnostics](delivery.json) retain incomplete tasks/assessments, six broader findings and ten stale earlier input snapshots after manifest changes. No schema or current planning-approval failure was found. See [suite result](suite-result.json) and [preservation verification](verification.json). Only the handoff, current input manifest and excluded Tasks evidence/progress changed among the 1,874 reviewed source files; 1,871 remain byte-identical. The restricted original packet and appended decisions verify exactly. No earlier check was relabelled as fresh, and no product/candidate implementation changed.

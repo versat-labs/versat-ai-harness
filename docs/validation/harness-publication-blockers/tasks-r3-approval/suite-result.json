@@ -1,0 +1,5 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh",
+  "exit_code": 0,
+  "scope": "Local approval bookkeeping validation only; R3 implementation remains suspended."
+}

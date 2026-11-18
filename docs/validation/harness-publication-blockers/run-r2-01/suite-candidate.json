@@ -1,0 +1,9 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh",
+  "root": "/private/tmp/hpb-r2-candidate-91z8gi_f/versat-ai-harness",
+  "started_at": "2026-11-16T17:18:58.817908+00:00",
+  "exit_code": 1,
+  "input_digest_before": "3fa7e56fb1006fe5b9f8d3daac414490d437286160288390098fd07577c766eb",
+  "input_digest_after": "3fa7e56fb1006fe5b9f8d3daac414490d437286160288390098fd07577c766eb",
+  "scope": "Complete maintained local suites; actual findings remain in Tasks and prevent aggregate readiness."
+}

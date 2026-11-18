@@ -1,0 +1,152 @@
+{
+  "method": "Manual semantic review of approved R4 against current procedure and actual evidence; boundary cases below are review cases, not service simulations.",
+  "cases": [
+    {
+      "case": "matching-preservation",
+      "input": "Matching private revision, intact originals, technical verification and non-author approval",
+      "required_and_documented_response": "Accept FIND-001 under R4; no extra reviewer declaration.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "missing-original-or-changed-hash",
+      "input": "Original unavailable or recorded hash differs",
+      "required_and_documented_response": "Keep specific acceptance gap open; retrieve only within authorized access. Do not transfer approval.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "wrong-approval",
+      "input": "Approval refers to another revision/author or access specifically unavailable",
+      "required_and_documented_response": "Do not accept preservation from membership or hashes alone.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "empty-approval-body",
+      "input": "Actual approval body is empty",
+      "required_and_documented_response": "Count only approval of that delivery; do not infer verifier execution or specialist review.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "unchanged-reviewed-payload",
+      "input": "Refs, bodies, log attempts and source identities match",
+      "required_and_documented_response": "Reuse actual earlier scope/classifications; no repeated video or cache recovery.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "new-relevant-unknown",
+      "input": "New repository-linked payload or failed relevant read could expose confidential/unlicensed material",
+      "required_and_documented_response": "Block affected opening until bounded review; unrelated inaccessible private registries do not broaden the audit.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "new-sensitive-material",
+      "input": "Actual secret in tree/history/attachment/log",
+      "required_and_documented_response": "Retain restricted evidence and require specifically authorized treatment of all affected copies; moving a current file alone does not clear history.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "rights-or-preimage-drift",
+      "input": "Missing grant, incompatible terms, changed candidate text or patch preimage",
+      "required_and_documented_response": "Stop affected adoption; no approval rehash, silent rebase or broad ownership attestation. Disposable wrong VERSION was actually rejected.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "old-base-review",
+      "input": "Current main Elvis-only fallback; head adds Everton",
+      "required_and_documented_response": "Everton must genuinely author and Elvis review; an Elvis-authored PR cannot use head-only ownership to manufacture base eligibility.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "shared-rule",
+      "input": "Effective base names both; either authors or an external contributor authors",
+      "required_and_documented_response": "One eligible non-author approval plus required checks; configuration mapping plus actual representative sequence, no two extra owner permutations.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "missing-stale-or-blocking-review",
+      "input": "Missing owner approval, new commits, failed check or requested changes",
+      "required_and_documented_response": "Remain blocked; actual renewed approval/current checks needed, never self-approval or bypass.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "positive-fixture-no-governance",
+      "input": "Non-draft representative PR lacks selected governed delivered dossier",
+      "required_and_documented_response": "Do not expect green archive guard. Reuse valid governed contribution or prepare genuine scoped evidence before test; no guard weakening.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "one-receipt-both-access",
+      "input": "Applicable access shown for both, one accountable handler actually receives marker, outsider excluded",
+      "required_and_documented_response": "Satisfy R4 public receipt requirement if actually observed; no second notification/reply or simulated handover.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "access-or-receipt-failure",
+      "input": "One maintainer lacks applicable access, no handler receipt, or outsider sees report",
+      "required_and_documented_response": "Keep public route unverified and fallback visible. No automatic extra report, credential substitution or permission escalation.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "real-handover",
+      "input": "Actual handler becomes unavailable",
+      "required_and_documented_response": "Coordinate and record real acknowledged handover when needed; do not fabricate a pre-publication exercise.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "no-operation-authority",
+      "input": "Planning approved/admin access exists, but no scoped operation authority",
+      "required_and_documented_response": "Stop before GitHub write/message/publication; all current work stays private/local.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "no-session-freeze",
+      "input": "Final SHA, operator, all human/bot writer idle agreement or test audience unavailable",
+      "required_and_documented_response": "Stop before visibility. Empty queues/old participation are not a current freeze agreement.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "stronger-or-unknown-rules",
+      "input": "403, contradictory readback or stronger inherited rule",
+      "required_and_documented_response": "403 is unknown; preserve stronger rule and review exact delta, not blanket overwrite.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "timeout-or-drift",
+      "input": "Protection not verified within 900 seconds or source/session drifts",
+      "required_and_documented_response": "Stop ordinary rollout/merges/releases, retain freeze/evidence and obtain scoped containment; no silent retry/reset/reversal.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "release-vs-opening",
+      "input": "Public exact commit works but no versioned release/consumer migration",
+      "required_and_documented_response": "Opening smoke does not claim release/update availability; later exact-version work remains separate.",
+      "alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "behavior-unchanged",
+      "input": "143 behavior/resource files and runtime match real rehearsal",
+      "required_and_documented_response": "Reuse six actual private cases with original hashes; changed reporting prose is reviewed here, not called a new native execution.",
+      "alignment": "consistent",
+      "service_execution": false
+    }
+  ]
+}

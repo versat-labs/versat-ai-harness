@@ -1,0 +1,14 @@
+{
+  "status": "fail",
+  "phase": "planning",
+  "checked": [],
+  "warnings": [],
+  "findings": [
+    {
+      "code": "CONFIGURATION",
+      "message": "Missing validation dependency: No module named 'jsonschema'. Install requirements-validation.txt using Python 3.11 or newer.",
+      "path": ".",
+      "severity": "error"
+    }
+  ]
+}

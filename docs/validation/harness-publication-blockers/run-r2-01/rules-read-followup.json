@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-16",
+  "method": "GET",
+  "scope": "Two single-object error clarification reads, no mutation",
+  "results": {
+    "repos/versat-labs/versat-ai-harness/rulesets": {
+      "exit_code": 1,
+      "http_status": 403,
+      "message": "Upgrade to GitHub Pro or make this repository public to enable this feature."
+    },
+    "repos/versat-labs/versat-ai-harness/rules/branches/main": {
+      "exit_code": 1,
+      "http_status": 403,
+      "message": "Upgrade to GitHub Pro or make this repository public to enable this feature."
+    }
+  },
+  "initial_parser_limit": "The paginated error result was not a dictionary; the first summary conservatively retained it as unavailable. These follow-up reads identify the capability response. No absence/enforcement inferred."
+}

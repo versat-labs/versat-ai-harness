@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-16",
+  "method": "GitHub connector read-only calls",
+  "observations": [
+    {
+      "name": "repository",
+      "result": {
+        "id": "1350076941",
+        "name": "versat-ai-harness",
+        "owner": {
+          "login": "versat-labs",
+          "id": 316644261,
+          "type": "Organization",
+          "avatar_url": "https://avatars.githubusercontent.com/u/316644261?v=4",
+          "url": "https://api.github.com/users/versat-labs"
+        },
+        "repository_full_name": "versat-labs/versat-ai-harness",
+        "permissions": {
+          "admin": true,
+          "maintain": true,
+          "pull": true,
+          "push": true,
+          "triage": true
+        },
+        "allow_auto_merge": false,
+        "allow_merge_commit": true,
+        "allow_rebase_merge": true,
+        "allow_squash_merge": true,
+        "allow_update_branch": false,
+        "clone_url": "https://github.com/versat-labs/versat-ai-harness.git",
+        "size": 1428,
+        "default_branch": "main",
+        "git_commits_url": "https://api.github.com/repos/versat-labs/versat-ai-harness/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/versat-labs/versat-ai-harness/git/refs{/sha}",
+        "git_url": "git://github.com/versat-labs/versat-ai-harness.git",
+        "master_branch": null,
+        "visibility": "private",
+        "archived": false,
+        "is_code_search_indexed": null
+      },
+      "error": false
+    },
+    {
+      "name": "elvis-permission",
+      "result": {
+        "permission": "admin"
+      },
+      "error": false
+    },
+    {
+      "name": "everton-permission",
+      "result": {
+        "permission": "admin"
+      },
+      "error": false
+    },
+    {
+      "name": "main-codeowners",
+      "result": {
+        "content": "* @elviszoz\n\n/.github/CODEOWNERS @elviszoz @evertonspohrversat\n/AGENTS.md @elviszoz @evertonspohrversat\n/skills/ @elviszoz @evertonspohrversat\n/agents/ @elviszoz @evertonspohrversat\n/project-templates/ @elviszoz @evertonspohrversat\n/standards/ @elviszoz @evertonspohrversat\n/sdd/ @elviszoz @evertonspohrversat\n/docs/decisions/ @elviszoz @evertonspohrversat\n/validators/ @elviszoz @evertonspohrversat\n/tests/ @elviszoz @evertonspohrversat\n/scripts/validate/ @elviszoz @evertonspohrversat\n/requirements-validation.txt @elviszoz @evertonspohrversat\n",
+        "encoding": "utf-8",
+        "sha": "4c6809d6ed03ef7aea784cdca833ca39f1254615",
+        "display_url": "https://github.com/versat-labs/versat-ai-harness/blob/main/.github/CODEOWNERS",
+        "display_title": "CODEOWNERS"
+      },
+      "error": false
+    }
+  ],
+  "limits": "Repository visibility, existing roles and current main CODEOWNERS only; no participation, actual review or reporting receipt inferred."
+}

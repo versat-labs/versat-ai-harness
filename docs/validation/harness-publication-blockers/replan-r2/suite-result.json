@@ -1,0 +1,5 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh",
+  "exit_code": 1,
+  "scope": "Local regression/SDD diagnostics only; no GitHub workflow execution."
+}

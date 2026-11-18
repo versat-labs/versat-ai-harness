@@ -1,0 +1,39 @@
+{
+  "source": "docs/validation/harness-publication-readiness/personal-client-03/client-check.json",
+  "source_sha256": "f47df07c08a336ecb5940cf49de98e5921fdd8055ee1be94b7ceaa3f633c1ff5",
+  "historical_cases": {
+    "a": "pass",
+    "b": "pass",
+    "c": "pass",
+    "d": "pass",
+    "e": "pass",
+    "f": "pass"
+  },
+  "runtime_reobserved": {
+    "desktop": "26.915.31945",
+    "build": "9922",
+    "cli": "codex-cli 0.155.0-alpha.9.2",
+    "python": "3.11.4"
+  },
+  "behavior_files_identical": 143,
+  "changed_historical_files": [
+    ".github/CODEOWNERS",
+    "README.es.md",
+    "README.md",
+    "README.pt.md",
+    "docs/architecture/overview.md",
+    "docs/user-docs/guides/licensing.es.md",
+    "docs/user-docs/guides/licensing.md",
+    "docs/user-docs/guides/licensing.pt.md",
+    "docs/user-docs/guides/security-reporting.es.md",
+    "docs/user-docs/guides/security-reporting.md",
+    "docs/user-docs/guides/security-reporting.pt.md",
+    "specs/changes/harness-publication-readiness/design.md",
+    "specs/changes/harness-publication-readiness/proposal.md",
+    "specs/changes/harness-publication-readiness/requirements.md",
+    "specs/changes/harness-publication-readiness/tasks.md"
+  ],
+  "new_behavior_files": [],
+  "review": "Differences are owner/review/reporting prose and governance evidence, with no changed executable behavior/resource resolution. Exact candidate version/Plugin identities are identical to the original tested candidate. Reuse installation, first-use, unavailable-version, missing-provider/resource, migration and failed-update/recovery observations without relabelling old execution hashes. Affected prose/link procedures reviewed separately; no new installation, marketplace change or real consumer migration.",
+  "limits": "Private personal evidence only; anonymous public exact-commit use and release availability remain unverified."
+}

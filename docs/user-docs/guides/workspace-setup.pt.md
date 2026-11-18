@@ -20,7 +20,7 @@ Peça ao Codex para informar diretório de trabalho, versão do provedor e onde 
 
 ## Instalação candidata, atualizações exatas e recuperação
 
-O texto do candidato Apache foi aprovado, mas não há release público 0.4.0 nem adoção da licença na raiz. Código atual e v0.3.0 instalado são snapshots diferentes; confirme a versão real do SDD e os recursos do provedor selecionado. O alvo local de ensaio é Codex desktop 26.915.31945/build 9922 em macOS arm64, não uma matriz de suporte comprovada.
+A licença e os avisos aprovados estão aplicados na branch local de entrega, mas a integração na main e uma release pública 0.4.0 continuam pendentes. Não ative a referência local v0.4.0 do catálogo antes de existir a release exata autorizada separadamente. Código atual e v0.3.0 instalado são snapshots diferentes; confirme a versão real do SDD e os recursos do provedor selecionado. O alvo local de ensaio é Codex desktop 26.915.31945/build 9922 em macOS arm64, não uma matriz de suporte comprovada.
 
 O proprietário escolheu uma instalação individual com o mesmo usuário da Versat para o ensaio privado. No Codex desktop 26.915.31945/build 9922, o CLI incluído instalou `versat-ai-harness@versat-internal` versão 0.4.0 em um cache local separado; os arquivos do plugin 0.3.0 do workspace permaneceram iguais. A cópia instalada correspondeu a todos os arquivos da origem e resolveu as cinco Skills e os recursos canônicos. Isso verifica a etapa de instalação privada, não acesso anônimo, release público nem toda a suíte comportamental.
 

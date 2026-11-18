@@ -1,0 +1,15 @@
+{
+  "check": "CHECK-003",
+  "result": "unverified",
+  "recorded_at": "2026-11-14T18:21:22.648957+00:00",
+  "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "procedure": "Current bounded technical/review observations; see explanation and supporting run artifacts. This partial attempt does not represent unexecuted substeps as executed.",
+  "explanation": "Partial technical review: 16 approved texts, seven dependency texts, nine preimages and nine disposable candidate postimages match. Actual current rights/grants/reviewer scope are incomplete.",
+  "supporting_evidence": [
+    "candidate-integrity.json",
+    "patch-check.json",
+    "candidate-files.json"
+  ],
+  "limits": "No remote changes, actual human rights/security review, publication or completed-H03 claim."
+}

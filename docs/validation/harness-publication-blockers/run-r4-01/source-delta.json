@@ -1,0 +1,341 @@
+{
+  "baseline": "HPB-EXPOSURE-RIGHTS-R3-01; D1/D2 and R3-E1/E2 reused in their scopes",
+  "baseline_files": 1874,
+  "current_files_excluding_this_run": 1918,
+  "unchanged": 1864,
+  "delta": [
+    {
+      "path": "docs/handoffs/harness-publication-blockers/README.md",
+      "before_sha256": "26300d60f760a8584b50a026d026e82133019f681d5e8560302469c1be05412b",
+      "sha256": "eeda53a8e6880f6c24b03360667ab9f1ecbb1a77f899505edc7647b852a1985e",
+      "group": "handoff/reporting"
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "before_sha256": "3edbb2429422725916c1f1ade1d7a325a87e225c6015048d7a5c3c30062f12c8",
+      "sha256": "d2ccd6ecb57888963683acf3391cb98f5da69f04f600b59677c2a5fec963f6d0",
+      "group": "handoff/reporting"
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/transition.md",
+      "before_sha256": "b7092adddcb726fc782c435fba944e04de299fabf5d93bd949ba92e2a0e66b9c",
+      "sha256": "18f1e20cb01496245595c0e36e03280d39c92a9cdd0f66f66235c4a12db3739d",
+      "group": "handoff/reporting"
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.es.md",
+      "before_sha256": "710ab05fe9dc4f8128f369fa6667652f4e838c9cf43ed1e7f678330a993f4168",
+      "sha256": "f6c7eb72cb41f33f4a9e03d898f5d6096921fabab8a4b9ec52f18c1bad1bad46",
+      "group": "handoff/reporting"
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.md",
+      "before_sha256": "fd46b79bb83b5c4114e42a6d11d2aafed262e2cecf709b30ff2add100fd78cad",
+      "sha256": "67b81080a1c801de62308bbe91af46fa601a20bc3b4f8aa1e7d9bc7dc44c8fe5",
+      "group": "handoff/reporting"
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.pt.md",
+      "before_sha256": "943f7316e24af5184d22a7b4295971cdfd427b5877ec81f474921b0e9ee9e1bf",
+      "sha256": "721ac07ac12d641d56c69b8936c031d38949d95302b579ed3693a02fe59a65a8",
+      "group": "handoff/reporting"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/README.md",
+      "before_sha256": null,
+      "sha256": "39c4f40592d5bab58033cc9057e647f24d38c7e71b588e51b592b8b7df23226a",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/delivery.json",
+      "before_sha256": null,
+      "sha256": "e3e36028de72f6322cf05fc2de33442c1bb5a3bbf0884eed263fd6426cd07c83",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/entry.json",
+      "before_sha256": null,
+      "sha256": "dee08b3620ae2ef97e57778430c801f9d87ee91eda879182dc6ad2a6012171aa",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/integrity.json",
+      "before_sha256": null,
+      "sha256": "3fab27aec25b01681420b83eb4eef2f1f5a8678a3cdc6726b2e7f52158cf2fe6",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/prior-ledger.json",
+      "before_sha256": null,
+      "sha256": "abf0fb0948d69c43de794d732a924edaf8340f2f717ba0d38289ebd3553d9291",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/receipt.json",
+      "before_sha256": null,
+      "sha256": "2e5a8efd661b75175570a2d13740f572637861dd7f3b054188495589ffd9ae13",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/suite-result.json",
+      "before_sha256": null,
+      "sha256": "90bd7de7f97550d7b6166955667b9d39a36189110450604ad09a9f6f5cef3e68",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/suite.stderr",
+      "before_sha256": null,
+      "sha256": "40b9b75d7ca16b8e779f9d91825bbfca496bfb11219ae1df5a13f363b54e315d",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/suite.stdout",
+      "before_sha256": null,
+      "sha256": "c9119243a9c619ef98a1ab6c717ec8e2cb905a852fea87f6dfbbb986ea3e34d1",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/decisions-r3-01/verification.json",
+      "before_sha256": null,
+      "sha256": "f740799aaeb4d909d082ce243f7f8da0774e677e720503e18ffabecc5fa0a60b",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/README.md",
+      "before_sha256": null,
+      "sha256": "d93ea1ecd152bd2c9a7b74c9bf17085ee73576e108b0b12af3bb0cb7d51f6874",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/before-design.txt",
+      "before_sha256": null,
+      "sha256": "4e953b53e70679b15225321dedd0dd193d3107e29ab2a13fe12a30eb66aa7708",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/before-proposal.txt",
+      "before_sha256": null,
+      "sha256": "c2e5cadbdc65c458825fc7aaba6cb0696ed3552154e8aa50c4001c4302f07b81",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/entry.json",
+      "before_sha256": null,
+      "sha256": "9365e258d2d265bc3d507eb21514a55555513b1cdf79bfef3b11a814d206d4da",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/integrity.json",
+      "before_sha256": null,
+      "sha256": "fa4daeef51ceb79e151ef80471762a969b68f7ffc56bfa3f69c96b914228ecae",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/manual.json",
+      "before_sha256": null,
+      "sha256": "1b26464c12c9ef234931d4395332420fe4922a700ba5b6062d96a34de5c55aac",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/planning.json",
+      "before_sha256": null,
+      "sha256": "d63a87b35051da36e30b81328debb87f4b506d4e11af52d21a384dac08a82b2c",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/suite-result.json",
+      "before_sha256": null,
+      "sha256": "76d216f3f126d43d052e9d1c7e11e191f9d067f9a536d42639c04c129636ae35",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/suite.stderr",
+      "before_sha256": null,
+      "sha256": "4515ed652e042edbf31324790c8f69644aba65b5befa4bf8d977603336aa189c",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r4/suite.stdout",
+      "before_sha256": null,
+      "sha256": "acbd74fefaa29697bc0f9389df08c2a5110cd20443c7f7d2da106f6b13359f17",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/README.md",
+      "before_sha256": null,
+      "sha256": "8190a5e3ed3d274cf44f3a7ab74377a67635f9840d1c7eabcc0b6f846cf83845",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/before-design.txt",
+      "before_sha256": null,
+      "sha256": "fc0d863e566e0a29ebe4922119d76208f7c765845cdbf747176c9b604f253ce0",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/before-handoff.txt",
+      "before_sha256": null,
+      "sha256": "643b3361b8335ed7039ac5bbc4fee72e41939e0cb8f42b05e9341bb126e1c2a7",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/before-proposal.txt",
+      "before_sha256": null,
+      "sha256": "a84344a3efb51f5319819020a18ec4662e5be377f1b975e756186c69c76718a9",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/before-requirements.txt",
+      "before_sha256": null,
+      "sha256": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/before-tasks.txt",
+      "before_sha256": null,
+      "sha256": "1883fa5cb47f0e309390fa48c2f374494a1db8590243f32fc1e67d4aaaeeab37",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/entry.json",
+      "before_sha256": null,
+      "sha256": "a0a77afaac22e8733d5ad75dda1f1da0e30df326b6c32497f784c1c0692e62eb",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/integrity.json",
+      "before_sha256": null,
+      "sha256": "b6077ef6bc73022307c7b00e0858b5f3903072ce8cec83a030e1238d4bc3b663",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/manual.json",
+      "before_sha256": null,
+      "sha256": "d75ebe4af69a7cea3ed7eea166dc4b3604ef6b0b7bc2bcfd58b0ee78a978db52",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/planning.json",
+      "before_sha256": null,
+      "sha256": "d88b8d8a2990b4e60ed0beb12d69b3c17ee610419d3b6d4a1bb6a8092c8fbac7",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/suite-result.json",
+      "before_sha256": null,
+      "sha256": "e5cd1b55623d665a84c1b5eff0ee55abb202094b174dc02405c420a75d3183d8",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/suite.stderr",
+      "before_sha256": null,
+      "sha256": "5666ea85275b1c6b0f4e8bb3ac26e47cc356e2913c39d480708d083f218c9814",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r4/suite.stdout",
+      "before_sha256": null,
+      "sha256": "537eb39d6c140fcfe992e36e983111e41b41a9b1f08603112ebae3ed3b892240",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/README.md",
+      "before_sha256": null,
+      "sha256": "15a881206e0939a2a1bffed45eac5313ada1962ac53f0855591cf1afe59536cd",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/before-design.txt",
+      "before_sha256": null,
+      "sha256": "0249005ec60275ac74b26d002db59039793f2dac11df34644c8484d39960ddcf",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/before-tasks.txt",
+      "before_sha256": null,
+      "sha256": "61a78ac92f200a359ce0487fa1c49ef8107082c05d5fe72d99c5d55b806fa647",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/entry.json",
+      "before_sha256": null,
+      "sha256": "8c9318c885743775d1344b1ec7ec16561473ecdb804b68645dcce3817db4d658",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/integrity.json",
+      "before_sha256": null,
+      "sha256": "8dad97b9027b31602ae7b9ebc914bf13a6ffe0ff420ddf54a4a9d3e9b6314681",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/manual.json",
+      "before_sha256": null,
+      "sha256": "b03b93b3d943b1209c987f67827b95f1eefb18ea6f9746873f12c391bccc3fe9",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/planning.json",
+      "before_sha256": null,
+      "sha256": "531a201acc97514dcde7494b4a2c234aa58bd5b4b320b25c1cbf1234470d3205",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/prior-validation.json",
+      "before_sha256": null,
+      "sha256": "4a9d7e598dd4b7dc5cef42fc5df9652d8c3289bb736c34e6c3b05e1b4a181a6b",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/suite-result.json",
+      "before_sha256": null,
+      "sha256": "5bc232b82de377a5655a39a2af9d7ae0fc868de5b9df957e18905cb914606c88",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/suite.stderr",
+      "before_sha256": null,
+      "sha256": "0349576af200f8509978b7593cc06e83decb81186bfedd9675c0b229817e2a0d",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r4/suite.stdout",
+      "before_sha256": null,
+      "sha256": "b6e711d33cadce5325af753171d6ad55be59b98d4885cfa2a64aefce51b3f059",
+      "group": "technical-evidence"
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/design.md",
+      "before_sha256": "fc0d863e566e0a29ebe4922119d76208f7c765845cdbf747176c9b604f253ce0",
+      "sha256": "fd9b5e5b4e9c47dc18d97c8e7bba82128906c2e52aef54a139e2bec9b1ab9eef",
+      "group": "planning"
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/proposal.md",
+      "before_sha256": "a84344a3efb51f5319819020a18ec4662e5be377f1b975e756186c69c76718a9",
+      "sha256": "09a4322a22139b3add2d597a785f4a540d8e0c6e20d7ab2c037993605d0fcd8d",
+      "group": "planning"
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/requirements.md",
+      "before_sha256": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+      "sha256": "c6ffcc2f90ed0c4494e3aa48f62317509734e7a1d742d317021007d7d0091566",
+      "group": "planning"
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/tasks.md",
+      "before_sha256": "9917b187442258070da87c98d41de8857da26ad66939bdce7fbbe8f27a1df66e",
+      "sha256": "62e153a887d9ecd5bc38ebc0ef9c3704e699f6e2b531c80e9a716f415f0e541d",
+      "group": "planning"
+    }
+  ],
+  "deleted": [],
+  "groups": {
+    "handoff/reporting": 6,
+    "technical-evidence": 44,
+    "planning": 4
+  },
+  "historical_entry_files_unchanged": 1673,
+  "provenance": "All delta is first-party R4 owner-approved planning/handoff/reporting and retained technical evidence produced under the same direction. No third-party, runtime, product code or legal-wording change; this is technical provenance reconciliation, not a new owner grant.",
+  "scope_limit": "Run outputs and final task ledger are separately inspected at completion; no self-referential inventory or new owner attestation."
+}

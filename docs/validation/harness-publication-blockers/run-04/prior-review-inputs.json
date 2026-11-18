@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "revision": 2,
+  "observed_at": "2026-11-14T18:32:14.850761+00:00",
+  "change": "harness-publication-blockers",
+  "source_base_commit": "4a56181d3597c5d345a7639f013547e1700420cb",
+  "candidate": {
+    "version": "0.4.0",
+    "preparation_version": "0.3.0",
+    "text_package_digest": "894308c5f1921f28677d55d39b9bf5fb386467dc652e5dca5908d54756fe9f48",
+    "patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+    "effective_adoption": false
+  },
+  "restricted_evidence": {
+    "predecessor_id": "HPR-PRIVATE-01",
+    "assessment_sha256": "284e32a79cff971238c354e94a4ef01dcd87e22ae8ac9df5fbc83e54f2075943",
+    "integrity_manifest_sha256": "01ce4a4c21248c88715a227b8763e7c8ae85a16c39ed39b0960f49a56bb09c62",
+    "local_hashes_verified": true,
+    "remote_exact_path_status": "404; no remote durability or reviewer receipt established",
+    "new_record_id": null,
+    "new_record_revision": null,
+    "new_record_digest": null,
+    "new_collection": "Executed under explicit bounded inventory authority; packages, cache payloads and external integration boundaries remain incomplete.",
+    "pending_local_inventory": {
+      "id": "HPB-PRIVATE-01",
+      "revision": 1,
+      "assessment_sha256": "af8a09698bf974130bedb5887397501e55cc441f17d8a391190a217d6f4832b2",
+      "integrity_sha256": "7ceb4f25bb7776bdf4269c78154da1ec82151292bc7052180ec883f8ed654046",
+      "state": "locally preserved and hash-verified; actual reviewer acceptance and remote durability unverified",
+      "local_owner_readable": true,
+      "bound_files": 320
+    },
+    "binding_limit": "The pending local inventory is not promoted to an accepted durable reviewed record. Existing new_record fields stay null until the remaining custody/access/review prerequisites are evidenced."
+  },
+  "reviewers": [
+    {
+      "actor": "Codex",
+      "capacity": "bounded technical/documentary observations only"
+    },
+    {
+      "actor": "@elviszoz",
+      "capacity": "existing accountable owner and recorded candidate approver; current GitHub admin permission confirmed; no new rights/security clearance"
+    },
+    {
+      "actor": "@evertonspohrversat",
+      "capacity": "existing CODEOWNER; current GitHub admin permission confirmed; no review or acceptance solicited/inferred"
+    }
+  ],
+  "categories": [
+    {
+      "category": "working-tree",
+      "current_review": "observed-inventoried",
+      "record": "HPB-PRIVATE-01",
+      "limits": "1616 listed file records; hashes and literal indicators retained. Current local additions included; final source may change after this snapshot.",
+      "publication_clearance": false
+    },
+    {
+      "category": "reachable-history-and-deleted-content",
+      "current_review": "observed-inventoried",
+      "record": "HPB-PRIVATE-01",
+      "limits": "1244 remote and 1246 local reachable blobs read; deleted-path history retained. Local-only unpublished refs distinguished. Human sensitivity review outstanding.",
+      "publication_clearance": false
+    },
+    {
+      "category": "branches-tags",
+      "current_review": "observed-inventoried",
+      "record": "HPB-PRIVATE-01",
+      "limits": "1 branches, 2 tags and 19 PR heads reconciled against forensic copy. Beginning/end branch and tag observations retained.",
+      "publication_clearance": false
+    },
+    {
+      "category": "releases-assets",
+      "current_review": "observed-absent",
+      "record": "HPB-PRIVATE-01",
+      "limits": "0 releases in successful paginated listing. Absence applies to current listing, not inaccessible deleted assets.",
+      "publication_clearance": false
+    },
+    {
+      "category": "lfs",
+      "current_review": "observed-absent",
+      "record": "HPB-PRIVATE-01",
+      "limits": "No LFS pointers in the inspected remote/local reachable sets; no binary blobs. Unseen refs or external payloads are not covered.",
+      "publication_clearance": false
+    },
+    {
+      "category": "fixtures-sdd-validation",
+      "current_review": "observed-inventoried",
+      "record": "HPB-PRIVATE-01",
+      "limits": "Included in current file and reachable history inventories; authentic approvals/evidence preserved. Confidentiality disposition remains pending.",
+      "publication_clearance": false
+    },
+    {
+      "category": "issues-prs-comments-reviews",
+      "current_review": "observed-inventoried",
+      "record": "HPB-PRIVATE-01",
+      "limits": "33 issue/PR records; 19 pull requests; 2 issue comments; 0 inline and 0 commit comments; 19 paginated submitted-review queries. Full acquired bodies retained privately.",
+      "publication_clearance": false
+    },
+    {
+      "category": "attachments-other-external-links",
+      "current_review": "incomplete",
+      "record": "HPB-PRIVATE-01",
+      "limits": "56 body fields and 42 link occurrences inspected; 2 boundary/potential-payload occurrences require scoped custodian review. No external integration crossed.",
+      "publication_clearance": false
+    },
+    {
+      "category": "wiki-discussions-pages",
+      "current_review": "observed-absent",
+      "record": "HPB-PRIVATE-01",
+      "limits": "Current feature flags all disabled; Pages read 404 is interpreted only with those flags. No claim over inaccessible former/deleted service content.",
+      "publication_clearance": false
+    },
+    {
+      "category": "packages",
+      "current_review": "inaccessible",
+      "record": "HPB-PRIVATE-01",
+      "limits": "Repository-scoped GraphQL query returned INSUFFICIENT_SCOPES. No package absence or payload clearance inferred; no organization-wide enumeration or scope expansion.",
+      "publication_clearance": false
+    },
+    {
+      "category": "ci-logs",
+      "current_review": "observed-inventoried",
+      "record": "HPB-PRIVATE-01",
+      "limits": "58 run archives and 115 entries acquired/read; 0 unavailable. Literal scan is not human semantic clearance.",
+      "publication_clearance": false
+    },
+    {
+      "category": "ci-artifacts",
+      "current_review": "observed-absent",
+      "record": "HPB-PRIVATE-01",
+      "limits": "0 artifacts in successful paginated listing. Expired/deleted unavailable payloads are not claimed reviewed.",
+      "publication_clearance": false
+    },
+    {
+      "category": "ci-caches",
+      "current_review": "inaccessible",
+      "record": "HPB-PRIVATE-01",
+      "limits": "2 caches listed. Publicly documented REST inventory/management API exposes no inspected payload download route; no workflow execution, extraction workaround or deletion used.",
+      "publication_clearance": false
+    },
+    {
+      "category": "metadata-integrations",
+      "current_review": "incomplete",
+      "record": "HPB-PRIVATE-01",
+      "limits": "Repository/actions/fork settings read; 0 hooks, 0 deployments and 0 environments listed. External integration payloads remain a boundary; absence of hooks does not prove absence of every integration.",
+      "publication_clearance": false
+    },
+    {
+      "category": "effective-controls",
+      "current_review": "inaccessible",
+      "record": "HPB-PRIVATE-01",
+      "limits": "Private main remains unprotected; protection/ruleset APIs return capability errors. Source configuration is not enforcement.",
+      "publication_clearance": false
+    },
+    {
+      "category": "public-harness-reporting",
+      "current_review": "inaccessible",
+      "record": "HPB-PRIVATE-01",
+      "limits": "Private-state PVR unavailable; no route activation, marker, receipt or unauthorized-viewer test. Public-only verification remains separate.",
+      "publication_clearance": false
+    }
+  ],
+  "blockers": [
+    {
+      "id": "HPB-001",
+      "category": "evidence-access",
+      "state": "open",
+      "tasks": [
+        "TASK-001",
+        "TASK-002",
+        "TASK-003"
+      ],
+      "observation": "Both predecessor hashes and all 96 old manifest entries are intact; 97 exact copies and a new 320-file-bound inventory are locally preserved with owner-only access. Actual human review and durable remote custody remain unverified.",
+      "owner": "@elviszoz",
+      "next_action": "Review the private frozen inventory and establish attributable reviewer access/acceptance and durable custody under the applicable separate delivery authority.",
+      "exit_condition": "Exact immutable revision and reviewer-readable originals are confirmed; local readability/admin access alone is insufficient."
+    },
+    {
+      "id": "HPB-002",
+      "category": "surface-review",
+      "state": "open",
+      "tasks": [
+        "TASK-002",
+        "TASK-003"
+      ],
+      "observation": "Authorized inventory executed: 1616 current files, 1244 remote reachable blobs, 19 PR heads, 58 log archives/115 entries. Package query has insufficient scopes; two cache payloads and two external integration link occurrences remain unreviewed.",
+      "owner": "@elviszoz",
+      "next_action": "Obtain repository-specific inspectable evidence from authorized package/cache/integration custodians using existing access. Do not expand permissions or cross the external boundary automatically.",
+      "exit_condition": "All 16 current exposure categories and formerly inaccessible bodies have attributable complete review or demonstrated absence."
+    },
+    {
+      "id": "HPB-003",
+      "category": "confidentiality",
+      "state": "open",
+      "tasks": [
+        "TASK-003"
+      ],
+      "observation": "The private queue contains 82 location/type entries for accountable review, including duplicates across current/local/remote history. They are literal indicators, not 82 confirmed sensitive findings or an approved treatment.",
+      "owner": "@elviszoz",
+      "next_action": "Accountable reviewer classifies findings in restricted storage and reviews feasible treatment before any operation.",
+      "exit_condition": "Every actual finding has attributable non-sensitive disposition or verified authorized treatment; destructive/history/destination changes reopen planning."
+    },
+    {
+      "id": "HPB-004",
+      "category": "rights",
+      "state": "open",
+      "tasks": [
+        "TASK-004"
+      ],
+      "observation": "Sixteen approved texts, including seven dependency texts, and nine preimages match; current final-scope rights review remains open.",
+      "owner": "@elviszoz",
+      "next_action": "Review the current distribution delta and grants/notices in the declared capacity.",
+      "exit_condition": "Current rights, candidate applicability and review capacity support the exact proposed scope; no approval transfers to unseen content."
+    },
+    {
+      "id": "HPB-005",
+      "category": "private-controls",
+      "state": "open",
+      "tasks": [
+        "TASK-005"
+      ],
+      "observation": "Current main is unprotected; protection and ruleset reads return capability HTTP 403.",
+      "owner": "@elviszoz",
+      "next_action": "Owner arranges supported private capability; then review the exact correction and synthetic test operation envelope.",
+      "exit_condition": "Actual private-main enforcement and eligible review/check transitions are observed; no purchase, public conversion or bypass inferred."
+    },
+    {
+      "id": "HPB-006",
+      "category": "reporting",
+      "state": "open",
+      "tasks": [
+        "TASK-006"
+      ],
+      "observation": "Private repository PVR read returns 404; actual public receipt/access remains unverified.",
+      "owner": "@elviszoz",
+      "next_action": "Confirm actual responder/recipient arrangement and execute the mandatory public-only protocol after separately authorized visibility.",
+      "exit_condition": "Feasible private prerequisites are evidenced, with current public-only follow-up assigned; no false private PVR receipt."
+    }
+  ],
+  "disposition": "defer",
+  "snapshot_contract": "No self-hash or mutable output identity. Exact current source/candidate file snapshots and test reports belong in excluded run evidence. Null restricted revision means unavailable, not reviewed."
+}

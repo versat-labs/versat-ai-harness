@@ -1,0 +1,15 @@
+{
+  "check": "CHECK-009",
+  "result": "fail",
+  "recorded_at": "2026-11-16T17:21:21.927431+00:00",
+  "input_digest_before": "bfa6d73ea861de844e3e6554baed4332362e67d96d0264f8cc1697f16f58de35",
+  "input_digest_after": "bfa6d73ea861de844e3e6554baed4332362e67d96d0264f8cc1697f16f58de35",
+  "procedure": "Partial implementation verification and explicit prerequisite/evidence review under approved Design R2; executed substeps and unavailable substeps are distinguished below. No omitted actual service/client/human outcome is a simulated pass.",
+  "explanation": "Both preparation and disposable candidate ran all 131 validator and 48 execution tests successfully. Both aggregate commands exited 1 because the six real acceptance findings remain open. No tests/validator/statuses were weakened. This is not a green delivery gate.",
+  "supporting_evidence": [
+    "suite-preparation.json",
+    "suite-candidate.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

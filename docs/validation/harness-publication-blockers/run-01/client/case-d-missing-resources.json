@@ -1,0 +1,15 @@
+{
+  "result": "pass",
+  "observed": {
+    "argv": [
+      "bash",
+      "scripts/validate/run.sh"
+    ],
+    "exit": 2,
+    "stdout": "",
+    "stderr": "/Library/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python: can't open file '<private-rehearsal>/provider-missing-resources/scripts/testing/provider.py': [Errno 2] No such file or directory\n",
+    "elapsed_seconds": 0.021574974060058594
+  },
+  "elapsed_seconds": 0.3712499141693115,
+  "scope": "Actual consumer wrapper refuses to execute without canonical provider resource; original provider is unchanged."
+}

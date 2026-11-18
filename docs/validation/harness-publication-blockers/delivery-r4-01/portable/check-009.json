@@ -1,0 +1,17 @@
+{
+  "check": "CHECK-009",
+  "result": "pass",
+  "scope": "Current local delivery review, not main integration/publication",
+  "input_digest_before": "3df5cd8be4dc59b42cc95786ebfff1192b31304c053445aa09cb88438863b054",
+  "input_digest_after": "3df5cd8be4dc59b42cc95786ebfff1192b31304c053445aa09cb88438863b054",
+  "observations": "Complete suite passed on actual 0.4.0 delivery root: 131 plus 48 tests and package/SDD inventory. The documentary archive move has no behavior change; final selected/baseline guard supplies live lifecycle validation.",
+  "baseline_evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-009.json",
+  "current_evidence": [
+    "identity-and-application.json",
+    "source-delta.json",
+    "behavior-reuse.json",
+    "review.json",
+    "suite-applicability.json"
+  ],
+  "limitations": "R4 public service outcomes and remote freshness remain unexecuted/dated; original failed checks and earlier roots unchanged."
+}

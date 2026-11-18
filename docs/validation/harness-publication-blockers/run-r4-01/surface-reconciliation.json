@@ -1,0 +1,132 @@
+{
+  "observed_on": "2026-11-17",
+  "refs_unchanged": 22,
+  "body_comparisons": {
+    "issues": {
+      "records": 33,
+      "substantive_fields_unchanged": true
+    },
+    "pulls": {
+      "records": 19,
+      "substantive_fields_unchanged": true
+    },
+    "issue-comments": {
+      "records": 2,
+      "substantive_fields_unchanged": true
+    },
+    "review-comments": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "commit-comments": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-39": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-37": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-36": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-33": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-21": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-14": {
+      "records": 1,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-13": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-12": {
+      "records": 1,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-11": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-10": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-9": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-8": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-7": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-6": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-5": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-4": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-3": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-2": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    },
+    "pr-reviews-1": {
+      "records": 0,
+      "substantive_fields_unchanged": true
+    }
+  },
+  "runs_unchanged": 58,
+  "successful_empty_listings": {
+    "caches": 0,
+    "artifacts": 0,
+    "environments": 0,
+    "releases": 0,
+    "hooks": 0,
+    "deployments": 0
+  },
+  "main": {
+    "sha": "4a56181d3597c5d345a7639f013547e1700420cb",
+    "protected": false
+  },
+  "features": {
+    "has_wiki": false,
+    "has_discussions": false,
+    "has_pages": false,
+    "source": "Successful bounded repository GET on 2026-11-17; returned repository id 1350076941, private true."
+  },
+  "workflow_sha256": "afa56a72fb45831f74d5620aaea3c3f93509325c5615a6801f4a991baf48e74d",
+  "workflow_unchanged": true,
+  "read_only_tokens": true,
+  "pvr": {
+    "exit": 1,
+    "status": "404",
+    "interpretation": "Private-state unavailable; public route unverified."
+  },
+  "package_boundary": "Owner repository-view absence (14 Nov) remains applicable: no changed refs/workflows, new runs, releases or package publisher in reviewed source. Earlier insufficient read:packages scope remains recorded, not a successful empty API listing. Independently private unlinked registries are outside R4; no evidence of repository-linked exposure was identified. Recheck repository view after final relevant CI before opening.",
+  "integration_boundary": "Repository hooks/deployments/environments absent; unchanged reviewed CI is read-only. This is not an inventory of every organization app. Actual human/bot writer freeze must be confirmed in attended session.",
+  "limits": "No deleted caches recovered, video reinspection, external private workspace collection, privilege expansion or remote mutation. Later private integration/CI invalidates mutable freshness and triggers focused refresh."
+}

@@ -1,0 +1,17 @@
+{
+  "patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+  "preimages_verified": 9,
+  "postimages": {
+    "VERSION": "40b8eb4000a913a7791090535f291d3d369874162a89ef3c9e3d4e887a1b9e79",
+    "plugin.json": "d6dae0eed41a74119f04cc1228801efd5979fce662cf3f8129047b1184ffc8fd",
+    ".codex-plugin/plugin.json": "d45217456eca650042c3018db963f1638224f34a9e15af8af55cfab754c17f96",
+    ".agents/plugins/marketplace.json": "2a037f09d56f6914642e4ec5aa4e5de74ab56f41cbbc74b8ee28b40e57402051",
+    "project-templates/base/.versat/standards.lock": "8fa5f17637c5a7120da84ae6dd0f29f790692382678c1852ceef00398e74d5d1",
+    "CHANGELOG.md": "4d69754f2a696fd1e684ca9b712856478b44eaf8d47b399cb532bb5ea5ad1c14",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "ff43bbc1f6467a783cff030a8ed6442cf2dda21c289754cec828714ff2b63edb",
+    "THIRD-PARTY-NOTICES.md": "b8a4b3ed529821275c419a79ec7da300c84b0d0d4380e886ada2436a77829081"
+  },
+  "root_version": "0.4.0",
+  "scope": "Exact approved local delivery branch application, not integration on main, release, catalog activation or publication."
+}

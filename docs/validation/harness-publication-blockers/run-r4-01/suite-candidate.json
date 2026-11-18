@@ -1,0 +1,9 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh",
+  "root": "<disposable-r4-candidate>",
+  "started_at": "2026-11-17T20:01:46.061561+00:00",
+  "exit_code": 0,
+  "input_digest_before": "61388c31a8869f1218cfa808a7207f6431c9c2d5425e2d850b99897fa6e3f3ef",
+  "input_digest_after": "61388c31a8869f1218cfa808a7207f6431c9c2d5425e2d850b99897fa6e3f3ef",
+  "scope": "Complete maintained local package suite on exact candidate. Preparation differs by nine approved adoption preimages, not runtime/test source. No duplicate identical-root full suite. Canonical root remains unadopted."
+}

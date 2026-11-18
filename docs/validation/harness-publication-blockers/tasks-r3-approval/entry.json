@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-16",
+  "quote": "sim",
+  "approved_digests": {
+    "proposal": "6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e",
+    "design": "a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f",
+    "tasks": "5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114"
+  },
+  "scope": "Gate 3 R3 approval bookkeeping and local validation only; execution remains suspended.",
+  "prior_tasks_packet_verified": true
+}

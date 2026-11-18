@@ -1,0 +1,372 @@
+{
+  "scope": "Bounded metadata GETs only using existing access. No bodies/logs/packages/attachments downloaded; no remote mutation or workflow execution. Failed sandbox repository GET retained as transport-unavailable; bounded approved network read then succeeded.",
+  "results": {
+    "repository": {
+      "name": "repository",
+      "endpoint": "repos/versat-labs/versat-ai-harness",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:40.545083+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "id": 1350076941,
+        "full_name": "versat-labs/versat-ai-harness",
+        "private": true,
+        "default_branch": "main",
+        "archived": false,
+        "has_wiki": false,
+        "has_discussions": false,
+        "has_pages": false,
+        "permissions": {
+          "admin": true,
+          "maintain": true,
+          "push": true,
+          "triage": true,
+          "pull": true
+        }
+      }
+    },
+    "main": {
+      "name": "main",
+      "endpoint": "repos/versat-labs/versat-ai-harness/branches/main",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:40.545349+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "sha": "4a56181d3597c5d345a7639f013547e1700420cb",
+        "protected": false
+      }
+    },
+    "protection": {
+      "name": "protection",
+      "endpoint": "repos/versat-labs/versat-ai-harness/branches/main/protection",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:40.545449+00:00",
+      "exit_code": 1,
+      "pagination": "single object",
+      "pages": null,
+      "error": {
+        "message": "Upgrade to GitHub Pro or make this repository public to enable this feature.",
+        "status": "403"
+      }
+    },
+    "rulesets": {
+      "name": "rulesets",
+      "endpoint": "repos/versat-labs/versat-ai-harness/rulesets?includes_parents=true&per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:40.545582+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "active-rules": {
+      "name": "active-rules",
+      "endpoint": "repos/versat-labs/versat-ai-harness/rules/branches/main?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:41.137646+00:00",
+      "exit_code": 1,
+      "pagination": "gh --paginate --slurp",
+      "pages": null,
+      "error": {
+        "kind": "connection/transport failure"
+      }
+    },
+    "workflow-permissions": {
+      "name": "workflow-permissions",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/permissions/workflow",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:41.185481+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "default_workflow_permissions": "read",
+        "can_approve_pull_request_reviews": false
+      }
+    },
+    "fork-policy": {
+      "name": "fork-policy",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/permissions/fork-pr-workflows-private-repos",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:41.240902+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "run_workflows_from_fork_pull_requests": false,
+        "send_write_tokens_to_workflows": false,
+        "send_secrets_and_variables": false,
+        "require_approval_for_fork_pr_workflows": false
+      }
+    },
+    "owner": {
+      "name": "owner",
+      "endpoint": "repos/versat-labs/versat-ai-harness/collaborators/elviszoz/permission",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:41.598386+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "login": "elviszoz",
+        "permission": "admin"
+      }
+    },
+    "codeowner": {
+      "name": "codeowner",
+      "endpoint": "repos/versat-labs/versat-ai-harness/collaborators/evertonspohrversat/permission",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:41.632112+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "login": "evertonspohrversat",
+        "permission": "admin"
+      }
+    },
+    "caches": {
+      "name": "caches",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/caches?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:41.707123+00:00",
+      "exit_code": 0,
+      "pagination": "gh --paginate --slurp",
+      "pages": 1,
+      "observation": {
+        "total_count": 0,
+        "enumerated": 0
+      }
+    },
+    "artifacts": {
+      "name": "artifacts",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/artifacts?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.049027+00:00",
+      "exit_code": 0,
+      "pagination": "gh --paginate --slurp",
+      "pages": 1,
+      "observation": {
+        "total_count": 0,
+        "enumerated": 0
+      }
+    },
+    "releases": {
+      "name": "releases",
+      "endpoint": "repos/versat-labs/versat-ai-harness/releases?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.058154+00:00",
+      "exit_code": 0,
+      "pagination": "gh --paginate --slurp",
+      "pages": 1,
+      "observation": {
+        "count": 0,
+        "asset_count": 0
+      }
+    },
+    "refs": {
+      "name": "refs",
+      "endpoint": "repos/versat-labs/versat-ai-harness/git/matching-refs/?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.096273+00:00",
+      "exit_code": 0,
+      "pagination": "gh --paginate --slurp",
+      "pages": 1,
+      "observation": [
+        {
+          "ref": "refs/heads/main",
+          "sha": "4a56181d3597c5d345a7639f013547e1700420cb"
+        },
+        {
+          "ref": "refs/pull/1/head",
+          "sha": "29b6ebce9fcb0a47da3ba42a385c47c94d8e3af9"
+        },
+        {
+          "ref": "refs/pull/10/head",
+          "sha": "285ec23bb44f5a7edc16d2d386116eb1b5b24504"
+        },
+        {
+          "ref": "refs/pull/11/head",
+          "sha": "0a3e41ab15fce6ae15e2f49e2e03102ad1cf7b66"
+        },
+        {
+          "ref": "refs/pull/12/head",
+          "sha": "1d27498f880a737197abb45679181dbef3132c59"
+        },
+        {
+          "ref": "refs/pull/13/head",
+          "sha": "ccc47205fa123257993464de36bbc00b0ac42035"
+        },
+        {
+          "ref": "refs/pull/14/head",
+          "sha": "663a168a427e026bf03a71fbf75c207def4afbcd"
+        },
+        {
+          "ref": "refs/pull/2/head",
+          "sha": "515f0bda56b98716df0dad0893c7a7dae80f47af"
+        },
+        {
+          "ref": "refs/pull/21/head",
+          "sha": "84f9d15d27a186720b114b98481e202290970696"
+        },
+        {
+          "ref": "refs/pull/3/head",
+          "sha": "df8bc02ad7d0d215c7eebdb30ec07bcb99ecd66e"
+        },
+        {
+          "ref": "refs/pull/33/head",
+          "sha": "9ec47942fe08b9d3d0bf42c4e9a4b0476e5055f4"
+        },
+        {
+          "ref": "refs/pull/36/head",
+          "sha": "6fcf7005f11eac445c56651a11e0c283069fa207"
+        },
+        {
+          "ref": "refs/pull/37/head",
+          "sha": "a6d67fa6bb24bd85eea128d57e7492e7b03910cd"
+        },
+        {
+          "ref": "refs/pull/39/head",
+          "sha": "56fea837d2eb8b35f6657fab5cb5c0deaf684229"
+        },
+        {
+          "ref": "refs/pull/4/head",
+          "sha": "2edbf8f4061ce131ccd776725e0cc28238a137df"
+        },
+        {
+          "ref": "refs/pull/5/head",
+          "sha": "9260d3a04f658b6eeec86a8dc88563d2051cb09d"
+        },
+        {
+          "ref": "refs/pull/6/head",
+          "sha": "27b18989a3067559cb237a63300e020733e87837"
+        },
+        {
+          "ref": "refs/pull/7/head",
+          "sha": "bea03052ec5b8609c27b6fb14d731e33c561add0"
+        },
+        {
+          "ref": "refs/pull/8/head",
+          "sha": "9e7ecd71edcad527d9d3530e55d987ab541fe1b3"
+        },
+        {
+          "ref": "refs/pull/9/head",
+          "sha": "e85b088b7e63f2a2fb3b851ea61cdc2ff01d9eb6"
+        },
+        {
+          "ref": "refs/tags/v0.2.0",
+          "sha": "bcf6e245d9fe0a2dca4b3b005abe25e42ce07e3b"
+        },
+        {
+          "ref": "refs/tags/v0.3.0",
+          "sha": "db04b4aa645e6bef94b60cd172dcaa4183646a1e"
+        }
+      ]
+    },
+    "pvr": {
+      "name": "pvr",
+      "endpoint": "repos/versat-labs/versat-ai-harness/private-vulnerability-reporting",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.130143+00:00",
+      "exit_code": 1,
+      "pagination": "single object",
+      "pages": null,
+      "error": {
+        "message": "Not Found",
+        "status": "404"
+      }
+    },
+    "active-runs": {
+      "name": "active-runs",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/runs?status=in_progress&per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.495576+00:00",
+      "exit_code": 0,
+      "pagination": "gh --paginate --slurp",
+      "pages": 1,
+      "observation": {
+        "count": 0
+      }
+    },
+    "queued-runs": {
+      "name": "queued-runs",
+      "endpoint": "repos/versat-labs/versat-ai-harness/actions/runs?status=queued&per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.495954+00:00",
+      "exit_code": 0,
+      "pagination": "gh --paginate --slurp",
+      "pages": 1,
+      "observation": {
+        "count": 0
+      }
+    },
+    "checks": {
+      "name": "checks",
+      "endpoint": "repos/versat-labs/versat-ai-harness/commits/4a56181d3597c5d345a7639f013547e1700420cb/check-runs?per_page=100",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.987276+00:00",
+      "exit_code": 0,
+      "pagination": "gh --paginate --slurp",
+      "pages": 1,
+      "observation": [
+        {
+          "id": 132207590154,
+          "name": "structural-validation",
+          "conclusion": "success",
+          "status": "completed",
+          "app_id": 15368,
+          "app_slug": "github-actions"
+        }
+      ]
+    },
+    "workflow": {
+      "name": "workflow",
+      "endpoint": "repos/versat-labs/versat-ai-harness/contents/.github/workflows/validate.yml?ref=4a56181d3597c5d345a7639f013547e1700420cb",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.990067+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "sha256": "afa56a72fb45831f74d5620aaea3c3f93509325c5615a6801f4a991baf48e74d",
+        "blob_sha": "49a0e002ed3485edf76211cf5a1c37257a9d9604"
+      }
+    },
+    "codeowners-file": {
+      "name": "codeowners-file",
+      "endpoint": "repos/versat-labs/versat-ai-harness/contents/.github/CODEOWNERS?ref=4a56181d3597c5d345a7639f013547e1700420cb",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.990760+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "sha256": "cd1a70acd08400c27efb075e6f9fa1f3d123854dcfc911ebf5ee520860e59125",
+        "blob_sha": "4c6809d6ed03ef7aea784cdca833ca39f1254615"
+      }
+    },
+    "main-after": {
+      "name": "main-after",
+      "endpoint": "repos/versat-labs/versat-ai-harness/branches/main",
+      "method": "GET",
+      "observed_at": "2026-11-16T17:09:42.991170+00:00",
+      "exit_code": 0,
+      "pagination": "single object",
+      "pages": null,
+      "observation": {
+        "sha": "4a56181d3597c5d345a7639f013547e1700420cb",
+        "protected": false
+      }
+    }
+  },
+  "actor_consent": "not established by permissions",
+  "freeze": "not established by empty run queues",
+  "public_enforcement": "unverified",
+  "public_reporting": "unverified"
+}

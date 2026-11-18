@@ -1,0 +1,16 @@
+{
+  "README.md": "6c9660290e0563ec53a1d526f99b0d311759fb1de1e7c8388305a3afc66103ac",
+  "before/design.md.txt": "fc0d863e566e0a29ebe4922119d76208f7c765845cdbf747176c9b604f253ce0",
+  "before/handoff.md.txt": "08c23fcfd09795937afd3deea746b64b5d457882fd6d03468b5c6d6b8d47c11f",
+  "before/integrity.json": "2d41ffdee65a7d09302470eed1e9689a95667bcb0ab9dc0764a4a0a13f9d5951",
+  "before/proposal.md.txt": "a84344a3efb51f5319819020a18ec4662e5be377f1b975e756186c69c76718a9",
+  "before/requirements.md.txt": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+  "before/tasks.md.txt": "13ecebfda4c3d7f846efa8c9ae809d7bdd68ec69d7db05ef3a26f8d77f9dfb78",
+  "entry.json": "b1ff4deb2cd387174264af65bfe808ecdd36693c42795a4ad3f90eb9b2b82fde",
+  "local-review.json": "5828468f5ddf6c9be1b374d3581cae18b66ee92bf3c34800bbb29fb3b3ea745d",
+  "planning.json": "531a201acc97514dcde7494b4a2c234aa58bd5b4b320b25c1cbf1234470d3205",
+  "source-before.json": "05f1daee1dc8388e1410f8264ec0c84f67ea84060999548580d6d4e82984f42c",
+  "suite-result.json": "0a7482cb98341bd1d6758017fccb84a481b5073592b019e273a1a2455a7605bd",
+  "suite.stderr": "0c8cd22ba6617c663a11925d9dd3d398669f49485f8f15607a33f853f9528cc3",
+  "suite.stdout": "2759e22c96c8d33b0b2b46879e13326ee2f02a729c1171172c89f77581d0fece"
+}

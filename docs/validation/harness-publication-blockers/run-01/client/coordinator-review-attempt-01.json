@@ -1,0 +1,5 @@
+{
+  "result": "failed coordinator assertion",
+  "reason": "Coordinator expected two report files; actual native execution also retained an empty stderr file. No product or plan violation established by that count. Inspected before correcting coordinator expectation.",
+  "native_rerun": false
+}

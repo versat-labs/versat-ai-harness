@@ -1,0 +1,65 @@
+{
+  "result": "pass",
+  "scenario": "new-intent",
+  "change": "payment-validation-tests",
+  "agent": "/root/hpb_first_use",
+  "source": "Native scenario response and independent artifact inspection",
+  "original_before_manifest": {
+    ".versat/project.yaml": "4cbd00521f5fd475a738a5c95ae90ed4f7872ae0a6932f38ce75024abcb854ef",
+    ".versat/standards.lock": "e04c3579c406a647b06c61935ecf4d28c8586717cf9cbf3048637997ecb99d25",
+    ".versat/validation.yaml": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+    "AGENTS.md": "6733230917c63d4f0db82a76df80ad071a76ad51e1994cc0cb14ea55bd32050b",
+    "specs/product/payment.md": "46a4d95d4458d55ce93d10aae8bdadcb9c60263aecf16f1bb3dd8163df955aaf",
+    "src/payment.py": "359cc89fa307dfd42bbe6f7052783dc9c890ff2483986ea73a94e079099f539b",
+    "tests/test_payment.py": "33a188ac152d4d7e5b8972a936d6680b16d4cf2191c91b5affff5826d3bc0f40"
+  },
+  "original_after_manifest": {
+    ".versat/project.yaml": "4cbd00521f5fd475a738a5c95ae90ed4f7872ae0a6932f38ce75024abcb854ef",
+    ".versat/standards.lock": "e04c3579c406a647b06c61935ecf4d28c8586717cf9cbf3048637997ecb99d25",
+    ".versat/validation.yaml": "dbf5e64255a024b3d0af309802133a0e7a32d0db255767593cfeb5e034e960fb",
+    "AGENTS.md": "6733230917c63d4f0db82a76df80ad071a76ad51e1994cc0cb14ea55bd32050b",
+    "rehearsal-report/observations.json": "836a98e463106e6532de13eca8d78668107130a01a0e345bb3a093561f1691e2",
+    "rehearsal-report/planning-validation.json": "b3a447cfdde19f62df4f681bd58878f91129852d7e1a41e6780122a1d76ebec5",
+    "rehearsal-report/planning-validation.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "specs/changes/payment-validation-tests/proposal.md": "40fab763f4243bee95d52d138ae87fcf71d318cd344baab24305419fdf987ba6",
+    "specs/changes/payment-validation-tests/requirements.md": "038974c40cc31abd896616bb00be106277e0d771c22863bffae198021ee0dfd4",
+    "specs/product/payment.md": "46a4d95d4458d55ce93d10aae8bdadcb9c60263aecf16f1bb3dd8163df955aaf",
+    "src/payment.py": "359cc89fa307dfd42bbe6f7052783dc9c890ff2483986ea73a94e079099f539b",
+    "tests/test_payment.py": "33a188ac152d4d7e5b8972a936d6680b16d4cf2191c91b5affff5826d3bc0f40"
+  },
+  "changed_paths": [
+    "rehearsal-report/observations.json",
+    "rehearsal-report/planning-validation.json",
+    "rehearsal-report/planning-validation.stderr.txt",
+    "specs/changes/payment-validation-tests/proposal.md",
+    "specs/changes/payment-validation-tests/requirements.md"
+  ],
+  "product_tests_and_original_files_unchanged": true,
+  "only_proposal_requirements": true,
+  "approval_null": true,
+  "independent_validation": {
+    "status": "pass",
+    "phase": "planning",
+    "checked": [
+      "payment-validation-tests"
+    ],
+    "findings": [],
+    "warnings": [],
+    "metrics": {
+      "payment-validation-tests": {
+        "local_scenarios": 8,
+        "regression_obligations": 1
+      }
+    },
+    "live_archives": [],
+    "archive_required": [],
+    "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+  },
+  "native_and_verification_elapsed_seconds": 169.6785809993744,
+  "limit_seconds": 600,
+  "within_limit": true,
+  "native_attempts": 1,
+  "telemetry": "Exact token/model accounting unavailable; shared host permissions; not a security sandbox.",
+  "exports": "Scrubbed copies; original output preserved separately. Hash manifests describe originals.",
+  "coordinator_correction": "Original count assertion retained separately; empty stderr evidence accepted after inspection, no scenario rerun."
+}

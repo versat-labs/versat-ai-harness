@@ -1,0 +1,17 @@
+{
+  "check": "CHECK-007",
+  "result": "pass",
+  "scope": "Current local delivery review, not main integration/publication",
+  "input_digest_before": "0123934d46fa49138357b50ae857edd4de96b496fffe57f247929508b40f6129",
+  "input_digest_after": "0123934d46fa49138357b50ae857edd4de96b496fffe57f247929508b40f6129",
+  "observations": "Affected localized version/license/setup/product prose and living navigation reviewed; all actual current links and whitespace pass; frozen reviewed contribution/legal wording preserved.",
+  "baseline_evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-007.json",
+  "current_evidence": [
+    "identity-and-application.json",
+    "source-delta.json",
+    "behavior-reuse.json",
+    "review.json",
+    "suite-applicability.json"
+  ],
+  "limitations": "R4 public service outcomes and remote freshness remain unexecuted/dated; original failed checks and earlier roots unchanged."
+}

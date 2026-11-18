@@ -1,0 +1,4 @@
+{
+  "source": "../active/suite.json",
+  "comparison": "Only unique dossier relocation, closure bookkeeping, current navigation and removal of an empty generated-cache directory from the distributed input tree changed since full suite. Package/runtime/test source and all nine postimages remain identical. Current selected delivery + trusted-baseline archive guard validate final lifecycle effects; no old test execution relabelled."
+}

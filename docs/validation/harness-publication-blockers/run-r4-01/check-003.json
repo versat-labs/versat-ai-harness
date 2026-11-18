@@ -1,0 +1,20 @@
+{
+  "check": "CHECK-003",
+  "result": "pass",
+  "scope": "Approved R4 private preparation; future service outcomes unexecuted",
+  "method": {
+    "kind": "review",
+    "procedure": "Reuse D1/D2 and R3-E1 for unchanged first-party scope and prior approved Apache wording; compare substantive distribution/source delta, all 16 candidate texts, seven dependency texts and nine patch preimages. Review only new rights/term conflicts; preserve external notices. Verify patch applicability in a disposable root when required, never silently rebase approval or adopt the license in preparation.",
+    "reason": "Existing attributable rights evidence is reused; genuinely missing grants or legal uncertainty still need the appropriate specific reviewer."
+  },
+  "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "observations": "Sixteen approved texts, seven dependency texts and nine preimages unchanged; exact patch applies in isolated candidate with all nine postimages, wrong-version fixture rejected. D1/D2/R3-E1 plus bounded first-party R4 provenance used; no new grant or effective adoption.",
+  "evidence": [
+    "docs/validation/harness-publication-blockers/run-r4-01/candidate-integrity.json",
+    "docs/validation/harness-publication-blockers/run-r4-01/candidate-postimages.json",
+    "docs/validation/harness-publication-blockers/run-r4-01/negative-preimage.json",
+    "docs/validation/harness-publication-blockers/run-r4-01/source-delta.json"
+  ],
+  "suite_candidate_input": null
+}

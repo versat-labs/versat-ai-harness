@@ -4,7 +4,7 @@
 
 Versat’s source of truth for AI-assisted development: a portable Plugin containing Standards, Spec Driven Development (SDD), reusable Skills, composable project templates and deterministic validation.
 
-For developers, reviewers and maintainers, including external contributors when access and applicable terms are available. Maintained by Versat; governed-component review contacts are @elviszoz and @evertonspohrversat in .github/CODEOWNERS.
+For developers, reviewers and maintainers, including external contributors when access and applicable terms are available. Maintained by Versat; general CODEOWNERS and shared security-triage maintainers are @elviszoz and @evertonspohrversat, with Elvis coordinating. The review policy requires one eligible approval from someone other than the PR author. Review eligibility follows the base branch’s CODEOWNERS; this local preparation does not activate GitHub enforcement or verify security-report delivery. See the [current handoff](docs/handoffs/harness-publication-blockers/README.md).
 
 ## Start here
 
@@ -22,11 +22,13 @@ For developers, reviewers and maintainers, including external contributors when 
 
 ## Publication preparation in progress
 
-The public Apache-2.0 direction is approved. The [concrete candidate](docs/licensing/candidates/apache-2.0/APPROVAL.md) has text approval and has not been adopted. The existing repository remains private; 0.4.0 is a future candidate, not an available release. See [licensing](docs/user-docs/guides/licensing.md), [contribution](docs/user-docs/guides/contributing.md), [security reporting](docs/user-docs/guides/security-reporting.md) and the [preparation status](docs/handoffs/harness-publication-readiness/README.md).
+The approved Apache-2.0 license and notices are now applied in this local delivery branch. Integration on main and public distribution remain pending; 0.4.0 is not an available release. The [text approval](docs/licensing/candidates/apache-2.0/APPROVAL.md) remains the unchanged historical review. See [licensing](docs/user-docs/guides/licensing.md), [contribution](docs/user-docs/guides/contributing.md), [security reporting](docs/user-docs/guides/security-reporting.md) and the [current blocker resolution](docs/handoffs/harness-publication-blockers/README.md).
+
+The approved GitHub Free sequence keeps preparation and review private, then requires separately authorized public visibility followed immediately by main protection/readback within 15 minutes. Actual public control, reporting and external-use checks precede any later release. This sequence is prepared, not executed; see the [current operational handoff](docs/handoffs/harness-publication-blockers/README.md).
 
 ## Current state and adoption
 
-VERSION declares 0.3.0. The marketplace selects the exact tag v0.3.0; verify that tag and its contents before distribution. Consumer execution and supervised evaluations in the current source are explicitly unreleased. A source change or merge does not update installed Plugins or consumer pins. Adopt another exact release through a reviewed change.
+VERSION and manifests now declare the local 0.4.0 candidate. Its repository catalog selects v0.4.0, which must not be imported as an available release before that exact tag is created and verified under separate authority. Existing installations and consumer pins remain unchanged; the previous released reference is v0.3.0.
 
 Workspace administrators manage marketplace import and member installation policy. Use this repository as the source, authenticate with read access, review the imported exact release and confirm member availability. Follow the current workspace administration interface; the repository marketplace policy is AVAILABLE and does not prove automatic installation. Members can use [workspace setup](docs/user-docs/guides/workspace-setup.md).
 

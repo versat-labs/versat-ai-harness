@@ -1,0 +1,1455 @@
+---
+sdd_version: 3
+change: harness-publication-blockers
+requirements:
+- REQ-001
+- REQ-002
+- REQ-003
+- REQ-004
+- REQ-005
+- REQ-006
+- REQ-007
+- REQ-008
+- REQ-009
+- REQ-010
+adrs:
+- ADR-0011
+- ADR-0016
+validation:
+- id: CHECK-001
+  description: Restricted evidence identity, access, ownership and current baseline
+  requirements:
+  - REQ-001
+  - REQ-004
+  - REQ-007
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-001 below: verify the existing restricted system and current reviewer access, compare
+      the two HPR-PRIVATE-01 hashes, reconcile exact candidate/source identities and all blocker fields, and test
+      changed/missing evidence decisions. Expect accessible attributable review and explicit failures, never clearance
+      from an opaque ID.'
+    reason: Rights and restricted access require actual authorized review; local hash equality is only an integrity
+      aid.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-002
+  description: Complete exposure review and attributable confidentiality resolution
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-002 below: reconcile all 16 predecessor categories and new exposure, review inaccessible
+      package/cache/external payloads through scoped reads, classify historical findings, and verify every approved
+      treatment against exact affected surfaces. Exercise incomplete pagination, inaccessible payload, sensitive-history
+      and drift cases. Pass only after all pre-publication exposure blockers close with evidence.'
+    reason: Actual remote content, sensitivity and permitted treatment cannot be established by a clean scan or
+      repository unit test.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-003
+  description: Rights delta and unchanged candidate applicability
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-004
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-003 below: compare source/distribution delta, actual grants and notices, all 16 approved
+      candidate texts, seven preserved dependency texts and nine patch preimages; check exact patch applicability
+      in a disposable private root. Review missing-grant, incompatible-term and changed-text/preimage cases. Expect
+      no root adoption and no transferred approval.'
+    reason: A reviewer must establish rights and exact text scope; deterministic file and patch checks complement
+      that review.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-004
+  description: Shared general CODEOWNERS, one non-author approval, Free transition and executable public enforcement
+    protocols
+  requirements:
+  - REQ-005
+  - REQ-007
+  - REQ-008
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-004 below in two explicitly separate evidence scopes: verify actual feasible private
+      prerequisites and the reviewed transition/test/failure envelope; keep OP-CTRL-01 activation and enforcement
+      unverified until separately authorized public execution. Walk missing actor, unsafe workflow, stale inputs,
+      activation error, timeout, inconsistent readback and failed enforcement cases; all stop the appropriate stage.
+      A preparation pass proves only prerequisite/handoff completeness, never main enforcement. For R3, inspect
+      the exact one-line fallback diff and every effective specific entry, current base-branch owner eligibility,
+      reciprocal-author/external-author/missing-self-stale-review cases and unchanged control body. Prepare actual
+      OP-CTRL-02 reciprocal public observations in addition to OP-CTRL-01; require genuinely reviewed operational
+      fixture dossiers and valid non-draft CI before claiming allowed mergeability. No extra PR or workflow is executed
+      in private preparation.'
+    reason: R2 intentionally sequences platform enforcement after visibility on GitHub Free. Actual private evidence
+      and a reviewed executable protocol are required before exposure; real public service observations are mandatory
+      later and cannot be simulated into a pass.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-005
+  description: Shared Elvis/Everton security triage prerequisites and individual public access/receipt evidence
+  requirements:
+  - REQ-006
+  - REQ-007
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-005 below: verify current platform visibility constraints, destination/owner/recipient/reporting-actor
+      contract, safe fallback and separately authorized private prerequisites where feasible. Review missing access/receipt
+      and wrong-repository cases. Bind public PVR activation, intended-reporter receipt and unauthorized-viewer
+      exclusion to later authorized visibility; do not execute or claim those public tests now. Verify the owner-selected
+      Elvis/Everton roster, individual existing-role evidence, handler/handover protocol and explicit unavailability
+      state. Public evidence must identify each maintainer’s access and notification/receipt participation separately,
+      with one actual handler and no invented second-approval or two-reply requirement. Keep missing individual
+      evidence unverified; CODEOWNERS is not report delivery.'
+    reason: Public PVR is visibility-dependent; review the executable follow-up and actual available prerequisites
+      rather than fabricate a public observation.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-006
+  description: Exact private candidate, documented use, failures and recovery
+  requirements:
+  - REQ-004
+  - REQ-007
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: manual
+    procedure: 'Follow CHECK-006 below: validate the unchanged preparation root and exact patched private candidate;
+      exercise installation/resource resolution and the six existing bounded client cases on the selected runtime,
+      with exact old/new synthetic provider pairs. Independently inspect first-use Gate 1, missing provider/resource/ref,
+      migration and failed-update recovery artifacts. Preserve every attempt and the real workspace installation.'
+    reason: Package parsing alone cannot establish client loading, first-use behavior or recovery; reuse the existing
+      bounded client protocol with fresh evidence.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-007
+  description: Safe multilingual guidance, independent boundaries and immutable history
+  requirements:
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-007 below: compare frozen predecessor/candidate files with the merged baseline, review
+      changed English/Portuguese/Spanish meaning and actual documented steps, check local links/anchors and public-safe
+      content, and confirm unchanged product/organization boundaries. Private evidence, altered historical approval
+      or unsupported availability claims fail. Inspect only the reviewed fallback change and affected EN/PT/ES guidance
+      for both named owners and shared triage; preserve all specific owners, frozen approved contribution text,
+      unrelated code and historical records. Verify no wording implies self-approval, configured notifications or
+      two required approvals.'
+    reason: Semantic translation, audience safety and preserved historical meaning require review in addition to
+      mechanical comparisons.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-008
+  description: Blocker closure decision and non-circular operational handoff
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-008 below: reconcile every private prerequisite and exact input/owner decision, review
+      the repository-specific deviation and walk private adoption, final freeze, separately authorized public visibility,
+      immediate protection/readback within 15 minutes, actual enforcement/reporting/external-use verification and
+      only then separately authorized release/migration. Missing rights, actor consent, authority or a feasible
+      freeze blocks visibility. Post-opening failures block further rollout; public outcomes stay unverified until
+      observed. Include the base-owner transition, genuine fixture delivery prerequisites for public tests, the
+      bounded reciprocal-author protocol and individual shared-triage handover, without weakening the existing Free
+      timing/operation gates.'
+    reason: A human decision over rights, sensitivity and external prerequisites cannot be reduced to a document-presence
+      check.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-009
+  description: Complete maintained package and regression suites
+  requirements:
+  - REQ-008
+  - REQ-009
+  required: true
+  method:
+    kind: automated
+    procedure: Run PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh
+      from both preparation and exact disposable candidate roots using the verified pinned environment; preserve
+      stdout/stderr, exit status and actual nonzero counts for tests/validators and tests/execution. Expect Plugin/SDD
+      pass and all required tests pass; no targeted/empty/skipped-only substitute. Use the final trusted-baseline
+      archive guard only at later authorized delivery.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+- id: CHECK-010
+  description: Scenario evidence, authorization and planning-chain integrity
+  requirements:
+  - REQ-001
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-008
+  - REQ-009
+  - REQ-010
+  required: true
+  method:
+    kind: review
+    procedure: 'Follow CHECK-010 below: verify Proposal R3 digest and genuine approval, current Design/Tasks chain,
+      all 31 local and 40 retained mappings plus both explicit timing and ownership/triage supersessions. Distinguish
+      private prerequisite/handoff assessments from unexecuted public outcomes, preserve R1/R2 evidence and inspect
+      the bounded deviation and operational authority. Run phase-appropriate diagnostics; no Tasks revision, new
+      implementation ledger or remote action occurs during Design. Confirm the R3 role cases replace the single-default-owner
+      contract while all 31 local positions, 40 retained obligations, ten check IDs and six real findings remain
+      represented. No old result is relabelled as R3.'
+    reason: Mechanical consistency does not authenticate approvals, actual operation authority or semantic scenario
+      coverage.
+  inputs:
+    include:
+    - AGENTS.md
+    - README.md
+    - README.pt.md
+    - README.es.md
+    - VERSION
+    - plugin.json
+    - .codex-plugin/plugin.json
+    - .agents/plugins/marketplace.json
+    - standards
+    - skills
+    - agents
+    - sdd
+    - schemas
+    - project-templates
+    - validators
+    - scripts
+    - tests
+    - .github
+    - docs
+    - specs
+    - requirements-validation.txt
+    - CHANGELOG.md
+    exclude:
+    - docs/validation/harness-publication-blockers
+  outputs:
+  - docs/validation/harness-publication-blockers
+  execution: local
+coverage:
+- scenario:
+    requirement: REQ-001
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-001
+- scenario:
+    requirement: REQ-001
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-001
+- scenario:
+    requirement: REQ-001
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-001
+  - CHECK-010
+- scenario:
+    requirement: REQ-002
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-002
+- scenario:
+    requirement: REQ-002
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-007
+- scenario:
+    requirement: REQ-002
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-008
+- scenario:
+    requirement: REQ-003
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-002
+- scenario:
+    requirement: REQ-003
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-010
+- scenario:
+    requirement: REQ-003
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-008
+- scenario:
+    requirement: REQ-003
+    scenario: 4
+  applicability: required
+  checks:
+  - CHECK-002
+  - CHECK-008
+- scenario:
+    requirement: REQ-004
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-003
+- scenario:
+    requirement: REQ-004
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-003
+- scenario:
+    requirement: REQ-004
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-003
+  - CHECK-006
+- scenario:
+    requirement: REQ-005
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-005
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-005
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-006
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-005
+  - CHECK-010
+- scenario:
+    requirement: REQ-006
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-005
+  - CHECK-010
+- scenario:
+    requirement: REQ-006
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-005
+  - CHECK-008
+  - CHECK-010
+- scenario:
+    requirement: REQ-007
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-008
+- scenario:
+    requirement: REQ-007
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-004
+  - CHECK-005
+  - CHECK-008
+- scenario:
+    requirement: REQ-007
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-008
+- scenario:
+    requirement: REQ-008
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-006
+  - CHECK-009
+- scenario:
+    requirement: REQ-008
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-007
+- scenario:
+    requirement: REQ-008
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-007
+  - CHECK-010
+- scenario:
+    requirement: REQ-009
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-007
+  - CHECK-010
+- scenario:
+    requirement: REQ-009
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-001
+  - CHECK-010
+- scenario:
+    requirement: REQ-009
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-009
+  - CHECK-010
+- scenario:
+    requirement: REQ-010
+    scenario: 1
+  applicability: required
+  checks:
+  - CHECK-010
+- scenario:
+    requirement: REQ-010
+    scenario: 2
+  applicability: required
+  checks:
+  - CHECK-010
+- scenario:
+    requirement: REQ-010
+    scenario: 3
+  applicability: required
+  checks:
+  - CHECK-010
+regression:
+- obligation:
+    impact: 1
+    scenario: 1
+  checks:
+  - CHECK-003
+  - CHECK-007
+  rationale: Retain approved wording, third-party scope and actual text-review capacity; new work resolves current
+    applicability rather than recreating the delivered candidate. Assess the retained outcome against current inputs;
+    preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 1
+    scenario: 2
+  checks:
+  - CHECK-003
+  - CHECK-007
+  rationale: Retain approved wording, third-party scope and actual text-review capacity; new work resolves current
+    applicability rather than recreating the delivered candidate. Assess the retained outcome against current inputs;
+    preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 1
+    scenario: 3
+  checks:
+  - CHECK-003
+  - CHECK-010
+  rationale: Retain approved wording, third-party scope and actual text-review capacity; new work resolves current
+    applicability rather than recreating the delivered candidate. Assess the retained outcome against current inputs;
+    preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 2
+    scenario: 1
+  checks:
+  - CHECK-001
+  - CHECK-003
+  rationale: Extend the bounded rights assessment to resolution of remaining and changed evidence for the final
+    candidate. Assess the retained outcome against current inputs; preserve historical execution as provenance rather
+    than replaying its approval event.
+- obligation:
+    impact: 2
+    scenario: 2
+  checks:
+  - CHECK-001
+  - CHECK-003
+  rationale: Extend the bounded rights assessment to resolution of remaining and changed evidence for the final
+    candidate. Assess the retained outcome against current inputs; preserve historical execution as provenance rather
+    than replaying its approval event.
+- obligation:
+    impact: 2
+    scenario: 3
+  checks:
+  - CHECK-001
+  - CHECK-003
+  rationale: Extend the bounded rights assessment to resolution of remaining and changed evidence for the final
+    candidate. Assess the retained outcome against current inputs; preserve historical execution as provenance rather
+    than replaying its approval event.
+- obligation:
+    impact: 3
+    scenario: 1
+  checks:
+  - CHECK-002
+  rationale: Complete inaccessible-surface and confidentiality disposition work, retaining the full exposure boundary
+    and explicit remediation gates. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 3
+    scenario: 2
+  checks:
+  - CHECK-002
+  rationale: Complete inaccessible-surface and confidentiality disposition work, retaining the full exposure boundary
+    and explicit remediation gates. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 3
+    scenario: 3
+  checks:
+  - CHECK-002
+  - CHECK-008
+  rationale: Complete inaccessible-surface and confidentiality disposition work, retaining the full exposure boundary
+    and explicit remediation gates. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 4
+    scenario: 1
+  checks:
+  - CHECK-003
+  - CHECK-006
+  rationale: Retain canonical package identity, exact references, migration and recovery; no new release or root
+    adoption is selected here. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 4
+    scenario: 2
+  checks:
+  - CHECK-003
+  - CHECK-006
+  rationale: Retain canonical package identity, exact references, migration and recovery; no new release or root
+    adoption is selected here. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 4
+    scenario: 3
+  checks:
+  - CHECK-006
+  rationale: Retain canonical package identity, exact references, migration and recovery; no new release or root
+    adoption is selected here. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 5
+    scenario: 1
+  checks:
+  - CHECK-006
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 5
+    scenario: 2
+  checks:
+  - CHECK-006
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 5
+    scenario: 3
+  checks:
+  - CHECK-006
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 5
+    scenario: 4
+  checks:
+  - CHECK-008
+  rationale: Retain observed private rehearsal scope, failure/update behavior and separately mandatory public verification;
+    historical scenarios are not reenacted as new public successes. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 6
+    scenario: 1
+  checks:
+  - CHECK-004
+  - CHECK-007
+  rationale: Resolve effective control gaps while retaining self-contained contributions, provenance and operation-specific
+    authorization. Assess the retained outcome against current inputs; preserve historical execution as provenance
+    rather than replaying its approval event. Under approved R2, preserve the contribution control target and real
+    evidence requirement while reviewing feasible private prerequisites and the mandatory public activation/enforcement
+    handoff separately; no paid-private prerequisite or false public pass.
+- obligation:
+    impact: 6
+    scenario: 2
+  checks:
+  - CHECK-004
+  rationale: Resolve effective control gaps while retaining self-contained contributions, provenance and operation-specific
+    authorization. Assess the retained outcome against current inputs; preserve historical execution as provenance
+    rather than replaying its approval event. Under approved R2, preserve the contribution control target and real
+    evidence requirement while reviewing feasible private prerequisites and the mandatory public activation/enforcement
+    handoff separately; no paid-private prerequisite or false public pass.
+- obligation:
+    impact: 6
+    scenario: 3
+  checks:
+  - CHECK-004
+  - CHECK-010
+  rationale: Resolve effective control gaps while retaining self-contained contributions, provenance and operation-specific
+    authorization. Assess the retained outcome against current inputs; preserve historical execution as provenance
+    rather than replaying its approval event. Under approved R2, preserve the contribution control target and real
+    evidence requirement while reviewing feasible private prerequisites and the mandatory public activation/enforcement
+    handoff separately; no paid-private prerequisite or false public pass.
+- obligation:
+    impact: 7
+    scenario: 1
+  checks:
+  - CHECK-005
+  - CHECK-007
+  rationale: Resolve route prerequisites and bind genuinely visibility-dependent checks to later operations without
+    widening prior pilot evidence. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 7
+    scenario: 2
+  checks:
+  - CHECK-005
+  rationale: Resolve route prerequisites and bind genuinely visibility-dependent checks to later operations without
+    widening prior pilot evidence. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 7
+    scenario: 3
+  checks:
+  - CHECK-005
+  - CHECK-008
+  rationale: Resolve route prerequisites and bind genuinely visibility-dependent checks to later operations without
+    widening prior pilot evidence. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 8
+    scenario: 1
+  checks:
+  - CHECK-007
+  rationale: Retain safe multilingual maintained guides and actual usage verification if changes affect them. Assess
+    the retained outcome against current inputs; preserve historical execution as provenance rather than replaying
+    its approval event.
+- obligation:
+    impact: 8
+    scenario: 2
+  checks:
+  - CHECK-007
+  rationale: Retain safe multilingual maintained guides and actual usage verification if changes affect them. Assess
+    the retained outcome against current inputs; preserve historical execution as provenance rather than replaying
+    its approval event.
+- obligation:
+    impact: 8
+    scenario: 3
+  checks:
+  - CHECK-007
+  rationale: Retain safe multilingual maintained guides and actual usage verification if changes affect them. Assess
+    the retained outcome against current inputs; preserve historical execution as provenance rather than replaying
+    its approval event.
+- obligation:
+    impact: 9
+    scenario: 1
+  checks:
+  - CHECK-001
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 9
+    scenario: 2
+  checks:
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 9
+    scenario: 3
+  checks:
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 9
+    scenario: 4
+  checks:
+  - CHECK-008
+  rationale: Advance from a completed defer assessment to resolving pre-publication blockers; old preparation remains
+    valid history, not clearance. Assess the retained outcome against current inputs; preserve historical execution
+    as provenance rather than replaying its approval event.
+- obligation:
+    impact: 10
+    scenario: 1
+  checks:
+  - CHECK-007
+  - CHECK-010
+  rationale: Obtain an attributable confidentiality treatment while preserving delivered approvals and restricted
+    evidence; destructive remedies remain outside the approved scope. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 10
+    scenario: 2
+  checks:
+  - CHECK-003
+  - CHECK-007
+  rationale: Obtain an attributable confidentiality treatment while preserving delivered approvals and restricted
+    evidence; destructive remedies remain outside the approved scope. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 10
+    scenario: 3
+  checks:
+  - CHECK-002
+  - CHECK-007
+  rationale: Obtain an attributable confidentiality treatment while preserving delivered approvals and restricted
+    evidence; destructive remedies remain outside the approved scope. Assess the retained outcome against current
+    inputs; preserve historical execution as provenance rather than replaying its approval event.
+- obligation:
+    impact: 11
+    scenario: 1
+  checks:
+  - CHECK-007
+  rationale: Retain independent product and organization boundaries and required enforcement suites. Assess the
+    retained outcome against current inputs; preserve historical execution as provenance rather than replaying its
+    approval event.
+- obligation:
+    impact: 11
+    scenario: 2
+  checks:
+  - CHECK-007
+  rationale: Retain independent product and organization boundaries and required enforcement suites. Assess the
+    retained outcome against current inputs; preserve historical execution as provenance rather than replaying its
+    approval event.
+- obligation:
+    impact: 11
+    scenario: 3
+  checks:
+  - CHECK-007
+  - CHECK-009
+  rationale: Retain independent product and organization boundaries and required enforcement suites. Assess the
+    retained outcome against current inputs; preserve historical execution as provenance rather than replaying its
+    approval event.
+- obligation:
+    impact: 12
+    scenario: 1
+  checks:
+  - CHECK-010
+  rationale: Apply the same three gates and exact authorization boundaries to the new change without transferring
+    predecessor approvals. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event.
+- obligation:
+    impact: 12
+    scenario: 2
+  checks:
+  - CHECK-010
+  rationale: Apply the same three gates and exact authorization boundaries to the new change without transferring
+    predecessor approvals. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event.
+- obligation:
+    impact: 12
+    scenario: 3
+  checks:
+  - CHECK-010
+  rationale: Apply the same three gates and exact authorization boundaries to the new change without transferring
+    predecessor approvals. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event.
+- obligation:
+    impact: 13
+    scenario: 0
+  checks:
+  - CHECK-008
+  rationale: Retain the effective operational boundary and complete validation entry point; no change to these sources
+    is authorized at Gate 1. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event.
+- obligation:
+    impact: 14
+    scenario: 0
+  checks:
+  - CHECK-009
+  rationale: Retain the effective operational boundary and complete validation entry point; no change to these sources
+    is authorized at Gate 1. Assess the retained outcome against current inputs; preserve historical execution as
+    provenance rather than replaying its approval event.
+review:
+  revision: 3
+  state: superseded
+  blockers: []
+  upstream:
+    proposal: 6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e
+  approval: null
+---
+
+# Design
+
+## Current state
+
+Proposal/Requirements R3 was explicitly approved on 2026-11-16 by the actual reply “sim”, permitting Design R3 only, at paired digest `6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e`. R3 selects both @elviszoz and @evertonspohrversat as general CODEOWNERS and shared security triage, requiring one eligible non-author approval. It retains the R2 GitHub Free sequence and 15-minute readback bound. The source is `4a56181d3597c5d345a7639f013547e1700420cb`, branch `codex/harness-publication-blockers`; declared version remains 0.3.0 with SDD v3 and the same five provider anchors. Use this exact source provider. No CODEOWNERS, reporting guide, Tasks implementation ledger or remote setting changes in this phase.
+
+The delivered `harness-publication-readiness` candidate is retained. Its private preparation passed while publication remained deferred. The following remote/client observations are dated R1/HPB-CONTROLS-01 evidence from 2026-11-14, not fresh service or client observations in Design R3. The later local R2/R3 packets below supplement them with dated observations. This phase reads local artifacts only:
+
+- The existing restricted repository was observed private; the accountable owner has admin access. Local copies of the assessment and integrity manifest match both hashes bound by HPR-PRIVATE-01. This proves local readability and identity, not remote durability of those exact files or substantive reviewer acceptance. No raw contents were copied into Harness.
+- The actual `main` branch reports `protected: false`, at the baseline commit. Both protection and ruleset reads return HTTP 403 with a plan-capability limitation. This is historical evidence of unavailable private capability, not an empty ruleset or a passed control. R2 prepares public activation under an explicit transition contract; no settings changed.
+- The merged commit's observed check run is `structural-validation`, application `github-actions`, completed/success. This identifies the intended required check; it does not establish enforcement or this successor's CI result.
+- Historical client target: Codex desktop 26.915.31945/build 9922, macOS 26.5.2 arm64; reobserve it before any later client rehearsal. Current local validator environment is Python 3.11.4, PyYAML 6.0.2 and jsonschema 4.23.0 at `/private/tmp/hpb-replan-r2-venv/bin/python`. No client compatibility or new rehearsal outcome is asserted.
+
+GitHub documents [classic protection for public repositories on Free](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule) and the [protection API](https://docs.github.com/en/rest/branches/branch-protection), consulted 2026-11-16. [Visibility changes](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility) expose code and Actions history/logs; reverting visibility does not retract public forks. No organization billing plan was inspected. The selected path needs no purchase or permission expansion. The public-only PVR boundary and safe fallback are retained from R1; verify the service boundary again before its later operation.
+
+The [R2 implementation](../../../docs/validation/harness-publication-blockers/run-r2-01/README.md) preserved ten partial results and six open findings. The [R3 private follow-up](../../../docs/validation/harness-publication-blockers/replan-r3/private-followup.json), dated 2026-11-16, observed the existing evidence repository private, existing admin access for both maintainers, 526 scoped untracked local files and remote 404 for the exact predecessor assessment. Access roles alone do not establish durable custody, actual final review, availability or receipt. Those findings remain open; no new service observation is claimed in this Design.
+
+## Proposed design
+
+### Resolution workflow and exact exit
+
+Use an evidence-led review workflow, not a new runtime service or general scanner. Reuse canonical Standards, existing validators, guides, candidate patch and client fixtures. The accountable owner coordinates actual technical, rights and security reviewers in their recorded capacities. R3 changes only the reviewed general CODEOWNERS fallback to both named maintainers and preserves every specific assignment; shared triage is explicit below. Do not invent independent specialist review or a new legal reviewer.
+
+The workflow is: freeze a current review boundary; open attributable blocker records; obtain missing evidence within authorized scope; review and verify permitted treatment; re-freeze changed inputs; run acceptance checks; reconcile the pre-publication decision. `defer` remains the outcome if any required pre-publication blocker is open. Completing a review memo cannot satisfy a failed resolution requirement.
+
+| Workstream | Required exit evidence | Failure disposition |
+|---|---|---|
+| Evidence access and identity | Authorized reviewers can inspect the exact restricted revision; source/candidate and old/new observation boundaries are explicit. | Missing access or unverifiable original remains open. |
+| Inaccessible surfaces | Complete scoped listings and actual payload review or demonstrated absence, with pagination and limits recorded. | API failure, partial search or cache metadata alone remains unverified. |
+| Confidential history | Actual classification and attributable permitted treatment verified over every affected exposure surface. | Destructive/history/destination conflict triggers replanning; no public exposure. |
+| Rights and candidate | Current distribution delta, actual grants/notices and review capacity; unchanged text approval and applicable patch preimages. | Missing rights, changed wording or mismatch blocks adoption readiness. |
+| Free transition prerequisites | Actual accessible private evidence, cleared exposure/rights, valid actors, reviewed exact correction, bounded deviation/freeze and executable public enforcement protocol. | A missing private prerequisite blocks visibility; a 403 is retained as unknown configuration, not a pass. No upgrade is required. |
+| Public control outcome | Timely protection readback and actual allowed/denied review/check observations under OP-CTRL-01 below. | Not executed in private preparation; failure after opening stops rollout and retains unverified/failed status. |
+| Reporting prerequisites | Feasible private prerequisites and safe fallback verified; exact public PVR activation/receipt test assigned to later visibility operation. | Feasible private gaps remain open; public outcomes remain unverified. |
+
+Ready for separately authorized operations is allowed only when those private prerequisites are met and the mandatory public follow-up is executable. It is not a public availability, license-adoption, release or completed-H03 claim.
+
+### Restricted and safe artifacts
+
+Only Design R3 and approval/status/diagnostic bookkeeping are updated now. Existing R1/R2 implementation records remain historical and must be reconciled during later authorized R3 implementation, not recreated or relabelled as current here:
+
+| Location | Contract |
+|---|---|
+| Existing restricted evidence system, new `docs/validation/harness-publication-blockers/` area | New immutable runs with restricted blocker register, payload references, classification/treatment decisions, access records and actual operation evidence. Reuse ADR-0016's system; no new service or sharing expansion. Preserve the prior HPR-PRIVATE-01 area untouched. |
+| `docs/handoffs/harness-publication-blockers/review-inputs.json` in Harness | Minimal scrubbed immutable input manifest: opaque restricted record/revision and content digest, source/candidate identities, observed category states, actual reviewers/capacities and external observation times. No raw URLs, internal addresses, private payloads, secrets or self-hash. |
+| `docs/handoffs/harness-publication-blockers/README.md` in Harness | Safe current blocker disposition, prerequisites, exact later operation boundaries, drift checks and mandatory public follow-up. Link from maintained guidance only during authorized implementation. |
+| `docs/validation/harness-publication-blockers/<run>/` in Harness | Scrubbed check reports, actual suite outputs, individual scenario assessments and minimal provenance. Failed runs remain; no old report is overwritten. |
+| Existing EN/PT/ES guides, only if outcome changes their claims | Update actual status and usage together; keep canonical detailed guidance and safe fallback. No bulk documentation rewrite. |
+
+The restricted blocker record has stable ID, category, exact exposure/source, evidence revision and access, observed/absent/unverified state, sensitivity classification, owner, actual reviewer/capacity, proposed treatment and authority, precondition/exit test, result, date and superseded-observation reference. Closure requires verified evidence, not merely `status: closed`. The safe manifest exposes only what is necessary to bind checks to that restricted revision. It does not publish individual sensitive findings or private strategy links.
+
+The already selected system and hashes resolve the Design's storage choice. Before implementation relies on them, verify current reviewer access to the exact records and durable restricted preservation; local readability and repository admin permission alone do not prove either. Access failure stops dependent work without choosing another destination silently. No sensitive evidence collection or repository write in that system is performed in this phase.
+
+### Surface and history treatment
+
+Reuse the predecessor's 16-category inventory and extend it to the current proposed tree, new records and remote delta. Partition queries by exact repository/object/ref and retain pagination/completeness evidence. Review still-required package/category, alternate attachment and external integration gaps through scoped authorized reads or inspectable custodian evidence. Reuse the owner’s cache deletion and subsequent zero listings: deleted payloads were never inspected and must not be recovered to satisfy this plan. Refresh any newly created caches after CI and preserve the original video/history and D1/D2 decisions within their exact scope. Do not request blanket permissions or download unrelated histories. A feature flag or empty listing proves only its observed scope.
+
+Classify internal-reference indicators semantically: a benign reference can close only with accountable review; an actually confidential record cannot be waived into a public tree. Document a feasible non-destructive treatment and verify all affected copies/surfaces. Preserve originals and their review/approval provenance in the restricted system. Moving a file in the current tree does not clear past blobs, forks, comments or artifacts.
+
+This Design selects no destructive rewrite, deletion of historical evidence, new repository/mirror, modified licensing model or confidentiality waiver. If actual classification requires such a remedy, record the concrete conflict and reopen Gate 1 or Design as applicable, with a successor ADR where the architectural boundary changes. The current ADR-0016 already requires that stop. No speculative new ADR is needed merely to apply its existing boundary.
+
+### GitHub Free control transition and bounded deviation
+
+R2 selects private preparation followed by separately authorized public visibility, immediate main protection, and real public verification. Missing private paid capability alone no longer blocks this selected path. All other private prerequisites remain mandatory. Public activation is a real exposure event; the coordinated write freeze below is not platform enforcement.
+
+Record deviation `HPB-FREE-TRANSITION-R2` in the existing restricted operation record and safe handoff during later authorized implementation. It is scoped to `versat-labs/versat-ai-harness`, its default branch `main`, and named preparation/adoption PRs and transition session only. Coordinator: `@elviszoz`. Authority source: approved Proposal R2 for the policy direction, current Design/Tasks approvals for their contents, and separate explicit operation authority for every write. This narrows the default-branch protection requirement in [Git](../../../standards/core/git.md) and the incomplete-controls publication gate in [Licensing and Publication](../../../standards/core/licensing-publication.md) solely for the chosen order. No Standards file, other product, required review/check or confidentiality/rights condition is weakened.
+
+Private integration is allowed only through separately authorized named PRs with actual human review and successful required checks. Those are manually verified while enforcement is unavailable; do not call them enforced. Each authorization identifies its session and expires at that session's end; it does not permit continuing unrelated private work. The public transition allowance begins only at the authorized final visibility action and expires at confirmed protection readback or 15 minutes, whichever occurs first. If it expires unsuccessfully, rollout is blocked; no silent renewal. Admin ability to edit rules is not removed by administrator enforcement.
+
+Before the transition, obtain actual participation from the operator and an eligible non-author CODEOWNER, using the R3 ownership transition below. The owner has selected both maintainers; no additional choice of roster is pending. Actual session availability and required review cannot be inferred from selection/admin metadata. For the public test, the external participant uses their own account/fork and an eligible non-author owner provides review. No invitation, role grant or message is sent now.
+
+#### General ownership and base-branch transition
+
+Later approved implementation changes only the first line of `.github/CODEOWNERS` from `* @elviszoz` to `* @elviszoz @evertonspohrversat`, as the [proposed patch](../../../docs/validation/harness-publication-blockers/replan-r3/codeowners.proposed.patch) specifies. The 12 specific entries already name both; preserve their patterns, order and contents. Inspect the complete effective mapping, including root READMEs, docs/specs, `.github/CODEOWNERS` and the existing test fixture. Do not replace the file wholesale, grant access, change organization teams/defaults or add a different owner through this work. Verify the actual account identities and existing repository access without exposing credentials.
+
+| PR author after the new fallback is effective | Required owner review | Other conditions |
+|---|---|---|
+| @elviszoz | @evertonspohrversat | One eligible approval, actual successful required checks and no blocking/stale review. |
+| @evertonspohrversat | @elviszoz | The same conditions; author self-approval is never a substitute. |
+| Another actual contributor | Either eligible named owner | One meets the selected count; stronger existing policy or blocking reviews still apply. |
+
+Required count remains one, not two; the protection JSON below is unchanged. Require a PR and an eligible non-author owner review, dismiss stale approvals after new commits, keep the actual check/app, administrator enforcement, empty bypass and force-push/deletion denial. Do not use `require_last_push_approval` as a substitute for the requested non-author rule or silently add a second reviewer requirement.
+
+The applicable base branch supplies CODEOWNERS for review. Before integration, the current fallback still names Elvis alone. The current complete change touches default-covered docs/specs, so a valid existing-access arrangement is Everton actually authoring/submitting the PR and Elvis substantively reviewing it. Merely adding Everton in that PR's head does not solve eligibility for an Elvis-authored PR against the old base. Do not swap nominal authors, impersonate a maintainer or bypass. If that real arrangement is unavailable, stop for a separately reviewed integration plan; do not claim this Design changed the base. After separately authorized integration, re-read the base file and exact commit before allowing reciprocal use. Private Free reviews/checks remain manually verified, not platform-enforced.
+
+The later implementation updates the current handoff/manifest and affected EN/PT/ES root/reporting guidance to name both general owners and shared triage while retaining the accountable coordinator and truthful unverified route. Preserve approved frozen contribution texts and all historical approvals. Source work and local mapping checks are pre-merge preparation; base adoption, public enforcement and actual reporting receipt are later distinct observations. No new ADR is required: repository/package/evidence boundaries, canonical policy and ownership roles remain, with an owner-approved assignment change only.
+
+#### State transitions and release gates
+
+| State | Entry evidence and permitted next step | Stop condition |
+|---|---|---|
+| Private preparation | Review restricted custody/access, full exposure and rights, package/client checks, reporting fallback, rule body, actor arrangement and this exception. | Any missing private input means defer; public activation is not a workaround for it. |
+| Private adopted candidate | Separately authorized adoption/integration of exact approved terms/notices/manifests; actual reviewed PR/checks; final source and candidate identities. | No effective license, changed approved wording/preimage, missing review or failing check blocks visibility. |
+| Ready for authorized transition | Refresh all refs and service surfaces after the last private CI run, including newly created caches/logs/artifacts. Record complete SHA/refs, exact rule-body hash, actual actors, bounded authority, control read access and agreed freeze. | Unknown exposure, unexpected permissions, unavailable check source, inability to coordinate human/automation writes or absent operator blocks visibility. |
+| Public, protection unverified | Record time immediately before the final authorized visibility confirmation; observe public state, inspect effective rules, then apply the reviewed correction and read it back. | Failure, timeout, unexpected rule/actor/identity drift: stop rollout; no release or ordinary merge. |
+| Public, protection configured | All target fields and stronger rules verified, main SHA unchanged, within the 15-minute deadline. Permit only separately authorized synthetic test branch/PR/CI/review activity. | Missing/failed enforcement or unsafe fork execution keeps ordinary integration and release frozen. |
+| Public controls verified | Actual check/review transitions, stale-review behavior and public fork boundaries observed under OP-CTRL-01, plus both reciprocal-author cases under OP-CTRL-02. | Reporting/external-use obligations still need their own evidence; no automatic tag, release or consumer migration. |
+
+The freeze covers maintainer/agent/bot pushes, automatic/manual merges, releases and privileged processing of incoming contributions from final clearance until protection/enforcement verification. Before opening, inspect queued activity and existing automation paths, record how each writer agrees to remain idle, and confirm none is running with a pending write. If coordination cannot be established using existing access, stop for a concrete separately authorized remedy. Do not disable workflows, revoke credentials, change org defaults or grant access as an implicit precaution. Reading/copying/forking after opening cannot be frozen, and public users can submit unsolicited PRs. Verify the existing workflow and service token/secret policy before visibility so such events are already safe; never assume an activity-free public interval.
+
+#### Exact proposed main rule
+
+Reuse the body prepared in HPB-CONTROLS-01, with fresh before-state reconciliation. Future target: `PUT /repos/versat-labs/versat-ai-harness/branches/main/protection`, GitHub API version `2026-03-10`, JSON. This is a reviewable specification, not a request executed in Design:
+
+```json
+{
+  "required_status_checks": {
+    "strict": false,
+    "contexts": [],
+    "checks": [{"context": "structural-validation", "app_id": 15368}]
+  },
+  "enforce_admins": true,
+  "required_pull_request_reviews": {
+    "dismiss_stale_reviews": true,
+    "require_code_owner_reviews": true,
+    "required_approving_review_count": 1,
+    "bypass_pull_request_allowances": {"users": [], "teams": [], "apps": []}
+  },
+  "restrictions": null,
+  "allow_force_pushes": false,
+  "allow_deletions": false
+}
+```
+
+`15368` is the observed GitHub Actions app, not an arbitrary status publisher; reverify its identity before use. `strict: false` adds no branch-up-to-date requirement; `contexts: []` accompanies explicit `checks`. `restrictions: null` adds no push allowlist or repository grant. This body creates the approved minimum on an otherwise unprotected branch. It must not erase stronger pre-existing checks/reviews/restrictions. If fresh reads reveal a stronger/different rule, retain it and obtain review of the exact necessary delta before writing; do not overwrite blindly. A 403 is not an empty configuration. Source contract: [GitHub protection API](https://docs.github.com/en/rest/branches/branch-protection).
+
+Retain workflow `contents: read`, read-only defaults, no Actions PR approvals, no secrets/write-token forwarding to untrusted forks and no privileged `pull_request_target` execution of contributor code. Local `.github/workflows/validate.yml` identifies the `structural-validation` job. Do not add signing, merge queues, a new Actions allowlist, release automation or unrelated policy. Any needed correction beyond this reviewed envelope stops for its own concrete authority.
+
+#### Attended visibility and readback operation
+
+No activation is performed in this phase. The later operator must hold explicit scope covering the exact visibility action and rule correction together, using an existing account with the necessary capability. Before final confirmation in the repository's visibility settings, record a monotonic timer and UTC timestamp `t0`; starting before confirmation conservatively includes visibility-request delay. Immediately verify repository identity and public visibility with a fresh read. Unknown outcome is not a reason to repeat the visibility action.
+
+Before opening, retain all accessible protection/rules reads and the known capability failures. Immediately after opening, reread main SHA, classic protection, paginated repository/inherited rulesets and active rules for main. A successful explicit unprotected response can support creation; an unreadable or conflicting rule cannot. Use the prepared body only if that read supports it; if a stronger effective policy already meets the contract, preserve it and verify it without writing. This reconciliation and readback count toward the same 15 minutes, not an additional window.
+
+For the reviewed correction, allow one application attempt followed by bounded readback. Require service success and independent readback of main `protected`, the actual check/app requirement, approval count, code-owner/stale-review flags, administrator enforcement, bypass lists and force-push/deletion denial; inspect effective inherited rules as well. Confirm no unintended weaker/extra change and no main SHA drift. Transient GET readback may be repeated within the remaining deadline, with requests bounded to 10 seconds and no more than one poll per 5 seconds. A failed/unknown mutation is followed by read-only reconciliation, not an automatic duplicate write. Record all attempts; there is no retry budget beyond `t0 + 900 seconds`. CI completion is not required inside this activation window; it happens only after verified protection.
+
+On failed correction, contradictory readback, lost connectivity, deadline expiry or SHA drift, stop further rollout and record the actual observed state and unknowns. Maintain the coordinated freeze, preserve evidence and involve the accountable owner for a separately authorized repair/containment. Do not claim the repository became private or safe merely because the timer expired. Public exposure can continue; any return to private is a separate decision that cannot retract copies and does not enable Free private protection. No automatic rule deletion, weaker restore, history rewrite, permission change or purchase. A new session does not silently reset the allowance.
+
+#### OP-CTRL-01 — mandatory public enforcement observations
+
+This operational obligation is outside private-preparation execution and remains `unverified / not executed` until separately authorized. Record actual public repository/base SHA, readback identities/times, operator, external fork/PR author, eligible non-author CODEOWNER and their actual consent/access. Use one disposable external fork branch and PR targeting main, under the author's own account; creation, notifications, three bounded fixture commits, ordinary workflow runs, any required safe fork-run approval and real human reviews must be inside the future authorization. No PR, fork or message is created now.
+
+The only functional fixture is `project-templates/base/.versat/standards.lock`, which the observed base CODEOWNERS assigns to Elvis and Everton. The required genuine operational-test dossier and evidence described below accompany it; no unrelated functional change is included. First recheck that the published base and that fixture are valid. Commit A changes `harness.version` to `0.0.0`, mismatching the actual package version; it must fail the maintained Plugin version-alignment validator. Observe the real `structural-validation` failure and review-missing state with blocked mergeability. Commit B restores the exact base version and retains one harmless YAML comment identifying the synthetic fixture, so the PR still has a real valid diff. Observe check success with no approval and blocked mergeability. Obtain a genuine eligible CODEOWNER approval and observe allowed mergeability without merging. Commit C changes only that harmless comment; observe stale approval dismissal, renewed check execution and blocked mergeability until a second real eligible approval. Then observe passing check and allowed mergeability again, without merging. Unrelated failing checks are investigated, not disabled; any missing transition leaves this outcome unverified/failed.
+
+Inspect actual fork-run token permissions from available job setup metadata/logs, the exact workflow revision and service policies, and confirm there is no secret forwarding or privileged contributor-code path. Do not dump environment variables, inject real secrets, or test by attempting secret access. A same-repository branch cannot replace the external audience observation. If the intended external actor or safe run approval is unavailable, keep this follow-up blocked; do not grant permissions or impersonate a participant. Unknown mergeability must resolve from fresh service observations before any success claim. Do not merge, force-push or delete main to prove denial. Cleanup of the fixture PR/fork/branch has its own authority; preserve records first.
+
+#### Operational test delivery prerequisite
+
+The current workflow runs the archive-required branch for non-draft PRs. `validators/sdd/validate.py` rejects `--require-archive` when no affected dossier is selected. A fixture-only PR therefore cannot demonstrate a passing required check and allowed mergeability merely by restoring its version. This is a real prerequisite, not a reason to disable the guard or use a draft PR as a passing-merge test.
+
+Before the later test-PR operation, prepare a bounded operational-test SDD dossier for each actual PR, with genuine stage approvals, the exact synthetic changes, expected negative/positive observations, actual local evidence and documentary delivery state appropriate to the positive revision. The operational test cases are already specified here; those later records bind actual participants/base/source and actual execution, not fabricated or backdated approvals. Keep output evidence outside check inputs where the approved contract requires; include the functional fixture in affected local validation inputs. Refresh actual results after each valid B/C input change. The real service enforcement outcome under observation remains separately recorded follow-up, so a positive fixture's pre-merge ledger does not claim its own future merge or successful public test. Negative commit A must keep its real failed state, never a forged green record. Archive selection and passing delivery on the positive non-draft head must be confirmed with the trusted base and actual required CI run. Missing genuine delivery evidence stops the test before a success claim. Do not alter existing archived history or synthetic-patch an approval to satisfy CI.
+
+Allow these exact test dossier/evidence files plus the specified functional fixture inside the separately authorized test-PR envelope; no helper PR, additional code change or unbounded retry is implied. Reuse a real independently governed contribution only if its exact scope, authors, base and observations meet the same contract; otherwise keep the defined fixture procedure. This prerequisite does not create or approve any new dossier in the current Design phase.
+
+#### OP-CTRL-02 — reciprocal author verification
+
+R3 adds this bounded public follow-up for the two named-author cases; OP-CTRL-01 remains mandatory for the external fork, failing check, stale review and token boundaries. Both are unverified/unexecuted until separate operation authority and actual success. A local owner matrix or private manual review cannot be relabelled as effective public enforcement.
+
+After timely protection readback and with the new fallback effective in the observed base, allow at most two actual same-repository test PRs: one opened by Elvis and one by Everton, each through that person's own account and branch. Each functional diff appends a distinct harmless English HTML comment to `docs/user-docs/guides/security-reporting.md`, exercising the general fallback rather than a pre-existing specific entry. Do not change reporting instructions, use sensitive content or add an active route claim. Each PR also contains its genuine operational-test dossier/evidence above, within its separately approved operation scope. Keep both PRs unmerged; ordinary integration remains frozen.
+
+For each non-draft positive head, record exact base/head SHA, effective CODEOWNERS, required-check/app result and initially missing owner review with blocked mergeability. Observe the author's inability to supply the required self-approval through the actual available review UI/service response; never impersonate another reviewer or grant bypass. Have the other named owner provide one substantive real approval, then observe the current required check passing and mergeability allowed without a second required approval or merge. Do not publish if an actual review requests changes; handle it as a real blocker. Missing participant, invalid fixture delivery, missing review, failed check or unresolved service mergeability leaves that case unverified/failed. Do not switch accounts on behalf of a participant, merge, force-push, delete or weaken controls. Cleanup and any additional attempt require separate scope. Record each outcome independently and preserve failures.
+
+This adds two scoped future PRs to the one external OP-CTRL-01 PR; no PR/CI/review activity is authorized now. Private preparation verifies this executable handoff and participant feasibility; actual reciprocal enforcement is a mandatory post-visibility observation before ordinary integration/release. The 900-second window still applies only to initial protection readback, not CI/test duration; there is no extension or reset of it.
+
+### Reporting and audience split
+
+Retain repository-native GitHub PVR and the safe request-for-private-instructions fallback. Both @elviszoz and @evertonspohrversat are the owner-selected shared security-triage maintainers; Elvis remains accountable coordinator. Each monitors the available route, coordinates assessment in their actual capacity and records an actual handler for each report. Either may handle a report; the other provides continuity. Record an explicit handover if the handler is unavailable, without inventing an SLA, retention period, legal/security qualification or a requirement for two responses. Never interpret shared triage as two required PR approvals.
+
+Private preparation records the owner designation and existing repository role/access observation separately for each person, intended reporters, proposed permitted recipients, current availability/handover arrangement and public capability boundary. Current admin metadata is useful role evidence, not proof of report access, notification subscription, receipt or willingness to perform the scheduled test. CODEOWNERS requests code review; it does not activate/configure security reporting. Missing feasible private participation remains open. A private-state PVR 404 is not a paid-private activation requirement. Reuse prior decisions only for their original scope; do not invent a mailbox or transfer the earlier pilot receipt.
+
+During later authorized implementation, update only affected current handoff/manifest and aligned EN/PT/ES reporting/root guidance, keeping historical candidate/approval records unchanged. The safe manifest records each named role/capacity and observation time, current handler/handover readiness and unverified public status with opaque evidence identity. Restricted records hold actual account/report references, notification/receipt observations and access limits; no private payload, report URL or notification contents enter Harness.
+
+For any feasible private route test, require its exact audience/destination/marker authority first. For native PVR, the mandatory later public operation separately authorizes activation and one non-sensitive labelled report from an actual intended external reporter. Observe identity/visibility and intended route, then record permitted access plus notification/receipt participation for Elvis and Everton independently using their own sessions; do not infer the second person's result from the first. Record the actual assigned handler and actual handover acknowledgement between the two within the authorized test. One report is sufficient if it supports both observations; do not send an automatic second report. Lack of a notification can be recorded with the actual in-product receipt/access evidence and the supported monitoring arrangement; do not claim an unobserved channel works. If evidence for one maintainer or the handover is unavailable, leave that part unverified and arrange a separately authorized continuation, not an assumed pass.
+
+An independent unauthorized viewer must be denied access to the private report. If a participant is unavailable, another person's credentials cannot stand in; record the gap and preserve confidentiality/fallback. Wrong repository, changed audience/recipient, missing actual receipt, inability to assign/hand over or unauthorized visibility stops route verification. Retain the private report identifier only in restricted storage; do not publish an advisory, request a CVE, send unapproved messages or expand permissions. The real public route remains unverified until these observations succeed.
+
+## Boundaries and contracts
+
+Apply the Proposal's resolved Standards and [architecture](../../../docs/architecture/overview.md). [ADR-0011](../../../docs/decisions/0011-root-portable-plugin-package.md) and [ADR-0016](../../../docs/decisions/0016-public-harness-preparation-boundary.md) remain unchanged and govern this design; no new architectural responsibility or public surface is selected. Skills, Standards, SDD and validators keep their respective roles. The scoped R2 timing deviation is recorded above rather than changing the canonical Standards. No new ADR is needed because repository/package/evidence boundaries and ADR-0016 remain unchanged; this is an explicitly reviewed operational sequence change. No validator exemption or test weakening is proposed.
+
+Preserve all predecessor dossiers, frozen approvals, candidate terms and historical evidence byte-for-byte. Current status changes belong to the new handoff; they do not rewrite the predecessor's dated no-merge or deferred observations. Other products and organization defaults retain independent delivery/licensing/access boundaries. Effective root adoption, visibility, release/tag and real consumer migration remain outside this successor.
+
+## Data, security and permissions
+
+Use minimal inspectable evidence and existing least-privilege access. Freeze restricted originals before producing scrubbed summaries; record actual reviewer access without copying credentials or private links into Harness. Any remote correction/test has an operation envelope: exact target, permitted actor, before-state, proposed delta, bounded test, expected result, rollback/containment, evidence location and actual user authorization. Administrative authority is not authorization to execute.
+
+No new sensitive collection, sharing, reporting channel, invitation, message or permission change occurs during Design. Later broad/raw collection must be narrowed and authorized; inaccessible evidence remains unverified. Preserve failed attempts and avoid automatic retries or success-only selection. No retention duration, legal qualification or incident conclusion is invented. Existing restricted retention/access responsibilities continue.
+
+## Operations and observability
+
+Record per-blocker and per-check status, exact inputs, actual environment/actor, service response category, reviewer/capacity and next accountable action. Distinguish draft/approved, implemented, verified-private, deferred, ready-for-authorized-operations, adopted, public and migrated. The last three states are not outputs of this successor.
+
+Known execution dependencies are complete scoped private evidence, actual operator/reviewer participation, feasible write coordination and supported Free public controls. Missing private paid capability is no longer a dependency. Other missing prerequisites stop the affected operation; planning is not their fulfillment. Record preparation and public-control outcomes separately, with `t0`, deadline, actual readback/CI/review IDs and failure owner. No purchase or privilege expansion is preapproved. Further changes to timing, treatment, reporting destination or evidence system require renewed planning review.
+
+## Migration, rollout and rollback
+
+Keep root/version/installed workspace at 0.3.0 and the reviewed candidate intent at 0.4.0, preserving marketplace `versat-internal` and Plugin identity. Check tag availability before future adoption; never retag or use latest. Validate the exact nine-file patch/base/preimages and approved text inventory in a disposable private copy of the same root. Refresh rights/inventory for new files rather than changing old approval hashes. A mismatch stops; regeneration requires review of the changed candidate.
+
+Local regression target is the dated Codex desktop build and macOS architecture above, subject to fresh observation before rehearsal, using the existing separately namespaced private test installation and synthetic consumer; verify it exists and is usable before rehearsal. Do not replace workspace settings. Missing test context yields unverified, not an improvised installer. Python 3.11.4/pinned dependencies are the local validator target; existing CI retains Python 3.11 Ubuntu and reports its actual image only when run.
+
+Rehearse exact installation/resource resolution, first-use Gate 1, missing provider, missing resources, unavailable version, explicit synthetic migration and failed-update retention/recovery using the predecessor's six-case protocol (installation is setup). Reuse maintained [supervised fixtures and verification](../../../docs/guides/skill-evaluations.md); one fresh native new-intent invocation in later authorized implementation, no automatic retry, at most 600 seconds for that invocation, 300 seconds for each remaining bounded case and 2,400 seconds for the suite. Preserve each outcome; unknown telemetry and shared-permission limitations remain explicit. A material runtime/method change reopens Design. No agent or client rehearsal is launched now.
+
+A later operation follows the state table above: privately integrate/adopt the exact candidate under separate authority and revalidate the complete exposure after CI; freeze, open, protect/read back within 15 minutes, then perform authorized public enforcement/reporting and external-use checks. Pre-release external checks use the exact reviewed public commit; tag/release access and any tag-specific behavior require later confirmation against the actual released ref. Release/migration still require their own authority; do not label a commit rehearsal as a released-version pass. Consumers opt into exact provider/lock pairs separately. Rollback here restores an authorized reversible control/documentation change or the last verified private test pair while preserving evidence; it cannot erase existing public copies or grants. Destructive containment or public visibility changes require a separate decision.
+
+## Alternatives considered
+
+- Keep Elvis as the only general owner: superseded by the approved R3 shared-owner direction; it prevents symmetric eligible owner review on default-covered changes.
+- Require two approvals or allow author self-approval: rejected; selected policy is one eligible non-author approval with unchanged remaining checks.
+- Treat CODEOWNERS/admin assignment as working shared security triage: rejected; individual access/receipt/availability observations and a handler/handover arrangement remain necessary.
+- Use a draft or fixture-only PR to claim successful enforcement: rejected; the real archive-required CI path must pass on a genuinely governed positive non-draft head.
+
+- Reuse the predecessor's completed defer assessment as clearance: rejected; it records the gaps this successor must close.
+- Paid private protection before visibility: the R1 choice is superseded by approved Proposal R2; no upgrade is selected.
+- GitHub Free visibility followed by immediate protection: selected only after exact private clearance, within the bounded exception, with public observations still required.
+- Unbounded public exposure before controls or a procedural freeze advertised as enforcement: rejected. Failure stops rollout and requires an owner decision.
+- Introduce a new private evidence service, public mirror or SDK: unnecessary and outside the approved boundary.
+- Delete historical records or accept confidential exposure to finish: rejected; preserve attributable originals and replan a material remedy.
+- Treat synthetic failure cases as actual blocker resolution: rejected; synthetic cases verify stop behavior while real closure needs actual review and enforcement.
+- Rewrite validators or add a general audit engine: unnecessary; reuse existing mechanical checks and add bounded actual review evidence where automation cannot establish the claim.
+
+## Validation plan
+
+### Common input and evidence contract
+
+All ten checks are required. Frontmatter maps all 31 local scenarios and 40 retained obligations; no exclusion is proposed. Historical stage events are assessed as provenance/invariant preservation, not reenacted as new approvals. Predecessor public-only scenarios are mapped to executable handoff completeness, explicitly not public success. Under approved R2 and REQ-009 acceptance 3, the control activation/enforcement portions of REQ-005 acceptance 2/3 and REQ-007 acceptance 2/3 receive the same explicit pre-merge handoff assessment. Their actual public outcomes remain separately open in OP-CTRL-01. No scenario is excluded or marked not-applicable; a preparation check pass must name its limited scope and cannot be reused as an operational pass.
+
+Declared source roots cover package, policy, guides, tests, current/historical specs and manifests; the current dossier is excluded by the canonical snapshot contract and bound by stage/plan digests. `docs/validation/harness-publication-blockers/` is an explicitly excluded output subtree. The proposed safe review-input manifest under the handoff is included, not excluded. No external private path is supplied to the snapshot tool.
+
+Before a run, complete and review the candidate/status artifacts and freeze the restricted evidence revision plus scrubbed manifest. Do not mutate them while recording a pass. Capture the actual source and (where applicable) patched-root `--input-digest CHECK-NNN` separately before/after each check; a root cannot borrow another root's hash. Subsequent source, safe-manifest or remote-state drift invalidates affected results even if a local digest is unchanged. External observation identities/times and restricted record hashes are compared separately; local hashes do not authenticate services or reviewers.
+
+Generate reports only under a new excluded run directory, with stdout/stderr/exit/counts, environment, actual actions, result and limitations. Record one individual assessment per mapped obligation when Tasks exists; no implementation ledger is populated in Design. Preserve failed/partial attempts. A changed control operation is followed by a refreshed frozen manifest and final verification run, not relabelled earlier evidence. Current final ledger/output paths never form their own input prerequisite.
+
+### CHECK-001 — Evidence and baseline
+
+Confirm private system visibility and actual reviewer access to the exact record, verify the predecessor hashes, and preserve originals. Reconcile source/tree/candidate/patch identities and the complete register fields. Exercise a missing record, changed digest and unconfirmed reviewer capacity using synthetic references; each must remain unverified. Actual inaccessible evidence blocks resolution. Manual review is necessary because platform permission and hash checks cannot prove substantive rights/security review.
+
+### CHECK-002 — Surface and treatment
+
+Use the exact scoped inventory and pagination contract above; retain endpoint success/failure and content review privately. Review every category, including new planning files, old blobs and external payloads. For each real history finding verify classification, authority, original preservation, treatment and reinspection. Walk incomplete-listing, inaccessible cache, sensitive old-blob and newly-added-ref cases and require stop/invalidation. The real exposure verdict passes only with all required findings resolved; a correct synthetic defer response cannot pass an unresolved real category. A material remedy stops for replanning.
+
+### CHECK-003 — Rights and candidate
+
+Compare the merged source and proposed distribution delta, actual rights evidence, notices, all 16 approved text files and seven dependency texts. Recompute candidate/patch identities; compare each of nine preimages and run `git apply --check` in a disposable copy before any authorized private application. Validate resulting tree/manifests and unchanged original root. Missing grant, incompatible term, changed wording and patch mismatch must block; no approval or effective date is invented. Actual reviewer capacity and inspectable evidence are required.
+
+### CHECK-004 — Controls
+
+For R3, compare the complete proposed CODEOWNERS file against the exact baseline: only the fallback gains Everton; all 12 specific assignments remain. Review current-base versus future-base owner eligibility, both named-author cases, the external-author case, self/missing/stale/blocking review, and all existing check/admin/bypass conditions. Verify the genuine fixture-dossier/CI prerequisite for OP-CTRL-01/02; never use draft status or a bypass to obtain a positive mergeability claim. The two real reciprocal cases and one external-fork case remain mandatory later service observations, not private preparation execution.
+
+Private preparation assessment: require actual accessible repository/control/workflow observations, complete private clearance, an executable author/reviewer/operator arrangement, feasible writer coordination, current exact check/app identity, reviewed rule body, bounded authority/exception and the OP-CTRL-01 protocol. Preserve 403 responses and missing actor consent as such. Walk the state table with actual inputs plus clearly labelled synthetic failure cases: missing actor or secret-safe workflow evidence prevents opening; stale SHA/rights/refs prevents opening; 403 after opening, wrong app/check, unexpected bypass, stronger conflicting rules, readback timeout or drift stops rollout; missing review, a failing check or unconfirmed mergeability prevents operational success. Record expected versus reviewed stop decisions; do not create a PR or run CI for this private walkthrough.
+
+Preparation can pass only for verified private prerequisites and reviewed handoff completeness. Record `public_enforcement: unverified` and both OP-CTRL-01/OP-CTRL-02 owners/triggers/expected evidence separately; missing operational execution is not a failing private-capability requirement and is never a public pass. Later authorized public execution must produce every actual readback and OP-CTRL-01/OP-CTRL-02 transition before public control assurance. Required output includes exact SHAs, timestamps/deadline, body hash, rule/check IDs, actor permissions/consent, review/mergeability states and audience limits. Local `tests/execution/test_ci.py` supports workflow-command behavior but cannot establish service enforcement. No evidence/finding is closed just by changing its label to handoff.
+
+### CHECK-005 — Reporting
+
+R3 requires an attributable role/access/availability record for each owner-selected maintainer, actual handler/handover readiness and truthful route status. Walk Elvis unavailable, Everton unavailable, only one receipt observed, missing notification with/without actual in-product receipt, absent handover acknowledgement and unauthorized viewer cases; keep each unsupported outcome unverified. Plan one actual later public marker with individual account observations and handler/handover evidence; no duplicate marker or altered recipient scope without separate authority. CODEOWNERS file checks cannot substitute for these outcomes.
+
+Verify the current platform boundary from authoritative documentation and actual available metadata, existing accountable responder/recipient roles and safe fallback. Prepare the exact later public PVR activation and marker-receipt/exclusion protocol with authority requirements and containment. Review wrong-repository, unavailable route, missing receipt and changed audience cases; none can reuse the old pilot as a pass. Execute only feasible separately authorized private prerequisites. Public activation/submission is not required to merge this private resolution work and remains unverified until its later operation.
+
+### CHECK-006 — Private package/client
+
+Use the exact reviewed candidate, observed compatible runtime and synthetic consumers, applying the bounded protocol above. Independently inspect generated first-use artifacts (only Proposal/Requirements, null approval, application/tests unchanged), exact installed resources and explicit old/new provider/lock pairs. Observe errors and retained previous pair for missing provider/resources/ref or failed update. Preserve failures and do not mutate real consumers. Source/candidate checks and client outcomes are separate observations; a private installation never proves anonymous access.
+
+### CHECK-007 — Guides/history/boundaries
+
+Verify both named owners/triage roles and one non-author approval in changed EN/PT/ES guidance, with no self-approval, implied configured delivery or second-approval claim. Review the exact one-line source change plus source-bound role evidence; keep all specific CODEOWNERS entries and frozen contribution wording unchanged.
+
+Compare the four predecessor dossier files, frozen candidate/approval records and historical evidence against the merged baseline. Check root and maintained EN/PT/ES guidance for equivalent permissions, pending-state wording, fallback and exact version/recovery steps. Check all changed local paths/anchors and execute affected usage steps with CHECK-006 rather than a separate duplicate walkthrough. Review each new public-facing file independently for sensitive payloads/private dependencies. Verify other product terms, organization routes and consumer configurations are unchanged. No tests solely asserting prose wording are needed.
+
+### CHECK-008 — Decision and operational handoff
+
+R3 additionally requires the current-base integration arrangement, future effective fallback observation, genuine fixture delivery prerequisites, OP-CTRL-02 reciprocal-author cases and individual triage handler/handover protocol. Missing any applicable private input prevents readiness; later public cases remain operational obligations.
+
+Require actual exit evidence for every remaining private prerequisite and accountable review, not a blanket acceptance of old findings. Walk the state table and both success/failure paths: private adoption and final post-CI exposure refresh; confirmed freeze/actors/authority; public visibility; immediate rule/readback within 15 minutes; OP-CTRL-01; public PVR and exact-commit external checks; separately authorized release/ref confirmation and consumer migration. Review the specific deviation against the two Standards without changing them. Inject unresolved rights/history, unreachable evidence, missing reviewer/freeze, unknown mutation outcome, deadline expiry and incomplete public tests: expect stop at the relevant boundary, no auto-reversal and preserved evidence. Ready for transition requires CHECK-004 private prerequisites/handoff acceptance; it never closes OP-CTRL-01 or claims public controls/reporting/H03 complete. Mandatory public records are an operational handoff, not a circular pre-merge requirement.
+
+### CHECK-009 — Required suites
+
+Run the exact full command in frontmatter against both preparation and patched roots with verified Python 3.11.4 and the repository-pinned PyYAML/jsonschema dependencies. Verify the temporary interpreter exists; if it does not, recreate an isolated environment from the unchanged requirements rather than using missing/unpinned dependencies. Retain actual counts and failures; the current baseline contains 131 validator and 48 execution tests. Existing v3 gate/impact/freshness, CI/archive and consumer/recovery tests remain mandatory. No empty or targeted suite replaces them. Later authorized PR delivery additionally uses the trusted baseline and selected `--phase delivery --require-archive`; final remote CI must be separately observed. Local success does not grant PR or merge authority.
+
+### CHECK-010 — Semantic and gate review
+
+Recompute canonical upstream/stage digests, confirm exact actual approvals and permitted actions, and reconcile every local/retained scenario with current source-bound evidence and explanations. Preserve the historical Gate 1 stop while recording its genuine later approval. Treat changed inputs, absent actual review, unavailable operation or unrequested behavior as findings; no not-applicable shortcut. For retained predecessor scenarios about earlier implementation, compare preserved outcome and current behavior, not old test labels alone. Check branch/work-tracking/language conventions and no transferred publication authority. Verify Proposal R3 remains byte/semantically bound to its recorded digest, all R1 snapshots and decisions remain intact, the R1/R2 Tasks plans/ledgers are not relabelled as R3, and the timing supersession has replacement checks (CHECK-004/008/010) and the R3 ownership/triage supersession has reciprocal/base-owner and individual-receipt replacement checks (CHECK-004/005/007/008/010). Inspect the exact exception scope, its expiry and explicit public-unverified status. Required approvals and runtime evidence are not waived by a passing structural check.
+
+## Planning review
+
+Current status — 2026-11-16: Design R3 awaits Gate 2 approval with null approval and approved Proposal R3 bound above. Tasks R2 remains superseded and byte-identical in this phase. The shared-owner, non-author review and individual triage evidence design is reviewable; the R2 Free timing and protection body remain unchanged. Actual custody, participants, private acceptance and public outcomes remain unverified where stated. Earlier entries preserve historical review states.
+
+Preserved structured R1 review:
+
+```json
+{
+  "revision": 1,
+  "state": "approved",
+  "blockers": [],
+  "upstream": {
+    "proposal": "d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb"
+  },
+  "approval": {
+    "source": "User reply in this chat on 2026-11-14 explicitly approving Design R1 and authorizing Tasks preparation only",
+    "quote": "Sim, aprovo o Design R1 de harness-publication-blockers. Prepare somente as Tasks, sem iniciar a implementação ou publicar.",
+    "revision": 1,
+    "digest": "67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7"
+  }
+}
+```
+
+Design R1 is awaiting approval with approval null and the approved Proposal digest bound above. No unresolved Design alternative is hidden: the selected approach requires effective private protection and stops if the owner cannot provide it; no budget, access expansion or operation is approved here. Other operational evidence remains work for later authorized implementation, not a Design pass or a resolved blocker.
+
+No new ADR is proposed because the design applies ADR-0011/0016 without changing architecture, destination, license direction or evidence boundary. A required material remedy will reopen the appropriate gate before implementation. Only Design and Gate 1 approval bookkeeping are written now. Tasks, implementation, sensitive collection, messages, remote changes and publication remain suspended.
+
+Actual preparation diagnostics on 2026-11-14:
+
+- Selected `validators/sdd/validate.py --root . --change harness-publication-blockers --phase planning --json`, using the verified pinned Python environment: exit 0/pass, no findings or warnings; 31 local scenarios and 40 retained obligations.
+- `PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/versat-pr36-validation-venv/bin/python ./scripts/validate/run.sh`: exit 0; Plugin/SDD pass, 131 validator tests and 48 execution tests pass. Existing historical legacy/v2 inventory warnings remain; no exemption, suite or validator changed.
+- Full review of this Design and approval bookkeeping; 19 local Markdown links resolve across the dossier, explicit new-file whitespace checks and `git diff --check` pass. All 1,551 pre-existing tracked files remain byte-identical. Requirements bytes and the combined approved Proposal digest remain unchanged. Coverage contains each of 31 local and 40 retained obligations exactly once, with no exclusions.
+- Canonical Design R1 digest: `67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7`. It identifies the presented revision and is not approval.
+
+The bounded metadata reads and local regression tests above are Design preparation only; CHECK-001 through CHECK-010 remain planned implementation checks. No Task file, implementation ledger, changed living guide, new ADR, candidate application, sensitive collection, test message, remote write or publication occurred. Gate 2 remains awaiting the user's approval, which permits Tasks preparation only.
+
+### Gate 2 approval — 2026-11-14
+
+The user explicitly approved the presented Design: “Sim, aprovo o Design R1 de harness-publication-blockers. Prepare somente as Tasks, sem iniciar a implementação ou publicar.” The Design and upstream Proposal digests were reverified unchanged before recording approval. This authorizes Tasks preparation only; implementation and publication remain suspended. Earlier pending statements preserve presentation history. No operational prerequisite is resolved by this approval.
+
+### Design R2 presentation — 2026-11-16
+
+The user approved Proposal/Requirements R2 and requested Design only. This revision replaces the R1 private-capability prerequisite with the approved bounded Free/public transition, exact rule, time/failure contract, actor eligibility and separate private versus public evidence scopes. All ten required checks, 31 local scenarios and 40 retained obligations remain mapped; no test/exclusion/validator rule is weakened. No new ADR is required for the unchanged component boundaries. Only planning approval/status and diagnostic records accompany this Design. No new task plan, implementation ledger, client rehearsal, operation, workflow, message, adoption or publication was performed. Gate 2 approval permits Tasks R2 preparation only.
+
+### R2 local diagnostics — 2026-11-16
+
+Canonical Design R2 digest: `83e45f9a4ffa40e570c864686f38654cc31e08b57c85a4b468a77b717f1f6ab1`. Review remains awaiting approval, approval null. The approved Proposal/Requirements R2 digest remains `429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32`; Requirements and Tasks bytes are unchanged from this phase's entry. Tasks still binds its historical R1 approvals/plan and remains superseded.
+
+The [diagnostic packet](../../../docs/validation/harness-publication-blockers/design-r2/README.md) preserves the entry snapshots, full planning report and required local suite outputs. All 179 maintained tests passed (131 validator and 48 execution); Plugin validation passed. Aggregate exit was 1: Design/Tasks approvals are pending, a historical failed check remains, two old input snapshots are stale and six real acceptance findings remain open. No schema, reference, coverage, approval-staleness or new gate-sequence diagnostic was reported. The 31 local scenarios and 40 retained obligations have required mappings; no exclusions were added. Operational preparation and public enforcement are not certified by these diagnostics.
+
+The exact proposed rule parses as JSON and equals the earlier prepared correction. Full semantic/diff review, current local links, whitespace and frozen R1/R2 evidence checks passed. Only Proposal approval bookkeeping, Design and the handoff status notice changed among the 1,659 entry files; the other 1,656 are unchanged. New diagnostic artifacts are additional exposure-review inputs, not blanket clearance. No GitHub settings, workflows, tasks, implementation, installed consumers or publication changed. Approval of this Design permits Tasks R2 preparation only.
+
+### Gate 2 R2 approval — 2026-11-16
+
+The user approved the presented Design: “Sim, aprovo o Design R2 de harness-publication-blockers. Prepare somente as Tasks R2, sem iniciar a implementação, alterar o GitHub ou publicar.” The Design and Proposal R2 digests were reverified unchanged before recording approval. Current structured Design review is approved; earlier pending statements preserve presentation history. This authorizes Tasks R2 preparation only, not implementation, GitHub changes or publication.
+
+### R3 dependency supersession — 2026-11-16
+
+Proposal/Requirements R3 reopens shared ownership/triage scope. This document retains R2 substantive content and its original upstream digests; its current review is superseded, not a drafted or approved R3 stage. Prior actual review follows. No old result, input hash or finding is relabelled as R3 acceptance. Independent read-only private checks remain permitted under the latest request; changed-scope implementation awaits renewed gates and explicit authority.
+
+```json
+{
+  "revision": 2,
+  "state": "superseded",
+  "blockers": [
+    "Proposal/Requirements R3 awaiting Gate 1; shared CODEOWNERS/triage scope requires renewed downstream review."
+  ],
+  "upstream": {
+    "proposal": "429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32"
+  },
+  "approval": null
+}
+```
+
+### Design R3 presentation — 2026-11-16
+
+The actual Proposal/Requirements R3 approval is recorded at its unchanged paired digest. This Design specifies the one-line general ownership change, current-base integration constraint, symmetric eligible review, shared triage/handler/handover with individual evidence and actual public follow-up. It identifies the real operational-test dossier prerequisite imposed by archive-required CI and bounds two reciprocal-author PRs in addition to the existing external-fork test, all separately authorized later. It does not disable or bypass any guard. All ten checks, 31 local positions and 40 retained obligations remain, with explicit ownership/triage replacement cases. No new ADR is required for unchanged boundaries. Tasks, actual CODEOWNERS, guides, provider, workflow, candidate and all historical evidence are unchanged in this phase. Gate 2 approval permits Tasks R3 only.
+
+### R3 local diagnostics — 2026-11-16
+
+Presented Design R3 digest: `a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f`. Review is awaiting Gate 2 with null approval and the unchanged approved Proposal/Requirements R3 digest. Requirements and Tasks remain byte-identical to entry; no new execution ledger or result was written. The previous ten results/six findings remain historical and open, not R3 passes.
+
+The [review packet](../../../docs/validation/harness-publication-blockers/design-r3/README.md) preserves before files, source inventory, structural diagnostics and complete local suite outputs. All 179 tests passed (131 validator, 48 execution). Aggregate exit was 1 from two missing downstream approvals, the Tasks dependency blocker, historical CHECK-009 failure, ten stale R2 snapshots and six real acceptance gaps. No schema, reference, coverage or approved Proposal mismatch was reported. No validator/test/requirement was weakened.
+
+Manual scope review confirmed ten required checks, 31 local positions, all 40 retained obligations, unchanged declared input/output scopes and the exact unchanged protection JSON. Fifty-seven local links/anchors and whitespace checks passed. Only Proposal approval bookkeeping, Design R3 and the current handoff status notice changed among existing files; 1,759 other entry files and all prior frozen packets remain unchanged. The operational fixture delivery prerequisite is grounded in the current non-draft CI/archive-selection source, not a remote observation or exemption.
+
+No CODEOWNERS application, installed consumer change, native rehearsal, GitHub operation, workflow/message, publication or archival occurred. Both reciprocal public test PRs and the existing external-fork test require their actual later scoped authority and genuine review/evidence. Gate 2 approval unlocks Tasks R3 only.
+
+### Gate 2 R3 approval — 2026-11-16
+
+The user replied “sim” to: “Você aprova o Design R3 para preparar somente as Tasks R3?” The current Design and upstream Proposal/Requirements digests were reverified unchanged before recording this actual approval. It permits Tasks R3 preparation only, not implementation, CODEOWNERS application, GitHub operations or publication. Earlier awaiting-approval entries preserve the presentation history.
+
+### R4 planning reopening — 2026-11-17
+
+Substantive R3 content and actual results remain unchanged; its review is superseded pending the revised upstream plan. Previous review:
+
+```json
+{
+  "revision": 3,
+  "state": "approved",
+  "blockers": [],
+  "upstream": {
+    "proposal": "6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e"
+  },
+  "approval": {
+    "source": "User reply in this chat on 2026-11-16 to the explicit Design R3 approval question, authorizing Tasks R3 only",
+    "quote": "sim",
+    "revision": 3,
+    "digest": "a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f"
+  }
+}
+```

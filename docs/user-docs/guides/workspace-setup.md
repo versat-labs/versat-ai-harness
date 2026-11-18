@@ -20,7 +20,7 @@ Ask Codex to report the working directory, selected provider version and where i
 
 ## Candidate installation, exact updates and recovery
 
-The Apache candidate's text is approved, but no public 0.4.0 release or root license adoption is available. Current source and installed v0.3.0 are different snapshots; match the selected provider's actual SDD version and resources. The selected local rehearsal target is Codex desktop 26.915.31945/build 9922 on macOS arm64, not a claimed support matrix.
+The approved license/notices are applied in the local delivery branch, but main integration and a public 0.4.0 release remain pending. Do not activate the local v0.4.0 catalog reference before the separately authorized exact release exists. Current source and installed v0.3.0 are different snapshots; match the selected provider's actual SDD version and resources. The selected local rehearsal target is Codex desktop 26.915.31945/build 9922 on macOS arm64, not a claimed support matrix.
 
 The owner selected an individual installation under the same Versat user for the private rehearsal. On Codex desktop 26.915.31945/build 9922, its bundled CLI installed `versat-ai-harness@versat-internal` version 0.4.0 into a separate local cache; the existing workspace 0.3.0 files were unchanged. The installed copy matched every source file and resolved all five Skills and canonical resources. This verifies the private installation step, not anonymous access, a public release or the full behavioral suite.
 

@@ -1,0 +1,22 @@
+{
+  "digests": {
+    "proposal": "6c25ef18e914a1a72186f74bf9895dbfc2bae3d4f8ba8cd3afb8401288031a8b",
+    "design": "e50bbb215cb77a601aff92acf1db70fa3ae50e32dd518066b3960c3ca9522134",
+    "tasks": "5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114"
+  },
+  "requirements_tasks_byte_identical": true,
+  "exact_rule_body_unchanged": true,
+  "required_checks": 10,
+  "required_local_positions": 31,
+  "retained_obligations": 40,
+  "local_links_checked": 24,
+  "whitespace": "pass",
+  "planning_status": "fail",
+  "planning_findings": {
+    "APPROVAL_REQUIRED": 2,
+    "VALIDATION_FAILED": 1,
+    "INPUT_STALE": 10,
+    "ACCEPTANCE_GAP": 6
+  },
+  "limits": "Pending Design/Tasks approval and historical incomplete results are retained; no execution or public readiness claim."
+}

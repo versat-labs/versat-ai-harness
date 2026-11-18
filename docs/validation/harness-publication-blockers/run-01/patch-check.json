@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "git",
+    "apply",
+    "--check",
+    "<preparation-root>/docs/handoffs/harness-publication-readiness/adoption.patch"
+  ],
+  "exit": 0,
+  "stdout": "",
+  "stderr": "",
+  "elapsed_seconds": 0.011028051376342773
+}

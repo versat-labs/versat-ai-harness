@@ -4,7 +4,11 @@
 
 The public Harness reporting route is **unverified**. The intended route is this repository's GitHub Private Vulnerability Reporting, subject to actual availability and verification for the intended reporter audience. No new report was sent and no channel was activated by this preparation.
 
-Earlier H02 observations covered a different public pilot and an internal Harness receipt. They remain historical evidence and do not establish a public Harness route. Relevant CODEOWNERS remain responsible for monitoring, triage and coordination; assignment alone does not configure delivery or prove receipt. The accountable Harness contact is @elviszoz.
+Earlier H02 observations covered a different public pilot and an internal Harness receipt. They remain historical evidence and do not establish a public Harness route. @elviszoz and @evertonspohrversat share monitoring, triage and coordination; Elvis remains accountable coordinator. Either maintainer may handle a report. Record one actual handler and an explicitly acknowledged handover if that person is unavailable; two replies are not required. Assignment and CODEOWNERS do not configure notification delivery or prove report access/receipt. Both maintainers’ participation in shared triage and future tests is confirmed by the owner. Public report receipt remains unverified. An actual handover is recorded when needed; it is not a separate pre-publication simulation requirement.
+
+The PR review policy requires one eligible non-author CODEOWNER approval; it is separate from security triage. An author's own approval cannot satisfy it, and shared ownership does not require two approvals. The actual base branch determines reviewer eligibility; see the [ownership transition](../../handoffs/harness-publication-blockers/transition.md#general-ownership-and-base-branch-transition).
+
+Under the approved GitHub Free sequence, private preparation confirms the actual responder/recipient arrangements and safe fallback. Native PVR activation and the external report/receipt/exclusion test occur only after separately authorized public visibility and verified controls. A private-state 404 does not require paid private activation or prove a public reporting route. See the [bounded transition](../../handoffs/harness-publication-blockers/transition.md).
 
 ## Before sharing details
 
@@ -18,8 +22,8 @@ Expected result: safe instructions or an explicit verification gap, not an assum
 
 ## Maintainer verification
 
-Record the actual destination, accountable responder, audience, permitted recipients and approved data handling. After separate operational authorization, verify configuration/access and send a non-sensitive synthetic marker from an intended reporter account; confirm private visibility, recipient receipt and absence of access by an unauthorized account. Retain minimal safe evidence, withdraw unsupported claims after failure/change and reverify after visibility changes. Never use real vulnerability payloads for this test.
+For the later separately authorized public test, use one labelled non-sensitive report from an intended reporter. Verify applicable report access for both Elvis and Everton through service configuration/access evidence. Observe actual receipt by one accountable handler and denial to an unauthorized viewer. Duplicate notifications, replies and a simulated handover are not required. An actual access or receipt failure remains unresolved; record a real handover when needed. Do not infer notification delivery from assignment, send another report automatically or use another person's credentials. Keep report identifiers and payloads restricted. Reverify after visibility or audience changes; never use real vulnerability payloads for this test.
 
-Controls, channel activation, permission changes and messages require their own scoped authority. A fallback guide does not complete required route verification. Every product verifies its own scope. See [Security](../../../standards/core/security.md), [preparation status](../../handoffs/harness-publication-readiness/README.md) and [contribution](contributing.md).
+Controls, channel activation, permission changes and messages require their own scoped authority. A fallback guide does not complete required route verification. Every product verifies its own scope. See [Security](../../../standards/core/security.md), [current blocker resolution](../../handoffs/harness-publication-blockers/README.md) and [contribution](contributing.md).
 
 [Quickstart](../quickstart.md) · [Harness](../../../README.md)

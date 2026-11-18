@@ -1,0 +1,42 @@
+{
+  "verified_at": "2026-11-16T16:45:35.526837+00:00",
+  "stage": "Design R2 awaiting Gate 2 approval",
+  "proposal_digest": "429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32",
+  "design_digest": "83e45f9a4ffa40e570c864686f38654cc31e08b57c85a4b468a77b717f1f6ab1",
+  "tasks_digest_unchanged": "1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7",
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "specs/changes/harness-publication-blockers/design.md",
+    "specs/changes/harness-publication-blockers/proposal.md"
+  ],
+  "unchanged_existing_files": 1656,
+  "requirements_and_tasks_bytes_unchanged": true,
+  "prior_frozen_evidence": "verified unchanged",
+  "whitespace": "pass including current untracked planning files",
+  "rule_body": "valid JSON, equal to HPB-CONTROLS-01 prepared body; not submitted",
+  "checks": 10,
+  "local_scenarios": 31,
+  "retained_obligations": 40,
+  "planning_findings": {
+    "APPROVAL_REQUIRED": 2,
+    "VALIDATION_FAILED": 1,
+    "INPUT_STALE": 2,
+    "ACCEPTANCE_GAP": 6
+  },
+  "suite_tests": {
+    "validators": 131,
+    "execution": 48,
+    "result": "pass"
+  },
+  "aggregate_result": "fail; no execution/delivery readiness",
+  "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "dependencies": {
+    "PyYAML": "6.0.2",
+    "jsonschema": "4.23.0"
+  },
+  "remote_mutations": 0,
+  "remote_workflows": 0,
+  "implementation_started": false,
+  "publication": false,
+  "local_links_checked": 46
+}

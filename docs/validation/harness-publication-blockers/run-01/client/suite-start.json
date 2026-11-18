@@ -1,0 +1,8 @@
+{
+  "start_epoch": 1794680137.925844,
+  "limits": {
+    "native_seconds": 600,
+    "other_case_seconds": 300,
+    "suite_seconds": 2400
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "check": "CHECK-006",
+  "result": "pass",
+  "scope": "Approved R4 private preparation; future service outcomes unexecuted",
+  "method": {
+    "kind": "manual",
+    "procedure": "Compare exact inputs/runtime/behavior to existing private rehearsal. Reuse unchanged outcomes with an applicability record; rerun only affected installation, resource, first-use, version, migration or recovery cases under the retained bounded protocol. A changed candidate or runtime is not covered by old hashes; no mandatory fresh full client cycle follows solely from plan or receipt bookkeeping.",
+    "reason": "Native behavior needs real applicable evidence; documentation-only changes do not justify repeating an unrelated client exercise."
+  },
+  "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "observations": "Reobserved identical Codex desktop/build/CLI and Python runtime; 143 behavioral/resource files and exact candidate package identities match real prior six-case rehearsal. Differences are documentation/governance only. Applicable historical outcomes reused under original input hashes; no new native cycle or release proof.",
+  "evidence": [
+    "docs/validation/harness-publication-blockers/run-r4-01/behavior-applicability.json"
+  ],
+  "suite_candidate_input": null
+}

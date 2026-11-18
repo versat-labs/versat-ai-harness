@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-11-14T18:12:24.048816+00:00",
+  "source_commit": "4a56181d3597c5d345a7639f013547e1700420cb",
+  "branch": "codex/harness-publication-blockers",
+  "authority": {
+    "source": "Current user request after all three approved R1 gates",
+    "quote": "Implemente as tasks.",
+    "scope": "Implement approved Tasks; scoped remote operations, raw collection and publication retain their separate boundaries."
+  },
+  "digests": {
+    "proposal": "d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb",
+    "design": "67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7",
+    "tasks": "1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7"
+  },
+  "entry_validator": {
+    "phase": "implementation",
+    "exit": 0,
+    "findings": []
+  },
+  "tracked_files": 1551,
+  "reviewer": "Codex technical/documentary review; no human or specialist clearance inferred"
+}

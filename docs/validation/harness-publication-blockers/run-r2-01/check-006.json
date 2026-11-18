@@ -1,0 +1,15 @@
+{
+  "check": "CHECK-006",
+  "result": "unverified",
+  "recorded_at": "2026-11-16T17:21:21.926968+00:00",
+  "input_digest_before": "bfa6d73ea861de844e3e6554baed4332362e67d96d0264f8cc1697f16f58de35",
+  "input_digest_after": "bfa6d73ea861de844e3e6554baed4332362e67d96d0264f8cc1697f16f58de35",
+  "procedure": "Partial implementation verification and explicit prerequisite/evidence review under approved Design R2; executed substeps and unavailable substeps are distinguished below. No omitted actual service/client/human outcome is a simulated pass.",
+  "explanation": "Final reviewed inputs and actual prerequisite acceptance are unavailable. No fresh native invocation or installation was attempted; R1 six-case outcomes remain historical and are not transferred to R2. Disposable patch applicability alone does not pass client behavior.",
+  "supporting_evidence": [
+    "candidate-postimages.json",
+    "within-boundary-review.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

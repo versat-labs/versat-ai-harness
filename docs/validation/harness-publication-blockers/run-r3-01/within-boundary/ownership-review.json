@@ -1,0 +1,220 @@
+{
+  "method": "Exact file comparison and last-match evaluation of this file’s existing literal/root-prefix patterns; no generic CODEOWNERS parser or platform enforcement claim.",
+  "single_fallback_change": true,
+  "specific_entries_preserved": 12,
+  "matrix": [
+    {
+      "path": "README.md",
+      "author": "@elviszoz",
+      "local_eligible_non_author": [
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": []
+    },
+    {
+      "path": "README.md",
+      "author": "@evertonspohrversat",
+      "local_eligible_non_author": [
+        "@elviszoz"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "README.md",
+      "author": "external-contributor",
+      "local_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "README.pt.md",
+      "author": "@elviszoz",
+      "local_eligible_non_author": [
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": []
+    },
+    {
+      "path": "README.pt.md",
+      "author": "@evertonspohrversat",
+      "local_eligible_non_author": [
+        "@elviszoz"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "README.pt.md",
+      "author": "external-contributor",
+      "local_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "README.es.md",
+      "author": "@elviszoz",
+      "local_eligible_non_author": [
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": []
+    },
+    {
+      "path": "README.es.md",
+      "author": "@evertonspohrversat",
+      "local_eligible_non_author": [
+        "@elviszoz"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "README.es.md",
+      "author": "external-contributor",
+      "local_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.md",
+      "author": "@elviszoz",
+      "local_eligible_non_author": [
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": []
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.md",
+      "author": "@evertonspohrversat",
+      "local_eligible_non_author": [
+        "@elviszoz"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.md",
+      "author": "external-contributor",
+      "local_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/tasks.md",
+      "author": "@elviszoz",
+      "local_eligible_non_author": [
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": []
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/tasks.md",
+      "author": "@evertonspohrversat",
+      "local_eligible_non_author": [
+        "@elviszoz"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/tasks.md",
+      "author": "external-contributor",
+      "local_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "author": "@elviszoz",
+      "local_eligible_non_author": [
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@evertonspohrversat"
+      ]
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "author": "@evertonspohrversat",
+      "local_eligible_non_author": [
+        "@elviszoz"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "author": "external-contributor",
+      "local_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ]
+    },
+    {
+      "path": "project-templates/base/.versat/standards.lock",
+      "author": "@elviszoz",
+      "local_eligible_non_author": [
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@evertonspohrversat"
+      ]
+    },
+    {
+      "path": "project-templates/base/.versat/standards.lock",
+      "author": "@evertonspohrversat",
+      "local_eligible_non_author": [
+        "@elviszoz"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz"
+      ]
+    },
+    {
+      "path": "project-templates/base/.versat/standards.lock",
+      "author": "external-contributor",
+      "local_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ],
+      "main_eligible_non_author": [
+        "@elviszoz",
+        "@evertonspohrversat"
+      ]
+    }
+  ],
+  "required_approval_count": 1,
+  "main_changed": false,
+  "public_enforcement": "unverified; OP-CTRL-01 and OP-CTRL-02 not executed",
+  "integration_constraint": "Current base Elvis-only fallback does not make Everton eligible for default-covered paths in an Elvis-authored PR. Actual Everton authorship and Elvis review remain unconfirmed."
+}

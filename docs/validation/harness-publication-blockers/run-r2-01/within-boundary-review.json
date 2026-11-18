@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-11-16T17:18:57.586481+00:00",
+  "method": "Fresh local re-verification of original bound hashes, preserved inventory/decisions/rights records, candidate texts, exact operation body and current stage digests, after check-inputs-before capture. Review of metadata and walkthrough reports for their declared dated scopes; no replay of external service outcomes.",
+  "original_files": 96,
+  "candidate_texts": 16,
+  "three_stage_digests_unchanged": true,
+  "remaining_gaps": [
+    "durable custody and actual final reviewer acceptance",
+    "complete final surface/package coverage",
+    "final changed-source confidentiality/rights review",
+    "real participant consent and coordinated freeze",
+    "actual reporting recipients/triage",
+    "final reviewed input set for native candidate rehearsal"
+  ],
+  "limits": "Partial technical/review observations only. No current full check pass or final acceptance inferred."
+}

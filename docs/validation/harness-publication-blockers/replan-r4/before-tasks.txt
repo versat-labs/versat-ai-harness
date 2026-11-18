@@ -1,0 +1,709 @@
+---
+sdd_version: 3
+change: harness-publication-blockers
+tasks:
+- id: TASK-001
+  description: Reconcile current authority, source identity and restricted evidence access.
+  requirements:
+  - REQ-001
+  - REQ-009
+  - REQ-010
+  status: blocked
+- id: TASK-002
+  description: Complete the exact exposure inventory and inaccessible-surface review.
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-009
+  status: blocked
+- id: TASK-003
+  description: Resolve confidentiality findings through verified, attributable treatment.
+  requirements:
+  - REQ-003
+  - REQ-009
+  - REQ-010
+  status: blocked
+- id: TASK-004
+  description: Refresh rights evidence and verify the exact approved candidate and patch.
+  requirements:
+  - REQ-004
+  - REQ-008
+  - REQ-009
+  status: blocked
+- id: TASK-005
+  description: Implement shared general CODEOWNERS and verify bounded GitHub Free transition prerequisites.
+  requirements:
+  - REQ-005
+  - REQ-007
+  - REQ-010
+  status: blocked
+- id: TASK-006
+  description: Prepare shared security triage and individual public-audience verification.
+  requirements:
+  - REQ-006
+  - REQ-007
+  - REQ-010
+  status: blocked
+- id: TASK-007
+  description: Align shared-owner and triage guidance, review inputs and operational handoff.
+  requirements:
+  - REQ-001
+  - REQ-007
+  - REQ-008
+  - REQ-009
+  status: in-progress
+- id: TASK-008
+  description: Exercise the exact private candidate, client behavior and recovery.
+  requirements:
+  - REQ-004
+  - REQ-008
+  - REQ-009
+  status: blocked
+- id: TASK-009
+  description: Execute required private-preparation checks and assess every local and retained obligation in its
+    approved scope.
+  requirements:
+  - REQ-001
+  - REQ-002
+  - REQ-003
+  - REQ-004
+  - REQ-005
+  - REQ-006
+  - REQ-007
+  - REQ-008
+  - REQ-009
+  - REQ-010
+  status: blocked
+- id: TASK-010
+  description: Reconcile private preparation acceptance and mandatory unverified public follow-up.
+  requirements:
+  - REQ-007
+  - REQ-009
+  - REQ-010
+  status: blocked
+review:
+  revision: 3
+  state: approved
+  blockers: []
+  upstream:
+    proposal: 6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e
+    design: a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f
+  approval:
+    source: User reply in this chat on 2026-11-16 to the explicit Tasks R3 Gate 3 approval question while keeping
+      execution suspended
+    quote: sim
+    revision: 3
+    digest: 5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114
+validation:
+  plan_digest: 5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114
+  results:
+  - check: CHECK-001
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/exposure-r3-01/check-001.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping
+    input_digest_before: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    input_digest_after: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review,
+        179 maintained tests; no new remote observations or workflow/native invocation
+      observed: true
+  - check: CHECK-002
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/exposure-r3-01/check-002.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping
+    input_digest_before: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    input_digest_after: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review,
+        179 maintained tests; no new remote observations or workflow/native invocation
+      observed: true
+  - check: CHECK-003
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/exposure-r3-01/check-003.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping
+    input_digest_before: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    input_digest_after: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review,
+        179 maintained tests; no new remote observations or workflow/native invocation
+      observed: true
+  - check: CHECK-004
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/run-r3-01/check-004.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot
+    input_digest_before: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    input_digest_after: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access
+        GETs; no remote workflow or native client invocation
+      observed: true
+  - check: CHECK-005
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/run-r3-01/check-005.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot
+    input_digest_before: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    input_digest_after: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access
+        GETs; no remote workflow or native client invocation
+      observed: true
+  - check: CHECK-006
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/run-r3-01/check-006.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot
+    input_digest_before: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    input_digest_after: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access
+        GETs; no remote workflow or native client invocation
+      observed: true
+  - check: CHECK-007
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/run-r3-01/check-007.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot
+    input_digest_before: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    input_digest_after: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access
+        GETs; no remote workflow or native client invocation
+      observed: true
+  - check: CHECK-008
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/run-r3-01/check-008.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot
+    input_digest_before: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    input_digest_after: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access
+        GETs; no remote workflow or native client invocation
+      observed: true
+  - check: CHECK-009
+    result: fail
+    evidence: docs/validation/harness-publication-blockers/exposure-r3-01/check-009.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus reviewed R3 source and participation bookkeeping
+    input_digest_before: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    input_digest_after: c359b013fe30c96df9765c47084ec8a533a675e4167d2540e7628da073c28ac1
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; current local source/restricted evidence review,
+        179 maintained tests; no new remote observations or workflow/native invocation
+      observed: true
+  - check: CHECK-010
+    result: unverified
+    evidence: docs/validation/harness-publication-blockers/run-r3-01/check-010.json
+    revision: 4a56181d3597c5d345a7639f013547e1700420cb plus R3 private implementation working-tree snapshot
+    input_digest_before: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    input_digest_after: be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc
+    context:
+      execution: local
+      environment: Python 3.11.4; PyYAML 6.0.2/jsonschema 4.23.0; actual local checks and bounded existing-access
+        GETs; no remote workflow or native client invocation
+      observed: true
+  assessments: []
+  findings:
+  - id: FIND-001
+    source:
+      plan: HPB-001 evidence-access
+    category: missing
+    state: open
+    evidence: docs/handoffs/harness-publication-blockers/review-inputs.json
+    description: 'Original inventory and predecessor evidence remain intact locally. Scoped owner decisions and
+      video review are now recorded; durable remote custody and final-scope reviewer access/acceptance remain unverified.
+      The exact R3 exposure/provenance packet and actual owner decisions are now preserved locally under explicit
+      authority and verified; no remote custody is implied. Remaining exit: Exact immutable revision and reviewer-readable
+      originals are confirmed; local readability/admin access alone is insufficient.'
+    tasks:
+    - TASK-001
+    - TASK-002
+    - TASK-003
+    checks:
+    - CHECK-001
+  - id: FIND-002
+    source:
+      plan: HPB-002 surface-review
+    category: missing
+    state: open
+    evidence: docs/handoffs/harness-publication-blockers/review-inputs.json
+    description: 'Original inventory preserved. Owner supplied an empty repository Packages view and reviewed both
+      identified videos. Owner reports removing the two caches; a successful paginated GET now returns zero entries.
+      Cache contents were never inspected. Complete package coverage, final source/ref reconciliation and remaining
+      category acceptance are still pending. Remaining exit: All 16 current exposure categories and formerly inaccessible
+      bodies have attributable complete review or demonstrated absence.'
+    tasks:
+    - TASK-002
+    - TASK-003
+    checks:
+    - CHECK-002
+  - id: FIND-003
+    source:
+      plan: HPB-003 confidentiality
+    category: missing
+    state: open
+    evidence: docs/handoffs/harness-publication-blockers/review-inputs.json
+    description: 'Prior VAL classifications remain valid. R3-E2 now classifies environment paths in the 61 reviewed
+      technical files as non-confidential historical metadata. The reviewed local delta has no additional identified
+      sensitivity decision pending; complete final exposure/package/integration reconciliation and actual acceptance
+      remain open. Remaining exit: Every actual finding has attributable non-sensitive disposition or verified authorized
+      treatment; destructive/history/destination changes reopen planning.'
+    tasks:
+    - TASK-003
+    checks:
+    - CHECK-002
+    - CHECK-007
+  - id: FIND-004
+    source:
+      plan: HPB-004 rights
+    category: missing
+    state: open
+    evidence: docs/handoffs/harness-publication-blockers/review-inputs.json
+    description: 'D1/D2 and R3-E1 now support the original and exactly reviewed new first-party source scopes. R3-E1
+      binds the 1,874-file snapshot/247-file delta; 16 legal texts, seven notices and nine preimages remain unchanged.
+      Whole-distribution/custody/final-current-scope reconciliation remains incomplete. Remaining exit: Current
+      rights, candidate applicability and review capacity support the exact proposed scope; no approval transfers
+      to unseen content.'
+    tasks:
+    - TASK-004
+    checks:
+    - CHECK-003
+  - id: FIND-005
+    source:
+      plan: HPB-005 free-transition-prerequisites; historical private-controls finding retained under R2
+    category: missing
+    state: open
+    evidence: docs/handoffs/harness-publication-blockers/review-inputs.json
+    description: 'R3 general fallback applied locally, 12 specific entries preserved. Main still uses Elvis-only
+      fallback. Owner confirms Everton as future PR author and Elvis as reviewer, with both available for future
+      tests. Operator/session, coordinated writer freeze and final private clearance remain outstanding. Remaining
+      exit: Exact local ownership/guidance and actual private inputs verified; public enforcement remains separately
+      mandatory and unverified.'
+    tasks:
+    - TASK-005
+    checks:
+    - CHECK-004
+  - id: FIND-006
+    source:
+      plan: HPB-006 reporting
+    category: missing
+    state: open
+    evidence: docs/handoffs/harness-publication-blockers/review-inputs.json
+    description: 'Shared triage and future test participation confirmed by the owner for both maintainers; existing
+      admin roles observed separately. Actual report access/notification/receipt, handler and acknowledged handover
+      remain unverified. Remaining exit: Feasible per-person private prerequisites evidenced and public activation/access/receipt/handover/exclusion
+      protocol assigned; no role-to-receipt inference.'
+    tasks:
+    - TASK-006
+    checks:
+    - CHECK-005
+closure: active
+---
+
+# Tasks
+
+## Scope and authority
+
+This plan implements the approved [Proposal](proposal.md), [Requirements](requirements.md) and [Design](design.md) only after Gate 3 approval and a later explicit execution request. The current instruction authorizes Tasks preparation only. No task is completed by writing this plan or running planning diagnostics.
+
+The selected R3 scope resolves private preparation and executable handoff prerequisites on GitHub Free. Effective license adoption, visibility, immediate main protection and OP-CTRL-01/OP-CTRL-02 public enforcement, release/tag publication and real consumer migration are separately authorized later operations. Preserve the exact candidate, prior approvals and archived dossiers. The approved visibility-before-protection sequence and 15-minute readback bound are fixed by Design R3. Further timing changes, destructive remediation, changed destination or material licensing changes require renewed planning; no task grants those powers.
+
+Local Git base remains `4a56181d3597c5d345a7639f013547e1700420cb` with uncommitted preparation/replanning work, branch `codex/harness-publication-blockers`. Keep the Proposal's exact provider anchors, the source SDD v3 contract and index-resolved Standards. No Story or new issue is associated; do not fabricate one or reopen predecessor issues. No commit, push, PR or remote update is authorized in this phase.
+
+## R1/R2 evidence preservation and current blockers
+
+This is a revised plan, not a fresh implementation or a claim that earlier work never occurred. The [exact entry Tasks file](../../../docs/validation/harness-publication-blockers/tasks-r3/before/tasks.md.txt) and [R2 validation ledger](../../../docs/validation/harness-publication-blockers/tasks-r3/before/validation-r2.json) preserve the actual R2 statuses, ten partial results, zero assessments, six open findings and all review/progress history. Earlier R1 snapshots and every prior run/restricted packet remain unchanged. Current R3 validation arrays are empty because R3 execution has not begun, as required for Gate 3 planning; emptiness is not clearance. Later authorized implementation must reconcile the same finding IDs, not silently discard or duplicate them. The latest dated private follow-up remains [R3 evidence](../../../docs/validation/harness-publication-blockers/replan-r3/private-followup.json), not a new observation in this Tasks phase.
+
+| Existing finding | Actual unresolved remainder carried into R3 | Planned resolution/owner |
+|---|---|---|
+| FIND-001 | Durable restricted preservation and actual access/acceptance of the exact final evidence remain unverified. | TASK-001 with accountable coordinator and authorized reviewers; TASK-002/003 reuse the verified baseline. |
+| FIND-002 | Final package/category coverage and source/ref reconciliation remain open. Cache removal and bounded empty listings are dated evidence; original cache contents were never inspected. | TASK-002; recheck drift/new CI outputs rather than inventing a deleted-cache inspection. |
+| FIND-003 | Scoped owner classifications exist; final exposure reconciliation and full assessment remain open. | TASK-003; preserve accepted classifications, review only changed scope or remaining evidence. |
+| FIND-004 | Owner D1/D2 confirmations exist for the reviewed own-material groups; current distribution delta, notices and reviewer applicability still need final reconciliation. | TASK-004; retain those confirmations and identify additional/new material precisely. |
+| FIND-005 | Dated unprotected main/403 observations remain true historical evidence, not assurance. R2 supersedes the paid-private-capability prerequisite; the shared-owner target is approved but its local implementation, effective base eligibility, actual session participants, freeze feasibility and final private clearance remain outstanding. Public enforcement remains unverified. | TASK-005 for actual private prerequisites/handoff; mandatory OP-CTRL-01 and OP-CTRL-02 later. Reclassification of timing alone closes no actual control outcome. |
+| FIND-006 | Both maintainers are selected for triage; individual actual availability, access and handler/handover readiness still need evidence. Public PVR receipt/exclusion for each remains unverified. | TASK-006 for private prerequisites and protocol; actual public reporting later with its own authority. |
+
+Coordinator: `@elviszoz`, preserving actual reviewer capacity rather than asserting specialist qualification. Nine task statuses remain blocked by these known completion prerequisites or downstream final-input dependencies. TASK-007 is pending for its R3 revision; its existing R1/R2 artifacts and prior in-progress work remain historical, not erased. No task is in progress/completed under R3 and all checkboxes remain unchecked. Blocked completion does not forbid independent, bounded preparation once Tasks approval and explicit implementation authority exist. Missing implementation authority currently stops all execution.
+
+## Ordered implementation tasks
+
+### Baseline and evidence access
+
+- [ ] TASK-001 — Reconcile current authority, source identity and restricted evidence access.
+
+**Requirements/checks:** REQ-001, REQ-009, REQ-010; CHECK-001 and CHECK-010.
+
+**Dependencies:** approved Tasks plus explicit implementation authority. New sensitive collection, restricted-system writes or access expansion must have their own applicable bounded authority; predecessor permissions do not transfer.
+
+**Work:** Reverify current stage digests, the five provider anchors, actual Python dependencies, Git state and source/remote drift. Preserve unrelated work. Verify the existing restricted system remains private, actual reviewers can inspect the exact HPR-PRIVATE-01 originals, and their durable restricted preservation and two bound hashes are supported by evidence. Record real reviewer capacities without asserting specialist qualification. Reuse the existing restricted run area and create a new immutable revision only when authorized; reconcile the six carried findings under the same stable IDs and the Design's data contract. Preserve the predecessor area. Record each actual baseline, required missing input, next owner and exit condition; retain unknowns.
+
+**Completion:** exact source/candidate identities and access/provenance are reconciled; authorized reviewers can inspect the required evidence; CHECK-001's missing-record, changed-hash and unconfirmed-capacity cases behave correctly. An opaque identifier, local readability or owner/admin assignment alone is insufficient. No implementation pass is inferred from current planning checks.
+
+### Complete exposure inventory
+
+- [ ] TASK-002 — Complete the exact exposure inventory and inaccessible-surface review.
+
+**Requirements/checks:** REQ-001, REQ-002, REQ-009; CHECK-001, CHECK-002, CHECK-007 and CHECK-008 as mapped in Design.
+
+**Dependencies:** TASK-001 and the specific read/collection/custodian authority for the proposed scope. This task can identify confidentiality findings for TASK-003; it cannot clear them itself through a clean scan.
+
+**Work:** Reconcile all 16 predecessor categories and the new source/remote delta. Include new planning and handoff material, current tree, reachable/deleted history and refs, releases/assets, LFS, fixtures, governance/evaluation records, issue/PR/comment/attachment surfaces, optional site/discussion features, packages and CI logs/artifacts/caches. Reconcile the later owner evidence, cache-removal observation, package screenshots and attachment decisions before identifying remaining gaps. Investigate only still-required package/category, attachment and integration observations through scoped reads or inspectable custodian evidence. Do not require recovery of deleted cache payloads or treat their contents as inspected; refresh actual cache absence/new entries and CI outputs for the final exposure. Record exact scope, pagination, actual content review or demonstrated absence, date, method and limits. Keep raw payloads and private references in restricted storage. Exercise incomplete-listing, inaccessible-payload and new-ref/drift cases.
+
+**Completion:** every required category has an attributable complete observation, and unavailable inputs have actually been resolved rather than relabelled optional. Identified treatment findings are explicitly handed to TASK-003; complete inventory is not confidentiality clearance. Missing access leaves this task incomplete and the corresponding requirement unverified. Sensitive downloads or unrelated collection are not a fallback for missing authority.
+
+### Confidentiality and history disposition
+
+- [ ] TASK-003 — Resolve confidentiality findings through verified, attributable treatment.
+
+**Requirements/checks:** REQ-003, REQ-009, REQ-010; CHECK-002, CHECK-007, CHECK-008 and CHECK-010.
+
+**Dependencies:** TASK-001 and relevant TASK-002 observations. Any treatment must fit the approved Design and have the concrete authority needed for its actual operation.
+
+**Work:** Reuse the already recorded scoped owner decisions for VAL-002, VAL-005, VAL-006 and VAL-007 and the documented technical fixture/false-positive classifications. Do not re-request an identical decision; reconcile its exact scope against current exposure and ask only for genuinely changed or missing evidence. Have authorized reviewers classify any remaining/new internal-reference or sensitive-history finding against its exact exposure. Record benign findings with evidence; for sensitive findings, preserve authentic restricted originals and review a feasible non-destructive treatment, affected copies/surfaces, provenance correspondence, exit test and recovery. Execute only a treatment within the approved scope and specific authority, then reinspect every affected surface. A current-file move cannot clear past blobs or remote copies. Preserve historical approvals and their actual meaning.
+
+**Completion:** every in-scope confidentiality blocker has actual review and verified treatment or an evidence-backed non-sensitive disposition. Rejected treatment, incomplete reinspection or inaccessible affected copies prevent completion. If resolution requires destructive cleanup, rewriting history, losing provenance, changing destination or changing license direction, stop and reopen the relevant gate with the concrete decision; do not complete this task with another defer memo.
+
+### Rights and candidate applicability
+
+- [ ] TASK-004 — Refresh rights evidence and verify the exact approved candidate and patch.
+
+**Requirements/checks:** REQ-004, REQ-008, REQ-009; CHECK-003, CHECK-006, CHECK-007 and CHECK-010 where applicable.
+
+**Dependencies:** TASK-001; complete relevant surface findings from TASK-002 and treatment deltas from TASK-003 before final acceptance. Preliminary delta inspection may proceed earlier, but changes invalidate affected results.
+
+**Work:** Reconcile the dated D1/D2 owner confirmations for own material in G1–G6 against their bound inventory; they do not cover third-party license texts, new files or unknown restrictions beyond their actual scope. Refresh the distribution delta including all R2/R3 planning/evidence/status files and the changed ownership/triage guidance and inspect original/copied/generated material, actual grants, dependencies and notices. Do not silently widen the declaration or ask the same unchanged ownership question again. Reuse bounded predecessor evidence without widening its scope. Verify the 16 approved Apache candidate texts, seven preserved dependency-license texts, exact nine-file patch and preimages. Use `git apply --check` in a disposable private copy before an authorized private rehearsal application. Record actual rights reviewer/capacity, concrete terms, source/patch/test-tree identity and limits. Preserve root 0.3.0, the candidate 0.4.0 intent, marketplace/Plugin identities and all old approvals. Test missing grants, incompatible terms, changed wording and preimage mismatches.
+
+**Completion:** rights for the reviewed proposed scope are supported, the exact approved candidate is applicable, and blocking cases stop rather than silently rebase or adopt. Missing rights/review, altered text or patch mismatch stays unresolved. Any candidate regeneration or substantive text change needs the relevant renewed review before acceptance. No effective root license, tag or release is applied.
+
+### Shared ownership and GitHub Free transition prerequisites
+
+- [ ] TASK-005 — Implement shared general CODEOWNERS and verify bounded GitHub Free transition prerequisites.
+
+**Requirements/checks:** REQ-005, REQ-007, REQ-010; CHECK-004, CHECK-007, CHECK-008 and CHECK-010.
+
+**Current status: blocked.** R3 has settled the choice of both general owners. The local edit can proceed after Tasks approval and explicit implementation authority; completion remains blocked by actual operator/reviewer participation, coordinated human/automation freeze feasibility and final private clearance. The superseded paid-private capability condition is not required. No participation or effective control is inferred from selection or account roles.
+
+**Dependencies:** TASK-001; relevant TASK-002/003/004 evidence for final pre-exposure clearance; actual existing-access author/reviewer/operator arrangement. Concrete reads and restricted recording remain within their applicable authority. Local ownership work and envelope preparation may precede final clearance, but completion cannot.
+
+**Work:** Apply only the reviewed fallback change in `.github/CODEOWNERS`, from `* @elviszoz` to `* @elviszoz @evertonspohrversat`, using the [unapplied proposal](../../../docs/validation/harness-publication-blockers/replan-r3/codeowners.proposed.patch). Preserve all 12 specific assignments, their patterns/order and every other line. Compare the full mapping for default-covered docs/specs/root files, CODEOWNERS itself and the existing specific fixture; verify both actual account identities and existing access. This is a later local implementation step, not performed by this Tasks revision.
+
+Bind review eligibility to the actual base file and commit. Before separate integration, default-covered changes still require Elvis under the old base. A valid arrangement is Everton actually opening/submitting the current PR and Elvis reviewing it; the proposed head alone does not make Everton eligible to approve an Elvis-authored PR against the old base. No nominal author swap, impersonation, invitation, bypass or helper PR is authorized. If this actual arrangement is unavailable, retain a blocker for a separately reviewed integration plan. After adoption, re-read the effective base before reciprocal use. Require one eligible non-author approval, passing actual checks and no blocking/stale review; do not add two approvals or treat self-approval as sufficient. Private Free review/check verification remains manual until effective public controls are observed.
+
+Refresh accessible repository identity, main SHA/refs, check/app source, actor access and token/secret boundaries. Retain capability failures as unknowns, not empty rules. Preserve Design R3's exact unchanged protection body, existing stronger controls and `HPB-FREE-TRANSITION-R2` repository/branch/named-private-PR/session limits. Bind its body hash, actual participant consent, final reviewed private preconditions, operator, failure owner, write-freeze trigger and expiration at readback or 15 minutes. Source/terms adoption and final review happen privately under separate authority; post-CI exposure must be refreshed before the final freeze. Do not extend the canonical Standards or change organization settings.
+
+Prepare the attended visibility/readback envelope and both public tests exactly as approved: one bounded rule attempt, readback with 10-second GET timeout and at most one poll per five seconds inside the remaining 900-second window, stable SHA, actual review/check states and no merge. OP-CTRL-01 retains one external fork and three functional fixture commits, including failing/passing checks, missing/eligible/stale review and safe token boundaries. OP-CTRL-02 adds at most two actual same-repository PRs, one authored by each named maintainer, exercising default-covered reporting documentation and requiring the other person's single approval. Neither test executes now. Review the genuine operational-test dossier and non-draft CI prerequisite below; fixture-only or draft PRs cannot establish a passing positive mergeability result. Confirm participant feasibility without sending messages or substituting accounts.
+
+**Completion:** the local fallback diff and unchanged specific mappings pass review, actual private prerequisites and operation/handoff inputs satisfy CHECK-004 in its preparation scope, and CHECK-007 verifies aligned guidance. Walk both named-author and external-author cases, current versus future base, self/missing/stale/blocking review, missing actor, unsafe workflow, stale source, invalid fixture delivery, activation error, conflicting readback and timeout. These must produce the specified stop behavior. Public activation and OP-CTRL-01/02 enforcement stay explicitly unverified and mandatory. No public PR, CI test or fixture dossier execution is a pre-merge completion prerequisite; no actual private gap can be replaced by a simulation. A local CODEOWNERS edit or prepared JSON proves neither base adoption nor main protection.
+
+### Shared reporting prerequisites
+
+- [ ] TASK-006 — Prepare shared security triage and individual public-audience verification.
+
+**Requirements/checks:** REQ-006, REQ-007, REQ-010; CHECK-005, CHECK-007, CHECK-008 and CHECK-010.
+
+**Dependencies:** TASK-001. Both maintainers are already owner-selected; actual individual availability/access and handler/handover readiness remain completion prerequisites. Any route configuration or non-sensitive message test needs its exact operation envelope and explicit scope; planning or local implementation approval authorizes no message.
+
+**Work:** Record @elviszoz and @evertonspohrversat as shared security-triage maintainers, with Elvis retaining accountable coordination. Reconcile each person's existing-role evidence, intended permitted recipients, current availability and actual capacity separately. Define one actual handler per report and explicitly acknowledged handover when unavailable. Either may handle; do not require two replies or two PR approvals, assert specialist qualification, or invent an SLA/retention period. CODEOWNERS and admin metadata do not establish report access, notification configuration or receipt. Do not repeat the settled roster question; obtain only missing actual operational evidence within authority.
+
+Reconfirm native PVR destination, intended reporters, visibility/capability boundary and safe private-instructions fallback. The dated private PVR 404 does not require paid-private activation. Preserve prior pilot observations in their original repository/audience scope. Prepare minimal safe per-person role/capacity/time and opaque evidence references, handler/handover readiness and unverified public status for TASK-007; account/report identifiers and payloads stay restricted. Do not infer the second person's participation from the first.
+
+Prepare the later separately authorized public activation and one non-sensitive labelled external report. The procedure must observe both maintainers independently in their own sessions, actual access plus notification/receipt participation, one actual handler and acknowledged handover, and denial to an independent unauthorized viewer. One report suffices if it supports both observations; no automatic second report. Missing notification may be documented with actual in-product receipt and a supported monitoring arrangement, never an invented delivery claim. Missing participant/receipt/handover stays unverified for separately scoped continuation. No credential substitution, permission expansion, advisory/CVE or unsanctioned message is part of this work.
+
+**Completion:** feasible private prerequisites for both selected maintainers and the executable public protocol satisfy CHECK-005. Walk unavailable Elvis, unavailable Everton, only one observed receipt, missing notification with/without in-product receipt, unacknowledged handover, wrong repository, unavailable route, changed recipient/audience and unauthorized viewer cases. Unsupported outcomes remain unverified and stop route verification. Actual public activation/receipt remains mandatory later evidence, not a private completion prerequisite or inherited pilot pass. This task cannot waive missing feasible private participation.
+
+### Safe documentation and handoff inputs
+
+- [ ] TASK-007 — Align shared-owner and triage guidance, review inputs and operational handoff.
+
+**Requirements/checks:** REQ-001, REQ-007, REQ-008, REQ-009; CHECK-001, CHECK-007 and CHECK-008, with actual usage covered by CHECK-006.
+
+**Dependencies:** reconciled observations from TASK-001–TASK-006. Drafts may accurately show open blockers; final closure statements depend on their verified resolution. No final pass is written in anticipation of tests.
+
+**Work:** Prepare the Design's minimal scrubbed `docs/handoffs/harness-publication-blockers/review-inputs.json` and maintained handoff README. Bind exact restricted revisions and source/candidate identities without sensitive payloads, private URLs or self-hashes. State each disposition, owner, exit condition and actual reviewer capacity. Describe the retained GitHub Free order explicitly: private adoption/integration and post-CI surface refresh; final freeze; separately authorized visibility plus immediate protection/readback within 15 minutes; OP-CTRL-01/02 and public reporting/external-use verification; later exact release/ref confirmation and independent consumer migration. Include immediate drift checks, actual timestamps, bounded containment and separate private/public status. Update stale paid-private prerequisite and public-first rejection wording in current living guidance/handoff only; preserve it in dated R1 records. Update only affected EN/PT/ES root/reporting guides and navigation, naming both general owners and shared triage with one non-author approval, retaining canonical sources and pending-state accuracy. Include the current-base integration constraint, effective-fallback readback, per-person role/capacity/time/evidence and handler/handover readiness. Preserve the approved frozen contribution/legal wording. Explain the genuine future fixture-dossier prerequisite and all three bounded test PRs without implying they have executed or are authorized now. Do not imply configured notification delivery, self-approval or two required approvals. Review each prospective public file independently and preserve other products/organization routes.
+
+**Completion:** all changed guidance has equivalent meaning and working local links/anchors; the handoff clearly distinguishes verified private outcomes from mandatory public-only observations and actual publication authority. CHECK-007's history and privacy review passes. The manifest binds review inputs but does not prove review by itself. Final handoff acceptance is reconciled in TASK-009–TASK-010; a document cannot close real blockers.
+
+### Private candidate and client behavior
+
+- [ ] TASK-008 — Exercise the exact private candidate, client behavior and recovery.
+
+**Requirements/checks:** REQ-004, REQ-008, REQ-009; CHECK-003, CHECK-006, CHECK-007 and CHECK-009.
+
+**Dependencies:** TASK-004's valid candidate and the reviewed current guide/input set from TASK-007; applicable explicit implementation/rehearsal authority and an independently usable private client context. Preserve real workspace settings and consumers.
+
+**Work:** Preserve the R1 six-case success for its exact tested snapshot without transferring it to the changed final inputs. Reverify the Design's dated Codex desktop 26.915.31945/build 9922, macOS 26.5.2 arm64 target and pinned Python environment before use. Rerun affected checks under newly confirmed scope; do not blindly repeat unchanged evidence or retry a failed native attempt automatically. Use a separately namespaced private test installation and disposable copy of the canonical root; record exact source, patch, resulting tree, installed resources and synthetic provider/lock pairs. Exercise the six-case protocol: first-use Gate 1, missing provider, missing resources, unavailable exact version, explicit synthetic migration and failed-update recovery, with installation/resource verification as setup. Use the maintained fixtures and independent artifact verification. Respect one fresh native new-intent invocation, no automatic retry, at most 600 seconds for it, 300 seconds for each remaining case and 2,400 seconds for the suite. Preserve every attempt and unavailable telemetry/shared-permission limits.
+
+**Completion:** actual client and package observations support all six cases; first-use creates only Proposal/Requirements with null approval and unchanged application/tests; failures preserve the last verified compatible pair. Run the complete maintained suites in preparation and candidate roots and retain separate identities. No public access or real migration is claimed. Missing test context is unverified; a material runtime/method change reopens Design instead of silently substituting a target.
+
+### Final checks and individual acceptance
+
+- [ ] TASK-009 — Execute required private-preparation checks and assess every local and retained obligation in its approved scope.
+
+**Requirements/checks:** REQ-001–REQ-010; CHECK-001–CHECK-010 exactly as approved in Design.
+
+**Dependencies:** actual work and evidence from TASK-001–TASK-008; unresolved pre-publication blockers prevent complete acceptance. Adequate current checks from earlier tasks may be retained only for unchanged inputs and execution context; do not rerun blindly or transfer results between roots.
+
+**Work:** Freeze the final reviewed source/candidate artifacts and scrubbed input manifest after actual observations. For each required check capture the canonical before/after input snapshots, exact runtime/actor/environment, result, method and limitations. Keep restricted raw evidence outside Harness and scrubbed reports under new `docs/validation/harness-publication-blockers/<run>/` directories. Reconcile the preserved R1/R2 ledgers and their six stable findings before populating the new R3 ledger; retain failed/stale attempts at their original hashes. Record one result per Design check and one assessment for each of 31 local scenarios and 40 retained obligations; preserve original sources and historical scope. Explicitly distinguish actual private evidence from public handoff-completeness assessments under Design R3. Never populate an actual public success from a walkthrough or label missing execution not-applicable. Run the full required `./scripts/validate/run.sh` suites with the pinned environment in both preparation and patched roots, retaining actual nonzero counts and failures. Reconcile semantic adequacy and real authority under CHECK-010.
+
+**Completion:** ten current preparation checks pass in the exact scopes approved in Design R3, all 71 obligations have adequate individual assessments, and no applicable private-preparation finding or stale result is left unresolved. OP-CTRL-01/02 and the other mandatory public outcomes remain explicitly unverified in the operational handoff; they are neither execution passes nor dropped findings. Any carried finding disposition under the revised contract must cite actual new private evidence and the applicable approved timing/ownership/triage supersession, with the remaining operational obligation linked. Synthetic stop cases do not close actual unresolved rights/history/control findings. Missing execution remains unverified, not not-applicable. A changed source/manifest or known remote drift invalidates affected results and requires current re-execution; never rewrite an old hash to keep a pass. The execution ledger is populated only during actual implementation, not now.
+
+### Final resolution and acceptance record
+
+- [ ] TASK-010 — Reconcile private preparation acceptance and mandatory unverified public follow-up.
+
+**Requirements/checks:** REQ-007, REQ-009, REQ-010; CHECK-008 and CHECK-010, retaining all other required passing evidence.
+
+**Dependencies:** TASK-001–TASK-009 completed with actual in-scope blocker resolution, current reviews and valid evidence. No future merge/publication event is a completion prerequisite for this private work.
+
+**Work:** Reconcile actual rights/surface/confidentiality and feasible private control/reporting-prerequisite decisions with the final ledger and safe handoff. Verify the six carried R1/R2 findings have explicit, evidence-backed dispositions for their R3 scope and that actual public control/reporting obligations remain separately open. A scope change alone is not operational remediation. Verify every pre-publication exit condition and the distinction between ready for separately authorized operations and public availability. Write a scrubbed acceptance record in the excluded current run output, preserve outstanding public-only follow-up as unverified, and align task status/checklists only with real completion. If final status changes any included handoff or guide, freeze again and rerun the affected checks before completing this task; do not publish future pass claims to avoid that work.
+
+**Completion:** the final record matches actual reviewed inputs, the other nine preparation tasks meet their completion conditions, and every required private prerequisite has inspectable closure evidence. The conclusion is only ready for separately authorized transition; actual control activation/enforcement, reporting and external-use outcomes remain pending. Confirm the deviation and public operation protocol are complete and assigned before completing this task. No new rights grant, release, public-reporting result or consumer adoption is inferred. Ordinary selected delivery validation follows the completed ledger, not a circular prerequisite to recording it. Documentary archive preparation and later PR/merge controls are separate lifecycle actions with their actual authority, as described below.
+
+## Dependencies and execution checkpoints
+
+TASK-001 establishes the evidence/authority baseline. TASK-002 supplies surface findings to TASK-003; both feed the final rights/candidate review in TASK-004. TASK-005 and TASK-006 can make independent private preparation progress after TASK-001, within applicable authority; TASK-005 final acceptance also depends on exact surface/rights/confidentiality clearance. Neither preparation task executes the public follow-up. TASK-007 consolidates truthful guide/handoff inputs, TASK-008 verifies actual private usage, TASK-009 reconciles all checks, and TASK-010 records final acceptance. Partial independent progress never makes a blocked workstream complete.
+
+Current completion dependencies remain explicit: TASK-001–TASK-006 are blocked by the respective carried private evidence/actor/review prerequisites; TASK-008 awaits the final reviewed candidate/input set; TASK-009/010 await upstream evidence and acceptance. TASK-007 is pending for R3 documentation work and may show truthful unresolved states before final acceptance. The old paid-private capability blocker is not reinstated. No stage approval resolves actual access, consent or final-input evidence. Reuse existing owner decisions and prepare a concrete request only for genuinely missing scope or review.
+
+There is no unresolved task-plan choice for Gate 3. The review `blockers` list concerns approval of this plan; it does not erase blocked tasks or certify implementation readiness. Tasks approval completes planning only. The user's prohibition on implementation/publication continues until an explicit later instruction changes it.
+
+## Evidence and freshness rules
+
+Follow the [Design validation contract](design.md#validation-plan), [SDD metadata](../../../sdd/metadata.md) and resolved Standards. The source input scopes, output exclusions, check methods and local execution contexts remain exactly those approved in Design. The current dossier is bound by canonical stage/plan digests rather than raw mutable bookkeeping. The included safe review-input manifest is not an excluded report.
+
+Once Tasks is approved and execution is authorized, compute the actual Tasks digest before recording results. Use `--input-digest CHECK-NNN` immediately before/after actual checks, separately for each root where applicable. Passing checks require unchanged before/after inputs and fresh external observations. Do not copy the preparation hash to the patched root. Outputs belong only in the excluded run directory; the final ledger, its guard result and a report's own hash are not prerequisites to themselves.
+
+Maintain real attempts and stable findings, with actual check/task references and current resolution evidence. Reconcile and reuse FIND-001–FIND-006 from the preserved ledger when authorized execution begins; do not treat the empty planning arrays as resolution or remove a finding merely to obtain a green validator. Failed/unavailable private preparation checks prevent readiness. All 31 local and 40 retained mappings are required; no new exclusion or waiver is introduced. Public-dependent scenarios are assessed for the approved handoff contract, never relabelled as executed public outcomes. No report is created now to simulate that future evidence.
+
+## Documentary closure and operational follow-up
+
+After actual task completion, run the selected ordinary delivery validator against the final ledger. It may expose stale or missing evidence; resolve it through authorized corrections and actual reruns before claiming readiness. When documentary closure is authorized, follow the archive workflow: unique dossier, same branch, `closure: prepared`, final selected `--phase delivery --require-archive` and the complete suite with the trusted baseline. Archive preparation, private PR publication, final remote review/CI and merge remain distinct. These future procedural checks do not imply authority in this Tasks-only request.
+
+These are mandatory later operations, not additional pre-merge task checkboxes and not authorized by Tasks approval. Coordinator: `@elviszoz`; actual operators, authors/reviewers and reporting actors must be confirmed before their operation.
+
+| Ordered later operation | Required evidence/authority | Failure boundary |
+|---|---|---|
+| Private source integration and exact root adoption | Current preparation acceptance, separately authorized named PRs with actual base-eligible non-author review/checks, approved fallback/patch/terms, exact resulting tree and post-CI exposure refresh. | Missing base-eligible review, changed source/rights/preimage or failing checks blocks visibility; no purchase or direct-push shortcut. |
+| Final freeze and visibility plus immediate protection | Approved `HPB-FREE-TRANSITION-R2` envelope; confirmed writer/automation coordination, actual operator capability and authority for visibility plus exact correction. Use Design's body/readback and timer starting before final confirmation. | Main identity drift, failed correction/readback or `t0 + 900 seconds` expiry stops rollout; no ordinary merge, release or automatic visibility reversal. |
+| OP-CTRL-01 public enforcement | Protection readback succeeded; genuine fixture delivery prerequisite below; separate authority for one external-fork PR, the three functional fixture commits plus its real dossier/evidence, ordinary CI/run approvals/notifications and actual eligible reviews, exactly as Design specifies. | Failing/missing check, missing/stale/ineligible review, unknown mergeability or unsafe token/secret behavior keeps ordinary integration/release blocked. No merge or destructive denial test. |
+| OP-CTRL-02 reciprocal-author enforcement | Protection readback succeeded and new fallback effective in the observed base; genuine delivery prerequisite; separate authority for at most two non-draft same-repository test PRs, one actually authored by each maintainer through their own account. Each appends only a distinct harmless English HTML comment to `docs/user-docs/guides/security-reporting.md`, plus its genuine dossier/evidence. | For each, passing required checks with missing owner review must block; author cannot provide required self-approval; one real approval by the other owner permits observed mergeability without merge. Missing participant, invalid delivery, blocking review or unknown state prevents success. No second approval, credential substitution or unbounded retry. |
+| Public reporting and external use | Individually authorized PVR activation and non-sensitive report receipt/exclusion; actual intended external reporter, individual Elvis/Everton access and notification/receipt, assigned handler and acknowledged handover, and unauthorized-viewer denial. One marker only unless further scope is authorized. External acquisition/install/update/contribution uses the exact reviewed public commit. | Missing receipt, unsafe audience or failed acquisition/use keeps the claim unverified and the safe reporting fallback; no advisory/CVE publication or invented channel. |
+| Exact release and independent migrations | Separate release/tag authority after required control/reporting/external checks; confirm the actual released ref and tag-specific behavior. Each consumer has its own approved old/new exact references and recovery. | No overwritten tags, `latest` adoption or automatic consumer migration; a commit rehearsal is not a released-version pass. |
+
+**Genuine operational-test delivery prerequisite:** before the later test-PR operation, prepare a bounded real SDD dossier for each of the three actual PRs, with genuine stage approvals, exact participants/base/functional fixture, actual local results and appropriate documentary delivery on the positive non-draft head. The workflow's `--require-archive` rejects empty affected-dossier selection; a fixture-only PR cannot prove successful restored-check mergeability. Include the functional fixture in affected check inputs and refresh actual local evidence after valid B/C changes. Preserve the real failed A result. Record service enforcement as separate operational follow-up, avoiding a circular requirement for the fixture's own merge. Confirm actual trusted-base selection and required CI; never fake/backdate approvals or reuse stale passes, disable a guard or substitute draft status. This Tasks phase creates no operational dossier and executes none of those PRs. These later dossiers and service outcomes are not pre-merge completion tasks for this successor; this plan requires an executable, bounded handoff. Reuse an independently governed actual contribution only if exact scope, actors, base and observations match Design. No helper PR, unrelated code, automatic cleanup or extra attempt is implied.
+
+Record actual timestamps, identities and outcomes in new immutable evidence. Public exposure can persist if activation fails; the owner decides a concrete separately authorized containment/correction while the coordinated freeze remains. A return to private cannot retract copies or enable Free private protection. Keep every failure and do not silently reset the 15-minute allowance. Do not add a pre-merge requirement for the current change's own merge or publication.
+
+## Stop conditions and recovery
+
+Stop dependent work for absent execution authority, mismatched stage/provider identities, substantive scope drift, unavailable required evidence/reviewer access, unconfirmed transition actors or infeasible write coordination, invalid candidate applicability, failed required tests or an unresolved confidentiality conflict. Preserve the evidence and current safe state. Controls and reporting tests never imply permission to send messages, merge, publish or spend.
+
+Routine authorized fixes within Design rerun affected checks. New task content reopens Gate 3; broader design/requirements changes reopen the earliest affected gate. Destructive history remedies, destination changes or departures from the approved bounded public-first sequence remain outside scope. A subscription upgrade or permission expansion is not an automatic remedy. Recovery preserves historical approvals and the last verified private installation; no revert promises to withdraw public copies or grants.
+
+## Planning review
+
+Current status — 2026-11-16: all three R3 planning gates are approved at their unchanged canonical digests. Ten tasks remain unchecked: nine blocked by real completion prerequisites and TASK-007 pending for revised documentation. The later explicit private implementation instruction in Progress supersedes the prior suspension within the approved R3 scope. The six carried findings and historical implementation evidence remain unchanged; approval is not operational readiness.
+
+Preserved structured R1 review:
+
+```json
+{
+  "revision": 1,
+  "state": "approved",
+  "blockers": [],
+  "upstream": {
+    "proposal": "d3552c1655c58d08d56c9c0178c75c50e804c171087b6d62a2f8be1e6147e5eb",
+    "design": "67d7645746e0cd955cffc3e0a110a708b8bb99e25859bead72fcc2400fb93ea7"
+  },
+  "approval": {
+    "source": "User reply in this chat on 2026-11-14 answering the explicit Gate 3 approval question for Tasks R1 while keeping implementation and publication suspended",
+    "quote": "sim",
+    "revision": 1,
+    "digest": "1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7"
+  }
+}
+```
+
+Tasks R1 is presented after the actual Design approval: “Sim, aprovo o Design R1 de harness-publication-blockers. Prepare somente as Tasks, sem iniciar a implementação ou publicar.” Both approved upstream digests remain unchanged.
+
+Review is awaiting approval, approval null. Nine tasks are pending; TASK-005 is blocked by the recorded private-protection capability limitation. All ten checkboxes remain unchecked. Validation plan digest is null, results/assessments/findings are empty and closure is active. No implementation or publication is authorized or performed. The preparation diagnostics below do not resolve TASK-005 or execute the future acceptance checks.
+
+### Actual preparation diagnostics — 2026-11-14
+
+- Selected planning validation with the pinned Python environment: exit 1, one finding `APPROVAL_REQUIRED` for Tasks, no warnings. It recognizes 31 local scenarios and 40 retained obligations; all ten requirements remain unverified with zero implementation results or assessments.
+- The new-change workflow expressly permits `blocked` for an actual unavailable prerequisite during Tasks preparation. The current validator's `executing` predicate treats every non-`pending` task status, including `blocked`, as execution and therefore requires Tasks approval even in planning phase. TASK-005 is truthfully blocked and remains so. No task status, approval, exemption or validator is changed to conceal this diagnostic. Actual Gate 3 approval is still pending; after it is received, record the real approval and rerun validation. A future clean approval diagnostic would not resolve the private-protection prerequisite or authorize execution.
+- Full required command `PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/versat-pr36-validation-venv/bin/python ./scripts/validate/run.sh`: exit 1 from the same SDD approval finding. Plugin validation passed; all 131 validator tests and 48 execution tests passed. Existing legacy/v2 inventory warnings remain. The aggregate command did not pass, despite the 179 passing tests. No provider, implementation or test code was changed.
+- Proposal and Requirements bytes match their pre-Tasks copies. Design changed only in review bookkeeping to record the user's actual Gate 2 approval. Both approved upstream digests and all five provider anchors match the approved values. All 1,551 pre-existing tracked files remain byte-identical.
+- Task coverage includes all ten requirements, with one unchecked checkbox per task and correct status/metadata correspondence. All 24 local Markdown links and anchors across the dossier resolve. Explicit new-file whitespace checks and `git diff --check` pass. No implementation ledger or prospective output was created.
+- Canonical Tasks R1 digest: `1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7`. This identifies the presented revision; it is not approval or execution evidence.
+
+Gate 3 remains pending. The only next requested action is review of Tasks R1. Approval would conclude the human planning gates while implementation, publication and the unresolved operational prerequisite remain separately constrained.
+
+### Gate 3 approval — 2026-11-14
+
+The user replied “sim” to the explicit question: “Você aprova as Tasks R1 no Gate 3, mantendo implementação e publicação suspensas?” This approves the presented Tasks R1 only. All three canonical stage digests were reverified unchanged before recording the approval above. Earlier pending statements and diagnostics preserve the presentation history.
+
+The three human planning gates are now approved. Nine tasks remain pending and TASK-005 remains blocked by the private-protection capability prerequisite. All checkboxes remain unchecked, the implementation ledger remains empty and closure remains active. Approval does not resolve that prerequisite, authorize implementation or publication, or grant any remote operation or spending authority. A later explicit execution instruction is required before implementation can begin.
+
+Post-approval diagnostics: selected planning validation passed (exit 0, no findings or warnings). The full required `./scripts/validate/run.sh` command with the same pinned Python environment passed (exit 0): Plugin/SDD checks, 131 validator tests and 48 execution tests. Historical legacy/v2 inventory warnings remain unchanged. The earlier `APPROVAL_REQUIRED` finding is no longer present after the actual approval was recorded; the validator/workflow status interpretation was not changed. Tasks content digest remains `1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7`; only review bookkeeping changed, and whitespace checks passed. These are planning diagnostics, not execution evidence or operational readiness.
+
+### Tasks R2 presentation — 2026-11-16
+
+Design R2 approval was observed and recorded at its unchanged digest. This revised ten-task plan preserves stable IDs and all requirement/check coverage, replaces private control enforcement with the approved actual private prerequisites and public-operation handoff, and binds exact completion conditions/dependencies. Public operations are not pre-merge completion tasks. The old ledger is preserved before initializing empty R2 planning arrays; no old pass/failure is rehashed or treated as resolved. Current plan approval is null; approval will conclude planning only, not start implementation or publish anything.
+
+
+### R2 local diagnostics — 2026-11-16
+
+Canonical Tasks R2 digest: `54f04e4b48d178c1afeb1e24ed464eb2376a51258252f890d7cdd3d34e62043d`. Review is awaiting approval with null approval. Proposal/Requirements and Design R2 retain their approved digests; Proposal and Requirements bytes are unchanged in this phase. Ten stable task IDs remain unchecked, with nine blocked completion statuses and one pending documentation revision. No R2 implementation work or acceptance result is recorded.
+
+The [diagnostic packet](../../../docs/validation/harness-publication-blockers/tasks-r2/README.md) preserves entry snapshots, the exact R1 ledger, fresh planning diagnostics and full local suite outputs. All 179 maintained tests passed (131 validator and 48 execution), and Plugin validation passed. Aggregate exit was 1 solely from `APPROVAL_REQUIRED` for Tasks. The existing validator treats blocked statuses as execution for approval checking even in planning; statuses and validator were not changed to hide that diagnostic. Schema, references, task/checklist coverage and both upstream approvals were consistent.
+
+The empty R2 planning ledger is required by the planning workflow and does not resolve the six R1 findings. Their raw ledger, two old results and historical statuses were preserved before replacement, and their actual remaining scope is carried in this plan. A future clean structural check cannot certify their resolution. There are still ten required Design checks, 31 local scenarios and 40 retained obligations; no exclusion was added.
+
+Manual semantic/diff review, links/whitespace and prior frozen-packet integrity checks passed. Among 1,672 entry files, only Design approval bookkeeping, Tasks R2 and the handoff status notice changed; 1,669 others remain unchanged. New snapshots/reports join the final exposure-review scope. No GitHub operation, workflow, client rehearsal, message, implementation or publication occurred. Gate 3 approval concludes planning only; execution still needs an explicit instruction and respects its actual blockers/operation boundaries.
+
+### Gate 3 R2 approval — 2026-11-16
+
+The user replied “Sim.” to the explicit question: “Você aprova as Tasks R2 no Gate 3, mantendo a execução suspensa?” This approves the presented Tasks R2 only. All three canonical stage digests were reverified unchanged before recording the actual approval. Earlier awaiting-approval statements and diagnostics remain presentation history, not the current review state.
+
+All three R2 planning gates are now approved. The nine blocked completion statuses, pending TASK-007, ten unchecked task boxes, empty R2 execution ledger and six carried findings remain unchanged. This approval does not establish operational readiness or authorize implementation, GitHub changes, workflows, publication or messages. The next permitted action is to report the completed approval record; implementation requires an explicit later instruction within the approved scope.
+
+Post-approval R2 diagnostics: selected planning validation passed (exit 0) and the required local `./scripts/validate/run.sh` suite passed (exit 0), including 131 validator tests and 48 execution tests. The previous pending-approval diagnostic is resolved by the actual approval; the earlier diagnostic packet remains unchanged. Existing legacy/v2 inventory warnings remain. All three approved stage digests are unchanged, task statuses and the empty R2 execution ledger are preserved. These checks establish local planning consistency, not task completion or operational readiness. See the [approval diagnostics](../../../docs/validation/harness-publication-blockers/tasks-r2-approval/README.md).
+
+### R3 dependency supersession — 2026-11-16
+
+Proposal/Requirements R3 reopens shared ownership/triage scope. This document retains R2 substantive content and its original upstream digests; its current review is superseded, not a drafted or approved R3 stage. Prior actual review follows. No old result, input hash or finding is relabelled as R3 acceptance. Independent read-only private checks remain permitted under the latest request; changed-scope implementation awaits renewed gates and explicit authority.
+
+```json
+{
+  "revision": 2,
+  "state": "superseded",
+  "blockers": [
+    "Proposal/Requirements R3 awaiting Gate 1; shared CODEOWNERS/triage scope requires renewed downstream review."
+  ],
+  "upstream": {
+    "proposal": "429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32",
+    "design": "83e45f9a4ffa40e570c864686f38654cc31e08b57c85a4b468a77b717f1f6ab1"
+  },
+  "approval": null
+}
+```
+
+### Tasks R3 presentation — 2026-11-16
+
+The user's actual “sim” approves Design R3 and permits only this Tasks revision. The ten stable tasks now cover the exact local shared fallback, existing-base eligibility, one non-author approval, shared triage with individual evidence, affected aligned guidance and genuine future operational-test delivery prerequisites. All ten checks, 31 local positions and 40 retained obligations remain required. Six actual findings are carried in the substantive plan and exact preserved R2 ledger; empty R3 planning arrays do not resolve them. Public tests comprise one external-fork and two reciprocal-author PRs under separate later authority, not extra current pre-merge completion tasks. Gate 3 approval concludes planning only; explicit implementation authority remains necessary.
+
+### R3 local diagnostics — 2026-11-16
+
+Canonical Tasks R3 digest: `5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114`. Proposal/Requirements and Design retain their approved R3 digests. Proposal and Requirements bytes are unchanged. Ten stable tasks remain unchecked, with nine actual blocked completion statuses and one pending documentation revision. The previous ten partial results, six open findings and zero assessments are preserved verbatim in the entry ledger; no old outcome is relabelled or resolved. The new empty ledger is planning initialization only.
+
+The [Tasks R3 diagnostic packet](../../../docs/validation/harness-publication-blockers/tasks-r3/README.md) records selected planning checks and the required local `./scripts/validate/run.sh`. All 179 maintained tests passed (131 validator and 48 execution); aggregate exit is 1 solely for `APPROVAL_REQUIRED` on current Tasks. The existing validator treats non-pending task statuses, including truthful blocked statuses, as execution for approval checking. Neither statuses nor validator were changed to hide the pending Gate 3. Existing historical legacy/v2 inventory warnings remain; no schema, reference or coverage error was found.
+
+Local semantic review confirms the exact fallback scope, old-base review eligibility, shared triage with individual evidence, bounded future test dossiers/three PRs and the unchanged Free transition boundary. All ten required checks, 31 local positions and 40 retained obligations remain. Only Tasks R3, Design approval bookkeeping and the leading handoff status notice changed among the entry files; all other 1774 files and frozen prior packets remain unchanged. The new safe diagnostic records join final exposure review. No task implementation, native client rehearsal, GitHub operation, workflow, message or publication occurred. Gate 3 approval concludes planning only.
+
+### Gate 3 R3 approval — 2026-11-16
+
+The user replied “sim” to the explicit question: “Você aprova as Tasks R3 no Gate 3, mantendo a execução suspensa?” This approves the presented Tasks R3 only. All three canonical stage digests and current upstream approvals were reverified unchanged before recording the actual approval. Earlier awaiting-approval entries and diagnostics preserve presentation history.
+
+All three R3 planning gates are approved. The nine blocked completion statuses, pending TASK-007, ten unchecked boxes, empty R3 execution ledger and six carried findings remain unchanged. This approval establishes neither operational readiness nor implementation, GitHub, workflow/message, publication or delivery authority. Execution remains suspended until a later explicit instruction within the approved scope and actual prerequisites. The proposed CODEOWNERS change remains unapplied.
+
+Post-approval R3 diagnostics: selected planning validation passed (exit 0, no findings or warnings). The required local `./scripts/validate/run.sh` passed (exit 0), including 131 validator tests and 48 execution tests. Existing historical legacy/v2 inventory warnings remain. All approved stage digests, task statuses, unchecked boxes and the empty execution ledger are unchanged. The earlier pending-approval diagnostic is resolved by the actual approval, not by changing the validator or concealing a task blocker. These are planning diagnostics only; the six carried findings still prevent an operational-readiness claim. See the [approval diagnostic packet](../../../docs/validation/harness-publication-blockers/tasks-r3-approval/README.md).
+
+## Progress
+
+### R3-E1/R3-E2 accepted and package saved — 2026-11-16
+
+The user explicitly authorized saving the presented packet locally and confirmed R3-E1 (reviewed new first-party material produced for Versat E.A.S., including material generated under owner direction, with no additional restriction) and R3-E2 (environment paths in the 61 reviewed technical records may remain as non-confidential historical metadata). HPB-DECISION-R3-01 preserves the exact actual quotes and binds the original packet and final source identities. Both specific decision requests are resolved; do not reopen them for identical scope.
+
+The exact review package is saved and hash-verified in the existing selected restricted system; actual decisions are appended separately, preserving all original review/history files. The earlier automatic approval rejection was resolved by this explicit authorization. No commit/push, GitHub change, workflow, publication or effective adoption occurred. FIND-001/003/004 retain their narrower unresolved custody/whole-exposure/distribution/final-acceptance conditions; no entire requirement or task is completed merely by recording the decisions. No new first-party or sensitivity decision is inferred for unseen material. Current manifest changes invalidate affected prior result inputs; no historical hash is relabelled.
+
+See the [decision receipt and diagnostics](../../../docs/validation/harness-publication-blockers/decisions-r3-01/README.md).
+
+
+### Focused exposure/provenance review — 2026-11-16
+
+The user authorized exposure/provenance review without GitHub changes, workflows or publication. HPB-EXPOSURE-RIGHTS-R3-01 binds the exact local snapshot, grouped delta, 16-surface reconciliation and two actual owner decisions: R3-E1 for newly added first-party scope and R3-E2 for environment-path metadata in retained technical records. Prior D1/D2 and VAL decisions remain valid for their original scopes. Participation was separately confirmed during this review and recorded above; no further roster choice is requested.
+
+CHECK-001/002/003 and CHECK-009 have new actual partial evidence with matching before/after input hashes; the other six previous check results retain their original hashes and are stale after the participation/input changes. They are not relabelled as current. All 179 maintained preparation tests passed, with aggregate failure from incomplete acceptance/stale evidence. No full candidate/native review, final 71-obligation acceptance or task closure is claimed. See the [focused review](../../../docs/validation/harness-publication-blockers/exposure-r3-01/README.md). All six stable findings and actual unmet conditions remain visible; no publication authorization or confidentiality waiver was inferred.
+
+
+### Owner-confirmed participation — 2026-11-16
+
+The user stated: “Everton confirmou que abrirá a futura PR, e eu farei a revisão. Ambos confirmamos a triagem compartilhada. A disponibilidade para os testes futuros é confirmada. Isso não autoriza operações no GitHub agora.” This resolves the previously missing owner-reported participation for Everton’s future PR authorship, Elvis’s review, shared triage and both maintainers’ future test availability. HPB-PARTICIPATION-R3-01 records the actual source and limits. It does not establish a performed review, delivery, report receipt, assigned handler, actual handover, operator/session or writer freeze. No GitHub operation is authorized. FIND-005/006 retain only their remaining unmet conditions; neither is fully closed. Current input changes invalidate affected earlier results; preserve the R3 run rather than rewrite its hashes.
+
+
+### R3 private implementation — 2026-11-16
+
+The user instructed “Faça a implementação privada das Tasks R3.” All three current approvals, five provider anchors and entry implementation validation were verified. The instruction authorizes bounded private work, not GitHub writes, workflows/messages, publication, license adoption, PR/merge or consumer migration. Earlier suspension statements retain their historical context.
+
+The exact general fallback now names both owners; all 12 specific entries remain unchanged. EN/PT/ES root and reporting guidance, shared-triage input records and the operational handoff now implement R3. Base eligibility remains tied to main, where Elvis is still the only general owner. TASK-007 is in progress; actual completion prerequisites keep the other nine tasks blocked. Six historical findings are restored under their stable IDs with current remaining scope. No roster choice is reopened and no unobserved participant consent or receipt is recorded. Genuine future test dossiers, OP-CTRL-01/02 and public reporting remain separately authorized operations, not current executions.
+
+
+R3 run outcome: both preparation and disposable candidate passed all 179 maintained tests (358 test executions in total). Both aggregate commands exited 1 from the six real acceptance findings. Exact patch applicability and all nine postimages passed; the wrong preimage was rejected. All ten preparation before/after input snapshots matched. The one-line fallback, complete specific mapping, aligned translations and 21 boundary walkthroughs were verified locally. No fresh native client invocation was justified while final reviewed inputs remain unavailable. See [R3 run 01](../../../docs/validation/harness-publication-blockers/run-r3-01/README.md). Full final acceptance remains incomplete; no task is completed from these partial checks.
+
+Historical R3 entry at approval (superseded by the explicit private implementation instruction above): planning only. TASK-007 is pending for the approved-scope revision; nine tasks have actual blocked completion prerequisites described above. Historical R2 implementation and its actual attempts remain below without transferring passes or authority to R3.
+
+
+### R2 implementation — 2026-11-16
+
+The user explicitly instructed “Implemente.” after approving Tasks R2. All three stage digests and five provider anchors were reverified; entry selected implementation validation passed. This supersedes the preceding execution suspension for in-scope private preparation only. Separate authority is still required for GitHub writes, workflows/messages, license adoption, PR/merge, visibility, release and real consumer migration.
+
+TASK-001–TASK-006 progressed through actual local integrity, bounded remote metadata, scoped owner-decision reconciliation and prepared R2 operation inputs. Their final evidence/access/participant prerequisites remain open. TASK-007 is in progress: current handoff, manifest, exact rule body, transition procedure and affected EN/PT/ES guidance now implement R2. Historical R1 records and approved candidate texts remain unchanged. CHECK-006 final-client execution and TASK-008 remain blocked by final reviewed inputs; no native attempt was launched or reused as a new pass.
+
+The six historical findings are carried into the R2 ledger under their original IDs with actual remaining R2 scope, not closed by timing supersession. [Run R2-01](../../../docs/validation/harness-publication-blockers/run-r2-01/README.md) records actual checks and limits. The old paid-private capability requirement is superseded; participant consent, freeze feasibility, final rights/surface acceptance and custody/triage evidence remain real dependencies. No task checkbox is completed merely for preparing these assets.
+
+
+R2 run outcome: both preparation and disposable candidate executed all 179 maintained tests successfully; both aggregate commands exited 1 because the six real acceptance findings remain open. The exact patch and nine postimages passed; a wrong preimage was rejected. All ten preparation check input boundaries stayed unchanged. Full final 31-local/40-retained acceptance is pending; no fresh native client attempt was made. The user's later participant question produced an [unapplied CODEOWNERS option](../../../docs/validation/harness-publication-blockers/run-r2-01/participant-option.md); it does not confirm consent, permit self-approval or change the approved Design/ownership file.
+
+Historical entry at Tasks preparation (superseded by the explicit R2 authority above):
+
+R2, 2026-11-16: no implementation has started under the revised plan. Historical R1 execution entries below remain authentic for their original snapshots; they do not authorize or complete R2 work. The current structured task statuses and the carried blocker table govern resumption after new approval and explicit execution authority.
+
+### Authorized implementation — 2026-11-14
+
+The user explicitly requested: “Implemente as tasks.” All three R1 approvals and provider identities were verified before work. Entry implementation validation passed. This supersedes the earlier phase-only suspension for in-scope implementation; separately scoped collection, remote configuration/messages, delivery and publication retain their approved boundaries.
+
+TASK-008 is completed for the approved private technical scope: exact disposable candidate and personal test installation, all six client cases, independent first-use artifact review, complete preparation/candidate suites and unchanged workspace installation. TASK-004's exact candidate applicability prerequisite is verified; its separate rights review is not complete. The test catalog and last verified private candidate remain available; real workspace 0.3.0 is unchanged. The one native attempt stayed within its bound; no automatic retry occurred. An initial coordinator assertion omitted the native agent's empty stderr evidence file; inspection corrected that checker expectation, and the failed coordinator attempt remains recorded.
+
+TASK-007 has a concrete safe handoff/input manifest and aligned EN/PT/ES navigation, but final history/privacy acceptance depends on unresolved restricted findings. It remains in progress. TASK-001–TASK-006, TASK-009 and TASK-010 are blocked by the actual prerequisites recorded in FIND-001–FIND-006 and the handoff. No remaining task is marked complete by a defer memo or a synthetic pass.
+
+Bounded existing-evidence verification found both predecessor hashes and all 96 manifest entries intact locally. The remote exact record read returned 404 and the local area is untracked; current reviewer access and durable preservation are unverified. Private main still lacks protection and the APIs report a capability limitation. No expanded raw collection, restricted-system write, remote correction, test PR or report message ran. Current rights/security review and reporting recipient confirmation remain outstanding.
+
+The 16 approved texts, nine preimages and postimages match. Root remains 0.3.0 without effective license adoption. Seven tracked documentation files changed only to point to the new current status; every other pre-existing tracked file is unchanged. Current source delta, exact check results, tests and preservation evidence are in run-01. All historical approvals/candidate material remain intact.
+
+### Authorized restricted inventory — 2026-11-14
+
+The user approved the concrete handoff scope: “Sim, autorizo o inventário restrito no escopo do handoff, sem ampliar permissões, apagar histórico ou publicar. Prossiga.” The bounded inventory was executed into the existing restricted system under new local record HPB-PRIVATE-01, inventory revision 1. Its raw payloads, forensic Git copy, exact preserved originals, body/link records and reviewer queue remain outside Harness. No remote write, permission expansion, deletion, history change or publication occurred.
+
+The 320-file integrity manifest was verified; the old 96 manifest entries and 97 exact preserved copies remain unchanged. Owner-only local read access is observed, but actual human acceptance and remote durability remain unverified. The collection covered 1,616 current files, 1,244 remote and 1,246 local reachable blobs, 19 PR heads, 58 log archives/115 entries and all acquired issue/PR/comment/review bodies. Current refs match and branch/tag observations remained stable. Package scopes, two cache payloads and two external integration link occurrences remain gaps; no boundary was bypassed. The 82 private location/type queue entries require actual classification and include duplicates; they are not 82 confirmed sensitive findings.
+
+The new safe handoff/input revision invalidates broad-input results for the final candidate. Run-01 and its former ledger are preserved in run-02/prior-ledger.json. TASK-008's earlier completion remains true for its tested snapshot, but its current status is blocked pending final-source revalidation; no old hash or pass was transferred, and no second native attempt ran. TASK-007 remains in progress. The other eight tasks retain their operational blockers. This inventory advances TASK-001–TASK-003 without claiming full closure.
+
+### Authorized decision preparation — 2026-11-14
+
+The user replied “Ok. Prossiga.” to preparation of concrete review decisions. Restricted packet HPB-REVIEW-01 R1 now preserves all 82 queue entries as 85 occurrences across seven distinct values: one scanner false positive, two synthetic test identities and four actual context/classification decisions. The 320-file source inventory remains unchanged. A 283-row rights delta, three unsent custodian requests, empty attributable decision fields and operational prerequisite actions are prepared. No human classification, rights approval, custodian receipt or control capability was inferred.
+
+A local disposable-copy fixture passed plugin validation before mutation, failed on the intentional template version mismatch and passed after exact restoration. The existing applicable CODEOWNER scope supports a future eligible non-author review without changing owners; actual participation and remote enforcement remain unverified. All task statuses and six findings remain unchanged. [Run 03](../../../docs/validation/harness-publication-blockers/run-03/) contains only safe preparation metadata and actual diagnostics; raw values and evidence stay restricted. No remote operation, message, native rerun or publication occurred.
+
+### Owner cache removal and current status reconciliation — 2026-11-14
+
+The user reported: “Já eliminei os caches. Registre a decisão e atualize a pendência, sem executar workflows, ampliar permissões ou publicar.” The first GET failed at network connection and is retained as a failed attempt, not absence. The same paginated read using existing access succeeded with total_count 0. Restricted record HPB-CACHE-REMOVAL-001 binds the statement and both actual results. CUST-02 now records owner-reported removal and verified current absence, with original payloads never inspected or preserved. No agent deletion or retroactive inspection claim is made. Future CI can create new caches; recheck before publication.
+
+The input manifest also reconciles already-received scoped owner classifications, video review and repository Packages screenshot. Aggregate findings remain open pending their remaining final-scope, rights, custody and operational conditions. The revised source invalidates prior broad-input results, preserved byte-for-byte in [Run 04](../../../docs/validation/harness-publication-blockers/run-04/). Only newly executed bounded review and local suite diagnostics are recorded for this revision; no native rerun, workflow execution, permission expansion or publication occurred. Task statuses and approved planning content are unchanged.
+
+## Validation evidence
+
+R3 now records ten actual partial check results from run-r3-01: CHECK-009 fails at the aggregate guard, and the other nine remain unverified for their explicit missing evidence. Six findings remain open and no final individual scenario assessment is fabricated. The exact R2 ledger is preserved in the Tasks R3 entry snapshot; R1/R2 outcomes remain historical.
+
+[Run 02](../../../docs/validation/harness-publication-blockers/run-02/) records the current restricted inventory, safe hashes, reference reconciliation and limits. [Run 01](../../../docs/validation/harness-publication-blockers/run-01/) remains historical: one native first-use invocation and five other client cases passed, and both roots ran the full 179-test suites before the final aggregate failed on recorded operational gaps. Those results are not current passes for the changed review inputs. The prior ledger is preserved; no old result was rehashed.
+
+Six stable findings remain open. Final individual assessment of 31 local and 40 retained obligations remains incomplete. Current checks record only actually executed review/validation, with fresh input snapshots. Run-02 executed the complete preparation suite: 131 validator and 48 execution tests passed; the aggregate failed on the six true operational acceptance gaps. The strategy consumer validator separately passed with 9 Standards and 13 verified snapshots. Incomplete/unavailable work cannot be waived by successful integrity or unit checks.
+
+## Delivery
+
+Active R3, all gates approved and private implementation explicitly authorized. Implementation remains partial with six real findings and final acceptance outstanding. No documentary archival, commit/push/PR/merge, license adoption, GitHub configuration/visibility change, workflow/message, release or consumer migration occurred. Continue only private work within the approved scope and actual prerequisites; remote delivery and public operations retain separate authority.

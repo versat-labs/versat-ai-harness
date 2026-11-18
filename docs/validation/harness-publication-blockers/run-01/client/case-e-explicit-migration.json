@@ -1,0 +1,42 @@
+{
+  "result": "pass",
+  "old_baseline": {
+    "argv": [
+      "bash",
+      "scripts/validate/run.sh"
+    ],
+    "exit": 0,
+    "stdout": "{\"result\": \"pass\", \"version\": \"0.3.0\", \"commit\": \"d82cdc10e91bac20ea0a29de91e622dd3f803c80\", \"standards\": [\"core/agent-artifacts.md\", \"core/contribution.md\", \"core/documentation.md\", \"core/git.md\", \"core/language.md\", \"core/licensing-publication.md\", \"core/observability.md\", \"core/security.md\", \"core/testing.md\", \"domains/finance.md\", \"profiles/software.md\", \"technologies/python.md\"]}\n{\"result\": \"pass\", \"scope\": \"full\", \"report\": \"<private-rehearsal>/migration-consumer/.versat/validation-runs/90981ab4d6bf47c7be912cf99a74098a/result.json\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 0.38254809379577637
+  },
+  "updated": {
+    "argv": [
+      "bash",
+      "scripts/validate/run.sh"
+    ],
+    "exit": 0,
+    "stdout": "{\"result\": \"pass\", \"version\": \"0.4.0\", \"commit\": \"293007892bab864e1f92960adb9747199078dd0f\", \"standards\": [\"core/agent-artifacts.md\", \"core/contribution.md\", \"core/documentation.md\", \"core/git.md\", \"core/language.md\", \"core/licensing-publication.md\", \"core/observability.md\", \"core/security.md\", \"core/testing.md\", \"domains/finance.md\", \"profiles/software.md\", \"technologies/python.md\"]}\n{\"result\": \"pass\", \"scope\": \"full\", \"report\": \"<private-rehearsal>/migration-consumer/.versat/validation-runs/6d2a6aaa1f1046e78ac3a9056c413174/result.json\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 0.3235609531402588
+  },
+  "unsafe_old_provider_rejected": {
+    "argv": [
+      "bash",
+      "scripts/validate/run.sh"
+    ],
+    "exit": 2,
+    "stdout": "{\"result\": \"unverified\", \"reason\": \"Expected exact provider version and full commit in standards.lock\"}\n",
+    "stderr": "",
+    "elapsed_seconds": 0.10714507102966309
+  },
+  "changed_files": [
+    ".versat/standards.lock",
+    ".versat/validation-runs/6d2a6aaa1f1046e78ac3a9056c413174/result.json",
+    ".versat/validation-runs/6d2a6aaa1f1046e78ac3a9056c413174/unit/counts.json",
+    ".versat/validation-runs/6d2a6aaa1f1046e78ac3a9056c413174/unit/stderr.txt",
+    ".versat/validation-runs/6d2a6aaa1f1046e78ac3a9056c413174/unit/stdout.txt"
+  ],
+  "elapsed_seconds": 0.5660231113433838,
+  "scope": "Explicit synthetic consumer lock update from compatible unreleased v3 0.3.0 to candidate 0.4.0; exact local commit and index-resolved digests. Existing consumer and workspace plugin untouched."
+}

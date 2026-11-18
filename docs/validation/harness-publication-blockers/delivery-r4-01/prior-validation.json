@@ -1,0 +1,1281 @@
+{
+  "plan_digest": "b3a7b72e36f80ac97cc0ef15cf1c6c2962eb8703b82ded491a913024e1392cd2",
+  "results": [
+    {
+      "check": "CHECK-001",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-001.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-002",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-002.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-003",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-003.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-004",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-004.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-005",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-005.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-006",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-006.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-007",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-007.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-008",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-008.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-009",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-009.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-010",
+      "result": "pass",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/check-010.json",
+      "revision": "R4 private working tree; exact per-check input digest and candidate mapping in run-r4-01",
+      "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+      "context": {
+        "execution": "local",
+        "environment": "macOS arm64; pinned Python 3.11.4; private preparation review and isolated candidate suite; service reads dated 2026-11-17",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Private revision, manifest and actual independent approval jointly satisfy the approved preservation criterion."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Missing record/hash/approval mismatch boundaries reviewed explicitly; no missing original found."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-001",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Empty review body counted solely as approval; R4 disposition is separate from immutable R1–R3 failures."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Sixteen categories/current delta reconciled; unchanged bodies/logs reused, zero current caches; final post-integration-CI refresh remains mandatory."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Actual repository exposure and writers scoped; no broadened private registry audit."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-002",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Insufficient package access and private PVR response retained as limited observations; no plausible new exposure identified from unchanged scoped surfaces; actual drift stops opening."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Existing VAL and path decisions reused for unchanged contents; new delta reviewed semantically."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Frozen originals match entry; no history or evidence deletion performed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "New-secret/treatment stop reviewed; no new confidential finding or destructive action."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-003",
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "No clean-scan blanket clearance; dated scope and final refresh retained."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Exact approved texts/notices and first-party provenance reused; no changed legal text or dependency."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Missing rights/changed preimage stop retained; actual disposable mismatched VERSION rejected."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-004",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "All nine candidate postimages verified in isolation; canonical root version remains 0.3.0 with no root license adoption."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Local shared fallback and 12 specific entries verified; confirmed Everton-author/Elvis-review satisfies current base eligibility."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Prepared executable 900-second transition with exact rule and session/freeze requirements; not executed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-005",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "One representative sequence plus shared mapping and fork limits prepared; actual enforcement remains unverified until authorized public operation."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Both triage participants and existing admin evidence reused; intended PVR and fallback truthful."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Single-marker/access/receipt/exclusion protocol prepared; no actual public receipt asserted."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-006",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-008",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Private-state 404 kept unavailable; no activation/message/access change; actual handover only when needed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Three-group record consolidates actual evidence and concrete future owners/actions."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-005",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Public control/report/basic-use follow-up separate from later release/marketplace/migration."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-007",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Exact applied license, final source refresh and operator/freeze/authority remain pre-exposure gates; private preparation completion is not publish-ready."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-008",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Identical 143 behavior files/runtime support real six-case reuse; full final candidate suite passed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-008",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Affected EN/PT/ES meanings and links reviewed; public route/version claims remain qualified."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-008",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "No product/organization/consumer change; provider, Standards and tests unchanged."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-009",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Historical artifacts and failed attempts unchanged; new R4 decisions recorded separately."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-009",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Ten real consolidated check records support 71 machine assessments; no inferred remote outcome."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-009",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-009",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Private acceptance uses actual local evidence and executable follow-up without requiring its own merge/publication."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-010",
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Exact historical planning snapshots show staged R4 progression; current approval is actual user instruction."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-010",
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "All three gates approved unchanged; only authorized local implementation and evidence reconciliation performed."
+    },
+    {
+      "obligation": {
+        "local": {
+          "requirement": "REQ-010",
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Integration/adoption/publication/messages/releases remain specifically unauthorized; no GitHub mutation."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 1, scenario 1: Exact 16-text review package and seven external terms remain byte-identical; reviewer capacities and no-adoption status preserved."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 1, scenario 2: Exact 16-text review package and seven external terms remain byte-identical; reviewer capacities and no-adoption status preserved."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 1,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 1, scenario 3: Exact 16-text review package and seven external terms remain byte-identical; reviewer capacities and no-adoption status preserved."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 2, scenario 1: D1/D2/R3-E1 applied to bound source; only first-party documentation/evidence delta with no new dependency/term; missing-grant stop remains."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 2, scenario 2: D1/D2/R3-E1 applied to bound source; only first-party documentation/evidence delta with no new dependency/term; missing-grant stop remains."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 2,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-003"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 2, scenario 3: D1/D2/R3-E1 applied to bound source; only first-party documentation/evidence delta with no new dependency/term; missing-grant stop remains."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 3, scenario 1: Sixteen categories reconciled with dated fresh listings, unchanged refs/bodies/logs and source delta; future drift and destructive remedy remain separately gated."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 3, scenario 2: Sixteen categories reconciled with dated fresh listings, unchanged refs/bodies/logs and source delta; future drift and destructive remedy remain separately gated."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 3,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 3, scenario 3: Sixteen categories reconciled with dated fresh listings, unchanged refs/bodies/logs and source delta; future drift and destructive remedy remain separately gated."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 4, scenario 1: Exact nine-file 0.4.0 candidate identities verified; canonical 0.3.0/marketplace and real consumers unchanged, no release inferred."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 4, scenario 2: Exact nine-file 0.4.0 candidate identities verified; canonical 0.3.0/marketplace and real consumers unchanged, no release inferred."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 4,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 4, scenario 3: Exact nine-file 0.4.0 candidate identities verified; canonical 0.3.0/marketplace and real consumers unchanged, no release inferred."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 5, scenario 1: Six real private cases reused after current runtime and 143 behavior-file match. Public external use is executable opening follow-up; versioned update/migration remains later work."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 5, scenario 2: Six real private cases reused after current runtime and 143 behavior-file match. Public external use is executable opening follow-up; versioned update/migration remains later work."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-006"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 5, scenario 3: Six real private cases reused after current runtime and 143 behavior-file match. Public external use is executable opening follow-up; versioned update/migration remains later work."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 5,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 5, scenario 4: Six real private cases reused after current runtime and 143 behavior-file match. Public external use is executable opening follow-up; versioned update/migration remains later work."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 6, scenario 1: Contribution prose frozen; actual base ownership and prepared review/check/fork rule verified locally; real public enforcement remains required and unexecuted."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 6, scenario 2: Contribution prose frozen; actual base ownership and prepared review/check/fork rule verified locally; real public enforcement remains required and unexecuted."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 6,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-004",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 6, scenario 3: Contribution prose frozen; actual base ownership and prepared review/check/fork rule verified locally; real public enforcement remains required and unexecuted."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 7, scenario 1: Historical H02 scope preserved, confirmed shared triage and one-marker protocol/fallback aligned; no public receipt inferred."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 7, scenario 2: Historical H02 scope preserved, confirmed shared triage and one-marker protocol/fallback aligned; no public receipt inferred."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 7,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-005",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 7, scenario 3: Historical H02 scope preserved, confirmed shared triage and one-marker protocol/fallback aligned; no public receipt inferred."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 8, scenario 1: Current affected localized guides reviewed for meaning, self-contained routes and links; no new private URL, command or unobserved service claim."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 8, scenario 2: Current affected localized guides reviewed for meaning, self-contained routes and links; no new private URL, command or unobserved service claim."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 8,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 8, scenario 3: Current affected localized guides reviewed for meaning, self-contained routes and links; no new private URL, command or unobserved service claim."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-001",
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 9, scenario 1: Exact candidate/exposure/control evidence and three-group decision separate private completion from adoption/opening/release; failure and containment boundaries reviewed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 9, scenario 2: Exact candidate/exposure/control evidence and three-group decision separate private completion from adoption/opening/release; failure and containment boundaries reviewed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 9, scenario 3: Exact candidate/exposure/control evidence and three-group decision separate private completion from adoption/opening/release; failure and containment boundaries reviewed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 9,
+          "scenario": 4
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 9, scenario 4: Exact candidate/exposure/control evidence and three-group decision separate private completion from adoption/opening/release; failure and containment boundaries reviewed."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 10,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 10, scenario 1: Frozen archived artifacts/texts and original failure evidence preserved; new R4 safe guidance and accepted classifications do not rewrite old approval."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 10,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-003",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 10, scenario 2: Frozen archived artifacts/texts and original failure evidence preserved; new R4 safe guidance and accepted classifications do not rewrite old approval."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 10,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 10, scenario 3: Frozen archived artifacts/texts and original failure evidence preserved; new R4 safe guidance and accepted classifications do not rewrite old approval."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 11,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 11, scenario 1: Independent product/organization routes and consumer state unchanged; complete maintained suite passed with no policy/provider weakening."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 11,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 11, scenario 2: Independent product/organization routes and consumer state unchanged; complete maintained suite passed with no policy/provider weakening."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 11,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-007",
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 11, scenario 3: Independent product/organization routes and consumer state unchanged; complete maintained suite passed with no policy/provider weakening."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 12,
+          "scenario": 1
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 12, scenario 1: Genuine historical and current three-stage approvals retained; exact R4 digests checked; planning and local passes confer no remote authority."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 12,
+          "scenario": 2
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 12, scenario 2: Genuine historical and current three-stage approvals retained; exact R4 digests checked; planning and local passes confer no remote authority."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 12,
+          "scenario": 3
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-010"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 12, scenario 3: Genuine historical and current three-stage approvals retained; exact R4 digests checked; planning and local passes confer no remote authority."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 13,
+          "scenario": 0
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-008"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 13, scenario 0: Existing operation boundary retained; final session/operator, drift and explicit authority required."
+    },
+    {
+      "obligation": {
+        "regression": {
+          "impact": 14,
+          "scenario": 0
+        }
+      },
+      "result": "pass",
+      "checks": [
+        "CHECK-009"
+      ],
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "explanation": "Retained impact 14, scenario 0: Unchanged full validation entry point executed with both maintained suites, nonzero counts and stable exact input."
+    }
+  ],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "HPB-001 evidence-access"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "description": "Original inventory and predecessor evidence remain intact locally. Scoped owner decisions and video review are now recorded; durable remote custody and final-scope reviewer access/acceptance remain unverified. The exact R3 exposure/provenance packet and actual owner decisions are now preserved locally under explicit authority and verified; no remote custody is implied. Remaining exit: Exact immutable revision and reviewer-readable originals are confirmed; local readability/admin access alone is insufficient.",
+      "tasks": [
+        "TASK-001",
+        "TASK-002",
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-001"
+      ],
+      "resolution": "Resolved only for approved R4 private preparation. Exact private revision and manifest match; read-only verifier passed for 575 source files / 543 delivery files / 42 archived Git files; actual non-author approval reobserved. Missing/hash/approval boundaries reviewed. R4 preservation accepted; old failed criterion unchanged."
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "HPB-002 surface-review"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "description": "Original inventory preserved. Owner supplied an empty repository Packages view and reviewed both identified videos. Owner reports removing the two caches; a successful paginated GET now returns zero entries. Cache contents were never inspected. Complete package coverage, final source/ref reconciliation and remaining category acceptance are still pending. Remaining exit: All 16 current exposure categories and formerly inaccessible bodies have attributable complete review or demonstrated absence.",
+      "tasks": [
+        "TASK-002",
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ],
+      "resolution": "Resolved only for approved R4 private preparation. All 16 categories reconciled: 22 refs and previously reviewed substantive service bodies / 58 runs unchanged, fresh caches/artifacts/releases/hooks/environments/deployments empty, optional feature flags disabled. Current first-party source delta reviewed. Packages uses dated owner view plus unchanged publication paths; inaccessible unrelated registries not treated as absence. Final post-private-CI refresh remains an explicit operation gate."
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "HPB-003 confidentiality"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "description": "Prior VAL classifications remain valid. R3-E2 now classifies environment paths in the 61 reviewed technical files as non-confidential historical metadata. The reviewed local delta has no additional identified sensitivity decision pending; complete final exposure/package/integration reconciliation and actual acceptance remain open. Remaining exit: Every actual finding has attributable non-sensitive disposition or verified authorized treatment; destructive/history/destination changes reopen planning.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ],
+      "resolution": "Resolved only for approved R4 private preparation. Existing owner classifications reused; no new confidential finding in reviewed source/surface delta. Specific future drift remains a stop, not a waived review."
+    },
+    {
+      "id": "FIND-004",
+      "source": {
+        "plan": "HPB-004 rights"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "description": "D1/D2 and R3-E1 now support the original and exactly reviewed new first-party source scopes. R3-E1 binds the 1,874-file snapshot/247-file delta; 16 legal texts, seven notices and nine preimages remain unchanged. Whole-distribution/custody/final-current-scope reconciliation remains incomplete. Remaining exit: Current rights, candidate applicability and review capacity support the exact proposed scope; no approval transfers to unseen content.",
+      "tasks": [
+        "TASK-004"
+      ],
+      "checks": [
+        "CHECK-003"
+      ],
+      "resolution": "Resolved only for approved R4 private preparation. Sixteen approved texts, seven dependency texts and nine preimages unchanged; exact patch applies in isolated candidate with all nine postimages, wrong-version fixture rejected. D1/D2/R3-E1 plus bounded first-party R4 provenance used; no new grant or effective adoption."
+    },
+    {
+      "id": "FIND-005",
+      "source": {
+        "plan": "HPB-005 free-transition-prerequisites; historical private-controls finding retained under R2"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "description": "R3 general fallback applied locally, 12 specific entries preserved. Main still uses Elvis-only fallback. Owner confirms Everton as future PR author and Elvis as reviewer, with both available for future tests. Operator/session, coordinated writer freeze and final private clearance remain outstanding. Remaining exit: Exact local ownership/guidance and actual private inputs verified; public enforcement remains separately mandatory and unverified.",
+      "tasks": [
+        "TASK-005"
+      ],
+      "checks": [
+        "CHECK-004"
+      ],
+      "resolution": "Resolved only for approved R4 private preparation. R4 private procedure and exact rule/base mapping prepared using confirmed participants. Actual operator/freeze/session and public enforcement are retained operation prerequisites, not missing paperwork now."
+    },
+    {
+      "id": "FIND-006",
+      "source": {
+        "plan": "HPB-006 reporting"
+      },
+      "category": "missing",
+      "state": "resolved",
+      "evidence": "docs/validation/harness-publication-blockers/run-r4-01/README.md",
+      "description": "Shared triage and future test participation confirmed by the owner for both maintainers; existing admin roles observed separately. Actual report access/notification/receipt, handler and acknowledged handover remain unverified. Remaining exit: Feasible per-person private prerequisites evidenced and public activation/access/receipt/handover/exclusion protocol assigned; no role-to-receipt inference.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-005"
+      ],
+      "resolution": "Resolved only for approved R4 private preparation. R4 one-report/shared-access protocol and safe fallback prepared using confirmed shared triage. Actual public access/receipt remains unverified; removed duplicate notifications/simulated handover do not create a fabricated service pass."
+    }
+  ]
+}

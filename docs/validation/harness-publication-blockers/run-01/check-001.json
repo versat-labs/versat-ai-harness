@@ -1,0 +1,13 @@
+{
+  "check": "CHECK-001",
+  "result": "unverified",
+  "recorded_at": "2026-11-14T18:21:22.648957+00:00",
+  "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+  "procedure": "Current bounded technical/review observations; see explanation and supporting run artifacts. This partial attempt does not represent unexecuted substeps as executed.",
+  "explanation": "Partial integrity review only: both historical hashes and all 96 manifest entries match locally; exact remote record returned 404 and actual reviewer access/durable preservation remain unverified.",
+  "supporting_evidence": [
+    "restricted-integrity.json"
+  ],
+  "limits": "No remote changes, actual human rights/security review, publication or completed-H03 claim."
+}

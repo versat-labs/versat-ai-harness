@@ -1,0 +1,1474 @@
+{
+  "baseline": "HPB-RIGHTS-02 R1 / HPB-DECISION-005; D1/D2 preserved",
+  "baseline_files": 1644,
+  "current_files_excluding_this_run": 1809,
+  "unchanged": 1627,
+  "changed_or_added": 182,
+  "deleted": [],
+  "groups": {
+    "ownership": 1,
+    "documentation": 14,
+    "local-evidence": 163,
+    "planning": 4
+  },
+  "files": [
+    {
+      "path": ".github/CODEOWNERS",
+      "change": "modified",
+      "group": "ownership",
+      "before_sha256": "cd1a70acd08400c27efb075e6f9fa1f3d123854dcfc911ebf5ee520860e59125",
+      "sha256": "381bbb166ad87cc76ddfd5b5d868ffaebaa447c075be43bac645bda05583e0ea",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "README.es.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "465b589afefc1bcb88fe1a0843b05002e7ddd39270b390a0fdacc88d17fbbb05",
+      "sha256": "56b71306de310eecc50c791a71e2fd77967581d85d78108ee67914a1fba6cfea",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "24643eb588bae4e2666eb479de24064b11dd3ab0c993ab7d68bbe35bcf3eaf12",
+      "sha256": "63748250896eaf8698a7641d339732b5934bb88573a209ad9a058676325f93b9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "README.pt.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "53abda48e756d254cf782c0e2c0e5f5463e34c03cd5017fdb39de7770fc2e611",
+      "sha256": "fa3c4176954c4e5296074394e41c37b1266157ca9eef9c2d6e2b302f51f1a09a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/architecture/overview.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "08dfbe97ce55d3b097eb08f3ed3031ab5a391db1cbf11ec2a676879676b69964",
+      "sha256": "8a474bbb3cf88419915c94df7f7526f949be5a10ef89fa899a4e1a60223cb1dc",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/README.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "e8da714b2c858572cbad37495266ca759f1e8871d92612962a024a03328bcd0c",
+      "sha256": "dc0d6e7ceda8718517fcee860a883ec6fb70252ce46a1b529d553ad0d535566a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/main-protection.proposed.json",
+      "change": "added",
+      "group": "documentation",
+      "before_sha256": null,
+      "sha256": "f91ccee7709cbfe4be968e51bcfe96feba3d3f4691395eac1d6331282e671307",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "42cc53c05b87eaab3192e0b8d0c0940fc36b76ae4f01aad7d8ed132d507e0b67",
+      "sha256": "a50f5ce07c719fca84694f5eae2a8f9ea94114fec5452ac5981aea1a366f4ae1",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/transition.md",
+      "change": "added",
+      "group": "documentation",
+      "before_sha256": null,
+      "sha256": "b7092adddcb726fc782c435fba944e04de299fabf5d93bd949ba92e2a0e66b9c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/user-docs/guides/licensing.es.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "474af1e835bb81841e70ccc6c824207263a710188c08f9105e5ba1959b41361f",
+      "sha256": "6ae44b180bd11acfab283d810317d407237a0fd65be8a78295bd0af72e6c04b2",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/user-docs/guides/licensing.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "a930f81d430fd46261aff44916c0c9b1d94cacf68b2773fb91be14a48de093db",
+      "sha256": "65540689e601e84013b06e6eb00ca3cf8806ace4759375fa89ad389b4e5f679d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/user-docs/guides/licensing.pt.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "b9446778ba9d2be8003416057a32f5585b588d19561b9213ca3b94bc151df2d8",
+      "sha256": "530483b186be7098500547faf32e9f34bf0afc56266dc1396b6366d9da5acbaa",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.es.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "391b9242d7f7be911f4cd7952740a5e94ebe5e7841bfaa48047901b43858f03d",
+      "sha256": "8b87a8dc97c10ee2823922d905842a53f433fd354f41357ca952f44ca7c378eb",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "07f6b8feede572a6d98b345a35b9affefa0da03b8251f6d9f0d1131d78368da6",
+      "sha256": "6def255b0229a01a0ac4b972aa66c06f4ded28dfd8d9d81003e749f372c1c6e1",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.pt.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "69c345549375bec3b885abeb9f7cdb4811081eea7c202199b4987c79d1a138ea",
+      "sha256": "9040a95ec30714a5adbd1e79d40d5de1f9c6304ff22339ee13e70a31309e4a62",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "d545e140d405c06f3f5b84218833bcf6fb7614ee300cc38d8d3b0b7410f700af",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/design.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "12daf94c8db0b45f57a5a772f8c30ad5bf8f872dede664f44c06deaa62c41933",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/handoff.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "5b23569ee9050e4c05c97fd6a11fae935176c22cd5f81cd647b5ec1d0fcd7260",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/proposal.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "fde36e1a9ea157aa3567af4e817abe499972ea7462bced19d4c4ab57f4163db7",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/requirements.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "68e1bff9503cd342e8bf4d53e05cbc764105be718bdfecc7ca689b2161fef6d4",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/tasks.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "1f21ae23dcf1642ad791971bc67bbbe7a9c2b6a6a76fd17896220c4b6ce66dea",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "8fb3aaae5c22e05db45fbdbcd2f4c518d48f02d6484327c682c0996510778552",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/local-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2da1d4715b3e799020c7c78acf2bfb6a9e2e86a5e287dcd0154891bb119320e4",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "3ac4bd5ee11d1cdeb19ead437c954e50448ba187d851b803b991fe97790799ba",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/source-before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "65d01663797d6222e1bdc5ad0484c11a29311593ba96fbb0c6d6dee913149c38",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "f1bf1acef582e7518d5e75c50e7d4bfea3625a42372e3e7842c8d9fbe3abcf8d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "3fa59b1c745c1d0e8556dffe67f70b003b249e504c2dfcd6f8bf4037ff53c444",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "ccea45c3d4c5414f4f6611bae3856a47f5a7b1a55a50e18d0a10d81ae9ce66e2",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "1c0962853cf0aa98515d38206404def3cfbe59608bb00e6d8c0224d8ad364e1c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/before/design.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "1916276d36ef6367c88bce168a181cae70fcb79cd3e8f2f2310447ca763d0e81",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/before/handoff.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "273ef2c55cecfb46194bd5f12deee679d6313dc8c0572d05b50cb318cf8aeea9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/before/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c799f2fa08f9d551257e464bf5624c25e9c0827f6d66d36a32ba35fe4e4e7b7b",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/before/proposal.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "fed6fc1349a14de264a68b96df55eaaeb7db2c49e8c04d35d58ebc7445383c0c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/before/requirements.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/before/tasks.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "6154a1778f28438cf182151bbfabb7ba079a308214d1fcdfb7da19a6b47b867b",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/entry.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a20b5528f920606d614351a3fe5c720644c829e190de83c9994056f253e4e60a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "832f6d1bd65c7a1be449320e8d919b7f915e77063d3fc6787c23fe07a95ce259",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/local-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "3ff05041e3b96aa6b1e020d65c147082ac58f0b08947f16c79ad23b09b7b8706",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "36f1c76f0bf7e5410878eb1f0a99208a01d3fdb12041cef0153d506ab86c5f0f",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/source-before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c342b0287a6facf1713b9e02d32eea132ac1ad01b5f43c26b69d08a8f6966217",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "77763f3a3e253f58484825ec83b596e98be0a450bcdb64ac4d58ba4cecb225ab",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "aaf380a5d391e6d1404d3819b9303ca7ea7fdb16bbaca97774fdb71c8ec90550",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r3/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "13113aea19e2db2ef4facb31f2584604806d0de296179e08775e3c223f84617c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "e27f5e4791c391121d0318d5ab02474f47c5fe624ffdc78cb44e2e02d9b10553",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "cc0af85a663a52d5ffdb9948a7544a0dd0ada367ef98d406f24a2e85a228be8a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "76a6c5b8ec7f24be846fc8aa89b9c5608d18181b1ebffb1933a9b5aaf68e0692",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/local-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "8806a65efb19186f6bd5657827949b1b21e529216f99625b70db711bd99efb4f",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/planning-02.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "898e3dab87b3a3f6fa5f846fad4b745869c3e7d6e10500cc459888ef7b2d3a4e",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "df2b89da950239bbbe9d08b31f8c43bffd7ec3c55425f5f60322a7aaee617960",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/design.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2188f3d6bf3c315c8de43e97299431b58f25ea718c333821861ec2dece55b24a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/handoff.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "e8da714b2c858572cbad37495266ca759f1e8871d92612962a024a03328bcd0c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "5811e2c6e2df4621fb3b56a3492d0d538c10fd83082bde8dbf606e131db0e2fc",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/proposal.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "81af6e9df8ac9ac84cfd1c77e5988f9a5becdfec385465d8b8c401f74fbe11a7",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/requirements.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "6e23117d86a971d0283ad6eaa45eedb1b12b0e43c286a2d40e7e49291c3f3278",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/tasks.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "67c7875b0b4bafdc64455f9ee70b5c66754297ec7d077da63124d1a3a0c5f970",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "5fb6ec27b02e4e6ba3815c544634e49ab430c04a9cea37f900fe2b5451412da1",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "8aa5f0a0e255113691da8105d7d76da0fd1ac1363fff58c933963187878040bc",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "ddc1dfee0fafc201e857a0f99b0437857500e4b0d5ac84681b92f7e194ec5b8b",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a9db8456d4ac94c1eb7f7a33aa7acc46a2292522b448e30715dbd215d19ce54d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/codeowners.proposed.patch",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "947f2cdcd17620abad3fa982ee4134d6f632a1b7dad2d5d1be3e070f81d3a333",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/entry.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "f2f7af0dca03ba2e3d4054098f13f4dfe847e4ec35c6e798768133c5701fe165",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "d5b853744c30780f52ab6e0273f81e51b448929972a1385c7f86aede00048754",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/local-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c92e26550d56a82adac135f69a008b46dacf794213c928ba1afa728c498807b2",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/ownership-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "4e7cad04733f7238363225b748175151be94914f5ed1f150ef0336f3dfe0c25e",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "7a847ab855b42aedddba3fbd89f95c8d1b8b1980afb0e3881566acd9b07dd681",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/private-followup.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "1131b33f22299cf34467cc65785c90bd2c65cfcf4156df1c89b1482047a65d4d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/codeowners.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "cd1a70acd08400c27efb075e6f9fa1f3d123854dcfc911ebf5ee520860e59125",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/design.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "b8dd4a2480c117da8c52ec72c5e3df829fcbe7e03e9dbd803d7e1ff078c764be",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/handoff.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2c800e376b8e034df15f22ef2fddb337ec05089b3672ef4ce11edd041da40bbc",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2407b5b0e4248125be57e83ae82181a0ed5474f88415750dba2157a57bd1deaf",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/proposal.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c44c56b27d0a19c8d71192bd5dfb0d71ef91e6a4fc4ba4a3466ce97dfa63df56",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/requirements.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "68e1bff9503cd342e8bf4d53e05cbc764105be718bdfecc7ca689b2161fef6d4",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/review-inputs.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "365aecf8410e95bb76c981939dbbc77cd9ee254bc2700300d741d4b0f31fc550",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/tasks.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "17a29f690a93354005849056774d21b4395aa9579b24ad7862e79f22cdd2cb10",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/r2/validation.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "48f76f97e2c1fd29dfc3abdec189416467956db8cc965750e2a55acb77317e88",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/source-before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "fb928b5c23ee0906ef647b9c15e4310c8ca0e245f2ffb6e97d1ce5f6cf66c6ad",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c3a2a978baac17c4010e8f5a91843129ec290a91c99794cb1642caf515a6ac5a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "171e70100769f9d4e2f32a41bd305ca385ec7e44df960c16d8eb6dd609c62b0c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r3/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "504a20ced000596375f5046b3a0ebbb1822f003d7a6dfd5bf047b1f05c0424c2",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "996e0e1868f0d91d89c3076664a68d66f79e24dc37d12f9026a429f6d57742f4",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/before-handoff.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "9b1fc5e07498f376d2b9c9dbddfa228de2af6a820121424978aa59b572a73b72",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/before-review-inputs.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "42cc53c05b87eaab3192e0b8d0c0940fc36b76ae4f01aad7d8ed132d507e0b67",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/before-tasks.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "85ec3cae59ac917d89240f5c85ca43313a595b22c5395c2b44d6a9c063a38751",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/candidate-integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a6546a7d1c6e5aded6cda30f21797e84fb36774cfc4eb87a23141fe92d566dd2",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/candidate-postimages.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "8d35c62e284186c5f8c048dbfd39a31433c68a1086365c982ca1cc39cc5e1e5b",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-001.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "438c30464d5b7ec545d1c14272f7cb30e25deb446282891184f77e451af1474a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-002.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "5407ad1889d01e4d420b7d36e23f3c2d46d32745f586fe352f02aa6fa4db64fe",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-003.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "6541ff8cc50a41c492bc36e9c22a55452776eb53bbd3a2f2429f897e43aa1c19",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-004.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a0195fb366a8b4b2f3f92b1c31fc12cd35b240b7b3e003c7a407a8a7e06186dd",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-005.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "0fd87bf1ec52d86df10252c152c5af6f6a3bb4331b48a6d854bc0bb7b672b7dd",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-006.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "e1399d4938e5495c216a71679dcf55f2835b7ff21008a90df98ee3267cc4aedc",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-007.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "de674034f116ddd504120b4acbd5e25e3c50d6ad04c996bc7865487b24fd2693",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-008.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "933aaccc25642eec66102af8dc447169f4b155a96642b888b6244d5fdd98b98a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-009.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "5cd4e82ecf121c648f756d5e0d34c44f7dace3a4be44947092dca3e9f747e25f",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-010.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "882972f66e873402da345307c52c7f482d0c8a59e8dc4c5612da8667fafd63b0",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-inputs-after.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "f02062a21298457eb6f8139bfe0b4ef26a9b684b1dbf69afe68aa58f05c7febb",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/check-inputs-before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "f02062a21298457eb6f8139bfe0b4ef26a9b684b1dbf69afe68aa58f05c7febb",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/codeowners-option.patch",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "947f2cdcd17620abad3fa982ee4134d6f632a1b7dad2d5d1be3e070f81d3a333",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/coordinator-diagnostic.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "027f9848931a717b8fdb2d8d4cb51e19bdfea60f2a0b1d9c1f76ebb3cc83d509",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/entry-implementation.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "3ecb21678d4d408a7d3b72f387e3a6d46de7dda02f31eae3f9e9b050d668a628",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/entry-source.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "34d677cfaf507d494d056fc32c7f76afb8f548da2a4a32123ec34d08a006dbc6",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/entry.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "9fd5841c1d375f3a4d66dc3f331110c30b1a205826922d4ce08776aacd1583fa",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/final-implementation.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a5fc4606bd71e1892bca4f191b7b3310b1128c675af631cdaf43e93343186912",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/final-preservation.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a0e525bfe6d5dac4e755f6b24e80bab495a17af57aaf6f5d9e6be8e50f6f5c6a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "d5f75a2b1cef78291e8fed7bc8ecc8ffa34a4bd520d974c6a60ce863e31b8c8a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/links.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "42b8c399a005c35263866cd15f6bc57a89dd1165972935540109299dd871c642",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/participant-option.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "e94ee57868baa7330ab585eace1c4795458e9e8ed4c7a43d05eca475128485e9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/patch-check.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "fa350e6116437bad0a093c3918b8e58073bac77669dfa7d817005b8c117ed7bc",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/patch-mismatch.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "8e5021bf73c0aa640d63cbb221189aff5877ff6555d7caa0782746385835f1be",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/predecessor-integrity-corrected.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "f171562713adc9297393493d896b542efee385cdb2c24ef2e1cd605cdacd033d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/ref-reconciliation-normalized.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "0664a180768a84787fc9936036497d90f8426c3a9a8acf6cb6519cd200e266c3",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/ref-reconciliation.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "15b6aacb63585a10ddf214dc4829848448001918eb562e827cbb1b98ae7c645d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/remote-metadata.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "3ad34aaf0f1c0f19d7ec0c236fb562fa24a071ce25031930cbbfbd38777346c1",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/restricted-integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "ff77dc4f09c02c7da182b2be4c8fac781a3d44a4b19fec20b511bf01f4550226",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/rights-delta.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c4a2ab156d2d307c9eb7b365314ad5a7a5cd567ebb73923e8f464d752dc3195c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/rules-read-followup.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "1733c5ae51794fd61ea7afa3cdd28b8b07bbcd4b4e57095bd107e1c900f4a801",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/safe-output-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "3ff1dee067e5eb862062e8ae2f1e5147798a384d3b5471320e98e3e685f44e4f",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/semantic-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "6f66e4b4fc69dfd548780d38b95743794bec87ff55b9979718a82e51edf81cdb",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/suite-candidate.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "da9d0200ab880e67eae2c71cc148436f822bb413464161160d2ac345695c594e",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/suite-candidate.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "13d55caee6d63c0ff31ed0fa31a8f4a865af5b6450e590d5265100c91e12486c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/suite-candidate.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "f524d60689004121219098fb4c26f2adbe09952e8e353f7250daeb402e3478db",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/suite-preparation.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "7b75b5ee1e641053cf220375224a4a6e3c4687a0f42af25299a593e489bf4775",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/suite-preparation.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "6eef1ebb8a8015e793becabbaf58ea23ffaf49213823f1cb73b2232257bd1de8",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/suite-preparation.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a14bc52ff503a11df9444910e47f16ed7ccf7dc69688f4dc5ddfba40895204d6",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/walkthroughs.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "825a0ec691e42cae73aadded03e2a2f5d44a14ba491f9809d91f690023eb95d0",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/run-r2-01/within-boundary-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c0d1ffb1acc7629d9fb8c442d48be204fdce55e30ddaa1f179ed223474dc675e",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "059711890efea71c8d5887a49c7b651dc0097278b35037690487b8c217a0c420",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "4510841c8f2ca7d5a72cb8397fbde8585e6ad3c42e13cbc02b134b08ae1bfac9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "531a201acc97514dcde7494b4a2c234aa58bd5b4b320b25c1cbf1234470d3205",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "e5b583129e66b84d27f2d62427e252474269205eea81469217993bd4442d182a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "5edbfbf11ce5e4e3aead4d1fa57286d464f5c0ebf07b984a4bf3c3ee83cf6dd9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2759e22c96c8d33b0b2b46879e13326ee2f02a729c1171172c89f77581d0fece",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "4304b17baa76ab3d8bf0cb1840be672dceb28ee336f4cd1c00b6c163dd7e0e1d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/design.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "d9c684349634a59eb704bd92333c7a0e52298efbca5b17497107b5c64544d34f",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/handoff.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "1dc9e9ce6f1e8d27510669fd4e164943f4e999c623476b8e9344f51a6cd1c137",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/proposal.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c44c56b27d0a19c8d71192bd5dfb0d71ef91e6a4fc4ba4a3466ce97dfa63df56",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/requirements.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "68e1bff9503cd342e8bf4d53e05cbc764105be718bdfecc7ca689b2161fef6d4",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/tasks.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "1f21ae23dcf1642ad791971bc67bbbe7a9c2b6a6a76fd17896220c4b6ce66dea",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/validation-r1.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2ad3285cc539878f4781c61a3d4f3f52373afba3f5dfea2b9326cb2ea7a2c5d9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "7156b07996693f116f25250518558b11de3fb6ca8eac57d34facab970ba45797",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/local-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "0f52f031e2c46bdcadf9ca36c25f8678eb1c698d108a7c7737567b24cbb2286c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "720948546ae928d48633ee0c78dcab672cd728f6b75255ad66d15daaba99bf42",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/source-before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "9f7c8b5ebc121d1c4f7838174396c621490a749a44023f2470ad04a65e311a64",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "cb099dd38f1ed7c3ece316e5a109e2bd4ba0f25b4dea8f934c4c1ba964a55e35",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "8d115eb2e355f1ffeb063e6e867009922313db7e7594d9279554b260cd5fb0c3",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "d94cbe57c01c0fc74fa1d524664ff28523554f3578b50280a9dd32620ada7e82",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "6c9660290e0563ec53a1d526f99b0d311759fb1de1e7c8388305a3afc66103ac",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/before/design.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "fc0d863e566e0a29ebe4922119d76208f7c765845cdbf747176c9b604f253ce0",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/before/handoff.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "08c23fcfd09795937afd3deea746b64b5d457882fd6d03468b5c6d6b8d47c11f",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/before/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2d41ffdee65a7d09302470eed1e9689a95667bcb0ab9dc0764a4a0a13f9d5951",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/before/proposal.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a84344a3efb51f5319819020a18ec4662e5be377f1b975e756186c69c76718a9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/before/requirements.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/before/tasks.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "13ecebfda4c3d7f846efa8c9ae809d7bdd68ec69d7db05ef3a26f8d77f9dfb78",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/entry.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "b1ff4deb2cd387174264af65bfe808ecdd36693c42795a4ad3f90eb9b2b82fde",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "62a4107cea5d713196eb74a46d89e82a7b4f128c812c659948b9fdd15a7b7551",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/local-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "5828468f5ddf6c9be1b374d3581cae18b66ee92bf3c34800bbb29fb3b3ea745d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "531a201acc97514dcde7494b4a2c234aa58bd5b4b320b25c1cbf1234470d3205",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/source-before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "05f1daee1dc8388e1410f8264ec0c84f67ea84060999548580d6d4e82984f42c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "0a7482cb98341bd1d6758017fccb84a481b5073592b019e273a1a2455a7605bd",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "0c8cd22ba6617c663a11925d9dd3d398669f49485f8f15607a33f853f9528cc3",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3-approval/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "2759e22c96c8d33b0b2b46879e13326ee2f02a729c1171172c89f77581d0fece",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/README.md",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "13aca493406e0473ee30df3186402fda911999d58a45dd483ba6917f849908ea",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/before/design.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "9c4b073d4a011614c9e941de5e4b578095bca51f79303b8a00985156978fc29d",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/before/handoff.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "012c76b4ba2fff2058561bd8a8f85fddfcc21c17cb10b3fa16ff7e83c581c7e1",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/before/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "0a48edeadfc6664b465fdd4515a1d42897e117d1814d0a8c8a8a78fde14308c4",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/before/proposal.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "a84344a3efb51f5319819020a18ec4662e5be377f1b975e756186c69c76718a9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/before/requirements.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/before/tasks.md.txt",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "6154a1778f28438cf182151bbfabb7ba079a308214d1fcdfb7da19a6b47b867b",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/before/validation-r2.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "48f76f97e2c1fd29dfc3abdec189416467956db8cc965750e2a55acb77317e88",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/entry.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "33c09d88f4dea0b94c0a1231baa6cffc2ce945bf9a20d4d36c06c9a8ed7f576c",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/integrity.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "ba20497a6f81fff7ac826cabc05d99177234bb843466af200e829a982dc5d0fd",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/local-review.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "07b6f3fb3c47963c668e28c62be9b8e48fc784648fc6b67bc6e27deef2237329",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/packet-finalization.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "dea38b55dcc7bbad411f71149878a0fe15434c76f936061ed4e0998b6fd6e876",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/planning.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "720948546ae928d48633ee0c78dcab672cd728f6b75255ad66d15daaba99bf42",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/source-before.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "bfe74819162b60b4640c557f4bbe5fdd5f97a9101eb5056cb648a151df0c93e4",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/suite-result.json",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "c846db6c8bdd958114b0d00d5bc53248a7c2e9d1a5442eca152191c1483c6a53",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/suite.stderr",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "f3c3fd0edb520c66dd77bde5c1669e76d47b4455ccfde7af290916532a623c0a",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r3/suite.stdout",
+      "change": "added",
+      "group": "local-evidence",
+      "before_sha256": null,
+      "sha256": "d94cbe57c01c0fc74fa1d524664ff28523554f3578b50280a9dd32620ada7e82",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/design.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "2188f3d6bf3c315c8de43e97299431b58f25ea718c333821861ec2dece55b24a",
+      "sha256": "fc0d863e566e0a29ebe4922119d76208f7c765845cdbf747176c9b604f253ce0",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/proposal.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "81af6e9df8ac9ac84cfd1c77e5988f9a5becdfec385465d8b8c401f74fbe11a7",
+      "sha256": "a84344a3efb51f5319819020a18ec4662e5be377f1b975e756186c69c76718a9",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/requirements.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "6e23117d86a971d0283ad6eaa45eedb1b12b0e43c286a2d40e7e49291c3f3278",
+      "sha256": "ad4a26e864a9d1d90108c652baab82205c55b86f1b6dc6e8f5656bbcee9f1648",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/tasks.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "67c7875b0b4bafdc64455f9ee70b5c66754297ec7d077da63124d1a3a0c5f970",
+      "sha256": "240437bd928ddfe0329e294eb17f298c2fe1e8bf75f76f9b451077c852b2dc06",
+      "provenance": "Governed first-party preparation or retained diagnostic evidence; original third-party text retains its own terms. Final current-scope review required."
+    }
+  ],
+  "limit": "This run and later excluded task progress/ledger updates also need final exposure/rights reconciliation; not self-hashed or implicitly attested. No new library, binary or third-party dependency introduced.",
+  "owner_review": "Review only new/changed first-party scope and original third-party exceptions; no repeat attestation of unchanged D1/D2 scope."
+}

@@ -1,0 +1,52 @@
+{
+  "verified_at": "2026-11-16T16:53:58.832375+00:00",
+  "stage": "Tasks R2 awaiting Gate 3 approval",
+  "stage_digests": {
+    "proposal": "429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32",
+    "design": "83e45f9a4ffa40e570c864686f38654cc31e08b57c85a4b468a77b717f1f6ab1",
+    "tasks": "54f04e4b48d178c1afeb1e24ed464eb2376a51258252f890d7cdd3d34e62043d"
+  },
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "specs/changes/harness-publication-blockers/design.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_existing_files": 1669,
+  "proposal_requirements_bytes_unchanged": true,
+  "stable_task_ids": 10,
+  "task_statuses": {
+    "blocked": 9,
+    "pending": 1
+  },
+  "r2_execution_ledger": "empty planning arrays; no R2 execution",
+  "r1_ledger": {
+    "sha256": "2ad3285cc539878f4781c61a3d4f3f52373afba3f5dfea2b9326cb2ea7a2c5d9",
+    "preserved_results": 2,
+    "preserved_open_findings": 6,
+    "disposition": "not resolved; explicit carryover in Tasks R2"
+  },
+  "checks": 10,
+  "local_scenarios": 31,
+  "retained_obligations": 40,
+  "planning_findings": [
+    "APPROVAL_REQUIRED"
+  ],
+  "suite_tests": {
+    "validators": 131,
+    "execution": 48,
+    "result": "pass"
+  },
+  "aggregate_exit": 1,
+  "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "dependencies": {
+    "PyYAML": "6.0.2",
+    "jsonschema": "4.23.0"
+  },
+  "prior_frozen_packets": "verified unchanged",
+  "remote_mutations": 0,
+  "remote_workflows": 0,
+  "implementation_started": false,
+  "publication": false,
+  "local_links_checked": 43,
+  "whitespace": "pass including new untracked planning files"
+}

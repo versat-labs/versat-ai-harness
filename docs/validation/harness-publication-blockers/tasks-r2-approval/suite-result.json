@@ -1,0 +1,10 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh",
+  "exit_code": 0,
+  "stage_digests": {
+    "proposal": "429df9da1266826298721f474a9ba393e8b53cd45455d98c2fe73652a4b7ce32",
+    "design": "83e45f9a4ffa40e570c864686f38654cc31e08b57c85a4b468a77b717f1f6ab1",
+    "tasks": "54f04e4b48d178c1afeb1e24ed464eb2376a51258252f890d7cdd3d34e62043d"
+  },
+  "scope": "Local planning approval validation only; no task execution or GitHub operations."
+}

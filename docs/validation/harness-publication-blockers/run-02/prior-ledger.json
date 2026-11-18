@@ -1,0 +1,351 @@
+{
+  "validation": {
+    "plan_digest": "1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7",
+    "results": [
+      {
+        "check": "CHECK-001",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-001.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-002",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-002.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-003",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-003.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-004",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-004.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-005",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-005.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-006",
+        "result": "pass",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-006.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-007",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-007.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-008",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-008.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-009",
+        "result": "fail",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-009.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      },
+      {
+        "check": "CHECK-010",
+        "result": "unverified",
+        "evidence": "docs/validation/harness-publication-blockers/run-01/check-010.json",
+        "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus run-01 reviewed working-tree inputs",
+        "input_digest_before": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "input_digest_after": "ddf98e30597c94eb0bdaf010155327a9d0f7a162c7cce469c76f7ace5f3646f8",
+        "context": {
+          "execution": "local",
+          "environment": "Python 3.11.4; macOS 26.5.2 arm64; Codex desktop 26.915.31945/build 9922; current read-only GitHub observations; private rehearsal only",
+          "observed": true
+        }
+      }
+    ],
+    "assessments": [],
+    "findings": [
+      {
+        "id": "FIND-001",
+        "source": {
+          "plan": "HPB-001 evidence-access"
+        },
+        "category": "missing",
+        "state": "open",
+        "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+        "description": "Local originals match both historical hashes; queried remote assessment path returned 404; local records are untracked.",
+        "tasks": [
+          "TASK-001",
+          "TASK-002",
+          "TASK-003"
+        ],
+        "checks": [
+          "CHECK-001"
+        ]
+      },
+      {
+        "id": "FIND-002",
+        "source": {
+          "plan": "HPB-002 surface-review"
+        },
+        "category": "missing",
+        "state": "open",
+        "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+        "description": "Prior package/cache/attachment/integration gaps remain; no expanded raw collection executed.",
+        "tasks": [
+          "TASK-002",
+          "TASK-003"
+        ],
+        "checks": [
+          "CHECK-002"
+        ]
+      },
+      {
+        "id": "FIND-003",
+        "source": {
+          "plan": "HPB-003 confidentiality"
+        },
+        "category": "missing",
+        "state": "open",
+        "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+        "description": "Historical sensitivity concerns have no current accountable classification or verified treatment.",
+        "tasks": [
+          "TASK-003"
+        ],
+        "checks": [
+          "CHECK-002",
+          "CHECK-007"
+        ]
+      },
+      {
+        "id": "FIND-004",
+        "source": {
+          "plan": "HPB-004 rights"
+        },
+        "category": "missing",
+        "state": "open",
+        "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+        "description": "Sixteen approved texts, including seven dependency texts, and nine preimages match; current final-scope rights review remains open.",
+        "tasks": [
+          "TASK-004"
+        ],
+        "checks": [
+          "CHECK-003"
+        ]
+      },
+      {
+        "id": "FIND-005",
+        "source": {
+          "plan": "HPB-005 private-controls"
+        },
+        "category": "missing",
+        "state": "open",
+        "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+        "description": "Current main is unprotected; protection and ruleset reads return capability HTTP 403.",
+        "tasks": [
+          "TASK-005"
+        ],
+        "checks": [
+          "CHECK-004"
+        ]
+      },
+      {
+        "id": "FIND-006",
+        "source": {
+          "plan": "HPB-006 reporting"
+        },
+        "category": "missing",
+        "state": "open",
+        "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+        "description": "Private repository PVR read returns 404; actual public receipt/access remains unverified.",
+        "tasks": [
+          "TASK-006"
+        ],
+        "checks": [
+          "CHECK-005"
+        ]
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "description": "Reconcile current authority, source identity and restricted evidence access.",
+      "requirements": [
+        "REQ-001",
+        "REQ-009",
+        "REQ-010"
+      ],
+      "status": "blocked"
+    },
+    {
+      "id": "TASK-002",
+      "description": "Complete the exact exposure inventory and inaccessible-surface review.",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-009"
+      ],
+      "status": "blocked"
+    },
+    {
+      "id": "TASK-003",
+      "description": "Resolve confidentiality findings through verified, attributable treatment.",
+      "requirements": [
+        "REQ-003",
+        "REQ-009",
+        "REQ-010"
+      ],
+      "status": "blocked"
+    },
+    {
+      "id": "TASK-004",
+      "description": "Refresh rights evidence and verify the exact approved candidate and patch.",
+      "requirements": [
+        "REQ-004",
+        "REQ-008",
+        "REQ-009"
+      ],
+      "status": "blocked"
+    },
+    {
+      "id": "TASK-005",
+      "description": "Establish and verify effective controls while the repository remains private.",
+      "requirements": [
+        "REQ-005",
+        "REQ-007",
+        "REQ-010"
+      ],
+      "status": "blocked"
+    },
+    {
+      "id": "TASK-006",
+      "description": "Verify feasible reporting prerequisites and prepare public-audience verification.",
+      "requirements": [
+        "REQ-006",
+        "REQ-007",
+        "REQ-010"
+      ],
+      "status": "blocked"
+    },
+    {
+      "id": "TASK-007",
+      "description": "Prepare safe current guidance, the review-input manifest and operational handoff.",
+      "requirements": [
+        "REQ-001",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009"
+      ],
+      "status": "in-progress"
+    },
+    {
+      "id": "TASK-008",
+      "description": "Exercise the exact private candidate, client behavior and recovery.",
+      "requirements": [
+        "REQ-004",
+        "REQ-008",
+        "REQ-009"
+      ],
+      "status": "completed"
+    },
+    {
+      "id": "TASK-009",
+      "description": "Execute all required checks and assess every local and retained obligation.",
+      "requirements": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-003",
+        "REQ-004",
+        "REQ-005",
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010"
+      ],
+      "status": "blocked"
+    },
+    {
+      "id": "TASK-010",
+      "description": "Reconcile final blocker closure, acceptance evidence and delivery prerequisites.",
+      "requirements": [
+        "REQ-007",
+        "REQ-009",
+        "REQ-010"
+      ],
+      "status": "blocked"
+    }
+  ],
+  "scope": "Preserved run-01 records before new included handoff/input evidence changes; no old pass is rehashed."
+}

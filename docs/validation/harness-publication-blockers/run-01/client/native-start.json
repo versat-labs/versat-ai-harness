@@ -1,0 +1,8 @@
+{
+  "started_epoch": 1794680149.5331972,
+  "native_limit_seconds": 600,
+  "attempt": 1,
+  "method": "Native isolated-context scenario per docs/guides/skill-evaluations.md; no permission isolation claimed",
+  "model": "Inherited; exact model identifier unavailable",
+  "reasoning": "Inherited; exact setting unavailable"
+}

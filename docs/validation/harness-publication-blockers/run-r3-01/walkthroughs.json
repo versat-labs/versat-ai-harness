@@ -1,0 +1,153 @@
+{
+  "method": "Manual semantic comparison of approved R3 Design and implemented handoff; no simulated platform evidence.",
+  "cases": [
+    {
+      "case": "old-base-elvis-author",
+      "input": "Current main fallback remains Elvis-only",
+      "reviewed_required_response": "Head addition of Everton is not base eligibility; stop this integration arrangement.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "old-base-everton-author",
+      "input": "Everton actually authors and Elvis reviews",
+      "reviewed_required_response": "Eligible arrangement only if actual participation, substantive review and checks are confirmed.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "new-base-elvis-author",
+      "input": "Shared fallback effective; Elvis authors",
+      "reviewed_required_response": "Require Everton’s actual approval and all checks; no self-approval.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "new-base-everton-author",
+      "input": "Shared fallback effective; Everton authors",
+      "reviewed_required_response": "Require Elvis’s actual approval and all checks; no self-approval.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "external-author",
+      "input": "Another actual contributor authors",
+      "reviewed_required_response": "Either eligible named owner can supply the one approval; retain stronger existing constraints.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "missing-stale-blocking-review",
+      "input": "Missing approval, new commit or requested changes",
+      "reviewed_required_response": "Stop mergeability claim; renew eligible review with current passing checks.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "fixture-no-dossier",
+      "input": "Positive non-draft fixture lacks genuine affected archived dossier",
+      "reviewed_required_response": "Guard cannot pass; prepare genuine approved delivery evidence before test, no draft/bypass or fabricated approval.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "fixture-input-change",
+      "input": "Functional fixture B/C input changes",
+      "reviewed_required_response": "Refresh actual local evidence; preserve failed A and separate service outcome; no stale pass.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "elvis-unavailable",
+      "input": "Selected role but current Elvis participation absent",
+      "reviewed_required_response": "Retain individual gap and require actual handler/handover arrangement; no account substitution.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "everton-unavailable",
+      "input": "Selected role but current Everton participation absent",
+      "reviewed_required_response": "Retain individual gap; no inference from Elvis’s receipt/admin role.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "one-receipt",
+      "input": "Only one maintainer observed access/receipt",
+      "reviewed_required_response": "Other maintainer remains unverified; no automatic second marker.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "notification-missing-receipt-present",
+      "input": "Actual in-product receipt, no notification observed",
+      "reviewed_required_response": "Document supported monitoring arrangement without claiming the unobserved channel works.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "notification-and-receipt-missing",
+      "input": "No actual receipt evidence",
+      "reviewed_required_response": "Route remains unverified; retain fallback.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "handover-unacknowledged",
+      "input": "Handler unavailable without actual handover acknowledgement",
+      "reviewed_required_response": "Retain handover gap; separately scope continuation.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "wrong-audience",
+      "input": "Wrong repository/recipient or unauthorized viewer has access",
+      "reviewed_required_response": "Stop verification and preserve confidentiality/fallback; no public pass.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "missing-custody",
+      "input": "Local hashes/admin roles exist, durable records/reviewer acceptance missing",
+      "reviewed_required_response": "Keep FIND-001 and dependent acceptance open.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "new-surface-rights",
+      "input": "Unreviewed new source/package/history/CI output",
+      "reviewed_required_response": "Reconcile final delta and original scoped decisions; no broad waiver or deleted-cache recovery.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "missing-freeze",
+      "input": "Actors or coordinated writer freeze unconfirmed",
+      "reviewed_required_response": "Stop before visibility; empty queues are not agreement.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "stronger-rules",
+      "input": "Actual rules differ or are stronger",
+      "reviewed_required_response": "Preserve them and review exact delta; 403 is unknown, never empty configuration.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "timeout-drift",
+      "input": "No correct stable-SHA readback within 900 seconds",
+      "reviewed_required_response": "Stop rollout and retain freeze; owner-authorized containment only, no automatic private reversal or timer reset.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    },
+    {
+      "case": "all-observations-actually-succeed",
+      "input": "All prerequisites and separately authorized operations have actual adequate evidence",
+      "reviewed_required_response": "Only then consider separately authorized later release and independent migrations; walkthrough alone proves no service success.",
+      "procedure_alignment": "consistent",
+      "service_execution": false
+    }
+  ],
+  "private_preparation": "Partial, not ready; missing actual evidence remains blocking."
+}

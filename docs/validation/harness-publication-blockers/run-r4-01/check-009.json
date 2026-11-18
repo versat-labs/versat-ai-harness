@@ -1,0 +1,18 @@
+{
+  "check": "CHECK-009",
+  "result": "pass",
+  "scope": "Approved R4 private preparation; future service outcomes unexecuted",
+  "method": {
+    "kind": "automated",
+    "procedure": "Run PYTHONDONTWRITEBYTECODE=1 PYTHON=/private/tmp/hpb-replan-r2-venv/bin/python ./scripts/validate/run.sh once per distinct final tested package root in the verified pinned environment. Use the final disposable candidate for adoption rehearsal; repeat for another root only if material test-affecting differences make that result inapplicable. Preserve full Plugin/SDD results, stdout/stderr, exit and nonzero counts for both maintained suites. No skip/targeted substitute; later delivery uses the trusted-baseline archive guard."
+  },
+  "input_digest_before": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "input_digest_after": "13578655232591263c6875468174e147337aed355bb437c29c3aa93c77f5e1e0",
+  "observations": "Complete maintained suite passed on disposable final candidate: 131 SDD/validator tests and 48 provider tests, zero skipped/failed, package and SDD inventory passed. Input snapshot stable; expected legacy-history warnings retained. No duplicate identical-root suite or remote workflow.",
+  "evidence": [
+    "docs/validation/harness-publication-blockers/run-r4-01/suite-candidate.json",
+    "docs/validation/harness-publication-blockers/run-r4-01/suite-candidate.stdout",
+    "docs/validation/harness-publication-blockers/run-r4-01/suite-candidate.stderr"
+  ],
+  "suite_candidate_input": "61388c31a8869f1218cfa808a7207f6431c9c2d5425e2d850b99897fa6e3f3ef"
+}

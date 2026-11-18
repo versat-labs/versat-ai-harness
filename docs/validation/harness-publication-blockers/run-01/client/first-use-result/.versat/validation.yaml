@@ -1,0 +1,25 @@
+inputs:
+  exclude: []
+  include:
+  - src
+  - tests
+  - .versat/validation.yaml
+  - .versat/project.yaml
+  - .versat/standards.lock
+  - specs/product
+required_suites:
+- unit
+schema_version: 1
+suites:
+- argv:
+  - '{python}'
+  - -m
+  - unittest
+  - discover
+  - -s
+  - tests
+  cwd: .
+  id: unit
+  kind: tests
+  result: unittest
+  timeout_seconds: 30

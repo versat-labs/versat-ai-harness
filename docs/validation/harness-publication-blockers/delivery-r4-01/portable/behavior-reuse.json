@@ -1,0 +1,10 @@
+{
+  "matched_behavior_files": 143,
+  "runtime": {
+    "desktop": "26.915.31945",
+    "build": "9922",
+    "cli": "codex-cli 0.155.0-alpha.9.2"
+  },
+  "six_historical_cases": "Applicable original real private install/first-use and failure/update/recovery evidence retained; no reexecution or public access claim. New local application is exact previously tested candidate, current changes are status/docs only.",
+  "current_catalog_ref": "v0.4.0 not activated; no tag/release created, existing installations unchanged"
+}

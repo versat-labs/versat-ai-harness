@@ -1,0 +1,16 @@
+{
+  "digests": {
+    "proposal": "6c25ef18e914a1a72186f74bf9895dbfc2bae3d4f8ba8cd3afb8401288031a8b",
+    "design": "e50bbb215cb77a601aff92acf1db70fa3ae50e32dd518066b3960c3ca9522134",
+    "tasks": "b3a7b72e36f80ac97cc0ef15cf1c6c2962eb8703b82ded491a913024e1392cd2"
+  },
+  "proposal_requirements_bytes_unchanged": true,
+  "design_substantive_digest_unchanged": true,
+  "prior_ledger_preserved": true,
+  "prior_findings_preserved": 6,
+  "current_tasks_pending": 10,
+  "requirement_mappings_preserved": true,
+  "local_links": 18,
+  "new_task_wording": "evidence preservation",
+  "whitespace": "pass"
+}

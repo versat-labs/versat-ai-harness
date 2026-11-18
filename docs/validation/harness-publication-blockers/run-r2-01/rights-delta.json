@@ -1,0 +1,546 @@
+{
+  "baseline": "HPB-RIGHTS-02 revision 1 / HPB-DECISION-005",
+  "baseline_files": 1644,
+  "current_files_excluding_this_run": 1694,
+  "unchanged": 1628,
+  "changed_or_added": 66,
+  "deleted": [],
+  "groups": {
+    "documentation": 14,
+    "retained-local-evidence": 48,
+    "planning": 4
+  },
+  "files": [
+    {
+      "path": "README.es.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "465b589afefc1bcb88fe1a0843b05002e7ddd39270b390a0fdacc88d17fbbb05",
+      "sha256": "170d839aa11f3e3e9c9eaf0ba5805b755c2d4f3850f739aa626880a73ad980c8",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "24643eb588bae4e2666eb479de24064b11dd3ab0c993ab7d68bbe35bcf3eaf12",
+      "sha256": "0113e3b0570e2e283918441d824420e5cafa91e34121e8f2a963a03c89bd347f",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "README.pt.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "53abda48e756d254cf782c0e2c0e5f5463e34c03cd5017fdb39de7770fc2e611",
+      "sha256": "191694d95a19dce0340cd4a8547d111916f83e54ecf779bff4af0447f617283d",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/architecture/overview.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "08dfbe97ce55d3b097eb08f3ed3031ab5a391db1cbf11ec2a676879676b69964",
+      "sha256": "8a474bbb3cf88419915c94df7f7526f949be5a10ef89fa899a4e1a60223cb1dc",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/README.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "e8da714b2c858572cbad37495266ca759f1e8871d92612962a024a03328bcd0c",
+      "sha256": "2c800e376b8e034df15f22ef2fddb337ec05089b3672ef4ce11edd041da40bbc",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/main-protection.proposed.json",
+      "change": "added",
+      "group": "documentation",
+      "before_sha256": null,
+      "sha256": "f91ccee7709cbfe4be968e51bcfe96feba3d3f4691395eac1d6331282e671307",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "42cc53c05b87eaab3192e0b8d0c0940fc36b76ae4f01aad7d8ed132d507e0b67",
+      "sha256": "365aecf8410e95bb76c981939dbbc77cd9ee254bc2700300d741d4b0f31fc550",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/handoffs/harness-publication-blockers/transition.md",
+      "change": "added",
+      "group": "documentation",
+      "before_sha256": null,
+      "sha256": "1ed546082df45e22ed161a81546f1fb96f2b8ed5ea7a3b52141d1f2387556dea",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/user-docs/guides/licensing.es.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "474af1e835bb81841e70ccc6c824207263a710188c08f9105e5ba1959b41361f",
+      "sha256": "6ae44b180bd11acfab283d810317d407237a0fd65be8a78295bd0af72e6c04b2",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/user-docs/guides/licensing.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "a930f81d430fd46261aff44916c0c9b1d94cacf68b2773fb91be14a48de093db",
+      "sha256": "65540689e601e84013b06e6eb00ca3cf8806ace4759375fa89ad389b4e5f679d",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/user-docs/guides/licensing.pt.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "b9446778ba9d2be8003416057a32f5585b588d19561b9213ca3b94bc151df2d8",
+      "sha256": "530483b186be7098500547faf32e9f34bf0afc56266dc1396b6366d9da5acbaa",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.es.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "391b9242d7f7be911f4cd7952740a5e94ebe5e7841bfaa48047901b43858f03d",
+      "sha256": "c68a58c2b37b6be136eb1d22f6ae69579e50b69eed0545dd3bb36eaf95a7909c",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "07f6b8feede572a6d98b345a35b9affefa0da03b8251f6d9f0d1131d78368da6",
+      "sha256": "806e1ef83fe222795c2554839fae00393479fa1cba7bd66c06173837f7633035",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/user-docs/guides/security-reporting.pt.md",
+      "change": "modified",
+      "group": "documentation",
+      "before_sha256": "69c345549375bec3b885abeb9f7cdb4811081eea7c202199b4987c79d1a138ea",
+      "sha256": "1a870833783434ea42f9312dce3c3bde0153c5ab46c4cc8861e19581f0d27a9d",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/README.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "d545e140d405c06f3f5b84218833bcf6fb7614ee300cc38d8d3b0b7410f700af",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/design.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "12daf94c8db0b45f57a5a772f8c30ad5bf8f872dede664f44c06deaa62c41933",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/handoff.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "5b23569ee9050e4c05c97fd6a11fae935176c22cd5f81cd647b5ec1d0fcd7260",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/proposal.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "fde36e1a9ea157aa3567af4e817abe499972ea7462bced19d4c4ab57f4163db7",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/requirements.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "68e1bff9503cd342e8bf4d53e05cbc764105be718bdfecc7ca689b2161fef6d4",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/before/tasks.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "1f21ae23dcf1642ad791971bc67bbbe7a9c2b6a6a76fd17896220c4b6ce66dea",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/integrity.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "8fb3aaae5c22e05db45fbdbcd2f4c518d48f02d6484327c682c0996510778552",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/local-review.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "2da1d4715b3e799020c7c78acf2bfb6a9e2e86a5e287dcd0154891bb119320e4",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/planning.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "3ac4bd5ee11d1cdeb19ead437c954e50448ba187d851b803b991fe97790799ba",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/source-before.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "65d01663797d6222e1bdc5ad0484c11a29311593ba96fbb0c6d6dee913149c38",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/suite-result.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "f1bf1acef582e7518d5e75c50e7d4bfea3625a42372e3e7842c8d9fbe3abcf8d",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/suite.stderr",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "3fa59b1c745c1d0e8556dffe67f70b003b249e504c2dfcd6f8bf4037ff53c444",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/design-r2/suite.stdout",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "ccea45c3d4c5414f4f6611bae3856a47f5a7b1a55a50e18d0a10d81ae9ce66e2",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/README.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "e27f5e4791c391121d0318d5ab02474f47c5fe624ffdc78cb44e2e02d9b10553",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/before.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "cc0af85a663a52d5ffdb9948a7544a0dd0ada367ef98d406f24a2e85a228be8a",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/integrity.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "76a6c5b8ec7f24be846fc8aa89b9c5608d18181b1ebffb1933a9b5aaf68e0692",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/local-review.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "8806a65efb19186f6bd5657827949b1b21e529216f99625b70db711bd99efb4f",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/planning-02.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "898e3dab87b3a3f6fa5f846fad4b745869c3e7d6e10500cc459888ef7b2d3a4e",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/planning.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "df2b89da950239bbbe9d08b31f8c43bffd7ec3c55425f5f60322a7aaee617960",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/design.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "2188f3d6bf3c315c8de43e97299431b58f25ea718c333821861ec2dece55b24a",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/handoff.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "e8da714b2c858572cbad37495266ca759f1e8871d92612962a024a03328bcd0c",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/integrity.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "5811e2c6e2df4621fb3b56a3492d0d538c10fd83082bde8dbf606e131db0e2fc",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/proposal.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "81af6e9df8ac9ac84cfd1c77e5988f9a5becdfec385465d8b8c401f74fbe11a7",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/requirements.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "6e23117d86a971d0283ad6eaa45eedb1b12b0e43c286a2d40e7e49291c3f3278",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/r1/tasks.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "67c7875b0b4bafdc64455f9ee70b5c66754297ec7d077da63124d1a3a0c5f970",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/suite-result.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "5fb6ec27b02e4e6ba3815c544634e49ab430c04a9cea37f900fe2b5451412da1",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/suite.stderr",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "8aa5f0a0e255113691da8105d7d76da0fd1ac1363fff58c933963187878040bc",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/replan-r2/suite.stdout",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "ddc1dfee0fafc201e857a0f99b0437857500e4b0d5ac84681b92f7e194ec5b8b",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/README.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "059711890efea71c8d5887a49c7b651dc0097278b35037690487b8c217a0c420",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/integrity.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "4510841c8f2ca7d5a72cb8397fbde8585e6ad3c42e13cbc02b134b08ae1bfac9",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/planning.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "531a201acc97514dcde7494b4a2c234aa58bd5b4b320b25c1cbf1234470d3205",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/suite-result.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "e5b583129e66b84d27f2d62427e252474269205eea81469217993bd4442d182a",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/suite.stderr",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "5edbfbf11ce5e4e3aead4d1fa57286d464f5c0ebf07b984a4bf3c3ee83cf6dd9",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2-approval/suite.stdout",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "2759e22c96c8d33b0b2b46879e13326ee2f02a729c1171172c89f77581d0fece",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/README.md",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "4304b17baa76ab3d8bf0cb1840be672dceb28ee336f4cd1c00b6c163dd7e0e1d",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/design.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "d9c684349634a59eb704bd92333c7a0e52298efbca5b17497107b5c64544d34f",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/handoff.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "1dc9e9ce6f1e8d27510669fd4e164943f4e999c623476b8e9344f51a6cd1c137",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/proposal.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "c44c56b27d0a19c8d71192bd5dfb0d71ef91e6a4fc4ba4a3466ce97dfa63df56",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/requirements.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "68e1bff9503cd342e8bf4d53e05cbc764105be718bdfecc7ca689b2161fef6d4",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/tasks.md.txt",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "1f21ae23dcf1642ad791971bc67bbbe7a9c2b6a6a76fd17896220c4b6ce66dea",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/before/validation-r1.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "2ad3285cc539878f4781c61a3d4f3f52373afba3f5dfea2b9326cb2ea7a2c5d9",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/integrity.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "7156b07996693f116f25250518558b11de3fb6ca8eac57d34facab970ba45797",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/local-review.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "0f52f031e2c46bdcadf9ca36c25f8678eb1c698d108a7c7737567b24cbb2286c",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/planning.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "720948546ae928d48633ee0c78dcab672cd728f6b75255ad66d15daaba99bf42",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/source-before.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "9f7c8b5ebc121d1c4f7838174396c621490a749a44023f2470ad04a65e311a64",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/suite-result.json",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "cb099dd38f1ed7c3ece316e5a109e2bd4ba0f25b4dea8f934c4c1ba964a55e35",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/suite.stderr",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "8d115eb2e355f1ffeb063e6e867009922313db7e7594d9279554b260cd5fb0c3",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "docs/validation/harness-publication-blockers/tasks-r2/suite.stdout",
+      "change": "added",
+      "group": "retained-local-evidence",
+      "before_sha256": null,
+      "sha256": "d94cbe57c01c0fc74fa1d524664ff28523554f3578b50280a9dd32620ada7e82",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/design.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "2188f3d6bf3c315c8de43e97299431b58f25ea718c333821861ec2dece55b24a",
+      "sha256": "b8dd4a2480c117da8c52ec72c5e3df829fcbe7e03e9dbd803d7e1ff078c764be",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/proposal.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "81af6e9df8ac9ac84cfd1c77e5988f9a5becdfec385465d8b8c401f74fbe11a7",
+      "sha256": "c44c56b27d0a19c8d71192bd5dfb0d71ef91e6a4fc4ba4a3466ce97dfa63df56",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/requirements.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "6e23117d86a971d0283ad6eaa45eedb1b12b0e43c286a2d40e7e49291c3f3278",
+      "sha256": "68e1bff9503cd342e8bf4d53e05cbc764105be718bdfecc7ca689b2161fef6d4",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    },
+    {
+      "path": "specs/changes/harness-publication-blockers/tasks.md",
+      "change": "modified",
+      "group": "planning",
+      "before_sha256": "67c7875b0b4bafdc64455f9ee70b5c66754297ec7d077da63124d1a3a0c5f970",
+      "sha256": "17a29f690a93354005849056774d21b4395aa9579b24ad7862e79f22cdd2cb10",
+      "provenance": "R2 governed planning/documentation or retained local diagnostic output; final current-scope review required. No dependency or legal-text substitution inferred."
+    }
+  ],
+  "current_run_limit": "This run contains new source hashes, scrubbed diagnostics and preserved before copies; excluded from its own inventory to avoid recursion. It is additional prospective package evidence requiring final review, not automatically covered by D1/D2.",
+  "decision": "Reuse D1/D2 for unchanged first-party portions. Review only the listed delta and this run; no new third-party terms, dependencies, images or binaries intentionally added.",
+  "snapshot_note": "Current source file hashes refreshed after final R2 progress/results bookkeeping; this remains an unverified scope review, not a rewritten executed pass."
+}

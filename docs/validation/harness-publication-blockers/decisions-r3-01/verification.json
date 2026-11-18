@@ -1,0 +1,28 @@
+{
+  "restricted_copy_saved_and_verified": true,
+  "original_packet_preserved": true,
+  "appended_decisions_verified": true,
+  "specific_decisions_resolved": [
+    "R3-E1",
+    "R3-E2"
+  ],
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "docs/handoffs/harness-publication-blockers/review-inputs.json",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_reviewed_source_files": 1871,
+  "approved_stage_digests_unchanged": true,
+  "tests_passed": 179,
+  "suite_exit": 1,
+  "delivery_exit": 1,
+  "delivery_codes": {
+    "TASK_INCOMPLETE": 10,
+    "VALIDATION_FAILED": 1,
+    "VALIDATION_MISSING": 9,
+    "INPUT_STALE": 10,
+    "ASSESSMENT_MISSING": 71,
+    "ACCEPTANCE_GAP": 6
+  },
+  "commit_push_github_workflows_publication": false
+}

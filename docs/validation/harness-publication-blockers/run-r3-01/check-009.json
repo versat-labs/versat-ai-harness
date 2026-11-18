@@ -1,0 +1,15 @@
+{
+  "check": "CHECK-009",
+  "result": "fail",
+  "recorded_at": "2026-11-16T18:16:18.217179+00:00",
+  "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "method": "Partial approved R3 private verification: actual local inspection, restricted hashes, bounded metadata and complete maintained suites; missing human/client/service outcomes remain explicit. Within-boundary evidence rechecks follow the before snapshot.",
+  "explanation": "Both preparation and disposable candidate executed all 131 validator and 48 execution tests successfully. Both aggregate commands exited 1 because six real acceptance findings remain open. No test/validator/status weakened; no green delivery gate claimed.",
+  "supporting_evidence": [
+    "suite-preparation.json",
+    "suite-candidate.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

@@ -4,7 +4,7 @@
 
 Fonte de verdade da Versat para desenvolvimento assistido por IA: um Plugin portátil com Standards, Spec Driven Development (SDD), Skills reutilizáveis, templates compostos e validação determinística.
 
-Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores externos quando acesso e termos aplicáveis estiverem disponíveis. Mantido pela Versat; os contatos de revisão dos componentes governados são @elviszoz e @evertonspohrversat em .github/CODEOWNERS.
+Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores externos quando acesso e termos aplicáveis estiverem disponíveis. Mantido pela Versat; os CODEOWNERS gerais e responsáveis pela triagem de segurança são @elviszoz e @evertonspohrversat, com coordenação de Elvis. A política exige uma aprovação elegível de quem não abriu a PR. A elegibilidade segue o CODEOWNERS da branch base; esta preparação local não ativa controles no GitHub nem comprova entrega de relatos de segurança. Veja o [handoff atual](docs/handoffs/harness-publication-blockers/README.md).
 
 ## Comece aqui
 
@@ -22,11 +22,13 @@ Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores extern
 
 ## Preparação da publicação em andamento
 
-A direção pública Apache-2.0 foi aprovada. O [candidato concreto](docs/licensing/candidates/apache-2.0/APPROVAL.md) tem aprovação do texto e não foi adotado. O repositório continua privado; 0.4.0 é um candidato futuro, não uma versão disponível. Veja [licenciamento](docs/user-docs/guides/licensing.pt.md), [contribuição](docs/user-docs/guides/contributing.pt.md), [reporte de segurança](docs/user-docs/guides/security-reporting.pt.md) e o [estado da preparação](docs/handoffs/harness-publication-readiness/README.md).
+A licença Apache-2.0 e os avisos aprovados estão aplicados nesta branch local de entrega. A integração na main e a distribuição pública continuam pendentes; 0.4.0 não é uma release disponível. A [aprovação do texto](docs/licensing/candidates/apache-2.0/APPROVAL.md) permanece como revisão histórica inalterada. Veja [licenciamento](docs/user-docs/guides/licensing.pt.md), [contribuição](docs/user-docs/guides/contributing.pt.md), [reporte de segurança](docs/user-docs/guides/security-reporting.pt.md) e a [resolução atual das pendências](docs/handoffs/harness-publication-blockers/README.md).
+
+A sequência aprovada no GitHub Free mantém a preparação e a revisão privadas; depois exige autorização separada para tornar o repositório público e proteger/verificar a main imediatamente, em até 15 minutos. As verificações reais dos controles, do reporte e do uso externo precedem qualquer release posterior. A sequência está preparada, não executada; veja o [handoff operacional atual](docs/handoffs/harness-publication-blockers/README.md).
 
 ## Estado atual e adoção
 
-VERSION declara 0.3.0. O marketplace seleciona a tag exata v0.3.0; verifique a tag e seu conteúdo antes da distribuição. Execução de consumidores e avaliações supervisionadas da fonte atual são explicitamente não lançadas. Mudar a fonte ou fazer merge não atualiza Plugins instalados nem pins de consumidores. Adote outra release exata por uma mudança revisada.
+VERSION e manifests agora declaram o candidato local 0.4.0. Seu catálogo no repositório seleciona v0.4.0, que não deve ser importada como release disponível antes de essa tag exata ser criada e verificada sob autorização separada. Instalações existentes e pins de consumidores permanecem iguais; a referência anteriormente lançada é v0.3.0.
 
 Administradores gerenciam importação do marketplace e política de instalação. Use este repositório como fonte, autentique com acesso de leitura, revise a release exata importada e confirme disponibilidade aos membros. Siga a interface atual de administração; a política do marketplace é AVAILABLE e não comprova instalação automática. Os membros podem usar [a preparação do ambiente](docs/user-docs/guides/workspace-setup.pt.md).
 

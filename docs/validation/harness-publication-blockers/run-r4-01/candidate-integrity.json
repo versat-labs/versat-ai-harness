@@ -1,0 +1,35 @@
+{
+  "texts": {
+    "docs/licensing/candidates/apache-2.0/LICENSE.txt": true,
+    "docs/licensing/candidates/apache-2.0/NOTICE.txt": true,
+    "docs/licensing/candidates/apache-2.0/THIRD-PARTY-NOTICES.md": true,
+    "docs/licensing/candidates/apache-2.0/SCOPE.md": true,
+    "docs/licensing/candidates/apache-2.0/README.md": true,
+    "docs/licensing/candidates/apache-2.0/scope-files.csv": true,
+    "docs/user-docs/guides/contributing.md": true,
+    "docs/user-docs/guides/contributing.pt.md": true,
+    "docs/user-docs/guides/contributing.es.md": true,
+    "docs/licensing/technical-review/dependency-license-texts/PyYAML-6.0.2-LICENSE.txt": true,
+    "docs/licensing/technical-review/dependency-license-texts/attrs-26.1.0-LICENSE.txt": true,
+    "docs/licensing/technical-review/dependency-license-texts/jsonschema-4.23.0-COPYING.txt": true,
+    "docs/licensing/technical-review/dependency-license-texts/jsonschema-specifications-2025.9.1-COPYING.txt": true,
+    "docs/licensing/technical-review/dependency-license-texts/referencing-0.37.0-COPYING.txt": true,
+    "docs/licensing/technical-review/dependency-license-texts/rpds-py-2026.9.1-LICENSE.txt": true,
+    "docs/licensing/technical-review/dependency-license-texts/typing_extensions-4.16.0-LICENSE.txt": true
+  },
+  "preimages": {
+    "VERSION": true,
+    "plugin.json": true,
+    ".codex-plugin/plugin.json": true,
+    ".agents/plugins/marketplace.json": true,
+    "project-templates/base/.versat/standards.lock": true,
+    "CHANGELOG.md": true,
+    "LICENSE": true,
+    "NOTICE": true,
+    "THIRD-PARTY-NOTICES.md": true
+  },
+  "patch_sha256": "24dd504d47fc83d5530110d22651576bb12582447ad7e569efceacef684d80b6",
+  "effective_adoption": false,
+  "canonical_version": "0.3.0",
+  "rights": "D1/D2 and R3-E1 reused for exactly bound earlier material; R4 delta is approved first-party planning/procedure and technical evidence generated under the same direction, without new product code, dependency or legal wording. Third-party terms remain unchanged. No blanket rights over unseen material inferred."
+}

@@ -1,0 +1,195 @@
+{
+  "record": "HPB-PRIVATE-01",
+  "revision": 1,
+  "observed_at": "2026-11-14T18:32:14.850761+00:00",
+  "authority_quote": "Sim, autorizo o inventário restrito no escopo do handoff, sem ampliar permissões, apagar histórico ou publicar. Prossiga.",
+  "assessment_sha256": "af8a09698bf974130bedb5887397501e55cc441f17d8a391190a217d6f4832b2",
+  "integrity_sha256": "7ceb4f25bb7776bdf4269c78154da1ec82151292bc7052180ec883f8ed654046",
+  "local_integrity": {
+    "verified_bound_files": 320,
+    "old_manifest_entries_unchanged": 96,
+    "exact_preserved_copies": 97,
+    "owner_readable": true,
+    "group_other_access": false
+  },
+  "counts": {
+    "tree_files": 1616,
+    "remote_blobs": 1244,
+    "local_blobs": 1246,
+    "pr_refs": 19,
+    "unavailable_pr_refs": 0,
+    "logs": 58,
+    "log_entries": 115,
+    "unavailable_logs": 0,
+    "artifacts": 0,
+    "pr_review_queries": 19,
+    "unavailable_review_queries": 0
+  },
+  "body_fields": 56,
+  "link_occurrences": 42,
+  "external_boundary_occurrences": 2,
+  "review_queue_entries": 82,
+  "reference_reconciliation": {
+    "all_match": true,
+    "branches_stable": true,
+    "tags_stable": true
+  },
+  "categories": [
+    {
+      "category": "working-tree",
+      "state": "observed-inventoried",
+      "observation": "1616 listed file records; hashes and literal indicators retained. Current local additions included; final source may change after this snapshot.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "reachable-history-and-deleted-content",
+      "state": "observed-inventoried",
+      "observation": "1244 remote and 1246 local reachable blobs read; deleted-path history retained. Local-only unpublished refs distinguished. Human sensitivity review outstanding.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "branches-tags",
+      "state": "observed-inventoried",
+      "observation": "1 branches, 2 tags and 19 PR heads reconciled against forensic copy. Beginning/end branch and tag observations retained.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "releases-assets",
+      "state": "observed-absent",
+      "observation": "0 releases in successful paginated listing. Absence applies to current listing, not inaccessible deleted assets.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "lfs",
+      "state": "observed-absent",
+      "observation": "No LFS pointers in the inspected remote/local reachable sets; no binary blobs. Unseen refs or external payloads are not covered.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "fixtures-sdd-validation",
+      "state": "observed-inventoried",
+      "observation": "Included in current file and reachable history inventories; authentic approvals/evidence preserved. Confidentiality disposition remains pending.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "issues-prs-comments-reviews",
+      "state": "observed-inventoried",
+      "observation": "33 issue/PR records; 19 pull requests; 2 issue comments; 0 inline and 0 commit comments; 19 paginated submitted-review queries. Full acquired bodies retained privately.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "attachments-other-external-links",
+      "state": "incomplete",
+      "observation": "56 body fields and 42 link occurrences inspected; 2 boundary/potential-payload occurrences require scoped custodian review. No external integration crossed.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "wiki-discussions-pages",
+      "state": "observed-absent",
+      "observation": "Current feature flags all disabled; Pages read 404 is interpreted only with those flags. No claim over inaccessible former/deleted service content.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "packages",
+      "state": "inaccessible",
+      "observation": "Repository-scoped GraphQL query returned INSUFFICIENT_SCOPES. No package absence or payload clearance inferred; no organization-wide enumeration or scope expansion.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "ci-logs",
+      "state": "observed-inventoried",
+      "observation": "58 run archives and 115 entries acquired/read; 0 unavailable. Literal scan is not human semantic clearance.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "ci-artifacts",
+      "state": "observed-absent",
+      "observation": "0 artifacts in successful paginated listing. Expired/deleted unavailable payloads are not claimed reviewed.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "ci-caches",
+      "state": "inaccessible",
+      "observation": "2 caches listed. Publicly documented REST inventory/management API exposes no inspected payload download route; no workflow execution, extraction workaround or deletion used.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "metadata-integrations",
+      "state": "incomplete",
+      "observation": "Repository/actions/fork settings read; 0 hooks, 0 deployments and 0 environments listed. External integration payloads remain a boundary; absence of hooks does not prove absence of every integration.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "effective-controls",
+      "state": "inaccessible",
+      "observation": "Private main remains unprotected; protection/ruleset APIs return capability errors. Source configuration is not enforcement.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    },
+    {
+      "category": "public-harness-reporting",
+      "state": "inaccessible",
+      "observation": "Private-state PVR unavailable; no route activation, marker, receipt or unauthorized-viewer test. Public-only verification remains separate.",
+      "owner": "@elviszoz",
+      "evidence_revision": "inventory-01",
+      "actual_review": "technical inventory only",
+      "publication_clearance": false
+    }
+  ],
+  "raw_payloads_exported": false,
+  "private_urls_exported": false,
+  "actual_human_review": false,
+  "remote_durability": "unverified; no remote writes performed",
+  "disposition": "defer",
+  "limits": [
+    "Package scopes unavailable; no permissions expansion.",
+    "Cache payload access not established; no unsupported extraction.",
+    "External integration references retained privately, not followed.",
+    "Actual human rights/confidentiality disposition and effective private protection still required.",
+    "Current source changes after collection invalidate affected coverage; no invisible clearance transfer."
+  ]
+}

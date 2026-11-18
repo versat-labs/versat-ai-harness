@@ -1,0 +1,35 @@
+{
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "specs/changes/harness-publication-blockers/design.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_existing_files": 1774,
+  "proposal_requirements_bytes_unchanged": true,
+  "approved_design_digest_unchanged": true,
+  "tasks_digest": "5ebb91afe229a13640102893d52743b550b1510fd325141ea88d2bd2b2963114",
+  "stable_tasks": 10,
+  "unchecked": 10,
+  "blocked_completion": 9,
+  "pending": 1,
+  "required_checks": 10,
+  "local_positions": 31,
+  "retained_obligations": 40,
+  "r2_ledger_preserved": true,
+  "six_real_findings_carried": true,
+  "prior_frozen_evidence_preserved": true,
+  "codeowners_not_applied": true,
+  "links_checked": 58,
+  "broken_links": [],
+  "semantic_review": [
+    "One-line fallback only; all 12 specific assignments preserved.",
+    "Current base determines reviewer eligibility; no nominal author swap.",
+    "One eligible non-author approval; no self-approval or second required approval.",
+    "Shared triage needs individual operational evidence and handler/handover.",
+    "Genuine future fixture dossiers and three bounded PRs remain separately authorized follow-up.",
+    "R2 Free timing, exact protection body, 900-second readback and stop behavior unchanged."
+  ],
+  "github_operations": 0,
+  "implementation": false,
+  "publication": false
+}

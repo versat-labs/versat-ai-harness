@@ -1,0 +1,134 @@
+{
+  "plan_digest": "1aeb424124652464b6bf115fd7900f068e8e9c0af7eba0d95035e8229616dfa7",
+  "results": [
+    {
+      "check": "CHECK-002",
+      "result": "unverified",
+      "evidence": "docs/validation/harness-publication-blockers/run-04/check-002.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus handoff revision 3 and owner decision evidence",
+      "input_digest_before": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+      "input_digest_after": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+      "context": {
+        "execution": "local",
+        "environment": "Pinned Python validation environment; bounded local evidence review and actual read-only cache GET; no GitHub workflow execution",
+        "observed": true
+      }
+    },
+    {
+      "check": "CHECK-009",
+      "result": "fail",
+      "evidence": "docs/validation/harness-publication-blockers/run-04/check-009.json",
+      "revision": "4a56181d3597c5d345a7639f013547e1700420cb plus handoff revision 3 and owner decision evidence",
+      "input_digest_before": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+      "input_digest_after": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+      "context": {
+        "execution": "local",
+        "environment": "Pinned Python validation environment; bounded local evidence review and actual read-only cache GET; no GitHub workflow execution",
+        "observed": true
+      }
+    }
+  ],
+  "assessments": [],
+  "findings": [
+    {
+      "id": "FIND-001",
+      "source": {
+        "plan": "HPB-001 evidence-access"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Original inventory and predecessor evidence remain intact locally. Scoped owner decisions and video review are now recorded; durable remote custody and final-scope reviewer access/acceptance remain unverified.",
+      "tasks": [
+        "TASK-001",
+        "TASK-002",
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-001"
+      ]
+    },
+    {
+      "id": "FIND-002",
+      "source": {
+        "plan": "HPB-002 surface-review"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Original inventory preserved. Owner supplied an empty repository Packages view and reviewed both identified videos. Owner reports removing the two caches; a successful paginated GET now returns zero entries. Cache contents were never inspected. Complete package coverage, final source/ref reconciliation and remaining category acceptance are still pending.",
+      "tasks": [
+        "TASK-002",
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002"
+      ]
+    },
+    {
+      "id": "FIND-003",
+      "source": {
+        "plan": "HPB-003 confidentiality"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "All four owner-classification questions from the seven deduplicated values have attributable decisions; three technical fixture/false-positive groups remain documented. Final exposure reconciliation and complete requirement assessment remain pending; no disclosure waiver or broad rights clearance inferred.",
+      "tasks": [
+        "TASK-003"
+      ],
+      "checks": [
+        "CHECK-002",
+        "CHECK-007"
+      ]
+    },
+    {
+      "id": "FIND-004",
+      "source": {
+        "plan": "HPB-004 rights"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Sixteen approved texts, including seven dependency texts, and nine preimages match; current final-scope rights review remains open.",
+      "tasks": [
+        "TASK-004"
+      ],
+      "checks": [
+        "CHECK-003"
+      ]
+    },
+    {
+      "id": "FIND-005",
+      "source": {
+        "plan": "HPB-005 private-controls"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Current main is unprotected; protection and ruleset reads return capability HTTP 403.",
+      "tasks": [
+        "TASK-005"
+      ],
+      "checks": [
+        "CHECK-004"
+      ]
+    },
+    {
+      "id": "FIND-006",
+      "source": {
+        "plan": "HPB-006 reporting"
+      },
+      "category": "missing",
+      "state": "open",
+      "evidence": "docs/handoffs/harness-publication-blockers/review-inputs.json",
+      "description": "Private repository PVR read returns 404; actual public receipt/access remains unverified.",
+      "tasks": [
+        "TASK-006"
+      ],
+      "checks": [
+        "CHECK-005"
+      ]
+    }
+  ]
+}

@@ -18,9 +18,9 @@ Um Plugin versionado na raiz reúne Standards canônicos, ciclo SDD, cinco Skill
 
 ## Origem e limites atuais
 
-Os [ADRs](../decisions/README.md) registram decisões de pacote e processo. O código atual contém validação SDD v3 e execução explícita de testes ainda não lançadas, além da tag 0.3.0. VERSION/manifests permanecem em 0.3.0 durante a preparação; 0.4.0 é candidato privado, não release disponível. Identidade do marketplace e referências dos consumidores permanecem iguais.
+Os [ADRs](../decisions/README.md) registram decisões de pacote e processo. O código atual contém validação SDD v3 e execução explícita de testes ainda não lançadas, além da tag 0.3.0. VERSION/manifests agora declaram o candidato local de entrega 0.4.0; seu catálogo referencia v0.4.0 sem criar ou ativar essa release. Identidade do marketplace, cópias instaladas e pins dos consumidores permanecem iguais.
 
-O [candidato Apache](../licensing/candidates/apache-2.0/APPROVAL.md) tem aprovação real do texto, mas não foi adotado. Termos de terceiros e licenças de material independente no projeto de destino permanecem separados. Confidencialidade, controles reais e verificação por usuários externos ainda limitam a prontidão pública. O Harness não fornece publicação automática, atualizações automáticas ou motor operacional de workflows. Validação estrutural não autentica aprovação humana nem comprova comportamento, CI remoto ou merge.
+O [candidato Apache](../licensing/candidates/apache-2.0/APPROVAL.md) tem aprovação real do texto e sua licença e avisos estão aplicados localmente; integração na main e distribuição pública continuam pendentes. Termos de terceiros e licenças de material independente no projeto de destino permanecem separados. Confidencialidade, controles reais e verificação por usuários externos ainda limitam a prontidão pública. O Harness não fornece publicação automática, atualizações automáticas ou motor operacional de workflows. Validação estrutural não autentica aprovação humana nem comprova comportamento, CI remoto ou merge.
 
 ## Aplicabilidade e alternativas
 

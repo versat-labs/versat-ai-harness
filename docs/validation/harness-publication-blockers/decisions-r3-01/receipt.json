@@ -1,0 +1,42 @@
+{
+  "record": "HPB-DECISION-R3-01",
+  "date": "2026-11-16",
+  "reviewer": "@elviszoz",
+  "capacity": "Accountable owner/company representative, as previously declared; no independent specialist qualification inferred",
+  "source": "Actual user reply in this chat accepting R3-E1/R3-E2 and explicitly authorizing the local destination",
+  "reviewed_packet": "HPB-EXPOSURE-RIGHTS-R3-01",
+  "reviewed_packet_integrity_sha256": "107196f87620a26a4cd9210090703cbdd27d3c00f0812ecd489441d698acc91c",
+  "reviewed_final_source_sha256": "7901eb1b9d3575de8310340bd5019381d03d9151738c1ea81228e31dc345e00f",
+  "reviewed_source_files": 1874,
+  "reviewed_delta_files": 247,
+  "R3-E1": {
+    "state": "confirmed",
+    "quote": "O material próprio novo da R2/R3, incluindo documentação e evidências geradas sob minha orientação, foi produzido para a Versat E.A.S. e não há restrição adicional nesse material.",
+    "scope": "Reviewed new first-party material only, including generated documentary/evidence scope and the eleven safe review reports bound in final-source.json. Preserve original third-party terms and earlier D1/D2; no rights attributed over external service facts or unseen future additions."
+  },
+  "R3-E2": {
+    "state": "confirmed",
+    "quote": "Os caminhos de usuário, worktree e diretórios temporários presentes em 61 registros técnicos podem permanecer como metadados históricos não confidenciais.",
+    "scope": "The 61 reviewed technical files containing 413 environment-path occurrences (34 normalized values); retain as historical metadata. No credential disclosure, blanket confidentiality waiver or approval of unrelated private content."
+  },
+  "local_persistence": {
+    "state": "saved and hash-verified in the existing restricted evidence system",
+    "decision_integrity_sha256": "05a9e0e8a9248e63e501a737a7b98fb630290cf397638fd916aa817848b6c541",
+    "original_packet_unchanged": true,
+    "prior_rejection": "Resolved by the subsequent explicit user authorization; original rejection remains historical evidence.",
+    "remote_custody": "unverified; local copy is not remote durability"
+  },
+  "no_authority_for": [
+    "commit",
+    "push",
+    "GitHub mutation",
+    "workflow",
+    "publication",
+    "license adoption"
+  ],
+  "remaining_limits": [
+    "Local preservation does not establish durable remote custody or actual final reviewer access/acceptance.",
+    "Complete package/integration and final post-CI exposure evidence remains outstanding.",
+    "Actual control/reporting/public verification and remaining checks retain their scope."
+  ]
+}

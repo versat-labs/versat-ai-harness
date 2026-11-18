@@ -1,0 +1,30 @@
+{
+  "entry_files": 1692,
+  "changed_existing_files": [
+    "README.es.md",
+    "README.md",
+    "README.pt.md",
+    "docs/architecture/overview.md",
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "docs/handoffs/harness-publication-blockers/review-inputs.json",
+    "docs/user-docs/guides/licensing.es.md",
+    "docs/user-docs/guides/licensing.md",
+    "docs/user-docs/guides/licensing.pt.md",
+    "docs/user-docs/guides/security-reporting.es.md",
+    "docs/user-docs/guides/security-reporting.md",
+    "docs/user-docs/guides/security-reporting.pt.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_existing_files": 1679,
+  "three_stage_digests_unchanged": true,
+  "check_009_input_unchanged_after_bookkeeping": true,
+  "workflow_codeowners_candidate_history_preserved": true,
+  "prior_frozen_planning_packets_unchanged": true,
+  "repository_commit_push_pr_merge": false,
+  "remote_mutations": 0,
+  "workflow_runs_triggered": 0,
+  "messages_sent": 0,
+  "native_client_attempts": 0,
+  "root_license_adoption": false,
+  "publication": false
+}

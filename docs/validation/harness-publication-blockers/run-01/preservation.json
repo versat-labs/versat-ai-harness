@@ -1,0 +1,18 @@
+{
+  "tracked_files_at_entry": 1551,
+  "changed_tracked_files": [
+    "README.es.md",
+    "README.md",
+    "README.pt.md",
+    "docs/architecture/overview.md",
+    "docs/user-docs/guides/security-reporting.es.md",
+    "docs/user-docs/guides/security-reporting.md",
+    "docs/user-docs/guides/security-reporting.pt.md"
+  ],
+  "all_other_tracked_files_byte_identical": true,
+  "historical_dossiers_and_approved_candidate_unchanged": true,
+  "root_version": "0.3.0",
+  "root_license_absent": true,
+  "installed_workspace_unchanged": true,
+  "limits": "No repository history deletion, rewrite, root adoption or real consumer migration."
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-16",
+  "approval_quote": "sim",
+  "approved_proposal_digest": "6b83e85672013bae48da7d61d7ffed6d72764a868f00c21d994beb0eb6e4872e",
+  "approved_design_digest": "a1cd99122c38548b3c74455cdb71beaf110eaaa64613f1e40bd76ce0feb1b88f",
+  "prior_tasks_digest": "54f04e4b48d178c1afeb1e24ed464eb2376a51258252f890d7cdd3d34e62043d",
+  "scope": "Tasks R3 preparation only; no implementation, GitHub operation or publication.",
+  "provider_anchors": {
+    "sdd/process.md": "488b63b3ad26e4779db69d4b6ea9bd28b629936f58ccb42493cdaa99c940ccdb",
+    "sdd/metadata.md": "788c3a0ae8ac265a66546d3dddbf35e2c0c81bfa932940f3e5eae34990a0a064",
+    "sdd/workflows/new-change.md": "3fed9300f21ecc17d799b188179efb5a149a0afec4a91098f613a007c40f7cd4",
+    "standards/index.yaml": "0a70db972dc3ba14cecf27a1617e404f63ab32ec1222ae8632c30698ecbcccee",
+    "validators/sdd/validate.py": "94f152e14dbe1dbb60fcd3d0ef40ba896fd9a71234d28d44ac8ba1d172d329bb"
+  },
+  "preserved_r2_ledger": {
+    "results": 10,
+    "assessments": 0,
+    "open_findings": 6
+  }
+}

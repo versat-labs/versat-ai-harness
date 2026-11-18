@@ -1,0 +1,15 @@
+{
+  "changed_existing_files": [
+    "docs/handoffs/harness-publication-blockers/README.md",
+    "specs/changes/harness-publication-blockers/tasks.md"
+  ],
+  "unchanged_existing_files": 1792,
+  "approved_digests_unchanged": true,
+  "proposal_requirements_design_bytes_unchanged": true,
+  "task_statuses_and_empty_ledger_unchanged": true,
+  "prior_tasks_packet_preserved": true,
+  "six_real_findings_still_open": true,
+  "implementation": false,
+  "github_operations": 0,
+  "publication": false
+}

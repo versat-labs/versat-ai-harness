@@ -1,0 +1,16 @@
+{
+  "check": "CHECK-010",
+  "result": "unverified",
+  "recorded_at": "2026-11-16T18:16:18.217272+00:00",
+  "input_digest_before": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "input_digest_after": "be83a41713e379918c905d4ec70d3164e72e36831b1e3c5db1f157f778454dcc",
+  "method": "Partial approved R3 private verification: actual local inspection, restricted hashes, bounded metadata and complete maintained suites; missing human/client/service outcomes remain explicit. Within-boundary evidence rechecks follow the before snapshot.",
+  "explanation": "All three actual R3 approvals and five provider anchors remain current. Stable requirements/checks and 31 local/40 retained mappings preserved. Full final individual acceptance remains unsupported by actual evidence; no old result/hash transferred or missing operation classified not-applicable.",
+  "supporting_evidence": [
+    "entry.json",
+    "within-boundary/semantic-review.json",
+    "private-prerequisites.json"
+  ],
+  "public_operations": "not executed; unverified",
+  "full_preparation_acceptance": false
+}

@@ -1,0 +1,149 @@
+{
+  "status": "fail",
+  "phase": "planning",
+  "checked": [
+    "harness-publication-blockers"
+  ],
+  "findings": [
+    {
+      "code": "APPROVAL_REQUIRED",
+      "message": "Current design approval is required for execution or delivery",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/design.md",
+      "severity": "error"
+    },
+    {
+      "code": "APPROVAL_REQUIRED",
+      "message": "Current tasks approval is required for execution or delivery",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "VALIDATION_FAILED",
+      "message": "CHECK-009 has a recorded failure",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-001",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-002",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-003",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-004",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-005",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-006",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-007",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-008",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-009",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "INPUT_STALE",
+      "message": "Rerun affected check, do not relabel old evidence: CHECK-010",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "unverified"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-001: Original inventory and predecessor evidence remain intact locally. Scoped owner decisions and video review are now recorded; durable remote custody and final-scope reviewer access/acceptance remain unverified. The exact R3 exposure/provenance packet and actual owner decisions are now preserved locally under explicit authority and verified; no remote custody is implied. Remaining exit: Exact immutable revision and reviewer-readable originals are confirmed; local readability/admin access alone is insufficient.",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-002: Original inventory preserved. Owner supplied an empty repository Packages view and reviewed both identified videos. Owner reports removing the two caches; a successful paginated GET now returns zero entries. Cache contents were never inspected. Complete package coverage, final source/ref reconciliation and remaining category acceptance are still pending. Remaining exit: All 16 current exposure categories and formerly inaccessible bodies have attributable complete review or demonstrated absence.",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-003: Prior VAL classifications remain valid. R3-E2 now classifies environment paths in the 61 reviewed technical files as non-confidential historical metadata. The reviewed local delta has no additional identified sensitivity decision pending; complete final exposure/package/integration reconciliation and actual acceptance remain open. Remaining exit: Every actual finding has attributable non-sensitive disposition or verified authorized treatment; destructive/history/destination changes reopen planning.",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-004: D1/D2 and R3-E1 now support the original and exactly reviewed new first-party source scopes. R3-E1 binds the 1,874-file snapshot/247-file delta; 16 legal texts, seven notices and nine preimages remain unchanged. Whole-distribution/custody/final-current-scope reconciliation remains incomplete. Remaining exit: Current rights, candidate applicability and review capacity support the exact proposed scope; no approval transfers to unseen content.",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-005: R3 general fallback applied locally, 12 specific entries preserved. Main still uses Elvis-only fallback. Owner confirms Everton as future PR author and Elvis as reviewer, with both available for future tests. Operator/session, coordinated writer freeze and final private clearance remain outstanding. Remaining exit: Exact local ownership/guidance and actual private inputs verified; public enforcement remains separately mandatory and unverified.",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    },
+    {
+      "code": "ACCEPTANCE_GAP",
+      "message": "FIND-006: Shared triage and future test participation confirmed by the owner for both maintainers; existing admin roles observed separately. Actual report access/notification/receipt, handler and acknowledged handover remain unverified. Remaining exit: Feasible per-person private prerequisites evidenced and public activation/access/receipt/handover/exclusion protocol assigned; no role-to-receipt inference.",
+      "path": "<harness-root>/specs/changes/harness-publication-blockers/tasks.md",
+      "severity": "error"
+    }
+  ],
+  "warnings": [],
+  "metrics": {
+    "harness-publication-blockers": {
+      "local_scenarios": 31,
+      "regression_obligations": 40,
+      "assessed": 0,
+      "results": 10,
+      "open_findings": 6,
+      "stale_results": 10,
+      "requirements": {
+        "REQ-001": "unverified",
+        "REQ-002": "unverified",
+        "REQ-003": "unverified",
+        "REQ-004": "unverified",
+        "REQ-005": "unverified",
+        "REQ-006": "unverified",
+        "REQ-007": "unverified",
+        "REQ-008": "unverified",
+        "REQ-009": "unverified",
+        "REQ-010": "unverified"
+      }
+    }
+  },
+  "live_archives": [],
+  "archive_required": [],
+  "scope": "Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment."
+}

@@ -1,0 +1,136 @@
+{
+  "method": "Manual semantic review of approved Design R2 against the implemented handoff and exact rule. No simulation invokes GitHub or supplies missing evidence.",
+  "cases": [
+    {
+      "case": "missing-record",
+      "input": "Exact restricted originals unavailable",
+      "expected": "Do not clear evidence or proceed to dependent acceptance.",
+      "reviewed_procedure_response": "Do not clear evidence or proceed to dependent acceptance.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "changed-hash",
+      "input": "Original or candidate digest differs",
+      "expected": "Stop; preserve discrepancy and re-review affected input.",
+      "reviewed_procedure_response": "Stop; preserve discrepancy and re-review affected input.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "unconfirmed-reviewer",
+      "input": "Admin metadata exists without actual review/consent",
+      "expected": "Keep access/actor prerequisites unverified.",
+      "reviewed_procedure_response": "Keep access/actor prerequisites unverified.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "incomplete-listing",
+      "input": "Package/category enumeration incomplete or inaccessible",
+      "expected": "Keep coverage open; no absence claim or expanded access.",
+      "reviewed_procedure_response": "Keep coverage open; no absence claim or expanded access.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "removed-cache",
+      "input": "Owner removed caches; original content was never inspected",
+      "expected": "Keep deletion history and fresh absence separate; do not recover or assert original safety.",
+      "reviewed_procedure_response": "Keep deletion history and fresh absence separate; do not recover or assert original safety.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "new-ref",
+      "input": "New/changed exposed ref after clearance",
+      "expected": "Invalidate affected inventory and stop transition pending re-review.",
+      "reviewed_procedure_response": "Invalidate affected inventory and stop transition pending re-review.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "old-sensitive-blob",
+      "input": "Current file removed but historical sensitive blob remains",
+      "expected": "Stop exposure; require scoped treatment and reinspection, no silent history rewrite.",
+      "reviewed_procedure_response": "Stop exposure; require scoped treatment and reinspection, no silent history rewrite.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "missing-grant",
+      "input": "Unreviewed new material or incompatible third-party grant",
+      "expected": "Keep rights unverified and stop adoption/exposure.",
+      "reviewed_procedure_response": "Keep rights unverified and stop adoption/exposure.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "missing-actor-freeze",
+      "input": "Actor consent or coordinated writer freeze missing",
+      "expected": "Stop before visibility; permissions/empty run queues are insufficient.",
+      "reviewed_procedure_response": "Stop before visibility; permissions/empty run queues are insufficient.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "unsafe-fork",
+      "input": "Secret/write-token forwarding or privileged contributor-code path unknown",
+      "expected": "Stop before visibility pending concrete correction authority/evidence.",
+      "reviewed_procedure_response": "Stop before visibility pending concrete correction authority/evidence.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "stale-source",
+      "input": "Source/rights/refs drift after final clearance",
+      "expected": "Stop before opening and re-review.",
+      "reviewed_procedure_response": "Stop before opening and re-review.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "post-open-error",
+      "input": "403, unknown mutation, conflicting/stronger rule or wrong app after opening",
+      "expected": "Stop rollout; reconcile by reads and preserve stronger rules, no duplicate write.",
+      "reviewed_procedure_response": "Stop rollout; reconcile by reads and preserve stronger rules, no duplicate write.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "timeout",
+      "input": "No successful readback by t0 + 900 seconds",
+      "expected": "Stop rollout; maintain freeze; owner chooses separately authorized containment; no automatic private reversal or timer reset.",
+      "reviewed_procedure_response": "Stop rollout; maintain freeze; owner chooses separately authorized containment; no automatic private reversal or timer reset.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "public-review-failure",
+      "input": "Missing/stale/ineligible review, failing check or unknown mergeability",
+      "expected": "Keep normal integration/release frozen; no public enforcement pass.",
+      "reviewed_procedure_response": "Keep normal integration/release frozen; no public enforcement pass.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "reporting-failure",
+      "input": "Wrong repository, unavailable route, missing receipt or changed audience",
+      "expected": "Do not claim public route; keep safe fallback and actual recipient/audience gaps.",
+      "reviewed_procedure_response": "Do not claim public route; keep safe fallback and actual recipient/audience gaps.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    },
+    {
+      "case": "public-happy-path",
+      "input": "All private prerequisites, separate authority, timely readback, actual OP-CTRL-01 and public reporting/external observations",
+      "expected": "Only then consider separately authorized release/ref verification and independent consumer migration; simulated success never supplies actual evidence.",
+      "reviewed_procedure_response": "Only then consider separately authorized release/ref verification and independent consumer migration; simulated success never supplies actual evidence.",
+      "procedure_alignment": "consistent",
+      "actual_service_execution": false
+    }
+  ],
+  "actual_prerequisites": "Still blocked; synthetic stop decisions are not closure of real findings.",
+  "public_enforcement": "unverified / not executed",
+  "public_reporting": "unverified / not executed"
+}

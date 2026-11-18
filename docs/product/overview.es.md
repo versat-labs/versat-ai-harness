@@ -18,9 +18,9 @@ Un Plugin versionado en la raíz reúne Standards canónicos, ciclo SDD, cinco S
 
 ## Origen y límites actuales
 
-Los [ADRs](../decisions/README.md) registran decisiones de paquete y proceso. El código actual incluye validación SDD v3 y ejecución explícita de pruebas aún no publicadas, posteriores a la etiqueta 0.3.0. VERSION/manifiestos permanecen en 0.3.0 durante la preparación; 0.4.0 es un candidato privado, no una release disponible. Identidad del marketplace y referencias de consumidores permanecen iguales.
+Los [ADRs](../decisions/README.md) registran decisiones de paquete y proceso. El código actual incluye validación SDD v3 y ejecución explícita de pruebas aún no publicadas, posteriores a la etiqueta 0.3.0. VERSION/manifiestos ahora declaran el candidato local de entrega 0.4.0; su catálogo referencia v0.4.0 sin crear ni activar esa release. Identidad del marketplace, copias instaladas y referencias de consumidores permanecen iguales.
 
-El [candidato Apache](../licensing/candidates/apache-2.0/APPROVAL.md) tiene aprobación real del texto, pero no está adoptado. Términos de terceros y licencias de material independiente del proyecto de destino siguen separados. Confidencialidad, controles reales y verificación por usuarios externos aún limitan la preparación pública. El Harness no proporciona publicación automática, actualizaciones automáticas ni motor operativo de workflows. La validación estructural no autentica aprobación humana ni demuestra comportamiento, CI remoto o merge.
+El [candidato Apache](../licensing/candidates/apache-2.0/APPROVAL.md) tiene aprobación real del texto y su licencia y avisos están aplicados localmente; integración en main y distribución pública siguen pendientes. Términos de terceros y licencias de material independiente del proyecto de destino siguen separados. Confidencialidad, controles reales y verificación por usuarios externos aún limitan la preparación pública. El Harness no proporciona publicación automática, actualizaciones automáticas ni motor operativo de workflows. La validación estructural no autentica aprobación humana ni demuestra comportamiento, CI remoto o merge.
 
 ## Aplicabilidad y alternativas
 

@@ -1,0 +1,10 @@
+{
+  "check": "CHECK-002",
+  "result": "unverified",
+  "observed_at": "2026-11-14T22:37:57.605270+00:00",
+  "input_digest_before": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+  "input_digest_after": "9633cb9f7f1b165ecd0e1b790b89b640b56af652b89523d13ec8e5ec9c4600f9",
+  "explanation": "Actual current cache absence verified against successful GET; prior failure retained. Scoped owner decisions, screenshot and private hashes reconciled. All 16 category rows retained, but package coverage and complete final-source/category acceptance remain open. Former cache payloads were not inspected; no aggregate surface pass.",
+  "scope": "Only actually executed bounded review/local suite. Missing full-scope scenarios, remote operations and native candidate/client reruns remain unverified.",
+  "method": "Manual bounded reconciliation of actual API result, restricted records, current handoff and category disposition."
+}

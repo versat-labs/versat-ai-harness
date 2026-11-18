@@ -1,0 +1,10 @@
+{
+  "record": "HPR-PRIVATE-01",
+  "assessment_matches": true,
+  "manifest_name": "integrity-current.json",
+  "manifest_sha256": "01ce4a4c21248c88715a227b8763e7c8ae85a16c39ed39b0960f49a56bb09c62",
+  "files": 96,
+  "missing_or_changed": 0,
+  "matches": true,
+  "correction": "Initial helper selected the older integrity.json (33 entries), which has a different identity. The bound file is integrity-current.json (96 entries). Initial diagnostic retained; no source record changed. Local readability does not prove durable custody or reviewer acceptance."
+}

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-17",
+  "user_reply": "Ok avance",
+  "scope": "User accepted the preceding concrete offer: apply approved Apache patch locally, prepare documentary archive/delivery and commit/PR materials for Everton. No push, PR creation, remote CI, merge or publication.",
+  "provider_anchors": {
+    "sdd/process.md": "488b63b3ad26e4779db69d4b6ea9bd28b629936f58ccb42493cdaa99c940ccdb",
+    "sdd/metadata.md": "788c3a0ae8ac265a66546d3dddbf35e2c0c81bfa932940f3e5eae34990a0a064",
+    "sdd/workflows/new-change.md": "3fed9300f21ecc17d799b188179efb5a149a0afec4a91098f613a007c40f7cd4",
+    "standards/index.yaml": "0a70db972dc3ba14cecf27a1617e404f63ab32ec1222ae8632c30698ecbcccee",
+    "validators/sdd/validate.py": "94f152e14dbe1dbb60fcd3d0ef40ba896fd9a71234d28d44ac8ba1d172d329bb"
+  },
+  "approved_stage_digests": {
+    "proposal": "6c25ef18e914a1a72186f74bf9895dbfc2bae3d4f8ba8cd3afb8401288031a8b",
+    "design": "e50bbb215cb77a601aff92acf1db70fa3ae50e32dd518066b3960c3ca9522134",
+    "tasks": "b3a7b72e36f80ac97cc0ef15cf1c6c2962eb8703b82ded491a913024e1392cd2"
+  },
+  "base_commit": "4a56181d3597c5d345a7639f013547e1700420cb"
+}

@@ -4,7 +4,7 @@
 
 Fuente de verdad de Versat para desarrollo asistido por IA: un Plugin portátil con Standards, Spec Driven Development (SDD), Skills reutilizables, plantillas compuestas y validación determinista.
 
-Para quienes desarrollan, revisan y mantienen proyectos, incluidos contribuidores externos cuando acceso y términos aplicables estén disponibles. Mantenido por Versat; los contactos de revisión de componentes gobernados son @elviszoz y @evertonspohrversat en .github/CODEOWNERS.
+Para quienes desarrollan, revisan y mantienen proyectos, incluidos contribuidores externos cuando acceso y términos aplicables estén disponibles. Mantenido por Versat; los CODEOWNERS generales y responsables de triaje de seguridad son @elviszoz y @evertonspohrversat, con coordinación de Elvis. La política exige una aprobación elegible de quien no abrió la PR. La elegibilidad sigue el CODEOWNERS de la rama base; esta preparación local no activa controles en GitHub ni demuestra entrega de reportes de seguridad. Consulte el [handoff actual](docs/handoffs/harness-publication-blockers/README.md).
 
 ## Comienza aquí
 
@@ -22,11 +22,13 @@ Para quienes desarrollan, revisan y mantienen proyectos, incluidos contribuidore
 
 ## Preparación de la publicación en curso
 
-La dirección pública Apache-2.0 está aprobada. El [candidato concreto](docs/licensing/candidates/apache-2.0/APPROVAL.md) tiene aprobación del texto y no está adoptado. El repositorio sigue privado; 0.4.0 es un candidato futuro, no una versión disponible. Consulte [licencias](docs/user-docs/guides/licensing.es.md), [contribución](docs/user-docs/guides/contributing.es.md), [reporte de seguridad](docs/user-docs/guides/security-reporting.es.md) y el [estado de preparación](docs/handoffs/harness-publication-readiness/README.md).
+La licencia Apache-2.0 y los avisos aprobados están aplicados en esta rama local de entrega. La integración en main y la distribución pública siguen pendientes; 0.4.0 no es una release disponible. La [aprobación del texto](docs/licensing/candidates/apache-2.0/APPROVAL.md) permanece como revisión histórica sin cambios. Consulte [licencias](docs/user-docs/guides/licensing.es.md), [contribución](docs/user-docs/guides/contributing.es.md), [reporte de seguridad](docs/user-docs/guides/security-reporting.es.md) y la [resolución actual de pendientes](docs/handoffs/harness-publication-blockers/README.md).
+
+La secuencia aprobada en GitHub Free mantiene privadas la preparación y la revisión; después exige autorización separada para hacer público el repositorio y proteger/verificar main inmediatamente, en un máximo de 15 minutos. Las verificaciones reales de controles, reporte y uso externo preceden cualquier release posterior. La secuencia está preparada, no ejecutada; consulte el [handoff operativo actual](docs/handoffs/harness-publication-blockers/README.md).
 
 ## Estado actual y adopción
 
-VERSION declara 0.3.0. El marketplace selecciona la etiqueta exacta v0.3.0; verifica la etiqueta y su contenido antes de distribuir. La ejecución de consumidores y evaluaciones supervisadas del código actual son explícitamente no publicadas. Cambiar el código o hacer merge no actualiza Plugins instalados ni pins de consumidores. Adopta otra release exacta mediante un cambio revisado.
+VERSION y manifiestos ahora declaran el candidato local 0.4.0. Su catálogo en el repositorio selecciona v0.4.0, que no debe importarse como release disponible antes de crear y verificar esa etiqueta exacta bajo autorización separada. Las instalaciones existentes y referencias de consumidores permanecen iguales; la referencia publicada anterior es v0.3.0.
 
 Los administradores gestionan importación del marketplace y política de instalación. Usa este repositorio como fuente, autentica con acceso de lectura, revisa la release exacta importada y confirma disponibilidad para los miembros. Sigue la interfaz actual de administración; la política del marketplace es AVAILABLE y no demuestra instalación automática. Los miembros pueden usar [la preparación del entorno](docs/user-docs/guides/workspace-setup.es.md).
 
