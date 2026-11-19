@@ -1,0 +1,186 @@
+
+===== PAGE 1 / 3 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            VOLUNTARIEDAD CONTROLADA  DE FACTURACIÓN ELECTRÓNICA SIFEN              
+                                                                                    
+                                                                                    
+                                Nota Técnica Número 1                               
+                                                                                    
+                                                                                    
+            Fecha: 14-10-2019                                                       
+                ​                                                                   
+                                                                                    
+            Cambios desde la fecha 10-09-2019 al 14-10-2019                         
+                          ​       ​ ​                                               
+                                                                                    
+            Referencia: Correcciones y ajustes sobre el MT versión 150              
+                   ​                                                                
+                                                                                    
+            A- Formato de campos (XML):                                             
+            1- Especificación de la fórmula a utilizar para hallar el Descuento global sobre el precio unitario por
+            ítem (incluidos impuestos) (dDescGloItem) (Página 88)                   
+                                       ​                                            
+                                                                                    
+                                                    Ocur                            
+           Grup                     Nodo       Longi                                
+                ID   Campo Descripción  Tipo Dato  renci    Observaciones           
+            o                       Padre       tud                                 
+                                                    a                               
+           E8.1.1 EA004 dDescGloIt Descuento EA001 N 1-15p 0-1 Si se cuenta con un descuento global,
+                    em     global sobre el     (0-8)    debe ser aplicado (no es prorrateo) a
+                           precio unitario              cada uno de los ítems,      
+                           por ítem                     independientemente de que un ítem
+                           (incluidos                   cuente con un descuento particular.
+                           impuestos)                   [F010 * E721 / 100]         
+            2- En el grupo Campos que describen los subtotales y totales de la transacción documentada
+                    ​                                                               
+            (F001-F099) se realizó una verificación de las fórmulas utilizadas. (Página 103)
+                   ​                                ​                               
+                                                    Ocur                            
+           Grup                     Nodo       Longi                                
+                ID   Campo Descripción  Tipo Dato  renci    Observaciones           
+            o                       Padre       tud                                 
+                                                    a                               
+            F   F009 dTotDesc Total descuento F001 N 1-15p 1-1 Suma de la multiplicación de cada
+                           particular por      (0-8)    descuento particular por ítem por la
+                           ítem                         cantidad de ese ítem (sumatoria de
+                                                        EA002*E711)                 
+            F   F033 dTotDescGl Total descuento F001 N 1-15p 1-1 Sumatoria de la multiplicación de
+                    otem   global por ítem     (0-8)    cada descuento global por ítem por la
+                                                        cantidad de ese ítem (sumatoria de
+                                                        EA004*E711)                 
+                                                                                    
+                                                                                    
+
+===== PAGE 2 / 3 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            F   F034 dTotAntIte Total Anticipo F001 N 1-15p 1-1 Sumatoria de todas las ocurrencias de
+                    m      por ítem            (0-8)    anticipos por ítem por la cantidad del
+                                                        ítem (EA006*E711)           
+                                                                                    
+            F   F035 dTotAnt Total Anticipo F001 N 1-15p 1-1 Sumatoria de todas las ocurrencias de
+                           global por ítem     (0-8)    anticipos globales por ítem por la
+                                                        cantidad del ítem (EA007*E711)
+                                                                                    
+            F   F011 dDescTotal Total F001 N   1-15p 1-1 Sumatoria de todos los descuentos
+                           Descuentos de       (0-8)    (Global por Ítem y particular por ítem)
+                           la operación                 de cada ítem (F009+F033)    
+                                                                                    
+            F   F012 dAnticipo Total Anticipos F001 N 1-15p 1-1 Sumatoria de todos los Anticipos
+                           de la operación     (0-8)    (Global por Ítem y particular por ítem)
+                                                        F034 + F035                 
+            F   F014 dTotGralOp Total Neto de la F001 N 1-15p 1-1 Corresponde al cálculo aritmético
+                    e      operación           (0-8)    F008-F013+F025              
+                                                                                    
+                                                                                    
+            B- Validaciones                                                         
+            1- Las siguientes validaciones sufren modificaciones:                   
+             ​                              ​                                       
+            ID        Mensaje de validación Código  Observación   E                 
+                                                                                    
+           C004b El número de timbrado no se encuentra 1103 Número de timbrado no vigente R
+               vigente a la fecha de emisión del comprobante (D002 no es posterior a la fecha de
+                                              inicio de vigencia del timbrado       
+                                              (C008)                                
+           EA004 El descuento global sobre el precio unitario por 1862 El descuento global sobre el precio R
+               ítem no coincidente con lo informado unitario por ítem no coincide con lo
+                                              informado en el porcentaje de         
+                                              descuento global sobre total de la    
+                                              operación (F010)                      
+                                              Según la siguiente fórmula: [F010 *   
+                                              E721 / 100]                           
+                                              Puede haber una variación de 0.8      
+           F011 Cálculo del descuento sobre el total de la 2364 Error en el cálculo del descuento R
+               operación incorrecto           sobre el total de la operación        
+                                              Es la sumatoria de F009 y F033        
+           F014 Cálculo del total general de la operación 2365 Error en el cálculo del total general R
+               incorrecto                     de la operación                       
+                                              Cuando C002=1, 5 o 6 el cálculo       
+                                              debe ser igual a F008-F013+F025       
+                                                                                    
+            Páginas: 160, 176, 184                                                  
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 3 / 3 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            2- Se agregan las siguientes validaciones:                              
+                                                                                    
+                                                                                    
+            ID        Mensaje de validación Código  Observación   E                 
+                                                                                    
+           EA004 Descuento global sobre el precio unitario por 1860 Si el campo de porcentaje de R
+            a  ítem no informado              descuento global sobre total de la    
+                                              operación (F010) tiene un valor       
+                                              mayor a 0 (cero), es obligatorio      
+                                              indicar el descuento global sobre el  
+                                              precio unitario por ítem              
+           F033 Cálculo del total descuento global por ítem 2383 Error en el cálculo del total R
+               incorrecto                     descuento global por ítem             
+                                              Cálculo debe ser igual la suma de     
+                                              todas las ocurrencias de EA004        
+                                              multiplicado por la cantidad          
+                                              EA004*E711                            
+           F034 Cálculo del total anticipo por ítem incorrecto 2384 Error en el cálculo del total anticipo R
+                                              por ítem                              
+                                              Cálculo debe ser igual la suma de     
+                                              todas las ocurrencias de EA006        
+                                              multiplicado por la cantidad          
+                                              EA006*E711                            
+           F035 Cálculo del total anticipo global por ítem 2387 Error en el cálculo del total anticipo R
+               incorrecto                     por ítem                              
+                                              Cálculo debe ser igual la suma de     
+                                              todas las ocurrencias de EA007        
+                                              multiplicado por la cantidad          
+                                              EA007*E711                            
+           F012 Cálculo del total anticipos de la operación 2388 Error en el cálculo del total anticipos R
+               incorrecto                     de la operación                       
+                                              Es la sumatoria de F034 y F035        
+            Histórico del Documento                                                 
+                                                                                    
+                                 Fecha de                          Principales      
+                Autor                       Revisor     Fecha Revisión              
+                                Elaboración                        Alteraciones     
+                 Mabel Peña    14/10/2019  Carlos Mendoza 14/10/2019 Creación       
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    

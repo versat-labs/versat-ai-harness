@@ -1,0 +1,1794 @@
+===== PAGE 16 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       1. INTRODUCCIÓN                                                            
+                                                                                  
+       El presente Manual Técnico (MT) tiene como propósito constituirse en el documento maestro que establece
+                                                                                  
+       el conjunto de requisitos, condiciones y procedimientos tecnológicos que deben cumplir los contribuyentes
+       de IVA que se adhieran de manera voluntaria, o aquellos que hayan sido seleccionados por parte de la SET
+       para ser facturadores electrónicos, en el Sistema Integrado de Facturación Electrónica Nacional (SIFEN).
+                                                                                  
+       En tal sentido, el MT es una guía tecnológica en la cual los contribuyentes, potenciales facturadores
+       electrónicos, pueden encontrar los objetivos y alcance pretendidos en los capítulos 2 y 3; identificar en el
+       capítulo 4, en las secciones 4.1 a 4.3, la estructura y subsistemas de SIFEN, el fundamento legal que lo soporta,
+       la validez jurídica de los Documentos Tributarios Electrónicos (DTE) que se verán alcanzados con la operación
+       electrónica.                                                               
+                                                                                  
+       En el capítulo 5 se detallan los documentos tributarios electrónicos previstos para la versión actual del MT. En
+       el capítulo 6 se describe el Modelo Operativo.                             
+                                                                                  
+       En el capítulo 7, uno de los más determinantes del MT, se establecen las características tecnológicas del
+       formato, abarcando el modelo conceptual de comunicación, los estándares del formato XML, de
+       comunicación, del certificado y firma digital y las especificaciones técnicas respectivas.
+                                                                                  
+       Seguidamente, en los capítulos 8 y 9, se describen los Servicios Web previstos para SIFEN. El formato de los
+       Documentos Electrónicos, la gestión de eventos y las validaciones, son abordados en los capítulos 10, 11 y 12
+       respectivamente.                                                           
+                                                                                  
+       Los capítulos 13 al 17 abarcan lo concerniente a la representación gráfica (KuDE), la operación de contingencia,
+       la conservación de los DTE, las codificaciones utilizadas por SIFEN y glosario técnico.
+       Finalmente, es importante mencionar que este documento forma parte integral de la Resolución (futura) para
+       la etapa de Voluntariedad, que establece el marco jurídico procedimental y reglamenta a su vez el Decreto No
+                                                                                  
+       7.795/2017, mediante el cual se crea el SIFEN; constituyéndose en el pilar que regula y orienta la operación
+       del Sistema Integrado de Facturación Electrónica Nacional (SIFEN) del Paraguay.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      15                 
+
+===== PAGE 17 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       2. OBJETIVOS                                                               
+                                                                                  
+       Definir los requisitos y condiciones, así como los procedimientos tecnológicos y operacionales para realizar los
+                                                                                  
+       ajustes informáticos, la parametrización y adaptación de los sistemas de facturación, que deben cumplir los
+       contribuyentes de IVA, sean estos voluntarios y/o elegidos por la SET, para constituirse como facturadores
+       electrónicos.                                                              
+                                                                                  
+       Establecer el paso a paso a seguir para realizar la solicitud de autorización y timbrado, y en consecuencia
+       obtener la habilitación correspondiente.                                   
+       Determinar las condiciones de estructuración del formato electrónico que deben observar los emisores al
+                                                                                  
+       momento de enviar y transmitir los Documentos Electrónicos a los receptores y a la SET respectivamente, a
+       este último actor, mediante el consumo de los servicios web dispuestos (estándar, tipos y descripción); así
+       como, aquellas referentes a la validación y/o rechazo por parte de la SET. 
+       Precisar las condiciones, acciones y procedimientos que deban observar los contribuyentes facturadores
+                                                                                  
+       electrónicos para gestionar la contingencia que se presenta en el proceso de facturación electrónica, con el
+       objeto de generar y entregar la representación gráfica (KuDE) a los receptores y para el uso de las
+       codificaciones requeridas en el SIFEN.                                     
+                                                                                  
+       Definir las condiciones, acciones y procedimientos que deban observar los contribuyentes facturadores
+       electrónicos para gestionar los eventos que se sucedan sobre los documentos electrónicos previamente
+       validados por la SET; así como, las condiciones y requisitos para consumir los servicios de consulta de los
+       mismos y sus eventos asociados.                                            
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      16                 
+
+===== PAGE 18 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       3. ALCANCE                                                                 
+                                                                                  
+                                                                                  
+       Este documento tiene como alcance definir el conjunto de requisitos, condiciones y procedimientos
+       tecnológicos que deben cumplir los contribuyentes de IVA que se adhieran de manera voluntaria, o aquellos
+       que hayan sido seleccionados por la SET para ser facturadores electrónicos, en el Sistema Integrado de
+       Facturación Electrónica Nacional (SIFEN) del Paraguay.                     
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      17                 
+
+===== PAGE 19 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       4. Sistema Integrado de Facturación Electrónica Nacional SIFEN             
+                                                                                  
+          4.1. Estructura y subsistemas SIFEN                                     
+                                                                                  
+                                                                                  
+       El Sistema Integrado de Facturación Electrónica Nacional (SIFEN) se encuentra estructurado en dos
+       subsistemas (subsistema de validación, y subsistema solución gratuita de facturación electrónica) que agrupan
+       funcionalidades específicas y servicios orientados a diferentes segmentos del universo de contribuyentes de
+       la SET, diferenciadas en su alcance, modelo operativo y tecnológico, volumen transaccional; así como, en su
+       desarrollo y construcción en el horizonte de tiempo de ejecución. Ver Gráfica Nº 01.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                    Gráfica Nº 01 Sistema Integrado de Facturación Electrónica Nacional (SIFEN)
+                                                                                  
+                                                                                  
+       Subsistema de Aprobación: se encuentra orientado en especial a grandes y medianos contribuyentes, los
+       cuales se podrán adherir de manera voluntaria o podrán ser seleccionados por la SET de manera obligatoria a
+       facturar electrónicamente. Los facturadores electrónicos comprendidos en este subsistema tendrán que
+       observar los requisitos, condiciones y plazos establecidos en el Decreto, su Resolución Reglamentaria y en el
+       presente Manual Técnico.                                                   
+                                                                                  
+       Este subsistema contempla dos momentos en su operación:                    
+                                                                                  
+       Primer momento – Operación comercial con documentos electrónicos (DE)      
+       Como resultado de la operación comercial, el facturador electrónico emite el documento electrónico (DE)
+                                                                                  
+       firmado digitalmente y lo envía al comprador o receptor, en formato XML. Si el comprador o receptor no es
+       facturador electrónico, el emisor deberá enviar o disponibilizar una representación gráfica del documento
+       (KuDE) que soporta la transacción en formato físico o digital.             
+                                                                                  
+       Segundo momento – Transmisión de los documentos electrónicos (DE) a la SET 
+       Los contribuyentes facturadores electrónicos, envían el formato XML firmado digitalmente de los DE a la SET
+       para su proceso de validación (Ver Gráfica Nº 02).                         
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      18                 
+
+===== PAGE 20 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                            Gráfica Nº 02 Subsistema de Validación de Uso         
+                                                                                  
+       Este subsistema contemplará, en las fases de piloto y voluntariedad del plan de masificación de la factura
+       electrónica, el control sobre aquellos segmentos de contribuyentes que tendrán que enviar el formato de los
+       DE al Sistema Integrado de Facturación Electrónica Nacional en un plazo de hasta 72 horas para su
+       correspondiente validación y aprobación como DTE, entiéndase horas corridas desde el momento de la firma
+       digital del DE.                                                            
+                                                                                  
+       Del mismo modo, y de manera controlada en las diferentes fases del plan de masificación podrá establecer o
+       habilitar a determinados contribuyentes bajo la modalidad de la validación previa; es decir, aquella en la cual
+       se exige al facturador electrónico (en condición de emisor) que previamente transmita el documento
+                                                                                  
+       electrónico (DE) a la SET (SIFEN) para su validación antes de su envío al receptor. Obviamente con la obtención
+       de la validación positiva (aprobación) por parte de SIFEN.                 
+       Subsistema Solución Gratuita de Facturación Electrónica Ekuatia’i: se encuentra orientado a contribuyentes
+                                                                                  
+       con una cantidad de emisión de documentos electrónicos baja, el cual será provisto por la SET de manera
+       gratuita, y comprenderá como productos y servicios básicos la emisión, transmisión y almacenamiento de
+       documentos electrónicos, estando soportados en los servicios web desarrollados en el subsistema de
+       aprobación, lo que permitirá mantener la integridad transaccional del SIFEN. Contempla para determinados
+       contribuyentes de este segmento el uso de firma digital. Las transacciones que se realicen en este subsistema
+       son en tiempo real. Ver Gráfica Nº 03.                                     
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      19                 
+
+===== PAGE 21 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                        Portal SIFEN                              
+                                                                                  
+              Solución Gratuita              Consulta                             
+                 SIFEN      SET F o ir C m o a n D tr i i g b i u ta y l ente DTE 
+                                                            Generación            
+                                                              KuDE                
+                                   Multiplataforma  Posib.import.                 
+                                   Web Responsive Archivo TXT/XML                 
+                        Generación                                                
+                         DTE       W Sin e c b r ó S n er ic v a ic ( e 1 FE/vez) WS WS Sincrónico/ W As e i b n c S r e ó r n v i i c c o e Act C o o re m s u c n o ic m a e c r i c ó i n a les
+                                   DTE: FE, NCE, NDE,                             
+              Pequeños contribuyentes NRE, AFE    Validaciones previas            
+              Volumen bajo de DTE                                                 
+                                           Solución Gratuita                      
+                                           E-Kuatia’i                             
+                                                             Reportes             
+                            APP Móvil                        Básicos              
+              MARANGATU 2.0 (ConsultaQR)                                          
+              Acceso y Autenticación                                              
+               • Usuario y Clave     Gestión de Codificación e importación        
+                                      Eventos  de productos y catálogos           
+               Timbrado -RUC                                                      
+                       Gráfica Nº 03 Subsistema Electrónico Solución Gratuita E-kuatia’i
+       Los anteriores subsistemas mencionados de SIFEN tendrán una interoperabilidad con Marangatu, en particular
+       con el RUC y el módulo de Autorización y Timbrado, al igual que con los prestadores de servicios de
+       certificación de Paraguay a efectos de validar la vigencia del certificado digital.
+       SIFEN proveerá todos los servicios web y de internet de consulta referente a los Documentos Tributarios
+       Electrónicos (DTE), así como aquellos servicios orientados a indicar las novedades, afectaciones y eventos
+       sobre los mismos.                                                          
+          4.2. Fundamento legal                                                   
+       El SIFEN tiene su base legal en el siguiente marco normativo:              
+                                                                                  
+          • La Ley N° 125/1991 "Que Establece el Nuevo Régimen Tributario" y sus modificaciones;
+          • La Ley Nº 4.017/2010 “De validez jurídica de la firma electrónica, la firma digital, los mensajes de datos
+            y el expediente electrónico”, y sus modificaciones.                   
+          • La Ley Nº 4.679/2012 “De Trámites Administrativos”.                   
+          • La Ley Nº 4.868/2013 “Comercio Electrónico”.                          
+                                                                                  
+          • El Decreto N° 6.539/2005 “Por el cual se dicta el reglamento general de Timbrado y uso de
+            Comprobantes de Venta, Documentos Complementarios, Notas de Remisión y Comprobantes de
+            Retención” y sus modificaciones.                                      
+          • El Decreto Nº 7.369/2011” Por el cual se aprueba el Reglamento General de la Ley Nº 4.017/2010 de
+            validez jurídica de la firma electrónica, la firma digital, los mensajes de datos y el expediente
+            electrónico”.                                                         
+          • El Decreto Nº 1.165/2014 “Por el cual se aprueba el reglamento de la Ley Nº 4.868 del 26 de febrero
+            de 2013 de Comercio Electrónico”.                                     
+                                                                                  
+          • El Decreto Nº 7.795/2017 “Por el cual se crea el Sistema Integrado de Facturación Electrónica
+            Nacional”.                                                            
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      20                 
+
+===== PAGE 22 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          • La Resolución Nº 124/2018 “Por la cual se designa a las empresas participantes del plan piloto de
+                                                                                  
+            implementación del sistema integrado de facturación electrónica nacional (SIFEN)”.
+          • La Resolución General Reglamentaria Nº 05/2018 “Por la cual se reglamenta el Sistema de Facturación
+            Electrónica Nacional”.                                                
+          • La Resolución General Reglamentaria Futura, para la etapa de voluntariedad.
+                                                                                  
+                                                                                  
+          4.3. Validez jurídica e incidencia tributaria de los documentos tributarios electrónicos
+                                                                                  
+       Para efectos del MT se debe considerar lo manifestado el artículo 32 de La Ley N° 4.868/2013 “Comercio
+       Electrónico”, el cual define a la factura electrónica como el comprobante de pago que deberán emitir los
+       proveedores de bienes y servicios por vía electrónica a distancia a quienes realicen transacciones comerciales
+       con ellos.                                                                 
+                                                                                  
+       Por otra parte, la referida Ley en su artículo 33, dispone que la factura electrónica emitida por los proveedores
+       de bienes y servicios tendrá la misma validez contable y tributaria que la factura convencional, siempre que
+       cumplan con las normas tributarias y sus disposiciones reglamentarias.     
+                                                                                  
+       En ese sentido, el Decreto N° 7.795/2017, por el cual se crea el SIFEN, en su artículo 2° define al documento
+       tributario electrónico como el documento emitido por el facturador electrónico con firma digital que ha sido
+       validado formalmente por la Administración Tributaria y que sirve para respaldar el débito y el crédito fiscal
+       del Impuesto al Valor Agregado, así como las ventas de bienes y servicios, los costos y los gastos en los
+       Impuestos a la renta.                                                      
+                                                                                  
+       Lo anterior significa en el contexto del presente MT, que los Documentos Electrónicos (DE) definidos en el
+       glosario y condicionados por el estándar del formato electrónico XML descripto en la sección 7.2, una vez
+       firmados digitalmente conforme lo mencionado en la sección 7.7, y efectuado el proceso de validación por
+                                                                                  
+       parte de la Administración Tributaria, adquieren naturaleza Documentos Tributarios Electrónicos (DTE) con
+       validez jurídica, fuerza probatoria e incidencia tributaria en las mismas condiciones que los comprobantes
+       físicos o convencionales autorizados por la Subsecretaría de Estado de Tributación.
+                                                                                  
+       El proceso se encuentra soportado en el conjunto de validaciones definidas en el capítulo 12; en tal sentido,
+       si un formato electrónico XML reúne las condiciones y requisitos formales y tecnológicos establecidos, se da
+       por superado el proceso de validación y se otorga la aprobación de uso del DTE.
+       Esto no implica que la Administración Tributaria se pronuncie sobre la veracidad de la operación comercial
+                                                                                  
+       documentada en el DTE, ni limita o excluye las facultades de fiscalización que posea sobre la misma.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      21                 
+
+===== PAGE 23 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       5. Documentos Tributarios Electrónicos                                     
+                                                                                  
+       Los documentos electrónicos previstos por SIFEN para la presente versión, son los siguientes:
+                                                                                  
+          5.1. Comprobantes de ventas electrónicos:                               
+            •  Factura Electrónica                                                
+            •  Autofactura Electrónica                                            
+                                                                                  
+                                                                                  
+          5.2. Documentos complementarios electrónicos:                           
+            •  Nota de Crédito Electrónica.                                       
+                                                                                  
+            •  Nota de Débito Electrónica.                                        
+                                                                                  
+          5.3. Nota de Remisión Electrónica                                       
+                                                                                  
+                                                                                  
+       Conforme lo establecido en el Decreto 7.795/2017 y sus reglamentaciones, lo anterior no implica que la
+       Administración Tributaria pueda implementar de manera gradual la utilización de otros DE, que por su
+       naturaleza requieran un tratamiento similar de operación electrónica, los cuales se introducirán en versiones
+       posteriores del presente MT.                                               
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      22                 
+
+===== PAGE 24 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       6. Modelo Operativo                                                        
+                                                                                  
+          6.1. Descriptores del modelo operativo de SIFEN                         
+                                                                                  
+                                                                                  
+            6.1.1. Archivo electrónico                                            
+                                                                                  
+       El SIFEN define el archivo electrónico basado en el lenguaje XML como la representación electrónica de una
+       factura o los documentos establecidos en el capítulo 5 del presente MT. Del mismo modo, el archivo
+       electrónico en el contexto de la Ley 4.017/2010 tiene naturaleza de mensaje de datos y como tal, si contiene
+       una firma digital válida tiene admisibilidad y fuerza probatoria.          
+                                                                                  
+            6.1.2. Aprobación del DTE                                             
+                                                                                  
+       Para efectos de que el receptor, de un DE firmado digitalmente por un facturador electrónico, pueda asegurar
+       que el mismo tiene validez, el modelo operativo de SIFEN ha definido que este documento debe ser objeto de
+       unas validaciones (de conexión, técnicas, y de negocio) sobre el formato electrónico de cada uno de los DE
+       transmitidos, cuya aprobación de uso tendrá efectos tributarios sobre los contribuyentes involucrados en la
+       operación comercial al establecer su ingreso o no al SIFEN.                
+                                                                                  
+       En un archivo XML estructurado conforme el Schema XML 4: ProtProcesDE_v150.xsd (protocolo de
+       procesamiento del DE), existen campos que definen que ha superado satisfactoriamente las validaciones
+       definidas para el efecto en el presente MT y, por tanto, ha sido aprobado como DTE. Ver gráfica Nº 04.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                         Gráfica Nº 04: Secuencia de acciones tecnológicas SIFEN  
+       La obtención del resultado satisfactorio de las validaciones y en consecuencia la naturaleza de DTE
+                                                                                  
+       (Aprobación) no implican que la SET, como Administración Tributaria, pueda establecer la veracidad de la
+       operación comercial documentada en el DTE, en consecuencia, no limita ni excluye las facultades de
+       fiscalización de esta.                                                     
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      23                 
+
+===== PAGE 25 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          6.2. Plazo de transmisión del DE a la SET                               
+                                                                                  
+                                                                                  
+       La transmisión del DE firmado digitalmente contempla un plazo de hasta 72 horas posteriores a la firma digital
+       del DE de la operación comercial. El modelo operativo tiene previsto para el futuro, dependiendo de la
+       naturaleza de las operaciones, empresas, sectores y/o gremios en particular, y con base en unos criterios
+       propios de la SET, determinados contribuyentes transmitan estos DE en plazos menores a las 72 horas.
+                                                                                  
+       El plazo de transmisión del DE de hasta 72 hs es un beneficio del modelo operativo para el contribuyente
+       emisor, para que pueda tener tranquilidad en su operación comercial y disminuir la necesidad del uso de
+       contingencia por problemas de infraestructura de Internet, de energía eléctrica o de disponibilidad de SIFEN.
+       Para la SET, en SIFEN, el tiempo de respuesta de validación de un DTE está establecido, como máximo de 1
+       (un) minuto, con objetivo de llegar, en el futuro, en tiempo de procesamiento menor a 2 (dos) segundos por
+       DTE.                                                                       
+                                                                                  
+       Por lo tanto, por decisión de las empresas o industrias se podrá optar por la validación y aprobación previa, la
+       cual implica que SIFEN realice las validaciones y se obtenga el protocolo de aprobación del DTE, de manera
+       previa o posterior, a la entrega del documento al receptor por parte del emisor.
+                                                                                  
+       Adicionalmente, como un descriptor diferenciador entre el modelo operativo de validación posterior y previa,
+       se encuentra que para el primero se permite la generación de la representación gráfica (KuDE) antes que se
+       obtenga la correspondiente aprobación de uso. La misma puede ser utilizada en caso de venta a un receptor
+       no electrónico contribuyente de IVA o renta (este se obliga a realizar la consulta conforme a lo mencionado
+       en la sección 6.6 del presente MT), al consumidor final y para las mercaderías en su traslado físico.
+                                                                                  
+       Es importante mencionar, que el KuDE es un documento tributario auxiliar que expresa de manera simplificada
+       una transacción que ha sido respaldada por un DE, y como tal no es íntegramente el Documento Tributario
+       Electrónico, por cuanto su naturaleza es simplificada (contiene sólo algunos campos representativos del DTE)
+       y su validez jurídica se encuentra condicionada a la aprobación por parte de la SET. Situación en la cual el
+                                                                                  
+       receptor se obliga a consultar y/o comprobar la existencia del DTE en el SIFEN, tomando en consideración
+       algunos campos presentes en el cuerpo del KuDE como criterios de consulta. 
+                                                                                  
+            6.2.1. Plazos SIFEN                                                   
+                                                                                  
+                                                                                  
+       Conforme a las bases y condiciones estructurales del Modelo del Sistema Integrado de Facturación Electrónica
+       Nacional (SIFEN), para el correcto cumplimiento tributario conforme a la potestad otorgada mediante el
+       Decreto N° 7.795/2017 y sus reglamentaciones, partiendo de la regla general, se han establecido plazos
+       diferenciados, de cara a las situaciones de contingencias, eventos, emisión de determinados DE y
+       comunicaciones, presentes en el proceso de transmisión, de la siguiente manera:
+                                                                                  
+               CASOS             PLAZOS              OBSERVACION                  
+                                                                                  
+                                              Regla general: se considera transmisión
+                                              normal de los DE al envío de aquellos
+         Transmisión normal de los DE Hasta 72 horas (regla general) documentos cuya fecha y hora de
+                                              transmisión no supera las 72 horas en
+                                              relación con la fecha y hora de la firma
+                                              digital de los mismos. Y que adicionalmente
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      24                 
+
+===== PAGE 26 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+               CASOS             PLAZOS              OBSERVACION                  
+                                                                                  
+                                              cumpla con una de las siguientes    
+                                              condiciones:                        
+                                              •    Que la diferencia entre la fecha y
+                                              hora de emisión (anterior) y la fecha y hora
+                                              de transmisión al SIFEN no sea superior a
+                                              120 horas (5 días).                 
+                                               •   Que la diferencia entre la fecha y
+                                               hora de emisión (posterior) y la fecha y
+                                               hora de transmisión al SIFEN no sea
+                                               superior a 120 horas (5 días)      
+                                              Se  considera como transmisión      
+                                              extemporánea de los DE al envío de  
+         Transmisión extemporánea de Según situación de aquellos documentos que se encuentren en
+         los DE             extemporaneidad   situación contraria a la Transmisión normal
+                                              de los DE, a los cuales se les aplicará las
+                                              sanciones que correspondan          
+                                              Se considera situación de rechazo de los
+                                              DE por transmisión extemporánea en las
+                                              siguientes situaciones:             
+                                              * Cuando la diferencia entre la fecha de
+         Rechazo de los DE por                transmisión y la fecha de emisión del DE,
+                            720 horas (30 días)                                   
+         transmisión extemporánea             sea mayor a 720 horas (30 días)     
+                                              *Cuando la diferencia entre la fecha de
+                                              emisión y la fecha de transmisión del DE
+                                              sea mayor a 120 horas (5 días)      
+                                              En caso de rechazo de los DE por    
+                                              transmisión extemporánea y para efectos
+         Trámite administrativo para          de obtener su normalización (aprobación
+                                              extemporánea) en el SIFEN, los      
+         normalizar DE rechazados por Mayor a 720 horas (30 días)                 
+                                              facturadores electrónicos, deberán iniciar
+         extemporaneidad                                                          
+                                              un trámite administrativo sin perjuicio de la
+                                              aplicación de las sanciones que     
+                                              correspondan                        
+                                              Para efectos del registro del evento de
+                                              cancelación, necesariamente el DTE debe
+         Evento de cancelación de una         existir en el SIFEN.                
+                            Hasta 48 horas (2 días)                               
+         FE                                   El cómputo del plazo será contado a partir
+                                              de la aprobación del DE por parte de la SET
+                                              (fecha y hora SIFEN)                
+                                              Para efectos del registro del evento de
+                                              cancelación, necesariamente el DTE  
+         Eventos de cancelación de DTE Hasta 168 horas (distinto a FE) debe existir en el SIFEN.
+         distintos a FE     (7 días)          El cómputo del plazo será contado a partir
+                                              de la aprobación del DE por parte de la SET
+                                              (fecha y hora SIFEN)                
+                                              Plazo que empieza a correr a partir del
+         Inutilización de la numeración                                           
+                            Hasta 360 horas (15 días) siguiente mes del consumo de la
+         de un DE                                                                 
+                                              numeración del timbrado             
+         Eventos del Receptor:                                                    
+         Notificación de Recepción                                                
+                                              El plazo se computa desde la fecha de
+         DE/DTE,   Conformidad, Hasta 1080 horas (45 días)                        
+                                              emisión del DE/DTE                  
+         Disconformidad,                                                          
+         Desconocimiento DE/DTE                                                   
+       septiembre de 2019                                      25                 
+
+===== PAGE 27 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+               CASOS             PLAZOS              OBSERVACION                  
+                                                                                  
+         Corrección Evento del                                                    
+                                              El plazo se computa desde la fecha de
+         Receptor: Notificación de                                                
+                                              registro del primer evento sobre un DTE
+         Recepción    DE/DTE, Hasta 360 horas (15 días)                           
+                                              (Conformidad o Disconformidad o     
+         Conformidad, Disconformidad,                                             
+                                              Desconocimiento)                    
+         Desconocimiento DE/DTE                                                   
+       Obs: El cómputo de los plazos fue establecido en horas corridas.           
+          6.3. Relación directa con los contribuyentes                            
+       El modelo operativo de SIFEN entiende que la interacción de la SET con los facturadores electrónicos es de
+       manera directa y sin necesidad de intermediación obligatoria de actor diferente. Quiere decir esto que, a
+       discreción y decisión de los contribuyentes, estos podrán acudir a servicios de proveedores tecnológicos,
+       reiterando que en todo caso la relación es directamente con los contribuyentes.
+                                                                                  
+                                                                                  
+          6.4. Entrega del DE al receptor                                         
+                                                                                  
+       Como regla general, la entrega del DE por parte del emisor al receptor, en el modelo de validación y aprobación
+       del DE, se da de manera previa, y este último se obliga a consultar a posteriori, en los servicios de consulta
+       disponibles por SIFEN, que el DTE (luego de aprobado el DE) se encuentre conforme la operación comercial
+       realizada.                                                                 
+                                                                                  
+       “Es importante remarcar que, al momento de la generación, emisión y antes de la entrega de un Documento
+       Electrónico (DE) al receptor, el referido documento debe estar firmado digitalmente. Carecerán de total
+       validez aquellos documentos electrónicos que no lleven la firma digital y que no fueron validados y
+       aprobados por la Administración Tributaria”.                               
+                                                                                  
+       Entre posibles alternativas de envío del DE del emisor al receptor, propio del ámbito comercial entre las partes,
+       se tienen las siguientes:                                                  
+                                                                                  
+          • Descarga por el receptor en página web expuesta por el emisor.        
+          • Archivo adjunto transmitido por correo electrónico o aplicaciones.    
+          • Archivo adjunto transmitido por aplicativo de mensajería electrónica de datos.
+                                                                                  
+                                                                                  
+          6.5. Rechazo del DE en el modelo de aprobación posterior                
+                                                                                  
+       En el caso de que el DE enviado a SIFEN no supere las validaciones previstas para otorgar su aprobación, y su
+       ajuste para ser validado, no implique cambios que alteren la construcción del Código de Control (CDC), se
+       podrá reutilizar el mismo CDC, descrito en la sección 10.1, del DE rechazado (esto con el objeto de permitir
+       que el DE con aprobado (DTE) pueda ser consultado por medio del QR generado en el KuDE entregado al
+       receptor en el momento de la operación comercial), y someter nuevamente a validación. El emisor debe
+                                                                                  
+       realizar el mismo procedimiento hasta lograr la aprobación, cuantas veces sea necesario. Esto sin prejuicio del
+       incumplimiento de los términos y condiciones en la transmisión de los DE y la consecuente aplicación del
+       régimen sancionatorio por la entrega extemporánea de los mismos.           
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      26                 
+
+===== PAGE 28 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       Para aquellos casos en los que se introduzcan cambios que alteren la conformación del CDC, el emisor deberá
+                                                                                  
+       inutilizar el número de comprobante previamente generado y emitir uno nuevo, lo cual igualmente supone su
+       envío al receptor o comprador.                                             
+                                                                                  
+          6.6. Verificación de la existencia del DTE por parte del receptor       
+                                                                                  
+                                                                                  
+       En el modelo de aprobación posterior, el receptor de los DE, con el objeto de ejercer sus derechos tributarios
+       (como respaldo documental de sus Declaraciones Juradas), se obliga a verificar la existencia y coincidencia de
+       la Representación Gráfica del DTE (KuDE) con el DTE almacenado en el SIFEN.
+                                                                                  
+       La verificación podrá realizarse por servicio web de consulta CDC, o mediante consulta en la página web que
+       para sus efectos disponga la SET a través de SIFEN, a partir del código QR existente incorporado en el KuDE o
+       por el llenado del CDC en la página. Al respecto, debe verificar en específico que:
+                                                                                  
+          • El DE fue transmitido y obtuvo la aprobación como DTE, y              
+          • Que la información presente en el KuDE coincide plenamente con la información del DTE consultado.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      27                 
+
+===== PAGE 29 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       7. Características tecnológicas del formato                                
+                                                                                  
+       En este capítulo se abordan las características tecnológicas de la facturación electrónica, que involucran la
+                                                                                  
+       utilización de certificados digitales, el lenguaje utilizado para el intercambio de información, XML o lenguaje
+       de marcado o extensible1, juntamente con los Servicios Web, esenciales para el intercambio seguro de los DE.
+       También se identifican los Servicios Web contemplados en el modelo conceptual de comunicación, se
+                                                                                  
+       establecen las definiciones acerca de la utilización del XML, así como los estándares de comunicación entre el
+       SIFEN y los sistemas de los contribuyentes.                                
+                                                                                  
+                                                                                  
+          7.1. Modelo conceptual de comunicación                                  
+                                                                                  
+       El SIFEN, disponibilizará los siguientes Servicios Web:                    
+          • Recepción de DE                                                       
+                                                                                  
+          • Recepción lotes de DE                                                 
+          • Consulta resultado lote                                               
+          • Recepción evento                                                      
+          • Consulta DE                                                           
+          • Consulta RUC (por demanda)                                            
+          • Consulta DE a entidades u organismos externos autorizados (a futuro)  
+                                                                                  
+       Cada servicio se encuentra respaldado por un Servicio Web específico. El modelo de comunicación e
+       interoperabilidad siempre iniciará en el sistema del contribuyente (sea de manera directa o prestado por un
+       tercero), por medio del consumo del servicio correspondiente. Ver gráfica Nº 05
+                                                                                  
+                                                                                  
+                                                                                  
+                                  FLUJO DE COMUNICACIÓN                           
+                                                                                  
+                Contribuyente              SET                                    
+                                https                                             
+                                                                                  
+                Cliente Sistema de FE                                             
+                               Flujo de la Servicios                              
+                               Comunicación Sincrónicos                           
+                                                              SIFEN               
+                                           Servicios                              
+                                                    Transacciones                 
+                                           Asincrónicos                           
+                      Facturas                                                    
+                  Sistema de FE                                                   
+                                                             Facturas             
+                                                             Electrónicas         
+                               Gráfica Nº 05: Flujo de comunicación               
+                                                                                  
+                                                                                  
+                                                                                  
+       1 https://es.wikipedia.org/wiki/Extensible_Markup_Language                 
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      28                 
+
+===== PAGE 30 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       Existen dos tipos de procesamiento de Servicios Web:                       
+                                                                                  
+       Síncronos: Se consideran a aquellos en los cuales el procesamiento y respuesta del servicio se realizan en la
+       misma conexión de consumo. Ver gráfica Nº 06.                              
+                                                                                  
+                                                                                  
+                                 Sincrónico                                       
+                                                                                  
+                                                                                  
+                      Establececonexión    Recibemensajedesolicitud               
+                    1 Envía mensaje de  2  Direcciona al sistema de               
+                      solicitud            recepciónyprocesamiento                
+             Sistema de         Web Service            SIFEN                      
+            Información FE       1 a 1              Sistema de Recepción y        
+            Contribuyente                             Procesamiento               
+         5                                                                        
+          R Te e r c m ib in e a R c e o s n p e u x e ió st n a R D C e i o re c n i t c b r c i e b io u m n y a e e n n s te a a j l ec S on ist r e e m su a ltad d o el 4 Dev R ue e l a ve liz a m p s r j o re ce su s l a ta m d ie o n a to l WS 3
+                                 Gráfica Nº 06: WS Sincrónico                     
+       Asíncronos: Son aquellos en los cuales el resultado del procesamiento del servicio requerido no es entregado
+                                                                                  
+       en la misma conexión de la solicitud de consumo (Ver gráfica Nº 07). Consta de un mensaje y un número de
+       lote descriptos a continuación:                                            
+          • Un mensaje con un recibo (ticket) que confirma que el archivo remitido ha superado las primeras
+                                                                                  
+            validaciones y se ha recepcionado el lote, y                          
+          • El número de lote, incluido en esta respuesta, con el cual el cliente (sistema del contribuyente) podrá
+            consultar el resultado del procesamiento, consumiendo el Web Service correspondiente, en otra
+            conexión.                                                             
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                 Gráfica Nº 07: WS Asincrónico                    
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      29                 
+
+===== PAGE 31 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          7.2. Estándar del formato XML                                           
+                                                                                  
+                                                                                  
+       El formato de documentos y protocolos de servicios, utilizan el lenguaje de marcas expansible (XML –
+       Expansible Markup Language). La definición de cada archivo XML sigue un estándar denominado “Schema
+       XML”, o lenguaje de esquema, utilizado para describir la estructura y restricciones de los documentos XML2 .
+       Esta estructura reside en un archivo con extensión “.xsd” (XML Schema Definition), el que establece qué
+       elementos contendrá el documento, como están organizados, cuáles son los atributos y de qué tipo deben ser
+       estos elementos.                                                           
+                                                                                  
+                                                                                  
+            7.2.1. Estándar de codificación                                       
+                                                                                  
+       La especificación de los documentos XML es el estándar 150, con la codificación de caracteres UTF-8, por lo
+       cual todos los documentos se inician con la declaración:                   
+                                                                                  
+                           <?xml version="150" encoding="UTF-8"?> (*)             
+                                                                                  
+       Para mejor comprensión, se puede utilizar el siguiente enlace:             
+                               http://www.w3.org/TR/REC-xml                       
+                                                                                  
+       Cada archivo XML, debe poseer solo una declaración (*), para el caso de los envíos de lotes, la estructura
+       completa del archivo debe contener solo una declaración.                   
+                                                                                  
+                                                                                  
+                                                                                  
+            7.2.2. Declaración namespace                                          
+                                                                                  
+       El comúnmente denominado “Espacio de Nombres”3 en XML, es utilizado para proporcionar elementos y
+       atributos con nombre único en un documento XML.                            
+                                                                                  
+       Este espacio de nombres se declara utilizando el atributo xmlns, el cual estará incluido en el elemento raíz del
+       documento como, por ejemplo:                                               
+        <rDE                                                                      
+            xmlns=”http://ekuatia.set.gov.py/sifen/xsd”                           
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                 
+            xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd siRecepDE_v150.xsd">
+       Namespace utilizado en Eventos:                                            
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       2     https://es.wikipedia.org/wiki/XML_Schema                             
+       (*) <?xml version="100" encoding="UTF-8" ?>                                
+       3 https://es.wikipedia.org/wiki/Espacio_de_nombres_XML                     
+       www.w3.org/TR/REC-xml                                                      
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      30                 
+
+===== PAGE 32 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       <rEnviEventoDe                                                             
+            xmlns="http://ekuatia.set.gov.py/sifen/xsd"                           
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">                
+            <dEvReg>                                                              
+                 <gGroupGesEve>                                                   
+                      <rGesEve                                                    
+                           xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd
+            siRecepEvento_v150.xsd"                                               
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+                           <rEve Id="123">                                        
+                           </rEve>                                                
+                      </rGesEve>                                                  
+                 </gGroupGesEve>                                                  
+            </dEvReg>                                                             
+       </rEnviEventoDe>                                                           
+       Cabe aclarar que no se podrá utilizar:                                     
+          • Namespace distintos a los definidos en el presente documento          
+          • Prefijos de namespace                                                 
+       Cada documento XML tendrá su namespace individual en su correspondiente elemento raíz.
+                                                                                  
+                                                                                  
+               7.2.2.1. Particularidad de la firma digital                        
+                                                                                  
+       La declaración namespace de la firma digital debe realizarse en la etiqueta <Signature>, conforme con el
+                                                                                  
+       siguiente ejemplo:                                                         
+         <rDE                                                                     
+              xmlns="http://ekuatia.set.gov.py/sifen/xsd"                         
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"               
+              xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd/siRecepDE_v150.xsd">
+              <dVerFor>150</dVerFor>                                              
+              <DE Id="0144444401700100100145282201170125158732260988">            
+              </DE>                                                               
+              <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">              
+              </Signature>                                                        
+         </rDE>                                                                   
+               7.2.2.2. Particularidad del envío de lote                          
+                                                                                  
+       En el caso de envío de lote, cada DE debe contener la declaración de su namespace individual, conforme el
+       ejemplo:                                                                   
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      31                 
+
+===== PAGE 33 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+         <rDE                                                                     
+              xmlns="http://ekuatia.set.gov.py/sifen/xsd"                         
+              xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance                 
+              xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd/siRecepDE_v150.xsd">
+              <dVerFor>150</dVerFor>                                              
+              <DE Id="0144444401700100100145282201170125158732260988">            
+                        ...                                                       
+              </DE>                                                               
+              <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">              
+                        ...                                                       
+              </Signature>                                                        
+         </rDE>                                                                   
+         <rDE                                                                     
+              xmlns="http://ekuatia.set.gov.py/sifen/xsd"                         
+              xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance                 
+              xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd/siRecepDE_v150.xsd">
+              <dVerFor>150</dVerFor>                                              
+              <DE Id="0144444401700100100145282201170125158732260988">            
+                        ...                                                       
+              </DE>                                                               
+              <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">              
+                        ...                                                       
+              </Signature>                                                        
+         </rDE>                                                                   
+            7.2.3. Convenciones referenciadas en tablas                           
+       La Gráfica Nº 08 muestra la relación entre los elementos del archivo XML   
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                              Gráfica N° 08: Relación elementos XML               
+                                                                                  
+                                                                                  
+       La definición de las columnas de las tablas, conforme los esquemas relacionados a los archivos XML, se expone
+       a continuación en la Tabla A:                                              
+                                                                                  
+                  Tabla A – Convenciones Utilizadas en la Tablas de Definición de los Formatos XML
+                Título                    Descripción                             
+                Grupo  Conjunto de campos                                         
+                 ID    Identificación del campo para fines de referencia          
+                       Nombre del campo. La primera letra indica:                 
+               Campo                                                              
+                       c: código integrante de una tabla existente en el Capítulo 16
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      32                 
+
+===== PAGE 34 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                  Tabla A – Convenciones Utilizadas en la Tablas de Definición de los Formatos XML
+                Título                    Descripción                             
+                       i: código integrante de una tabla que se encuentra en la columna “Observaciones”
+                       d: nombre de un campo común                                
+                       g: nombre de un grupo                                      
+                       r: raíz de XML                                             
+              Descripción Descripción del campo y su significado                  
+                       Referencia al ID del campo de grupo que contiene este campo específico (campo
+              Nodo Padre                                                          
+                       padre)                                                     
+              Tipo de Dato Tipo de dato (ver Tabla B)                             
+               Longitud Tamaño del campo (ver Tabla C)                            
+                       Ocurrencias, en el  formato m-n,  en   el  cual            
+              Ocurrencia                                                          
+                       m: número mínimo de veces que el campo debe aparecer en el grupo
+                       n: número máximo de veces que el campo puede aparecer en el grupo
+                       Observaciones importantes sobre el campo, incluyendo listas de valores posibles,
+             Observaciones                                                        
+                       validaciones relevantes entre otras.                       
+                       Versión que el campo fue introducido en el formato, o versión en la cual ha sido
+               Versión                                                            
+                       modificado por la última vez                               
+       Los tipos de campos de los archivos XML tienen su contenido descrito en la Tabla B.
+                            Tabla B – Tipos de Datos en los Archivos XML          
+                Tipo                     Descripción                              
+                                                                                  
+                XML    Documento XML, descripto en un schema contenido en esta ficha técnica
+                                                                                  
+                 G     Grupo de elementos y/o grupos de elementos                 
+                       “Choice Group”, elemento que excluye la ocurrencia de otro Choice Group, con el
+                 CG                                                               
+                       mismo padre                                                
+                       “Choice Element”, elemento que excluye la ocurrencia de otro Choice Element con
+                       el                  mismo                  padre           
+                 CE    •   Por   ejemplo los   varios tipos  de   RUC             
+                       El  tipo  de   elemento aparece luego  al  lado            
+                       • Por ejemplo, “CEA” indica un Choice Element alfanumérico 
+                 A     Alfanumérico                                               
+                 N     Numérico: Vea los diversos formatos en la Tabla C          
+                       Fecha: Los campos de fecha, según corresponda, deberán contener fecha y hora en
+                       el formato: AAAA-MM-DDThh:mm:ss o AAAA-MM-DD               
+                 F     • Por ejemplo, para expresar 2:23 PM de 01 de febrero de 2018: 2018-02-01-
+                       14:23:00                                                   
+                       Por ejemplo, para expresar 01 de febrero de 2018: 2018-02-01
+                 B     Binario en Base64 para envío de lote                       
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      33                 
+
+===== PAGE 35 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       Los tamaños de campo utilizados en los archivos XML tienen su contenido descripto en la Tabla C. En el caso
+                                                                                  
+       de campos con tamaño exacto los espacios no utilizados deben ser llenados con ceros no significativos (a la
+       izquierda del campo).                                                      
+                                                                                  
+                                 Tabla C: Tamaños de campos                       
+                Título                   Descripción                              
+                                                                                  
+                       Tamaño exacto del campo                                    
+                 X                                                                
+                       • ej.: 2                                                   
+                       Tamaño mínimo x, máximo y                                  
+                 x-y                                                              
+                       • ej.: 0-10 (es posible expresar ningún valor, porque se permite el tamaño 0)
+                       Tamaño exacto del campo x, con n cifras decimales exactamente
+                Xpn                                                               
+                       • ej.: 22p4                                                
+                       Tamaño exacto del campo x, con cifras decimales entre n y m
+               xp(n-m)                                                            
+                       • ej.: 22p(0-7)                                            
+                       Tamaño mínimo x, máximo y, con cifras decimales entre n y m
+              (x-y)p(n-m) • ej.: 1-11p(0-6) (es obligatorio expresar algún valor, porque no se permite el tamaño
+                       0, pero la parte decimal es opcional)                      
+              Valores  El campo deberá ser informado con tamaño exacto de una de las opciones listadas
+              separados • ej.: 1, 3, 5, 8. Significa que se debe informar el campo con uno de estos cuatro
+              por comas tamaños fijos                                             
+       En la Tabla D se ejemplifica la manera de informar los formatos numéricos. 
+                                 Tabla D: Formatos numéricos                      
+                     Formato       Para Informar   Llenar campo con               
+                                           1.105,13        1105.13                
+                                          1.105,137       1105.137                
+                     0-11p0-6               1.105            1105                 
+                                               0               0                  
+                                 para no informar cantidad No incluir             
+                                            1.105            1105                 
+                      0-11                     0               0                  
+                                 para no informar cantidad No incluir             
+                                            1.105            1105                 
+                      1-11                     0               0                  
+                                 para no informar cantidad no es posible          
+       NOTA: De manera a simplificar y utilizar toda la potencia del lenguaje, el punto (.) se utilizará como separador de decimales, tal y como lo muestra la
+       Tabla D                                                                    
+                                                                                  
+            7.2.4. Recomendaciones mejores prácticas de generación del archivo    
+                                                                                  
+       Como buenas prácticas al momento de la generación de los DE, tener precaución de NO incorporar:
+                                                                                  
+          • Espacios en blanco en el inicio o en el final de campos numéricos y alfanuméricos.
+          • Comentarios, anotaciones y documentaciones, léase las etiquetas annotation y documentation.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      34                 
+
+===== PAGE 36 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          • Caracteres de formato de archivo, como line-feed, carriage return, tab, espacios entre etiquetas.
+                                                                                  
+          • Prefijos en el namespace de las etiquetas.                            
+          • No incluir etiquetas de campos que no contengan valor, sean estas numéricas, que contienen ceros,
+            vacíos o blancos para campos del tipo alfanumérico. Están excluidos de esta regla todos aquellos
+            campos identificados como obligatorios en los distintos formatos de archivo XML, la obligatoriedad
+            de los mismos será plenamente detallada.                              
+          • No utilizar valores negativos                                         
+          • El nombre de los campos es sensible a minúsculas y mayúsculas, por lo que deben ser comunicados
+                                                                                  
+            de la misma forma en la que se visualiza en el presente manual técnico.
+          • Ej: el grupo gOpeDE, es diferente a GopeDE, a gopede y a cualquier otra combinación distinta a la
+            inicial.                                                              
+                                                                                  
+                                                                                  
+          7.3. Contenedor de documento electrónico                                
+                                                                                  
+       Un contenedor del DE es un archivo XML que contiene el DE, con su validación de recepción, por parte del
+       SIFEN, así como cualquier evento, registrado que lo involucre.             
+                                                                                  
+       La estructura está definida en la sección 9.4, correspondiente al SW “SiConsDE”.
+                                                                                  
+                                                                                  
+          7.4. Estándar de comunicación                                           
+                                                                                  
+       La comunicación entre los contribuyentes y la SET está basada en los Servicios Web disponibles por el SIFEN.
+       El medio para establecer esta comunicación es la Internet, apoyado en la utilización del protocolo de seguridad
+                                                                                  
+       TLS versión 1.2, con autenticación mutua. Esto garantiza una comunicación segura, considerando la
+       identificación del cliente consumidor del servicio por medio de certificados digitales.
+       El modelo de comunicación sigue el estándar de Servicios Web definido por el WS-I4 BasicProfile5.
+                                                                                  
+       El intercambio de documentos o mensajes entre el SIFEN y el sistema de los contribuyentes, utiliza el estándar
+       SOAP, versión 1.26, con intercambio de mensajes XML basados en Style/Encoding: Document/Literal.
+                                                                                  
+       La llamada o Request a cualquiera de los Servicios Web del SIFEN, es realizada con el envío de un mensaje XML
+       incluido en el campo soap:Body.                                            
+                                                                                  
+                                                                                  
+       Request de ejemplo utilizando SOAP:                                        
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       4Web Services Interoperability Organization (WS-I, http://www.ws-i.org/about/Default.aspx)
+       5http://www.ws-i.org/Profiles/BasicProfile-1.0-2004-04-16.html             
+       6Web Services Interoperability Organization (WS-I, http://www.ws-i.org/about/Default.aspx)
+       6http://www.ws-i.org/Profiles/BasicProfile-1.0-2004-04-16.html             
+       6https://www.w3.org/TR/soap12/                                             
+                                                                                  
+       septiembre de 2019                                      35                 
+
+===== PAGE 37 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+         <soap:Envelope                                                           
+              xmlns:soap="http://www.w3.org/2003/05/soap-envelope">               
+              <soap:Header/>                                                      
+              <soap:body>                                                         
+                   <rEnviDe xmlns="http://ekuatia.set.gov.py/sifen/xsd">          
+                        <dId>10000011111111</dId>                                 
+                        <xDE>                                                     
+                             <rDE                                                 
+                             xmlns="http://ekuatia.set.gov.py/sifen/xsd"          
+                             xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance  
+                             xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd/siR
+                             ecepDE_v150.xsd">                                    
+                             ...                                                  
+                             </rDE>                                               
+                        </xDE>                                                    
+                   </rEnviDe>                                                     
+              </soap:body>                                                        
+         </soap:Envelope>                                                         
+       Response de ejemplo utilizando SOAP:                                       
+         <env:Envelope                                                            
+              xmlns:soap="http://www.w3.org/2003/05/soap-envelope">               
+              <env:Header/>                                                       
+              <env:body>                                                          
+                   <ns2:rRetEnviDe xmlns:ns2="http://ekuatia.set.gov.py/sifen/xsd">
+                        <ns2:rProtDe>                                             
+                             <ns2:dId>00000000000000000000000000000000000000000000</ns2:dId>
+                             <ns2:dFecProc>2019-06-03T12:00:00</ns2:dFecProc>     
+                             <ns2:dDigVal>0000000000000000000000000000</ns2:dDigVal>
+                             <ns2:gResProc>                                       
+                                  <ns2:dEstRes>Rechazado</ns2:dEstRes>            
+                                  <ns2:dProtAut>0000000000</ns2:dProtAut>         
+                                  <ns2:dCodRes>0160</ns2:dCodRes>                 
+                                  <ns2:dMsgRes>XML malformado</ns2:dMsgRes>       
+                             </ns2:gResProc>                                      
+                        </ns2:rProtDe>                                            
+                   </ns2:rRetEnviDe>                                              
+              </env:body>                                                         
+         </soap:Envelope>                                                         
+          7.5. Estándar de certificado digital                                    
+       El SIFEN utiliza un certificado digital, emitido por cualquiera de los PSC7, habilitados por el Ministerio de
+       Industria y Comercio8 en su carácter de Administrador de la Autoridad Certificadora Raíz del Paraguay9 y ente
+       regulador. El certificado será utilizado para firmar digitalmente y para autenticarse en los servicios del SIFEN.
+       Puede ser del TIPO F110 o F211 de persona física o jurídica. En el caso de optar por el certificado de persona
+       jurídica, el RUC del contribuyente estará contenido en el campo SerialNumber. En el caso de optar por el
+       certificado de persona física, éste debe ser de un personal dependiente del contribuyente y el certificado debe
+                                                                                  
+       7 (PSC) Prestador de Servicios de Certificación https://www.acraiz.gov.py/html/Certif_1PrestaServ.html
+       8 www.acraiz.gov.py                                                        
+       9 (AA) Según la Ley N°4017 de Firma Digital es el Ministerio de Industria y Comercio
+       10 Tipo F1: corresponde a Certificado de Firma Digital por Software        
+       11 Tipo F2: corresponde a Certificado de Firma Digital por Hardware        
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      36                 
+
+===== PAGE 38 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       contar obligatoriamente con el nombre y el RUC de la entidad en el que presta servicio el titular del certificado.
+                                                                                  
+       En este último caso el RUC del contribuyente estará contenido en el campo SubjectAlternativeName.
+       Estos certificados digitales serán exigidos por la SET en los siguientes momentos:
+                                                                                  
+                                                                                  
+       •  Para firma de mensajes de datos: Se refiere al archivo de documento electrónico, registro de evento y/o
+          cualquier otro archivo XML admisible por el SIFEN, que requiera ser firmado digitalmente. El certificado
+          digital debe contener el RUC del contribuyente emisor y la clave prevista para la función de firma digital.
+                                                                                  
+       •  Para establecimiento de conexiones y autenticaciones mutuas: (Comunicación entre el servidor del
+          contribuyente y el servidor del SIFEN). Para este efecto, el certificado digital debe contener el RUC del
+          contribuyente emisor y propietario responsable por la trasmisión del mensaje, con la extensión Extended
+          Key Usage con el permiso clientAuth.                                    
+                                                                                  
+                                                                                  
+       Aclaración:                                                                
+                                                                                  
+          • Certificado de persona jurídica: el RUC del contribuyente debe estar informado en el:
+               o Campo X509 V3: Subject                                           
+               o Nombre: “Serial Number” OID: 2.5.4.5                             
+          • Certificado de persona física: el RUC del contribuyente emisor debe estar informado en el:
+               o Campo X509 V3: SubjectAlternativeName                            
+               o Nombre: “SerialNumber” OID: 2.5.4.5                              
+                                                                                  
+       Para ambos casos, la información del RUC debe informarse de la siguiente manera:
+                                                                                  
+       RUCXXXXXXXXX-X -> es decir, se escribe la palabra RUC con mayúsculas, seguido del número de RUC
+       correspondiente con guion y el dígito verificador, sin ningún espacio en toda la cadena.
+          7.6. Estándar de firma digital                                          
+                                                                                  
+                                                                                  
+       Los archivos enviados al SIFEN son documentos electrónicos construidos en lenguaje XML y deben estar
+       firmados con la firma digital amparada con el certificado correspondiente al RUC del contribuyente emisor del
+       documento.                                                                 
+                                                                                  
+       Existen elementos que se encuentran presentes en el certificado digital del emisor de forma natural, lo que
+       implica innecesaria su exposición en la estructura XML. En este contexto los DE firmados digitalmente no
+       deben contener los siguientes elementos:                                   
+                                                                                  
+       <X509SubjectName>                                                          
+                                                                                  
+       <X509IssuerSerial>                                                         
+                                                                                  
+       <X509IssuerName>                                                           
+       <X509SKI>                                                                  
+                                                                                  
+       De igual manera se debe evitar el uso de los siguientes elementos, ya que esta información será obtenida a
+       partir del certificado digital del emisor.                                 
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      37                 
+
+===== PAGE 39 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       <KeyValue>                                                                 
+                                                                                  
+       <RSAKeyValue>                                                              
+                                                                                  
+       <Modulus>                                                                  
+                                                                                  
+       <Exponent>                                                                 
+       Los DE  utilizan el subconjunto del estándar de firma digital definido según W3C,
+       http://www.w3.org/TR/xmldsig-core/, conforme a lo expuesto en el Schema XML1.
+                                                                                  
+       Cada Documento Electrónico deberá ser firmado por el contribuyente emisor abarcando el grupo de
+       información A001, con sus respectivos subgrupos, identificado por el Atributo “Id” cuyo valor será el CDC
+       (Código de Control).                                                       
+                                                                                  
+       Véase la Tabla de Formato de Campos de un Documento Electrónico (DE). El mismo literal único (CDC)
+       precedido por el caracter “#” deberá ser informado en el atributo URI del tag Reference.
+                                                                                  
+            Schema XML 1: xmldsig-core-schema- v150.xsd (Estándar de la Firma Digital)
+                          Descrip Nodo Ocurren                                    
+         ID      Campo                                Observaciones               
+                           ción  Padre   cia                                      
+         XS01 Signature            -     -   Raíz                                 
+         XS02 SinnedInfo    G     XS01   1-1 Grupo de información de la firma     
+             CanonicalizationMetho                                                
+         XS03               G     XS02   1-1 Grupo del método canónico            
+             d                                                                    
+                                             Atributo Algorithm de CanonicalizationMethod
+         XS04 Algorithm     A     XS03   1-1 https://www.w3.org/TR/2001/REC-xml-c14n-
+                                             20010315                             
+         XS05 SignatureMethod G   XS02   1-1 Grupo del método de firma            
+                                             Atributo Algorithm de SignatureMethod:
+                                             Sha256RSA                            
+         XS06 Algorithm     A     XS05   1-1                                      
+                                             http://www.w3.org/2001/04/xmldsig-more#rsa-
+                                             sha256                               
+         XS07 Reference     G     XS02   1-1 Grupo Reference                      
+                                             Atributo del Tag Reference que identifica los datos
+         XS08 URI           A     XS07   1-1                                      
+                                             que se están firmandos               
+         XS10 Transforms    G     XS07   1-1 Grupo Algorithm Transforms           
+         XS12 Transforms    G     XS10   2-2 Grupo del Transform                  
+                                             Atributos válidos Algorithm de Transform:
+                                             https://www.w3.org/TR/xmldsig-core1/#sec-
+         XS13 Algorithm     A     XS12   2-2 EnvelopedSignature                   
+                                             http://www.w3.org/2001/10/xml-exc-c14n#
+         XS14 XPath         E     XS12   0-n XPath                                
+         XS15 DigestMethod  G     XS07   1-1 Grupo del método del DigestMethod    
+                                             Atributo del algoritmo utilizado para el
+                                             DigestMethod:                        
+         XS16 Algortihm     A     XS15   1-1                                      
+                                             https://www.w3.org/TR/2002/REC-xmlenc-core-
+                                             20021210/Overview.html#sha256        
+         XS17 DigestValue   E     XS07   1   Digest Value (HASH SHA256)           
+         XS18 SignatureValue G    XS01   1-1 Grupo del Signature Value            
+         XS19 KeyInfo       G     XS01   1-1 Grupo del KeyInfo                    
+         XS20 X509Data      G     XS19   1-1 Grupo X509                           
+         XS21 X509Certificate E   XS20   1-1 Certificado Digital X509.v3          
+       septiembre de 2019                                      38                 
+
+===== PAGE 40 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       Significado de la columna Descripción del Schema XML 1:                    
+                                                                                  
+          • G:   Grupo                                                            
+          • A:   Algoritmo                                                        
+          • RC:  Regla                                                            
+                                                                                  
+          • E:   Elemento                                                         
+                                                                                  
+       Esta estructura se debe utilizar para todos los archivos firmados, utilizando el CDC, para el atributo Id
+                                                                                  
+                                                                                  
+         <rDE xmlns=http://ekuatia.set.gov.py/sifen/xsd                           
+         xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance                      
+         xsi:schemaLocation="http://ekuatia.set.gov.py/sifen/xsd/siRecepDE_v150.xsd">
+            <dVerFor>150</dVerFor>                                                
+            <DE Id="0144444401700100100145282201170125158732260988">              
+                        ...                                                       
+            </DE>                                                                 
+            <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">                
+            <SignedInfo>                                                          
+            <CanonicalizationMethod                                               
+              Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>       
+              <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+                 <Reference URI="#0144444401700100100145282201170125158732260988">
+                   <Transforms>                                                   
+                      <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-
+              signature"/>                                                        
+                      <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                   </Transforms>                                                  
+                   <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                   <DigestValue>Nt2UmpjUHuu2DT6CJc2mtKhhqbq94LHSak1IsEOtuWk=      
+                   </DigestValue>                                                 
+                 </Reference>                                                     
+            </SignedInfo>                                                         
+            <SignatureValue>DWN1my9sH4FI7ygPT3KF1ce...</SignatureValue>           
+              <KeyInfo>                                                           
+                 <X509Data>                                                       
+                   <X509Certificate>MIIIxzCCBq+gAwIBAgITXAA...                    
+                   </X509Certificate>                                             
+                 </X509Data>                                                      
+              </KeyInfo>                                                          
+            </Signature>                                                          
+         </rDE>                                                                   
+       En el proceso de verificación de los certificados, el SIFEN se encargará de consultar la lista de certificados
+       revocados (LCR) al momento de la validación correspondiente, de manera que el contribuyente no necesitará
+       anexar esta lista al firmar el documento.                                  
+          7.7. Especificaciones técnicas del estándar de certificado y firma digital
+          • Estándar de Firma: XML Digital Signature, se utiliza el formato Enveloped
+            http://www.w3.org/TR/xmldsig-core/                                    
+          • Certificado Digital: Expedido por una de los PSC habilitados en la República del Paraguay, estándar
+            http://www.w3.org/2000/09/xmldsig#X509Data                            
+            https://www.acraiz.gov.py/html/Certif_1PrestaServ.html                
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      39                 
+
+===== PAGE 41 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          • Tamaño de la Clave Criptográfica: RSA 2048, para cifrado por software, para cifrado por hardware
+                                                                                  
+            pueden ser de RSA 2048 o RSA 4096.                                    
+          • Función Criptográfica Asimétrica: RSA conforme a (https://www.w3.org/TR/2002/REC-xmlenc-core-
+            20021210/Overview.html#rsa-1_5 ).                                     
+          • Función de “message digest”: SHA-2                                    
+            https://www.w3.org/TR/2002/REC-xmlenc-core-20021210/Overview.html#sha256
+          • Codificación: Base64                                                  
+            https://www.w3.org/TR/xmldsig-core1/#sec-Base-64                      
+          • Transformaciones exigidas: Útil para canonizar el XML enviado, con el propósito de realizar la
+            validación correcta de la firma digital:                              
+            Enveloped, https://www.w3.org/TR/xmldsig-core1/#sec-EnvelopedSignature
+                                                                                  
+            C14N, http://www.w3.org/2001/10/xml-exc-c14n#                         
+          7.8. Procedimiento para la validación de la firma digital:              
+                                                                                  
+          a) Extraer la clave pública del certificado digital,                    
+                                                                                  
+          b) Verificar el plazo de validez del certificado digital del emisor     
+          c) Validar la cadena de confianza, identificando al PSC, así como la lista de certificados revocados de la
+            cadena                                                                
+          d) Verificar que el certificado digital utilizado es del contribuyente y no de una autoridad certificadora
+          e) Validar la integridad de las LCR utilizadas                          
+          f) Verificar el Plazo de validez de cada LCR (Effective Date y NextUpdate) en relación al momento de la
+            firma (campo fecha de la firma).                                      
+                                                                                  
+          7.9. Síntesis de definiciones tecnológicas                              
+                                                                                  
+       La Tabla E resume los principales estándares de tecnología utilizados.     
+                                                                                  
+                             Tabla E: Estándares de tecnología utilizados         
+                Característica                 Descripción                        
+            Web Services         Estándar definido por WS-I Basic Profile 1.1     
+            Medio lógico de comunicación Web Services disponibilizados por la SET 
+            Medio físico de comunicación Internet                                 
+                                 TLS versión 1.2, con autenticación mutua utilizando los Certificados
+            Protocolo de Internet                                                 
+                                 Digitales.                                       
+            Estándar de intercambio de datos SOAP versión 1.2                     
+            Estándar de Mensaje  XML en el Estándar Style/Encoding: Document/Literal.
+                                 ITU-T X.509 V.3 Information Technology Open Systems
+                                 Interconnection. The Directory: Public-key and attribute certificate
+            Estándar de Certificado Digital                                       
+                                 frameworks. Emitido por un PSC habilitado por el MIC.
+                                 https://www.acraiz.gov.py/html/Certif_1PrestaServ.html
+                                 XML Digital Signature, Enveloped, con Certificado Digital X.509
+            Estándar de la Firma Digital versión 3, con clave privada de 2048 y estándares de criptografía
+                                 asimétrica RSA, RFC5639 y algoritmo SHA-256      
+                                 Se validarán la integridad y la autoría, además la cadena de
+            Validación de la Firma Digital confianza, por medio de las LCR en relación al momento de la firma
+                                 (campo fecha de la firma).                       
+                                 Definidos según las mejores prácticas a la hora de armar un archivo
+            Estándares de utilización XML                                         
+                                 XML                                              
+       septiembre de 2019                                      40                 
+
+===== PAGE 42 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          7.10.  Resumen de las Direcciones Electrónicas de los Servicios Web para Ambientes de Pruebas y
+             Producción                                                           
+                                                                                  
+                                                                                  
+                                 URL                         Ambiente             
+           https://sifen.set.gov.py/de/ws/sync/recibe.wsdl?wsdl Producción        
+           https://sifen.set.gov.py/de/ws/async/recibe-lote.wsdl?wsdl Producción  
+           https://sifen.set.gov.py/de/ws/eventos/evento.wsdl?wsdl Producción     
+                                                                                  
+           https://sifen.set.gov.py/de/ws/consultas/consulta-lote.wsdl?wsdl Producción
+           https://sifen.set.gov.py/de/ws/consultas/consulta-ruc.wsdl?wsdl Producción
+           https://sifen.set.gov.py/de/ws/consultas/consulta.wsdl?wsdl Producción 
+           https://sifen-test.set.gov.py/de/ws/sync/recibe.wsd?wsdl Test          
+           https://sifen-test.set.gov.py/de/ws/async/recibe-lote.wsdl?wsdl Test   
+           https://sifen-test.set.gov.py/de/ws/eventos/evento.wsdl?wsdl Test      
+           https://sifen-test.set.gov.py/de/ws/consultas/consulta.wsdl?wsdl Test  
+           https://sifen-test.set.gov.py/de/ws/consultas/consulta-lote.wsdl?wsdl Test
+           https://sifen-test.set.gov.py/de/ws/consultas/consulta-ruc.wsdl?wsdl Test
+                                                                                  
+                                                                                  
+          7.11.  Servidor para sincronización externa de horario                  
+                                                                                  
+                                                                                  
+       Las direcciones para acceder a los servidores NTP para sincronización de horario son:
+          • aravo1.set.gov.py                                                     
+          • aravo2.set.gov.py                                                     
+                                                                                  
+       El acceso a los servicios, citados en los puntos 7.10 y 7.11, dependerá de la política de seguridad establecida
+                                                                                  
+       por la SET. Por lo que, podrá limitar y/o restringir la utilización de los servicios por contribuyente, por
+       direcciones IP u otros, de tal forma a asegurar la disponibilidad de los recursos según cada etapa del plan
+       general del SIFEN.                                                         
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      41                 
+

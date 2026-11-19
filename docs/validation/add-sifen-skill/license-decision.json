@@ -1,0 +1,13 @@
+{
+  "license": "Apache-2.0",
+  "scope": "Authored material in skills/sifen-electronic-documentation only; official sources excluded",
+  "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "source": "Existing canonical Apache-2.0 text in the repository candidate directory; copied verbatim without adopting the repository-wide candidate",
+  "authorization_quote": "use a licenca apache 2.0",
+  "authorship_quote": "Use a msm licença das outras skills do projeto, origem desenvolvida por mim msm",
+  "authorization_source": "Developer messages in the add-sifen-skill chat on 2026-11-17",
+  "copyright_assignment": "not inferred",
+  "repository_wide_license": "unchanged",
+  "third_party_clearance": "unverified",
+  "planning": "Proposal/Requirements R2 awaiting approval; Design/Tasks R1 superseded"
+}

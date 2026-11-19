@@ -18,6 +18,7 @@ Para quienes desarrollan, revisan y mantienen proyectos, incluidos contribuidore
 - [Auditar un proyecto](docs/user-docs/guides/project-audit.es.md)
 - [Revisar la arquitectura](docs/user-docs/guides/architecture-review.es.md)
 - [Validación y evaluaciones](docs/user-docs/guides/validation-and-evaluations.es.md)
+- [Documentación electrónica SIFEN](docs/user-docs/guides/sifen-electronic-documentation.es.md)
 
 ## Preparación de la publicación en curso
 

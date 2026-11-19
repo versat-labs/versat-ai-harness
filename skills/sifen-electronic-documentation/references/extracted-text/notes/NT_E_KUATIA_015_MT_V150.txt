@@ -1,0 +1,73 @@
+
+===== PAGE 1 / 1 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                   NOTA TÉCNICA N° 15                               
+                                                                                    
+            Fecha: 14/08/2023                                                       
+                                                                                    
+            Fecha puesta a disposición para el Ambiente de Test 21 de Agosto del 2023
+            Fecha puesta a disposición para el Ambiente de                          
+                                                    21 de Septiembre del 2023       
+            Producción                                                              
+            Referencia: Correcciones y ajustes sobre el MT versión 150              
+            1. Validaciones                                                         
+                                                                                    
+              1.1. En Campos que identifican al documento asociado (H001-H049) se agrega la siguiente
+                 validación.                                                        
+                                                                                    
+                 (Páginas 189)                                                      
+                                                                                    
+             ID   Mensaje de la Validación Código  Observación          E           
+                 El receptor informado en el                                        
+                                         Si el tipo de documento asociado es electrónico
+                 CDC   asociado no                                                  
+                                         (H002=1) el CDC debe coincidir al receptor 
+            H004i corresponde al informado en 2442                      R           
+                                         informado en el evento de Nominación de    
+                 el evento de Nominación de                                         
+                                         Factura Electrónica                        
+                 Factura Electrónica                                                
+            Observación: Validación referente al Evento de Nominación de Factura Electrónica
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            Histórico del Documento                                                 
+                                                                                    
+                         FECHA DE               FECHA DE                            
+             AUTOR                    REVISOR            PRINCIPALES ALTERACIONES   
+                        ELABORACIÓN             REVISIÓN                            
+                                                        Elaboración del Documento,  
+          Jonathan Garay 24/07/2023  Martha Rojas 08/08/2023 Formato de Campos y    
+                                                        Validaciones                
+                                                                                    
+                                                                                    
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    

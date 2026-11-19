@@ -1,0 +1,66 @@
+
+===== PAGE 1 / 1 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                       Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+                                   NOTA TÉCNICA N° 2                              
+                                                                                  
+            Fecha: 16/07/2020                                                     
+                                                                                  
+            Cambios desde la fecha: 14/10/2019 al 16/07/2020                      
+            Referencia: Correcciones y ajustes sobre el MT versión 150            
+                                                                                  
+            1. FORMATO                                                            
+              1.1. Se modifican los siguientes campos:                            
+                                                                                  
+                                        Nodo Tipo                                 
+            Grupo ID  Campo   Descripción         Longitud Ocurrencia Observaciones
+                                        Padre Dato                                
+            D3  D208 iTipIDRec Tipo de documento D200 N 1 0-1  Obligatorio si D201 = 2 y
+                            de identidad del                   D202 ≠ 4           
+                            receptor                           No informar si D201 = 1 o
+                                                               D202=4             
+                                                               1= Cédula paraguaya
+                                                               2= Pasaporte       
+                                                               3= Cédula extranjera
+                                                               4= Carnet de residencia
+                                                               5= Innominado      
+                                                               6=Tarjeta Diplomática de
+                                                               exoneración fiscal 
+                                                               9= Otro            
+            D3  D210 dNumIDRec Número de D200 A   1-20  0-1    Obligatorio si D201 = 2 y
+                            documento de                       D202 ≠ 4           
+                            identidad                          No informar si D201 = 1 o
+                                                               D202=4             
+                                                               En caso de DE      
+                                                               innominado, completar
+                                                               con 0 (cero)       
+            Páginas: 71, 72                                                       
+            2. VALIDACIONES                                                       
+              2.1. Se eliminan las siguientes validaciones:                       
+            N°                                                                    
+                 ID    Mensaje de la Validación Código   Observación       E      
+            Val                                                                   
+            63  D208d El tipo de documento de identidad 1322 Si la naturaleza del receptor es Contribuyente R
+                     del receptor no es requerido (D201=1) o el tipo de operación es igual a B2F
+                                               (D202=4), el tipo de documento de identidad no debe
+                                               ser informado                      
+            66  D210a El número de documento de 1323 Si la naturaleza del receptor es contribuyente R
+                     identidad del receptor no es (D201=1) o el tipo de operación es igual a B2F
+                     requerido                 (D202=4), el número de documento de identidad no
+                                               debe ser informado                 
+            Páginas: 166, 167                                                     
+            Histórico del Documento                                               
+                                                         FECHA DE   PRINCIPALES   
+                  AUTOR     FECHA DE ELABORACIÓN REVISOR                          
+                                                         REVISIÓN  ALTERACIONES   
+              Amanda González 16/07/2020   Carlos Mendoza                         
+                                         1                                        
+                                                                                  
+                                                                                  
+                                                                                  

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SIFEN Electronic Documentation"
+  short_description: "Consult the SIFEN documentary snapshot with traceable sources"
+  default_prompt: "Use $sifen-electronic-documentation to consult the supplied SIFEN sources for my environment and reference date."

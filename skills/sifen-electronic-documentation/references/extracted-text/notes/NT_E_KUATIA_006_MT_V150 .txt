@@ -1,0 +1,66 @@
+
+===== PAGE 1 / 1 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                       Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+                                   NOTA TÉCNICA N° 6                              
+                                                                                  
+            Fecha: 25/03/2021                                                     
+                                                                                  
+            Cambios desde la fecha: 25/03/2021                                    
+            Referencia: Correcciones y ajustes sobre el MT versión 150            
+                                                                                  
+                                                                                  
+            1. VALIDACIONES                                                       
+                                                                                  
+              1.1. Se agrega la siguiente validación:                             
+                 D1. Campos inherentes a la operación comercial (D010-D099)       
+                                                                                  
+                                                                                  
+           N°                                                                     
+                ID   Mensaje de la Validación Código Observación       E          
+          Val                                                                     
+           25  D011a Tipo de transacción no 1216 No informar el tipo de transacción R
+                    requerido para el tipo de cuando C002≠1 o 4                   
+                    documento electrónico                                         
+                    seleccionado                                                  
+            Páginas: 162.                                                         
+                                                                                  
+                                                                                  
+            Histórico del Documento                                               
+                                                                                  
+                                                      FECHA DE  PRINCIPALES       
+              AUTOR     FECHA DE ELABORACIÓN REVISOR                              
+                                                      REVISIÓN  ALTERACIONES      
+           Esperanza Britos 23/03/2021  Carlos Mendoza 23/03/2021                 
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                         1                                        
+                                                                                  
+                                                                                  
+                                                                                  

@@ -1,0 +1,66 @@
+
+===== PAGE 1 / 1 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                       Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+                                   NOTA TÉCNICA N° 5                              
+                                                                                  
+            Fecha: 09/02/2021                                                     
+                                                                                  
+            Cambios desde la fecha: 09/02/2021 al 09/02/2021                      
+            Referencia: Correcciones y ajustes sobre el MT versión 150            
+                                                                                  
+            1. FORMATO                                                            
+              1.1. Se modifican los siguientes campos:                            
+                                                                                  
+                                      Nodo Tipo                                   
+         Grupo ID  Campo    Descripción         Longitud Ocurrencia Observaciones 
+                                      Padre Dato                                  
+          D3  D204 dDesPaisRe Descripción del país D200 A 4-50 1-1                
+                          receptor                                                
+                          Número de                                               
+                                                             Debe informarse      
+         E10.3 E965 dNroMatVeh matrícula del E960 A 6-7 0-1                       
+                                                             cuando el E967=2     
+                          vehículo                                                
+            Páginas: 71, 100.                                                     
+            Histórico del Documento                                               
+                                                      FECHA DE  PRINCIPALES       
+              AUTOR     FECHA DE ELABORACIÓN REVISOR                              
+                                                      REVISIÓN  ALTERACIONES      
+            Sara Ramirez   09/02/2021   Carlos Mendoza                            
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                         1                                        
+                                                                                  
+                                                                                  
+                                                                                  

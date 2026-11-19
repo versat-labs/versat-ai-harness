@@ -1,0 +1,66 @@
+
+===== PAGE 1 / 1 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                      NOTA TÉCNICA N° 17                          
+                                                                                  
+            Fecha: 14/08/2023                                                     
+            Fecha puesta a disposición para el Ambiente de Test 24 de Agosto del 2023
+            Fecha puesta a disposición para el Ambiente de Producción 25 de Agosto del 2023
+                                                                                  
+            Referencia: Correcciones y ajustes sobre el MT versión 150            
+                                                                                  
+            1. Validaciones                                                       
+              2.1 SE MODIFICAN LOS SIGUIENTES MENSAJES DE VALIDACIÓN PARA LOS DATOS QUE IDENTIFICAN AL RECEPTOR DEL
+              DOCUMENTO ELECTRÓNICO DE                                            
+              (Páginas 167)                                                       
+                                                                                  
+              D3. Campos que identifican al receptor del Documento Electrónico DE (D200-D299)
+                                                                                  
+               N° Val ID    Mensaje de la Validación Código Observación E         
+                                                  Descripción del distrito del receptor no
+                          Descripción del distrito del receptor                   
+                71   D222                    1326 coincidente con lo informado en el campo R
+                          no corresponde al código                                
+                                                  D221                            
+                                                  Descripción de la ciudad del receptor no
+                          Descripción de la ciudad del                            
+                74   D224                    1329 coincidente con lo informado en el campo R
+                          receptor no corresponde al código                       
+                                                  D223                            
+            Histórico del Documento                                               
+                            FECHA DE              FECHA DE                        
+                AUTOR                   REVISOR            PRINCIPALES ALTERACIONES
+                           ELABORACIÓN            REVISIÓN                        
+                                                         Elaboración del Documento:
+              Norma Rojas   11/08/2023 Martha Rojas 17/08/2023                    
+                                                         Ajustes de mensaje de validación
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  

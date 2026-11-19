@@ -25,6 +25,7 @@ EXPECTED_SKILLS = {
     "project-bootstrap",
     "project-maintenance",
     "versat-sdd",
+    "sifen-electronic-documentation",
 }
 CANONICAL_DIRECTORIES = {
     "agents",

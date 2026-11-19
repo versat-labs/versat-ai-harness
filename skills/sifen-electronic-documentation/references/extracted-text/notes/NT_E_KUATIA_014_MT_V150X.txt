@@ -1,0 +1,342 @@
+
+===== PAGE 1 / 4 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                            Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+                                    NOTA TÉCNICA N° 14                            
+            Fecha: 20/03/2023                                                     
+                                                                                  
+            Fecha puesta a disposición para el Ambiente de Test 31 de Mayo del 2023
+            Fecha puesta a disposición para el Ambiente de                        
+                                                      08 de Agosto del 2023       
+            Producción                                                            
+            Referencia: Correcciones y ajustes sobre el MT versión 150            
+                                                                                  
+            1. Formato de Campos XML                                              
+              1.1 Se agrega el Grupo: Evento de Nominación de Factura Electrónica (Formato del evento de nominación).
+                                                                                  
+            Grup                           Nodo  Tipo                             
+                  ID    Campo   Descripción           Longitud Ocu Observaciones  
+             o                             Padre Dato                             
+                               Raíz Gestión de                                    
+            GDE GENFE001 rGEveNom Eventos GDE007  G     -    -  Elemento raíz     
+                               Nominación                                         
+                               Identificador del                Se informa el código
+            GDE GENFE002  Id              GENFE001 A   44    1-1                  
+                               DTE                              de control (CDC)  
+                        mOtEve                                                    
+            GDE GENFE003       Motivo del Evento GENFE001 A 5-500 1-1 Campo abierto
+                        iNatRec Naturaleza del                  1= contribuyente  
+            GDE GENFE004                  GENFE001 N    1    1-1                  
+                               receptor                         2= no contribuyente
+                                                                1= B2B            
+                               Tipo de                                            
+            GDE GENFE027 iTiOpe           GENFE001 N    1    1-1 2= B2C           
+                               operación                                          
+                                                                4= B2F            
+                               Código de país                   Según XSD de      
+            GDE GENFE005 cPaisRec         GENFE001 A    3    1-1                  
+                               del receptor                     Codificación de Países
+                       dDesPaisRe Descripción del               Referente al campo
+            GDE GENFE006                  GENFE001 A   4-50  1-1                  
+                               país receptor                    GENFE005          
+                                                                Obligatorio si    
+                                                                GENFE004=1        
+                               Tipo de                                            
+                       iTiContRec                               No informar si    
+            GDE GENFE007       contribuyente GENFE001 N 1    0-1                  
+                                                                GENFE004=2        
+                               receptor                                           
+                                                                1= Persona Física 
+                                                                2= Persona Jurídica
+                                                                Obligatorio si    
+                        dRucRec                                 GENFE004=1        
+            GDE GENFE008       RUC del receptor GENFE001 A 3-8 0-1                
+                                                                No informar si    
+                                                                GENFE004=2        
+                                                                Obligatorio si existe el
+                               Dígito verificador                                 
+                        dDVRec                                  campo GENFE008    
+            GDE GENFE009       del RUC del GENFE001 N   1    0-1                  
+                                                                Según algoritmo   
+                               receptor                                           
+                                                                módulo 11         
+                                                                Obligatorio si    
+                                                                GENFE004=2        
+                                                                1=Cédula paraguaya
+                                                                2=Pasaporte       
+                               Tipo de                          3=Cédula extranjera
+                       iTipIDRec documento de                   4=Carnet de       
+            GDE GENFE010                  GENFE001 N    1    0-1                  
+                               identidad del                    residencia        
+                               receptor                         5=Tarjeta Diplomática
+                                                                de exoneración fiscal
+                                                                9=Otro            
+
+===== PAGE 2 / 4 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                            Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+                                                                Obligatorio si existe el
+                                                                campo GENFE010    
+                                                                1= “Cédula paraguaya”
+                                                                2= “Pasaporte”    
+                                                                3= “Cédula extranjera”
+                               Descripción del                  4= “Carnet de     
+                       dDTipIDRec tipo de                       residencia”       
+            GDE GENFE011                  GENFE001 A   9-41  0-1                  
+                               documento de                     5= “Tarjeta       
+                               identidad                        Diplomática de    
+                                                                exoneración fiscal”
+                                                                Si GENFE010=9 Se  
+                                                                deberá informar el
+                                                                tipo de documento de
+                                                                identidad del receptor
+                               Número de                                          
+                       dNumIDRec                                Obligatorio si    
+            GDE GENFE012       documento de GENFE001 A 1-20  0-1                  
+                                                                GENFE004=2        
+                               identidad                                          
+                               Nombre o razón                                     
+                        dNomRec                              1-1                  
+            GDE GENFE013       social del GENFE001 A   4-255                      
+                               receptor del DTE                                   
+                       dNomFanR                                                   
+                               Nombre de                     0-1                  
+            GDE GENFE014  ec              GENFE001 A   4-255    Campo abierto     
+                               fantasía                                           
+                        dDirRec Dirección del                0-1                  
+            GDE GENFE015                  GENFE001 A   1-255    Campo abierto     
+                               receptor                                           
+                                                                Campo obligatorio si
+                       dNumCasR Número de casa                                    
+            GDE GENFE016                  GENFE001 N   1-6   0-1 se informa el campo
+                          ec   del receptor                                       
+                                                                GENFE015          
+                               Código del                                         
+                                                                Según XSD de      
+            GDE GENFE017 cDepRec departamento GENFE001 N 1-2 0-1                  
+                                                                Departamentos     
+                               del receptor                                       
+                               Descripción del                                    
+                       dDesDepRe                                Referente al campo
+            GDE GENFE018       departamento GENFE001 A 6-16  0-1                  
+                          c                                     GENFE017          
+                               del receptor                                       
+                               Código del                       Según Tabla 2.1 – 
+            GDE GENFE019 cDisRec distrito del GENFE001 N 1-4 0-1 Departamentos,   
+                               receptor                         Distritos Y Ciudades
+                               Descripción del                                    
+                                                                Obligatorio si existe el
+            GDE GENFE020 dDesDisRec distrito del GENFE001 A 1-30 0-1              
+                                                                campo GENFE019    
+                               receptor                                           
+                               Código de la                     Según Tabla 2.1 – 
+            GDE GENFE021 cCiuRec ciudad del GENFE001 N 1-5   0-1 Departamentos,   
+                               receptor                         Distritos Y Ciudades
+                               Descripción de la                                  
+                                                             0-1 Referente al campo
+            GDE GENFE022 dDesCiuRec ciudad del GENFE001 A 1-30                    
+                                                                GENFE021          
+                               receptor                                           
+                               Número de                        Debe incluir el prefijo
+            GDE GENFE023 dTelRec teléfono del GENFE001 A 6-15 0-1 de la ciudad si 
+                               receptor                         GENFE005= PRY     
+                               Número de                                          
+            GDE GENFE024 dCelRec celular del GENFE001 A 10-20 0-1                 
+                               receptor                                           
+                               Correo                                             
+            GDE GENFE025 dEmailRec electrónico del GENFE001 A 3-80 0-1            
+                               receptor                                           
+            GDE GENFE026 dCodCliente Código del cliente GENFE001 A 3-15 0-1       
+
+===== PAGE 3 / 4 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                            Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+            2. Validaciones                                                       
+              2.1 SE AGREGAN LAS SIGUIENTES REGLAS DE VALIDACIÓN PARA EL EVENTO NOMINACIÓN DE
+              FACTURA ELECTRÓNICA                                                 
+                                                                                  
+                ID     Mensaje de la Validación Código Observación      E         
+                                              Debe validar que el CDC (GENFE002) cuente
+                                              con los 44 caracteres según las reglas de
+              GENFE002 CDC inválido      4451                           R         
+                                              estructuración del CDC (longitud, y/o dígito
+                                              verificador)                        
+                     El CDC informado no existe en la El identificador del CDC (GENFE002) no se
+              GENFE002a base de datos del SIFEN o ha sido 4452 encuentra en la base de datos del SIFEN o se R
+                     cancelado                encuentra cancelado                 
+                     El CDC del DTE informado ya                                  
+                                              El DTE (GENFE002) ya cuenta con un evento
+              GENFE002b cuenta con un evento previo de 4453             R         
+                                              previo de nominación de factura electrónica
+                     nominación de factura electrónica                            
+                     El tipo de documento del CDC                                 
+              GENFE002c informado no corresponde a 4454                           
+                                              El CDC informado no corresponde Factura
+                                                                        R         
+                                              Electrónica (GENFE002)              
+                     Factura electrónica                                          
+                                              La descripción del país del receptor no
+              GENFE006                                                            
+                     Descripción del país receptor no                             
+                                         4456 coincidente con lo informado en el campo
+                                                                        R         
+                     corresponde al código                                        
+                                              GENFE005                            
+                                              Si la naturaleza del receptor es contribuyente
+              GENFE007                                                            
+                     Es obligatorio informar el tipo de                           
+                                         4457 (GENFE004=1) el tipo de contribuyente
+                                                                        R         
+                     contribuyente receptor                                       
+                                              receptor debe ser informado         
+                                              Si la naturaleza del receptor es NO 
+              GENFE007a                                                           
+                     Tipo de contribuyente receptor                               
+                                         4458                                     
+                                              contribuyente (GENFE004=2), el tipo de R
+                     inválido                 contribuyente receptor (GENFE007) no debe
+                                              ser informado                       
+                                              Si la naturaleza del receptor es contribuyente
+              GENFE008                                                            
+                     Es obligatorio informar el RUC del                           
+                                         4459 (GENFE004=1), el RUC del receptor debe ser
+                                                                        R         
+                     receptor contribuyente                                       
+                                              informado                           
+                                              Si la naturaleza del receptor es NO 
+              GENFE008a RUC del receptor no requerido 4460 contribuyente (GENFE004=2), el RUC del
+                                                                        R         
+                                              receptor (GENFE008) no debe ser informado
+              GENFE008b                                                           
+                     RUC del receptor inexistente en la                           
+                                         4461                                     
+                                              El RUC informado no existe en la base de R
+                     base de datos de Marangatu datos de Marangatu                
+                                              Si la naturaleza del receptor es contribuyente
+                                              (GENFE004=1), el RUC del receptor en
+              GENFE008c                                                           
+                     El RUC se encuentra inactivo para                            
+                                         4462 Marangatu debe contar con un estado R
+                     el tipo de contribuyente receptor                            
+                                              distinto a CANCELADO o CANCELADO    
+                                              DEFINITIVO                          
+              GENFE009                                                            
+                     Dígito Verificador del RUC del                               
+                                         4463                                     
+                                              El Dígito Verificador ingresado no  
+                                                                        R         
+                     receptor incorrecto      corresponde al módulo 11 del RUC    
+                     Es obligatorio informar el tipo de Si la naturaleza del receptor es NO
+              GENFE010 documento de identidad del 4464 contribuyente (GENFE004=2), el tipo de R
+                     receptor                 documento de identidad debe ser informado
+                                              Si la naturaleza del receptor es contribuyente
+              GENFE010a                                                           
+                     Tipo de documento de identidad                               
+                                         4465                                     
+                                              (GENFE004=1), el tipo de documento de
+                                                                        R         
+                     del receptor no requerido identidad del receptor (GENFE010) no debe
+                                              ser informado                       
+                     Descripción del tipo de                                      
+                                              La descripción del tipo de documento de
+              GENFE011                                                            
+                     documento de identidad del                                   
+                                         4466 identidad del receptor no coincidente con lo R
+                     receptor no corresponde al                                   
+                                              informado en el campo GENFE010      
+                     código                                                       
+                     Es obligatorio informar el número Si la naturaleza del receptor es NO
+              GENFE012 de documento de identidad del 4467 contribuyente (GENFE004=2), el número de R
+                     receptor                 documento de identidad debe ser informado
+                     El RUC del Emisor del evento no El RUC del Emisor de la Factura Electrónica
+              GENFE002d corresponde al emisor de la 4468 debe ser el mismo que el RUC del Emisor del R
+                     factura electrónica      evento.                             
+
+===== PAGE 4 / 4 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                            Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+                                              El tipo de documento de identidad del
+              GENFE002e                                                           
+                     El receptor de la Factura                                    
+                                         4469 receptor informada en la factura electrónica R
+                     electrónica debe ser innominado                              
+                                              debe ser igual a innominado (D208=5)
+                                              Si se informa la dirección del receptor
+                     Es obligatorio informar el número                            
+              GENFE016                   4470 (GENFE015) es obligatorio informar el R
+                     de casa del receptor                                         
+                                              número de casa (GENFE016)           
+                     Descripción del departamento del Descripción del departamento del receptor
+              GENFE018 receptor no corresponde al 4471 no coincidente con lo informado en el campo R
+                     código.                  GENFE017.                           
+                     Descripción del distrito de Descripción del distrito del receptor no
+              GENFE020 receptor no corresponde al 4472 coincidente con lo informado en el campo R
+                     código                   GENFE019                            
+                     Descripción de la ciudad del Descripción de la ciudad del receptor no
+              GENFE022 receptor no corresponde al 4473 coincidente con lo informado en el campo R
+                     código                   GENFE021                            
+                                              Debe haber relación entre el departamento
+                     El Departamento, el Distrito y la (GENFE017), el distrito (GENFE019) y la ciudad
+              GENFE021 Ciudad del receptor no están 4474 (GENFE021)     R         
+                     relacionados             Según Tabla 2.1 – Departamentos, Distritos y
+                                              Ciudades                            
+                                              Si el tipo de operación es B2B (GENFE027=1),
+                                              la naturaleza del receptor debe ser 
+                     Naturaleza del receptor incorrecto                           
+                                              contribuyente (GENFE004=1)          
+              GENFE004 para el tipo de operación 4475                   R         
+                                              Si el tipo de operación es B2C o B2F
+                     informado                                                    
+                                              (GENFE027=2 o 4), la naturaleza del receptor
+                                              debe ser no contribuyente (GENFE004=2)
+                                              Si el tipo de operación es B2F (GENFE027=4),
+                                              el país informado debe ser diferente a PRY
+                     Código de país del receptor                                  
+                                              (GENFE005≠PRY).                     
+              GENFE005 inválido para el tipo de operación 4476          R         
+                                              Si el tipo de operación es diferente de B2F
+                     informado                                                    
+                                              (GENFE027≠4) el país informado debe ser
+                                              igual a PRY (GENFE005=PRY)          
+                     El número de documento de Si la naturaleza del receptor es contribuyente,
+              GENFE012 identidad del receptor no es 4477 el número de documento de identidad no R
+                     requerido                debe ser informado                  
+                     Dirección del receptor no                                    
+                                              Si el tipo de operación es B2F, es obligatorio
+              GENFE015 informado para el tipo de 4478                   R         
+                                              informar la dirección del receptor (GENFE015)
+                     documento electrónico                                        
+            Histórico del Documento                                               
+                           FECHA DE              FECHA DE                         
+               AUTOR                   REVISOR             PRINCIPALES ALTERACIONES
+                          ELABORACIÓN            REVISIÓN                         
+                                                         Elaboración del Documento,
+             Jonathan Garay 11/11/2022 Martha Rojas 18/11/2022                    
+                                                         Formato de Campos y Validaciones
+                                                         Se incluye el Campo de Tipo de
+             Jonathan Garay 04/05/2023 Martha Rojas 05/05/2023 operación y se realizan ajustes
+                                                         respecto a las Validaciones.

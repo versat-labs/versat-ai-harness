@@ -1,0 +1,162 @@
+
+===== PAGE 1 / 2 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                   NOTA TÉCNICA N° 18                               
+            Fecha: 17/11/2023                                                       
+                                                                                    
+        Fecha puesta a disposición para el Ambiente de Test 01 de diciembre de 2023 
+        Fecha puesta a disposición para el Ambiente de Producción 08 de enero de 2024
+                                                                                    
+            Referencia:                                                             
+              ●  Nuevos campos y validaciones para la imputación automática de las ventas al módulo RG90.
+              ●  Correcciones en el MT versión 150 referente a los códigos de mensajes que corresponden a la regla
+                 de validación para el evento de transporte.                        
+                                                                                    
+            1. Campos nuevos                                                        
+                                                                                    
+              1.1. Para el grupo campos inherentes a la operación comercial (D010-D099) se agrega el siguiente subgrupo y sus
+                 campos:                                                            
+                 (Páginas 66,67)                                                    
+            D1.1. Campos que identifican las obligaciones afectadas (D030-D040)     
+                                                                                    
+                                          Nodo                                      
+       Grupo  ID    Campo     Descripción       Tipo Dato Long. Ocu. Observaciones  
+                                          Padre                                     
+                            Grupo de campos que                                     
+        D1.1 D030  gOblAfe    identifican las D010 G     -   0-11                   
+                                                                   Detalle del tipo de
+                                                                  obligaciones afectadas
+                           obligaciones afectadas                                   
+                           Código de la obligación                Según Tabla 12 – Tipo
+        D1.1 D031  cOblAfe                D030    N      3    1-1                   
+                               afectada                             de obligaciones.
+                             Descripción de la                     Referente al campo
+        D1.1 D032 dDesOblAfe              D030    A     21-65 1-1                   
+                            obligación afectada                       D031.         
+            2. Validaciones nuevas                                                  
+              2.1. Validaciones que identifican las obligaciones afectadas (D030-D040):
+                 (Páginas 162,163)                                                  
+            D1.1. Campos que identifican las obligaciones afectadas (D030-D040)     
+          ID      Mensaje de la validación Código    Observación         E          
+                                            Debe ser un código según la tabla 12 - Tipo de
+         D031 Código de la obligación afectada inexistente 1220          R          
+                                            obligaciones.                           
+              Descripción de la obligación afectada no Descripción de la obligación afectada no
+         D032                          1221                              R          
+              corresponde al código informado coincidente con lo informado en el campo D031.
+            3. Tabla nueva                                                          
+                               TABLA 12 - TIPO DE OBLIGACIONES                      
+            CÓDIGO                          DESCRIPCIÓN                             
+              113     IMPUESTO A LA RENTA IRACIS - REGÍMENES ESPECIALES             
+              143     TRIBUTO UNICO MAQUILA                                         
+              211     IMPUESTO AL VALOR AGREGADO - GRAVADAS Y EXONERADAS - EXPORTADORES
+              311     IMPUESTO SELECTIVO AL CONSUMO - GENERAL                       
+              321     IMPUESTO SELECTIVO AL CONSUMO COMBUSTIBLES                    
+              700     IMPUESTO A LA RENTA EMPRESARIAL - RÉGIMEN GENERAL             
+              701     IMPUESTO A LA RENTA EMPRESARIAL - SIMPLE                      
+              703     IMPUESTO DE ZONA FRANCA                                       
+              702     IMPUESTO A LA RENTA EMPRESARIAL - RESIMPLE                    
+              715     IMPUESTO A LA RENTA PERSONAL - SERVICIOS PERSONALES           
+              716     IMPUESTO A LA RENTA PERSONAL - RENTAS Y GANANCIAS DE CAPITAL  
+                                                                                    
+                                                                                    
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 2 / 2 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            4. Validaciones actualizadas                                            
+            11.6.7. REGLAS DE VALIDACIÓN PARA EL EVENTO POR ACTUALIZACIÓN DE DATOS: DATOS
+            DEL TRANSPORTE                                                          
+                                                                                    
+                                                                                    
+           N° Val ID      Mensaje de la Validación Código   Observación        E    
+                                                  Cuando el motivo del evento es cambio de vehículo
+                       Tipo de transporte requerido para el                         
+            26   GET022                      4325 (GET003=4), es obligatorio informar el tipo de R
+                       motivo Cambio de vehículo                                    
+                                                  transporte (GET022)               
+                                                  Cuando se informa el código de tipo de transporte
+                       Descripción del tipo de transporte es 4326                   
+            27   GET023                           (GET022), es obligatorio informar la descripción del R
+                       requerida                                                    
+                                                  tipo de transporte (GET023)       
+            28         Descripción del tipo de transporte no 4327 Descripción del tipo de transporte no coincidente con lo
+                 GET023a                                                       R    
+                       corresponde al código      informado en el campo GET022      
+                                                  Cuando el motivo del evento es cambio de vehículo
+            29         Modalidad del transporte requerido para 4328                 
+                 GET024                           (GET003=4), es obligatorio informar la modalidad del R
+                       el motivo Cambio de vehículo                                 
+                                                  transporte (GET024)               
+                                                  Cuando se informa el código de la modalidad del
+            30         Descripción de la modalidad del 4329                         
+                 GET025                           transporte (GET024), es obligatorio informar la R
+                       transporte es requerida                                      
+                                                  descripción de la modalidad del transporte (GET025)
+            31         Descripción de la modalidad del 4330 Descripción de la modalidad del transporte no
+                 GET025a                                                       R    
+                       transporte no corresponde al código coincidente con lo informado en el campo GET024
+                                                  Cuando el motivo del evento es cambio de vehículo
+                       Tipo de vehículo requerido para el 4331                      
+            32   GET026                           (GET003=4), es obligatorio informar el tipo de vehículo R
+                       motivo Cambio de vehículo                                    
+                                                  (GET026)                          
+                                                  Cuando el motivo del evento es cambio de vehículo
+            33         Marca del vehículo requerida para el 4332                    
+                 GET027                           (GET003=4), es obligatorio informar la marca del R
+                       motivo Cambio de vehículo                                    
+                                                  vehículo (GET027)                 
+                       Tipo de identificación del vehículo Cuando el motivo del evento es cambio de vehículo
+            34                               4333                                   
+                 GET028 requerido para el motivo Cambio de (GET003=4), es obligatorio informar el tipo de R
+                       vehículo                   identificación del vehículo (GET028)
+                                                  Se requiere el número de identificación del vehículo
+            35         Tipo de identificación del vehículo no 4334                  
+                 GET029                           cuando el tipo de identificación del vehículo es 1 R
+                       informado                                                    
+                                                  (GET028=1)                        
+            36         Número de matrícula del vehículo no 4335 Se requiere número de matrícula del vehículo cuando el
+                 GET030                                                        R    
+                       informado                  tipo de identificación del vehículo es 2 (GET028=2)
+            5. Validación nueva                                                     
+            11.6.7. REGLAS DE VALIDACIÓN PARA EL EVENTO POR ACTUALIZACIÓN DE DATOS: DATOS
+            DEL TRANSPORTE                                                          
+           N° Val ID      Mensaje de la Validación Código   Observación        E    
+                                                  El identificador del CDC (GET002) no se encuentra
+            37   GET002 CDC no existente en el SIFEN 4336                      R    
+                                                  aprobado como DTE en el SIFEN     
+            Histórico del Documento                                                 
+                        FECHA DE             FECHA DE                               
+              AUTOR                REVISOR                 PRINCIPALES ALTERACIONES 
+                      ELABORACIÓN             REVISIÓN                              
+            Patricia Rolón 31/10/2023 Carlos Mendoza 31/10/2023 Elaboración del Documento.
+                                          2                                         

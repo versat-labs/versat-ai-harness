@@ -1,0 +1,3 @@
+# Missing-source lookup after applying attribution
+
+One read-only attempt by /root/sifen_license_missing. The agent used local queries, inventory and SHA-256 verification. It found the historical NT 14 mapping and distinguished the authored summary of NT 27 from the unavailable PDF/TXT, explicitly withholding a conclusion about current Production compliance. It treated the new attribution link and HTTP timestamp as provenance metadata and did not infer source contents from them. The exact NT 27 query returned the missing-source diagnostic. No writes, external calls, exports or submissions were reported. Independent replay and a manifest comparison confirmed the unchanged fixture.

@@ -1,0 +1,16 @@
+{
+  "agent": "/root/sifen_missing_eval",
+  "attempt": 1,
+  "completed_observation_utc": "2026-11-17T18:25:50.622976+00:00",
+  "fixture_prepared_utc": "2026-11-17T18:23:00.796187+00:00",
+  "fixture_changed_files": {},
+  "fixture_file_count": 156,
+  "model": "not exposed",
+  "reasoning": "not exposed",
+  "usage": "not exposed",
+  "native_start_time": "not exposed; native invocation follows fixture preparation",
+  "network_telemetry": "not independently exposed",
+  "scope": "local source answer and fixture state; not process isolation",
+  "elapsed_upper_bound_seconds": 169.826789,
+  "limit_seconds": 600
+}
