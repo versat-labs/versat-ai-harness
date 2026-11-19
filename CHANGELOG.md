@@ -8,7 +8,12 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ### Added
 
+- advisory PR documentation reporting and a version-pinned consumer adoption example.
 - index-resolved coding and changelog standards, with pinned Python lint and formatting checks and Git-based changelog validation in the Harness and Python reference integration.
+
+### Changed
+
+- standardized applicable consumer documentation paths, feature rationale in SDD, and multilingual publication guidance.
 
 ## [0.4.0] - Private preparation candidate (unreleased)
 

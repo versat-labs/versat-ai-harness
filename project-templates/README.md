@@ -10,7 +10,7 @@ library        = base + library
 infrastructure = base + infrastructure
 ```
 
-The base includes [the product overview template](base/specs/product/overview.md) for all profiles. During bootstrap, populate it through the project-bootstrap Skill's guided discovery. Supporting product documents are created only when the collected content warrants them; profile modules do not copy or redefine the shared overview.
+The base includes [the product overview template](base/specs/product/overview.md) for all profiles. During bootstrap, populate it through the project-bootstrap Skill's guided discovery. Supporting product documents are created only when the collected content warrants them; profile modules do not copy or redefine the shared overview. Follow the resolved [Documentation Standard](../standards/core/documentation.md) for the reader overview, first-use guidance and ADR references. Create reader material when there is suitable content, and link from the README to existing targets. During maintenance, preserve working equivalent paths and review links and pinned references before adopting a new layout.
 
 The base README's Getting started prompt is conditional. Apply the resolved [Documentation Standard](../standards/core/documentation.md#first-use-guides) to actual usable behavior: populate the link to existing first-use content or omit the section. Do not copy the authoring prompt into a finished README, generate an empty guide or add guide directories to every profile. Create useful content and its README link together when behavior is available; preserve existing documentation conventions during adoption.
 

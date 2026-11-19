@@ -1,0 +1,21 @@
+# Publicar documentação de usuário e páginas de funcionalidades
+
+[English](publish-product-documentation.md) | [Português](publish-product-documentation.pt.md) | [Español](publish-product-documentation.es.md)
+
+Use este guia quando a funcionalidade estiver pronta para o público previsto. A página da funcionalidade ajuda a pessoa a decidir se ela resolve seu problema. O guia de usuário ajuda a concluir uma tarefa e reconhecer o resultado. Mantenha ambos alinhados ao mesmo comportamento suportado e à mesma revisão aprovada do conteúdo.
+
+## Preparar e publicar
+
+1. Defina um responsável de produto pelo conteúdo e uma pessoa encarregada da publicação. Registre quem vai ler, qual problema precisa resolver, quando a funcionalidade ajuda e qual acesso é previsto. Identifique uma página de marketing e um guia de usuário para cada funcionalidade aplicável. Crie links na visão geral do produto ou no guia de primeiros passos, conforme o caso.
+2. Escolha destinos acessíveis ao público previsto. O site de documentação, a central de ajuda ou o portal privado do produto podem receber os guias. O site de marketing aprovado ou o catálogo do produto podem receber as páginas de funcionalidades. Registre os caminhos das fontes e a revisão a publicar. Guarde credenciais e evidências restritas de descoberta em local aprovado.
+3. Escreva a versão canônica em inglês e alinhe as versões em português e espanhol. A página da funcionalidade explica o benefício e aponta para o guia correspondente. O guia explica a preparação, uma ação de exemplo, o resultado esperado e os limites ou passos de recuperação relevantes. Abra os links de cada idioma e compare as afirmações, os passos e os resultados. Indique quando uma referência técnica estiver disponível apenas em inglês. Veja a [validação do projeto (em inglês)](../../guides/project-validation.md#documentation-reporting) para o relatório automático do PR.
+4. Revise a responsabilidade pelo conteúdo, o público, a divulgação e os termos aplicáveis conforme o [Padrão de Licenciamento e Publicação (em inglês)](../../../standards/core/licensing-publication.md). Obtenha a aprovação aplicável do conteúdo e do acesso antes da divulgação. A pessoa autorizada confere a prévia e publica a revisão aprovada pelo processo habitual do destino escolhido.
+5. Faça a verificação com o mesmo nível de acesso do público previsto. Abra a visão geral, a página da funcionalidade e o guia em cada idioma aplicável. Siga os links, execute a ação representativa e compare o resultado observado. Registre a revisão publicada, os endereços e o resultado da verificação. Se o resultado ou o acesso estiver incorreto, restaure a revisão aprovada anterior ou retire as páginas afetadas, registre o problema e verifique a correção.
+
+Mantenha a relação entre a funcionalidade, a página e o guia, com o responsável e a revisão. Quando o comportamento mudar, atualize a fonte e as traduções juntas e repita as verificações afetadas. Se faltarem aprovação, acesso ou destino, registre a publicação como pendente, com motivo, responsável e próxima ação. Registre o motivo quando a publicação não se aplicar.
+
+## Exemplos completos
+
+**Funcionalidade publicável — exportação agendada.** A equipe de Relatórios é responsável pelo conteúdo. Uma revisão aprovada liga a página da funcionalidade no catálogo do produto ao guia da central de ajuda em cada idioma. A página explica por que o envio agendado ajuda uma equipe de relatórios. O guia orienta o leitor a agendar uma exportação e confirmar que a agenda mostra a próxima execução. A pessoa encarregada publica as versões aprovadas e verifica os links e o resultado com o acesso do leitor. Se uma tradução descrever um resultado incorreto, restaure a revisão aprovada anterior e coordene a correção em todas as páginas afetadas.
+
+**Funcionalidade restrita — reprodução de sessões de suporte.** A equipe de Suporte precisa de um guia para profissionais autorizados, mas o destino restrito ainda não foi aprovado. Registre a publicação como pendente, com a equipe de Suporte como responsável e a aprovação do destino e do acesso como próxima ação. Mantenha o rascunho em local restrito aprovado. Após a aprovação, verifique se profissionais autorizados conseguem abri-lo e se leitores sem permissão ficam sem acesso.

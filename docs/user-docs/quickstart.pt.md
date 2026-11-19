@@ -22,6 +22,6 @@ Se não for possível ler o provedor ou repositório, volte à preparação e re
 
 ## Continuar
 
-[SDD + Codex](guides/sdd-with-codex.pt.md) · [GitHub](guides/github-delivery.pt.md) · [Validação](guides/validation-and-evaluations.pt.md)
+[SDD + Codex](guides/sdd-with-codex.pt.md) · [GitHub](guides/github-delivery.pt.md) · [Validação](guides/validation-and-evaluations.pt.md) · [Publicar documentação de usuário e páginas de funcionalidades](guides/publish-product-documentation.pt.md)
 
 [Referência completa de SDD (inglês)](../../sdd/README.md)

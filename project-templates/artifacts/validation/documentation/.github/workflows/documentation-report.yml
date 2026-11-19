@@ -1,0 +1,34 @@
+# Adoption example: use the exact provider commit from .versat/standards.lock.
+name: Documentation report
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  documentation-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.11'
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: versat-labs/versat-ai-harness
+          ref: REPLACE_WITH_REVIEWED_FULL_COMMIT_SHA
+          path: .harness-provider
+          persist-credentials: false
+      - name: Verify the locked provider
+        run: |
+          python -m pip install -r .harness-provider/requirements-validation.txt
+          python .harness-provider/scripts/testing/provider.py --root "$GITHUB_WORKSPACE"
+      - name: Report documentation rules
+        env:
+          DOCS_BASE: ${{ github.event.pull_request.base.sha }}
+          DOCS_TARGET: ${{ github.sha }}
+        run: |
+          bash .harness-provider/scripts/validate/documentation.sh --root "$GITHUB_WORKSPACE" \
+            --base "$DOCS_BASE" --target "$DOCS_TARGET" --summary "$GITHUB_STEP_SUMMARY"

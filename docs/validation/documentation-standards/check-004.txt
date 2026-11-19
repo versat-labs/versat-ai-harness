@@ -1,0 +1,11 @@
+CHECK-004 | Base commit a7d80172b3aeb054464a7ea3075d0ce6af4f223d | Candidate tree b561b69b1032137fb1f4f1f286506b9df380fc35
+Python 3.14.6
+git version 2.54.0 (Apple Git-157)
+Darwin arm64
+Input digest before: 3b506cc06528ff8d3cbc1dec4727fc9db15aa7c7bfd7154067072e680289e7ee
+
+Offline publishing rehearsal: Reporting is the content owner; local catalog and help-center trees stand in for the selected destinations. Labeled r2 as the approved fixture revision, followed overview-to-feature-to-guide links in all three locales, and observed 09:00 matching the scheduled export example.
+Rehearsed recovery by restoring the previous Portuguese source revision r1 and checking its expected result.
+Support replay remained pending. Support owns the next action to obtain destination and audience approval. The restricted draft was outside the public preview. No production deployment or live access control was exercised.
+
+Input digest after: 3b506cc06528ff8d3cbc1dec4727fc9db15aa7c7bfd7154067072e680289e7ee

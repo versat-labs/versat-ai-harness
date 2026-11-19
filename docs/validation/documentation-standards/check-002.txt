@@ -1,0 +1,13 @@
+CHECK-002 | Base commit a7d80172b3aeb054464a7ea3075d0ce6af4f223d | Candidate tree b561b69b1032137fb1f4f1f286506b9df380fc35
+Python 3.14.6
+git version 2.54.0 (Apple Git-157)
+Darwin arm64
+Input digest before: 2372bc84e1dff7d6917eaa350f4444db7d2747a23ff67a09d2e6576897730879
+
+Report operators can schedule an export before handoff and see the next run. The fixture planning note identified the existing guide; the same feature fixture updated that guide with the CLI action and expected result.
+Observed python preview.py: Export queued. Next run: 09:00. One observed action served both the functional and guide check.
+The restricted UI credential fixture was unavailable. Its UI verification was recorded as unverified; the successful CLI check was not substituted.
+The internal refactor scenario had no reader, API or operational effect and did not add a guide or a dedicated task.
+README still resolved to the same guide after the fixture dossier moved to archive.
+
+Input digest after: 2372bc84e1dff7d6917eaa350f4444db7d2747a23ff67a09d2e6576897730879

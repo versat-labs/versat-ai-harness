@@ -4,7 +4,7 @@
 
 Describe the problem, users and expected outcome.
 
-See the [product overview](specs/product/overview.md) for the product context and open discovery questions.
+See the [product discovery overview](specs/product/overview.md) for the product context and open discovery questions.
 
 ## Ownership
 

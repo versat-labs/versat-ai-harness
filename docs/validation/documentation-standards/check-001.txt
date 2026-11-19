@@ -1,0 +1,13 @@
+CHECK-001 | Base commit a7d80172b3aeb054464a7ea3075d0ce6af4f223d | Candidate tree b561b69b1032137fb1f4f1f286506b9df380fc35
+Python 3.14.6
+git version 2.54.0 (Apple Git-157)
+Darwin arm64
+Input digest before: e194cae45e50f8b88131b5dca5b30ec27f8ce78970a04c613ad8a8dee3e6f7b8
+
+Manual composition walkthrough, using copied base and disposable consumer examples.
+New usable consumer: README resolved to the actual guide, the reader overview linked to the guide, and discovery stayed in specs/product/overview.md.
+Empty consumer: inherited discovery; no user-docs subtree, reader overview or dangling first-use link.
+Legacy consumer: README kept docs/quickstart.md; the same lock bytes and docs/decisions/0001-existing.md remained in use.
+The SDD resolver accepted docs/architecture/decisions/0010-example.md and the legacy ADR-0001 ID in their respective fixtures.
+
+Input digest after: e194cae45e50f8b88131b5dca5b30ec27f8ce78970a04c613ad8a8dee3e6f7b8
