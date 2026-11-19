@@ -14,6 +14,8 @@ Create only `proposal.md` and `requirements.md`. Establish the observable need, 
 
 Consider relevant success, error and boundary scenarios under the resolved [Testing Standard](../../standards/core/testing.md), keeping their depth proportional to risk.
 
+Use the resolved [Documentation Standard](../../standards/core/documentation.md) to identify the affected readers, their goal, the purpose of the feature and the living material that needs an update. Record why no documentation work applies when appropriate.
+
 Set the combined review on Proposal to `awaiting-approval` when reviewable, or `blocked` with actual blockers. Check document consistency and run the planning validator for this change. Present both files and their current revision, then stop at Gate 1. Record the actual approval and matching Proposal/Requirements digest only after the developer accepts that revision. Approval unlocks Design.
 
 ## Stage 2: Design
@@ -22,7 +24,7 @@ Prerequisites: current Gate 1 approval, no material blockers, and resolved appli
 
 Map all approved requirements to the design and at least one required, identifiable check per requirement in `validation`. Identify actual test/eval/validator entry points and distinguish proposed checks from existing ones. Reference the applicable Standards/version. For significant structural decisions, follow the project's ADR convention; prepare and present real ADR drafts and references with this review. A required unresolved ADR remains a blocker.
 
-Explain how the checks cover relevant acceptance scenarios and affected documented usage under the resolved [Documentation Standard](../../standards/core/documentation.md). Reuse adequate existing checks; one method can cover multiple scenarios or serve both functional and documentation validation without new identifiers or reports.
+Explain how the checks cover relevant acceptance scenarios and affected documented usage, including examples, applicable locales and publication readiness, under the resolved [Documentation Standard](../../standards/core/documentation.md). Reuse adequate existing checks; one method can cover multiple scenarios or serve both functional and documentation validation without new identifiers or reports.
 
 Set Design's upstream Proposal digest, check references/coverage, and run the planning validator. Present Design, checks, alternatives and ADRs; stop at Gate 2. Record approval for the reviewed Design digest before proceeding. If design discovery changes requirements, reopen Gate 1 using the process's revision rules.
 

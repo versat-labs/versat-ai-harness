@@ -22,6 +22,6 @@ If the provider or repository cannot be read, return to setup and resolve access
 
 ## Continue
 
-[SDD + Codex](guides/sdd-with-codex.md) · [GitHub](guides/github-delivery.md) · [Validation](guides/validation-and-evaluations.md)
+[SDD + Codex](guides/sdd-with-codex.md) · [GitHub](guides/github-delivery.md) · [Validation](guides/validation-and-evaluations.md) · [Publish user documentation and feature pages](guides/publish-product-documentation.md)
 
 [Full SDD developer reference (English)](../../sdd/README.md)

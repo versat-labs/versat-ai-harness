@@ -1,0 +1,96 @@
+CHECK-006 | Base commit a7d80172b3aeb054464a7ea3075d0ce6af4f223d | Candidate tree b561b69b1032137fb1f4f1f286506b9df380fc35
+Python 3.14.6
+git version 2.54.0 (Apple Git-157)
+Darwin arm64
+Input digest before: 6f4f08f7c279338beb987632c7119cb6f0523826739a56d689934ba393a07e26
+
+Existing required workflow job definitions match origin/main. The new PR-only job uses contents: read with credentials disabled and outputs to GITHUB_STEP_SUMMARY. The SDD process and its three gates were preserved.
+Reviewed summary availability using GitHub documentation on workflow commands and workflow-run logs. Live PR presentation remains unobserved.
+
+--- Rendered empty sample ---
+# Documentation standards report
+
+Base: `15dfeeded700f36e859eec71bd999323dd3fce84`
+Target: `15dfeeded700f36e859eec71bd999323dd3fce84`
+
+| Result | Rule | Path | Reason |
+| --- | --- | --- | --- |
+| Not applicable | Documentation scope | <code></code> | No recognized Markdown paths changed. |
+
+## Human review
+
+- Confirm applicability, README and guide navigation, and publication access.
+- Review feature rationale, factual accuracy and semantic alignment across languages.
+- This advisory report measures only the listed mechanical rules.
+
+
+--- Rendered mixed sample ---
+# Documentation standards report
+
+Base: `15dfeeded700f36e859eec71bd999323dd3fce84`
+Target: `0084d090adfce7c5e92a1f95e982d0b4a96fd648`
+
+| Result | Rule | Path | Reason |
+| --- | --- | --- | --- |
+| Pass | English source | <code>docs/user-docs/guides/untranslated.md</code> | Readable, nonempty Markdown file. |
+| Fail | Portuguese sibling | <code>docs/user-docs/guides/untranslated.pt.md</code> | Required file is missing. |
+| Fail | Spanish sibling | <code>docs/user-docs/guides/untranslated.es.md</code> | Required file is missing. |
+| Pass | English source | <code>docs/user-docs/quickstart.md</code> | Readable, nonempty Markdown file. |
+| Pass | Portuguese sibling | <code>docs/user-docs/quickstart.pt.md</code> | Readable, nonempty Markdown file. |
+| Pass | Spanish sibling | <code>docs/user-docs/quickstart.es.md</code> | Readable, nonempty Markdown file. |
+
+## Human review
+
+- Confirm applicability, README and guide navigation, and publication access.
+- Review feature rationale, factual accuracy and semantic alignment across languages.
+- This advisory report measures only the listed mechanical rules.
+
+Quality comparison base: a7d80172b3aeb054464a7ea3075d0ce6af4f223d
+Changelog: required by 24 path(s), including '.github/workflows/validate.yml'.
+Changelog: found a new Unreleased entry.
+Ruff: checking 2 changed Python source file(s).
+All checks passed!
+2 files already formatted
+Quality comparison base: a7d80172b3aeb054464a7ea3075d0ce6af4f223d
+Changelog: required by 17 path(s), including '.github/workflows/validate.yml'.
+Changelog: found a new Unreleased entry.
+Ruff: no changed Python sources.
+Portable Plugin package validation passed.
+SDD validation: pass
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+documentation-standards: {"assessed":0,"local_scenarios":12,"open_findings":0,"regression_obligations":22,"requirements":{"REQ-001":"unverified","REQ-002":"unverified","REQ-003":"unverified","REQ-004":"unverified","REQ-005":"unverified"},"results":0,"stale_results":0}
+automated-test-execution: {"assessed":50,"local_scenarios":27,"open_findings":0,"regression_obligations":23,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass"},"results":8,"stale_results":0}
+coding-standards: {"assessed":20,"local_scenarios":13,"open_findings":0,"regression_obligations":7,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass"},"results":5,"stale_results":0}
+contribution-security-guidance: {"assessed":35,"local_scenarios":21,"open_findings":0,"regression_obligations":14,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
+default-codeowner-elviszoz: {"assessed":9,"local_scenarios":7,"open_findings":0,"regression_obligations":2,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass"},"results":2,"stale_results":0}
+harness-publication-blockers: {"assessed":71,"local_scenarios":31,"open_findings":0,"regression_obligations":40,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass","REQ-009":"pass","REQ-010":"pass"},"results":10,"stale_results":0}
+harness-publication-readiness: {"assessed":110,"local_scenarios":38,"open_findings":0,"regression_obligations":72,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass","REQ-009":"pass","REQ-010":"pass","REQ-011":"pass","REQ-012":"pass"},"results":10,"stale_results":0}
+harness-user-documentation: {"assessed":46,"local_scenarios":27,"open_findings":0,"regression_obligations":19,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass"},"results":5,"stale_results":0}
+portfolio-licensing-policy: {"assessed":24,"local_scenarios":18,"open_findings":0,"regression_obligations":6,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
+WARNING LEGACY_EXEMPT: <repository root>/specs/archive/agent-project-layout: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository root>/specs/archive/agent-project-layout: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: <repository root>/specs/archive/align-language-standard: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository root>/specs/archive/align-language-standard: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: <repository root>/specs/archive/bootstrap-product-context: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository root>/specs/archive/bootstrap-product-context: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: <repository root>/specs/archive/consolidate-sdd-workflow: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository root>/specs/archive/consolidate-sdd-workflow: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: <repository root>/specs/archive/quickstart-scenario-coverage: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: <repository root>/specs/archive/root-plugin-package: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository root>/specs/archive/root-plugin-package: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: <repository root>/specs/archive/sdd-acceptance-regression: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: <repository root>/specs/archive/shortcut-git-convention: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository root>/specs/archive/shortcut-git-convention: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+.....................................................................................................................................................
+----------------------------------------------------------------------
+Ran 149 tests in 21.176s
+
+OK
+................................................
+----------------------------------------------------------------------
+Ran 48 tests in 13.330s
+
+OK
+Versat AI Harness package, SDD contract and validator tests passed.
+
+Input digest after: 6f4f08f7c279338beb987632c7119cb6f0523826739a56d689934ba393a07e26

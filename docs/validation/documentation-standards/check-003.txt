@@ -1,0 +1,10 @@
+CHECK-003 | Base commit a7d80172b3aeb054464a7ea3075d0ce6af4f223d | Candidate tree b561b69b1032137fb1f4f1f286506b9df380fc35
+Python 3.14.6
+git version 2.54.0 (Apple Git-157)
+Darwin arm64
+Input digest before: 49a99331ad8f39b65fbf5e070797842bb02af5d6e960ad0cff94e47207f4ee6d
+
+All three quickstarts and publication guides linked to existing local destinations. Each guide linked to both other language variants and identified the English project-validation reference. The target reporting anchor resolved.
+Compared all five instruction steps and both examples across English, Portuguese and Spanish: same owner and audience, exposure approval before publication, schedule action and next-run outcome, rollback to previous approved revision, and restricted case pending until access is approved.
+
+Input digest after: 49a99331ad8f39b65fbf5e070797842bb02af5d6e960ad0cff94e47207f4ee6d

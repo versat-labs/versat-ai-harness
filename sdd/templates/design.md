@@ -48,6 +48,8 @@ review:
 
 ## Validation plan
 
+Identify affected examples, applicable language variants and publication readiness. Map the observed usage check to the documented result.
+
 Describe how each CHECK verifies its mapped acceptance and retained regression scenarios. Include all acceptance array positions; justify approved exclusions with reason. Map preserve/extend impact items in regression. Reuse maintained tests and retain profile-required CI suites. Replace input placeholders with reviewed source/test/fixture/configuration roots; explicitly exclude outputs nested under broad roots. Manual/review methods need a reason and reproducible observations. Replace the upstream placeholder with the current approved Proposal/Requirements digest before saving the draft.
 
 ## Planning review

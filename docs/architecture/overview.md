@@ -160,3 +160,9 @@ The approved R2 operational handoff selects GitHub Free: private clearance/adopt
 ## Revision-based quality validation
 
 [ADR-0017](../decisions/0017-revision-based-code-quality-checks.md) places coding and changelog policy in index-resolved Standards. A read-only Git comparator and pinned Ruff checks run from local validation and CI through `scripts/validate/quality.sh`. The comparator selects changed tracked Python files and checks new Unreleased notes against the event or developer-selected base. Required suites and the structural SDD archive selector keep their existing responsibilities. The Python reference wrapper verifies its exact provider before running quality and suites. Reviewers assess semantic design and release-note accuracy. See [project validation](../guides/project-validation.md) for adoption and rollback.
+
+## Consumer documentation and PR reporting
+
+[ADR-0018](../decisions/0018-consumer-documentation-and-pr-reporting.md) keeps consumer layout and documentation obligations in the index-resolved Documentation Standard. Bootstrap provides its shared discovery record and adds reader material when applicable. SDD stages guide documentation planning and verify affected usage with existing evidence. New consumer ADRs can use explicit paths while historical identifier references continue to resolve.
+
+The advisory documentation validator reads two Git commits without reading working-tree document contents. The GitHub PR job publishes mechanical results in its check summary using read access. Content quality, semantic alignment and publication access remain human review items. Product teams own publication. Consumer CI adoption is optional at the exact provider commit, and the required validation jobs keep their existing responsibilities.

@@ -25,6 +25,8 @@ review:
 
 ## Scope
 
+Identify affected readers, their goal, why the feature is useful, and living documents to add or update. Record why documentation does not apply when appropriate.
+
 ## Out of scope
 
 ## Work tracking

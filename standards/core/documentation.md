@@ -7,12 +7,26 @@
 - Examples MUST be clearly distinguishable from normative requirements.
 - Sensitive data, credentials and customer information MUST NOT be copied into documentation.
 
-## First-use guides
+## Consumer documentation layout
 
-- When usable product behavior needs explanation, projects MUST provide a concise first-use guide for its intended audience. It MUST cover prerequisites, preparation, one representative action and its observable expected result, using commands or UI steps as appropriate.
-- Reuse an equivalent existing guide or README section. Otherwise, use `docs/quickstart.md`. The root README MUST link to the actual guide or section; add the link only when its target exists.
-- Guides MUST remain living documentation outside change/archive dossiers. Add focused guides under `docs/guides/` only when distinct workflows need more detail, preserving an existing documentation convention where applicable. Link from the quickstart and reference common setup rather than duplicate it.
-- Changes affecting documented usage MUST update the relevant instructions and examples alongside implementation and verify the affected steps against their expected results. Reuse functional checks and evidence where they cover the same behavior; report unavailable verification explicitly under the existing validation contract.
-- Empty scaffolds MUST NOT generate empty guides, broken links or instructions claiming unimplemented behavior. Internal changes with no usage impact do not require documentation work solely to satisfy this convention.
+Apply these defaults to new material where it is useful. The root README links to the actual entry points. During a reviewed adoption, an equivalent existing location MAY remain in use with working navigation. Do not create empty guides, placeholder directories or links to work that is not usable. Keep living documentation outside SDD dossiers.
 
-Apply the existing [Language](language.md) and [Security](security.md) Standards to guide content and examples.
+| Path | Purpose |
+| --- | --- |
+| `README.md` | Repository orientation and links to maintained documentation. |
+| `docs/user-docs/quickstart.md` | One representative first-use result when usable behavior needs explanation. An equivalent existing guide or README section can serve the same purpose. |
+| `docs/user-docs/guides/` | Detailed feature or workflow guidance when the quickstart needs supporting material. Link to guides and reuse common setup. |
+| `docs/architecture/overview.md` | Current system boundaries, dependencies and architecture. |
+| `docs/architecture/decisions/` | New consumer ADRs. Reference these decisions in SDD by explicit repository-relative path. Existing ADR references and equivalent decision directories remain supported. |
+| `docs/runbooks/` | Operation, deployment, incident and support procedures. |
+| `docs/integrations/` | Details specific to integrations. |
+| `docs/api/` | API conventions, contracts and references. |
+| `docs/product/overview.md` | Product context for readers, linking to approved material they can access. Use `specs/product/overview.md` for the shared bootstrap discovery record. |
+
+## Feature documentation
+
+- When a change affects readers, planning MUST identify the audience, goal, purpose of the feature and living material to create or update. Internal changes without documentation impact require no dedicated guide or documentation task. Record why the guidance does not apply.
+- A first-use guide MUST explain why and when to use the feature, prerequisites and preparation, one representative action and its observable result. Include relevant limits or recovery. Technical documentation MUST explain the rationale, contracts and operational effects that matter to its readers.
+- Changes affecting documented usage MUST update the instructions and examples alongside implementation. Compare affected steps with observed results. Reuse adequate functional checks and report unavailable verification through the existing SDD evidence contract.
+- Apply the [Language Standard](language.md). User guides and first-use documents use canonical English and aligned `.pt.md` and `.es.md` siblings. Update the three versions together, make language variants discoverable and preserve the meaning and observable results of examples.
+- Apply the [Security](security.md) and [Licensing and Publication](licensing-publication.md) Standards. For publication planning and review, see the [user documentation and feature pages guide](../../docs/user-docs/guides/publish-product-documentation.md).

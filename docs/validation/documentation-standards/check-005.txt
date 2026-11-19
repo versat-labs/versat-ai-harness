@@ -1,0 +1,20 @@
+CHECK-005 | Base commit a7d80172b3aeb054464a7ea3075d0ce6af4f223d | Candidate tree b561b69b1032137fb1f4f1f286506b9df380fc35
+Python 3.14.6
+git version 2.54.0 (Apple Git-157)
+Darwin arm64
+Input digest before: 8078e04cec3ab08c46a78a248f7606b8710164ed296f9f50669c0920cfdeb685
+
+test_moves_report_both_endpoints_and_full_removals (test_documentation.SnapshotReportTest.test_moves_report_both_endpoints_and_full_removals) ... ok
+test_nonapplicable_and_unavailable_snapshots_are_distinct (test_documentation.SnapshotReportTest.test_nonapplicable_and_unavailable_snapshots_are_distinct) ... ok
+test_replacing_docs_directory_with_a_symlink_is_not_a_clean_removal (test_documentation.SnapshotReportTest.test_replacing_docs_directory_with_a_symlink_is_not_a_clean_removal) ... ok
+test_reports_mixed_results_without_reading_worktree_or_printing_contents (test_documentation.SnapshotReportTest.test_reports_mixed_results_without_reading_worktree_or_printing_contents) ... ok
+test_truncation_preserves_the_human_review_section (test_documentation.SnapshotReportTest.test_truncation_preserves_the_human_review_section) ... ok
+test_unsafe_paths_are_displayed_as_text_and_links_are_not_followed (test_documentation.SnapshotReportTest.test_unsafe_paths_are_displayed_as_text_and_links_are_not_followed) ... ok
+test_provider_and_consumer_workflows_pass_explicit_snapshots_to_read_only_report (test_documentation.WorkflowContractTest.test_provider_and_consumer_workflows_pass_explicit_snapshots_to_read_only_report) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.071s
+
+OK
+
+Input digest after: 8078e04cec3ab08c46a78a248f7606b8710164ed296f9f50669c0920cfdeb685

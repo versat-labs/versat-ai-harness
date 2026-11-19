@@ -76,3 +76,17 @@ Successful full validation means the quality check and configured suites passed.
 Adapt the reference CI to existing project authentication and framework setup. Replace its explicit commit placeholder with the reviewed provider commit; do not add broad credentials or an unpinned fallback. CI runs the complete wrapper. Give the project checkout full Git history and pass the GitHub event file through `VERSAT_QUALITY_EVENT`. The base is the PR base for its merge revision, the previous tip for an existing branch push, or the merge base against the remote default branch for a new branch. A first single root commit on the default branch can use an empty-tree comparison. A multi-commit push checks its final revision. Missing history fails the quality check. The Harness keeps structural and archive checks scoped to PRs and main pushes. Check the remote ruleset before relying on required-check enforcement. The Harness source also has separate [supervised Skill evaluations](skill-evaluations.md).
 
 Before adoption, retain the original wrapper, Ruff and suite configuration, CI and lockfile in the reviewable Git change. Roll back those files and the provider reference together; rerun the restored original suite. Do not delete maintained regressions or failed evidence to make adoption appear successful. Source changes alone neither publish a release nor migrate consumers.
+
+## Documentation reporting
+
+Open the PR's **Checks** tab, select the documentation report, and open its details to see the job summary. It identifies the tested Git revisions and checks for readable, nonempty English, Portuguese and Spanish Markdown files in changed guide sets. Its scope covers `docs/user-docs/`, the product reader overview, and the known legacy quickstart paths. The report also lists what reviewers need to judge, including navigation, factual accuracy, feature rationale, translation meaning and publication access.
+
+To see the same output locally, commit the snapshot to compare and run the following from the target repository. Use an available base revision.
+
+```sh
+bash /path/to/exact-harness/scripts/validate/documentation.sh --root . --base origin/main
+```
+
+For optional GitHub adoption, review and copy the [workflow example](../../project-templates/artifacts/validation/documentation/.github/workflows/documentation-report.yml). Replace the placeholder with the reviewed full commit from `.versat/standards.lock`. The example verifies the provider and its selected Standards before comparing the consumer repository. Use a separately reviewed checkout integration if the provider requires private access. A fork run with unavailable access remains unverified. Return to the failed step and verify access, the pin and the comparison history before retrying.
+
+Policy row failures remain advisory. An unavailable comparison or runner failure is visible in the optional check. A summary does not establish semantic compliance or satisfy the required suites. To roll back, remove the optional workflow or restore the reviewed prior integration and its matching lockfile. Use normal repository review for either change.
