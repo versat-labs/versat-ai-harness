@@ -1,0 +1,27 @@
+schema_version: 1
+kind: github-public-repository-security
+policy_id: versat-public-github
+policy_version: 1.0.0
+host: github.com
+visibility: public
+default_branch: main
+codeowners: [elviszoz, evertonspohrversat]
+main:
+  required_approvals: 1
+  review_flags:
+    require_code_owner_reviews: true
+    dismiss_stale_reviews: true
+    require_last_push_approval: true
+  allow_force_pushes: false
+  allow_deletions: false
+references:
+  targets: [branch, tag]
+  operations: [creation, update, deletion]
+  bypass_actor:
+    actor_type: RepositoryRole
+    actor_id: 5
+    bypass_mode: always
+secret_features: [secret_scanning, secret_scanning_push_protection]
+participation:
+  allow_forking: true
+  pull_request_creation_policy: all

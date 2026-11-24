@@ -1,0 +1,45 @@
+Quality comparison base: c191f3b126c659fbabfd4ed3d40b474407cfd26a
+Changelog: required by 37 path(s), including 'docs/architecture/overview.md'.
+Changelog: found a new Unreleased entry.
+Ruff: checking 11 changed Python source file(s).
+All checks passed!
+11 files already formatted
+Portable Plugin package validation passed.
+{"schema_version": 1, "repository": "", "mode": "policy", "applicability": "unknown", "result": "pass", "public_ready": false, "policy": {"id": "versat-public-github", "version": "1.0.0", "path": "core/public-repository-security.yaml", "digest": "508997f206f827868a515f4dc8f692229e9c500d8960bba98e2bfdd755a1c504"}, "provider": {"version": "0.4.0", "commit": "c191f3b126c659fbabfd4ed3d40b474407cfd26a", "dirty": true, "mode": "source"}, "controls": [], "evidence": {}}
+SDD validation: pass
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+public-repository-security: {"assessed":0,"local_scenarios":31,"open_findings":0,"regression_obligations":7,"requirements":{"REQ-001":"unverified","REQ-002":"unverified","REQ-003":"unverified","REQ-004":"unverified","REQ-005":"unverified","REQ-006":"unverified","REQ-007":"unverified","REQ-008":"unverified","REQ-009":"unverified","REQ-010":"unverified","REQ-011":"unverified","REQ-012":"unverified","REQ-013":"unverified"},"results":0,"stale_results":0}
+automated-test-execution: {"assessed":50,"local_scenarios":27,"open_findings":0,"regression_obligations":23,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass"},"results":8,"stale_results":0}
+coding-standards: {"assessed":20,"local_scenarios":13,"open_findings":0,"regression_obligations":7,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass"},"results":5,"stale_results":0}
+contribution-security-guidance: {"assessed":35,"local_scenarios":21,"open_findings":0,"regression_obligations":14,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
+default-codeowner-elviszoz: {"assessed":9,"local_scenarios":7,"open_findings":0,"regression_obligations":2,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass"},"results":2,"stale_results":0}
+harness-marketplace-transition: {"assessed":28,"local_scenarios":20,"open_findings":0,"regression_obligations":8,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
+harness-publication-blockers: {"assessed":71,"local_scenarios":31,"open_findings":0,"regression_obligations":40,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass","REQ-009":"pass","REQ-010":"pass"},"results":10,"stale_results":0}
+harness-publication-readiness: {"assessed":110,"local_scenarios":38,"open_findings":0,"regression_obligations":72,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass","REQ-009":"pass","REQ-010":"pass","REQ-011":"pass","REQ-012":"pass"},"results":10,"stale_results":0}
+harness-user-documentation: {"assessed":46,"local_scenarios":27,"open_findings":0,"regression_obligations":19,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass"},"results":5,"stale_results":0}
+portfolio-licensing-policy: {"assessed":24,"local_scenarios":18,"open_findings":0,"regression_obligations":6,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/agent-project-layout: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/agent-project-layout: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/align-language-standard: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/align-language-standard: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/bootstrap-product-context: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/bootstrap-product-context: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/consolidate-sdd-workflow: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/consolidate-sdd-workflow: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/quickstart-scenario-coverage: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/root-plugin-package: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/root-plugin-package: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/sdd-acceptance-regression: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/shortcut-git-convention: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: /Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/specs/archive/shortcut-git-convention: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+....................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 196 tests in 33.099s
+
+OK
+................................................
+----------------------------------------------------------------------
+Ran 48 tests in 17.140s
+
+OK
+Versat AI Harness package, SDD contract and validator tests passed.

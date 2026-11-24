@@ -20,6 +20,12 @@ Espera un diff revisable de snapshots de Standards, plantillas, referencias de c
 
 Si no se proporcionó un destino, resuélvelo antes de cambiar pins; nunca uses latest. Expón los conflictos en lugar de sobrescribirlos. Revierte configuración y referencias del proveedor juntas y ejecuta la suite original restaurada.
 
+## Seguridad de repositorios públicos en GitHub
+
+Use el [procedimiento de seguridad del proveedor exacto (inglés)](../../guides/public-repository-security.md). Prepare los archivos con `python scripts/bootstrap/public_security.py --output /tmp/public-security-staging` y ejecute `python validators/security/validate.py --repository owner/repository --live --output /tmp/public-security-report.json` desde ese proveedor. Para consumidores instalados, añada `--project-root /absolute/consumer` con el lock exacto correspondiente. Revise las diferencias y preserve checks más fuertes y conflictos de ownership; solo operaciones administrativas autorizadas aplican la configuración.
+
+La preparación pública exige una verificación actual y completa en modo live con `public_ready: true`. Un esqueleto local, check de política, snapshot guardado o código de salida 0 aislado es insuficiente. Los permisos u observaciones ausentes siguen sin verificar. La auditoría no autoriza ediciones; el mantenimiento verifica correcciones autorizadas y nunca elige `latest` silenciosamente. Una aprobación de CODEOWNER elegible satisface la regla básica, aunque ambos hayan recibido una solicitud de review. Los contribuidores externos usan forks y PRs; el CI de forks no recibe credenciales administrativas. La publicación de releases y su adopción siguen separadas.
+
 ## Referencias
 
 - [Skill (inglés)](../../../skills/project-maintenance/SKILL.md)

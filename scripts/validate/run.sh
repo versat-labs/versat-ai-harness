@@ -105,6 +105,9 @@ if command -v "${validation_python}" >/dev/null 2>&1; then
     failures=$((failures + 1))
   fi
   if "${validation_python}" -c 'import yaml, jsonschema' >/dev/null 2>&1; then
+    if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" "${repo_root}/validators/security/validate.py" --check-policy; then
+      failures=$((failures + 1))
+    fi
     if ! PYTHONDONTWRITEBYTECODE=1 "${validation_python}" "${repo_root}/validators/sdd/validate.py" --root "${repo_root}" "${sdd_args[@]}"; then
       failures=$((failures + 1))
     fi

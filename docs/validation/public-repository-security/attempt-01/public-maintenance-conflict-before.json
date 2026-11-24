@@ -1,0 +1,10 @@
+{
+  ".github/CODEOWNERS": "35955f10968214b7a2fdafa5f4b56bf7c19b3d50f192dccde5830ad70d1e22dd",
+  ".versat/project.yaml": "606d835ceba7133a4b8519ba6ef7ca3795364e0afbb46dbbe65781b05b0c597a",
+  ".versat/standards.lock": "96ceb7dedc5c12b17128dbeb6e263470156419fdd0adfd898c567f08d94d8ed6",
+  "AGENTS.md": "172a31d811c7887b681b6df43253d31d15481e367c5ee746204e9df6547f5822",
+  "inputs/context.json": "7a7005b7c345701529faddfd5217b433ac87382588fe3261fa9eaed0231dcb92",
+  "inputs/settings.json": "8d0fc678dc6a9e3ccda18bf12f35f366fc8e40d5da231469ff8ef24dbeb917b0",
+  "specs/product/overview.md": "a1673d191817b403ef5ccbaf313cb9b170b86c2e78d0e06daf738ceec0c23f47",
+  "tests/test_amount.py": "2fc0c09e57c9a6256d2b42910f5b44969d9488e7fe4ca97a2c81a4d6510daa64"
+}

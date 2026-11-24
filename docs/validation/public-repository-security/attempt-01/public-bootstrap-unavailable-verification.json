@@ -1,0 +1,82 @@
+{
+  "case": "public-bootstrap-unavailable",
+  "input_files_unchanged": true,
+  "original_manifest": {
+    ".versat/project.yaml": "606d835ceba7133a4b8519ba6ef7ca3795364e0afbb46dbbe65781b05b0c597a",
+    ".versat/standards.lock": "96ceb7dedc5c12b17128dbeb6e263470156419fdd0adfd898c567f08d94d8ed6",
+    "AGENTS.md": "172a31d811c7887b681b6df43253d31d15481e367c5ee746204e9df6547f5822",
+    "inputs/context.json": "d0ba2c7e4eb9539a241b100839ec292b6af8ba24a7456a6e0771618b4d7f447e",
+    "inputs/settings.json": "466a8af270ec827c87034c8dbbe60d2f4e2d75e7b58b3ceaf74436776a448980",
+    "specs/product/overview.md": "a1673d191817b403ef5ccbaf313cb9b170b86c2e78d0e06daf738ceec0c23f47",
+    "tests/test_amount.py": "2fc0c09e57c9a6256d2b42910f5b44969d9488e7fe4ca97a2c81a4d6510daa64"
+  },
+  "original_output_manifest": {
+    "artifact-review.json": "d058553ce29df1a89018c0ff0905d99076420e04dc88aa92d346614e84314903",
+    "command-records.json": "c94bd017a03fb4e49db81b9cb95e5805ac1dc9c8c6a1235f7c13bd2ae74e6b14",
+    "consumer-snapshot-report.json": "99b52a7541973b8312ec8182c12a9555a983ae02de35c2a73a55016246d7b38d",
+    "consumer-snapshot.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "consumer-snapshot.stdout.txt": "621cd7d3d5318b0f0265c314e23288213b4c1b52ba0d4d8c5a3341414625a3b4",
+    "findings.md": "4472c732a8c3df9f3119e8696b3e9e653cd1582a9a7e33e8f941bac609d2b35f",
+    "policy-report.json": "453d6e566d406332ceca1d0e28d75e4b3eb655755eeddcc1199fe08786990d81",
+    "policy.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "policy.stdout.txt": "5ce34bddb674ef102ce566601d4dd6d73471da51f975e7eaea4f7f6597de2189",
+    "project-after.json": "ccb8a523f9d1acbefbae3fabc8a98fa52cbf7d6da5cc0337226d04ce6add4797",
+    "project-before.json": "ccb8a523f9d1acbefbae3fabc8a98fa52cbf7d6da5cc0337226d04ce6add4797",
+    "provider.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "provider.stdout.txt": "ae5dd5961c0c9aff87b042e08238a5552c62c584a358273183a51ba5ba553ec5",
+    "render.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "render.stdout.txt": "e2f574f95948c601f1bf8f2c0299847115d514d88cc1f9cda6d97c6c39b3df45",
+    "source-snapshot-report.json": "71401519568e3adfe8cdf7b67a9eaa5c69e39caf78069b2e486904e14badb12b",
+    "source-snapshot.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source-snapshot.stdout.txt": "9aefadf3b63d7ab20d3478233abde104950c11328ee4685dce5c2df2d8e5c621",
+    "staged-assets/.github/CODEOWNERS": "3576e675a88c7f846bc7ff289cf86f07b4c3045b0127a104277701b4ef4e6f2b",
+    "staged-assets/.github/security/branch-administration.json": "feb6110bec4e5ee607e0479f844631fa46fa6e8b27c2c2dd0de180222779e5e1",
+    "staged-assets/.github/security/main-protection.json": "30e58b8f6a816076cf2fd7b401a4605e8e76e42d2b093f9a0a8239a62f2dd15f",
+    "staged-assets/.github/security/manifest.json": "e07943198fc33f259c3b08f318529d87501638a58bc307cc1bcce4e55ebbc001",
+    "staged-assets/.github/security/secret-settings.json": "47e711b85b4caf57dba06cb7eff027dc81dbe3566fa870ae7949fa0b5745bc1a",
+    "staged-assets/.github/security/tag-administration.json": "971ec6c3966dc4da4cf9cc416be07d914defb0452374442376b07cb92b4a6ea4",
+    "standards-resolution.json": "1538b9f9d83d02fdb29cf65162aefd3f0f77baadc9aaf8befa390a7e1694792f"
+  },
+  "independent_replay": {
+    "snapshot": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/validators/security/validate.py",
+        "--repository",
+        "example-owner/security-fixture",
+        "--snapshot",
+        "/private/tmp/versat-public-security-scenarios-r1/public-bootstrap-unavailable-replay/project/inputs/settings.json",
+        "--output",
+        "/private/tmp/versat-public-security-scenarios-r1/public-bootstrap-unavailable-replay/report.json"
+      ],
+      "exit_code": 2
+    },
+    "render": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/scripts/bootstrap/public_security.py",
+        "--output",
+        "/private/tmp/versat-public-security-scenarios-r1/public-bootstrap-unavailable-replay/staging"
+      ],
+      "exit_code": 0
+    },
+    "tests": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "exit_code": 0
+    },
+    "original_unchanged": true
+  },
+  "replay_result": "unable-to-verify",
+  "public_ready": false,
+  "observed_at": "2026-11-24T22:55:01.299969+00:00"
+}

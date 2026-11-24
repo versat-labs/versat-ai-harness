@@ -7,6 +7,7 @@ core:
     - core/agent-artifacts.md
     - core/git.md
     - core/security.md
+    - core/public-repository-security.yaml
     - core/licensing-publication.md
     - core/contribution.md
     - core/coding.md

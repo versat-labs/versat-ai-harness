@@ -20,6 +20,10 @@ Structure manifests describe directories to create. Copy the base files, then ov
 
 The agent module contributes its directory manifest and `docs/architecture/agent-project.md`. The software and agent modules continue to share `base`; hybrid does not copy or redefine it. Deterministic bootstrap automation is not implemented yet; the bootstrap Skill follows this composition contract.
 
+## Public GitHub security assets
+
+Public GitHub projects additionally follow the conditional [security asset procedure](artifacts/github-public-security/README.md), resolved through the canonical Standards index. Render the assets once over shared base, not separately per profile. Stage and review existing ownership/configuration conflicts rather than overwrite them. Local rendering and structural validation are preparation; actual public readiness requires the version-matched live verifier with complete observations. Existing consumers adopt through an exact reviewed migration.
+
 ## Agent artifacts
 
 The [Agent Artifact Standard](../standards/core/agent-artifacts.md), resolved through the index, defines the canonical paths and responsibilities. A composed agent project includes:

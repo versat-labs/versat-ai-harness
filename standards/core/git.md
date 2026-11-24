@@ -12,9 +12,24 @@
 
 ## Branch and worktree cleanup
 
+For public GitHub repositories, apply the mandatory [public repository security contract](#public-github-repository-security) before normal delivery. Cleanup authority does not override its administrator-only reference rules or main protection.
+
 - After a confirmed merge, work branches SHOULD be deleted when no unfinished work or dependent PR needs them. Default, release and other intentionally long-lived branches are excluded. Repository administrators MAY enable automatic deletion of merged PR head branches.
 - Remote branches, local branches and worktrees MUST be assessed separately. Deleting a remote branch does not remove a local branch or checkout. Before local cleanup, account for uncommitted changes, unpushed commits, needed ignored files and other users or processes relying on the checkout. Detach or switch an associated worktree before deleting its local branch.
 - A suitable active worktree MAY be reused for later work from the appropriate base. When retiring an app-managed worktree, use its supported archive/cleanup mechanism and preserve recoverable work. A merge alone does not require retiring a worktree or closing its chat; preserve worktrees that remain in use, pinned or shared.
+
+## Public GitHub repository security
+
+The index-resolved [public security policy](public-repository-security.yaml) defines the versioned baseline for every profile and criticality. Its values are canonical and MUST be included in exact Standards locks. Public readiness MUST include a fresh, complete live assessment using the version-matched [security verifier](../../validators/security/README.md).
+
+- The canonical default branch MUST exist and accept changes only through PRs with the policy's minimum approval count, required code-owner review, stale-review dismissal and approval of the latest reviewable push by someone other than its pusher.
+- Required main protections MUST apply to everyone, including administrators, without user, team, app or other bypass. Force pushes and deletion MUST be blocked. Existing stronger compatible review requirements and required checks MUST be preserved.
+- The base-branch CODEOWNERS file MUST cover all files, including itself, with the policy's designated eligible owners. Each MUST have write access or stronger. Either eligible owner's approval satisfies the one-owner baseline; automatic review requests to other owners do not create an all-owners approval requirement.
+- Creation, update and deletion of all upstream branches and tags, including future and nested names, MUST be restricted to repository administrators. The administrator exception for reference management MUST NOT bypass the independent main protections.
+- External contributors MUST retain a usable public fork-to-PR route without upstream write or merge authority. Administrative credentials MUST NOT be exposed to untrusted fork code.
+- Bootstrap MUST distinguish scaffolding and initial reference creation from verified public readiness. Audit MUST report violations and unknowns. Maintenance MUST stage differences, preserve stronger controls and verify authorized remediation. A local/package pass or saved snapshot MUST NOT establish current remote readiness.
+
+Classic protection and active rulesets MAY compose when their effective guarantees are provable. Unsupported or inaccessible settings remain unverified. Repository administrators can edit settings later; an observation is not perpetual assurance. Policy changes remain governed by PR review and exact-version adoption. See [setup, verification and recovery](../../docs/guides/public-repository-security.md).
 
 ## Story branch names
 

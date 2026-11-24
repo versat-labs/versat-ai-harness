@@ -1,0 +1,27 @@
+{
+  "check": "CHECK-006",
+  "started_at": "2026-11-24T23:12:27.895095+00:00",
+  "input_digest_before": "9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c",
+  "commands": [
+    {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/private/tmp/versat-security-live.py",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/docs/validation/public-repository-security/live-report.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/private/tmp/versat-security-independent.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "input_digest_after": "9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c",
+  "finished_at": "2026-11-24T23:12:46.833572+00:00",
+  "result": "pass"
+}

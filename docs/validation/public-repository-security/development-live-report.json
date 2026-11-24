@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "repository": "versat-labs/versat-ai-harness",
+  "mode": "live",
+  "applicability": "applicable",
+  "result": "pass",
+  "public_ready": true,
+  "policy": {
+    "id": "versat-public-github",
+    "version": "1.0.0",
+    "path": "core/public-repository-security.yaml",
+    "digest": "508997f206f827868a515f4dc8f692229e9c500d8960bba98e2bfdd755a1c504"
+  },
+  "provider": {
+    "version": "0.4.0",
+    "commit": "c191f3b126c659fbabfd4ed3d40b474407cfd26a",
+    "dirty": true,
+    "mode": "source"
+  },
+  "controls": [
+    {
+      "id": "visibility",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": "public",
+      "remediation": "Resolve declared and observed repository visibility."
+    },
+    {
+      "id": "default-branch",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": "main",
+      "remediation": "Review migration to the canonical default branch."
+    },
+    {
+      "id": "main-exists",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": "main",
+      "remediation": "Initialize and protect main before claiming public readiness."
+    },
+    {
+      "id": "main.pull-request",
+      "result": "pass",
+      "diagnostic": "no-bypass-witness",
+      "evidence": [
+        "classic"
+      ],
+      "remediation": "Require this main control for everyone, without administrative or actor bypass."
+    },
+    {
+      "id": "main.approvals",
+      "result": "pass",
+      "diagnostic": "no-bypass-witness",
+      "evidence": [
+        "classic"
+      ],
+      "remediation": "Require this main control for everyone, without administrative or actor bypass."
+    },
+    {
+      "id": "main.require_code_owner_reviews",
+      "result": "pass",
+      "diagnostic": "no-bypass-witness",
+      "evidence": [
+        "classic"
+      ],
+      "remediation": "Require this main control for everyone, without administrative or actor bypass."
+    },
+    {
+      "id": "main.dismiss_stale_reviews",
+      "result": "pass",
+      "diagnostic": "no-bypass-witness",
+      "evidence": [
+        "classic"
+      ],
+      "remediation": "Require this main control for everyone, without administrative or actor bypass."
+    },
+    {
+      "id": "main.require_last_push_approval",
+      "result": "pass",
+      "diagnostic": "no-bypass-witness",
+      "evidence": [
+        "classic"
+      ],
+      "remediation": "Require this main control for everyone, without administrative or actor bypass."
+    },
+    {
+      "id": "main.allow_force_pushes",
+      "result": "pass",
+      "diagnostic": "no-bypass-witness",
+      "evidence": [
+        "classic"
+      ],
+      "remediation": "Require this main control for everyone, without administrative or actor bypass."
+    },
+    {
+      "id": "main.allow_deletions",
+      "result": "pass",
+      "diagnostic": "no-bypass-witness",
+      "evidence": [
+        "classic"
+      ],
+      "remediation": "Require this main control for everyone, without administrative or actor bypass."
+    },
+    {
+      "id": "main.check-contexts",
+      "result": "pass",
+      "diagnostic": "preserve-observed-contexts",
+      "evidence": [
+        "structural-validation"
+      ],
+      "remediation": "Preserve these contexts when applying reviewed changes; compare before and after."
+    },
+    {
+      "id": "refs.branch.creation",
+      "result": "pass",
+      "diagnostic": "universal-admin-only-witness",
+      "evidence": [
+        28023884
+      ],
+      "remediation": "Use an active all-ref rule without exclusions, with only the repository administrator role bypass."
+    },
+    {
+      "id": "refs.branch.update",
+      "result": "pass",
+      "diagnostic": "universal-admin-only-witness",
+      "evidence": [
+        28023884
+      ],
+      "remediation": "Use an active all-ref rule without exclusions, with only the repository administrator role bypass."
+    },
+    {
+      "id": "refs.branch.deletion",
+      "result": "pass",
+      "diagnostic": "universal-admin-only-witness",
+      "evidence": [
+        28023884
+      ],
+      "remediation": "Use an active all-ref rule without exclusions, with only the repository administrator role bypass."
+    },
+    {
+      "id": "refs.tag.creation",
+      "result": "pass",
+      "diagnostic": "universal-admin-only-witness",
+      "evidence": [
+        28023891
+      ],
+      "remediation": "Use an active all-ref rule without exclusions, with only the repository administrator role bypass."
+    },
+    {
+      "id": "refs.tag.update",
+      "result": "pass",
+      "diagnostic": "universal-admin-only-witness",
+      "evidence": [
+        28023891
+      ],
+      "remediation": "Use an active all-ref rule without exclusions, with only the repository administrator role bypass."
+    },
+    {
+      "id": "refs.tag.deletion",
+      "result": "pass",
+      "diagnostic": "universal-admin-only-witness",
+      "evidence": [
+        28023891
+      ],
+      "remediation": "Use an active all-ref rule without exclusions, with only the repository administrator role bypass."
+    },
+    {
+      "id": "codeowners",
+      "result": "pass",
+      "diagnostic": "same-base-coverage-and-permissions",
+      "evidence": {
+        "path": ".github/CODEOWNERS",
+        "permissions": {
+          "elviszoz": "admin",
+          "evertonspohrversat": "admin"
+        }
+      },
+      "remediation": "Keep both designated owners in global and overriding rows, validate syntax and verify their write access."
+    },
+    {
+      "id": "secrets.secret_scanning",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": "enabled",
+      "remediation": "Enable the repository-level secret feature and read back its status."
+    },
+    {
+      "id": "secrets.secret_scanning_push_protection",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": "enabled",
+      "remediation": "Enable the repository-level secret feature and read back its status."
+    },
+    {
+      "id": "participation.allow_forking",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": true,
+      "remediation": "Preserve public fork-to-PR participation without upstream write access."
+    },
+    {
+      "id": "participation.pull_request_creation_policy",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": "all",
+      "remediation": "Preserve public fork-to-PR participation without upstream write access."
+    },
+    {
+      "id": "collection.complete",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": true,
+      "remediation": "Resolve every missing observation before readiness."
+    },
+    {
+      "id": "collection.stable",
+      "result": "pass",
+      "diagnostic": "observed-setting",
+      "evidence": true,
+      "remediation": "Repeat live assessment after concurrent settings changes stop."
+    }
+  ],
+  "evidence": {
+    "schema_version": 1,
+    "repository": "versat-labs/versat-ai-harness",
+    "started_at": "2026-11-24T22:47:08.744728+00:00",
+    "finished_at": "2026-11-24T22:47:22.023926+00:00",
+    "observations": {
+      "repository": {
+        "status": "ok",
+        "data": {
+          "id": 1350076941,
+          "full_name": "versat-labs/versat-ai-harness",
+          "visibility": "public",
+          "default_branch": "main",
+          "allow_forking": true,
+          "has_pull_requests": true,
+          "pull_request_creation_policy": "all",
+          "security_and_analysis": {
+            "secret_scanning": {
+              "status": "enabled"
+            },
+            "secret_scanning_push_protection": {
+              "status": "enabled"
+            }
+          }
+        }
+      },
+      "main": {
+        "status": "ok",
+        "data": {
+          "name": "main",
+          "sha": "c191f3b126c659fbabfd4ed3d40b474407cfd26a"
+        }
+      },
+      "protection": {
+        "status": "ok",
+        "data": {
+          "enforce_admins": {
+            "enabled": true
+          },
+          "allow_force_pushes": {
+            "enabled": false
+          },
+          "allow_deletions": {
+            "enabled": false
+          },
+          "required_pull_request_reviews": {
+            "required_approving_review_count": 1,
+            "require_code_owner_reviews": true,
+            "dismiss_stale_reviews": true,
+            "require_last_push_approval": true
+          },
+          "required_status_checks": {
+            "contexts": [
+              "structural-validation"
+            ],
+            "strict": false
+          }
+        }
+      },
+      "main_rules": {
+        "status": "ok",
+        "data": [
+          {
+            "type": "creation",
+            "ruleset_id": 28023884
+          },
+          {
+            "type": "update",
+            "ruleset_id": 28023884
+          },
+          {
+            "type": "deletion",
+            "ruleset_id": 28023884
+          }
+        ]
+      },
+      "rulesets": {
+        "status": "ok",
+        "data": [
+          {
+            "id": 28023884,
+            "target": "branch",
+            "source_type": "Repository",
+            "source": "versat-labs/versat-ai-harness",
+            "enforcement": "active",
+            "conditions": {
+              "ref_name": {
+                "exclude": [],
+                "include": [
+                  "~ALL"
+                ]
+              }
+            },
+            "bypass_actors": [
+              {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+              }
+            ],
+            "rules": [
+              {
+                "type": "creation"
+              },
+              {
+                "type": "update"
+              },
+              {
+                "type": "deletion"
+              }
+            ]
+          },
+          {
+            "id": 28023891,
+            "target": "tag",
+            "source_type": "Repository",
+            "source": "versat-labs/versat-ai-harness",
+            "enforcement": "active",
+            "conditions": {
+              "ref_name": {
+                "exclude": [],
+                "include": [
+                  "~ALL"
+                ]
+              }
+            },
+            "bypass_actors": [
+              {
+                "actor_id": 5,
+                "actor_type": "RepositoryRole",
+                "bypass_mode": "always"
+              }
+            ],
+            "rules": [
+              {
+                "type": "creation"
+              },
+              {
+                "type": "update"
+              },
+              {
+                "type": "deletion"
+              }
+            ]
+          }
+        ]
+      },
+      "codeowners": {
+        "status": "ok",
+        "data": {
+          "path": ".github/CODEOWNERS",
+          "sha": "c191f3b126c659fbabfd4ed3d40b474407cfd26a",
+          "rows": [
+            {
+              "pattern": "*",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/.github/CODEOWNERS",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/AGENTS.md",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/skills/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/agents/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/project-templates/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/standards/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/sdd/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/docs/decisions/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/validators/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/tests/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/scripts/validate/",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            },
+            {
+              "pattern": "/requirements-validation.txt",
+              "owners": [
+                "@elviszoz",
+                "@evertonspohrversat"
+              ]
+            }
+          ]
+        }
+      },
+      "codeowners_errors": {
+        "status": "ok",
+        "data": {
+          "errors": []
+        }
+      },
+      "owner_permissions": {
+        "status": "ok",
+        "data": {
+          "elviszoz": "admin",
+          "evertonspohrversat": "admin"
+        }
+      }
+    },
+    "complete": true,
+    "stable": true,
+    "sample_digests": [
+      "4fbc525414ef447ae3e6eaa25cecbffa4557d47f714e3599666264b797b6499a",
+      "4fbc525414ef447ae3e6eaa25cecbffa4557d47f714e3599666264b797b6499a"
+    ]
+  }
+}

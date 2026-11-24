@@ -9,3 +9,5 @@ SDD checks validate local schemas, recorded approval freshness, traceability and
 The current source also implements [v3 acceptance/regression validation](../sdd/metadata.md), declared-input freshness and trusted baseline selection of changed archives. Historical inventory remains separate from live delivery. This source change does not publish a release or update consumers.
 
 The [quality validator](quality/validate.py) checks changed Python sources and Unreleased notes against a Git base. See [project validation](../docs/guides/project-validation.md) for the local command and CI comparison rules.
+
+The [public security verifier](security/README.md) evaluates canonical policy against explicit live GitHub observations or labeled offline snapshots. Local validation includes its policy/schema and offline tests; public readiness additionally requires a complete live assessment from a trusted operator. The collector is read-only and no administrative credential is added to PR CI.

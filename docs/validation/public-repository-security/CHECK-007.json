@@ -1,0 +1,13 @@
+{
+  "check": "CHECK-007",
+  "argv": [
+    "./scripts/validate/run.sh",
+    "--quality-base",
+    "origin/main"
+  ],
+  "started_at": "2026-11-24T22:58:31.448156+00:00",
+  "input_digest_before": "9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c",
+  "exit_code": 0,
+  "finished_at": "2026-11-24T22:59:23.864490+00:00",
+  "input_digest_after": "9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c"
+}

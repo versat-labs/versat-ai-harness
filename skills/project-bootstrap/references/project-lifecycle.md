@@ -16,6 +16,8 @@ Apply the resolved [Documentation Standard](../../../standards/core/documentatio
 
 Verify ownership, default branch protection, required checks, secret scanning, dependency update policy and access boundaries before normal delivery begins.
 
+For public GitHub projects, follow the index-resolved public-security contract and [verification procedure](../../../docs/guides/public-repository-security.md). The complete fresh live result, including its mode and `public_ready` value, is required before declaring public readiness. A composed skeleton, rendered settings or an offline assessment remains preparation. Use only actual operational authorization, preserve stronger controls, and re-observe authorized configuration changes.
+
 Verify any emitted README guide link and affected documented steps against actual behavior under the resolved Standards. Report unavailable verification separately from a successful structural check.
 
 For projects with operational workflows, verify their bindings and executor support under the resolved Standards. A successful Plugin validation does not establish that external integrations or consumer agents work.

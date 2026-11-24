@@ -1,0 +1,19 @@
+{
+  "check": "CHECK-003",
+  "argv": [
+    "/private/tmp/versat-security-audit-venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests/validators",
+    "-p",
+    "test_security_collection.py"
+  ],
+  "started_at": "2026-11-24T22:52:35.688654+00:00",
+  "input_digest_before": "7da6a45b4827fc6805d3966cbddb7e13fb937dac3fcaa27abf21e6fbf5b50cef",
+  "exit_code": 0,
+  "finished_at": "2026-11-24T22:52:36.740460+00:00",
+  "input_digest_after": "7da6a45b4827fc6805d3966cbddb7e13fb937dac3fcaa27abf21e6fbf5b50cef"
+}

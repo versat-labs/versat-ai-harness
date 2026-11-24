@@ -1,0 +1,61 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+additionalProperties: false
+required: [schema_version, kind, policy_id, policy_version, host, visibility, default_branch, codeowners, main, references, secret_features, participation]
+properties:
+  schema_version: {const: 1}
+  kind: {const: github-public-repository-security}
+  policy_id: {type: string, minLength: 1}
+  policy_version: {type: string, pattern: '^[0-9]+\.[0-9]+\.[0-9]+$'}
+  host: {const: github.com}
+  visibility: {const: public}
+  default_branch: {type: string, pattern: '^[A-Za-z0-9._/-]+$'}
+  codeowners:
+    type: array
+    minItems: 1
+    uniqueItems: true
+    items: {type: string, pattern: '^[A-Za-z0-9][A-Za-z0-9-]*$'}
+  main:
+    type: object
+    additionalProperties: false
+    required: [required_approvals, review_flags, allow_force_pushes, allow_deletions]
+    properties:
+      required_approvals: {type: integer, minimum: 1}
+      review_flags:
+        type: object
+        additionalProperties: false
+        required: [require_code_owner_reviews, dismiss_stale_reviews, require_last_push_approval]
+        properties:
+          require_code_owner_reviews: {type: boolean}
+          dismiss_stale_reviews: {type: boolean}
+          require_last_push_approval: {type: boolean}
+      allow_force_pushes: {type: boolean}
+      allow_deletions: {type: boolean}
+  references:
+    type: object
+    additionalProperties: false
+    required: [targets, operations, bypass_actor]
+    properties:
+      targets: {type: array, minItems: 2, maxItems: 2, uniqueItems: true, items: {enum: [branch, tag]}}
+      operations: {type: array, minItems: 3, maxItems: 3, uniqueItems: true, items: {enum: [creation, update, deletion]}}
+      bypass_actor:
+        type: object
+        additionalProperties: false
+        required: [actor_type, actor_id, bypass_mode]
+        properties:
+          actor_type: {const: RepositoryRole}
+          actor_id: {type: integer, minimum: 1}
+          bypass_mode: {const: always}
+  secret_features:
+    type: array
+    minItems: 2
+    maxItems: 2
+    uniqueItems: true
+    items: {enum: [secret_scanning, secret_scanning_push_protection]}
+  participation:
+    type: object
+    additionalProperties: false
+    required: [allow_forking, pull_request_creation_policy]
+    properties:
+      allow_forking: {type: boolean}
+      pull_request_creation_policy: {enum: [all]}
