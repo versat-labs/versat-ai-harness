@@ -1,0 +1,36 @@
+{
+  "input_digest_before": "7da6a45b4827fc6805d3966cbddb7e13fb937dac3fcaa27abf21e6fbf5b50cef",
+  "started_at": "2026-11-24T22:52:55.209441+00:00",
+  "monotonic_start": 44816.098563666,
+  "runtime": "native collaboration",
+  "model": "inherited session identity; exact runtime model/usage not exposed",
+  "limits": {
+    "case_seconds": 600,
+    "suite_seconds": 1800
+  },
+  "root": "/private/tmp/versat-public-security-scenarios-r1",
+  "cases": [
+    {
+      "case": "public-bootstrap-unavailable",
+      "agent": "/root/security_bootstrap_case",
+      "started_at": "2026-11-24T22:52:55.209441+00:00",
+      "finished_and_replayed_at": "2026-11-24T22:55:19.125455+00:00",
+      "result": "observed-behavior-pass-but-rendered-API-payload-defect",
+      "interrupted": false,
+      "attempts": 1,
+      "evidence": "public-bootstrap-unavailable-verification.json"
+    },
+    {
+      "case": "public-audit-drift",
+      "agent": "/root/security_audit_case",
+      "started_at": "2026-11-24T22:55:19.125455+00:00",
+      "result": "observed-behavior-pass-input-binding-stale",
+      "attempts": 1,
+      "finished_and_replayed_at": "2026-11-24T22:57:51.627763+00:00",
+      "evidence": "public-audit-drift-verification.json"
+    }
+  ],
+  "result": "stale-source-inputs",
+  "reason": "API contract review found ruleset review wire names differed from classic protection. Source fix invalidates broad CHECK inputs. Original attempts retained; no automatic retry.",
+  "finished_at": "2026-11-24T22:57:51.566265+00:00"
+}

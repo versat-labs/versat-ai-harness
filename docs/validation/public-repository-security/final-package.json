@@ -1,0 +1,22 @@
+{
+  "result": "pass",
+  "completed_at": "2026-11-24T23:21:01.328083+00:00",
+  "argv": [
+    "./scripts/validate/run.sh",
+    "--quality-base",
+    "origin/main",
+    "--baseline",
+    "origin/main",
+    "--require-archive"
+  ],
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHON": "/private/tmp/versat-security-audit-venv/bin/python"
+  },
+  "exit_code": 0,
+  "output": "docs/validation/public-repository-security/final-package.log",
+  "archive": "specs/archive/public-repository-security",
+  "closure": "prepared",
+  "validator_tests": 197,
+  "execution_tests": 48
+}

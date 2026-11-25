@@ -1,0 +1,52 @@
+{
+  "input_digest_before": "9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c",
+  "started_at": "2026-11-24T22:58:41.988306+00:00",
+  "monotonic_start": 45162.8810685,
+  "runtime": "native collaboration",
+  "model": "inherited session identity; exact runtime model/usage not exposed",
+  "limits": {
+    "case_seconds": 600,
+    "suite_seconds": 1800
+  },
+  "root": "/private/tmp/versat-public-security-scenarios-r2",
+  "cases": [
+    {
+      "case": "public-bootstrap-unavailable",
+      "agent": "/root/security_bootstrap_r2",
+      "started_at": "2026-11-24T22:58:41.988306+00:00",
+      "finished_and_replayed_at": "2026-11-24T23:07:25.402480+00:00",
+      "result": "pass",
+      "interrupted": true,
+      "interruption_reason": "Coordinator stopped post-execution narrative generation at 511s from conservative suite/case start to reserve independent review within 600s. Actual renderer/verifier/provider commands, mode/readiness message and preservation records were already complete; no functional action was interrupted. No final narrative file was produced. Assessment uses actual structured reports and independent replay, not a fabricated final response.",
+      "attempts": 1,
+      "evidence": "public-bootstrap-unavailable-verification.json",
+      "elapsed_seconds": 523.414174
+    },
+    {
+      "case": "public-audit-drift",
+      "agent": "/root/security_audit_r2",
+      "started_at": "2026-11-24T23:07:51.646864+00:00",
+      "result": "pass",
+      "attempts": 1,
+      "finished_and_replayed_at": "2026-11-24T23:09:27.146828+00:00",
+      "interrupted": false,
+      "evidence": "public-audit-drift-verification.json",
+      "elapsed_seconds": 95.499964
+    },
+    {
+      "case": "public-maintenance-conflict",
+      "agent": "/root/security_maintenance_r2",
+      "started_at": "2026-11-24T23:09:41.437079+00:00",
+      "result": "pass",
+      "attempts": 1,
+      "finished_and_replayed_at": "2026-11-24T23:12:10.348873+00:00",
+      "interrupted": false,
+      "evidence": "public-maintenance-conflict-verification.json",
+      "elapsed_seconds": 148.911794
+    }
+  ],
+  "input_digest_after": "9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c",
+  "finished_at": "2026-11-24T23:12:10.348873+00:00",
+  "elapsed_seconds": 808.360567,
+  "result": "pass"
+}

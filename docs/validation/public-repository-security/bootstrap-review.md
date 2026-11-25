@@ -1,0 +1,7 @@
+# Bootstrap corrected-source observation
+
+The actual staged payloads match independent renderer replay byte-for-byte, including GitHub ruleset wire fields. The original snapshot report matches independent verifier replay byte-for-byte: mode snapshot, unable-to-verify, public_ready false. All seven original project files are unchanged. The actual source-scope command matched the approved CHECK-004 digest. Policy succeeds without readiness, and the consumer resolver rejects the synthetic development lock.
+
+The native agent explicitly reported those executed outcomes and no live actions in a coordinator message. It initially compared the unrelated automated-test-execution helper digest, then used the correct security CHECK scope after a factual coordinator clarification; both observations are preserved. No functional retry occurred. After functional completion, the coordinator stopped delayed narrative generation to reserve time within the 600-second limit. No final narrative file is claimed; acceptance uses original commands/reports, the native message and independent replay.
+
+Native observed message: “Correct CHECK-004 source digest matched 9142f131... (exit 0). Actual renderer exit 0, policy exit 0/public_ready false, consumer provider exit 2 (development snapshot is not full release commit), actual offline snapshot verifier exit 2/unable-to-verify/public_ready false. All stdout/stderr/argv/timestamps in output/commands.json; staged assets produced; project hashes unchanged. Writing final English findings now; no live actions or retries.”

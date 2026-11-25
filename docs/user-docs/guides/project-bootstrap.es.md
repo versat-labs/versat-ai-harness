@@ -20,6 +20,12 @@ Espera una estructura compuesta de base/perfil, specs/product/overview.md con va
 
 Una estructura vacía no demuestra una aplicación utilizable. Registra las comprobaciones de ejecución no disponibles y evita guías vacías o pasos ejecutables ficticios. Si hay contenido existente en conflicto, detente y clasifica el repositorio antes de componer plantillas.
 
+## Seguridad de repositorios públicos en GitHub
+
+Use el [procedimiento de seguridad del proveedor exacto (inglés)](../../guides/public-repository-security.md). Prepare los archivos con `python scripts/bootstrap/public_security.py --output /tmp/public-security-staging` y ejecute `python validators/security/validate.py --repository owner/repository --live --output /tmp/public-security-report.json` desde ese proveedor. Para consumidores instalados, añada `--project-root /absolute/consumer` con el lock exacto correspondiente. Revise las diferencias y preserve checks más fuertes y conflictos de ownership; solo operaciones administrativas autorizadas aplican la configuración.
+
+La preparación pública exige una verificación actual y completa en modo live con `public_ready: true`. Un esqueleto local, check de política, snapshot guardado o código de salida 0 aislado es insuficiente. Los permisos u observaciones ausentes siguen sin verificar. La auditoría no autoriza ediciones; el mantenimiento verifica correcciones autorizadas y nunca elige `latest` silenciosamente. Una aprobación de CODEOWNER elegible satisface la regla básica, aunque ambos hayan recibido una solicitud de review. Los contribuidores externos usan forks y PRs; el CI de forks no recibe credenciales administrativas. La publicación de releases y su adopción siguen separadas.
+
 ## Referencias
 
 - [Skill (inglés)](../../../skills/project-bootstrap/SKILL.md)

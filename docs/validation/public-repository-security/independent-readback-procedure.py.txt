@@ -1,0 +1,47 @@
+import base64,datetime,json,os,pathlib,subprocess,sys
+root=pathlib.Path('/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness'); output=root/'docs/validation/public-repository-security'; report=json.loads((output/'live-report.json').read_text()); observed=report['evidence']['observations']; repo='versat-labs/versat-ai-harness'; base='/repos/'+repo
+environment=dict(os.environ)
+for key in ('GH_TOKEN','GITHUB_TOKEN','GH_ENTERPRISE_TOKEN','GITHUB_ENTERPRISE_TOKEN','GH_DEBUG'): environment.pop(key,None)
+token=subprocess.run(['gh','auth','token','--hostname','github.com','--user','elviszoz'],env=environment,capture_output=True,text=True)
+if token.returncode or not token.stdout.strip(): raise SystemExit('Saved authentication unavailable')
+environment['GH_TOKEN']=token.stdout.strip()
+def get(path):
+ result=subprocess.run(['gh','api','--hostname','github.com','--method','GET',path],env=environment,capture_output=True,text=True,timeout=30)
+ if result.returncode: raise RuntimeError('Administrative GET unavailable')
+ return json.loads(result.stdout)
+checks={}
+operator=get('/user'); assert operator['login']=='elviszoz'
+metadata=get(base); assert metadata['permissions']['admin'] is True
+checks['operator_admin']=True
+for key,value in observed['repository']['data'].items():
+ if key=='security_and_analysis':
+  assert all(metadata[key][k]['status']==v['status']=='enabled' for k,v in value.items())
+ else: assert metadata[key]==value
+checks['repository_secrets_participation']=True
+main=get(base+'/branches/main'); sha=main['commit']['sha']; assert sha==observed['main']['data']['sha']
+protection=get(base+'/branches/main/protection'); expected=observed['protection']['data']
+for key,value in expected.items():
+ assert all(protection[key][k]==v for k,v in value.items())
+prior=json.loads(pathlib.Path('/private/tmp/versat-public-security-main-before.json').read_text())
+for key in ('required_pull_request_reviews','required_status_checks','enforce_admins','allow_force_pushes','allow_deletions'):
+ assert protection[key]==prior[key], key
+checks['main_protection_and_required_checks_unchanged']=True
+rules=get(base+'/rulesets?includes_parents=true&per_page=100'); assert sorted(r['id'] for r in rules)==sorted(r['id'] for r in observed['rulesets']['data'])
+for item in observed['rulesets']['data']:
+ raw=get(base+f"/rulesets/{item['id']}?includes_parents=true")
+ for key,value in item.items(): assert raw[key]==value,key
+ assert raw['bypass_actors']==[{'actor_id':5,'actor_type':'RepositoryRole','bypass_mode':'always'}]
+ assert raw['conditions']['ref_name']=={'exclude':[],'include':['~ALL']}
+ assert {r['type'] for r in raw['rules']}=={'creation','update','deletion'}
+checks['branch_and_tag_universal_admin_only']=True
+content=get(base+'/contents/.github/CODEOWNERS?ref='+sha)
+rows=[]
+for line in base64.b64decode(content['content']).decode().splitlines():
+ parts=line.split('#',1)[0].split()
+ if parts: rows.append({'pattern':parts[0],'owners':parts[1:]})
+assert rows==observed['codeowners']['data']['rows']
+assert get(base+'/codeowners/errors?ref='+sha)['errors']==[]
+for name,permission in observed['owner_permissions']['data'].items(): assert get(base+'/collaborators/'+name+'/permission')['permission']==permission
+checks['codeowners_same_base_and_permissions']=True
+record={'result':'pass','observed_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'operator':'elviszoz','repository':repo,'main_sha':sha,'checks':checks,'required_contexts':protection['required_status_checks']['contexts'],'baseline_main':{key:prior[key] for key in ('required_pull_request_reviews','required_status_checks','enforce_admins','allow_force_pushes','allow_deletions')},'method':'Independent gh api GET calls; no imports from new collector or evaluator; raw responses retained only in process memory. Compared main against pre-correction baseline. No CLI account switch or remote mutation.'}
+(output/'independent-readback.json').write_text(json.dumps(record,indent=2)+'\n'); print(json.dumps(record))

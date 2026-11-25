@@ -20,6 +20,12 @@ Expect a reviewable difference covering Standards snapshots, templates, capabili
 
 If no target is supplied, resolve it before modifying pins; never use latest. Surface conflicts instead of overwriting them. Roll back configuration and provider references together, then run the restored original suite.
 
+## Public GitHub security
+
+Use the exact provider's [security procedure](../../guides/public-repository-security.md). Stage assets with `python scripts/bootstrap/public_security.py --output /tmp/public-security-staging`, then run `python validators/security/validate.py --repository owner/repository --live --output /tmp/public-security-report.json` from that provider. Add `--project-root /absolute/consumer` for an installed consumer with a matching exact lock. Review configuration differences and preserve stronger checks and ownership conflicts; only authorized administrative operations apply them.
+
+A public-ready result requires a complete fresh live pass with `public_ready: true`. A local skeleton, policy check, saved snapshot or exit 0 alone is insufficient. Missing permissions or observations remain unverified. Audit does not authorize edits; maintenance verifies authorized remediation and never selects `latest` silently. One eligible code owner's approval satisfies the baseline even when both owners received review requests. External contributors use forks and PRs; no administrative credentials are exposed to fork CI. Release publication and adoption remain separate.
+
 ## References
 
 - [Skill (English)](../../../skills/project-maintenance/SKILL.md)

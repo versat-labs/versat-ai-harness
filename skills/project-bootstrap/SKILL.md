@@ -18,7 +18,8 @@ Create one reviewable bootstrap change rather than assembling a project manually
 7. Initialize the `project-bootstrap` change using the Plugin root [SDD process](../../sdd/process.md) and its templates. Link its proposal to the product overview and relevant supporting sections; distinguish product ambitions from the scope of the repository bootstrap.
 8. Generate `.versat/project.yaml` and an exact `.versat/standards.lock` in the target project.
 9. Review product coverage using the discovery guidance, then run the Plugin root validation entry point and report gaps without hiding or bypassing them. Follow the template guide to verify the consumer's exact provider and execute its actual configured suites. Report empty scaffolds and unavailable runtime honestly. Structural validation does not establish product evidence or approval.
-10. Prepare a bootstrap branch and Pull Request only when the user has authorized remote repository changes.
+10. Apply the public-GitHub readiness procedure resolved through the same Standards index, using the [security verification guide](../../docs/guides/public-repository-security.md). For an applicable target, stage the conditional template assets, reconcile conflicts and perform only already-authorized remote configuration. Run the version-matched verifier in live mode with the actual repository and exact consumer provider. Inspect its mode and `public_ready` field; exit 0, policy checks, supplied snapshots or a local skeleton alone do not establish public readiness. Report missing main, permissions, runtime or observations explicitly and preserve all existing product/profile work.
+11. Prepare a bootstrap branch and Pull Request only when the user has authorized remote repository changes.
 
 ## Constraints
 

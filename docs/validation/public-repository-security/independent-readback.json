@@ -1,0 +1,51 @@
+{
+  "result": "pass",
+  "observed_at": "2026-11-24T23:12:46.393401+00:00",
+  "operator": "elviszoz",
+  "repository": "versat-labs/versat-ai-harness",
+  "main_sha": "c191f3b126c659fbabfd4ed3d40b474407cfd26a",
+  "checks": {
+    "operator_admin": true,
+    "repository_secrets_participation": true,
+    "main_protection_and_required_checks_unchanged": true,
+    "branch_and_tag_universal_admin_only": true,
+    "codeowners_same_base_and_permissions": true
+  },
+  "required_contexts": [
+    "structural-validation"
+  ],
+  "baseline_main": {
+    "required_pull_request_reviews": {
+      "url": "https://api.github.com/repos/versat-labs/versat-ai-harness/branches/main/protection/required_pull_request_reviews",
+      "dismiss_stale_reviews": true,
+      "require_code_owner_reviews": true,
+      "require_last_push_approval": true,
+      "required_approving_review_count": 1
+    },
+    "required_status_checks": {
+      "url": "https://api.github.com/repos/versat-labs/versat-ai-harness/branches/main/protection/required_status_checks",
+      "strict": false,
+      "contexts": [
+        "structural-validation"
+      ],
+      "contexts_url": "https://api.github.com/repos/versat-labs/versat-ai-harness/branches/main/protection/required_status_checks/contexts",
+      "checks": [
+        {
+          "context": "structural-validation",
+          "app_id": 15368
+        }
+      ]
+    },
+    "enforce_admins": {
+      "url": "https://api.github.com/repos/versat-labs/versat-ai-harness/branches/main/protection/enforce_admins",
+      "enabled": true
+    },
+    "allow_force_pushes": {
+      "enabled": false
+    },
+    "allow_deletions": {
+      "enabled": false
+    }
+  },
+  "method": "Independent gh api GET calls; no imports from new collector or evaluator; raw responses retained only in process memory. Compared main against pre-correction baseline. No CLI account switch or remote mutation."
+}

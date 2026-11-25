@@ -8,6 +8,12 @@
 - Projects handling sensitive data MUST document classification, retention, access and deletion.
 - Security controls that can be deterministic MUST be enforced by CI or platform policy.
 
+## Public GitHub security verification
+
+For public GitHub repositories, both repository-level Secret scanning and Push protection MUST be explicitly enabled under the index-resolved [public security policy](public-repository-security.yaml). Account defaults or partner notifications do not substitute for observed repository settings. Missing permissions/fields are unverified; disabled controls are non-compliant. Neither permits a public-readiness claim. The [Git Standard](git.md#public-github-repository-security) defines the complementary review/reference controls.
+
+Security verification MUST be read-only, version-bound, complete and current. Do not fetch secret values or alerts to verify feature enablement, export credentials in reports, or give privileged credentials to untrusted PR jobs. Configuration changes remain separately authorized and require fresh readback. Preserve failed attempts and stronger controls. Local rollback MUST NOT silently disable already-correct remote protections.
+
 ## Confidential vulnerability reporting
 
 The following reporting extension is preparation source extending H02; each route still requires its own governed adoption and verification.

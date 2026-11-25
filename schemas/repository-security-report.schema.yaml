@@ -1,0 +1,26 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+additionalProperties: false
+required: [schema_version, repository, mode, applicability, result, public_ready, policy, provider, controls, evidence]
+properties:
+  schema_version: {const: 1}
+  repository: {type: string}
+  mode: {enum: [policy, snapshot, live]}
+  applicability: {enum: [applicable, not-applicable, unknown]}
+  result: {enum: [pass, fail, unable-to-verify, not-applicable]}
+  public_ready: {type: boolean}
+  policy: {type: object}
+  provider: {type: object}
+  evidence: {type: object}
+  controls:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, result, diagnostic, remediation, evidence]
+      properties:
+        id: {type: string}
+        result: {enum: [pass, fail, unable-to-verify]}
+        diagnostic: {type: string}
+        remediation: {type: string}
+        evidence: {type: [object, array, string, integer, boolean, 'null']}

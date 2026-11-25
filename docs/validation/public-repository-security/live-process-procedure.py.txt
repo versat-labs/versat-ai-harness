@@ -1,0 +1,23 @@
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+root = Path('/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness')
+environment = dict(os.environ)
+for key in ('GH_TOKEN', 'GITHUB_TOKEN', 'GH_ENTERPRISE_TOKEN', 'GITHUB_ENTERPRISE_TOKEN', 'GH_DEBUG'):
+    environment.pop(key, None)
+token = subprocess.run(['gh', 'auth', 'token', '--hostname', 'github.com', '--user', 'elviszoz'], env=environment, capture_output=True, text=True)
+if token.returncode or not token.stdout.strip():
+    print('Saved elviszoz authentication is unavailable; no account was switched.')
+    sys.exit(2)
+environment['GH_TOKEN'] = token.stdout.strip()
+environment['PYTHONDONTWRITEBYTECODE'] = '1'
+identity = subprocess.run(['gh', 'api', 'user', '--jq', '.login'], env=environment, capture_output=True, text=True)
+if identity.returncode or identity.stdout.strip() != 'elviszoz':
+    print('Process-scoped identity verification failed; no account was switched.')
+    sys.exit(2)
+print('Verified process-scoped operator: elviszoz. Active CLI account unchanged.')
+destination = sys.argv[1] if len(sys.argv) > 1 else '/private/tmp/versat-security-live-development.json'
+result = subprocess.run([sys.executable, '-B', str(root/'validators/security/validate.py'), '--repository', 'versat-labs/versat-ai-harness', '--live', '--output', destination], cwd=root, env=environment)
+sys.exit(result.returncode)

@@ -1,0 +1,9 @@
+{
+  ".versat/project.yaml": "606d835ceba7133a4b8519ba6ef7ca3795364e0afbb46dbbe65781b05b0c597a",
+  ".versat/standards.lock": "c66efe94979e47581b6d65de046530140ec5225f3870440f6962d535ef5f2ae2",
+  "AGENTS.md": "172a31d811c7887b681b6df43253d31d15481e367c5ee746204e9df6547f5822",
+  "inputs/context.json": "febb19cf2c78a691f38e481f8cb2b7c6aa3baa668de4be77443f84c71f39c42d",
+  "inputs/settings.json": "466a8af270ec827c87034c8dbbe60d2f4e2d75e7b58b3ceaf74436776a448980",
+  "specs/product/overview.md": "a1673d191817b403ef5ccbaf313cb9b170b86c2e78d0e06daf738ceec0c23f47",
+  "tests/test_amount.py": "2fc0c09e57c9a6256d2b42910f5b44969d9488e7fe4ca97a2c81a4d6510daa64"
+}

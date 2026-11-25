@@ -1,0 +1,33 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+type: object
+additionalProperties: false
+required: [schema_version, repository, started_at, finished_at, observations, complete, stable]
+properties:
+  schema_version: {const: 1}
+  repository: {type: string, pattern: '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$'}
+  started_at: {type: string, minLength: 1}
+  finished_at: {type: string, minLength: 1}
+  complete: {type: boolean}
+  stable: {type: boolean}
+  sample_digests: {type: array, items: {type: string, pattern: '^[a-f0-9]{64}$'}}
+  observations:
+    type: object
+    additionalProperties: false
+    properties:
+      repository: {$ref: '#/$defs/observation'}
+      main: {$ref: '#/$defs/observation'}
+      protection: {$ref: '#/$defs/observation'}
+      rulesets: {$ref: '#/$defs/observation'}
+      main_rules: {$ref: '#/$defs/observation'}
+      codeowners: {$ref: '#/$defs/observation'}
+      codeowners_errors: {$ref: '#/$defs/observation'}
+      owner_permissions: {$ref: '#/$defs/observation'}
+$defs:
+  observation:
+    type: object
+    additionalProperties: false
+    required: [status]
+    properties:
+      status: {enum: [ok, absent, unverified]}
+      data: {type: [object, array, 'null']}
+      diagnostic: {type: string, maxLength: 300}

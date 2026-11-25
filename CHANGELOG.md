@@ -8,6 +8,7 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ### Added
 
+- index-resolved public GitHub security policy, read-only live/offline verification, safe configuration rendering and mandatory readiness guidance for bootstrap, audit and maintenance; exact release publication and consumer adoption remain separate.
 - index-resolved coding and changelog standards, with pinned Python lint and formatting checks and Git-based changelog validation in the Harness and Python reference integration.
 
 ### Changed
