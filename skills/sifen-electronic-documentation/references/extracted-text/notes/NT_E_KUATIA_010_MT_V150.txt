@@ -1,0 +1,399 @@
+
+===== PAGE 1 / 5 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+                                    NOTA TÉCNICA N° 010                             
+                                                                                    
+            Fecha: 04/02/2022                                                       
+                                                                                    
+            Cambios desde la fecha 01/02/2021 al 04/02/2022                         
+            Referencia: Correcciones y ajustes sobre el MT versión 150              
+                                                                                    
+            1. Formato de campos XML                                                
+              1.1. En campos firmados del Documento Electrónico (A001-A099) se elimina el siguiente campo: (Página 62)
+                                                                                    
+                                    Nodo  Tipo                                      
+          Grupo ID Campo  Descripción          Longitud Ocurrencia Observaciones    
+                                    Padre Dato                                      
+                                                            1=Sistema de facturación del
+                        Sistema de                                                  
+           A   A005 dSisFact         A001  N    1      1-1  contribuyente           
+                        facturación                                                 
+                                                            2=SIFEN solución gratuita
+              1.2. En el Campos inherentes a la operación comercial (D010-D099) se modifica el siguiente campo: (Página 66)
+                                      Nodo  Tipo                                    
+          Grupo ID  Campo   Descripción         Longitud Ocurrencia Observaciones   
+                                      Padre Dato                                    
+           D1  D012 dDesTipTra Descripción del tipo D010 A 5-39 0-1 Obligatorio si existe el
+                          de transacción                     campo D011             
+                                                             1= “Venta de mercadería”
+                                                             2= “Prestación de      
+                                                             servicios”             
+                                                             3= “Mixto (Venta de    
+                                                             mercadería y servicios)”
+                                                             4= “Venta de activo fijo”
+                                                             5= “Venta de divisas”  
+                                                             6= “Compra de divisas” 
+                                                             7= “Promoción o entrega
+                                                             de muestras”           
+                                                             8= “Donación”          
+                                                             9= “Anticipo”          
+                                                             10= “Compra de         
+                                                             productos”             
+                                                             11= “Compra de servicios”
+                                                             12= “Venta de crédito  
+                                                             fiscal”                
+                                                             13= ”Muestras médicas  
+                                                             (Art. 3 RG 24/2014)”   
+              1.3. En el Campos que componen la Nota de Remisión Electrónica (E500-E599) se modifica el siguiente campo:
+                 (Página 79)                                                        
+                                      Nodo                                          
+          Grupo ID  Campo   Descripción    Tipo Dato Longitud Ocurrencia Observaciones
+                                      Padre                                         
+                          Kilómetros                                                
+           E6   E505 dKmR estimados de E500  N      1-5     1-1                     
+                          recorrido                                                 
+              1.4. En el Grupo de rastreo de la mercadería (E750-E761) se modifica los campos de observación y
+                 longitud, se elimina los siguientes campos y se agrega los campos de nombre de producto: (Página
+                 90 y 91)                                                           
+                                         Nodo Tipo                                  
+          Grupo ID   Campo     Descripción        Longitud Ocurrencia Observaciones 
+                                         Padre Dato                                 
+          E8.4 E751  dNumLote Número de lote E750 A 1-80  0-1   Obligados por Art. 1
+                                                                de la RG N°         
+                                                                106/2021 –          
+                                                                Agroquímicos        
+          E8.4 E756  dNomImp Nombre del  E750  A    4-60  0-1   Obligados por la RG 
+                             Importador                         N° 16/2019 –        
+                                                                Agroquímicos        
+          E8.4 E757  dDirImp Dirección de E750 A   1-255  0-1   Obligados por la RG 
+                             Importador                         N° 16/2019 –        
+                                                                Agroquímicos        
+                                          1                                         
+                                                                                    
+
+===== PAGE 2 / 5 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          Sistema Integrado de Facturación Electrónica Nacional
+          E8.4 E758  dNumFir Número de registro E750 A 20 0-1   Obligados por la RG 
+                             de la firma del                    N° 16/2019 –        
+                             importador                         Agroquímicos        
+          E8.4 E759  dNumReg Número de registro E750 A 1-20 0-1 Obligados por el Art.
+                             del producto                       1 de la RG N°       
+                             otorgado por el                    106/2021 –          
+                             SENAVE                             Agroquímicos        
+          E8.4 E760 dNumRegEntCom Número de registro E750 A 1-20 0-1 Obligados por el Art.
+                             de entidad                         1 de la RG N°       
+                             comercial otorgado                 106/2021 –          
+                             por el SENAVE                      Agroquímicos        
+          E8.4 E761  dNomPro Nombre del  E750  A    1-30  0-1   Obligados por el Art.
+                             Producto                           1 de la RG N°       
+                                                                106/2021 –          
+                                                                Agroquímicos        
+              1.5. En el Campos que identifican al transportista (persona física o jurídica) (E980-E999) se modifica el
+                 siguiente campo: (Página 101)                                      
+                                      Nodo  Tipo                                    
+          Grupo ID  Campo   Descripción         Longitud Ocurrencia Observaciones   
+                                      Padre Dato                                    
+                                                             Obligatorio si C002 = 7
+                          Campos que                         No informar si C002 = 4,
+               E980 gCamTrans identifican al E10.4 G    0-1  5, 6                   
+                          transportista                      Opcional cuando E903=1 
+                                                             y E967=1               
+                          Domicilio fiscal del               Obligatorio por RG N°  
+          E10.4 E992 dDomFisc         E980   A   1-150  1-1                         
+                          transportista                      41/2014                
+                          Dirección del                      Obligatorio por por RG N°
+          E10.4 E993 dDirChof         E980   A   1-255  1-1                         
+                          chofer                             41/2014                
+              1.6. En el Campos que identifican al documento asociado (H001-H049) se elimina la siguiente observación ya que
+                 no aplica: (Página 109)                                            
+                                        Nodo Tipo                                   
+          Grupo ID   Campo    Descripción         Longitud Ocurrencia Observaciones 
+                                        Padre Dato                                  
+                                                               Obligatorio si H002=2
+                                                               No informar si H002 =
+                                                               1 o 3                
+                                                               1= Factura           
+           H                Tipo de documento                                       
+               H009 iTipoDocAso         H001  N     1     0-1  2= Nota de crédito   
+           C1               impreso                                                 
+                                                               3= Nota de débito    
+                                                               4= Nota de remisión  
+                                                               5= Comprobante de    
+                                                               retención            
+                                                               Obligatorio si existe el
+                                                               campo H009           
+                                                               1= “Factura”         
+                            Descripción del tipo                                    
+           H                                                   2= “Nota de crédito” 
+               H010 dDTipoDocAso de documento H001 A 7-16 0-1                       
+           C1                                                  3= “Nota de débito”  
+                            impreso                                                 
+                                                               4= “Nota de remisión”
+                                                               5= “Comprobante de   
+                                                               retención”           
+              1.7. En el Grupo: Evento Inutilización (Formato del evento de inutilización) Se agrega número de serie al evento de
+                 Inutilización: C3 (Página 122)                                     
+                                          Nodo                                      
+          Grupo  ID    Campo    Descripción    Tipo Dato Longitud Ocu Observaciones 
+                                          Padre                                     
+                              Serie del número                                      
+           GDE  GEI009 dSerieNum         GEI001  A       2    0-1                   
+                              del documento                                         
+              1.8. En el campo XDe del Schema XML 2: siRecepDE_v150.xsd (WS Recepción DE) se modifica el siguiente campo
+                 (Página 45)                                                        
+                                  Nodo   Tipo                                       
+           ID   Campo  Descripción            Longitud Ocu   Observaciones          
+                                  Padre  Dato                                       
+          ASch03 xDE XML del DE  ASch01 XML   -     1-1 Siguiendo las definiciones del
+                     transmitido                        formato del DE              
+                                          2                                         
+
+===== PAGE 3 / 5 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+                                                                                    
+              1.9. En el campo rEnviConsDe del schema XML 9: siConsDE_v150.xsd (WS Consulta DE) se modifica el
+                 siguiente campo (Página 50)                                        
+                                         Nodo  Tipo                                 
+           ID     Campo       Descripción          Longitud Ocu Observaciones       
+                                         Padre Dato                                 
+          DSch01 rEnviConsDeRequest Raíz  -     -    -    -  Elemento Raíz          
+                                                                                    
+              1.10. En el grupo E6 Campos que componen la Nota de Remisión Electrónica (E500-E599) (Página 79)
+                                                                                    
+                                       Nodo Tipo                                    
+         Grupo  ID    Campo  Descripción         Longitud Ocurrencia Observaciones  
+                                       Padre Dato                                   
+                                                                Precio del Flete para
+                                                                Situaciones         
+                                                                particulares conforme
+          E6    E507  cPreFle Costo del Flete E500 N 1-15p(0-8) 0-1                 
+                                                                al Art. 3° de la    
+                                                                Resolución General N°
+                                                                41/14               
+              1.11. En el Campos de datos del Timbrado (C001-C099) se modifica en la observación (Página 64)
+                                       Nodo Tipo                                    
+         Grupo  ID    Campo  Descripción         Longitud Ocurrencia Observaciones  
+                                       Padre Dato                                   
+          C    C008   dFeIniT Fecha inicio de C001 F 10   1-1   Formato AAAA-MM-    
+                            vigencia del                        DD. Ejemplo         
+                            timbrado                            2018-05-31.         
+                                                                Para el KuDE el     
+                                                                formato de la fecha 
+                                                                de inicio de vigencia
+                                                                debe contener los   
+                                                                guiones separadores 
+                                                                y representarse con 
+                                                                el formato DD-MM-   
+                                                                AAAA. Ejemplo:      
+                                                                31-05-2018          
+            2. VALIDACIONES                                                         
+                                                                                    
+              2.1. D3. Datos que identifican al receptor del Documento Electrónico DE (D200 - D299) se modifican y
+                 elimina las siguientes validaciones y se agrega nueva validación: (Páginas 165, 166, 167, 189)
+                                                                                    
+          N° Val ID    Mensaje de la Validación Código  Observación       E         
+                                              Si el tipo de documento no es autofactura (C002 ≠ 4)
+                                              y si la naturaleza del receptor es No contribuyente
+                                              (D201=2), el tipo de operación debe ser B2C
+                     El tipo de operación no compatible (D202=2).                   
+           46   D202                     1300                             R         
+                     con la naturaleza del receptor                                 
+                                              Si la naturaleza del receptor es No contribuyente
+                                              (D201=2), el tipo de operación debe ser B2C
+                                              (D202=2) o B2F (D202=4).              
+                    Descripción del departamento del Descripción del departamento del receptor no
+           70  D220                      1325                             R         
+                    receptor no corresponde al código coincidente con lo informado en el campo D219
+                    Tipo de documento de identidad del El Tipo de documento de identidad del receptor no
+               D208b receptor incorrecto para el tipo de 1319 puede ser innominado (D208=5), cuando el tipo de R
+                    operación                 operación es distinto a B2C (D202 ≠ 2)
+                    El adquiriente del comprobante de Si el tipo de documento electrónico es Nota de
+                    venta informado no se encuentra Crédito (C002 = 5) o Nota de Débito (C002 = 6), el tipo
+               D208e                     1331                             R         
+                    identificado. Favor verifique el dato de documento de identidad del receptor no puede
+                    ingresado.                ser INNOMINADO (D208 ≠ 5)             
+                                                                                    
+                                                                                    
+                                                                                    
+                                          3                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 4 / 5 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+              2.2. Se agregan las siguientes validaciones: D2.2 Campos que identifican al responsable de la generación del
+                                                                                    
+                 DE (D140-D160) (Página 164)                                        
+                                                                                    
+           N° Val ID    Mensaje de la Validación Código  Observación      E         
+                     Descripción del tipo de documento de                           
+                                               Descripción del tipo de documento de identidad
+                     identidad del responsable de la                                
+                D142                      1265 del responsable de la generación del DE no R
+                     generación del DE no corresponde al                            
+                                               coincidente a lo informado en el campo D141
+                     código                                                         
+              2.3. H. Campos que identifican al documento asociado (H001-H049) se agrega dos nuevas validaciones y se
+                 modifica una. C11 (Páginas 189)                                    
+           N° Val ID    Mensaje de la Validación Código Observación      E          
+                                               Si el tipo de documento asociado es electrónico
+                     El CDC asociado no corresponde al                              
+                H004g                     2439 (H002=1) el CDC debe corresponder al emisor del R
+                     emisor del documento electrónico.                              
+                                               documento al cual se asocia.         
+                                               Si el tipo de documento asociado es electrónico
+                     El CDC asociado no corresponde al                              
+                H004h                     2441 (H002=1) el CDC debe coincidir al receptor del R
+                     receptor del documento electrónico.                            
+                                               documento al cual se asocia.         
+                     El número de timbrado informado                                
+                                               Si el tipo de documento asociado seleccionado es
+           255       corresponde a un timbrado                                      
+                H005b                     2440 igual a impreso (H002=2), no se debe informar un R
+           C22       electrónico existente en la base de                            
+                                               timbrado electrónico.                
+                     datos del SIFEN                                                
+            3. URL                                                                  
+              3.1. Se modifica la URL de Consulta QR: (Página 208)                  
+            Ambiente de Producción: https://ekuatia.set.gov.py/consultas/qr?        
+            Ambiente de Test: https://ekuatia.set.gov.py/consultas-test/qr?         
+            4. Conformación del Código QR C18                                       
+              En la Sección 13.8.2. se agregan las siguientes observaciones adicionales para el código QR: (Página 205)
+              1. Cuando el documento electrónico no tiene IVA se debe especificar el valor 0 para el campo dTotIVA.
+              2. Si el Código de Seguridad del Contribuyente no está vigente en la fecha de emisión del documento electrónico
+                 se retornará el error 2501.                                        
+                                                                                    
+                                                                                    
+            5. Codificaciones                                                       
+              5.1. Se Corrige en el manual la descripción en la Tabla 6 – Códigos de Afectación (Página 213)
+                                                                                    
+                               TABLA 6 – CODIGOS DE AFECTACION                      
+               Código                       Descripción                             
+                                                                                    
+                  1      Gravado IVA                                                
+                  2      Exonerado (Art. 100 - Ley 6380/2019)                       
+                  3      Exento                                                     
+                  4      Gravado parcial                                            
+                                                                                    
+                                                                                    
+                                                                                    
+            6. Namespace C23                                                        
+                                                                                    
+              6.1. Se modifica el ejemplo de namespace utilizado en Eventos: (Página 31)
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          4                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 5 / 5 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            7. Convenciones referenciadas en tablas                                 
+                                                                                    
+              7.1. Se Corrige en el manual la descripción en la Tabla B – Tipos de Datos en los Archivos XML (Página 33)
+              Tipo                           Descripción                            
+                                                                                    
+              N                                                                     
+                                  Numérico: Vea los diverso s formatos en la Tabla D
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            Histórico del Documento                                                 
+                                                                                    
+                             FECHA DE                  FECHA DE  PRINCIPALES        
+               AUTOR                       REVISOR                                  
+                            ELABORACIÓN                REVISIÓN  ALTERACIONES       
+            Amanda González 01/02/2021   Carlos Mendoza                             
+                                                               Formatos de campo y  
+              Sara Ramírez  12/04/2021   Carlos Mendoza 30/04/2021 Validaciones     
+                                                              últimas correcciones de
+              Sara Ramírez  28/05/2021   Carlos Mendoza 22/06/2021 códigos          
+                                                               Formatos de campo,   
+              Sara Ramirez  19/10/2021    Andrea Riera 22/07/2021 Validaciones y Tabla
+                                                               Formatos de campo,   
+                                                               Validaciones y Tabla.
+              Sara Ramirez  04/02/2022    Andrea Riera 25/01/2022                   
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          5                                         
+                                                                                    
+                                                                                    
+                                                                                    

@@ -18,6 +18,7 @@ Para quem desenvolve, revisa e mantém projetos, incluindo contribuidores extern
 - [Auditar um projeto](docs/user-docs/guides/project-audit.pt.md)
 - [Revisar a arquitetura](docs/user-docs/guides/architecture-review.pt.md)
 - [Validação e avaliações](docs/user-docs/guides/validation-and-evaluations.pt.md)
+- [Documentação eletrônica SIFEN](docs/user-docs/guides/sifen-electronic-documentation.pt.md)
 
 - [Transição do marketplace: identidades nova e legada](docs/user-docs/guides/marketplace-transition.pt.md)
 

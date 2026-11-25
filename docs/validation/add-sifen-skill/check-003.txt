@@ -1,0 +1,40 @@
+Portable Plugin package validation passed.
+SDD validation: pass
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+add-sifen-skill: {"assessed":0,"local_scenarios":10,"open_findings":0,"regression_obligations":1,"requirements":{"REQ-001":"unverified","REQ-002":"unverified","REQ-003":"unverified","REQ-004":"unverified"},"results":0,"stale_results":0}
+automated-test-execution: {"assessed":50,"local_scenarios":27,"open_findings":0,"regression_obligations":23,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass"},"results":8,"stale_results":0}
+contribution-security-guidance: {"assessed":35,"local_scenarios":21,"open_findings":0,"regression_obligations":14,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
+default-codeowner-elviszoz: {"assessed":9,"local_scenarios":7,"open_findings":0,"regression_obligations":2,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass"},"results":2,"stale_results":0}
+harness-publication-readiness: {"assessed":110,"local_scenarios":38,"open_findings":0,"regression_obligations":72,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass","REQ-009":"pass","REQ-010":"pass","REQ-011":"pass","REQ-012":"pass"},"results":10,"stale_results":0}
+harness-user-documentation: {"assessed":46,"local_scenarios":27,"open_findings":0,"regression_obligations":19,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass"},"results":5,"stale_results":0}
+portfolio-licensing-policy: {"assessed":24,"local_scenarios":18,"open_findings":0,"regression_obligations":6,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
+WARNING LEGACY_EXEMPT: <repository>/specs/archive/agent-project-layout: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository>/specs/archive/agent-project-layout: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: <repository>/specs/archive/align-language-standard: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository>/specs/archive/align-language-standard: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: <repository>/specs/archive/bootstrap-product-context: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository>/specs/archive/bootstrap-product-context: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING LEGACY_EXEMPT: <repository>/specs/archive/consolidate-sdd-workflow: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository>/specs/archive/consolidate-sdd-workflow: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: <repository>/specs/archive/quickstart-scenario-coverage: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: <repository>/specs/archive/root-plugin-package: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository>/specs/archive/root-plugin-package: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+WARNING V2_COMPATIBILITY: <repository>/specs/archive/sdd-acceptance-regression: Reviewed v2 contract only; v3 acceptance/regression assurance not verified
+WARNING LEGACY_EXEMPT: <repository>/specs/archive/shortcut-git-convention: Immutable legacy dossier: v2 approval and evidence gates were not verified
+WARNING LEGACY_HISTORICAL_ARCHIVE: <repository>/specs/archive/shortcut-git-convention: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
+...................................................................................................................................
+----------------------------------------------------------------------
+Ran 131 tests in 16.497s
+
+OK
+................................................
+----------------------------------------------------------------------
+Ran 48 tests in 11.606s
+
+OK
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 1.299s
+
+OK
+Versat AI Harness package, SDD contract and validator tests passed.

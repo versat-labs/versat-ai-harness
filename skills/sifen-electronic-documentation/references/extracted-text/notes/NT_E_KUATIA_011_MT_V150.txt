@@ -1,0 +1,202 @@
+
+===== PAGE 1 / 3 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                             Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+                                       NOTA TÉCNICA N° 11                           
+                                                                                    
+               Fecha: 20/10/2022                                                    
+               Cambios desde la fecha 23/09/2022 al 20/10/2022                      
+                                                                                    
+               Referencia: Correcciones y ajustes sobre el MT versión 150           
+               1. WEB SERVICES                                                      
+                                                                                    
+                 1.1. Se incluye el siguiente Web Service:                          
+                      9.8. WS consulta masiva de RUC – rEnviConsArchivoRUCRequest   
+                                                                                    
+                       Devuelve el resultado de la consulta de los datos de razón social, si es facturador electrónico y estado del
+               Función:                                                             
+                       RUC de todos los contribuyentes existentes (excepto cancelados).
+               Proceso: Síncrono                                                    
+               Método: rEnviConsArchivoRUCRequest                                   
+                       9.8.1. Definición del protocolo que consume este servicio    
+               El Request que consumirá este servicio estará construido en XML, según el Schema expuesto a Continuación:
+               Schema XML 20: WS_ConsultaArchivoRuc.xsd                             
+                                                                                    
+                                       Nodo Tipo                                    
+                ID    Campo   Descripción       Longitud Ocurrencia Observaciones   
+                                      Padre Dato                                    
+                ESch0 rEnviConsArchi                                                
+                             Raíz       -   -     -      -   Elemento raíz          
+                 1  voRUCRequest                                                    
+                             Contenedor de                   Definido en el schema  
+                ESch0 rConsultaArchi parámetros ESch0        xml:                   
+                                            G     -     1-1                         
+                 2  vo       requeridos para 1               siConsultaArchivoRuc.xs
+                             la consulta.                    d                      
+               Schema XML 21: siConsultaArchivoRuc.xsd                              
+                                       Nodo Tipo                                    
+                ID    Campo   Descripción       Longitud Ocurrencia Observaciones   
+                                      Padre Dato                                    
+                ESch0                 ESch0                                         
+                    ConsultaDTE Raíz        G     -     1-1  Elemento raíz          
+                 3                      2                                           
+                                                             Atributo. Número       
+                                                             secuencial             
+                                                             autoincremental, para  
+                             Identificador de                identificación del     
+                ESch0                 ESch0                                         
+                    Id       control de     N    1-15   1-1  mensaje enviado. La    
+                 4                      3                                           
+                             envío.                          responsabilidad de     
+                                                             generar y controlar este
+                                                             número es exclusiva del
+                                                             contribuyente.         
+                             RUC del                                                
+                ESch0                 ESch0                  RUC no incluye el dígito
+                    dRucFactElec facturador A    5-8    1-1                         
+                 5                      3                    verificador (DV).      
+                             electrónico.                                           
+                             Grupo de                                               
+                ESch0                 ESch0                                         
+                    Signature campos de     G           1-1                         
+                 6                      2                                           
+                             firma                                                  
+
+===== PAGE 2 / 3 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                             Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+                       9.8.2. Descripción del procesamiento                         
+                                                                                    
+               Tabla L – Resultados de Procesamiento del WS Consulta Masiva de RUC  
+                                                                                    
+                           Condición                   Mensaje generado             
+               Devuelve el archivo           0520=Archivo encontrado                
+               No se encontró el archivo generado en el día 0521=Archivo no encontrado
+               Se ha superado el límite de descargas del día (máximo una 0522=Ha sobrepasado el límite de descargas para el archivo
+               descarga diaria)              solicitado                             
+                                             0523=RUC del certificado utilizado para firmar no coincide
+               El RUC del certificado no coincide con el RUC de consulta            
+                                             con el RUC de consulta                 
+                       9.8.3. Flujo de proceso de web service de consulta masiva de RUC
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                       9.8.4. Protocolo de respuesta del web service                
+                                                                                    
+               El Response que consumirá este servicio estará construido en XML, según el Schema expuesto a continuación:
+               Schema XML 22: WS_ConsultaArchivoRuc.xsd                             
+                                       Nodo Tipo                                    
+                ID    Campo   Descripción       Longitud Ocurrencia Observaciones   
+                                      Padre Dato                                    
+                FSch0 rEnviConsArchiv                                               
+                             Raíz       -   G     -     1-1  Elemento raíz          
+                 1  oRUCResponse                                                    
+                             Fecha y hora del                Fecha de proceso de la 
+                FSch0                 FSch0                                         
+                    dFecProc procesamiento  D    1-15   1-1  petición. Formato AAAA-
+                 2                      1                                           
+                             de la petición                  MM-DDTHH:MI:SS         
+                                                             Fecha de generación del
+                FSch0        Fecha del FSch0                                        
+                    dFecArchivo             D     -     0-1  archivo. Formato AAAA- 
+                 3           archivo    1                                           
+                                                             MM-DD                  
+                             Código de                       Definido en el tópico  
+                FSch0                 FSch0                                         
+                    dCodRes  resultado de la A   1-4    1-1  correspondiente del    
+                 4                      1                                           
+                             consulta                        capítulo 12 MT         
+                             Mensaje de                      Definido en el tópico  
+                FSch0                 FSch0                                         
+                    dMsgRes  resultado de la A   1-255  1-1  correspondiente del    
+                 5                      1                                           
+                             consulta                        capítulo 12 MT         
+                FSch0        Archivo de RUC FSch0            Campo comprimido en    
+                    rConsDte                B           0-1                         
+                 6           comprimido 1                    formato Base64.        
+
+===== PAGE 3 / 3 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                             Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+                 1.2. Se agrega la siguiente descripción de Servicios Web del SIFEN:
+                                                                                    
+                     12.3.7. WS consulta masiva de RUC – rEnviConsArchivoRUCRequest 
+                                                                                    
+                       12.3.7.1. Área de datos del WS                               
+                                                                                    
+                ID          Resultado de la Validación Código Obs       E           
+                                                                                    
+                BO04 Devuelve el archivo           0520                             
+                BO05 No se encontró el archivo generado en el día 0521              
+                BO06 Se ha superado el límite de descargas del día 0522             
+                    El RUC del certificado utilizado para firmar no coincide con    
+                BO07                               0523                             
+                    el RUC de consulta                                              
+                     12.1.1. Códigos de respuestas de las validaciones de los Servicios Web (Página 147)
+                Inicio Inicio Fin ID Fin código                                     
+                 ID  código de     de         Tipo de Regla de Validación Apartado  
+                     respuesta    respuesta                                         
+                BO01  0500  BO20   0559 Área de datos del WS siConsRUC / Área de datos del
+                                        WS rEnviConsArchivoRUCRequest               
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+               Histórico del Documento                                              
+                                                                                    
+                              FECHA DE             FECHA DE                         
+                  AUTOR                  REVISOR            PRINCIPALES ALTERACIONES
+                             ELABORACIÓN           REVISIÓN                         
+                                                         Estructura del WS consulta masiva
+                 Patricia Rolón 23/09/2022                                          
+                                                         de RUC                     
+                                                         Formato de Campos y Validaciones
+                Jonathan Garay 20/10/2022 José Vernazza 24/10/2022                  
+                                                         del WS Service             
+                                                                                    
+                                                                                    

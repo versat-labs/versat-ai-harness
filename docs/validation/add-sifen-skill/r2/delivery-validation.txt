@@ -1,0 +1,12 @@
+SDD validation: fail
+Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
+add-sifen-skill: {"assessed":11,"local_scenarios":10,"open_findings":1,"regression_obligations":1,"requirements":{"REQ-001":"pass","REQ-002":"fail","REQ-003":"unverified","REQ-004":"pass"},"results":4,"stale_results":0}
+TASK_INCOMPLETE: <repository>/specs/changes/add-sifen-skill/tasks.md: TASK-005 is not completed
+TASK_INCOMPLETE: <repository>/specs/changes/add-sifen-skill/tasks.md: TASK-006 is not completed
+VALIDATION_MISSING: <repository>/specs/changes/add-sifen-skill/tasks.md: CHECK-002 requires a passing result with evidence
+ACCEPTANCE_UNVERIFIED: <repository>/specs/changes/add-sifen-skill/tasks.md: {"local":{"requirement":"REQ-002","scenario":1}}
+ACCEPTANCE_UNVERIFIED: <repository>/specs/changes/add-sifen-skill/tasks.md: {"local":{"requirement":"REQ-002","scenario":2}}
+ACCEPTANCE_UNVERIFIED: <repository>/specs/changes/add-sifen-skill/tasks.md: {"local":{"requirement":"REQ-002","scenario":3}}
+ACCEPTANCE_UNVERIFIED: <repository>/specs/changes/add-sifen-skill/tasks.md: {"local":{"requirement":"REQ-003","scenario":1}}
+ACCEPTANCE_UNVERIFIED: <repository>/specs/changes/add-sifen-skill/tasks.md: {"local":{"requirement":"REQ-003","scenario":2}}
+ACCEPTANCE_GAP: <repository>/specs/changes/add-sifen-skill/tasks.md: FIND-001: Official-source redistribution permission evidence and required acceptance review are unavailable. Apache authorization covers authored material only. Maintainer follow-up through CODEOWNERS.

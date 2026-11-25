@@ -1,0 +1,73 @@
+
+===== PAGE 1 / 1 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                   NOTA TÉCNICA N° 21                               
+                                                                                    
+            Fecha: 29/12/2023                                                       
+            Fecha puesta a disposición para el Ambiente de Test 01/01/2024          
+            Fecha puesta a disposición para el Ambiente de                          
+                                                        01/01/2024                  
+            Producción                                                              
+            Referencia: Correcciones y ajustes sobre el Manual Técnico versión 150  
+                                                                                    
+            1. Validaciones                                                         
+                                                                                    
+              1.1. En Datos que identifican al receptor del Documento Electrónico DE (D200 - D299) se modifica la siguiente
+                 validación. (Página 166)                                           
+                                                                                    
+             ID    Mensaje de la Validación Código  Observación         E           
+                                         Si el Tipo de transacción es distinto a Muestras
+                                         médicas (D011≠13), El Tipo de documento de 
+                 Tipo de documento de identidad                                     
+                                         identidad del receptor no puede ser Innominado
+                 del receptor incorrecto para el                                    
+                                         (D208≠5) cuando el total general de la operación en
+            D208c total general de la operación en 1321                 R           
+                                         guaraníes (cuando la moneda es extranjera) o el total
+                 guaraníes                                                          
+                                         general de la operación (cuando la moneda es PYG)
+                                         es mayor o igual a 35.000.000 (F023 >= 35000000 o
+                                         F014 >= 35000000)                          
+            Observación: Conforme a lo dispuesto en el Artículo N° 6 del Decreto N° 872/2023
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          Histórico del Documento                                                   
+                        FECHA DE              FECHA DE                              
+             AUTOR                  REVISOR              PRINCIPALES ALTERACIONES   
+                      ELABORACIÓN             REVISIÓN                              
+                                                      Elaboración del Documento,    
+           Jonathan Garay 20/12/2023 Martha Rojas 21/12/2023                        
+                                                      Formato de Campos y Validaciones
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    

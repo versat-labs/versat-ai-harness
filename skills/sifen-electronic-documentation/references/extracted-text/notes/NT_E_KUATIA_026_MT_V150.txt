@@ -1,0 +1,158 @@
+
+===== PAGE 1 / 2 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                   NOTA TÉCNICA N° 26                               
+                                                                                    
+            Fecha: 06/06/2025                                                       
+            Fecha puesta a disposición para el Ambiente de Test 09/06/2025          
+            Fecha puesta a disposición para el Ambiente de                          
+                                                        16/06/2025                  
+            Producción                                                              
+            Referencia: Correcciones y ajustes sobre el MT versión 150              
+                                                                                    
+            1. Formato de Campos XML                                                
+              1.1. En Campos que describen los ítems de la operación (E700-E899) se modifican las siguientes
+                                                                                    
+                 observaciones.                                                     
+                                       Nodo Tipo                                    
+         Grupo  ID   Campo   Descripción        Longitud Ocu     Observaciones      
+                                       Padre Dato                                   
+                                                             Opcional si D202 = 3   
+                                                             Informar se existe el código de
+                           Código DNCP –                     la DNCP                
+          E8   E704 dDncpG             E700  A    8     0-1                         
+                           Nivel General                     Colocar 0 (cero) a la izquierda
+                                                             para completar los espacios
+                                                             vacíos                 
+                                                             Opcional si D202 = 3   
+                                                             Informar se existe el código de
+                           Código DNCP –                     la DNCP                
+          E8   E705  dDncpE            E700  A    3-4   0-1                         
+                           Nivel Especifico                  Colocar 0 (cero) a la izquierda
+                                                             para completar los espacios
+                                                             vacíos                 
+              1.2. En Campos de informaciones de Compras Públicas (E020-E029) se modifica la siguiente
+                 observación.                                                       
+                                       Nodo  Tipo                                   
+         Grupo  ID   Campo   Descripción         Longitud Ocu    Observaciones      
+                                       Padre Dato                                   
+                             Campos que                                             
+                             describen las                   Opcional si D202 = 3 (Tipo de
+         E1.1  E020 gCompPub            E010 G           0-1                        
+                            informaciones de                 operación B2G)         
+                            compras públicas                                        
+            2. Validaciones                                                         
+              2.1. Se excluyen las siguientes reglas de validación en E1.1. GRUPO DE INFORMACIONES DE COMPRAS
+                                                                                    
+                 PÚBLICAS (E020-E029).                                              
+                                                                                    
+         ID      Mensaje de la Validación Código       Observación         E        
+                                                                                    
+             Grupo de informaciones de Compras El grupo de informaciones de Compras Públicas es
+         E020                         1400                                 R        
+             Públicas es obligatorio        obligatorio para tipo de operación B2G (D202=3)
+             Grupo de informaciones de Compras                                      
+                                            El grupo de informaciones de Compras Públicas solo es
+        E020a Públicas no requerido para el tipo de 1401                   R        
+                                            permitido para tipo de operación B2G (D202=3)
+             operación                                                              
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 2 / 2 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+              2.2. Se excluyen las siguientes reglas de validación E8. Campos que describen los ítems de la
+                                                                                    
+                 operación (E700-E899).                                             
+                                                                                    
+           ID     Mensaje de la Validación Código     Observación        E          
+              Código de DNCP - Nivel General es Si el tipo de operación seleccionado es igual a B2G
+          E704 obligatorio para el tipo de operación 1800 (D202=3), es obligatorio informar el Código DNCP – R
+              B2G                            Nivel General (E704)                   
+                                             Si se informa el Código de DNCP – Nivel General
+              Código de DNCP – Nivel Específico es                                  
+          E705                         1801  (E704) es obligatorio informar el código de DNCP – R
+              obligatorio                                                           
+                                             Nivel Específico (E705)                
+                                                                                    
+                                                                                    
+            Histórico del Documento                                                 
+                                                                                    
+                         FECHA DE               FECHA DE                            
+             AUTOR                    REVISOR            PRINCIPALES ALTERACIONES   
+                        ELABORACIÓN             REVISIÓN                            
+                                                        Elaboración del documento,  
+           Martha Rojas  05/06/2025 Jonathan Garay 06/06/2025 modificaciones de campos,
+                                                        creación de validaciones.   
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          2                                         
+                                                                                    
+                                                                                    
+                                                                                    

@@ -1,0 +1,292 @@
+
+===== PAGE 1 / 4 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                   NOTA TÉCNICA N° 23                               
+                                                                                    
+            Fecha: 27/08/2024                                                       
+                                                                                    
+           Fecha puesta a disposición para el Ambiente de Test 30 de agosto de 2024 
+           Fecha puesta a disposición para el Ambiente de Producción 27 de setiembre de 2024
+                                                                                    
+            Referencia: Correcciones y ajustes sobre el Manual Técnico versión 150  
+                                                                                    
+          1. FORMATO DE CAMPOS XML                                                  
+                                                                                    
+                                                                                    
+          1.1. En campos que identifican al receptor del Documento Electrónico DE (D200-D299) se modifican
+             los siguientes campos: (Página 86)                                     
+                                                                                    
+                                       Nodo  Tipo                                   
+           Grupo ID    Campo  Descripción         Longitud Ocu  Observaciones       
+                                       Padre Dato                                   
+                                                              Obligatorio si D201   
+                                                              = 2 y D202 ≠ 4        
+                                                              No informar si        
+                                                              D201 = 1              
+                                                              1= Cédula             
+                                                              paraguaya             
+                                Tipo de                       2= Pasaporte          
+                              documento                       3= Cédula             
+            D3  D208  iTipIDRec        D200   N     1     0-1                       
+                              de identidad                    extranjera            
+                              del receptor                    4= Carnet de          
+                                                              residencia            
+                                                              5= Innominado         
+                                                              6=Tarjeta             
+                                                              Diplomática de        
+                                                              exoneración fiscal    
+                                                              9= Otro               
+                                                              Obligatorio si D201   
+                                                              = 2 y D202 ≠ 4        
+                                                              No informar si        
+                              Número de                                             
+                                                              D201 = 1              
+            D3  D210 dNumIDRec documento D200 A    1-20   0-1                       
+                                                              En caso de DE         
+                              de identidad                                          
+                                                              innominado,           
+                                                              completar con 0       
+                                                              (cero)                
+          Observación: Inclusión en cumplimiento a lo establecido en el Art 6° (Numeral 1) del Decreto N° 872/2023.
+          1.2. En campos que describen los ítems de la operación (E700-E899) se modifica el siguiente
+          campo en la Longitud. (Página 86)                                         
+                                        Nodo  Tipo                                  
+           Grupo ID    Campo   Descripción         Longitud Ocu  Observaciones      
+                                        Padre Dato                                  
+                               Cantidad del                                         
+            E8   E711 dCantProSer producto E700 N  1-10p(0-8) 1-1                   
+                               y/o servicio                                         
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 2 / 4 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          1.3. En el de Sector Energía Eléctrica (E791-E799) se modifica el siguiente campo en la ocurrencia.
+          (Página 93)                                                               
+                                                                                    
+                                        Nodo  Tipo                                  
+           Grupo ID    Campo   Descripción         Longitud Ocu  Observaciones      
+                                        Padre Dato                                  
+                               Grupo del                                            
+                               sector de                                            
+           E9.2  E791 gGrupEner          E790  G            0-9                     
+                                energía                                             
+                                eléctrica                                           
+                                                                 Corresponde a      
+                                                                  la diferencia     
+           E9.2  E797 dConKwh  Consumo   E791  N    1-11p2  0-1                     
+                                                                entre E796-E795     
+          1.4. H. Campos que identifican al documento asociado (H001-H049) se incorpora el siguiente
+          campo. (Página 110)                                                       
+                                       Nodo  Tipo                                   
+           Grupo ID    Campo  Descripción         Longitud Ocu  Observaciones       
+                                       Padre Dato                                   
+                                                              Obligatorio cuando    
+                                                              el CDC del DTE        
+                                RUC                                                 
+            H   H018  dRucFus           H001  A     3-8   0-1 referenciado          
+                               fusionado                                            
+                                                              corresponda a un      
+                                                              RUC fusionado         
+          Observación: Inclusión opcional de acuerdo a las necesidades de los facturadores electrónicos.
+          2. VALIDACIONES                                                           
+          2.1. En datos que identifican al receptor del Documento Electrónico DE (D200 - D299) se modifica
+          la siguiente validación. (Página 167)                                     
+             ID   Mensaje de la Validación Código  Observación          E           
+                                                                                    
+                 El   adquiriente del    Si el tipo de documento electrónico seleccionado
+                 comprobante de venta    es igual a Nota de Crédito, Nota de Débito o Nota
+           D208e informado no se encuentra 1331 de Remisión Electrónica (C002 = 5, 6, 7), el tipo de R
+                 identificado. Favor verifique documento de identidad del receptor no puede
+                 el dato ingresado.      ser INNOMINADO (D208 ≠ 5)                  
+                                         Si la naturaleza del receptor es NO contribuyente
+                 Es obligatorio informar el                                         
+                                         (D201=2) y el tipo de operación es diferente a B2F
+            D210 número de documento de 1314                            R           
+                                         (D202≠4), el número de documento de identidad
+                 identidad del receptor                                             
+                                         debe ser informado                         
+                 Tipo de documento de                                               
+                                         El Tipo de documento de identidad del receptor
+                 identidad del receptor                                             
+            D208f                   1333 no puede ser innominado (D208=5), cuando el R
+                 incorrecto para el tipo de                                         
+                                         tipo de operación es distinto a B2C (D202 ≠ 2)
+                 operación                                                          
+                 El número de documento de Si la naturaleza del receptor es contribuyente
+           D210b identidad del receptor no es 1334 (D201=1) el número de documento de identidad R
+                 requerido               no debe ser informado                      
+                 El tipo de documento de Si la naturaleza del receptor es NO Contribuyente
+           D208g identidad del receptor es 1335 (D201=2), el tipo de documento de identidad del R
+                 requerido               receptor debe ser informado                
+                                          2                                         
+                                                                                    
+
+===== PAGE 3 / 4 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+          2.2. H. Campos que identifican al documento asociado (H001-H049) se modifica la siguiente
+          validación. (Página 191)                                                  
+                                                                                    
+            ID    Mensaje de la Validación Código   Observación         E           
+                                                                                    
+                                         Si el tipo de documento electrónico seleccionado
+                 Documento asociado es   es igual a Autofactura, Nota de Crédito    
+                 obligatorio para el tipo de Electrónica, Nota de Débito Electrónica o
+           H001                     2400                                R           
+                 documento electrónico   Comprobante de Retención (C002=4, 5, 6 o 8), es
+                 seleccionado            obligatorio informar el grupo de campos que
+                                         identifican al documento asociado          
+                 El CDC  asociado no     Si el tipo de documento asociado es electrónico
+           H004g corresponde al emisor del 2439 (H002=1) el CDC debe corresponder al emisor y/o R
+                 documento electrónico.  RUC Fusionado del documento al cual se asocia.
+                 El RUC Fusionado no     Si se informa el campo H018 (dRucFus), este debe
+           H018  corresponde al emisor del 2443 corresponder al RUC del emisor del CDC asociado R
+                 CDC asociado.           informado en el campo H004 (dCdCDERef)     
+                                         Si el tipo de documento electrónico seleccionado
+                 El RUC Fusionado no     es distinto a Nota de Crédito, Nota de Débito o
+           H018a                    2444                                R           
+                 requerido.              Nota de Remisión (C002 ≠ 5, 6 o 7) el campo RUC
+                                         Fusionado no debe ser informado.           
+          3. CODIFICACIONES                                                         
+          3. 1. Se amplía el listado de unidades de medidas (Páginas 211 y 212).    
+                         TABLA 5 – CODIFICACIÓN DE UNIDADES DE MEDIDA               
+                                                                                    
+                              CODIFICACIÓN DE UNIDADES DE MEDIDA                    
+                   Código   Representación         Descripción                      
+                    111         4A                  Bovinas                         
+                    112          Ci                  Curie                          
+                    113         DOC                 Docena                          
+                    114         GLL            Galones (US) (3,7843 LT)             
+                    115         GRO                 Gruesas                         
+                    116         E4                Kilogramo Bruto                   
+                    117         KT                   Kits                           
+                    118         M5                 Microcurie                       
+                    119         MCU                 Milicurie                       
+                    120         MIL                  Millar                         
+                    121         PAR                  Par                            
+                    122         FOT                  Pies                           
+                    123         FTK               Pies Cuadradas                    
+                    124         PCE                  Piezas                         
+                    125         KLT                 Quilate                         
+                    126         RM                  Resmas                          
+                    127         RO                   Rollos                         
+                    128         kWh              1000 Kilowatt Hora                 
+                    129        U(JGO)               Mazos                           
+                    130         DR                 Tambores                         
+                    131         BX                   Caja                           
+                    132         SET                  Juego                          
+                    133         PK                  Paquete                         
+                    134         BG                   Bolsa                          
+                    135         DPC                Docena Par                       
+                    136          JR                  Pote                           
+                                                                                    
+                                          3                                         
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 4 / 4 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                              CODIFICACIÓN DE UNIDADES DE MEDIDA                    
+                   Código   Representación         Descripción                      
+                    137         BL                  Fardos                          
+                    138         AB                   Bulto                          
+                    139         BK                   Cesta                          
+                    140         BW                 Peso Base                        
+               Observación: Inclusión opcional de acuerdo a las necesidades de los facturadores electrónicos.
+               Fuente: Códigos para las Unidades de Medición que se usan en el Comercio Internacional.
+                                                                                    
+            Histórico del Documento                                                 
+                                                                                    
+                           FECHA DE           FECHA DE                              
+               AUTOR                  REVISOR         PRINCIPALES ALTERACIONES      
+                         ELABORACIÓN          REVISIÓN                              
+                                                      Formato de campos y           
+             Jonathan Garay 18/06/2024 Martha Rojas 28/06/2024 validaciones. Actualización de
+                                                      Tabla.                        
+                                                      Elaboración del documento.    
+             Verónica Avalos 07/06/2024 Martha Rojas 02/08/2024 Inclusión de nuevas unidades
+                                                      de medida.                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          4                                         
+                                                                                    
+                                                                                    
+                                                                                    

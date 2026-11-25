@@ -1,0 +1,66 @@
+
+===== PAGE 1 / 1 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                       Sistema Integrado de Facturación Electrónica Nacional
+                                                                                  
+                                   NOTA TÉCNICA N° 3                              
+                                                                                  
+            Fecha: 18/11/2020                                                     
+                                                                                  
+            Cambios desde la fecha: 15/11/2020 al 15/11/2020                      
+            Referencia: Correcciones y ajustes sobre el MT versión 150            
+                                                                                  
+            1. FORMATO                                                            
+              1.1. Se modifican los siguientes campos:                            
+                                                                                  
+                                    Nodo Tipo                                     
+         Grupo ID Campo   Descripción        Longitud Ocurrencia Observaciones    
+                                    Padre Dato                                    
+          D3  D219 cDepRec Código del D200 N   1-2   0-1  Campo obligatorio si se 
+                        departamento del                  informa el campo D213 y 
+                        receptor                          D202≠4. No se debe informar
+                                                          cuando D202 = 4.        
+                                                          Según XSD de            
+                                                          Departamentos           
+          D3  D223 cCiuRec Código de la ciudad D200 N 1-5 0-1 Campo obligatorio si se
+                        del receptor                      informa el campo D213 y 
+                                                          D202≠4, No se debe informar
+                                                          cuando D202 = 4.        
+                                                          Según Tabla 2.2 – Ciudades
+            Páginas: 72, 73.                                                      
+            2. VALIDACIONES                                                       
+              2.1. Se eliminan las siguientes validaciones:                       
+         N° Val ID Mensaje de la Validación Código  Observación          E        
+          69   D219 Es obligatorio informar el 1324 Cuando se informa la dirección del receptor (D213) y el tipo R
+                    departamento del receptor de operación es distinto a B2F (D202≠4), es obligatorio
+                                        informar el departamento (D219)           
+          72   D223 Es obligatorio informar la 1327 Cuando se informa la dirección del receptor (D213) y el tipo R
+                    ciudad del receptor de operación es distinto a B2F (D202≠4), es obligatorio
+                                        informar la ciudad (D223)                 
+            Página: 167.                                                          
+            Histórico del Documento                                               
+                                                                                  
+                                                      FECHA DE  PRINCIPALES       
+              AUTOR     FECHA DE ELABORACIÓN REVISOR                              
+                                                      REVISIÓN  ALTERACIONES      
+           Amanda González 16/11/2020   Carlos Mendoza 16/11/2020                 
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                         1                                        
+                                                                                  
+                                                                                  
+                                                                                  

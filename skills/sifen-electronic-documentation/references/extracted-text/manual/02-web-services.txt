@@ -1,0 +1,1014 @@
+===== PAGE 43 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       8. Aspectos Tecnológicos de los Servicios Web del SIFEN                    
+                                                                                  
+       Los contribuyentes con naturaleza de emisores electrónicos realizarán el envío de sus DE, utilizando los
+                                                                                  
+       Servicios Web que el SIFEN pondrá a disposición de manera a operar máquina a máquina sin intervención del
+       usuario.                                                                   
+                                                                                  
+       Para ello el sistema de los contribuyentes afectados, en adelante, clientes del servicio, deberán tener las
+       siguientes consideraciones:                                                
+                                                                                  
+          • Poseer conexión a Internet de banda ancha.                            
+          • Para el envío de los DE deberán desarrollar el software cliente según lo enmarcado en el presente
+            documento, independientemente al lenguaje de programación utilizado.  
+          • El lenguaje de intercambio de información utilizado será el XML.      
+                                                                                  
+          • Para garantizar la comunicación segura, el software cliente deberá autenticarse ante el SIFEN
+            utilizando su certificado y firma digital.                            
+                                                                                  
+                                                                                  
+       El SIFEN dispondrá los siguientes servicios a ser consumidos por los clientes:
+          • Síncronos:                                                            
+               o Recepción DE                                                     
+                                                                                  
+               o Recepción evento                                                 
+               o Consulta DE                                                      
+               o Consulta RUC                                                     
+               o Consulta DE destinados (Futuro)                                  
+               o Consulta DTE a entidades u organismos externos autorizados (a Futuro)
+                                                                                  
+                                                                                  
+          • Asíncronos:                                                           
+               o Recepción lote DE                                                
+               o Consulta resultado lote                                          
+                                                                                  
+                                                                                  
+          8.1. Servicio síncrono                                                  
+                                                                                  
+       La llamada (Request) del servidor del cliente a los servicios síncronos es procesado de forma inmediata por el
+       servidor del SIFEN y la respuesta (Response) se realiza en la misma conexión.
+                                                                                  
+                                                                                  
+            8.1.1. Flujo funcional:                                               
+                                                                                  
+          a) El software cliente realiza la conexión enviando la solicitud (Request) al servicio del SIFEN.
+          b) El WS SIFEN recibe el Request y llama al software encargado del procesamiento del DE.
+                                                                                  
+          c) Éste, al culminar el proceso devuelve el resultado al WS SIFEN.      
+          d) El WS SIFEN responde al cliente.                                     
+          e) El software cliente, al obtener la respuesta, cierra la conexión.    
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      42                 
+
+===== PAGE 44 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          8.2. Servicio asíncrono                                                 
+                                                                                  
+                                                                                  
+       La llamada (Request) del servidor del cliente es procesada de la siguiente manera:
+                                                                                  
+            8.2.1. Secuencia del servicio asíncrono:                              
+                                                                                  
+                                                                                  
+          a) El Cliente realiza la conexión realizando un Request al WS SIFEN.    
+          b) El WS SIFEN recibe la solicitud y responde con un mensaje de aprobación o rechazo, según las primeras
+            validaciones. Esta respuesta contiene:                                
+               a. Identificador de respuesta. (IdResp)                            
+               b. Situación (Aprobación o Rechazo).                               
+               c. Fecha y hora de recepción del mensaje.                          
+               d. Tiempo promedio de procesamiento, expresado en segundos.        
+          c) El software cliente, al obtener el Response, cierra la conexión.     
+          d) El procesamiento de los DE será realizado de manera posterior a esta conexión.
+                                                                                  
+                                                                                  
+                                                                                  
+            8.2.2. Tiempo promedio de procesamiento de un lote:                   
+                                                                                  
+       El tiempo de procesamiento en SIFEN para la validación de un DE es una información esencial del rendimiento
+       del sistema. Esta información está asociada directamente al procesamiento asincrónico de lotes de DE. En la
+       respuesta de procesamiento de un lote, una de las informaciones que se proporcionará será, justamente, el
+       tiempo promedio de procesamiento de un DE en los últimos 5 minutos.        
+                                                                                  
+       Este tiempo promedio de procesamiento tendrá como unidad de medida milisegundos.
+                                                                                  
+       Para el cálculo del tiempo promedio de procesamiento se debe realizar la diferencia aritmética de tiempos de
+       procesamiento de los DE en los últimos 5 minutos, calculado como diferencia entre las fechas (considerando
+       día, mes, año, hora, minuto y segundo) de recepción de los lotes en SIFEN y sus fechas de procesamiento de
+       las respuestas de los lotes procesados (considerando día, mes, año, hora, minuto y segundo).
+                                                                                  
+       Este mismo tiempo promedio de procesamiento de DE estará disponible en el Portal e-Kuatia en el servicio de
+       semáforo de monitoreo de los WS.                                           
+                                                                                  
+       Siempre que el tiempo calculado sea inferior a un segundo, la aplicación contestará como valor un segundo
+       de tiempo promedio.                                                        
+                                                                                  
+       Para los cálculos que arrojen cifras superiores a un segundo, se presentará:
+          • En los casos que los decimales sean inferiores a 500 ms, el valor entero se redondeará por debajo.
+                                                                                  
+          • En caso de que los decimales sean superiores a 500 ms, el valor entero se redondeará por encima.
+       Los contribuyentes (clientes) deberán considerar este promedio de tiempo, antes de consumir el servicio de
+       consulta de procesamiento y para la decisión del inicio del uso de la contingencia.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      43                 
+
+===== PAGE 45 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          8.3. Estándar de mensajes de los servicios del SIFEN                    
+                                                                                  
+                                                                                  
+       La solicitud de consumo de los servicios dispuestos por el SIFEN debe seguir el estándar:
+          • Área de datos: Esquema XML definido para cada WS.                     
+                                                                                  
+                                                                                  
+          8.4. Versión de los Schemas XML                                         
+                                                                                  
+       Las modificaciones de los Schemas correspondientes a los servicios del SIFEN, pueden originarse como
+       necesidades técnicas, cambios normativos o de funcionalidad.               
+                                                                                  
+       Estos cambios no serán aplicados de forma frecuente, considerando siempre el tiempo necesario para la
+       adecuación de los sistemas de los contribuyentes afectados.                
+       Los mensajes recepcionados en una versión desactualizada serán rechazados especificando el error de versión.
+                                                                                  
+       Toda actualización de formato de los WS del SIFEN será correctamente respaldada por la actualización de su
+       correspondiente Schema.                                                    
+                                                                                  
+            8.4.1. Identificación de la versión de los Schemas XML                
+                                                                                  
+       La versión del Schema de los DE es identificada en el nombre del archivo correspondiente, con el número
+       antecedido por los caracteres “_v”.                                        
+                                                                                  
+       El nombre del Schema XML de la factura electrónica, versión 150 es: FE_v150.xsd
+                                                                                  
+            8.4.2. Liberación de versiones de los Schemas XML                     
+                                                                                  
+       Los Schemas utilizados por el SIFEN serán reglamentados y publicados en la dirección
+       “http://ekuatia.set.gov.py/sifen/xsd”.                                     
+                                                                                  
+       Las actualizaciones de Schemas estarán publicadas en forma comprimida y contendrá el conjunto de Schemas
+       utilizados para la generación de los DE y consumo de WS, si correspondiera.
+                                                                                  
+       Este Schema tendrá la misma versión que el DE equivalente. Los archivos comprimidos serán nominados de la
+       siguiente manera “PS_FE_150.zip”, donde las primeras dos letras son constantes, las siguientes corresponden
+       al tipo de DE, seguido de la versión a la cual corresponde, en el ejemplo, versión 150.
+                                                                                  
+       Los archivos correspondientes a Schemas XML, se distinguen por la extensión .xsd
+       Según lo descripto, el archivo correspondiente al Schema XML de la recepción del DE de la versión 150 es:
+       SiRecepDE_v150.xsd                                                         
+                                                                                  
+                                                                                  
+            8.4.3. Paquete inicial de Schemas                                     
+                                                                                  
+       Al momento de la publicación de la versión oficial del presente Manual Técnico, también se disponibilizará el
+                                                                                  
+       paquete de Schemas afectados inicialmente.                                 
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      44                 
+
+===== PAGE 46 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       9. Descripción de los Servicios Web del SIFEN                              
+                                                                                  
+       Ciertas validaciones son aplicadas igualitariamente a todos los DE y en todos los WS establecidos por el SIFEN,
+                                                                                  
+       según se identifican en el capítulo de validaciones del presente Manual Técnico. Estas validaciones son
+       empleadas en la secuencia que están dispuestas, así como, los procedimientos afectados.
+       De forma independiente son aplicadas las validaciones particulares, ya sea en los DE como en los WS.
+                                                                                  
+                                                                                  
+                                                                                  
+          9.1. WS recepción documento electrónico – siRecepDE                     
+                                                                                  
+                   Función:   Recibir un DE                                       
+                   Proceso:   Sincrónico                                          
+                   Método:    SiRecepDE                                           
+                                                                                  
+                                                                                  
+                                                                                  
+            9.1.1. Definición del protocolo que consume este servicio             
+                                                                                  
+       El protocolo de entrada para este servicio es la estructura XML que contiene un DE firmado, según el detalle
+       del siguiente cuadro:                                                      
+                                                                                  
+                                                                                  
+            Schema XML 2: siRecepDE_v150.xsd (WS Recepción DE)                    
+                                   Nodo                                           
+             ID   Campo   Descripción    Tipo Dato Longitud Ocu Observaciones     
+                                   Padre                                          
+            ASch01 rEnviDe Raíz      -     -      -     -  Elemento raíz          
+                                                           Número secuencial      
+                                                           autoincremental, para  
+                                                           identificación del archivo
+                         Identificador de                  enviado.  La           
+            ASch02 dId             ASch01  N     1-15  1-1                        
+                         control de envío                  responsabilidad de     
+                                                           generar y controlar este
+                                                           número es exclusiva del
+                                                           contribuyente.         
+                                                           Siguiendo las          
+                         XML del DE                                               
+            ASch03 xDe             ASch01 XML     -    1-1 definiciones del formato
+                         transmitido                                              
+                                                           del DE                 
+            9.1.2. Descripción del procesamiento                                  
+       Servicio encargado de recibir un documento electrónico firmado digitalmente, en formato XML y construido
+       según el esquema detallado en este Manual Técnico.                         
+       Procesa las validaciones12 correspondientes y responde con un protocolo en XML, el resultado
+       correspondiente.                                                           
+                                                                                  
+                                                                                  
+       12 Las validaciones están detalladas en el capítulo 12 del presente Manual 
+                                                                                  
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      45                 
+
+===== PAGE 47 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       Este procedimiento se aplica concretamente sobre el contenido del campo ASch02 (campo XML del DE
+                                                                                  
+       transmitido).                                                              
+                                                                                  
+            9.1.3. Protocolo de respuesta                                         
+                                                                                  
+                                                                                  
+       Contiene el resultado del procesamiento del DE, conforme lo detallado en el siguiente cuadro:
+       El Schema correspondiente al protocolo de respuesta será como sigue:       
+                                                                                  
+                                                                                  
+            Schema XML 3: resRecepDE_v150.xsd (Respuesta del “WS Recepción DE”)   
+                                        Nodo Tipo                                 
+              ID    Campo    Descripción          Longitud Ocu Observaciones      
+                                        Padre Dato                                
+            ARSch01 rRetEnviDe Raíz      -    -     -     -  Elemento raíz        
+                          Protocolo de                                            
+            ARSch02 xProtDe            ARSch01 XML  -    1-1 Schema XML 4         
+                          procesamiento del DE                                    
+            Schema XML 4: ProtProcesDE_v150.xsd (Protocolo de Procesamiento de DE)
+                                        Nodo  Tipo                                
+              ID    Campo    Descripción          Longitud Ocu Observaciones      
+                                        Padre Dato                                
+             PP01  rProtDe     Raíz      -     -    -     -                       
+             PP02  id     CDC del DE Procesado PP01 A 44 1-1                      
+                                                             Formato: “AAAA-      
+                          Fecha y hora del                                        
+             PP03  dFecProc             PP01  D     19   1-1 MM-DD-               
+                          procesamiento                                           
+                                                             hh:mm:ss”            
+                                                             Permite verificar la 
+                                                             correspondencia      
+                          DigestValue del DE                                      
+             PP04  dDigVal              PP01        28   1-1 con  el DE           
+                          procesado                                               
+                                                             transmitido por el   
+                                                             contribuyente        
+                                                             Aprobado             
+                                                             Aprobado con         
+             PP050 dEstRes Estado del resultado PP05 A 8-30 1-1                   
+                                                             observación          
+                                                             Rechazado            
+                          Número     de                                           
+             PP051 dProtAut             PP05  N     10   0-1                      
+                          Transacción                                             
+                                                             Para producción se   
+                                                             limitará a 5         
+                          Grupo Resultado de                                      
+             PP05  gResProc             PP01  G         1-100 mensajes máximos    
+                          Procesamiento                                           
+                                                             sin modificación de  
+                                                             esta especificación. 
+                                                             Definido en el       
+                          Código del resultado de            tópico               
+             PP052 dCodRes              PP05  N     4    1-1                      
+                          procesamiento                      correspondiente del  
+                                                             capítulo 12          
+                                                             Definido en el       
+                          Mensaje del resultado              tópico               
+                   dMsgRes              PP05   A   1-255 1-1                      
+             PP053        de procesamiento                   correspondiente del  
+                                                             capítulo 12          
+       septiembre de 2019                                      46                 
+
+===== PAGE 48 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+          9.2. WS recepción lote DE – siRecepLoteDE                               
+                                                                                  
+                                                                                  
+                   Función:    Recibir un lote conteniendo varios DE              
+                   Proceso:    Asíncrono                                          
+                   Método:     SiRecepLoteDE                                      
+                   Particularidad: Archivo comprimido “.zip”                      
+                                                                                  
+                                                                                  
+            9.2.1. Definición del protocolo que consume este servicio             
+                                                                                  
+                                                                                  
+       Para consumir este servicio, el cliente deberá construir la estructura en XML, según el Schema siguiente y
+       comprimir dicho archivo. Cabe aclarar que el lote podrá contener hasta 50 DE del mismo tipo (ejemplo:
+       Facturas Electrónicas), cada uno de ellos debe estar firmado.              
+                                                                                  
+                                                                                  
+            Schema XML 5: SiRecepLoteDE_v150.xsd (WS Recepción DE Lote)           
+                                      Nodo  Tipo                                  
+             ID    Campo   Descripción          Longitud Ocu Observaciones        
+                                      Padre Dato                                  
+            BSch01 rEnvioLote Raíz     -     -             Elemento raíz          
+                                                           Número secuencial      
+                                                           autoincremental, para  
+                                                           identificación del     
+                         Identificador de                  mensaje enviado. La    
+            BSch02 dId                BSch01 N   1-15  1-1                        
+                         control de envío                  responsabilidad de     
+                                                           generar y controlar este
+                                                           número es exclusiva del
+                                                           contribuyente.         
+                                                           Campo comprimido en    
+                                                           formato Base64 según   
+                         Archivo de Lote                                          
+            BSch03 xDE                BSch01 B    -    1-1 el esquema del         
+                         comprimido                                               
+                                                           Protocolo  de          
+                                                           procesamiento del Lote 
+            Schema XML 5A: ProtProcesLoteDE_v150.xsd (Protocolo de procesamiento del Lote)
+                                       Nodo  Tipo                                 
+              ID   Campo    Descripción          Longitud Ocu Observaciones       
+                                       Padre Dato                                 
+             LSch01 rLoteDE Raíz         -    -             Elemento raíz         
+                                                            Sigue   las           
+                         Protocolo  de                      definiciones del      
+             LSch02 rDE                LSch01 XML  -    1-50                      
+                         procesamiento del DE               Capítulo Formato      
+                                                            de los DE             
+            9.2.2. Descripción del procesamiento                                  
+       Servicio disponible para recibir un lote que puede contener hasta 50 DE de un solo tipo, cada uno firmado
+       digitalmente y agrupados mediante un contenedor el cual posee el certificado digital del emisor. No se
+       requiere que el número del DE sea secuencial en el lote. Un lote debe contener solo un mismo tipo de DE.
+                                                                                  
+                                                                                  
+       septiembre de 2019                                      47                 
+
+===== PAGE 49 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+       Una vez establecida la conexión con el SIFEN se realizarán las validaciones iniciales13, la respuesta corresponde
+                                                                                  
+       a un protocolo XML, donde se informa si superó o no las primeras validaciones.
+                                                                                  
+            9.2.3. Protocolo de respuesta                                         
+                                                                                  
+                                                                                  
+       Corresponde al protocolo de procesamiento del DE y la definición de los Schemas XML 3 y XML 4.
+              Schema XML 6: resRecepLoteDE_v150.xsd (Respuesta del WS Recepción Lote)
+                                        Nodo  Tipo Longitu                        
+              ID    Campo    Descripción                Ocu Observaciones         
+                                        Padre Dato  d                             
+                   rResEnviLo                                                     
+             BRSch01      Raíz           -     -    -    -  Elemento raíz         
+                   teDe                                                           
+                          Fecha y hora de                   Formato: “AAAA-       
+             BRSch02 dFecProc          BRSch01 D    19   1-1                      
+                          recepción                         MM- DD-hh:mm:ss”      
+                                                            Definido en el tópico 
+                          Código del resultado de                                 
+             BRSch03 dCodRes           BRSch01 N    4    1-1 correspondiente del  
+                          recepción                                               
+                                                            capítulo 12           
+                                                            Definido en el tópico 
+                          Mensaje del resultado                                   
+             BRSch04 dMsgRes           BRSch01 A   1-255 1-1 correspondiente del  
+                          de recepción                                            
+                                                            capítulo 12           
+                                                            Generado solamente    
+                                                            si dCodRes=0300,      
+                   dProtConsL                                                     
+             BRSch05      Número de Lote BRSch01 N 1-15  0-1 Definido en el tópico
+                   ote                                                            
+                                                            correspondiente del   
+                                                            capítulo 12           
+                                                            Conforme a la         
+                          Tiempo medio de                                         
+                                                            sección               
+             BRSch06 dTpoProces procesamiento en BRSch01 N 1-5 1-1                
+                                                            correspondiente en    
+                          segundos                                                
+                                                            el presente manual    
+          9.3. WS consulta resultado de lote DE – siResultLoteDE                  
+                              Devuelve el resultado del proceso de cada uno       
+                   Función:                                                       
+                              de los DE del lote                                  
+                   Proceso:   Asíncrono                                           
+                   Método:    SiResultLoteDE                                      
+            9.3.1. Definición del protocolo que consume este servicio             
+       El Request que consumirá este servicio estará construido en XML, según el Schema expuesto a continuación:
+            Schema XML 7: SiResultLoteDE_v150.xsd (WS Consulta Resultado de Lote) 
+                                      Nodo  Tipo Longitu                          
+             ID   Campo    Descripción                Ocu    Observaciones        
+                                      Padre Dato  d                               
+                 rEnviCons                                                        
+            CSch01      Raíz           -     -    -    -  Elemento raíz           
+                 LoteDe                                                           
+       13 Estas validaciones iniciales, están contenidas en el Capítulo 12 del presente Manual.
+       septiembre de 2019                                      48                 
+
+===== PAGE 50 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                      Nodo  Tipo Longitu                          
+             ID   Campo    Descripción                Ocu    Observaciones        
+                                      Padre Dato  d                               
+                                                          Número  secuencial      
+                                                          autoincremental, para   
+                                                          identificación del mensaje
+                        Identificador de                  enviado.    La          
+            CSch02 dId               CSch01  N   1-15  1-1                        
+                        control de envío                  responsabilidad de      
+                                                          generar y controlar este
+                                                          número es exclusiva del 
+                                                          contribuyente.          
+                                                          Obtenido a partir del   
+                                                          mensaje de respuesta al 
+                 dProtCons                                                        
+            CSch03      Número del lote CSch01 N 1-15  1-1 WS                     
+                 Lote                                                             
+                                                          soRecepLoteDE(Schema    
+                                                          XML 5)                  
+            9.3.2. Descripción del procesamiento                                  
+       Servicio que se encarga de retornar el resultado del procesamiento de cada DE contenido en el lote que fuera
+       recibido. Cada uno de los DE es identificado y contiene el resultado de su procesamiento y la situación, si fue
+       aprobado, aprobado con observación, o rechazado; en caso de aprobado con observación, serán informadas
+       las mismas (hasta 5 observaciones); y en caso de rechazo, será informado el motivo (solo el primer motivo de
+       rechazo).                                                                  
+                    Tabla F – Resultados de Procesamiento del WS Consulta Resultado de Lote
+                        Condición                 Mensaje generado                
+             No existe número de lote consultado 0360 (Número del Lote inexistente)
+             No se ha culminado el procesamiento de los DE                        
+                                         0361 Lote en procesamiento               
+             del lote consultado                                                  
+                                         0362 (Procesamiento de lote concluido)   
+             Éxito en la consulta        - La respuesta también contiene el contenedor del
+                                         DE, definido en el Schema XML 11         
+            9.3.3. Protocolo de respuesta                                         
+                                                                                  
+       Conforme a lo definido deberá contener alguno de los mensajes de la tabla anterior, con la respuesta
+       correspondiente.                                                           
+                                                                                  
+       Para el caso que el procesamiento del lote haya concluido, el Response también contendrá el protocolo de
+       respuesta de cada uno de los DE contenidos en el lote, de acuerdo al Schema descrito a continuación.
+                                                                                  
+                                                                                  
+           Schema XML 8: resResultLoteDE_v150.xsd (Respuesta del WS Consulta Resultado Lote)
+                                        Nodo  Tipo                                
+               ID   Campo    Descripción          Longitud Ocu Observaciones      
+                                        Padre Dato                                
+             CRSch0 rResEnviCon                                                   
+                           Raíz          -     -    -    -  Elemento raíz         
+               1   sLoteDe                                                        
+                                                            Formato: “AAAA-MM-    
+                                                            DDhh:mm:ss”           
+             CRSch0        Fecha y hora del                                       
+                   dFecProc            CRSch01 D    19   1-1 Si el lote no fue    
+               2           procesamiento del lote                                 
+                                                            procesado, el valor será
+                                                            vacío.                
+       septiembre de 2019                                      49                 
+
+===== PAGE 51 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                            Definido en el tópico 
+             CRSch0        Código de resultado de           correspondiente del   
+                   dCodResLot          CRSch01 N    4    1-1                      
+               3           procesamiento del lote           capítulo 12 referente al
+                                                            lote                  
+                                                            Definido en el tópico 
+                           Mensaje de resultado                                   
+             CRSch0                                         correspondiente del   
+                   dMsgResLot de procesamiento del CRSch01 A 1-255 1-1            
+               4                                            capítulo 12 referente al
+                           lote                                                   
+                                                            lote                  
+                           Grupo Resultado de                                     
+             CRSch0 gResProcLot                                                   
+               5   e                                                              
+                           Proc esamiento del CRSch01 G 0-50                      
+                           Lote                                                   
+             CRSch0        CDC  del DE                                            
+               50                                                                 
+                   id                                                             
+                           procesado                                              
+                                       CRSch05 A    44   1-1                      
+                                                            Aprobado              
+             CRSch0                                         Aprobado  con         
+                   dEstRes Estado del resultado CRSch05 A 8-30 1-1                
+               51                                           observación           
+                                                            Rechazado             
+                                                            Generado para el DE   
+             CRSch0                                                               
+                   dProtAut Número de transacción CRSch05 N 10 0-1 del lote consultado si
+               52                                                                 
+                                                            dCodResLot=0362       
+                                                            Si es error solo se   
+                                                            presentará el primero.
+             CRSch0                                                               
+                   gResProc                                                       
+                           Grupo Mensaje de                                       
+                                       CRSch05 G        1-100                     
+                                                            Se pueden tener hasta 
+               53          Resultado                        100 mensajes en caso  
+                                                            de aprobación con     
+                                                            observaciones.        
+                                                            Definido en el tópico 
+             CRSch0        Código de resultado de           correspondiente del   
+                   dCodRes             CRSch05 N    4    1-1                      
+               54          procesamiento                    capítulo 12 referente a
+                                                            cada DE               
+                                                            Definido en el tópico 
+             CRSch0        Mensaje de resultado             correspondiente del   
+                   dMsgRes             CRSch05 A   1-255 1-1                      
+               55          de procesamiento                 capítulo 12 referente a
+                                                            cada DE               
+          9.4. WS consulta DE – siConsDE                                          
+                   Función:   Devuelve el resultado de la consulta de un DE       
+                              por su CDC                                          
+                   Proceso:   Síncrono                                            
+                   Método:    SiConsDE                                            
+            9.4.1. Definición del protocolo que consume este servicio             
+       El Request que consumirá este servicio estará construido en XML, según el Schema expuesto a continuación.
+            Schema XML 9: siConsDE_v150.xsd (WS Consulta DE)                      
+                                      Nodo  Tipo                                  
+            ID   Campo    Descripción           Longitud Ocu Observaciones        
+                                      Padre Dato                                  
+           DSch01 rEnviConsDe Raíz     -     -    -    -  Elemento Raíz           
+                                                          Número  secuencial      
+                                                          autoincremental, para   
+                                                          identificación del mensaje
+                       Identificador de control de        enviado.    La          
+           DSch02 dId                DSch01  N   1-15  1-1                        
+                       envío                              responsabilidad de generar
+                                                          y controlar este número es
+                                                          exclusiva   del         
+                                                          contribuyente.          
+                                                          CDC del DE que se       
+           DSch03 dCDC CDC del DE consultado DSch01 C 44 1-1 requiere la consulta en la
+                                                          base de datos de SIFEN  
+       septiembre de 2019                                      50                 
+
+===== PAGE 52 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            9.4.2. Descripción del procesamiento                                  
+                                                                                  
+       Este servicio es el encargado de recibir la petición de consulta de un DTE de la base de datos de SIFEN. En caso
+       de no haber superado las validaciones, el Response contendrá el motivo.    
+                                                                                  
+                                                                                  
+                        Tabla G – Resultados de Procesamiento del WS Consulta DE  
+                        Condición                 Mensaje generado                
+             No existe DE consultado       0420=CDC inexistente                   
+             RUC del certificado utilizado en la conexión no tiene                
+                                           0421=RUC Certificado sin permiso       
+             permiso para consultar el DE                                         
+             Éxito en la consulta          0422=CDC encontrado                    
+                                                                                  
+                                                                                  
+                                                                                  
+            9.4.3. Protocolo de respuesta                                         
+                                                                                  
+       Como ya manifestamos en el punto anterior, si las pruebas no son superadas, contendrá el error, de
+                                                                                  
+       lo contrario el response tendrá la información conforme al siguiente Schema.
+                                                                                  
+            Schema XML 10: resConsDE_v150.xsd (Respuesta del WS Consulta DE)      
+                                            Tipo Longitu                          
+            ID   Campo    Descripción Nodo Padre      Ocu    Observaciones        
+                                            Dato  d                               
+           DRSc rResEnviCo                                                        
+                       Raíz            -     -    -    -  Elemento raíz           
+            h01 nsDe                                                              
+           DRSc        Fecha y hora del                   Formato: “AAAA-MM-DD-   
+                dFecProc             DRSch01 D    19  1-1                         
+            h02        procesamiento                      hh:mm:ss”               
+                                                          Definido en el tópico   
+           DRSc        Código del resultado de                                    
+                dCodRes              DRSch01 N    4   1-1 correspondiente del     
+            h03        procesamiento                                              
+                                                          capítulo 12             
+                                                          Definido en el tópico   
+           DRSc         Mensaje del resultado                                     
+                dMsgRes              DRSch01 C   1-255 1-1 correspondiente del    
+            h04          de procesamiento                                         
+                                                          capítulo 12             
+                                                          Existe solamente si     
+           DRSc                                           dCodRes = 0422          
+                xContenDE Contenedor del DE DRSch01 XML - 0-1                     
+            h05                                           Definido en el Schema XML
+                                                          11                      
+            Schema XML 11: ContenedorDE_v150.xsd (Contenedor de DE)               
+                                            Tipo Longitu                          
+            ID   Campo    Descripción Nodo Padre      Ocu    Observaciones        
+                                            Dato  d                               
+           ContD                                                                  
+                rContDe Raíz         DRSch01 -  -     -   Elemento raíz           
+            E01                                                                   
+           ContD                                                                  
+                rDE    Archivo XML del DE ContDE01 XML - 1-1                      
+            E02                                                                   
+                                                          Número de transacción del
+           ContD       Número     De                      DE, recibido por el     
+                dProtAut             ContDE01 XML -   1-1                         
+            E03        Transacción                        contribuyente en el     
+                                                          mensaje de respuesta del
+       septiembre de 2019                                      51                 
+
+===== PAGE 53 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                            Tipo Longitu                          
+            ID   Campo    Descripción Nodo Padre      Ocu    Observaciones        
+                                            Dato  d                               
+                                                          WS DeRecepDE o del WS   
+                                                          deResultLoteDE          
+                                                          • definido en el Schema 
+                                                          XML 4                   
+                                                          Información de todos los
+                                                          eventos registrados     
+                                                          (contenedor montado por la
+           ContD                                          SET) o  disponibles     
+                xContEv Contenedor de Evento ContDE01 XML - 0-n                   
+            E04                                           (contenedor montado por el
+                                                          emisor) hasta la fecha  
+                                                          • Definido en el Schema 
+                                                          XML 12                  
+            Schema XML 12: ContenedorEvento_v150.xsd (Contenedor de Evento)       
+                                      Nodo  Tipo Longitu                          
+            ID   Campo     Descripción                Ocu    Observaciones        
+                                      Padre Dato  d                               
+           ContE                                                                  
+                rContEv Raíz            -    -    -    -  Elemento raíz           
+            v01                                                                   
+           ContE                      ContEv              Definido en el capítulo de
+                xEvento XML del Evento      XML   -   1-1                         
+            v02                        01                 Eventos del DE          
+           ContE rResEnviE Respuesta del WS ContEv        Definido en el Schema XML
+                                            XML   -                               
+            v03 ventoDe Recepción Evento 01               14                      
+          9.5. WS recepción evento – siRecepEvento                                
+                   Función:   Registra un evento en un DE                         
+                   Proceso:   Síncrono                                            
+                   Método:    siRecepEvento                                       
+            9.5.1. Definición del protocolo que consume este Servicio             
+       Contiene el tipo de evento y el evento.                                    
+            Schema XML 13: siRecepEvento_v150.xsd (WS Recepción Evento)           
+                                                                                  
+                                      Nodo  Tipo Longit                           
+            ID   Campo    Descripción                 Ocu   Observaciones         
+                                      Padre Dato  ud                              
+                rEnviEvent                                                        
+           GSch01      Raíz            -     -    -   -  Elemento raíz            
+                oDe                                                               
+                                                         Número   secuencial      
+                                                         autoincremental, para    
+                                                         identificación del mensaje
+                       Identificador de control                                   
+           GSch02 dId                GSch01  N   1-15 1-1 enviado. La responsabilidad
+                       de envío                                                   
+                                                         de generar y controlar este
+                                                         número es exclusiva del  
+                                                         contribuyente.           
+                                                         De acuerdo con el schema y
+           GSch03 dEvReg Evento a ser registrado GSch01 XML 1 1-1 grupos correspondientes
+                                                         Descripto en el capítulo 11
+       septiembre de 2019                                      52                 
+
+===== PAGE 54 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            9.5.2. Descripción del procesamiento                                  
+                                                                                  
+                                                                                  
+       Una vez superadas todas las validaciones iniciales y particulares, se registra el evento del DE correspondiente
+       y este queda debidamente almacenado en el SIFEN.                           
+                                                                                  
+                                                                                  
+            9.5.3. Protocolo de respuesta                                         
+                                                                                  
+       Conforme al Schema que precede y conforme a las validaciones efectuadas, si el procesamiento concluye con
+       éxito, el registro de evento, contiene una respuesta satisfactoria, en caso de rechazo contiene el código y
+       motivo de rechazo.                                                         
+                                                                                  
+             Schema XML 14: resRecepEvento_v150.xsd (Respuesta del WS Recepción Evento)
+                                            Tipo Longit                           
+              ID   Campo   Descripción Nodo Padre     Ocu    Observaciones        
+                                            Dato  ud                              
+                  rRetEnviEven                                                    
+           GRSch01       Raíz          -     -    -   -  Elemento raíz            
+                    toDe                                                          
+                         Fecha y hora del                                         
+                         procesamiento del                Formato: “AAAA-MM-DD-   
+           GRSch02 dFecProc          GRSch01 D    19  1-1                         
+                         último evento                      hh:mm:ss-ss:ss”       
+                         enviado                                                  
+           GRSch03                                                                
+                  gResProcEV                                                      
+                         G                                                        
+                         de                                                       
+                          ru p                                                    
+                           P                                                      
+                           o                                                      
+                            roce                                                  
+                              R                                                   
+                              s                                                   
+                              e                                                   
+                               a                                                  
+                               s                                                  
+                               m                                                  
+                                ul                                                
+                                i                                                 
+                                t                                                 
+                                e                                                 
+                                 a                                                
+                                 n                                                
+                                 d                                                
+                                  t                                               
+                                  o                                               
+                                  o  GRSch01 G        1-15                        
+                     e                                                            
+                         del Evento                                               
+                                                         Aprobado                 
+                         Estado  del                                              
+           GRSch030 dEstRes          CRSch03 A   8-30 1-1 Aprobado con observación
+                         resultado                                                
+                                                         Rechazado                
+                                                         Generado para cada registro
+                         Número  de                                               
+           GRSch031 dProtAut         GRSch03 N    10  0-1 de evento conforme      
+                         transacción                                              
+                                                         dCodRes=0600             
+                                                         Corresponde al id        
+                         Identificador del                                        
+           GRSch032 id               GRSch03 N    10  1-1 autogenerado por el emisor,
+                         evento                                                   
+                                                         para identificar cada evento
+                                                         Para producción se limitará a 5
+           GRSch033 gResProc                                                      
+                         Grupo Resultado de                                       
+                                     GRSch03 G                                    
+                                                      1- mensajes máximos sin     
+                         Procesamiento                100 modificación de esta    
+                                                         especificación.          
+                                                         Definido en el tópico    
+                         Código del resultado                                     
+           GRSch034 dCodRes          GRSch03 N    4   1-1 correspondiente del capítulo
+                         de procesamiento                                         
+                                                         11                       
+                         Mensaje del                     Definido en el tópico    
+           GRSch035 dMsgRes resultado de GRSch03 A 1-255 1-1 correspondiente del capítulo
+                         procesamiento                   11                       
+          9.6. WS consulta RUC – siConsRUC                                        
+                   Función:   Devuelve el resultado de la consulta de los         
+                              datos y estado del RUC de un contribuyente          
+                              receptor.                                           
+                   Proceso:   Síncrono                                            
+                   Método:    SiConsRUC                                           
+       septiembre de 2019                                      53                 
+
+===== PAGE 55 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+            9.6.1. Definición del protocolo que consume este servicio             
+                                                                                  
+                                                                                  
+       El Request que consumirá este servicio estará construido en XML, según el Schema expuesto a continuación.
+                                                                                  
+            Schema XML 15: siConsRUC_v150.xsd (WS Consulta RUC)                   
+                                     Nodo  Tipo                                   
+            ID    Campo    Descripción         Longitud Ocu Observaciones         
+                                     Padre Dato                                   
+           RSch01 rEnviConsRUC Raíz    -    -    -    -  Elemento Raíz            
+                                                         Número   secuencial      
+                                                         autoincremental, para    
+                                                         identificación del mensaje
+                        Identificador de                                          
+           RSch02 dId                RSch01 N   1-15 1-1 enviado. La responsabilidad
+                        control de envío                                          
+                                                         de generar y controlar este
+                                                         número es exclusiva del  
+                                                         contribuyente.           
+                                                         RUC No incluye el Digito de
+           RSch03 dRUCCons RUC consultado RSch01 A 5-8 1-1                        
+                                                         verificación             
+            9.6.2. Descripción del procesamiento                                  
+       Este servicio es el encargado de recibir la petición de consulta de los datos y estado del RUC de un
+       contribuyente receptor en la base de datos de SIFEN. Solamente se permiten conexiones con certificado
+       digital. Los posibles resultados se listan en la tabla H.                  
+                        Tabla H – Resultados de Procesamiento del WS Consulta RUC 
+                      Condición                    Mensaje generado               
+           El RUC consultado no existe en el Sistema 0500=RUC no existe           
+           RUC no tiene permiso para utilizar el WS 0501=RUC sin permiso consulta WS
+           Éxito en la consulta          0502=RUC encontrado                      
+                                                                                  
+                                                                                  
+                                                                                  
+            9.6.3. Protocolo de respuesta                                         
+                                                                                  
+       En casos de que haya concluido con éxito la consulta, contiene el código de respuesta 0502, o en caso contrario
+       contiene el código de respuesta correspondiente.                           
+                                                                                  
+                                                                                  
+            Schema XML 16: resConsRUC_v150.xsd (Respuesta del WS Consulta RUC)    
+                                       Nodo  Tipo                                 
+             ID    Campo    Descripción           Longitud Ocu Observaciones      
+                                       Padre Dato                                 
+           RRSch0 rResEnviConsR                                                   
+                           Raíz         -     -     -    -  Elemento raíz         
+             1   UC                                                               
+                           Código del                       Definido en el tópico 
+           RRSch0                                                                 
+                 dCodRes   resultado de la RRSch01 N 4  1-1 correspondiente del   
+             2                                                                    
+                           consulta RUC                     capítulo 12           
+                           Mensaje del                      Definido en el tópico 
+           RRSch0                                                                 
+                 dMsgRes   resultado de la RRSch01 A 1-255 1-1 correspondiente del
+             3                                                                    
+                           consulta RUC                     capítulo 12           
+       septiembre de 2019                                      54                 
+
+===== PAGE 56 / 217 =====
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                       Nodo  Tipo                                 
+             ID    Campo    Descripción           Longitud Ocu Observaciones      
+                                       Padre Dato                                 
+                                                            Existe solamente si   
+           RRSch0          Contenedor del                   dCodRes = 0502        
+                 xContRUC             RRSch01 XML   -   0-1                       
+             4             RUC                              Definido en el Schema 
+                                                            XML 17                
+            Schema XML 17: ContenedorRUC_v150.xsd (Contenedor de RUC)             
+                                       Nodo  Tipo                                 
+             ID    Campo    Descripción           Longitud Ocu Observaciones      
+                                       Padre Dato                                 
+           ContRU                                                                 
+                 rContRUC  Raíz       RRSch01 -  -      -   Elemento raíz         
+            C01                                                                   
+           ContRU                                                                 
+                 dRUCCons  RUC Consultado ContRUC01 A 5-8 1-1                     
+            C02                                                                   
+           ContRU          Razón social del                                       
+                 dRazCons            ContRUC01 A   1-250 1-1                      
+            C03            RUC Consultado                                         
+                                                            ACT=Activo            
+                                                            SUS=Suspensión        
+                                                            Temporal              
+                           Código del Estado                SAD=Suspensión        
+           ContRU                                                                 
+                 dCodEstCons del  RUC ContRUC01 A   3    1-1 Administrativa       
+            C04                                                                   
+                           Consultado                       BLQ=Bloqueado         
+                                                            CAN=Cancelado         
+                                                            CDE=Cancelado         
+                                                            Definitivo            
+                                                            ACT=Activo            
+                                                            SUS=Suspensión        
+                                                            Temporal              
+                           Descripción                                            
+                                                            SAD=Suspensión        
+           ContRU          Código del Estado                                      
+                 dDesEstCons         ContRUC01 A   6-25  1-1 Administrativa       
+            C05            del    RUC                                             
+                                                            BLQ=Bloqueado         
+                           Consultado                                             
+                                                            CAN=Cancelado         
+                                                            CDE=Cancelado         
+                                                            Definitivo            
+                                                            S = Es facturador     
+                           RUC consultado                                         
+           ContRU                                           electrónico           
+                 dRUCFactElec es facturador ContRUC01 A 1 1-1                     
+            C06                                             N = No es facturador  
+                           electrónico                                            
+                                                            electrónico           
+          9.7. WS consulta DE de entidades u organismos externos autorizados – siConsDEST (a futuro)
+           Función:   Web service que tiene por objetivo entregar los DE y sus eventos para
+                      las entidades que tiene derecho legal de recibir determinadas facturas
+                      (Ej: DNA, con respecto a operaciones de comercio exterior, DNCP con
+                      respecto a operaciones de venta al Estado)                  
+           Proceso:   Síncrono                                                    
+           Método:    siConsDEST                                                  
+           Observación: A futuro                                                  
+       septiembre de 2019                                      55                 
+

@@ -1,0 +1,73 @@
+
+===== PAGE 1 / 1 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                   NOTA TÉCNICA N° 20                               
+            Fecha: 17/11/2023                                                       
+                                                                                    
+            Fecha puesta a disposición para el Ambiente de Test 15 de diciembre de 2023
+            Fecha puesta a disposición para el Ambiente de Producción 31 de enero del 2024
+                                                                                    
+            Referencia: Nuevas validaciones incluidas en el MT versión 150 para operaciones realizadas con
+            Entidades del Gobierno.                                                 
+            1. Formato de Campos XML                                                
+                                                                                    
+              1.1. Se agrega el campo dCodConDncp dentro del grupo E9.5. Grupo de datos adicionales de
+                 uso comercial (E820-E829)                                          
+                                                                                    
+                                         Nodo   Tipo                                
+          Grupo ID    Campo   Descripción           Longitud Ocu Observaciones      
+                                         Padre Dato                                 
+                                                                  Código de         
+                               Código de                                            
+                E82 dCodConDnc                                    contratación      
+           E9.5               contratación de E820 A  1-30  0-1                     
+                 7      p                                        proveído por la    
+                                la DNCP                                             
+                                                                   DNCP             
+            2. Validaciones                                                         
+              2.1. En el grupo de datos que identifican al receptor del Documento Electrónico DE (D200 -
+                 D299) se modifica la siguiente validación.                         
+                 (Página 165)                                                       
+             ID    Mensaje de la Validación Código  Observación         E           
+                 El tipo de operación no Si el RUC del receptor (D206) corresponde a un
+           D202b compatible para un Organismo 1332 Organismo o Entidad del Estado (OEE), el tipo de R
+                 o Entidad del Estado    operación debe ser B2G (D202=3)            
+            Histórico del Documento                                                 
+                                                                                    
+                         FECHA DE              FECHA DE                             
+             AUTOR                    REVISOR           PRINCIPALES ALTERACIONES    
+                        ELABORACIÓN             REVISIÓN                            
+                                                        Elaboración del Documento,  
+           Norma Rojas   25/08/2023                     Se agrega un nuevo campo y  
+                                                        validación                  
+                                                        Ajuste del código del mensaje de
+           Norma Rojas   08/09/2023 Carlos Mendoza 08/09/2023                       
+                                                        validación                  
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    

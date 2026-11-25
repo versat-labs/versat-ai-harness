@@ -1,0 +1,1807 @@
+===== PAGE 113 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            11. Gestión de eventos                                                  
+                                                                                    
+            Entiéndase por evento toda ocurrencia o suceso registrado en SIFEN por el cual se asigna una marca,
+            se modifica o afecta el estado de un Documento Electrónico o Documento Tributario Electrónico y
+            puede darse a lo largo del ciclo de vida de este. Puede darse de manera previa o posterior a la
+            aprobación del DTE, dependiendo de su naturaleza.                       
+                                                                                    
+            A manera de ejemplo de eventos se tiene los siguientes:                 
+                                                                                    
+              •  Cancelación                                                        
+              •  Devolución y Ajuste de precios (evento automático por la emisión notas de crédito o débito
+                 electrónicas)                                                      
+              •  Disconformidad de un DE o DTE por parte del receptor               
+                                                                                    
+            Los eventos pueden ser de dos tipos:                                    
+                                                                                    
+              •  De registro AUTOMÁTICO generados por SIFEN: Ejemplo: evento de ajuste de una FE por la
+                 aprobación de una Nota de Crédito Electrónica asociada a la FE.    
+              •  De registro REQUERIDO por el consumo de los Servicios Web dispuestos por SIFEN para los
+                 actores intervinientes: Ejemplo: Manifestaciones del receptor (disconformidad y
+                 desconocimiento de la operación).                                  
+                                                                                    
+            Dependiendo de quién lo solicite, los eventos se clasifican de la siguiente manera:
+                                                                                    
+              11.1.  Eventos realizados por el emisor                               
+                                                                                    
+            Son aquellos eventos originados por el emisor, cuando surge alguna situación que modifica la
+            secuencia numérica o el contenido del DE. El emisor cuenta con la facultad para efectuar los eventos
+            que se citan a continuación:                                            
+                                                                                    
+                                                                                    
+                 11.1.1. Inutilización de número de DE                              
+                                                                                    
+            Es un evento solicitado por el emisor electrónico. Pueden darse tres situaciones:
+                                                                                    
+              •  Saltos en la numeración: Por algún error en el sistema de facturación del emisor, se produce
+                 un salto en la numeración. Dicha situación debe ser comunicada, reportando el tipo de DE
+                 y saltos en el rango de numeración, de manera a no alterar la correlatividad numérica.
+              •  Detección de errores técnicos (de llenado) en la emisión del DE.   
+              •  Por rechazo del SIFEN: Cuando un DE ha sido rechazado por el SIFEN y su ajuste implique
+                 la modificación del CDC, indefectiblemente esa numeración no utilizada debe ser inutilizada
+                                                                                    
+                                                                                    
+                 Sugerencia: Para poder inutilizar un documento, se sugiere que dicho evento se realice
+                 antes de la entrega del comprobante, envío o salida de la mercadería y de la transmisión del
+                 DE al SIFEN.                                                       
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+
+===== PAGE 114 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            El evento de inutilización de la numeración de un DE podrá realizarse siempre y cuando éste no haya
+            sido aprobado por el SIFEN. El estado de los números de DE inutilizados quedará registrado en el
+                                                                                    
+            SIFEN.                                                                  
+            Es posible el registro de la inutilización de un rango de hasta 1000 números secuenciales de DE toda
+            vez que no exista ningún número utilizado en dicho rango.               
+                                                                                    
+            Se requiere la información del motivo de la inutilización del rango de numeración en un campo libre
+            de texto de hasta 150 caracteres.                                       
+                                                                                    
+                                                                                    
+                 11.1.2. Cancelación                                                
+                                                                                    
+            Es un evento solicitado por el emisor, ocurre cuando el comprobante es emitido sin errores y
+            transmitido y aprobado por el SIFEN se convierte en un DTE, sin embargo, por algún motivo no se
+                                                                                    
+            concreta la transacción.                                                
+            El emisor electrónico puede solicitar la CANCELACIÓN de cualquier tipo de DTE y tiene hasta 48 hs.
+            posteriores a la aprobación de uso del DE para generar el evento. El estado de los DTE cancelados
+            quedará registrado en el SIFEN y es obligatoria la conservación por 5 años.
+                                                                                    
+                                                                                    
+                 11.1.3. Devolución y Ajuste de precios                             
+                                                                                    
+            Son eventos automáticos generados por la emisión de una NOTA DE CRÉDITO o DÉBITO
+                                                                                    
+            ELECTRÓNICAS.                                                           
+            Es un evento exclusivo de la FACTURA ELECTRÓNICA, puesto que existen documentos para dichos
+            efectos. Es imperativo que la Nota de Crédito o Débito Electrónica emitida se encuentre vinculada
+                                                                                    
+            a una FE ya existente en la base de datos del SIFEN; o sea, se requiere la configuración del hecho
+            imponible, que la factura haya sido entregada al cliente, transmitida y aprobada por SIFEN. Es
+            importante comprender que las Notas de Crédito o Débito Electrónicas como tales, no son eventos,
+            sino que la operación resultante de su emisión y aprobación en SIFEN genera un evento automático
+            del sistema.                                                            
+                                                                                    
+            La coexistencia de documentos electrónicos y pre-impresos solo será permitida en las etapas del
+            Plan Piloto y Voluntariedad. Esto permite que la Nota de Crédito o Débito Electrónica emitida se
+            encuentre vinculada a una factura pre-impresa. Igualmente, el sistema genera el evento automático
+            de AJUSTE pero no realiza validaciones sobre los montos ajustados.      
+                                                                                    
+            Cuando hablamos de AJUSTE nos referimos a los casos en que se acepten devoluciones en forma
+            parcial o se concedan descuentos y bonificaciones.                      
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     113              
+                                                                                    
+                                                                                    
+
+===== PAGE 115 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            Las FE con Notas de Crédito o Débito Electrónicas asociadas obligatoriamente deberán ser
+            conservadas por 5 años, en estos casos, el receptor no tendrá derecho al crédito del IVA contenido
+                                                                                    
+            en la misma ya sea en forma total o parcial.                            
+            El estado de las FE con devoluciones o ajustes de precios quedará registrado en el SIFEN. En caso de
+            devoluciones o ajustes de precios totales de una FE, no será posible retractarse. Para corregir esta
+                                                                                    
+            situación, el emisor deberá generar una nueva FE exactamente igual.     
+                                                                                    
+                 11.1.4. Endoso de FE (evento futuro)                               
+                                                                                    
+                                                                                    
+            Es un evento solicitado por el emisor, ocurre cuando la factura electrónica, cuya aprobación de uso
+            ha sido otorgada por la Administración Tributaria, es seleccionada por éste para ser comercializada
+            en el mercado financiero local. Este evento se va detallar en versión futura del MT.
+                                                                                    
+                                                                                    
+              11.2.  Eventos registrados por el receptor                            
+                                                                                    
+            Son aquellos eventos generados por una persona física o jurídica, a cuyo nombre fue emitido un
+                                                                                    
+            documento electrónico. El registro del evento de receptor se puede dar sobre un DE o DTE.
+            Los eventos del receptor no invalidarán el DE o DTE, sino que quedarán marcados en el SIFEN y el
+            emisor electrónico podrá conocer dicha situación. El receptor cuenta con la facultad de comunicar
+                                                                                    
+            a la Administración Tributaria lo siguiente:                            
+                                                                                    
+                 11.2.1. Conformidad con el DTE                                     
+                                                                                    
+                                                                                    
+            El receptor informa a la Administración Tributaria que conoce dicho documento y confirma que
+            están correctos todas las informaciones del DTE, que no existen errores o inconsistencias en forma
+            parcial o total y que ha recibido la mercadería o servicio.             
+                                                                                    
+                                                                                    
+                 11.2.2. Disconformidad con el DTE                                  
+                                                                                    
+            El receptor informa a la Administración Tributaria que conoce dicho documento, pero que en el
+            comprobante existen errores o inconsistencias en forma parcial o total. 
+                                                                                    
+                 11.2.3. Desconocimiento con el DE o DTE                            
+                                                                                    
+            El receptor informa a la Administración Tributaria que desconoce el documento que fuera emitido
+            a su nombre y la operación detallada en el mismo.                       
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     114              
+                                                                                    
+                                                                                    
+
+===== PAGE 116 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            Para efecto de gestionar ambos eventos, el receptor podrá utilizar los servicios del SIFEN para
+            descargar el detalle todos los DTE emitidos a su nombre o razón social  
+                                                                                    
+                                                                                    
+                 11.2.4. Notificación de recepción de un DE o DTE                   
+                                                                                    
+            El receptor informa a la Administración Tributaria que conoce dicho documento, sin embargo, aún
+                                                                                    
+            no tiene condiciones para manifestarse de forma conclusiva (con Conformidad, Disconformidad o
+            Desconocimiento). Es un evento opcional y no se registra este evento si ya existe otro evento
+            registrado de manifestación del destinatario.                           
+                                                                                    
+            Para efecto de gestionar ambos eventos, en el futuro, el receptor podrá utilizar los servicios del
+            SIFEN o en el Portal e-kuatia para descargar el detalle todos los DTE emitidos a su nombre o razón
+            social según reglas que se van establecer por la SET.                   
+                                                                                    
+                                                                                    
+                 11.2.5. Tipología de los eventos del receptor                      
+                                                                                    
+                                                                                    
+              -  Eventos conclusivos (conformidad y disconformidad): corresponden a aquellos eventos
+                 del receptor que podrían generar una acción del emisor para modificar el estado de un DTE,
+                 como un ajuste por la emisión de notas de crédito o débito electrónica o cancelar un DTE.
+                 Los eventos conclusivos solo son realizados sobre DTE.             
+                                                                                    
+              -  Eventos informativos (desconocimiento y notificación de recepción): corresponden a
+                 aquellos eventos del receptor que colocan una marca a un DTE o registran la recepción de
+                 un DE, a diferencia de los eventos conclusivos, los eventos informativos no generan una
+                                                                                    
+                 acción del emisor. Los eventos informativos pueden ser realizados sobre DTE y DE.
+                                                                                    
+              11.3.  Eventos automáticos: Esta transaccionalidad informática de SIFEN permite vincular
+                 determinados eventos y situaciones en los DTE sin la intervención directa del emisor ni del
+                 receptor, por lo tanto, no son generados por los facturadores electrónicos, sino que se
+                 devuelve como parte de la consulta de un DTE y se encontrará en el contenedor del evento.
+                                                                                    
+                                                                                    
+                 • Eventos automáticos por SIFEN                                    
+                   o  Ejemplo 1: registro automático del evento -Vinculación de la nota de crédito o
+                      Débito automático a una Factura Electrónica- que se activa cuando se aprueba en
+                      SIFEN la nota de crédito o Débito, según el caso.             
+                   o  Ejemplo 2: registro automático del evento -Vinculación automática de la nota de
+                      Remisión Electrónica a una Factura Electrónica- la cual se activa cuando se aprueba
+                      en SIFEN la nota Remisión Electrónica.                        
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     115              
+                                                                                    
+                                                                                    
+
+===== PAGE 117 / 217 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                 • Eventos automáticos por interoperabilidad                        
+                   o  Ejemplo 3: interoperabilidad con sistemas de la SET (Tesaka – retenciones y
+                      Marangatu – Créditos fiscales por transferencia o devolución) 
+                                                                                    
+                                                                                    
+              11.4.  Eventos registrados por la SET (evento futuro)                 
+                                                                                    
+            La Administración Tributaria tiene la potestad para realizar el siguiente evento:
+                                                                                    
+                                                                                    
+                 11.4.1. Impugnación de DTE                                         
+                                                                                    
+            Cuando como consecuencia de un proceso de control se compruebe la falta de veracidad de la
+            operación económica que respalda un DTE obrante en el SIFEN, la Administración Tributaria podrá
+                                                                                    
+            impugnar la validez del mismo.                                          
+            Con excepción a los eventos del Emisor de Cancelación de DTE e Inutilización de número de DE, y a
+            los eventos automáticos de SIFEN de Anulación y Asociación, la descripción detallada y efectos de
+                                                                                    
+            los demás eventos, se definirán en una versión posterior del presente MT y se presentan acá como
+            Eventos Futuros.                                                        
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            septiembre de 2019                                     116              
+                                                                                    
+                                                                                    
+
+===== PAGE 118 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                   Tabla J: Resumen de los eventos de SIFEN según los actores                
+      N°   Evento  Actor  Tipo Transmisión    Plazo      Alcance     Criterios      Condiciones  Acce        
+                                                          DE                                     so          
+       1 Cancelación Emisor Registro WS Sincrónico Hasta 48 horas de la aprobación Todos los • DTE en SIFEN • Hubo errores en la emisión WS
+         del DTE        Requerido Eventos del DTE cuando es igual a FE. DTE • Situación Aprobado o Aprobado del DE
+                                                                con  observación (por • La mercadería no fue 
+                        Evento          Hasta 168 horas de la   extemporaneidad)  entregada al cliente       
+                        conclusivo                             • Se requiere informar la                     
+                                        aprobación del DTE cuando los            • El servicio no ha sido    
+                                                                justificativa de la Cancelación              
+                                        documentos electrónicos (NCE, (campo texto libre) realizado al cliente
+                                        NDE, NRE, AFE) son distintos a • Para un DTE que tenga otros         
+                                        FE                      DTEs asociados, se debe                      
+                                                                realizar la cancelación del último           
+                                                                DTE hasta llegar al inicial.                 
+       2 Inutilización Emisor Registro WS Sincrónico Dentro de los 15 (quince) Todos los • Número del DE en el rango de • Saltos de Numeración WS
+         del número de  Requerido Eventos primeros días del mes siguiente DE inutilización no existe en base de • Decisión de la empresa de
+         DE                                                                                                  
+                                        al acaecimiento del hecho, datos de SIFEN                            
+                                                                                  inutilización de un número 
+                                        deberá comunicar la    • Inutilización por rango de hasta            
+                        Evento                                                    de DE que puede haber      
+                                        inutilización de la numeración 1000 (parámetro de SIFEN)             
+                        conclusivo      del DE.                 números de DE no utilizados sido rechazado por errores
+                                                               • Se requiere informar la técnicos (Errores de llenado
+                                        Y hasta fecha límite de validez justificativa de la Inutilización de forma del DE) y no
+                                        del timbrado (plazo del sistema) (campo texto libre) ocurrió el hecho generador
+                                                                                  del impuesto y no hubo el  
+                                                                                  envío del DE al Receptor   
+      10 Notificación Receptor Registro WS Sincrónico Hasta 45 (cuarenta y cinco) días Todos los DTE o DE recepcionado WS/P
+         de recepción   Requerido Eventos o Portal contados desde la fecha de DE o DTE           ORTA        
+         DE o DTE              SIFEN    emisión                                                   L          
+                        Evento                                                                               
+                        informativo                                                                          
+      11 Conformidad Receptor Registro WS Sincrónico Hasta 45 (cuarenta y cinco) días Todos los DTE WS/P     
+         DTE            Requerido Eventos o Portal contados desde la fecha de DTE                ORTA        
+                               SIFEN    emisión                                                   L          
+                        Evento                                                                               
+                        conclusivo                                                                           
+      12 Disconformid Receptor Registro WS Sincrónico Hasta 45 (cuarenta y cinco) días Todos los DTE WS/P    
+         ad DTE         Requerido Eventos o Portal contados desde la fecha de DTE                ORTA        
+                               SIFEN    emisión                                                   L          
+
+===== PAGE 119 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                        Evento                                                                               
+                        conclusivo                                                                           
+      13 Desconocimi Receptor Registro WS Sincrónico Hasta 45 (cuarenta y cinco) días Todos los DTE o DE recepcionado WS/P
+         ento DE o      Requerido Eventos o Portal contados desde la fecha de DE o DTE           ORTA        
+         DTE                   SIFEN    emisión                                                   L          
+                        Evento                                                                               
+                        informativo                                                                          
+      14 Devolución y SIFEN Registro    • Plazo límite definido por la FE • Emisión de una NCE o NDE • Ajustar una operación de Autom
+         Ajuste de      Automátic         SET                   (asociación) para una FE con una FE Aprobada ático
+         precios        o               • Plazo de prescripción situación Aprobada o Aprobado Por devolución y Ajuste de
+                                                                con  observación (por precios de una operación de
+                                                                extemporaneidad) en SIFEN una FE Aprobada    
+                                                               • La FE asociada se encuentra en              
+                                                                SIFEN con situación de                       
+                                                                Aprobado o Aprobado                          
+                                                                Extemporáneo                                 
+                                                               La NCE o NDE indica el tipo de                
+                                                               asociación (Devolución y Ajuste de            
+                                                               precios)                                      
+      16 Asociación SIFEN Registro Emisión de un DE Inmediato a la Aprobación en Todos los • DTE asociado se encuentra en • Ajustar una operación Autom
+                        Automátic con otro DTE, SIFEN de un DTE con indicación DE, otros SIFEN con situación de • Anular una operación ático
+                        o      pre-impreso, de otros documentos asociados documento Aprobado o Aprobado con  
+                               autoimpresor, o cuando existan informaciones s emitidos observaciones o cuando el
+                               comprobante provenientes del Marangatu o por otra SIFEn reciba informaciones  
+                               virtual u otros Tesaka   modalidad provenientes de los sistemas de            
+                               documentos               de       la administración tributaria                
+                               asociados                facturación (Marangatu o Tesaka)                     
+                               (Asociación)             e                                                    
+                                                        interoperabi                                         
+                                                        lidad con                                            
+                                                        sistemas de                                          
+                                                        la SET                                               
+          IMPORTANTE: Los eventos de Registro Requerido habilitados serán los que conciernen al emisor: de Cancelación de un DTE y la Inutilización
+          de un rango de DE, y el evento automático de devolución y Ajuste de precios (disparados por la emisión de Notas de Créditos y Débitos
+          Electrónicas) y los eventos del receptor: Notificación de recepción DE o DTE, Conformidad DTE, Disconformidad DTE, Desconocimiento DE o
+          DTE                                                                                                
+          septiembre de 2019                                     118                                         
+
+===== PAGE 120 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          Especificaciones sobre la Gestión de Eventos por web Services para emisores y receptores electrónicos:
+                                                                                                             
+            •  Los eventos deben ser estructurados en un archivo XML por eventos                             
+            •  Cada evento deberá estar firmado digitalmente                                                 
+            •  Los eventos del emisor y receptor deberán ser transmitidos por los Web Services disponibles para dicha gestión
+                                                                                                             
+            •  Los eventos deberán ser enviados en lotes de hasta 15 eventos de cualquier tipo (emisor y/o receptor).
+            •  La Inutilización de un número de DE debe ser solicitada por rango secuencial o correlativo.   
+                                                                                                             
+                                                                                                             
+                                   Tabla K: Correcciones de los eventos del Receptor en el SIFEN             
+          N°  Correcciones Actor Tipo   Modalidad de  Plazo   Alcance      Criterios   Condiciones           
+                                          Registro              DE                                           
+                                                                                                             
+           1 Conformidad – Receptor Registro WS Sincrónico Hasta 15 (quince) Todos los DE • DTE en SIFEN • Selección del
+             Disconformidad   Requerido Eventos/Portal SIFEN días del registro o DTE • Situación Aprobado o evento del
+             -                                     del primer evento   Aprobado Extemporáneo receptor por    
+                                                                     • Se requiere informar la               
+                                                                                       equivocación          
+             Desconocimient                                            justificativa del evento de           
+             o DE o DTE                                                corrección (campo texto libre)        
+                                                                     • Solo se puede registrar un            
+                                                                       evento de corrección sobre            
+                                                                       cada evento mencionado                
+            A continuación, se presenta el cuadro que representa las relaciones que pueden darse entre eventos del receptor.
+            Referencia:                                                                                      
+            Gris = encabezado                                                                                
+                                                                                                             
+            Verde = puede realizarse luego del evento que se encuentra en el encabezado                      
+            Rojo = no puede realizarse luego del evento que se encuentra en el encabezado                    
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          septiembre de 2019                                     119                                         
+                                                                                                             
+
+===== PAGE 121 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                    DE                                          DTE                                          
+                                                                                                             
+           Notificación - Desconocimiento Notificación - Conformidad Conformidad Disconformidad Desconocimiento
+            Recepción                  Recepción   parcial     total                                         
+            Notificación - Notificación - Notificación - Notificación - Notificación - Notificación - Recepción Notificación -
+            Recepción DE Recepción DE Recepción DTE Recepción DTE Recepción DTE DTE  Recepción DTE           
+          Conformidad parcial Conformidad parcial Conformidad parcial Conformidad parcial Conformidad parcial Conformidad parcial Conformidad parcial
+                                                                                                             
+          Conformidad total Conformidad total Conformidad total Conformidad total Conformidad total Conformidad total Conformidad total
+           Disconformidad Disconformidad Disconformidad Disconformidad Disconformidad Disconformidad Disconformidad
+                                                                                                             
+                                     Desconocimiento Desconocimiento DTE Desconocimiento Desconocimiento DTE Desconocimiento
+           Desconocimiento Desconocimiento DTE                                                               
+                                         DTE                   DTE                      DTE                  
+              DTE                                                                                            
+           Inutilización de Inutilización de Inutilización de Inutilización de Inutilización de Inutilización de número Inutilización de
+             número      número        número      número     número                   número                
+            11.5.   Estructura de los Eventos                                                                
+          Para estructurar los diferentes eventos que afectan el estado de un DTE se toma como elemento base al Código de control (CDC), a
+          excepción del evento de Inutilización de número de DE.                                             
+                                                                                                             
+               Schema XML 19: Evento_v150.xsd (Formato de evento emisor)                                     
+                                                 Nodo   Tipo                                                 
+           Grupo  ID      Campo      Descripción            Longitud Ocu    Observaciones                    
+                                                 Padre Dato                                                  
+           GDE   GDE000 gGroupGesEve Raíz del grupo deeventos GSch03 G 1-1                                   
+                                 Raíz de Gestión de                                                          
+           GDE   GDE001 rGesEve                  GDE000 G     -   1-15 Elemento raíz                         
+                                 Eventos                                                                     
+           GDE   GDE002 rEve                                                                                 
+                                 Grupos de campos                                                            
+                                                 GDE001 G          1-1                                       
+                                                                      Grupo de campos incluidos en la firma  
+                                 generales del evento                 digital                                
+          septiembre de 2019                                     120                                         
+
+===== PAGE 122 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+           GDE   GDE003 Id       Identificador del evento N  1-10  1-1 Atributo del campo GDE002             
+                                                                      Fecha y hora en el formato AAAA-MM-    
+           GDE   GDE004 dFecFirma Fecha y Hora del firmado GDE002 F 19 1-1 DDThh:mm:ss                       
+                                                                                                             
+           GDE   GDE005 dVerFor  Versión del formato GDE002 N 3    1-1 Control de versiones                  
+                                                                      Eventos del Emisor                     
+                                                                      1 = Cancelación                        
+                                                                      2 = Inutilización                      
+                                                                      3 = Endoso (futuro)                    
+           GDE   GDE006 dTiGDE   Tipo de Evento  GDE002 N     1-2  1-1 Eventos del Comprador                 
+                                                                      10 = Acuse del DE (futuro)             
+                                                                      11 = Conformidad del DE (futuro)       
+                                                                      12 = Disconformidad del DE (futuro)    
+                                                                      13 = Desconocimiento del DE (futuro)   
+           GDE   GDE007 gGroupTiEvt                                                                          
+                                 Grupo de campos del tipo                                                    
+                                                 GDE002 G          1-1                                       
+                                                                      Grupo correspondiente al evento según  
+                                 de evento                            dTiGDE                                 
+           GDE   GDE008 Signature Grupo de la Firma Digital GDE001 G 1-1 Firma Digital del campo rEve (GDE001)
+               11.5.1. FORMATO DE EVENTOS EMISOR                                                             
+            Grupo: Evento Cancelación (Formato del evento de cancelación)                                    
+                                                 Nodo  Tipo                                                  
+           Grupo  ID     Campo       Descripción            Longitud Ocu     Observaciones                   
+                                                 Padre Dato                                                  
+                                                                      Elemento raíz                          
+                                 Raíz Gestión de Eventos                                                     
+           GDE   GEC001 rGeVeCan                 GDE007 G     -    -  Obligatorio si campo dTiGDE=1          
+                                      Cancelación                                                            
+                                                                      (Cancelación)                          
+           GDE   GEC002 Id       Identificador del DTE GEC001 A 44 1-1 Se informa el código de control (CDC) 
+           GDE   GEC003 mOtEve   Motivo del Evento GEC001 A 5 - 500 1-1 Campo abierto                        
+                                                                                                             
+                                                                                                             
+          septiembre de 2019                                     121                                         
+                                                                                                             
+
+===== PAGE 123 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+            Grupo: Evento Inutilización (Formato del evento de inutilización)                                
+                                                                                                             
+                                                  Nodo  Tipo                                                 
+           Grupo   ID      Campo       Descripción          Longitud Ocu     Observaciones                   
+                                                  Padre Dato                                                 
+                                                                       Elemento raíz                         
+                                     Raiz Gestión de                                                         
+           GDE   GEI001    rGeVeInu              GDE007  -    -     -  Obligatorio si campo dTiGDE=2         
+                                    Eventos Inutilización                                                    
+                                                                       (Inutilización)                       
+           GDE   GEI002    dNumTim  Número del Timbrado GEI001 N 8 1-1                                       
+           GDE   GEI003     dEst     Establecimiento GEI001 A 3    1-1 Completar con ceros a la izquierda    
+           GDE   GEI004    dPunExp  Punto de expedición GEI001 A 3 1-1 Completar con ceros a la izquierda    
+                                                                       La cantidad máxima para inutilización es
+                                     Número Inicio del                                                       
+           GDE   GEI005    dNumIn                GEI001  A    7    1-1 un rango de hasta 1000 números del DE.
+                                    rango del documento                                                      
+                                                                       Completar con ceros a la izquierda    
+                                     Número Final del                                                        
+           GDE   GEI006    dNumFin               GEI001  A    7    1-1 Completar con ceros a la izquierda    
+                                    rango del documento                                                      
+                                                                       1= Factura electrónica                
+                                                                       2= Factura electrónica de exportación 
+                                                                       3= Factura electrónica de importación 
+                                                                       4= Autofactura electrónica            
+                                     Tipo de Documento                                                       
+           GDE   GEI007     iTiDE                GEI001  N    1-2  1-1 5= Nota de crédito electrónica        
+                                       Electrónico                                                           
+                                                                       6= Nota de débito electrónica         
+                                                                       7= Nota de remisión electrónica       
+                                                                       8= Comprobante de retención           
+                                                                       electrónico                           
+           GDE   GEI008    mOtEve    Motivo del Evento GEI001 A 5-500 1-1 Campo libre                        
+                                                                                                             
+                                                                                                             
+          septiembre de 2019                                     122                                         
+                                                                                                             
+
+===== PAGE 124 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+               11.5.2. FORMATO DE EVENTOS RECEPTOR                                                           
+            Evento Notificación – Recepción DE/DTE (Formato del evento de Notificación – Recepción)          
+                                                                                                             
+                                                Nodo  Tipo      Ocurren                                      
+           Grupo   ID     Campo     Descripción           Longitud           Observaciones                   
+                                                Padre Dato        cia                                        
+                                Raíz Gestión de Eventos                                                      
+                        rGeVeNotRe                                                                           
+            GER   GEN001        Notificación – Recepción GDE007 G - - Elemento raíz                          
+                        c                                                                                    
+                                DE o DTE                                                                     
+                                                                      Se informa el código de control (CDC) de
+            GER   GEN002 Id     Identificador del DE/DTE GEN001 A 44 1-1                                     
+                                                                      un DE/DTE                              
+                                                                      Requerido para conteo de plazo de      
+                                                                      registro del evento del receptor (hasta 45
+                                Fecha de emisión del                                                         
+            GER   GEN003 dFecEmi               GEN001  F    19    1-1 días desde la fecha de emisión)        
+                                DE/DTE                                                                       
+                                                                      Fecha y hora en el formato AAAA-MM-    
+                                                                      DDThh:mm:ss                            
+                                                                      Fecha en que el receptor recibió física o
+                                                                      electrónicamente el documento          
+            GER   GEN004 dFecRecep Fecha Recepción DE GEN001 F 19 1-1                                        
+                                                                      electrónico. Fecha y hora en el formato
+                                                                      AAAA-MM-DDThh:mm:ss                    
+                                                                      1=Contribuyente                        
+            GER   GEN005 iTipRec Tipo de Receptor GEN001 N  1     1-1                                        
+                                                                      2=No Contribuyente                     
+                                Nombre o Razón Social                                                        
+            GER   GEN006 dNomRec               GEN001  A   4-60   1-1                                        
+                                del Receptor del DE/DTE                                                      
+                                                                      Requerido solo cuando el tipo de receptor
+            GER   GEN007 dRucRec Ruc del Receptor GEN001 A  3-8   0-1 es contribuyente (GEN005=1)            
+                                                                      No Informar si GEN005=2                
+                                                                      Requerido solo cuando el tipo de receptor
+                                Dígito verificador del RUC                                                   
+            GER   GEN008 dDVRec                GEN001  N    1     0-1 es contribuyente (GEN005=1)            
+                                del contribuyente receptor                                                   
+                                                                      No Informar si GEN005=2                
+                                                                      No Informar si GEN005=1                
+                                                                      Requerido solo cuando el tipo de receptor
+                                Tipo de documento de                  es No Contribuyente (GEN005=2)         
+            GER   GEN009 dTipIDRec identidad del receptor GEN001 N 1 0-1 1= Cédula paraguaya                 
+                                                                      2= Pasaporte                           
+                                                                      3= Cédula extranjera                   
+                                                                      4= Carnet de residencia                
+                                                                      No Informar si GEN005=1                
+                        dNumID  Número de documento de                                                       
+            GER   GEN010                       GEN001  A   1-20   0-1 Requerido solo cuando el tipo de receptor
+                                identidad                                                                    
+                                                                      es No Contribuyente (GEN005=2)         
+          septiembre de 2019                                     123                                         
+
+===== PAGE 125 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                Nodo  Tipo      Ocurren                                      
+           Grupo   ID     Campo     Descripción           Longitud           Observaciones                   
+                                                Padre Dato        cia                                        
+                                Total general de la        1-15p(0-                                          
+            GER   GEN011 dTotalGs              GEN001  N          1-1                                        
+                                operación en Guaraníes      8)                                               
+            Evento Conformidad (Formato del evento de conformidad)                                           
+                                                Nodo  Tipo       Ocurren                                     
+           Grupo  ID     Campo      Descripción           Longitud           Observaciones                   
+                                                Padre Dato        cia                                        
+                                Raiz Gestión de Eventos                                                      
+           GER  GCO001 rGeVeConf              GDE007   -    -     -   Elemento raíz                          
+                                Conformidad                                                                  
+                                               GCO001                                                        
+           GER  GCO002 Id       CDC del DTE            A    44    1-1 Corresponde al CDC de un DTE           
+                                                                      1= Conformidad Total del DTE           
+                                               GCO001                                                        
+                                                                      2= Conformidad Parcial del DTE, cuando 
+           GER  GCO003 iTipConf Tipo de Conformidad    N    1     1-1 la mercadería será entregada o servicio
+                                                                      será prestado en una fecha posterior a la
+                                                                      recepción del DE/DTE                   
+                                                                      Obligatorio si el tipo de Conformidad es
+                                Fecha Estimada de                                                            
+           GER  GCO004 dFecRecep               GCO001  F    19    0-1 Conformidad Parcial del DTE (GCO003=   
+                                Recepción                                                                    
+                                                                      2)                                     
+            Evento Disconformidad (Formato del evento de Disconformidad)                                     
+                                                Nodo  Tipo       Ocurren                                     
+           Grupo  ID     Campo      Descripción           Longitud           Observaciones                   
+                                                Padre Dato        cia                                        
+                                Raiz Gestión de Eventos                                                      
+           GER  GDI001 rGeVeDisconf            GDE007  -    -     -   Elemento raíz                          
+                                Disconformidad                                                               
+                                               GDI001                                                        
+           GER  GDI002 Id       CDC del DTE            N    44    1-1 Corresponde al CDC de un DTE           
+                                               GDI001                                                        
+           GER  GDI004 mOtEve   Motivo del Evento      A   5-500  1-1                                        
+          septiembre de 2019                                     124                                         
+
+===== PAGE 126 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+            Evento Desconocimiento DE/DTE (Formato del evento de Desconocimiento DE/DTE)                     
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+                                Raiz Gestión de                                                              
+           GER  GED001 rGeVeDescon Eventos    GDE007   -    -     -   Elemento raíz                          
+                                Desconocimiento                                                              
+                                              GED001                  Corresponde al CDC de un Kude o CDC    
+           GER  GED002    Id    CDC del DE/DTE         A    44    1-1                                        
+                                                                      de un DTE                              
+                                                                      Requerido para conteo de plazo de      
+                                Fecha de emisión del GED001                                                  
+                                                                      registro del evento del receptor (hasta 45
+           GER  GED003  dFecEmi                        F    19    1-1 días desde la fecha de emisión).       
+                                DE/DTE                                                                       
+                                                                      Fecha y hora en el formato AAAA-MM-    
+                                                                      DDThh:mm:ss.                           
+                                              GED001                  Fecha y hora en el formato AAAA-MM-    
+           GER  GED004  dFecRecep Fecha Recepción DE   F    19    1-1                                        
+                                                                      DDThh:mm:ss.                           
+                                              GED001                  1=Contribuyente                        
+           GER  GED005  iTipRec Tipo de Receptor       N    1     1-1                                        
+                                                                      2=No Contribuyente                     
+                                Nombre o Razón                                                               
+                                              GED001                                                         
+           GER  GED006  dNomRec Social del Receptor    A   4-60   1-1                                        
+                                del DE/DTE                                                                   
+                                              GED001                                                         
+                                                                      Requerido solo cuando el tipo de receptor
+           GER  GED007  dRucRec Ruc del Receptor       A    3-8   0-1 es Contribuyente (GED005=1)            
+                                                                      No Informar si GED005=2                
+                                Dígito verificador del                                                       
+                                              GED001                                                         
+                                                                      Requerido solo cuando el tipo de receptor
+           GER  GED008  dDVRec  RUC del contribuyente  N    1     0-1 es Contribuyente (GED005=1)            
+                                receptor                              No Informar si GED005=2                
+                                                                      No Informar si GED005=1                
+                                                                      Requerido solo cuando el tipo de receptor
+                                Tipo de documento de                                                         
+                                              GED001                                                         
+                                                                      es No Contribuyente (GED005=2)         
+           GER  GED009  dTipIDRec identidad del receptor N  1     0-1 1= Cédula paraguaya                    
+                                                                      2= Pasaporte                           
+                                                                      3= Cédula extranjera                   
+                                                                      4= Carnet de residencia                
+          septiembre de 2019                                     125                                         
+
+===== PAGE 127 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+                                Número de documento GED001                                                   
+                                                                      No Informar si GED005=1                
+           GER  GED010  dNumID                         A   1-20   0-1 Requerido solo cuando el tipo de receptor
+                                de identidad                                                                 
+                                                                      es No Contribuyente (GED005=2)         
+                                              GED001                                                         
+           GER  GED011  mOtEve  Motivo del Evento      A   5-500  1-1                                        
+          Evento automático por interoperabilidad: Evento asociación Retención                               
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+                                Raíz Gestión de                                                              
+           GEA  GER001 rGeVeRetAce            GDE007   -    -     -   Elemento raíz                          
+                                Eventos de retención                                                         
+           GEA                                                                                               
+                GER002    Id    CDC del DE/DTE GER001  A    44    1-1 Corresponde al CDC del DTE asociado    
+           GEA                                                                                               
+                                Número de timbrado                                                           
+                GER003 dNumTimRet del documento de GER001 N 8     1-1                                        
+                                retención                                                                    
+           GEA                                                                                               
+                GER004  dEstRet Establecimiento GER001 A    3     1-1                                        
+           GEA                                                                                               
+                GER005 dPunExpRet Punto de expedición GER001 A 3  1-1                                        
+           GEA                  Número del                                                                   
+                GER006 dNumDocRet             GER001   A    7     1-1                                        
+                                documento                                                                    
+           GEA                  Identificador de la GER001                                                   
+                GER007 dCodConRet                      A    40    1-1                                        
+                                retención                                                                    
+           GEA                  Fecha de emisión de GER001                                                   
+                GER008  dFeEmiRet                      F    19    1-1                                        
+                                la retención                                                                 
+          septiembre de 2019                                     126                                         
+
+===== PAGE 128 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          Evento automático por interoperabilidad: Evento asociación de anulación de la Retención            
+                                                                                                             
+                                                      Tipo      Ocurren                                      
+           Grupo  ID     Campo     Descripción Nodo Padre Longitud          Observaciones                    
+                                                      Dato        cia                                        
+                                Raíz Gestión de                                                              
+           GEA  GERA001 rGeVeRetAnu Eventos de retención GDE007 - - - Elemento raíz                          
+                                anulación                                                                    
+           GEA                                                                                               
+                GERA002   Id    CDC del DE/DTE GERA001 A    44    1-1 Corresponde al CDC del DTE asociado    
+           GEA                                                                                               
+                                Número de timbrado                                                           
+                GERA003 dNumTimRet del documento de GERA001 N 8   1-1                                        
+                                retención                                                                    
+           GEA                                                                                               
+                                Establecimiento del                                                          
+                GERA004 dEstRet documento de  GERA001  A    3     1-1                                        
+                                retención                                                                    
+           GEA                                                                                               
+                                Punto de expedición                                                          
+                GERA005 dPunExpRet del documento de GERA001 A 3   1-1                                        
+                                retención                                                                    
+           GEA                                                                                               
+                                Número del                                                                   
+                GERA006 dNumDocRet documento de la GERA001 A 7    1-1                                        
+                                retención                                                                    
+           GEA                  Identificador de la                                                          
+                GERA007 dCodConRet            GERA001  A    40    1-1                                        
+                                retención                                                                    
+           GEA                  Fecha de emisión de                                                          
+                GERA008 dFeEmiRet             GERA001  F    19    1-1                                        
+                                la retención                                                                 
+           GEA                  Fecha de anulación                                                           
+                GERA009 dFecAnRet             GERA001  F    19    1-1                                        
+                                de la retención                                                              
+          Evento automático por interoperabilidad: Evento transferencia de créditos fiscales                 
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+           GEA                                                                                               
+                                Raíz Gestión de                                                              
+               GECF001 rGeVeCCFF Eventos de créditos GDE007 - -   -   Elemento raíz                          
+                                fiscales                                                                     
+          septiembre de 2019                                     127                                         
+
+===== PAGE 129 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+           GEA GECF002    Id    CDC del DE/DTE GECF001 A    44    1-1 Corresponde al CDC del DTE asociado    
+                                Número de                                                                    
+                                              GECF001                                                        
+           GEA GECF003 dNumTraCCFF transferencia de    A    10    1-1                                        
+                                créditos fiscales                                                            
+                                Fecha de aceptación GECF001                                                  
+           GEA GECF004 dFeAceTraCCFF                   F    19    1-1                                        
+                                del crédito fiscal                                                           
+          Evento automático por interoperabilidad: Evento devolución de créditos fiscales - Cuestionado      
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+                                Raíz Gestión de                                                              
+           GEA        rGeDevCCFFCu Eventos de devolución                                                     
+               GEDF001                        GDE007   -    -     -   Elemento raíz                          
+                          e     de créditos fiscales -                                                       
+                                Cuestionado                                                                  
+           GEA GEDF002    Id    CDC del DE/DTE                                                               
+                                              GEDF001                                                        
+                                                       A    44    1-1 Corresponde al CDC del DTE asociado    
+                                              GEDF001                 Corresponde al número de solicitud de la
+           GEA GEDF003 dNumDevSol Número DIR           A    10    1-1                                        
+                                                                      DIR                                    
+                                              GEDF001                                                        
+           GEA GEDF004 dNumDevInf Número de informe    A    10    1-1                                        
+               GEDF005          Número de resolución GEDF001                                                 
+           GEA         dNumDevRes                      A    10    1-1                                        
+                                de la devolución                                                             
+               GEDF006          Fecha de emisión de GEDF001                                                  
+           GEA          dFeEmiSol                      F    19    1-1                                        
+                                DIR                                                                          
+               GEDF007          Fecha de emisión del GEDF001                                                 
+           GEA          dFeEmiInf                      F    19    1-1                                        
+                                informe                                                                      
+               GEDF008          Fecha de emisión de GEDF001                                                  
+           GEA         dFeEmiRes                       F    19    1-1                                        
+                                la resolución                                                                
+          septiembre de 2019                                     128                                         
+
+===== PAGE 130 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          Evento automático por interoperabilidad: Evento devolución de créditos fiscales - Devuelto         
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+                                Raíz Gestión de                                                              
+           GEA        rGeDevCCFFDe Eventos de devolución                                                     
+               GEDD001                        GDE007   -    -     -   Elemento raíz                          
+                          v     de créditos fiscales -                                                       
+                                Devuelto                                                                     
+           GEA GEDD002    Id    CDC del DE/DTE GEDD001 A    44    1-1 Corresponde al CDC del DTE asociado    
+           GEA                                GEDD001                 Corresponde al número de solicitud de la
+               GEDD003 dNumDevSol Número DIR           A    10    1-1                                        
+                                                                      DIR                                    
+           GEA                                GEDD001                                                        
+               GEDD004 dNumDevInf Número de informe    A    10    1-1                                        
+           GEA GEDD005          Número de resolución GEDD001                                                 
+                       dNumDevRes                      A    10    1-1                                        
+                                de la devolución                                                             
+           GEA GEDD006          Fecha de emisión de GEDD001                                                  
+                        dFeEmiSol                      F    19    1-1                                        
+                                DIR                                                                          
+           GEA GEDD007          Fecha de emisión del GEDD001                                                 
+                        dFeEmiInf                      F    19    1-1                                        
+                                informe                                                                      
+           GEA GEDD008          Fecha de emisión de GEDD001                                                  
+                       dFeEmiRes                       F    19    1-1                                        
+                                la resolución                                                                
+          Evento automático por SIFEN: Evento anticipo                                                       
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+           GEA                  Raíz Gestión de                                                              
+                GEA001  rGeVeAnt              GDE007   -    -     -   Elemento raíz                          
+                                Eventos anticipo                                                             
+          septiembre de 2019                                     129                                         
+
+===== PAGE 131 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+           GEA                  CDC del DTE   GEA001                                                         
+                GEA002    Id                           A    44    1-1                                        
+                                asociado                                                                     
+          Evento automático por SIFEN: Evento remisión                                                       
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+           GEA                  Raíz Gestión de                                                              
+               GERE001  rGeVeRem              GDE007   -    -     -   Elemento raíz                          
+                                Eventos remisión                                                             
+           GEA                  CDC del DTE   GERE001                                                        
+               GERE002    Id                           A    44    1-1                                        
+                                asociado                                                                     
+          Evento por actualización de datos: Datos del transporte                                            
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+                                Raíz Gestión de                                                              
+           GDE                  Eventos por                                                                  
+                GET001  rGeVeTr               GDE007   -    -     -   Elemento raíz                          
+                                actualización de datos                                                       
+                                del transporte                                                               
+           GDE                                GET001                                                         
+                GET002    Id    CDC del DTE            A    44    1-1                                        
+                                                                      1= Cambio del local de la entrega      
+           GDE                                GET001                  2= Cambio del chofer                   
+                GET003  dMotEv  Motivo del evento      N    1     1-1                                        
+                                                                      3= Cambio del transportista            
+                                                                      4= Cambio de vehículo                  
+                                Código del                                                                   
+           GDE                                GET001                  Obligatorio si GET003=1                
+                GET004  cDepEnt departamento del local N    1-2   0-1                                        
+                                                                      Según XSD de Departamentos             
+                                de la entrega                                                                
+          septiembre de 2019                                     130                                         
+
+===== PAGE 132 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+                                Descripción del                                                              
+                                              GET001       6-16   0-1                                        
+           GDE  GET005 dDesDepEnt departamento del local A            Referente al campo GET004              
+                                de la entrega                                                                
+           GDE                  Código del distrito del GET001 1-4 0-1                                       
+                GET006  cDisEnt                        N              Según Tabla 2.1 - Distritos            
+                                local de la entrega                                                          
+           GDE                  Descripción de distrito GET001 1-30 0-1                                      
+                GET007 dDesDisEnt                      A              Obligatorio si existe el campo GET006  
+                                del local de la entrega                                                      
+           GDE                  Código de la ciudad GET001                                                   
+                                                                      Obligatorio si GET003=1                
+                GET008  cCiuEnt                        N    1-5   0-1                                        
+                                del local de la entrega                                                      
+                                                                      Según Tabla 2.2 – Ciudades             
+           GDE                  Descripción de ciudad GET001      0-1                                        
+                GET009 dDesCiuEnt                      A   1-30       Referente al campo GET008              
+                                del local de la entrega                                                      
+                                Dirección del local de                                                       
+           GDE          dDirEnt               GET001                  Obligatorio si GET003=1                
+                GET010          la entrega             A   1-255  0-1                                        
+           GDE                  Número de casa del GET001             Obligatorio si GET003=1                
+                GET011  dNumCas                        N    1-6   0-1                                        
+                                local de la entrega                                                          
+                                Complemento de                                                               
+           GDE                                GET001                  Opcional si GET003=1                   
+                GET012  dCompDir1 dirección del local de A 1-255  0-1                                        
+                                la entrega                                                                   
+           GDE                  Nombre y apellido del GET001 A 4-60 1-1 Obligatorio si GET003=2              
+                GET013  dNomChof                                                                             
+                                chofer                                                                       
+           GDE                  Número de documento GET001 A 1-20 0-1 Obligatorio si GET003=2                
+                GET014 dNumIDChof                                                                            
+                                de identidad del chofer                                                      
+           GDE                  Naturaleza del GET001                                                        
+                                                                      Obligatorio si GET003=3                
+                GET015  iNatTrans                      N    1     0-1 1= Contribuyente                       
+                                transportista                                                                
+                                                                      2= No contribuyente                    
+           GDE                                GET001                  Obligatorio si GET015 = 1              
+                GET016  dRucTrans RUC del transportista A   3-8   0-1                                        
+                                                                      No informar si GET015 ≠ 1              
+                                                                      Obligatorio si GET015 = 1              
+           GDE  GET017  dDVTrans Dígito verificador del GET001 N 1 0-1 No informar si GET015 ≠ 1             
+                                RUC del transportista                                                        
+          septiembre de 2019                                     131                                         
+
+===== PAGE 133 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+           GDE                  Nombre o razón social GET001 A 4-60 0-1 Obligatorio si GET003=3              
+                GET018 dNomTrans                                                                             
+                                del transportista                                                            
+                                                                      Obligatorio si GET015 = 2              
+                                                                      No informar si GET015 = 1              
+           GDE                                                                                               
+                                Tipo de documento de                                                         
+                                              GET001   N    1     0-1                                        
+                GET019 iTipIDTrans identidad del                      1= Cédula paraguaya                    
+                                transportista                         2= Pasaporte                           
+                                                                      3= Cédula extranjera                   
+                                                                      4= Carnet de residencia                
+                                                                      Obligatorio si existe el campo GET019  
+                                Descripción del tipo de                                                      
+                                documento de                                                                 
+           GDE                                GET001   A   9-20   0-1 1= “Cédula paraguaya”                  
+                GET020 dDTipIDTrans identidad del                                                            
+                                                                      2= “Pasaporte”                         
+                                transportista                         3= “Cédula extranjera”                 
+                                                                      4= “Carnet de residencia”              
+           GDE                                                                                               
+                GET021 dNumIDTrans                                                                           
+                                N                                                                            
+                                de                                                                           
+                                 ú m                                                                         
+                                  id                                                                         
+                                  e                                                                          
+                                  e                                                                          
+                                   r                                                                         
+                                   n                                                                         
+                                   o                                                                         
+                                    t id                                                                     
+                                    d                                                                        
+                                     a                                                                       
+                                     e                                                                       
+                                     d                                                                       
+                                      d                                                                      
+                                      d                                                                      
+                                      o                                                                      
+                                       e                                                                     
+                                       cu                                                                    
+                                        l                                                                    
+                                        mento                                                                
+                                              GET001                                                         
+                                                       A   1-20   0-1 Obligatorio si existe el campo GET019  
+                                transportista                                                                
+                                                                      Obligatorio si GET003=4                
+           GDE                                GET001                                                         
+                GET022  iTipTrans Tipo de transporte   N    1     0-1 1= Propio                              
+                                                                      2= Tercero                             
+                                Descripción del tipo de                                                      
+           GDE         dDesTipTrans           GET001   A    6-7   0-1 Obligatorio si existe el campo GET022  
+                GET023          transporte                                                                   
+                                                                      Obligatorio si GET003=4                
+                                                                      1=Terrestre                            
+           GDE                  Modalidad del GET001                                                         
+                GET024  iModTrans                      N    1     0-1 2= Fluvial                             
+                                transporte                                                                   
+                                                                      3= Aéreo                               
+                                                                      4= Multimodal                          
+                                                                      Referente al campo GET024              
+                                Descripción de la                     1= “Terrestre”                         
+           GDE  GET025 dDesModTrans modalidad del GET001 A 5-10   1-1 2= “Fluvial”                           
+                                transporte                            3= “Aéreo”                             
+                                                                      4= “Multimodal”                        
+                                                                      Obligatorio si GET003=4                
+           GDE                                GET001                                                         
+                GET026 dTiVehTras T ipo de vehículo    A   4-10   0-1 Descripción debe ser acorde con el campo
+                                                                      GET024                                 
+          septiembre de 2019                                     132                                         
+
+===== PAGE 134 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                      Tipo       Ocurren                                     
+           Grupo ID      Campo     Descripción Nodo Padre Longitud           Observaciones                   
+                                                      Dato        cia                                        
+           GDE                                GET001                  Obligatorio si GET003=4                
+                GET027  dMarVeh Marca del vehículo     A   1-10   0-1                                        
+                                                                      Obligatorio si GET003=4                
+           GDE                  Tipo de identificación GET001                                                
+                GET028 dTipIdenVeh                     N    1     0-1                                        
+                                del vehículo                          1=Número de identificación del vehículo
+                                                                      2=Número de matrícula del vehículo     
+           GDE                                                                                               
+                                Número de                                                                    
+                                              GET001                                                         
+                GET029  dNroIDVeh identificación del   A   1-20   0-1 Debe informarse cuando el GET028=1     
+                                vehículo                                                                     
+           GDE                  Número de matrícula GET001                                                   
+                GET030 dNroMatVeh                      A    6     0-1 Debe informarse cuando el GET028=2     
+                                del vehículo                                                                 
+            11.6.   REGLAS DE VALIDACIÓN DE GESTIÓN DE EVENTOS                                               
+                                        REFERENCIA ESTADO DE VALIDACIÓN                                      
+                               CÓDIGO              DESCRIPCIÓN                                               
+                                 A   APROBADO                                                                
+                                AO   APROBADO CON OBSERVACIÓN                                                
+                                 R   RECHAZADO                                                               
+          Los resultados de rechazo y notificación se detallan en los correspondientes códigos y mensajes de respuesta descriptos en cada Servicio
+          Web. Las validaciones de firma digital se realizan conforme a lo establecido en las siguientes secciones: Validación del certificado de firma
+          y Validación de la firma digital.                                                                  
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          septiembre de 2019                                     133                                         
+                                                                                                             
+
+===== PAGE 135 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+               11.6.1. REGLAS DE VALIDACIÓN PARA CANCELACIÓN                                                 
+                                                                                                             
+                                                                                                             
+                                                                                                             
+           N° Val ID        Mensaje de la Validación Código           Observación             E              
+                                                       Versión del formato del evento (GDE005) no corresponde a la
+            1  GDE005 La versión no corresponde   4000                                        R              
+                                                       versión vigente                                       
+                                                       Debe validar que el CDC (GEC002) cuente con los 44 caracteres
+            2  GEC002 CDC inválido                4001 según las reglas de estructuración del CDC (longitud, orden de los R
+                                                       campos del CDC, formato de la fecha invalida y/o dígito verificador)
+                                                       El identificador del CDC (GEC002) no se encuentra aprobado como
+            3  GEC002a CDC no existente en el SIFEN 4002                                      R              
+                                                       DTE SIFEN                                             
+                      CDC ya se encuentra con el mismo evento El DTE (GEC002) ya se encuentra con un evento que se está
+            4  GEC002b                            4003                                        R              
+                      solicitado                       requiriendo nuevamente (Duplicidad)                   
+                                                       Cuando el último evento del receptor sobre un CDC (GEC002) es
+            5  GEC002c CDC ya se ha confirmado por el receptor 4004 una confirmación parcial o total, no se permite realizar la R
+                                                       cancelación por parte del emisor                      
+                                                       El RUC del certificado utilizado para firmar los eventos sobre DE y
+            7  GDE008 Firmador no autorizado para realizar evento 4006                        R              
+                                                       DTE, no corresponde al emisor/electrónico             
+                      Firma Digital inválida por certificado digital El certificado digital que se utilizó para firmar el evento está
+            8  GDE008a                            4007                                        R              
+                      revocado                         revocado en la fecha de firma digital (GDE004)        
+                                                       La fecha y hora de firma digital del evento no puede ser posterior a
+            9  GDE004 Fecha de firma digital del evento inválida 4008                         R              
+                                                       la Fecha y hora de aprobación en el SIFEN             
+                                                       Cuando el tipo de documento es Factura electrónica (GEC002
+                      Plazo de solicitud de cancelación de una FE inicia en 01), la fecha y hora de firma digital del evento (GDE004)
+            6  GDE004a                            4009                                        R              
+                      extemporáneo                     de cancelación no puede superar al plazo límite de 48 hs contadas
+                                                       desde la fecha y hora de aprobación en el SIFEN       
+                                                       Cuando el tipo de documento es Autofactura electrónica o Nota de
+                                                       crédito o Nota de débito o Nota de remisión (GEC002 inicia en 04
+                      Plazo de solicitud de cancelación distinto a una                                       
+            7  GDE004b                            4010 o 05 o 06 o 07), la fecha y hora de firma digital del evento (GDE004) R
+                      FE es extemporáneo                                                                     
+                                                       de cancelación no puede superar al plazo límite de 168 hs contadas
+                                                       desde la fecha y hora de aprobación en el SIFEN       
+          septiembre de 2019                                     134                                         
+
+===== PAGE 136 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+               11.6.2. REGLAS DE VALIDACIÓN PARA INUTILIZACIÓN                                               
+                                                                                                             
+                                                                                                             
+                                                                                                             
+           N° Val ID        Mensaje de la Validación Código           Observación             E              
+                     Número de timbrado inválido para el ambiente de Cuando en ambiente de prueba es obligatorio el uso del timbrado
+            9   GEI002                            4051                                        R              
+                     pruebas.                          de pruebas.                                           
+                     Número de timbrado no corresponde al El número de timbrado no corresponde al RUC del contribuyente
+            8  GEI002a                            4052                                        R              
+                     contribuyente                     facturador electrónico                                
+                     Número de timbrado no corresponde al medio de El número del timbrado no corresponde al medio de generación
+            9  GEI002b                            4053                                        R              
+                     generación                        para factura electrónica                              
+                     Código de establecimiento inválido para el El código del establecimiento no corresponde a un timbrado del
+           10   GEI003                            4054                                        R              
+                     timbrado informado                medio de generación para facturación electrónica      
+                     El código del punto de expedición es inválido El código del punto de expedición no corresponde a un timbrado
+           11   GEI004                            4055                                        R              
+                     para el timbrado informado        autorizado para el contribuyente                      
+                     Tipo de Documento no corresponde al Número El tipo de Documento no corresponde a un número de timbrado
+           12   GEI007                            4060                                        R              
+                     de Timbrado                       autorizado                                            
+                                                                                              R              
+           13   GEI005 Existe DTE en el rango informado 4065 Para el rango solicitado existe DTE en SIFEN    
+                                                       Dentro del rango solicitado para inutilización existen número de DE R
+           14  GEI005a Existe número inutilizado en el rango solicitado 4066                                 
+                                                       ya inutilizados en SIFEN                              
+                                                       La cantidad máxima de números en el rango debe ser menor o igual R
+           15   GEI006 Cantidad de números en el rango es inválida 4067                                      
+                                                       a 1000 (GEI006 – GEI005 menor o igual a 1000)         
+                                                       El número del final de rango (GEI006) debe ser mayor que el R
+           16  GEI006a Número final de rango es inválido 4068                                                
+                                                       número de inicio del rango (GEI005)                   
+                                                       El RUC del certificado utilizado para firmar los eventos no R
+           19  GDE008 Firmador no autorizado para realizar evento 4069                                       
+                                                       corresponde al emisor/electrónico                     
+                     Firma Digital inválida por certificado digital El certificado digital que se utilizó para firmar el evento está
+           20  GDE008a                            4070                                        R              
+                     revocado                          revocado en la fecha de firma digital (GDE004)        
+                                                       La fecha de firma digital del evento no puede ser posterior a la
+           21  GDE004 Fecha de firma digital del evento inválida 4071                         R              
+                                                       Fecha de SIFEN                                        
+          septiembre de 2019                                     135                                         
+
+===== PAGE 137 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+               11.6.3. REGLAS DE VALIDACIÓN PARA NOTIFICACIÓN – RECEPCIÓN DE/DTE                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                       No se puede realizar una notificación – recepción de DE luego de
+                     Incongruencia en el registro de eventos del un evento de desconocimiento.               
+            1  GEN001 receptor (hay un evento previo de conformidad 4113 No se puede realizar una notificación – recepción de DTE luego de R
+                     o disconformidad o desconocimiento) un evento de Conformidad parcial o total, Disconformidad o
+                                                       Desconocimiento                                       
+                     CDC del DTE ya cuenta con un evento de esta Sobre el CDC de un DE/DTE se puede realizar hasta un evento de
+            2  GEN002b                            4101                                        R              
+                     naturaleza                        notificación - recepción                              
+                                                       La estructura del CDC informado no corresponde (Longitud y/o
+            3  GEN002c CDC del DTE inválido       4102                                        R              
+                                                       dígito verificador)                                   
+                     Fecha de emisión del DE/DTE ha superado el El plazo del registro del evento ha superado los 45 días contados a
+            4  GEN003                             4103                                        AO             
+                     plazo para registro del evento    partir de la fecha de emisión                         
+                     Fecha de Recepción debe ser mayor o igual a la La fecha de emisión no puede ser mayor que la fecha de recepción
+            5  GEN004                             4104                                        R              
+                     fecha de emisión del DE/DTE       del DE/DTE                                            
+                                                       Es obligatorio informar Ruc del receptor cuando el tipo de receptor
+            6  GEN007 Ruc del Receptor requerido  4105                                        R              
+                                                       es Contribuyente (GEN005=1)                           
+                                                       Cuando el tipo de receptor es No Contribuyente (GEN005=2) no se
+            7  GEN007a Ruc del Receptor no se debe informar 4106                              R              
+                                                       debe informar el campo Ruc del Receptor (GEN007)      
+                     Dígito verificador del RUC del contribuyente Es obligatorio informar DV del receptor cuando el tipo de receptor
+            8  GEN008                             4107                                        R              
+                     receptor requerido                es Contribuyente (GEN005=1)                           
+                                                       Cuando el tipo de receptor es No Contribuyente (GEN005=2) no se
+                     Dígito verificador del RUC del contribuyente                                            
+            9  GEN008a                            4108 debe informar el campo Dígito verificador del RUC del contribuyente R
+                     receptor no se debe informar                                                            
+                                                       receptor (GEN008)                                     
+                     Tipo de documento de identidad del receptor Es obligatorio informar Tipo de documento de identidad del receptor
+           10  GEN009                             4109                                        R              
+                     requerido                         cuando el tipo de receptor es No contribuyente (GEN005=2)
+          septiembre de 2019                                     136                                         
+
+===== PAGE 138 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                                                                             
+                                                       Cuando el Tipo de documento de identidad del receptor 
+                     Tipo de documento de identidad del receptor no                                          
+           11  GEN009a                            4110 Contribuyente (GEN005=1) no se debe informar el tipo de R
+                     se debe informar                                                                        
+                                                       documento de identidad del receptor (GEN009a)         
+                                                       Es obligatorio informar Número de documento de identidad cuando
+           12  GEN010 Número de documento de identidad requerido 4111                         R              
+                                                       el tipo de receptor es No contribuyente (GEN005=2)    
+                                                       Cuando el Tipo de documento de identidad del receptor 
+                     Número de documento de identidad no se debe                                             
+           13  GEN010a                            4112 Contribuyente (GEN005=1) no se debe informar el documento de R
+                     informar                                                                                
+                                                       identidad del receptor (GEN010)                       
+               11.6.4. REGLAS DE VALIDACIÓN PARA EL EVENTO CONFORMIDAD                                       
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                      Incongruencia en el registro de eventos del                                            
+                                                       No se puede realizar una conformidad de DE/DTE luego de un
+           14  GCO001 receptor (hay un evento previo de 4156                                  R              
+                                                       evento de desconocimiento                             
+                      desconocimiento)                                                                       
+                                                       Sobre el CDC de un DE/DTE se puede realizar hasta dos eventos
+                      CDC del DTE ya cuenta con dos eventos de la                                            
+           15  GCO002                             4150 de conformidad (conformidad parcial luego una conformidad total, R
+                      misma naturaleza                                                                       
+                                                       en ese orden)                                         
+                                                       La estructura del CDC informado no corresponde (longitud y/o
+           16  GCO002b CDC del DTE inválido       4151                                        R              
+                                                       dígito verificador)                                   
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          septiembre de 2019                                     137                                         
+                                                                                                             
+
+===== PAGE 139 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                                                                             
+                                                       Cuando el CDC no se encuentra en la base de datos del SIFEN o
+                                                       el plazo del registro del evento es inválido:         
+                                                       Regla para plazo inválido:                            
+                                                       *Si el primer evento del receptor que se pretende registrar es
+                                                       conformidad, este no se puede realizar después de 45 días
+                                                       contados a partir de la fecha de emisión del DTE      
+                      CDC del DTE es inexistente o ha superado el                                            
+           17  GCO002c                            4152 *Si no es el primer evento del receptor y el último evento realizado R
+                      plazo para registro del evento                                                         
+                                                       por el receptor no es una disconformidad, la conformidad no puede
+                                                       superar los 45 días contados a partir de la fecha de emisión del
+                                                       DTE.                                                  
+                                                       *Si no es el primer evento del receptor y el último evento realizado
+                                                       por el receptor es una disconformidad, entonces la conformidad
+                                                       (evento correctivo) no puede superar los 15 días contados a partir
+                                                       de la fecha de realización del evento de disconformidad
+                      No se puede registrar la confirmación por CDC                                          
+           18  GCO002e del DTE cancelado o ajustado en su totalidad 4155 El CDC del DTE ya ha sido cancelado con anterioridad R
+                      por nota de crédito                                                                    
+                                                       Cuando el Tipo de Conformidad es parcial (GCO003=2) es
+           19  GCO004 Fecha estimada de Recepción requerida 4154 obligatorio informar el campo fecha estimada de recepción de la R
+                                                       mercadería (GCO004)                                   
+               11.6.5. REGLAS DE VALIDACIÓN PARA EL EVENTO DISCONFORMIDAD                                    
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                     Incongruencia en el registro de eventos del                                             
+                                                       No se puede realizar una conformidad de DE/DTE luego de un
+           20  GDI001 receptor (hay un evento previo de 4205                                  R              
+                                                       evento de desconocimiento                             
+                     desconocimiento)                                                                        
+                     CDC del DTE ya cuenta con un evento de esta Sobre el CDC de un DTE se puede realizar hasta un evento de
+           21  GDI002                             4200                                        R              
+                     naturaleza                        disconformidad                                        
+          septiembre de 2019                                     138                                         
+                                                                                                             
+
+===== PAGE 140 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                                                                             
+                                                       La estructura del CDC informado no corresponde (longitud y/o
+           22  GDI002b CDC del DTE inválido       4201                                        R              
+                                                       dígito verificador)                                   
+                                                       Cuando el CDC no se encuentra en la base de datos del SIFEN o
+                                                       el plazo del registro del evento es inválido:         
+                                                       Regla para plazo inválido:                            
+                                                       *Si el primer evento del receptor que se pretende registrar es
+                                                       disconformidad, este no se puede realizar después de 45 días
+                                                       contados a partir de la fecha de emisión del DTE      
+                     CDC inexistente o ha superado el plazo para                                             
+           23  GDI002c                            4202 *Si no es el primer evento del receptor y el último evento realizado R
+                     registro del evento                                                                     
+                                                       por el receptor no es una conformidad, la disconformidad no puede
+                                                       superar los 45 días contados a partir de la fecha de emisión del
+                                                       DTE.                                                  
+                                                       *Si no es el primer evento del receptor y el último evento realizado
+                                                       por el receptor es una conformidad, entonces la disconformidad
+                                                       (evento correctivo) no puede superar los 15 días contados a partir
+                                                       de la fecha de realización del evento de conformidad  
+                     No se puede registrar la disconformidad por CDC                                         
+           24  GDI002e                            4204 El CDC del DTE ya ha sido cancelado con anterioridad R
+                     del DTE cancelado                                                                       
+               11.6.6. REGLAS DE VALIDACIÓN PARA EL EVENTO DESCONOCIMIENTO DE/DTE                            
+          N° Val ID        Resultado de la Validación Código          Observación              E             
+                      CDC del DTE ya cuenta con un evento de esta Sobre el CDC de un DTE se puede realizar hasta un evento de
+           25  GED002b                            4251                                        R              
+                      naturaleza                       desconocimiento                                       
+                                                       La estructura del CDC informado no corresponde (longitud y/o dígito
+           26  GED002c CDC del DTE inválido       4252                                        R              
+                                                       verificador)                                          
+                                                                                                             
+                                                                                                             
+          septiembre de 2019                                     139                                         
+                                                                                                             
+
+===== PAGE 141 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Resultado de la Validación Código          Observación              E             
+                                                                                                             
+                      Fecha de emisión del DE/DTE ha superado el El plazo del registro del evento ha superado los 45 días contados a
+           27  GED003                             4253                                        AO             
+                      plazo para registro del evento   partir de la fecha de emisión                         
+                      Fecha de Recepción debe ser mayor a la fecha La fecha de emisión no puede ser mayor que la fecha de recepción
+           28  GED004                             4254                                        R              
+                      de emisión del DE/DTE            del DE/DTE                                            
+                                                       Es obligatorio informar Ruc del receptor cuando el receptor es
+           29  GED007 Ruc del Receptor requerido  4255                                        R              
+                                                       contribuyente (GED005=1)                              
+                                                       Cuando el tipo de receptor es No Contribuyente (GED005=2) no se
+           30  GEN007a Ruc del Receptor no se debe informar 4256                              R              
+                                                       debe informar el campo Ruc del Receptor (GED007)      
+                      Dígito verificador del RUC del contribuyente                                           
+                                                       Es obligatorio informar DV del receptor cuando el receptor es
+           31  GED008 receptor requerido          4257                                        R              
+                                                       contribuyente (GED005=1)                              
+                      Dígito verificador del RUC del contribuyente Cuando el tipo de receptor es No Contribuyente (GED005=2) no se
+           32  GEN008a receptor no se debe informar 4258 debe informar el campo Dígito verificador del RUC del contribuyente R
+                                                       receptor (GED008)                                     
+                                                       Es obligatorio informar el tipo de documento de identidad del
+                      Tipo de documento de identidad del receptor                                            
+           33  GED009                             4259 receptor cuando el tipo de receptor es No contribuyente R
+                      requerido                                                                              
+                                                       (GED005=2)                                            
+                                                       Cuando el Tipo de Receptor es Contribuyente (GED005=1) no es
+                      Tipo de documento de identidad del receptor                                            
+           34  GED009a                            4260 necesario informar el tipo de documento de identidad del receptor R
+                      no se debe informar                                                                    
+                                                       (GED009)                                              
+                                                       Es obligatorio informar el número de documento de identidad del
+                      Número de documento de identidad requerido                                             
+           35  GED010                             4261 receptor cuando el tipo de receptor es No contribuyente R
+                                                       (GED005=2)                                            
+                      Número de documento de identidad no se debe Cuando el Tipo de Receptor es Contribuyente (GED005=1) no es
+           36  GED10a informar                    4262 necesario informar el número de documento de identidad del R
+                                                       receptor (GED010a)                                    
+          septiembre de 2019                                     140                                         
+
+===== PAGE 142 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+               11.6.7. REGLAS DE VALIDACIÓN PARA EL EVENTO POR ACTUALIZACIÓN DE DATOS: DATOS DEL TRANSPORTE  
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                                                                             
+                      El Departamento, el Distrito y la Ciudad del local Debe haber relación entre el departamento (GET004), el distrito
+            1   GET004                            4300                                        R              
+                      de entrega no están relacionados (GET006) y la ciudad (GET008)                         
+                      Código del departamento del local de la entrega Cuando el motivo del evento es Cambio del local de la entrega
+                                                  4301                                                       
+            2  GET004a requerido para el motivo Cambio del local de la (GET003=1), es obligatorio informar el código del departamento del R
+                      entrega                          local de la entrega (GET004)                          
+                                                       Cuando se informa el código del departamento del local de la
+                      Descripción del departamento del local de la 4302                                      
+            3   GET005                                 entrega (GET004), es obligatorio informar la descripción del R
+                      entrega es requerida                                                                   
+                                                       departamento del local de la entrega (GET005)         
+                      Descripción del departamento del local de la 4303 Descripción del departamento del local de la entrega no coincidente
+            4  GET005a                                                                        R              
+                      entrega no corresponde al código con lo informado en el campo GET004                   
+                                                       Cuando se informa el código del distrito del local de la entrega
+                      Descripción del distrito del local de la entrega es 4304                               
+            5   GET007                                 (GET006), es obligatorio informar la descripción del distrito del local R
+                      requerida                                                                              
+                                                       de la entrega (GET007)                                
+                      Descripción del distrito del local de la entrega no 4305 Descripción del distrito del local de entrega no coincidente con lo
+            6  GET007a                                                                        R              
+                      corresponde al código            informado en el campo GET006                          
+                      Código de la ciudad del local de la entrega Cuando el motivo del evento es Cambio del local de la entrega
+                                                  4306                                                       
+            7   GET008 requerido para el motivo Cambio del local de la (GET003=1), es obligatorio informar el código de la ciudad del local R
+                      entrega                          de la entrega (GET004)                                
+                                                       Cuando se informa el código de la ciudad del local de la entrega
+                      Descripción de la ciudad del local de la entrega 4307                                  
+            8   GET009                                 (GET008), es obligatorio informar la descripción de la ciudad del R
+                      es requerida                                                                           
+                                                       local de la entrega (GET009)                          
+                      Descripción de la ciudad del local de la entrega 4308 Descripción de la ciudad del local de la entrega no coincidente con
+            9  GET009a                                                                        R              
+                      no corresponde al código         lo informado en el campo GET008                       
+                                                       Cuando el motivo del evento es Cambio del local de la entrega
+                      Dirección del local de la entrega requerida para 4309                                  
+           10   GET010                                 (GET003=1), es obligatorio informar la dirección del local de la R
+                      el motivo Cambio del local de la entrega                                               
+                                                       entrega (GET010)                                      
+          septiembre de 2019                                     141                                         
+
+===== PAGE 143 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                                                                             
+                      Número de casa del local de la entrega Cuando el motivo del evento es Cambio del local de la entrega
+                                                  4310                                                       
+           11   GET011 requerido para el motivo Cambio del local de la (GET003=1), es obligatorio informar el número de casa del local de R
+                      entrega                          la entrega (GET011)                                   
+                                                       Cuando el motivo del evento es Cambio del chofer (GET003=2), es
+                      Nombre y apellido del chofer requerido para el 4311                                    
+           12   GET013                                 obligatorio informar el nombre y apellido del chofer (GET013) R
+                      motivo Cambio del chofer                                                               
+                                                       Cuando el motivo del evento es Cambio del chofer (GET003=2), es
+                      Número de documento de identidad del chofer 4312                                       
+           13   GET014                                 obligatorio informar el número de documento de identidad del R
+                      requerido para el motivo Cambio del chofer                                             
+                                                       chofer (GET014)                                       
+                                                       Cuando el motivo del evento es Cambio del transportista
+                      Naturaleza del transportista requerida para el                                         
+           14   GET015                            4313 (GET003=3), es obligatorio informar la naturaleza del transportista R
+                      motivo Cambio del transportista                                                        
+                                                       (GET015)                                              
+           15                                     4314 Se requiere informar el número de RUC si la naturaleza del
+                GET016 RUC del transportista no informado                                     R              
+                                                       transportista es igual a contribuyente (GET015 = 1)   
+           16                                     4315 El RUC del transportista informado no existe en la base de datos
+               GET016a RUC del transportista inexistente                                      R              
+                                                       de Marangatu                                          
+                                                       El RUC del transportista debe contar con un estado distinto a
+           17                                     4316                                                       
+               GET016b El RUC del transportista se encuentra inactivo CANCELADO, CANCELADO DEFINITIVO o SUSPENSIÓN R
+                                                       TEMPORAL en Marangatu al momento de la emisión del DE 
+                                                       Si la naturaleza del transportista es distinta a contribuyente
+           18                                     4317                                                       
+               GET016c RUC del transportista no requerido (GET015 ≠ 1) el RUC del transportista (GET016) no debe ser R
+                                                       informado                                             
+           19         Dígito Verificador del RUC del transportista 4318 El Dígito Verificador ingresado (GET017) no corresponde al módulo
+                GET017                                                                        R              
+                      incorrecto                       11 del RUC (GET016)                                   
+                                                       Cuando el motivo del evento es cambio del transportista
+           20         Nombre o razón social del transportista es 4319                                        
+                GET018                                 (GET003=3), es obligatorio informar el nombre o razón social del R
+                      requerido para el motivo del evento                                                    
+                                                       transportista (GET018)                                
+                                                       Se requiere informar el tipo de documento de identidad si la
+           21         Tipo de documento de identidad del 4320                                                
+                GET019                                 naturaleza del transportista es igual a NO contribuyente (GET015 R
+                      transportista no informado                                                             
+                                                       =2)                                                   
+          septiembre de 2019                                     142                                         
+
+===== PAGE 144 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                                                                             
+                                                       Si la naturaleza del transportista es igual a contribuyente (GET015
+           22         Tipo de documento de identidad del 4321                                                
+               GET019a                                 =1) el tipo de documento de identidad del transportista (GET019) R
+                      transportista no requerido                                                             
+                                                       no debe ser informado                                 
+                                                       Si se informa el código de tipo de documento de identidad del
+           23         Descripción del tipo de documento de identidad 4322                                    
+                GET020                                 transportista (GET019), es obligatorio indicar la descripción del R
+                      del transportista no informada                                                         
+                                                       mismo (GET020)                                        
+           24         Descripción del tipo de documento de identidad 4323 Descripción del tipo de documento de identidad del transportista
+               GET020a                                                                        R              
+                      del transportista no corresponde al código (GET020) no coincidente con lo informado en el campo GET019
+                                                       Si se informa el código de tipo de documento de identidad del
+           25         Número de documento de identidad del 4324                                              
+                GET021                                 transportista (GET019), el número de dicho documento es R
+                      transportista no informado                                                             
+                                                       requerido (GET020)                                    
+           26         Tipo de transporte requerido para el motivo Cuando el motivo del evento es cambio de vehículo (GET003=4),
+                GET022                            4313                                        R              
+                      Cambio de vehículo               es obligatorio informar el tipo de transporte (GET022)
+                                                  4314 Cuando se informa el código de tipo de transporte (GET022), es
+           27   GET023 Descripción del tipo de transporte es requerida                        R              
+                                                       obligatorio informar la descripción del tipo de transporte (GET023)
+           28         Descripción del tipo de transporte no 4315 Descripción del tipo de transporte no coincidente con lo informado
+               GET023a                                                                        R              
+                      corresponde al código            en el campo GET022                                    
+           29         Modalidad del transporte requerido para el 4316 Cuando el motivo del evento es cambio de vehículo (GET003=4),
+                GET024                                                                        R              
+                      motivo Cambio de vehículo        es obligatorio informar la modalidad del transporte (GET024)
+                                                       Cuando se informa el código de la modalidad del transporte
+           30         Descripción de la modalidad del transporte es 4317                                     
+                GET025                                 (GET024), es obligatorio informar la descripción de la modalidad del R
+                      requerida                                                                              
+                                                       transporte (GET025)                                   
+           31         Descripción de la modalidad del transporte no 4318 Descripción de la modalidad del transporte no coincidente con lo
+               GET025a                                                                        R              
+                      corresponde al código            informado en el campo GET024                          
+                      Tipo de vehículo requerido para el motivo 4319 Cuando el motivo del evento es cambio de vehículo (GET003=4),
+           32   GET026                                                                        R              
+                      Cambio de vehículo               es obligatorio informar el tipo de vehículo (GET026)  
+           33         Marca del vehículo requerida para el motivo 4320 Cuando el motivo del evento es cambio de vehículo (GET003=4),
+               GET027                                                                         R              
+                      Cambio de vehículo               es obligatorio informar la marca del vehículo (GET027)
+          septiembre de 2019                                     143                                         
+
+===== PAGE 145 / 217 =====
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          N° Val ID        Mensaje de la Validación Código           Observación              E              
+                                                                                                             
+                                                       Cuando el motivo del evento es cambio de vehículo (GET003=4),
+           34         Tipo de identificación del vehículo requerido 4321                                     
+               GET028                                  es obligatorio informar el tipo de identificación del vehículo R
+                      para el motivo Cambio de vehículo                                                      
+                                                       (GET028)                                              
+           35                                     4322 Se requiere el número de identificación del vehículo cuando el tipo
+               GET029 Tipo de identificación del vehículo no informado                        R              
+                                                       de identificación del vehículo es 1 (GET028=1)        
+           36                                     4323 Se requiere número de matrícula del vehículo cuando el tipo de
+               GET030 Número de matrícula del vehículo no informado                           R              
+                                                       identificación del vehículo es 2 (GET028=2)           
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+                                                                                                             
+          septiembre de 2019                                     144                                         
+                                                                                                             
+

@@ -1,0 +1,16 @@
+{
+  "agent": "/root/sifen_snapshot_r2",
+  "attempt": 1,
+  "completed_observation_utc": "2026-11-18T10:41:33.289881+00:00",
+  "fixture_prepared_utc": "2026-11-18T10:40:07.065862+00:00",
+  "fixture_changed_files": {},
+  "fixture_file_count": 161,
+  "model": "not exposed",
+  "reasoning": "not exposed",
+  "usage": "not exposed",
+  "native_start_time": "not exposed; native invocation follows fixture preparation",
+  "network_telemetry": "not independently exposed",
+  "scope": "local source answer and fixture state; not process isolation",
+  "elapsed_upper_bound_seconds": 86.224019,
+  "limit_seconds": 600
+}

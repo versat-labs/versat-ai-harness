@@ -1,0 +1,73 @@
+
+===== PAGE 1 / 1 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                   NOTA TÉCNICA N° 25                               
+            Fecha: 23/04/2024                                                       
+                                                                                    
+            Fecha puesta a disposición para el Ambiente de Test 28/04/2025          
+            Fecha puesta a disposición para el Ambiente de Producción 28/04/2025    
+                                                                                    
+            Referencia: Correcciones y ajustes sobre el Manual Técnico versión 150  
+                                                                                    
+                                                                                    
+            1. Validaciones                                                         
+                                                                                    
+              1.1. En la sección 11.6.1 REGLAS DE VALIDACIÓN PARA CANCELACIÓN se excluye la siguiente validación:
+                 (Página 134)                                                       
+                                                                                    
+             ID     Mensaje de la Validación Código Observación         E           
+                                                                                    
+                                          Cuando el último evento del receptor sobre un CDC
+                  CDC ya se ha confirmado por el                                    
+           GEC002c                   4004 (GEC002) es una confirmación parcial o total, no se R
+                  receptor                                                          
+                                          permite realizar la cancelación por parte del emisor
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            Histórico del Documento                                                 
+                                                                                    
+                         FECHA DE              FECHA DE                             
+             AUTOR                    REVISOR           PRINCIPALES ALTERACIONES    
+                        ELABORACIÓN            REVISIÓN                             
+                                                        Elaboración del Documento,  
+           Jonathan Garay 23/04/2025 Martha Rojas 23/04/2025                        
+                                                        Formato de Campos y Validaciones
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    

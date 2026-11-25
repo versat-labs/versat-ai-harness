@@ -1,0 +1,79 @@
+
+===== PAGE 1 / 1 =====
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          Sistema Integrado de Facturación Electrónica Nacional
+                                                                                    
+                                    NOTA TÉCNICA N° 12                              
+                                                                                    
+            Fecha: 21/02/2023                                                       
+                                                                                    
+            Referencia: Correcciones y ajustes sobre el MT versión 150              
+            1. Validaciones                                                         
+                                                                                    
+              1.1. En Campos inherentes a la operación comercial (D010-D099) se agrega la siguiente validación:
+                                                                                    
+             ID       Mensaje de la Validación Código  Observación       E          
+                   Moneda de la operación no Si el tipo de documento informado es Autofactura
+            D022   corresponde al tipo de documento 1213 Electrónica (C002=4) la moneda de la operación R
+                   informado                 debe ser igual a PYG (D015=PYG)        
+            Observación: Conforme a lo dispuesto en el Dictamen DEINT N° 344 de fecha 27 de Diciembre del 2022
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+            Histórico del Documento                                                 
+                                                                                    
+                             FECHA DE               FECHA DE                        
+               AUTOR                     REVISOR            PRINCIPALES ALTERACIONES
+                            ELABORACIÓN             REVISIÓN                        
+                                                            Validación 1213 – Conforme
+             Jonathan Garay 21/02/2023  José Vernazza 21/02/2023 lo dispuesto en el Dictamen
+                                                            DEINT Nro. 344          
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                          1                                         
+                                                                                    
+                                                                                    
+                                                                                    
