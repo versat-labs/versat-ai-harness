@@ -6,6 +6,10 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+### Fixed
+
+- Validate the resources of every packaged Skill after relocation, including SIFEN.
+
 ### Added
 
 - index-resolved public GitHub security policy, read-only live/offline verification, safe configuration rendering and mandatory readiness guidance for bootstrap, audit and maintenance; exact release publication and consumer adoption remain separate.

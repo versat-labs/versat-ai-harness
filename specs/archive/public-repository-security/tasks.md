@@ -129,79 +129,79 @@ validation:
   results:
   - check: CHECK-001
     result: pass
-    evidence: docs/validation/public-repository-security/CHECK-001.json
-    revision: public-security-corrected-source-2026-11-24/9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_before: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_after: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
+    evidence: docs/validation/public-repository-security/post-merge/CHECK-001.json
+    revision: post-merge-5775125/31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_before: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_after: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
     context:
       execution: local
-      environment: macOS; prepared Python validation environment; corrected working source on c191f3b; local offline
+      environment: macOS; prepared Python validation environment; repair on 5775125; local offline
         validation/review
       observed: true
   - check: CHECK-002
     result: pass
-    evidence: docs/validation/public-repository-security/CHECK-002.json
-    revision: public-security-corrected-source-2026-11-24/9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_before: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_after: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
+    evidence: docs/validation/public-repository-security/post-merge/CHECK-002.json
+    revision: post-merge-5775125/31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_before: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_after: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
     context:
       execution: local
-      environment: macOS; prepared Python validation environment; corrected working source on c191f3b; local offline
+      environment: macOS; prepared Python validation environment; repair on 5775125; local offline
         validation/review
       observed: true
   - check: CHECK-003
     result: pass
-    evidence: docs/validation/public-repository-security/CHECK-003.json
-    revision: public-security-corrected-source-2026-11-24/9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_before: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_after: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
+    evidence: docs/validation/public-repository-security/post-merge/CHECK-003.json
+    revision: post-merge-5775125/31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_before: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_after: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
     context:
       execution: local
-      environment: macOS; prepared Python validation environment; corrected working source on c191f3b; local offline
+      environment: macOS; prepared Python validation environment; repair on 5775125; local offline
         validation/review
       observed: true
   - check: CHECK-004
     result: pass
-    evidence: docs/validation/public-repository-security/CHECK-004.json
-    revision: public-security-corrected-source-2026-11-24/9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_before: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_after: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
+    evidence: docs/validation/public-repository-security/post-merge/CHECK-004.json
+    revision: post-merge-5775125/31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_before: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_after: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
     context:
       execution: local
-      environment: macOS; prepared Python validation environment; corrected working source on c191f3b; native sequential
-        scenarios and independent replay, bounded interruptions recorded
+      environment: macOS; prepared Python validation environment; repair on 5775125; native sequential
+        scenarios and independent replay
       observed: true
   - check: CHECK-005
     result: pass
-    evidence: docs/validation/public-repository-security/CHECK-005.json
-    revision: public-security-corrected-source-2026-11-24/9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_before: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_after: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
+    evidence: docs/validation/public-repository-security/post-merge/CHECK-005.json
+    revision: post-merge-5775125/31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_before: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_after: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
     context:
       execution: local
-      environment: macOS; prepared Python validation environment; corrected working source on c191f3b; local offline
+      environment: macOS; prepared Python validation environment; repair on 5775125; local offline
         validation/review
       observed: true
   - check: CHECK-006
     result: pass
-    evidence: docs/validation/public-repository-security/CHECK-006.json
-    revision: public-security-corrected-source-2026-11-24/9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_before: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_after: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
+    evidence: docs/validation/public-repository-security/post-merge/CHECK-006.json
+    revision: post-merge-5775125/31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_before: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_after: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
     context:
       execution: local
-      environment: macOS; prepared Python validation environment; corrected working source on c191f3b; trusted process-scoped
+      environment: macOS; prepared Python validation environment; repair on 5775125; trusted process-scoped
         elviszoz administrative GET observations
       observed: true
   - check: CHECK-007
     result: pass
-    evidence: docs/validation/public-repository-security/CHECK-007.json
-    revision: public-security-corrected-source-2026-11-24/9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_before: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
-    input_digest_after: 9142f1310d62a46b2dfcd00fae3c1845bb776c12fb05debe00351b0069b2614c
+    evidence: docs/validation/public-repository-security/post-merge/CHECK-007.json
+    revision: post-merge-5775125/31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_before: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
+    input_digest_after: 31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334
     context:
       execution: local
-      environment: macOS; prepared Python validation environment; corrected working source on c191f3b; local offline
+      environment: macOS; prepared Python validation environment; repair on 5775125; local offline
         validation/review
       observed: true
   assessments:
@@ -212,7 +212,7 @@ validation:
     result: pass
     checks:
     - CHECK-001
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Canonical typed policy resolves through core.always for every supported profile/criticality; exact-provider
       fixture checks include its digest, and supervised agents resolve the same index.
   - obligation:
@@ -223,7 +223,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-003
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Policy/schema validation rejects missing, duplicate and unsupported contracts; private-target and
       identity tests cannot assert public readiness, and exact-provider failures stay explicit.
   - obligation:
@@ -234,7 +234,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Independent classic and real-wire ruleset mutations check each approval flag; fresh main observations
       require one review, CODEOWNER, stale dismissal and last-push approval.
   - obligation:
@@ -245,7 +245,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Independent no-bypass witnesses compose across sources; admin/reviewer bypass and force/deletion
       mutations cannot pass. Live classic protection enforces administrators and blocks both operations.
   - obligation:
@@ -256,7 +256,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Custom required contexts survive assessment and staging; absent/disabled/permissive protection
       cannot establish readiness. Independent live comparison preserves structural-validation.
   - obligation:
@@ -267,7 +267,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Canonical global and overriding rows retain both designated owners, verified at the main SHA with
       clean syntax and admin permissions; review threshold is one, consistent with GitHub any-owner semantics.
   - obligation:
@@ -278,7 +278,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-003
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Empty/unrelated overrides, syntax errors, wrong base and insufficient/missing owner permission
       evidence fail or remain unverified; none establishes compliance.
   - obligation:
@@ -289,7 +289,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Both active branch/tag witnesses include ~ALL without exclusions and only RepositoryRole 5 always
       bypass for all three operations; main remains independently protected.
   - obligation:
@@ -300,7 +300,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-003
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Removed operations, non-admin or unsupported bypass, partial patterns/exclusions and permissive
       fetch-and-merge settings cannot pass the relevant control.
   - obligation:
@@ -311,7 +311,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Fresh authenticated repository observations and independent GET comparison confirm both secret
       feature statuses enabled.
   - obligation:
@@ -322,7 +322,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-003
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Each disabled feature is independently detected; omitted feature metadata and unavailable administrative
       responses stay unverified rather than inheriting account defaults.
   - obligation:
@@ -333,7 +333,7 @@ validation:
     checks:
     - CHECK-003
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: The actual GET-only collector records repository identity, pinned main, effective/inherited rule
       details, owners and permissions, secret and participation settings, policy/provider identity and observation
       interval.
@@ -345,7 +345,7 @@ validation:
     checks:
     - CHECK-002
     - CHECK-003
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Controlled transport/CLI tests preserve errors, hidden fields, unsafe/truncated pagination and
       instability without readiness; per-control diagnostics identify known violations and unknowns.
   - obligation:
@@ -356,7 +356,7 @@ validation:
     checks:
     - CHECK-003
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Policy and offline snapshot reports always keep public_ready false; fresh native bootstrap/audit/maintenance
       observations preserve that distinction even when local tests pass.
   - obligation:
@@ -367,7 +367,7 @@ validation:
     checks:
     - CHECK-003
     - CHECK-005
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Transport tests assert explicit scoped GET arguments and sanitized errors; inspection confirms
       no mutation endpoint, secret-alert read or credential export, and CI remains unprivileged.
   - obligation:
@@ -378,7 +378,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Real bootstrap Skill resolves the index and stages actual renderer assets over the prepared shared-base
       consumer; its guide requires live verification after authorized configuration, and the case with unavailable
       access withholds readiness.
@@ -389,7 +389,7 @@ validation:
     result: pass
     checks:
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: The native bootstrap case preserves product/profile material and reports unavailable administrative
       identity, controls and exact installed-provider adoption without inventing authorization.
   - obligation:
@@ -399,7 +399,7 @@ validation:
     result: pass
     checks:
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Real audit Skill executes the version-matched snapshot verifier and reports separately stale-review
       and push-protection failures with severity, evidence and remediation, plus live/provider gaps.
   - obligation:
@@ -409,7 +409,7 @@ validation:
     result: pass
     checks:
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Audit fixture local tests pass while security assessment fails; all original files remain unchanged,
       as independently verified and replayed.
   - obligation:
@@ -420,7 +420,7 @@ validation:
     checks:
     - CHECK-004
     - CHECK-005
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Real maintenance Skill compares the exact source contract, stages a reviewable migration and surfaces
       ownership conflicts while preserving stronger required checks and existing content.
   - obligation:
@@ -432,7 +432,7 @@ validation:
     - CHECK-003
     - CHECK-004
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Unavailable live remediation remains an explicit gap in maintenance; original provider lock/content
       is unchanged. Actual authorized Harness configuration is freshly verified through separate read-only collection.
   - obligation:
@@ -444,7 +444,7 @@ validation:
     - CHECK-002
     - CHECK-005
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Current public repository settings permit forks and PR creation for all; restrictions target upstream
       branches/tags, with independent strict main protection. Documentation preserves the contribution route without
       granting upstream write access.
@@ -457,7 +457,7 @@ validation:
     - CHECK-003
     - CHECK-005
     - CHECK-007
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: 'Workflow comparison confirms unchanged pull_request handling, contents: read and persist-credentials:
       false; no privileged fork checkout, administrative secret or write-capable job was introduced.'
   - obligation:
@@ -468,7 +468,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Renderer is conditional over shared base rather than duplicated profiles; idempotence/conflict
       tests and native cases preserve ownership/custom content and stage differences outside originals.
   - obligation:
@@ -478,7 +478,7 @@ validation:
     result: pass
     checks:
     - CHECK-005
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Actual command walkthrough matches the technical procedure; all four affected guides have aligned
       EN/PT/ES instructions for mode, provider, permissions, recovery and one eligible owner.
   - obligation:
@@ -489,7 +489,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-005
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: VERSION/plugin/marketplace pins are unchanged; exact consumer verification remains enforced, source
       reports disclose dirty development identity, and native maintenance does not rewrite the consumer lock.
   - obligation:
@@ -499,7 +499,7 @@ validation:
     result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Independent control mutations include classic/ruleset composition and actual GitHub wire names,
       review flags, bypass, ref coverage, ownership and both secret features.
   - obligation:
@@ -511,7 +511,7 @@ validation:
     - CHECK-003
     - CHECK-004
     - CHECK-005
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Mock transport tests require no production access; corrected-source native cases retain original
       artifacts, command records and independent copies/replays within bounded attempts. Stale earlier attempts
       remain preserved.
@@ -522,7 +522,7 @@ validation:
     result: pass
     checks:
     - CHECK-007
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Complete required validation passes quality, package, policy, SDD and all validator/execution suites;
       these results remain separate from authenticated live readiness.
   - obligation:
@@ -532,7 +532,7 @@ validation:
     result: pass
     checks:
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Implemented live verifier and independent authenticated GET comparison confirm the actual Harness
       policy, unchanged main/checks and participation, with actual admin read access established.
   - obligation:
@@ -543,7 +543,7 @@ validation:
     checks:
     - CHECK-003
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Final report carries repository/provider/policy identity, observation times, pinned SHA and stable
       sample hashes; prior development readbacks are retained separately and never relabeled as final execution.
   - obligation:
@@ -553,7 +553,7 @@ validation:
     result: pass
     checks:
     - CHECK-002
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Classic and independent ruleset controls preserve strict main; per-control bypass, force, deletion
       and review mutations cannot pass, and required contexts remain visible.
   - obligation:
@@ -564,7 +564,7 @@ validation:
     checks:
     - CHECK-005
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Public fork/PR settings are live-enabled; scope stays on upstream branch/tag rules, with unchanged
       contribution guidance and no privileged fork execution.
   - obligation:
@@ -575,7 +575,7 @@ validation:
     checks:
     - CHECK-003
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Inaccessible API data and ambiguous permission errors remain unknown; complete live settings are
       confirmed through actual admin access and independent GET comparison.
   - obligation:
@@ -587,7 +587,7 @@ validation:
     - CHECK-004
     - CHECK-005
     - CHECK-006
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Native Skills remain within local preparation/read-only scopes, authorized Harness state is freshly
       observed, and configuration mutations remain outside verifier execution.
   - obligation:
@@ -597,7 +597,7 @@ validation:
     result: pass
     checks:
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: Fresh actual bootstrap/audit/maintenance cases preserve their separate responsibilities and withhold
       readiness under unavailable evidence, known drift and unresolved conflict.
   - obligation:
@@ -608,7 +608,7 @@ validation:
     checks:
     - CHECK-001
     - CHECK-004
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: One conditional base extension and index-resolved exact provider/lock checks apply across profiles;
       original consumer identity/custom content survives native staging.
   - obligation:
@@ -619,7 +619,7 @@ validation:
     checks:
     - CHECK-003
     - CHECK-007
-    evidence: docs/validation/public-repository-security/README.md
+    evidence: docs/validation/public-repository-security/post-merge/README.md
     explanation: All existing tests, package/SDD and quality checks remain required; local policy/snapshot success
       stays distinct from fresh authenticated readiness.
   findings:
@@ -750,17 +750,11 @@ The developer approved Tasks R1 and explicitly authorized implementation: "Aprov
 
 ## Progress
 
-Documentary closure is prepared in `specs/archive/public-repository-security/`; the unique dossier was moved after selected delivery passed. This is local preparation for review, not evidence of merge or release.
-
-Implementation and current acceptance are complete on the corrected source. All ten tasks are checked; the execution-baseline paragraphs above preserve their historical planning state. The approved Tasks digest is unchanged. The API wire-format finding was fixed within scope, with prior attempts preserved and a separately recorded bounded source-change rerun.
-
-The current seven CHECKs pass, covering all 31 local scenarios and seven regression obligations. CHECK-007 passes 197 validator tests and 48 execution tests (245 total), including 41 security tests. Three actual Skill scenarios have original reports and independent replay; the bootstrap agent was stopped after functional completion to keep review within its bound, as explicitly recorded. Final live and independent administrative readback pass without account switching or remote mutation.
+PR #48 merged as 5775125 after SIFEN joined main. Post-merge validation found a stale fixed-count marketplace test and stale input snapshots for all seven checks. The repair checks the actual copied package against the expected catalog and reruns the seven approved checks on the combined source.
 
 ## Validation evidence
 
-See `docs/validation/public-repository-security/README.md`, the seven CHECK JSON records/logs, original scenario archives, replay archives, `live-report.json` and `independent-readback.json`. Source identity is the corrected working-tree snapshot; the commit remains the development base, not a fabricated release. Every final check has matching before/after/current input hashes. Earlier runs and their invalidation are retained under `attempt-01` and in development observations.
-
-Local completion prepares documentary closure and review only. Remote PR checks, human approval, merge, release publication and exact consumer adoption remain separate facts.
+Current results and scenario observations are in `docs/validation/public-repository-security/post-merge/`. The original pre-merge records remain in its parent directory. The full run executed 197 validator, 48 execution and 15 SIFEN tests. The archived plan and approval bindings are retained.
 
 ## Delivery
 

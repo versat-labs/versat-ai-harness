@@ -1,5 +1,7 @@
 # Public security acceptance evidence
 
+The [post-merge validation record](post-merge/README.md) covers the integrated source after PR #48. The records below describe the original PR.
+
 This record concerns implemented source on `codex/public-repository-security`, based on Harness 0.4.0 commit `c191f3b126c659fbabfd4ed3d40b474407cfd26a`. It does not claim release publication, installed consumer adoption, remote PR CI, human review or merge. Current checks bind the approved source input scope through matching before/after SHA-256 snapshots.
 
 ## Deterministic checks

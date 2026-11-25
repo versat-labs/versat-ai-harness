@@ -1,0 +1,91 @@
+{
+  "case": "public-maintenance-conflict",
+  "input_files_unchanged": true,
+  "original_manifest": {
+    ".github/CODEOWNERS": "35955f10968214b7a2fdafa5f4b56bf7c19b3d50f192dccde5830ad70d1e22dd",
+    ".versat/project.yaml": "606d835ceba7133a4b8519ba6ef7ca3795364e0afbb46dbbe65781b05b0c597a",
+    ".versat/standards.lock": "c114e52dae3dad34e6a5bea796f5adf7d5d2c8160f017c962d2cc3609fa692c2",
+    "AGENTS.md": "172a31d811c7887b681b6df43253d31d15481e367c5ee746204e9df6547f5822",
+    "inputs/context.json": "0bb93bbd628964a03c1392d4759c8e49b0041d073635a09c454faaf66cd602e6",
+    "inputs/settings.json": "8d0fc678dc6a9e3ccda18bf12f35f366fc8e40d5da231469ff8ef24dbeb917b0",
+    "specs/product/overview.md": "a1673d191817b403ef5ccbaf313cb9b170b86c2e78d0e06daf738ceec0c23f47",
+    "tests/test_amount.py": "2fc0c09e57c9a6256d2b42910f5b44969d9488e7fe4ca97a2c81a4d6510daa64"
+  },
+  "original_output_manifest": {
+    "after-report.json": "59143df1cd153e0924ccf6d0fd3d0d60fb6a4a60d0029d2a414385370b8e5c32",
+    "after.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "after.stdout": "99491a41ebd2e961bc5dac27e60eac753c4ff5a27f674161c6f4b06117b6b07d",
+    "before-report.json": "ffb954d26be2b5c72e0086f8ef8be97690645beb988d1160f255d0c4b53cd4b7",
+    "before.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "before.stdout": "51443d7557ccc0de8db5ff54a8ff8c77531e27d15bd33ed212ba3fe9312a0bb0",
+    "commands.json": "e7bafc2d10176f9047334b550e7d4beca3dc7bbc1d77f61c3f5840e831d9ffda",
+    "consumer-tests.stderr": "032a696d1d91f61829d0733e2fb5f3056ca404eced62a16e4daec5590c81ba20",
+    "consumer-tests.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "findings.md": "6ad8c814914141fc0b1b4128c88339bf5c632a4d9d9197c7a6f7021c6d93b570",
+    "migration.patch": "8782a6f5b08f469d4a60acbfb718fbd1f4a23336237387f674ec6ce7ff221f25",
+    "modeled-after.json": "4fdf42cf54e1b51c9f566eb33780a0677e58bcbcd8fdf6a75ad730be9ddee744",
+    "prepare.py": "a139ba7ea35fdf19ddaac2c5fa01bc68dfbc055b65528365934c7bc3e894f69b",
+    "project-after.json": "426652d75e1903caded7453280128a8291aa9a6cdd0fe11e978abcec37435c90",
+    "project-before.json": "426652d75e1903caded7453280128a8291aa9a6cdd0fe11e978abcec37435c90",
+    "proposal/.github/CODEOWNERS": "d1a8100d9f8b1ff7a81aabc2506f23fc7461492599a98090d99572295b000d08",
+    "proposal/.versat/project.yaml": "606d835ceba7133a4b8519ba6ef7ca3795364e0afbb46dbbe65781b05b0c597a",
+    "proposal/.versat/standards.lock": "c114e52dae3dad34e6a5bea796f5adf7d5d2c8160f017c962d2cc3609fa692c2",
+    "proposal/AGENTS.md": "172a31d811c7887b681b6df43253d31d15481e367c5ee746204e9df6547f5822",
+    "proposal/inputs/context.json": "0bb93bbd628964a03c1392d4759c8e49b0041d073635a09c454faaf66cd602e6",
+    "proposal/inputs/settings.json": "8d0fc678dc6a9e3ccda18bf12f35f366fc8e40d5da231469ff8ef24dbeb917b0",
+    "proposal/specs/product/overview.md": "a1673d191817b403ef5ccbaf313cb9b170b86c2e78d0e06daf738ceec0c23f47",
+    "proposal/tests/test_amount.py": "2fc0c09e57c9a6256d2b42910f5b44969d9488e7fe4ca97a2c81a4d6510daa64",
+    "proposal-manifest.json": "1613e25957529a90adb80804dc74dc573b1a5eeb1b8cb3eb50a967d81ffba560",
+    "render.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "render.stdout": "c6e61ed16f0326448527c11b7b4f1b1aa7bde6adfbeaf46527d8fd9ab51e4226",
+    "rendered/.github/CODEOWNERS": "3576e675a88c7f846bc7ff289cf86f07b4c3045b0127a104277701b4ef4e6f2b",
+    "rendered/.github/security/branch-administration.json": "8c548c2f48f8b348fad4e6f93fe32ca4974e163ec31f8d09ea811ddb52cab64c",
+    "rendered/.github/security/main-protection.json": "bc523ec88875288c8634be94ace04ded61bafc7785fe7013a877be77a416001b",
+    "rendered/.github/security/manifest.json": "cb50b4629214780f4903276dc6fc483e87cfd67817403948c4386184bfa50ec8",
+    "rendered/.github/security/secret-settings.json": "47e711b85b4caf57dba06cb7eff027dc81dbe3566fa870ae7949fa0b5745bc1a",
+    "rendered/.github/security/tag-administration.json": "28716cace59ba0de5f61bafa273e27fac1482123d233236b93cd63b7f93edde2",
+    "resolution.json": "55cb47db59291a20873e6e036735d2fb1521501efb55857e8556b571931d652c"
+  },
+  "independent_replay": {
+    "snapshot": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/validators/security/validate.py",
+        "--repository",
+        "example-owner/security-fixture",
+        "--snapshot",
+        "/private/tmp/versat-postmerge-cases/public-maintenance-conflict-replay/project/inputs/settings.json",
+        "--output",
+        "/private/tmp/versat-postmerge-cases/public-maintenance-conflict-replay/report.json"
+      ],
+      "exit_code": 2
+    },
+    "render": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/scripts/bootstrap/public_security.py",
+        "--output",
+        "/private/tmp/versat-postmerge-cases/public-maintenance-conflict-replay/staging"
+      ],
+      "exit_code": 0
+    },
+    "tests": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "exit_code": 0
+    },
+    "original_unchanged": true
+  },
+  "replay_result": "unable-to-verify",
+  "public_ready": false,
+  "observed_at": "2026-11-25T20:00:05.540695+00:00"
+}

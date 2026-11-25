@@ -1,0 +1,44 @@
+{
+  "input_digest_before": "31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334",
+  "started_at": "2026-11-25T19:53:53.452516+00:00",
+  "monotonic_start": 120474.135886125,
+  "runtime": "native collaboration",
+  "model": "inherited session identity; exact runtime model/usage not exposed",
+  "limits": {
+    "case_seconds": 600,
+    "suite_seconds": 1800
+  },
+  "root": "/private/tmp/versat-postmerge-cases",
+  "cases": [
+    {
+      "case": "public-bootstrap-unavailable",
+      "agent": "/root/bootstrap_postmerge",
+      "attempts": 1,
+      "started_or_prepared_since": "2026-11-25T19:53:53.452516+00:00",
+      "independent_replay_finished_at": "2026-11-25T19:56:24.716327+00:00",
+      "upper_bound_seconds": 151.263811,
+      "verification": "public-bootstrap-unavailable-verification.json"
+    },
+    {
+      "case": "public-audit-drift",
+      "agent": "/root/audit_postmerge",
+      "attempts": 1,
+      "started_or_prepared_since": "2026-11-25T19:56:24.716327+00:00",
+      "independent_replay_finished_at": "2026-11-25T19:58:28.028961+00:00",
+      "upper_bound_seconds": 123.312634,
+      "verification": "public-audit-drift-verification.json"
+    },
+    {
+      "case": "public-maintenance-conflict",
+      "agent": "/root/maintenance_postmerge",
+      "attempts": 1,
+      "started_or_prepared_since": "2026-11-25T19:58:28.028961+00:00",
+      "independent_replay_finished_at": "2026-11-25T20:00:33.335691+00:00",
+      "upper_bound_seconds": 125.30673,
+      "verification": "public-maintenance-conflict-verification.json"
+    }
+  ],
+  "input_digest_after": "31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334",
+  "finished_at": "2026-11-25T20:00:33.335691+00:00",
+  "result": "pass"
+}
