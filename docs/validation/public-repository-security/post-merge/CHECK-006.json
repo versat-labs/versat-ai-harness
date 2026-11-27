@@ -1,0 +1,27 @@
+{
+  "check": "CHECK-006",
+  "started_at": "2026-11-25T19:56:11.000742+00:00",
+  "input_digest_before": "31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334",
+  "commands": [
+    {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/private/tmp/versat-security-live.py",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/docs/validation/public-repository-security/post-merge/live-report.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/private/tmp/versat-postmerge-independent.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "input_digest_after": "31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334",
+  "finished_at": "2026-11-25T19:56:29.720914+00:00",
+  "result": "pass"
+}

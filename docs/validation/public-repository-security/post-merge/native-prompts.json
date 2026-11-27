@@ -1,0 +1,23 @@
+[
+  {
+    "case": "bootstrap_postmerge",
+    "submitted_at": "2026-11-25T19:54:02.583Z",
+    "versioned_prompt_file": "tests/skills/security/public-bootstrap-unavailable.md",
+    "versioned_case_prompt": "Use the supplied actual project-bootstrap Skill for the remaining public-security\nreadiness portion of this already prepared synthetic bootstrap. Product discovery\nand profile selection are complete fixture context. Existing files must be preserved.\nUse the exact supplied development provider, resolve its Standards index and inspect\nthe project identity/lock. The supplied settings are offline observations; live\nadministrative access is unavailable. Prepare reviewable local assets and assess the\navailable evidence. Do not invent approvals, authentication or release adoption.\nWrite artifacts and an English findings record only in the supplied output directory.\nReturn executed commands, report/artifact paths, readiness and unavailable evidence.\n",
+    "fixture": "/private/tmp/versat-postmerge-cases/public-bootstrap-unavailable"
+  },
+  {
+    "case": "audit_postmerge",
+    "submitted_at": "2026-11-25T19:56:32.763Z",
+    "versioned_prompt_file": "tests/skills/security/public-audit-drift.md",
+    "versioned_case_prompt": "Use the supplied actual project-audit Skill to audit this synthetic public project's\nrepository-security readiness. Inspect its identity, development provider lock and\nsupplied settings; run applicable available checks and report findings with evidence\nand concrete remediation. The local tests are available; no administrative live\naccess or remediation authority is supplied. Preserve every project file and write\nreports only in the separate output directory. Use the exact supplied provider and\ncanonical index. Return executed commands, report paths and evidence limitations.\n",
+    "fixture": "/private/tmp/versat-postmerge-cases/public-audit-drift"
+  },
+  {
+    "case": "maintenance_postmerge",
+    "submitted_at": "2026-11-25T19:58:34.531Z",
+    "versioned_prompt_file": "tests/skills/security/public-maintenance-conflict.md",
+    "versioned_case_prompt": "Use the supplied actual project-maintenance Skill to prepare a reviewable local\nsecurity migration for this synthetic public consumer. The target is exactly the\nsupplied development source snapshot, not an unspecified release. Inspect identity,\nlock, current ownership and supplied settings. Preserve valid custom content and\nstronger existing protections. Only migration preparation is authorized: do not\nchange the original project or access GitHub. Stage the proposal and a reviewable\ndiff in the supplied separate output directory, run relevant available verification\nand report unresolved conflicts and readiness limits. Return commands and artifacts.\n",
+    "fixture": "/private/tmp/versat-postmerge-cases/public-maintenance-conflict"
+  }
+]

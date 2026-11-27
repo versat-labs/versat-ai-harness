@@ -1,0 +1,69 @@
+{
+  "check": "CHECK-005",
+  "started_at": "2026-11-25T19:54:17.494811+00:00",
+  "input_digest_before": "31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334",
+  "commands": [
+    {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "scripts/bootstrap/public_security.py",
+        "--output",
+        "/private/tmp/versat-postmerge-walkthrough/staging"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "validators/security/validate.py",
+        "--check-policy",
+        "--output",
+        "/private/tmp/versat-postmerge-walkthrough/policy.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "validators/security/validate.py",
+        "--repository",
+        "example-owner/security-fixture",
+        "--snapshot",
+        "/private/tmp/versat-postmerge-cases/public-audit-drift/project/inputs/settings.json",
+        "--output",
+        "/private/tmp/versat-postmerge-walkthrough/snapshot.json"
+      ],
+      "exit_code": 1
+    }
+  ],
+  "translation_files": [
+    "docs/user-docs/guides/project-bootstrap.md",
+    "docs/user-docs/guides/project-bootstrap.pt.md",
+    "docs/user-docs/guides/project-bootstrap.es.md",
+    "docs/user-docs/guides/project-audit.md",
+    "docs/user-docs/guides/project-audit.pt.md",
+    "docs/user-docs/guides/project-audit.es.md",
+    "docs/user-docs/guides/project-maintenance.md",
+    "docs/user-docs/guides/project-maintenance.pt.md",
+    "docs/user-docs/guides/project-maintenance.es.md",
+    "docs/user-docs/guides/github-delivery.md",
+    "docs/user-docs/guides/github-delivery.pt.md",
+    "docs/user-docs/guides/github-delivery.es.md"
+  ],
+  "unchanged_boundary_files": [
+    ".github/workflows/validate.yml",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE",
+    "VERSION",
+    "plugin.json",
+    ".codex-plugin/plugin.json",
+    ".agents/plugins/marketplace.json"
+  ],
+  "input_digest_after": "31cf8737de78e005e23ad0540955f401f1437c8f24368806e56e4841250c8334",
+  "finished_at": "2026-11-25T19:54:18.692857+00:00",
+  "result": "pass"
+}

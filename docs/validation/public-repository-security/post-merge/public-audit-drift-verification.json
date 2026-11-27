@@ -1,0 +1,63 @@
+{
+  "case": "public-audit-drift",
+  "input_files_unchanged": true,
+  "original_manifest": {
+    ".versat/project.yaml": "606d835ceba7133a4b8519ba6ef7ca3795364e0afbb46dbbe65781b05b0c597a",
+    ".versat/standards.lock": "c114e52dae3dad34e6a5bea796f5adf7d5d2c8160f017c962d2cc3609fa692c2",
+    "AGENTS.md": "172a31d811c7887b681b6df43253d31d15481e367c5ee746204e9df6547f5822",
+    "inputs/context.json": "a5afa4d8297ef2cd27a9b9ba5640d326dc6fa563aa457fa07610ea0f6bbf1102",
+    "inputs/settings.json": "63fbcfc06f45295ac535ece12c33bad2fa823afc27ec59240f9147bbb6fea28e",
+    "specs/product/overview.md": "a1673d191817b403ef5ccbaf313cb9b170b86c2e78d0e06daf738ceec0c23f47",
+    "tests/test_amount.py": "2fc0c09e57c9a6256d2b42910f5b44969d9488e7fe4ca97a2c81a4d6510daa64"
+  },
+  "original_output_manifest": {
+    "commands.json": "8641ea4b97239ecaafc23702f08fcfbbbbb6fffe256d73d0f0e9696d05fb967c",
+    "findings.md": "5d262de978f1f67e1b286c4c64fe346a6c7f36aeef58f26a4725627a33d31a36",
+    "policy.json": "d5d4d929a7dd3c6c18f7ad221bbf4a36e2a3ce3f6a6e6f391ba8825b60c711b2",
+    "project-integrity.json": "556e7c06fb067f0a7335cdb3b7f39079a6fee7591cbe46064c7066dae5027f90",
+    "resolution.json": "076918563131c1add05513f83638085acd8518c5e7d9dc9b66b7e96a868febb4",
+    "snapshot.json": "b2552493a723592f6ab3457065fec735d78dc38ea5fdb4c366f4fa06ee76bd90"
+  },
+  "independent_replay": {
+    "snapshot": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/validators/security/validate.py",
+        "--repository",
+        "example-owner/security-fixture",
+        "--snapshot",
+        "/private/tmp/versat-postmerge-cases/public-audit-drift-replay/project/inputs/settings.json",
+        "--output",
+        "/private/tmp/versat-postmerge-cases/public-audit-drift-replay/report.json"
+      ],
+      "exit_code": 1
+    },
+    "render": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "/Users/elviszoz/.codex/worktrees/c379/versat-ai-harness/scripts/bootstrap/public_security.py",
+        "--output",
+        "/private/tmp/versat-postmerge-cases/public-audit-drift-replay/staging"
+      ],
+      "exit_code": 0
+    },
+    "tests": {
+      "argv": [
+        "/private/tmp/versat-security-audit-venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "exit_code": 0
+    },
+    "original_unchanged": true
+  },
+  "replay_result": "fail",
+  "public_ready": false,
+  "observed_at": "2026-11-25T19:58:28.028961+00:00"
+}

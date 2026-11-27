@@ -1,0 +1,61 @@
+{
+  "bootstrap": {
+    "match_all_six_rendered_files": true,
+    "snapshot_controls": {
+      "identity": "unable-to-verify"
+    }
+  },
+  "audit": {
+    "snapshot_controls_matched": 24,
+    "failed": [
+      "main.dismiss_stale_reviews",
+      "secrets.secret_scanning_push_protection"
+    ]
+  },
+  "maintenance": {
+    "proposal_replay_argv": [
+      "/private/tmp/versat-security-audit-venv/bin/python",
+      "-B",
+      "validators/security/validate.py",
+      "--repository",
+      "example-owner/security-fixture",
+      "--snapshot",
+      "/var/folders/np/9dxskpmn3yx_ccmygffzkz9h0000gn/T/versat-modeled-replay-kw7q08x3/modeled.json",
+      "--output",
+      "docs/validation/public-repository-security/post-merge/maintenance-proposal-replay.json"
+    ],
+    "exit_code": 2,
+    "modeled_snapshot_sha256": "4fdf42cf54e1b51c9f566eb33780a0677e58bcbcd8fdf6a75ad730be9ddee744",
+    "unverified_controls": [
+      "codeowners"
+    ],
+    "unchanged_protections": {
+      "enforce_admins": {
+        "enabled": true
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_deletions": {
+        "enabled": false
+      },
+      "required_pull_request_reviews": {
+        "required_approving_review_count": 2,
+        "require_code_owner_reviews": true,
+        "dismiss_stale_reviews": true,
+        "require_last_push_approval": true
+      },
+      "required_status_checks": {
+        "contexts": [
+          "consumer-security",
+          "consumer-tests"
+        ],
+        "strict": true
+      }
+    },
+    "development_lock_identical": true,
+    "specialist_preserved": true,
+    "changed_observation": "codeowners"
+  },
+  "finished_at": "2026-11-25T20:00:33.335691+00:00"
+}
