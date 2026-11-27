@@ -21,3 +21,20 @@
 ## Result
 
 **unverified.** Title prefix, type, body sections, Origin and the reported link match expectations. The Skill's own addition of the issue to "Portfolio" (REQ-005 scenario 1) was not exercised, because this executor lacks a projects capability. It must be rerun with the GitHub CLI holding the `project` scope, or with an MCP server that exposes projects.
+
+## Attempt 2: developer's computer with the GitHub CLI
+
+- Date: 2026-11-27
+- Executor: the developer's local agent with the Harness checked out at branch `claude/confident-dirac-8d9fzn`. The agent product and model were not reported. The agent used GitHub CLI `gh version 2.94.0 (2026-06-10)` with the `project` scope added through `gh auth refresh -s project`.
+- Input digest before and after, run by the developer: `d12c660b55ff9bce468f2256a6eacd787501b61e61933adcd86815ba06e45e20` (identical, and equal to attempt 1).
+- Prompt: a real chore asking to support `gh repo view` in the evaluation stub, with Origin Internal Idea. The developer confirmed the preview.
+- Skill report: "I created the issue: versat-labs/versat-ai-harness#55. I read it back from GitHub, and everything was set". It reported Type Task, Origin Internal Idea and Project Portfolio (number 1, which matches the form's `versat-labs/1`).
+- Developer verification output, from screenshots shared in the chat:
+  - `gh api repos/versat-labs/versat-ai-harness/issues/55 --jq '{title, type: .type.name}'` returned title `chore: support \`gh repo view\` in the issue creation evaluation stub` and type `Task`.
+  - `gh api repos/versat-labs/versat-ai-harness/issues/55/issue-field-values` returned Origin (`issue_field_id` 48813453) with `single_select_option.name` `Internal Idea`.
+  - `gh issue view 55 --repo versat-labs/versat-ai-harness --json projectItems` returned one item titled `Portfolio` with status `Todo`.
+- Coordinator verification: MCP `issue_read` of [#55](https://github.com/versat-labs/versat-ai-harness/issues/55) confirmed the title, `issue_type: Task`, Origin `Internal Idea` and the Description, Scope and Done when sections in English.
+
+## Result
+
+**pass.** The Skill created the issue with the form's prefix, type and sections, set Origin, and added the issue to "Portfolio" itself. That project is `versat-labs/1`. Attempt 1 remains recorded above as unverified.

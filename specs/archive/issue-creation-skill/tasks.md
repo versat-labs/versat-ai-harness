@@ -76,7 +76,7 @@ tasks:
   - REQ-006
   - REQ-007
   - REQ-008
-  status: blocked
+  status: completed
 review:
   revision: 1
   state: approved
@@ -126,14 +126,16 @@ validation:
         recording gh stub, no network
       observed: true
   - check: CHECK-004
-    result: unverified
+    result: pass
     evidence: docs/validation/issue-creation-skill/check-004.md
-    revision: Commit ec9944c on claude/confident-dirac-8d9fzn
+    revision: Branch claude/confident-dirac-8d9fzn checked out on the developer computer; input digest
+      identical to commit ec9944c
     input_digest_before: d12c660b55ff9bce468f2256a6eacd787501b61e61933adcd86815ba06e45e20
     input_digest_after: d12c660b55ff9bce468f2256a6eacd787501b61e61933adcd86815ba06e45e20
     context:
       execution: local
-      environment: Claude Code cloud session with GitHub MCP issue tools and no projects tool, live versat-labs/versat-ai-harness
+      environment: 'Developer''s local agent with GitHub CLI 2.94.0 and project scope, live versat-labs/versat-ai-harness
+        issue #55'
       observed: true
   - check: CHECK-005
     result: pass
@@ -187,13 +189,13 @@ validation:
       local:
         requirement: REQ-002
         scenario: 3
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-004
     evidence: docs/validation/issue-creation-skill/check-004.md
-    explanation: 'Helper tests pass and #54 used the chore prefix, Task type and form sections, but CHECK-004
-      is unverified as a whole.'
+    explanation: 'Helper tests pass, and the live issue #55 used the chore prefix, Task type and Chore
+      sections.'
   - obligation:
       local:
         requirement: REQ-002
@@ -264,12 +266,12 @@ validation:
       local:
         requirement: REQ-005
         scenario: 1
-    result: unverified
+    result: pass
     checks:
     - CHECK-004
     evidence: docs/validation/issue-creation-skill/check-004.md
-    explanation: 'The executor had no projects tool, so the Skill did not add #54 to Portfolio; the developer
-      added it manually and confirmed Portfolio is project 1.'
+    explanation: 'In attempt 2 the Skill added #55 to Portfolio itself; gh issue view showed the Portfolio
+      project item, and Portfolio is versat-labs/1.'
   - obligation:
       local:
         requirement: REQ-005
@@ -405,14 +407,14 @@ validation:
       regression:
         impact: 4
         scenario: 0
-    result: unverified
+    result: pass
     checks:
     - CHECK-001
     - CHECK-003
     - CHECK-004
     evidence: docs/validation/issue-creation-skill/check-004.md
-    explanation: Prefixes, types, fields and vulnerability routes were observed, but Portfolio linking
-      by the Skill was not exercised live.
+    explanation: Prefixes, types, required fields, the Portfolio project and the vulnerability routes
+      behaved as the organization forms and guidance define.
   findings:
   - id: FIND-001
     source:
@@ -420,7 +422,7 @@ validation:
         requirement: REQ-005
         scenario: 1
     category: partial
-    state: open
+    state: resolved
     evidence: docs/validation/issue-creation-skill/check-004.md
     description: In an executor that offers only GitHub MCP issue tools, the Skill cannot add the issue
       to Portfolio and falls back to the manual remedy. Live Portfolio linking by the Skill has not been
@@ -429,7 +431,10 @@ validation:
     - TASK-006
     checks:
     - CHECK-004
-closure: active
+    resolution: 'CHECK-004 attempt 2 on the developer computer with the GitHub CLI and project scope observed
+      the Skill adding issue #55 to Portfolio. Executors without a projects capability keep the documented
+      manual remedy, verified in CHECK-003 project-failure and CHECK-004 attempt 1.'
+closure: prepared
 ---
 
 # Tasks
@@ -440,7 +445,7 @@ closure: active
 - [x] TASK-004 — Write the trilingual user guide
 - [x] TASK-005 — Add supervised evaluation cases, fixture and GitHub stub
 - [x] TASK-006 — Execute the checks and assess every obligation
-- [ ] TASK-007 — Prepare the dossier for documentary delivery
+- [x] TASK-007 — Prepare the dossier for documentary delivery
 
 ## Dependencies
 
@@ -472,8 +477,8 @@ The developer approved Tasks revision 1 and asked to proceed, which authorizes i
 - TASK-003: Skill registered in `scripts/validate/run.sh` and `validators/plugin/validate.py`, focused suite added to the runner, changelog entry added. A development run of `./scripts/validate/run.sh --quality-base origin/main` with Ruff 0.14.14 passed; it is not yet recorded as CHECK-002 evidence.
 - TASK-004: guides `docs/user-docs/guides/issue-creation.md`, `.pt.md` and `.es.md`, linked from the three READMEs.
 - TASK-005: 14 cases in `tests/skills/cases/github-issue-creation/`, the fixture preparer `prepare.py` and the recording `gh` stub.
-- TASK-006: all five checks executed and every obligation assessed. CHECK-004 is unverified for Portfolio linking (FIND-001).
-- TASK-007 is blocked until CHECK-004 passes in an executor with a projects capability.
+- TASK-006: all five checks executed and every obligation assessed. CHECK-004 attempt 1 was unverified for Portfolio linking (FIND-001), and attempt 2 on the developer computer passed.
+- TASK-007: dossier moved to `specs/archive/issue-creation-skill/` with closure prepared.
 
 ## Validation evidence
 
@@ -482,11 +487,11 @@ The developer approved Tasks revision 1 and asked to proceed, which authorizes i
 | CHECK-001 | pass | `docs/validation/issue-creation-skill/check-001.txt` (13 tests) |
 | CHECK-002 | pass | `docs/validation/issue-creation-skill/check-002.txt` (full runner with Ruff) |
 | CHECK-003 | pass | `docs/validation/issue-creation-skill/check-003.md` (14 supervised cases, stub logs) |
-| CHECK-004 | unverified | `docs/validation/issue-creation-skill/check-004.md` (issue #54; Portfolio link added manually) |
+| CHECK-004 | pass | `docs/validation/issue-creation-skill/check-004.md` (attempt 1 on #54 unverified; attempt 2 on #55 passed with the GitHub CLI) |
 | CHECK-005 | pass | `docs/validation/issue-creation-skill/check-005.md` |
 
-FIND-001 remains open. Rerun CHECK-004 with the GitHub CLI holding the `project` scope, or with an MCP server that exposes projects, to verify REQ-005 scenario 1.
+FIND-001 is resolved by CHECK-004 attempt 2.
 
 ## Delivery
 
-Closure is active.
+Closure is prepared for PR review in branch `claude/confident-dirac-8d9fzn`. No pull request, merge or deployment has been observed.
