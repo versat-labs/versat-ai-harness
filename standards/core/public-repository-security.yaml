@@ -1,7 +1,7 @@
 schema_version: 1
 kind: github-public-repository-security
 policy_id: versat-public-github
-policy_version: 1.0.0
+policy_version: 2.0.0
 host: github.com
 visibility: public
 default_branch: main
@@ -15,7 +15,7 @@ main:
   allow_force_pushes: false
   allow_deletions: false
 references:
-  targets: [branch, tag]
+  targets: [tag]
   operations: [creation, update, deletion]
   bypass_actor:
     actor_type: RepositoryRole

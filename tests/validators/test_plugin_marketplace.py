@@ -170,10 +170,10 @@ class CopiedPackageResourceTests(unittest.TestCase):
         return missing
 
     def test_packaged_skills_resolve_matching_resources_after_package_copy(self):
-        packaged_skills = {
+        packaged = {
             path.parent.name for path in (self.root / "skills").glob("*/SKILL.md")
         }
-        self.assertSetEqual(packaged_skills, VALIDATOR.EXPECTED_SKILLS)
+        self.assertSetEqual(packaged, set(VALIDATOR.EXPECTED_SKILLS))
         self.assertEqual(self.unresolved_resources(), [])
 
     def test_missing_index_is_detected_from_each_skill_directory(self):

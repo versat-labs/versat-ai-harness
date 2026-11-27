@@ -93,23 +93,21 @@ class SecurityContractTests(unittest.TestCase):
                     "required_review_thread_resolution": False,
                 },
             )
-            for target in ("branch", "tag"):
-                rule = json.loads(
-                    (
-                        output / f".github/security/{target}-administration.json"
-                    ).read_text()
-                )
-                self.assertEqual(
-                    rule["conditions"]["ref_name"], {"include": ["~ALL"], "exclude": []}
-                )
-                self.assertEqual(rule["bypass_actors"][0]["actor_id"], 5)
-                self.assertEqual(
-                    rule["rules"][1],
-                    {
-                        "type": "update",
-                        "parameters": {"update_allows_fetch_and_merge": False},
-                    },
-                )
+            security = output / ".github/security"
+            self.assertFalse((security / "branch-administration.json").exists())
+            tag = json.loads((security / "tag-administration.json").read_text())
+            self.assertEqual(tag["target"], "tag")
+            self.assertEqual(
+                tag["conditions"]["ref_name"], {"include": ["~ALL"], "exclude": []}
+            )
+            self.assertEqual(tag["bypass_actors"][0]["actor_id"], 5)
+            self.assertEqual(
+                tag["rules"][1],
+                {
+                    "type": "update",
+                    "parameters": {"update_allows_fetch_and_merge": False},
+                },
+            )
             self.assertEqual(
                 (output / ".github/CODEOWNERS").read_text(),
                 "* @elviszoz @evertonspohrversat\n",

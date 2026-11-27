@@ -6,6 +6,10 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+### Fixed
+
+- Validate the resources of every packaged Skill after relocation, including SIFEN.
+
 ### Added
 
 - index-resolved public GitHub security policy, read-only live/offline verification, safe configuration rendering and mandatory readiness guidance for bootstrap, audit and maintenance; exact release publication and consumer adoption remain separate.
@@ -14,6 +18,7 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 ### Changed
 
 - GitHub issue titles and descriptions now default to English. Teams may discuss issues in Spanish and record resulting scope or acceptance changes in the English description.
+- Public GitHub policy 2.0.0 reserves tag administration for administrators and allows ordinary branch operations under existing repository permissions. Main still requires reviewed pull requests.
 - rename the candidate marketplace to `versat` while keeping plugin `versat-ai-harness`; document later manual reinstallation for the two current users and retain explicit pending native/external checks.
 
 ## [0.4.0] - Unreleased candidate
