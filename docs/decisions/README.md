@@ -33,4 +33,5 @@ Do not silently rewrite an accepted decision. Create a new ADR, reference the pr
 - [ADR-0016 — Separate public Harness preparation from adoption and publication](0016-public-harness-preparation-boundary.md) (accepted; preparation implementation in progress)
 - [ADR-0017 — Validate code and changelog changes against a reviewable Git baseline](0017-revision-based-code-quality-checks.md)
 - [ADR-0018 — Verify public repository security through a versioned policy and read-only observations](0018-public-repository-security-verification.md) (branch administration provision superseded by ADR-0020)
+- [ADR-0019 — Use English for GitHub issue definitions](0019-github-issue-language.md)
 - [ADR-0020 — Retire universal branch administration from the public GitHub baseline](0020-retire-universal-branch-administration.md)

@@ -19,7 +19,8 @@ This repository is the source of truth for Versat's AI-assisted development stan
 
 - Follow `standards/core/language.md` as the canonical language policy.
 - Use English for code, identifiers, APIs, database objects, commits, technical names, technical documentation, ADRs, architecture documentation, Skills, agent instructions and SDD artifacts.
-- Use Spanish for internal business playbooks, issues, Pull Requests and corporate communication.
+- Write GitHub issue titles and descriptions in English. Team members may discuss the work in Spanish in issue comments. Record changes to scope or acceptance criteria in the English description.
+- Use Spanish for internal business playbooks, internal Pull Requests and other corporate communication.
 - Maintain English as the canonical source for product interfaces and community documentation, with aligned Portuguese and Spanish translations.
 
 ## Authority

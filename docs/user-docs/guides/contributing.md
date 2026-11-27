@@ -7,7 +7,7 @@ This is the maintained contribution route for the Harness candidate and for cont
 ## Prepare and contribute
 
 1. Choose the actual target repository and read its README, AGENTS and contribution instructions. Its own guidance takes precedence over organization defaults. Other products retain their independent terms and routes.
-2. Select an existing issue or an available bug, feature or maintenance form. Describe the need, expected result and reproduction where relevant. Do not invent an issue or Story number.
+2. Select an existing issue or an available bug, feature or maintenance form. When opening or substantively revising an issue, write its title and description in English, including form responses, the expected result and any reproduction steps. Teammates may discuss the work in Spanish in comments. If the discussion changes the scope or acceptance criteria, update the English description. Use the actual issue or Story number. See the [Language Standard](../../../standards/core/language.md#github-issues).
 3. Identify original/third-party material, sources, versions, applicable grants and notices. Missing rights prevents acceptance. Read [candidate licensing](licensing.md); a tool's license does not determine unrelated destination-project terms.
 4. Follow [setup](workspace-setup.md). For a Harness checkout, use Python 3.11+, install `requirements-validation.txt` in a virtual environment and run `./scripts/validate/run.sh --quality-base origin/main` from the root. Use the target project's own checks elsewhere.
 5. When the repository and applicable permissions permit it, use an authorized fork or work branch and the [Git convention](../../../standards/core/git.md). Public read/fork access does not grant upstream write, merge or release authority.

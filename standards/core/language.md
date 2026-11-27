@@ -23,11 +23,19 @@
 | `AGENTS.md` files and agent instructions | English |
 | SDD technical specifications and business rules | English |
 | Internal Finance, HR, Customer Success, Sales and other business playbooks | Spanish |
-| Internal issues and pull requests | Spanish |
-| Discussions between collaborators | Spanish |
+| GitHub issue titles and descriptions | English by default |
+| Team discussion in GitHub issue comments | English or Spanish |
+| Internal pull requests | Spanish |
+| Other discussions between collaborators | Spanish |
 | Slack, meetings and other corporate communication | Spanish |
 | Product user interfaces | Canonical English, with Portuguese and Spanish translations |
 | Community-facing documentation | Canonical English, with Portuguese and Spanish translations |
+
+## GitHub issues
+
+When opening a GitHub issue or substantively revising its definition, write the title and description in English. This includes issue-form responses, the problem, expected outcome, reproduction steps and acceptance criteria where applicable. Preserve identifiers and verbatim diagnostics in their original form.
+
+Team members may use Spanish for discussion in issue comments. If a discussion changes the scope or acceptance criteria, a maintainer must update the English description with the decision. Routine comments need no translation.
 
 ## Translation requirements
 
