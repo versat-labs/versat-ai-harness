@@ -17,7 +17,7 @@ tasks:
   - id: TASK-004
     description: Assess issue and comment examples against the maintained guidance and run the full Harness suite.
     requirements: [REQ-001, REQ-002, REQ-003]
-    status: blocked
+    status: completed
 review:
   revision: 1
   state: approved
@@ -36,16 +36,16 @@ validation:
     - check: CHECK-001
       result: pass
       evidence: docs/validation/english-issue-definitions/issue-review.md
-      revision: ecaa6463550d032d9fb77cbc055df1d713a4575b
+      revision: a5860da34ffea8202bd79ed65f6b4d90df7c4187
       input_digest_before: 1e1f6ff5b959d001251622586f21a06fcbd9d1bab0d8d3ec7679be090e6006c3
       input_digest_after: 1e1f6ff5b959d001251622586f21a06fcbd9d1bab0d8d3ec7679be090e6006c3
       context: {execution: local, environment: "Darwin arm64, Python 3.11.4", observed: true}
     - check: CHECK-002
-      result: fail
+      result: pass
       evidence: docs/validation/english-issue-definitions/suite.md
-      revision: ecaa6463550d032d9fb77cbc055df1d713a4575b
-      input_digest_before: 8f557c34248be4dc3a9e0eb41f8579b90211a92b2cd2591fe8d501fa5188e126
-      input_digest_after: 8f557c34248be4dc3a9e0eb41f8579b90211a92b2cd2591fe8d501fa5188e126
+      revision: 85ba7c8a223220e37b6f16b97f0f8703bd44938b
+      input_digest_before: 62b5109f74b31339296042651851830039b7f379127307136375cd2f296ab994
+      input_digest_after: 62b5109f74b31339296042651851830039b7f379127307136375cd2f296ab994
       context: {execution: local, environment: "Darwin arm64, Python 3.11.4", observed: true}
   assessments:
     - obligation: {local: {requirement: REQ-001, scenario: 1}}
@@ -74,10 +74,10 @@ validation:
       evidence: docs/validation/english-issue-definitions/issue-review.md
       explanation: An agreed scope change belongs in the English issue description.
     - obligation: {local: {requirement: REQ-003, scenario: 1}}
-      result: unverified
+      result: pass
       checks: [CHECK-001, CHECK-002]
       evidence: docs/validation/english-issue-definitions/suite.md
-      explanation: The standard, root instructions and guides agree. Full confirmation is pending because the second required check failed.
+      explanation: The standard, root instructions and guides agree. The full suite passed after the marketplace correction.
     - obligation: {local: {requirement: REQ-003, scenario: 2}}
       result: pass
       checks: [CHECK-001]
@@ -97,7 +97,8 @@ validation:
     - id: FIND-001
       source: {plan: Full Harness suite}
       category: contradicts
-      state: open
+      state: resolved
+      resolution: The corrected test compares the copied skill names with the declared set. The full suite passed on the corrected inputs.
       evidence: docs/validation/english-issue-definitions/suite.md
       description: The required suite failed on the existing marketplace test's five-skill assumption.
       tasks: [TASK-004]
@@ -110,7 +111,7 @@ closure: active
 - [x] TASK-001 — Revise the [Language Standard](../../../standards/core/language.md) and [root agent instructions](../../../AGENTS.md). Both must distinguish English issue titles and authored descriptions from team discussion comments, where Spanish is optional. The standard must cover form responses, verbatim diagnostics, and updating the English description when a discussion changes scope or acceptance criteria. Verify prospective application to new and substantively revised issues and the separate Spanish rule for internal pull requests.
 - [x] TASK-002 — Edit the issue-filing step in the [English](../../../docs/user-docs/guides/contributing.md), [Portuguese](../../../docs/user-docs/guides/contributing.pt.md) and [Spanish](../../../docs/user-docs/guides/contributing.es.md) guides. In each language a contributor must be able to identify which fields to write in English, where Spanish discussion is welcome, and where to record a changed decision. Confirm that each edition links to the canonical rule.
 - [x] TASK-003 — Integrate [ADR-0019](../../../docs/decisions/0019-github-issue-language.md) into the [decision index](../../../docs/decisions/README.md) and record the issue-specific refinement in [ADR-0010](../../../docs/decisions/0010-refine-language-policy.md). Verify that the references resolve in both directions, the historical decision text is preserved and the [Unreleased changelog](../../../CHANGELOG.md) describes the new convention.
-- [ ] TASK-004 — Perform both checks specified in the [Design](design.md). For CHECK-001, follow the walkthrough against the edited files and cite the passages supporting each outcome. For CHECK-002, run the full repository suite against the comparison revision and retain the exit status and test counts. Record the observed environment, input snapshots and evidence for both checks. Assess all seven acceptance scenarios and both regression obligations. Completion requires passing checks, current evidence and resolution of any open findings.
+- [x] TASK-004 — Perform both checks specified in the [Design](design.md). For CHECK-001, follow the walkthrough against the edited files and cite the passages supporting each outcome. For CHECK-002, run the full repository suite against the comparison revision and retain the exit status and test counts. Record the observed environment, input snapshots and evidence for both checks. Assess all seven acceptance scenarios and both regression obligations. Completion requires passing checks, current evidence and resolution of any open findings.
 
 ## Dependencies and known risk
 
@@ -124,8 +125,8 @@ The developer approved Tasks revision 1 and authorized its implementation.
 
 ## Progress
 
-The policy, contributor guidance, ADR history and changelog are implemented in commit `ecaa646`. TASK-004 awaits a passing run of CHECK-002.
+The policy, contributor guidance, ADR history and changelog are implemented in commit `ecaa646`. The developer authorized the marketplace test correction. All four tasks passed their completion checks.
 
 ## Validation evidence
 
-The [issue walkthrough](../../../docs/validation/english-issue-definitions/issue-review.md) documents the semantic review. The [suite report](../../../docs/validation/english-issue-definitions/suite.md) records the failing test and baseline.
+The [issue walkthrough](../../../docs/validation/english-issue-definitions/issue-review.md) documents the semantic review. The [suite report](../../../docs/validation/english-issue-definitions/suite.md) preserves the original failure and the successful rerun against the same Git baseline.
