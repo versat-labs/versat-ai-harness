@@ -94,7 +94,7 @@ validation:
       evidence: docs/validation/retire-branch-administration-ruleset/github-readback.md
       explanation: Main was present on both targets and the required check configuration matched its pre-delete state.
   findings: []
-closure: active
+closure: prepared
 ---
 
 # Retire the administrator-only branch rule
