@@ -3,6 +3,7 @@
 - Status: Accepted
 - Date: 2026-09-01
 - Supersedes: [ADR-0008](0008-hybrid-language-policy.md)
+- Refined by [ADR-0019](0019-github-issue-language.md) for GitHub issue definitions and team discussion in issue comments.
 
 ## Context
 

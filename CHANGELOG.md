@@ -13,6 +13,7 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ### Changed
 
+- GitHub issue titles and descriptions now default to English. Teams may discuss issues in Spanish and record resulting scope or acceptance changes in the English description.
 - rename the candidate marketplace to `versat` while keeping plugin `versat-ai-harness`; document later manual reinstallation for the two current users and retain explicit pending native/external checks.
 
 ## [0.4.0] - Unreleased candidate
