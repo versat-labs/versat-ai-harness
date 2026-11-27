@@ -1,7 +1,7 @@
 ---
 sdd_version: 3
 change: issue-creation-skill
-status: proposed
+status: accepted
 owner: versat
 summary: Provide a Harness Skill that drafts and creates a complete English GitHub issue from a developer prompt, asking only for what it cannot infer.
 risk: medium
@@ -44,10 +44,14 @@ impact:
       reason: The organization's default issue forms and security reporting guidance in versat-labs/.github define the forms, required fields, title prefixes, issue types, project and vulnerability routes the Skill must follow without changing them.
 review:
   revision: 2
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream: {}
-  approval: null
+  approval:
+    source: Developer reply in the Claude Code chat after presentation of Proposal and Requirements revision 2 for GitHub issue 53.
+    quote: "Aprovado. Avance."
+    revision: 2
+    digest: 4348c5831e8ff05e64d2a251aaf949c5039f9f6305a9a2975c2fed6cb790be6f
 ---
 
 # Issue creation Skill
@@ -124,4 +128,4 @@ A `versat-labs` collaborator can turn a short idea or problem description into a
 
 ## Planning review
 
-Revision 1 was presented on 2026-11-27 and was not approved. The developer pointed out that the issue forms are organization defaults in `versat-labs/.github`. Revision 2 records those forms, the vulnerability routes and the need to apply the type and project explicitly. Proposal and Requirements revision 2 are awaiting the developer's review.
+Revision 1 was presented on 2026-11-27 and was not approved. The developer pointed out that the issue forms are organization defaults in `versat-labs/.github`. Revision 2 records those forms, the vulnerability routes and the need to apply the type and project explicitly. The developer approved Proposal and Requirements revision 2 and authorized Design.
