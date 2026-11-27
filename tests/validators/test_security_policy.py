@@ -166,17 +166,28 @@ class SecurityPolicyTests(unittest.TestCase):
                 rule["enforcement"] = state
             self.assertEqual(self.controls(value)["main.approvals"]["result"], "fail")
 
-    def test_each_ref_target_and_operation(self):
-        for index, target in enumerate(("branch", "tag")):
-            for operation in ("creation", "update", "deletion"):
+    def tag_ruleset(self, value):
+        return next(rule for rule in data(value, "rulesets") if rule["target"] == "tag")
+
+    def test_classic_main_and_tag_protection_suffice_without_branch_admin_rule(self):
+        tags = self.tag_ruleset(self.snapshot)
+        data(self.snapshot, "rulesets")[:] = [tags]
+        data(self.snapshot, "main_rules").clear()
+        controls, applicability = evaluate(self.snapshot, self.policy, REPO)
+        self.assertEqual(aggregate(controls, applicability), "pass")
+        self.assertFalse(any(c["id"].startswith("refs.branch.") for c in controls))
+
+    def test_each_tag_operation_is_required(self):
+        for operation in ("creation", "update", "deletion"):
+            with self.subTest(operation=operation):
                 value = snapshot()
-                rule = data(value, "rulesets")[index]
-                rule["rules"] = [r for r in rule["rules"] if r["type"] != operation]
+                tag = self.tag_ruleset(value)
+                tag["rules"] = [r for r in tag["rules"] if r["type"] != operation]
                 self.assertEqual(
-                    self.controls(value)[f"refs.{target}.{operation}"]["result"], "fail"
+                    self.controls(value)[f"refs.tag.{operation}"]["result"], "fail"
                 )
 
-    def test_reference_bypass_is_only_repository_administrators(self):
+    def test_tag_bypass_is_only_repository_administrators(self):
         for actor in (
             {"actor_type": "RepositoryRole", "actor_id": 4, "bypass_mode": "always"},
             {"actor_type": "Integration", "actor_id": 1, "bypass_mode": "always"},
@@ -188,28 +199,26 @@ class SecurityPolicyTests(unittest.TestCase):
             {"actor_type": "RepositoryRole", "actor_id": 5, "bypass_mode": "exempt"},
         ):
             value = snapshot()
-            data(value, "rulesets")[0]["bypass_actors"] = [actor]
-            self.assertEqual(
-                self.controls(value)["refs.branch.update"]["result"], "fail"
-            )
+            self.tag_ruleset(value)["bypass_actors"] = [actor]
+            self.assertEqual(self.controls(value)["refs.tag.update"]["result"], "fail")
 
-    def test_partial_patterns_and_exclusions_do_not_prove_future_nested_refs(self):
+    def test_partial_patterns_and_exclusions_do_not_prove_future_nested_tags(self):
         for condition in (
-            {"include": ["refs/heads/*"], "exclude": []},
-            {"include": ["~ALL"], "exclude": ["refs/heads/private/**"]},
+            {"include": ["refs/tags/*"], "exclude": []},
+            {"include": ["~ALL"], "exclude": ["refs/tags/private/**"]},
         ):
             value = snapshot()
-            data(value, "rulesets")[0]["conditions"]["ref_name"] = condition
+            self.tag_ruleset(value)["conditions"]["ref_name"] = condition
             self.assertEqual(
-                self.controls(value)["refs.branch.creation"]["result"],
+                self.controls(value)["refs.tag.creation"]["result"],
                 "unable-to-verify",
             )
 
     def test_permissive_fetch_and_merge_fails(self):
-        data(self.snapshot, "rulesets")[0]["rules"][1]["parameters"] = {
+        self.tag_ruleset(self.snapshot)["rules"][1]["parameters"] = {
             "update_allows_fetch_and_merge": True
         }
-        self.assertEqual(self.controls()["refs.branch.update"]["result"], "fail")
+        self.assertEqual(self.controls()["refs.tag.update"]["result"], "fail")
 
     def test_owners_overrides_errors_permissions_and_base(self):
         mutations = [

@@ -36,7 +36,7 @@ properties:
     additionalProperties: false
     required: [targets, operations, bypass_actor]
     properties:
-      targets: {type: array, minItems: 2, maxItems: 2, uniqueItems: true, items: {enum: [branch, tag]}}
+      targets: {const: [tag]}
       operations: {type: array, minItems: 3, maxItems: 3, uniqueItems: true, items: {enum: [creation, update, deletion]}}
       bypass_actor:
         type: object

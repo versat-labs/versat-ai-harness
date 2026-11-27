@@ -13,6 +13,7 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ### Changed
 
+- Public GitHub policy 2.0.0 reserves tag administration for administrators and allows ordinary branch operations under existing repository permissions. Main still requires reviewed pull requests.
 - rename the candidate marketplace to `versat` while keeping plugin `versat-ai-harness`; document later manual reinstallation for the two current users and retain explicit pending native/external checks.
 
 ## [0.4.0] - Unreleased candidate
