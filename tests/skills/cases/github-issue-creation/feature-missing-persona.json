@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "feature-missing-persona",
+  "prompt": "Use $github-issue-creation: add dark mode. When I work at night I want a dark theme so that my eyes do not get tired. Internal idea.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "User persona: support agents on night shifts.",
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Asks for Persona before the preview",
+    "Does not ask about Problem or Job To Be Done",
+    "No placeholder persona in the preview"
+  ]
+}

@@ -1,0 +1,22 @@
+name: Incident
+description: Synthetic repository-specific form used to test precedence.
+title: "incident: "
+type: Bug
+labels: [incident]
+body:
+  - type: markdown
+    attributes:
+      value: Synthetic fixture.
+  - type: input
+    id: service
+    attributes:
+      label: Affected service
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options: [Low, High]
+    validations:
+      required: false

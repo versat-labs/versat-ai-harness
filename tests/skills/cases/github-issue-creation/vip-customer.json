@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "vip-customer",
+  "prompt": "Use $github-issue-creation: our VIP customer Acme, who pays for development, asked for bulk approval of purchase orders. Problem: approvers click each order. JTBD: when I review 50 orders I want to approve them at once so that I save time. Persona: purchasing manager.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Origin is VIP Customer feature request without an Origin question",
+    "Preview notes that the public issue would mention the customer name"
+  ]
+}

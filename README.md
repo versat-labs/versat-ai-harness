@@ -19,6 +19,7 @@ For developers, reviewers and maintainers, including external contributors. Main
 - [Review architecture](docs/user-docs/guides/architecture-review.md)
 - [Validation and evaluations](docs/user-docs/guides/validation-and-evaluations.md)
 - [SIFEN electronic documentation](docs/user-docs/guides/sifen-electronic-documentation.md)
+- [Create a GitHub issue](docs/user-docs/guides/issue-creation.md)
 
 - [Marketplace transition: new and legacy identities](docs/user-docs/guides/marketplace-transition.md)
 

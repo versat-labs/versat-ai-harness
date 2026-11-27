@@ -28,6 +28,7 @@ EXPECTED_SKILLS = {
     "project-maintenance",
     "versat-sdd",
     "sifen-electronic-documentation",
+    "github-issue-creation",
 }
 CANONICAL_DIRECTORIES = {
     "agents",

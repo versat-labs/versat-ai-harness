@@ -5,23 +5,23 @@ tasks:
   - id: TASK-001
     description: Implement the issue form helper with resolve, missing and render commands, plus synthetic form fixtures and its focused unittest suite.
     requirements: [REQ-001, REQ-002, REQ-003]
-    status: pending
+    status: completed
   - id: TASK-002
     description: Write the Skill procedure in SKILL.md covering context resolution, vulnerability detection, form selection, English drafting, clarification, Origin, preview, creation, Portfolio linking, result reporting and failure conditions.
     requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006, REQ-007, REQ-008]
-    status: pending
+    status: completed
   - id: TASK-003
     description: Register the Skill in the validation runner and plugin validator, add the focused unittest invocation and the changelog Unreleased entry.
     requirements: [REQ-008]
-    status: pending
+    status: completed
   - id: TASK-004
     description: Write the issue creation user guide in English with aligned Portuguese and Spanish translations, covering prerequisites, permissions, an example prompt, results, failures and the vulnerability route.
     requirements: [REQ-005, REQ-006, REQ-007, REQ-008]
-    status: pending
+    status: completed
   - id: TASK-005
     description: Add the supervised evaluation cases, the synthetic repository fixture and the recording GitHub stub for CHECK-003.
     requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006, REQ-007]
-    status: pending
+    status: completed
   - id: TASK-006
     description: Execute CHECK-001 to CHECK-005, with separate authorization for the live issue in CHECK-004, record results and assess every acceptance and regression obligation.
     requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006, REQ-007, REQ-008]
@@ -32,12 +32,16 @@ tasks:
     status: pending
 review:
   revision: 1
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream:
     proposal: 4348c5831e8ff05e64d2a251aaf949c5039f9f6305a9a2975c2fed6cb790be6f
     design: 72225a72ef8158bb66ef34653ad1f6e226388ac1e6dce5bafbd0b99bb8a7984c
-  approval: null
+  approval:
+    source: Developer reply in the Claude Code chat after presentation of Tasks revision 1 for GitHub issue 53, which also authorized implementation.
+    quote: "Aprovado. Avance."
+    revision: 1
+    digest: dd500fd909b39bee3adacd964c756cd566209c1d7a94d69418855a1fc0aad480
 validation:
   plan_digest: null
   results: []
@@ -48,11 +52,11 @@ closure: active
 
 # Tasks
 
-- [ ] TASK-001 — Implement the issue form helper, fixtures and unit tests
-- [ ] TASK-002 — Write the Skill procedure in SKILL.md
-- [ ] TASK-003 — Register the Skill, add the test invocation and changelog entry
-- [ ] TASK-004 — Write the trilingual user guide
-- [ ] TASK-005 — Add supervised evaluation cases, fixture and GitHub stub
+- [x] TASK-001 — Implement the issue form helper, fixtures and unit tests
+- [x] TASK-002 — Write the Skill procedure in SKILL.md
+- [x] TASK-003 — Register the Skill, add the test invocation and changelog entry
+- [x] TASK-004 — Write the trilingual user guide
+- [x] TASK-005 — Add supervised evaluation cases, fixture and GitHub stub
 - [ ] TASK-006 — Execute the checks and assess every obligation
 - [ ] TASK-007 — Prepare the dossier for documentary delivery
 
@@ -77,11 +81,16 @@ closure: active
 
 ## Planning review
 
-Tasks revision 1 is awaiting the developer's review. Tasks approval ends planning; implementation requires an explicit request.
+The developer approved Tasks revision 1 and asked to proceed, which authorizes implementation.
 
 ## Progress
 
-No task has started.
+- TASK-001: `skills/github-issue-creation/scripts/issue_form.py`, fixtures under `tests/skills/fixtures/github-issue-creation/` and 13 passing tests in `tests/skills/test_github_issue_creation.py`. The organization fixture copies the `versat-labs/.github` forms observed on 2026-11-27.
+- TASK-002: `skills/github-issue-creation/SKILL.md`. Origin values are set through the GitHub issue field values API, which GitHub documents as a public preview.
+- TASK-003: Skill registered in `scripts/validate/run.sh` and `validators/plugin/validate.py`, focused suite added to the runner, changelog entry added. A development run of `./scripts/validate/run.sh --quality-base origin/main` with Ruff 0.14.14 passed; it is not yet recorded as CHECK-002 evidence.
+- TASK-004: guides `docs/user-docs/guides/issue-creation.md`, `.pt.md` and `.es.md`, linked from the three READMEs.
+- TASK-005: 14 cases in `tests/skills/cases/github-issue-creation/`, the fixture preparer `prepare.py` and the recording `gh` stub.
+- TASK-006 and TASK-007 have not started.
 
 ## Validation evidence
 

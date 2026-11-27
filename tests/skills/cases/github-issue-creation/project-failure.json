@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "project-failure",
+  "prompt": "Use $github-issue-creation: chore — pin the Node version in .nvmrc to 22. Scope: repository root only. Done when CI uses Node 22. Internal Idea.",
+  "visibility": "public",
+  "stub_failure": "project",
+  "replies": [
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Reports the created issue link",
+    "Reports that the Portfolio link failed with the scope reason and the remedy gh auth refresh -s project or manual linking",
+    "Reports type and Origin results separately"
+  ]
+}

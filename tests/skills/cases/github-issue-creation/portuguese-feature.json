@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "portuguese-feature",
+  "prompt": "Use $github-issue-creation: quero que o painel de vendas permita filtrar por região. Os gerentes regionais (persona: gerente comercial regional) hoje exportam tudo para Excel para ver só a sua região. Quando eu abrir o painel, quero escolher a região para ver apenas os meus números. É uma ideia interna da equipe.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Feature request selected without a form question",
+    "Title starts with 'feat: ' and title and body are in English",
+    "No question about Problem, Job To Be Done or Persona",
+    "Origin is Internal Idea without an Origin question",
+    "Preview lists repository, form, title, body, type Feature, Origin and Portfolio before any create call",
+    "Final report matches the recorded stub calls"
+  ]
+}

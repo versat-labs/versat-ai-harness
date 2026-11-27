@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "bug-missing-reproduction",
+  "prompt": "Use $github-issue-creation: the invoice PDF shows the wrong total. It should match the sum of the line items. This came from a partner.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "Open invoice 2024-0012 in staging and download the PDF.",
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Asks for To Reproduce before the preview",
+    "Does not ask about Describe the bug or Expected behavior",
+    "Origin set to External suggestion without an Origin question",
+    "No guessed reproduction steps"
+  ]
+}

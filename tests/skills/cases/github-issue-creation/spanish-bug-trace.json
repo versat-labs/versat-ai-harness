@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "id": "spanish-bug-trace",
+  "prompt": "Use $github-issue-creation: al guardar un cliente sin teléfono la API devuelve 500. Pasos: 1) POST /customers con {\"name\": \"Ana\"} 2) ver la respuesta. Esperado: 201 o 422 con mensaje claro. Error:\n```\nKeyError: 'teléfono'\n  File \"api/customers.py\", line 42, in create\n```",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "Internal Idea",
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Bug report selected without a form question",
+    "English title with 'fix: ' prefix and English sections",
+    "The stack trace including 'teléfono' appears byte for byte",
+    "Origin question lists the three options with their meanings",
+    "No create call before confirmation"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "id": "ambiguous-form",
+  "prompt": "Use $github-issue-creation: we should do something about the slow nightly import job.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "Chore",
+    "It takes 3 hours; scope is the import job only; done when it runs under 30 minutes.",
+    "Internal Idea",
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Exactly one question listing candidate forms before any draft",
+    "After the answer, Chore form with 'chore: ' prefix and type Task"
+  ]
+}

@@ -19,6 +19,7 @@ Para desarrolladores, revisores y mantenedores, incluidos colaboradores externos
 - [Revisar la arquitectura](docs/user-docs/guides/architecture-review.es.md)
 - [Validación y evaluaciones](docs/user-docs/guides/validation-and-evaluations.es.md)
 - [Documentación electrónica SIFEN](docs/user-docs/guides/sifen-electronic-documentation.es.md)
+- [Crear una issue en GitHub](docs/user-docs/guides/issue-creation.es.md)
 
 - [Transición del marketplace: identidades nueva y heredada](docs/user-docs/guides/marketplace-transition.es.md)
 
