@@ -487,7 +487,7 @@ The developer approved Tasks revision 1 and asked to proceed, which authorizes i
 | CHECK-001 | pass | `docs/validation/issue-creation-skill/check-001.txt` (13 tests) |
 | CHECK-002 | pass | `docs/validation/issue-creation-skill/check-002.txt` (full runner with Ruff) |
 | CHECK-003 | pass | `docs/validation/issue-creation-skill/check-003.md` (14 supervised cases, stub logs) |
-| CHECK-004 | pass | `docs/validation/issue-creation-skill/check-004.md` (attempt 1 on #54 unverified; attempt 2 on #55 passed with the GitHub CLI) |
+| CHECK-004 | pass | `docs/validation/issue-creation-skill/check-004.md` (attempt 1 on #54, since deleted and recreated as #56, unverified; attempt 2 on #55 passed with the GitHub CLI) |
 | CHECK-005 | pass | `docs/validation/issue-creation-skill/check-005.md` |
 
 FIND-001 is resolved by CHECK-004 attempt 2.

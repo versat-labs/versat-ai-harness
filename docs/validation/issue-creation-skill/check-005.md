@@ -13,7 +13,7 @@
 - **Guide structure:** `issue-creation.md`, `.pt.md` and `.es.md` have the same five sections and the same language switcher.
 - **Guide content:** each guide contains the same prerequisites, including GitHub access, push access, the `project` scope with `gh auth refresh -s project`, and PyYAML. Each also has an example prompt, the seven-step dialogue, the results and failures, the absence of attachments, and the three vulnerability routes. The Portuguese and Spanish guides link the matching translated organization `SECURITY` pages.
 - **README links:** the guides are linked from `README.md`, `README.pt.md` and `README.es.md`.
-- **Known wording difference:** the Skill and the guides say "Security → Report a vulnerability", while the organization `SECURITY.md` says "Security and quality → Report a vulnerability". This is tracked as follow-up chore [#54](https://github.com/versat-labs/versat-ai-harness/issues/54). It does not change the route or the behavior.
+- **Known wording difference:** the Skill and the guides say "Security → Report a vulnerability", while the organization `SECURITY.md` says "Security and quality → Report a vulnerability". This is tracked as follow-up chore [#56](https://github.com/versat-labs/versat-ai-harness/issues/56), which replaces the deleted #54. It does not change the route or the behavior.
 
 ## Result
 

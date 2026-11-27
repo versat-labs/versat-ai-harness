@@ -22,6 +22,10 @@
 
 **unverified.** Title prefix, type, body sections, Origin and the reported link match expectations. The Skill's own addition of the issue to "Portfolio" (REQ-005 scenario 1) was not exercised, because this executor lacks a projects capability. It must be rerun with the GitHub CLI holding the `project` scope, or with an MCP server that exposes projects.
 
+## Later note on attempt 1
+
+On 2026-11-27, after attempt 2, the developer deleted issue #54. Its content was recreated as [#56](https://github.com/versat-labs/versat-ai-harness/issues/56) through the GitHub MCP server, with the same title, body, type Task and Origin Internal Idea. The observations recorded for #54 above are retained as they were made.
+
 ## Attempt 2: developer's computer with the GitHub CLI
 
 - Date: 2026-11-27
