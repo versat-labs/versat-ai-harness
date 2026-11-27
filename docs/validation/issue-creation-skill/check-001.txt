@@ -1,0 +1,23 @@
+Command: python -m unittest discover -s tests/skills -p test_github_issue_creation.py -v
+Revision: ec9944c696e200161478eaa9311ed667335f9170 (working tree clean apart from evidence)
+Environment: Python 3.13.18, PyYAML 6.0.2, Linux 6.18.44-fc-v880
+
+test_cli_resolve_missing_and_render (test_github_issue_creation.IssueFormTests.test_cli_resolve_missing_and_render) ... ok
+test_complete_answers_have_nothing_missing (test_github_issue_creation.IssueFormTests.test_complete_answers_have_nothing_missing) ... ok
+test_invalid_answers_are_reported (test_github_issue_creation.IssueFormTests.test_invalid_answers_are_reported) ... ok
+test_missing_reports_absent_and_blank_answers (test_github_issue_creation.IssueFormTests.test_missing_reports_absent_and_blank_answers) ... ok
+test_no_forms_available (test_github_issue_creation.IssueFormTests.test_no_forms_available) ... ok
+test_organization_defaults_apply_without_repository_forms (test_github_issue_creation.IssueFormTests.test_organization_defaults_apply_without_repository_forms) ... ok
+test_render_keeps_existing_prefix (test_github_issue_creation.IssueFormTests.test_render_keeps_existing_prefix) ... ok
+test_render_layout_prefix_and_type (test_github_issue_creation.IssueFormTests.test_render_layout_prefix_and_type) ... ok
+test_render_refuses_missing_required_answer (test_github_issue_creation.IssueFormTests.test_render_refuses_missing_required_answer) ... ok
+test_repository_forms_take_precedence (test_github_issue_creation.IssueFormTests.test_repository_forms_take_precedence) ... ok
+test_required_fields_per_form (test_github_issue_creation.IssueFormTests.test_required_fields_per_form) ... ok
+test_upload_fields_are_skipped_with_notice (test_github_issue_creation.IssueFormTests.test_upload_fields_are_skipped_with_notice) ... ok
+test_verbatim_answers_are_preserved (test_github_issue_creation.IssueFormTests.test_verbatim_answers_are_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.315s
+
+OK
+exit=0
