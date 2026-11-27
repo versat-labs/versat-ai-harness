@@ -24,3 +24,7 @@ Commit `a5860da` replaces the fixed skill count with a comparison of the copied 
 The full retry used a clean checkout of the originally approved implementation (`ecaa646`) with that correction applied (`85ba7c8a223220e37b6f16b97f0f8703bd44938b`). This allowed the suite to validate the code before the previous failed result in the active dossier was superseded. The declared CHECK-002 inputs matched the working branch and had digest `62b5109f74b31339296042651851830039b7f379127307136375cd2f296ab994` both before and after execution.
 
 With the same environment and comparison revision as the initial run, `./scripts/validate/run.sh --quality-base origin/main` exited 0. All 197 validator tests, 48 execution tests and 15 SIFEN documentation tests passed (260 total). The changelog check, Ruff lint and formatting checks, package validation, security policy check and SDD inventory passed. This resolves FIND-001.
+
+## Merge verification
+
+After merging `main` at `dd898fd`, the archive guard flagged both previous checks as stale. On clean merge commit `e313934`, `./scripts/validate/run.sh --quality-base origin/main` exited 0 with the pinned dependencies and bytecode generation disabled. All 198 validator tests, 48 execution tests and 15 SIFEN documentation tests passed (261 total). The CHECK-002 input digest matched before and after the run.

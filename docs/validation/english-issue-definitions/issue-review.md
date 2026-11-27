@@ -15,3 +15,5 @@ Reviewed the maintained files at commit `ecaa6463550d032d9fb77cbc055df1d713a4575
 [ADR-0019](../../decisions/0019-github-issue-language.md) is indexed and links back to [ADR-0010](../../decisions/0010-refine-language-policy.md). The earlier decision adds a reciprocal reference and retains its historical text. The [changelog](../../../CHANGELOG.md) records the issue convention under Unreleased.
 
 CHECK-001 passed for all seven local scenarios and both retained obligations it covers. The review was repeated on `a5860da` after the marketplace correction with the same outcomes and matching input snapshots. The [full suite rerun](suite.md#corrected-run) supplies the second required check for REQ-003 scenario 1.
+
+On merge commit `e313934`, the walkthrough produced the same decisions for all seven scenarios and both regression obligations. The three guides link to the GitHub issues section, the internal PR template matches `main`, and the index lists ADR-0019 between ADR-0018 and ADR-0020 with the supersession note intact.

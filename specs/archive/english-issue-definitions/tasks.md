@@ -36,16 +36,16 @@ validation:
     - check: CHECK-001
       result: pass
       evidence: docs/validation/english-issue-definitions/issue-review.md
-      revision: a5860da34ffea8202bd79ed65f6b4d90df7c4187
-      input_digest_before: 1e1f6ff5b959d001251622586f21a06fcbd9d1bab0d8d3ec7679be090e6006c3
-      input_digest_after: 1e1f6ff5b959d001251622586f21a06fcbd9d1bab0d8d3ec7679be090e6006c3
+      revision: e313934182802121d6d3976efd9288dd190723f6
+      input_digest_before: 969edbcdc8bcb765dd71fde88eebcac504d3332d873fc4a980e63bb950a5962c
+      input_digest_after: 969edbcdc8bcb765dd71fde88eebcac504d3332d873fc4a980e63bb950a5962c
       context: {execution: local, environment: "Darwin arm64, Python 3.11.4", observed: true}
     - check: CHECK-002
       result: pass
       evidence: docs/validation/english-issue-definitions/suite.md
-      revision: 85ba7c8a223220e37b6f16b97f0f8703bd44938b
-      input_digest_before: 62b5109f74b31339296042651851830039b7f379127307136375cd2f296ab994
-      input_digest_after: 62b5109f74b31339296042651851830039b7f379127307136375cd2f296ab994
+      revision: e313934182802121d6d3976efd9288dd190723f6
+      input_digest_before: 58095813d9a709011e466796357a93385550588060d9fa99916fdfcfeb33d68e
+      input_digest_after: 58095813d9a709011e466796357a93385550588060d9fa99916fdfcfeb33d68e
       context: {execution: local, environment: "Darwin arm64, Python 3.11.4", observed: true}
   assessments:
     - obligation: {local: {requirement: REQ-001, scenario: 1}}
