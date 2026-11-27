@@ -201,11 +201,15 @@ regression:
     rationale: Tests and the live run confirm the organization forms' prefixes, types, required fields, Portfolio project and vulnerability routes.
 review:
   revision: 1
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream:
     proposal: 4348c5831e8ff05e64d2a251aaf949c5039f9f6305a9a2975c2fed6cb790be6f
-  approval: null
+  approval:
+    source: Developer reply in the Claude Code chat after presentation of Design revision 1 for GitHub issue 53.
+    quote: "sim"
+    revision: 1
+    digest: 72225a72ef8158bb66ef34653ad1f6e226388ac1e6dce5bafbd0b99bb8a7984c
 ---
 
 # Design
@@ -294,4 +298,4 @@ Coverage maps all 23 acceptance positions. The regression rows map the English-i
 
 ## Planning review
 
-Design revision 1 is awaiting the developer's review.
+The developer approved Design revision 1 and authorized Tasks.
