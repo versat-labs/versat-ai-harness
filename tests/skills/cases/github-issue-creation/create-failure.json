@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "create-failure",
+  "prompt": "Use $github-issue-creation: chore — rotate the staging TLS certificate. Scope: staging only. Done when the new certificate is served. Internal Idea.",
+  "visibility": "public",
+  "stub_failure": "create",
+  "replies": [
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Reports that no issue exists and names the permission prerequisite",
+    "Does not retry creation",
+    "Does not claim an issue link"
+  ]
+}

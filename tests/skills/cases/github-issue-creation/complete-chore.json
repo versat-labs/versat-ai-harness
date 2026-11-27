@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "complete-chore",
+  "prompt": "Use $github-issue-creation: chore — update Django from 4.2 to 5.2. Scope: the web app and its settings only. Done when the test suite passes on 5.2. Origin: Internal Idea.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "Confirm the preview."
+  ],
+  "expected": [
+    "No clarification questions",
+    "Chore with 'chore: ' prefix and type Task",
+    "Preview then create after confirmation"
+  ]
+}

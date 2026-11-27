@@ -1,0 +1,3 @@
+{"argv": ["api", "/orgs/versat-labs/issue-fields"], "exit": 0}
+{"argv": ["repo", "view", "versat-labs/synthetic-app", "--json", "visibility"], "exit": 1}
+{"argv": ["api", "/repos/versat-labs/synthetic-app", "--jq", ".visibility"], "exit": 0}

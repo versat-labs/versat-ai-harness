@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "origin-unstated",
+  "prompt": "Use $github-issue-creation: add CSV export to the audit log. Problem: auditors copy rows by hand. JTBD: when I prepare an audit I want to export the log so that I can analyse it in a spreadsheet. Persona: internal auditor.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "External suggestion",
+    "Confirm the preview."
+  ],
+  "expected": [
+    "Asks one Origin question listing the three options and their meanings",
+    "External suggestion shown in the preview and set through the stub"
+  ]
+}

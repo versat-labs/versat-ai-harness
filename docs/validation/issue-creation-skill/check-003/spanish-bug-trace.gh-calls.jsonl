@@ -1,0 +1,8 @@
+{"argv": ["api", "/orgs/versat-labs/issue-fields"], "exit": 0}
+{"argv": ["api", "--method", "POST", "/repos/versat-labs/synthetic-app/issues", "--input", "/tmp/claude-0/-home-user-versat-ai-harness/7a591644-5302-5622-a6a0-1a03f997c2cf/scratchpad/eval/spanish-bug-trace/tmp/create.json"], "exit": 0}
+{"argv": ["api", "--method", "POST", "/repos/versat-labs/synthetic-app/issues/101/issue-field-values", "--input", "/tmp/claude-0/-home-user-versat-ai-harness/7a591644-5302-5622-a6a0-1a03f997c2cf/scratchpad/eval/spanish-bug-trace/tmp/origin.json"], "exit": 0}
+{"argv": ["project", "list", "--owner", "versat-labs", "--format", "json"], "exit": 0}
+{"argv": ["project", "item-add", "1", "--owner", "versat-labs", "--url", "https://github.com/versat-labs/synthetic-app/issues/101"], "exit": 0}
+{"argv": ["api", "/repos/versat-labs/synthetic-app/issues/101"], "exit": 0}
+{"argv": ["api", "/repos/versat-labs/synthetic-app/issues/101/issue-field-values"], "exit": 0}
+{"argv": ["project", "item-list", "1", "--owner", "versat-labs", "--format", "json"], "exit": 1}

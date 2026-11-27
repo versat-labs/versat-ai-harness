@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "declined-preview",
+  "prompt": "Use $github-issue-creation: chore — remove the unused legacy reports module. Scope: delete reports_legacy and its tests. Done when the build passes without it. Internal Idea.",
+  "visibility": "public",
+  "stub_failure": "",
+  "replies": [
+    "No, do not create it."
+  ],
+  "expected": [
+    "Preview shown",
+    "No create call in the stub log after the decline",
+    "Reports that nothing was created"
+  ]
+}
