@@ -103,7 +103,7 @@ validation:
       description: The required suite failed on the existing marketplace test's five-skill assumption.
       tasks: [TASK-004]
       checks: [CHECK-002]
-closure: active
+closure: prepared
 ---
 
 # Tasks for English issue definitions
