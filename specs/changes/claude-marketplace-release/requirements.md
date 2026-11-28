@@ -33,12 +33,14 @@ requirements:
       - No consumer lockfile, Standards snapshot or project template is silently updated to 0.5.0 or latest; Skills keep resolving Standards through standards/index.yaml.
       - Merge requires the existing protected PR, required CI and review; planning approval does not authorize tag, release or merge.
   - id: REQ-006
-    statement: Claude reads the canonical AGENTS.md instructions in this repository and in consumer projects through a CLAUDE.md that only imports it.
+    statement: Claude reads the canonical AGENTS.md instructions in this repository and in consumer projects through a CLAUDE.md that only imports it, as required by the Versat Standards and detected by project audit.
     acceptance:
       - The repository root contains CLAUDE.md whose only instruction is the import @AGENTS.md; a Claude Code session opened in the repository loads the AGENTS.md rules.
       - The base project template provides the same import-only CLAUDE.md, composed by every profile through base without per-profile copies; bootstrap of a new project produces it next to AGENTS.md.
       - Validation fails when a repository or base-template CLAUDE.md is missing, does not import AGENTS.md, or contains rules beyond the import, so no parallel instruction set is maintained.
       - Existing consumers receive CLAUDE.md only through a reviewed migration; an existing project-specific CLAUDE.md is surfaced as a conflict, not overwritten.
+      - The Agent Artifact Standard (standards/core/agent-artifacts.md, resolved through standards/index.yaml) requires every project that has AGENTS.md to provide a CLAUDE.md containing only the @AGENTS.md import and forbids rules in CLAUDE.md; Skills reference this rule through the Standard instead of restating it.
+      - A deterministic consumer check run by project-audit reports a project whose AGENTS.md has no CLAUDE.md, or whose CLAUDE.md does not import AGENTS.md or contains additional instructions, as non-compliant with the affected contract and a remediation path; a compliant project and a project without AGENTS.md produce no such finding. The audit stays read-only.
 ---
 
 # Requirements
@@ -62,6 +64,7 @@ Positions are listed in the frontmatter under each requirement.
 ## Constraints and assumptions
 
 - Claude Code reads `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` at the repository root and auto-discovers `skills/` and `agents/`. This is based on public Claude Code documentation and is re-verified in Design.
+- No consumer project validator exists today (validators/project/README.md); REQ-006 introduces only the instruction entry-point check, not a general project validator.
 - CLAUDE.md is Claude's standard instruction file. Some Claude Code versions also read AGENTS.md, but that is not guaranteed on every Claude surface; the @AGENTS.md import is version-independent.
 - Automatic updates of third-party Claude marketplaces depend on the user's client settings; the Harness cannot force them.
 - The Codex catalog is reported to track main in the managed ChatGPT workspace; updating its ref is what lets existing installations receive v0.5.0.

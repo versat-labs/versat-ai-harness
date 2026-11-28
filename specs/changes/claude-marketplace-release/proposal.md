@@ -7,7 +7,7 @@ summary: Make the root Harness package installable from a Claude plugin marketpl
 risk: medium
 impact:
   state: assessed
-  summary: Extend the exact-ref repository catalog contract to a second client catalog and preserve the Codex marketplace identity, root package and canonical resources.
+  summary: Extend the exact-ref repository catalog contract to a second client catalog, extend the Agent Artifact Standard with an import-only CLAUDE.md entry point, and preserve the Codex marketplace identity, root package and canonical resources.
   items:
     - source:
         change: root-plugin-package
@@ -45,16 +45,19 @@ impact:
       effect: preserve
       targets: [REQ-002]
       reason: Keep Codex catalog versat / Versat Plugins, plugin versat-ai-harness, URL and policy; only its ref advances.
+    - current_contract:
+        path: standards/core/agent-artifacts.md
+        locator: "## Scope and responsibilities"
+        digest: cb54e704af8d32f42b302eaaefe06fa289ca2eb8136960e3330af49614f4444e
+      effect: extend
+      targets: [REQ-006]
+      reason: Keep AGENTS.md as shared project guidance and the existing artifact rules; add the import-only CLAUDE.md entry point for projects that have AGENTS.md.
 review:
-  revision: 1
-  state: approved
+  revision: 2
+  state: awaiting-approval
   blockers: []
   upstream: {}
-  approval:
-    source: Current conversation reply to the Gate 1 request for Proposal/Requirements R1 including REQ-006
-    quote: Sim
-    revision: 1
-    digest: 9c4c65f9751a6e3accfa59f68b1f3b2f03bcae1def5abf3d9c2c69da0ff54af4
+  approval: null
 ---
 
 # Proposal
@@ -76,6 +79,8 @@ The repository root is a portable plugin with a Codex manifest and a Codex catal
 - Decide handling of `agents/` role guidance for Claude (Design).
 - EN/PT/ES setup guidance for Claude; README pointers.
 - Import-only CLAUDE.md (`@AGENTS.md`) at the root and in the `base` project template, with a validator check that it adds no rules.
+- Agent Artifact Standard rule: a project with `AGENTS.md` provides an import-only `CLAUDE.md`.
+- A deterministic consumer instruction entry-point check used by `project-audit`; bootstrap and maintenance keep obtaining the file through the `base` template and reviewed migrations.
 - Version bump to 0.5.0, CHANGELOG, release notes; after merge and with authority, tag `v0.5.0` and GitHub release.
 - An ADR if Design concludes the multi-client catalog is a significant structural decision (extends ADR-0011).
 
@@ -102,12 +107,14 @@ See `impact` metadata. Risks:
 
 ## Current contract baseline
 
-Observed at `b6b0a2a` (main): VERSION `0.4.0`; `plugin.json` and `.codex-plugin/plugin.json` at 0.4.0; `.agents/plugins/marketplace.json` = `versat` / `Versat Plugins`, one `versat-ai-harness` entry, `source: url` to the repository `.git`, `ref: v0.4.0`, AVAILABLE/ON_INSTALL. No `.claude-plugin/` and no CLAUDE.md at the root or in `project-templates/base/` (which provides AGENTS.md). `validators/plugin/validate.py` enforces manifest/version agreement and Codex catalog identity/ref. Remote tags v0.2.0, v0.3.0, v0.4.0; release v0.4.0 published. CHANGELOG still labels 0.4.0 "Unreleased candidate" and has an Unreleased section.
+Observed at `b6b0a2a` (main): VERSION `0.4.0`; `plugin.json` and `.codex-plugin/plugin.json` at 0.4.0; `.agents/plugins/marketplace.json` = `versat` / `Versat Plugins`, one `versat-ai-harness` entry, `source: url` to the repository `.git`, `ref: v0.4.0`, AVAILABLE/ON_INSTALL. No `.claude-plugin/` and no CLAUDE.md at the root or in `project-templates/base/` (which provides AGENTS.md). No Standard requires AGENTS.md or CLAUDE.md: bootstrap obtains AGENTS.md only from the `base` template; `standards/core/agent-artifacts.md` lists AGENTS.md as shared project guidance for projects with agent artifacts; `project-audit` reads repository instructions without a deterministic check; `validators/project/` has no executable validator. `validators/plugin/validate.py` enforces manifest/version agreement and Codex catalog identity/ref. Remote tags v0.2.0, v0.3.0, v0.4.0; release v0.4.0 published. CHANGELOG still labels 0.4.0 "Unreleased candidate" and has an Unreleased section.
 
 ## Proposal acceptance criterion
 
-Approve Proposal/Requirements R1: Claude manifest and catalog at the root with exact-tag selection, validator coverage, trilingual guidance, import-only CLAUDE.md at the root and in the base template, and release v0.5.0 with both catalogs at `v0.5.0`, tag created only after merge with scoped authority.
+Approve Proposal/Requirements R1: Claude manifest and catalog at the root with exact-tag selection, validator coverage, trilingual guidance, import-only CLAUDE.md at the root and in the base template, required by the Agent Artifact Standard and checked during project audit, and release v0.5.0 with both catalogs at `v0.5.0`, tag created only after merge with scoped authority.
 
 ## Planning review
 
 Proposal/Requirements R1 (with REQ-006) was presented for Gate 1 and approved by the owner with “Sim” under digest `9c4c65f9751a6e3accfa59f68b1f3b2f03bcae1def5abf3d9c2c69da0ff54af4`. This unlocks Design only.
+
+After Design R1 was presented, the owner asked to add the Standard rule and audit detection for CLAUDE.md (“Sim, inclua os itens 1 e 2 e reapresente a R2”). REQ-006 gained acceptance positions 5 and 6 and a fourth impact item, so Proposal/Requirements moved to R2 awaiting approval; the R1 approval above is historical. Design R1 is superseded; because Design files exist only after their upstream gate is approved, it was removed from the active dossier and remains in Git history at commit `7fc47b6`. It will be revised after R2 approval.
