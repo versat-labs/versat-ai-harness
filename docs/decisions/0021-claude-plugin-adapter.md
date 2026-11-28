@@ -1,6 +1,6 @@
 # ADR-0021 — Distribute the root package to Claude through a second exact-ref catalog
 
-- Status: Proposed with Design R2 of `claude-marketplace-release`
+- Status: Accepted with Design R2 of `claude-marketplace-release` on 2026-11-28
 - Extends: [ADR-0011](0011-root-portable-plugin-package.md)
 - Related decision: [ADR-0009](0009-execution-adapters.md)
 - Scope: Plugin manifests, repository marketplace catalogs and agent instruction entry points
