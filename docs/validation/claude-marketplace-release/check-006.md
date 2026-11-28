@@ -1,6 +1,6 @@
 # CHECK-006 review of guidance, release procedure and boundaries
 
-Reviewer: implementing agent, on revision 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef against origin/main b6b0a2abae51ec7724a2f6cb8f3c8325d0148df1. Human PR review remains required.
+Reviewer: implementing agent, on revision e823de13b92b5598b444bd958385999c9a9d98c8 against origin/main b6b0a2abae51ec7724a2f6cb8f3c8325d0148df1, rerun under Tasks R3 after the validator bytecode fix and the Unreleased note change (no other reviewed input changed). Human PR review remains required.
 
 | Expectation | Observation | Result |
 |---|---|---|
