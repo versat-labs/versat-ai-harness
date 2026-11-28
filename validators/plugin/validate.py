@@ -89,7 +89,12 @@ def load_instruction_check():
     spec = importlib.util.spec_from_file_location("project_instructions", path)
     module = importlib.util.module_from_spec(spec)
     sys.modules.setdefault(spec.name, module)
-    spec.loader.exec_module(module)
+    # Loading must not write __pycache__ into the package (it is a check input).
+    previous, sys.dont_write_bytecode = sys.dont_write_bytecode, True
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.dont_write_bytecode = previous
     return module
 
 

@@ -8,7 +8,7 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ### Changed
 
-- No changes since 0.5.0.
+- No unreleased changes since 0.5.0.
 
 ## [0.5.0] - 2026-11-28
 
