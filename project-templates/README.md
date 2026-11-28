@@ -30,6 +30,7 @@ The [Agent Artifact Standard](../standards/core/agent-artifacts.md), resolved th
 
 ```text
 AGENTS.md
+CLAUDE.md
 .versat/project.yaml
 .versat/standards.lock
 .agents/skills/<skill-name>/SKILL.md
@@ -54,7 +55,8 @@ Adopt a reviewed exact Harness release and record the target version. Do not bli
 2. Move local Skills to the consumer destination with uppercase `SKILL.md`; update references and verify discovery. Keep installed Plugin dependencies referenced rather than duplicated.
 3. Convert applicable role guidance into valid Codex agent TOML and verify loading in the supported Codex release. A Markdown rename is insufficient. Preserve application source and intentional Plugin exports.
 4. Organize operational workflows into one directory per workflow and bind their actual Skill dependencies. Document executor, permissions, outputs and recovery before marking them ready.
-5. Preserve project-specific content, surface destination conflicts, review the diff and run consumer tests/evals and integration checks. Retain a reviewed rollback path and update the exact lockfile only with the migration.
+5. Add `CLAUDE.md` containing only `@AGENTS.md`, as the resolved Agent Artifact Standard requires. If the project already has a `CLAUDE.md` with its own content, surface it as a conflict, move reviewed rules into `AGENTS.md` and only then replace the file; never overwrite it silently. Confirm with `validators/project/instructions.py --root <project>`.
+6. Preserve project-specific content, surface destination conflicts, review the diff and run consumer tests/evals and integration checks. Retain a reviewed rollback path and update the exact lockfile only with the migration.
 
 The Harness package keeps root `skills/` and `agents/`, and its SDD lifecycle procedures stay under `sdd/workflows/`. Those package paths are not consumer migration targets.
 

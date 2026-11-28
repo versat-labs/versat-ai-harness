@@ -1,0 +1,19 @@
+# CHECK-005 Claude instruction loading
+Claude Code 2.1.332, isolated empty CLAUDE_CONFIG_DIR, non-interactive sessions with no tools allowed, source revision e823de13b92b5598b444bd958385999c9a9d98c8.
+The base-template copy runs at /home/user/check005-base-tmp (deleted afterwards) because Claude Code loads no project instructions from directories inside the session scratchpad (diagnosed in the first run).
+
+## repository root
+1. **Loaded files:** `<repo>/CLAUDE.md` and `<repo>/AGENTS.md`. `CLAUDE.md` contains only `@AGENTS.md`, which pulls in the contents of `AGENTS.md`. All the actual instructions come from `AGENTS.md`.
+
+2. **First sentence from AGENTS.md:** It starts with the heading "# Versat AI Harness". The first sentence after that heading is:
+
+   > "This repository is the source of truth for Versat's AI-assisted development standards and workflows."
+
+## copy of project-templates/base
+1. **Loaded instruction files:**
+   - `CLAUDE.md` at `/home/user/check005-base-tmp/CLAUDE.md`. Its only content is the import line `@AGENTS.md`.
+   - `AGENTS.md` at `/home/user/check005-base-tmp/AGENTS.md`. `CLAUDE.md` pulls it in through that import, and its contents are in my context.
+
+2. **First sentence from AGENTS.md** (after the `# Project instructions` heading):
+
+   > Read `.versat/project.yaml`, `.versat/standards.lock`, active changes under `specs/changes/` and applicable repository documentation before working.

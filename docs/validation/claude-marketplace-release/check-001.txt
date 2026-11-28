@@ -1,0 +1,29 @@
+test_missing_index_is_detected_from_each_skill_directory (tests.validators.test_plugin_marketplace.CopiedPackageResourceTests.test_missing_index_is_detected_from_each_skill_directory) ... ok
+test_packaged_skills_resolve_matching_resources_after_package_copy (tests.validators.test_plugin_marketplace.CopiedPackageResourceTests.test_packaged_skills_resolve_matching_resources_after_package_copy) ... ok
+test_changed_plugin_entry_name_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_changed_plugin_entry_name_is_rejected) ... ok
+test_duplicate_harness_entry_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_duplicate_harness_entry_is_rejected) ... ok
+test_empty_missing_or_non_string_name_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_empty_missing_or_non_string_name_is_rejected) ... ok
+test_legacy_or_unrelated_identity_is_not_an_alias (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_legacy_or_unrelated_identity_is_not_an_alias) ... ok
+test_malformed_or_missing_interface_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_malformed_or_missing_interface_is_rejected) ... ok
+test_manifest_name_drift_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_manifest_name_drift_is_rejected) ... ok
+test_manifest_version_drift_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_manifest_version_drift_is_rejected) ... ok
+test_package_reference_drift_or_latest_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_package_reference_drift_or_latest_is_rejected) ... ok
+test_repository_redirect_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_repository_redirect_is_rejected) ... ok
+test_root_resource_and_skill_contracts_remain_required (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_root_resource_and_skill_contracts_remain_required) ... ok
+test_target_identity_preserves_valid_package (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_target_identity_preserves_valid_package) ... ok
+test_wrong_empty_or_missing_label_is_rejected (tests.validators.test_plugin_marketplace.MarketplaceContractTests.test_wrong_empty_or_missing_label_is_rejected) ... ok
+test_agents_md_remains_required (tests.validators.test_plugin_claude.ClaudePackageTests.test_agents_md_remains_required) ... ok
+test_catalog_identity_and_owner (tests.validators.test_plugin_claude.ClaudePackageTests.test_catalog_identity_and_owner) ... ok
+test_catalog_requires_exactly_one_entry (tests.validators.test_plugin_claude.ClaudePackageTests.test_catalog_requires_exactly_one_entry) ... ok
+test_catalog_source_must_be_exact_github_tag (tests.validators.test_plugin_claude.ClaudePackageTests.test_catalog_source_must_be_exact_github_tag) ... ok
+test_catalogs_select_the_same_release (tests.validators.test_plugin_claude.ClaudePackageTests.test_catalogs_select_the_same_release) ... ok
+test_claude_instruction_entry_points (tests.validators.test_plugin_claude.ClaudePackageTests.test_claude_instruction_entry_points) ... ok
+test_current_package_is_valid (tests.validators.test_plugin_claude.ClaudePackageTests.test_current_package_is_valid) ... ok
+test_manifest_mirrors_portable_identity (tests.validators.test_plugin_claude.ClaudePackageTests.test_manifest_mirrors_portable_identity) ... ok
+test_manifest_must_not_register_role_guidance (tests.validators.test_plugin_claude.ClaudePackageTests.test_manifest_must_not_register_role_guidance) ... ok
+test_missing_claude_files_are_rejected (tests.validators.test_plugin_claude.ClaudePackageTests.test_missing_claude_files_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.931s
+
+OK

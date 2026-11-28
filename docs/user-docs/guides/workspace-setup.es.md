@@ -16,11 +16,13 @@ OpenAI documenta la selección de carpetas en [Projects and chats (inglés)](htt
 
 Pide a Codex informar directorio de trabajo, versión del proveedor y dónde encontró versat-sdd. Las rutas deben pertenecer al proyecto/proveedor previsto. Si falta acceso o una Skill, detén ese flujo y consulta al responsable del repositorio o workspace. No copies políticas de otra release ni supongas instalación automática. Un repositorio sin metadatos de identidad requiere clasificación antes de bootstrap o migración.
 
+Para usar el Harness en Claude Code en lugar de Codex, sigue [Preparar Claude](claude-setup.es.md).
+
 [Continuar al inicio rápido](../quickstart.es.md)
 
 ## Instalación candidata, actualizaciones exactas y recuperación
 
-La candidata local 0.4.0 usa el marketplace `versat` / `Versat Plugins`, conservando el plugin `versat-ai-harness`. La etiqueta exacta v0.4.0 aún no está disponible. El propietario informa que solo Elvis y Everton usan el Harness; ambos reinstalarán manualmente después. Se acepta el seguimiento de main para este alcance, incluida posible interrupción/reparación manual; no se exige fijación previa ni ensayo aislado para entregar el código. Identidad/sincronización nativa siguen sin verificar. Consulte la [guía de transición y recuperación](marketplace-transition.es.md).
+Actualización: la v0.4.0 se publicó el 2026-11-24, y ambos catálogos del repositorio ahora seleccionan la v0.5.0, disponible cuando se cree su tag después del merge. El resto de este párrafo registra el estado anterior de la candidata. La candidata local 0.4.0 usa el marketplace `versat` / `Versat Plugins`, conservando el plugin `versat-ai-harness`. La etiqueta exacta v0.4.0 aún no está disponible. El propietario informa que solo Elvis y Everton usan el Harness; ambos reinstalarán manualmente después. Se acepta el seguimiento de main para este alcance, incluida posible interrupción/reparación manual; no se exige fijación previa ni ensayo aislado para entregar el código. Identidad/sincronización nativa siguen sin verificar. Consulte la [guía de transición y recuperación](marketplace-transition.es.md).
 
 ## Ensayo heredado histórico — no son instrucciones de transición
 

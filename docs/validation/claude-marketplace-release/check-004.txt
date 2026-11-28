@@ -1,0 +1,26 @@
+# CHECK-004 isolated Claude installation
+Candidate: git archive of e823de13b92b5598b444bd958385999c9a9d98c8 with only the catalog source replaced by "./" (local test catalog; the v0.5.0 tag does not exist yet). CLAUDE_CONFIG_DIR: new empty scratch directory, deleted after the run.
+
+## claude --version
+2.1.332 (Claude Code)
+## marketplace add
+Adding marketplace…√ Successfully added marketplace: versat (declared in user settings)
+## install
+Installing plugin "versat-ai-harness@versat"...√ Successfully installed plugin: versat-ai-harness@versat (scope: user)
+## list
+Installed plugins:
+
+  > versat-ai-harness@versat
+    Version: 0.5.0
+    Read from: <scratch>/snap
+    Scope: user
+    Status: √ enabled
+    Note: Default agents/ folder is ignored because the manifest sets "agents"
+
+## non-interactive session (versat-sdd resolution)
+Warning: no stdin data received in 3s, proceeding without it. If piping from a slow command, redirect stdin explicitly: < /dev/null to skip, or wait longer.
+Harness root: `<scratch>/snap`
+VERSION: `0.5.0`
+`sdd/process.md` and `standards/index.yaml` both exist under that root.
+
+**Plugin agents from versat-ai-harness:** none. I have no versat-ai-harness subagent types; the ones I can use are claude, claude-code-guide, Explore, general-purpose, Plan, statusline-setup and web-fetch. The root does have an `agents/` folder with `architect.md`, `orchestrator.md`, `reviewer.md` and a `README.md`, but none of them are available to me as subagents.

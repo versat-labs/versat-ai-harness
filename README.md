@@ -11,6 +11,7 @@ For developers, reviewers and maintainers, including external contributors. Main
 [Quickstart: obtain a first SDD plan](docs/user-docs/quickstart.md) · [Product context](docs/product/overview.md)
 
 - [Workspace setup](docs/user-docs/guides/workspace-setup.md)
+- [Claude setup](docs/user-docs/guides/claude-setup.md)
 - [SDD with Codex](docs/user-docs/guides/sdd-with-codex.md)
 - [GitHub delivery](docs/user-docs/guides/github-delivery.md)
 - [Bootstrap a project](docs/user-docs/guides/project-bootstrap.md)
@@ -23,19 +24,28 @@ For developers, reviewers and maintainers, including external contributors. Main
 
 - [Marketplace transition: new and legacy identities](docs/user-docs/guides/marketplace-transition.md)
 
-## Repository published; 0.4.0 candidate unreleased
+## Repository published; 0.5.0 in preparation
 
-The repository is public and the reviewed Apache-2.0 license and notices are integrated on main. Version 0.4.0 remains an unreleased candidate: no v0.4.0 tag or release is available. Existing text approvals and historical evidence retain their original scope.
+The repository is public and the reviewed Apache-2.0 license and notices are integrated on main. Version 0.4.0 was released on 2026-11-24. Version 0.5.0 adds Claude support; its v0.5.0 tag is created on the merge commit after review. Existing text approvals and historical evidence retain their original scope.
 
 Main protection and the internal PR control test have been verified. Private Vulnerability Reporting is enabled; external fork/CI behavior, security-report receipt/confidentiality and native Plugin installation/update/recovery remain pending. The opening write pause has ended; ordinary work follows protected PRs.
 
-[0.4.0 candidate notes and remaining checks](docs/releases/0.4.0-candidate.md)
+[0.4.0 candidate notes and remaining checks (historical)](docs/releases/0.4.0-candidate.md)
 
 [License](LICENSE) · [Contribution](docs/user-docs/guides/contributing.md) · [Security reporting](docs/user-docs/guides/security-reporting.md)
 
 ## Current state and adoption
 
-VERSION and manifests now declare the local 0.4.0 candidate. Its repository catalog selects v0.4.0, which must not be imported as an available release before that exact tag is created and verified under separate authority. This local preparation changes no installation or consumer pin; the previous released reference is v0.3.0. The two current users plan later manual reinstallation; main synchronization may interrupt their existing setup. See the transition guide for the accepted scope and pending native checks.
+VERSION and the three manifests declare 0.5.0. The Codex catalog (`.agents/plugins/marketplace.json`) and the Claude catalog (`.claude-plugin/marketplace.json`) both select v0.5.0, which is available only after that exact tag is created; the latest released reference is v0.4.0. Publishing a release changes no consumer pin.
+
+Install in Claude Code:
+
+```text
+/plugin marketplace add versat-labs/versat-ai-harness
+/plugin install versat-ai-harness@versat
+```
+
+See [Claude setup](docs/user-docs/guides/claude-setup.md) for updates, verification and recovery.
 
 Workspace administrators manage marketplace import and member installation policy. Use this repository as the source, authenticate with read access, review the imported exact release and confirm member availability. Follow the current workspace administration interface; the repository marketplace policy is AVAILABLE and does not prove automatic installation. Members can use [workspace setup](docs/user-docs/guides/workspace-setup.md).
 

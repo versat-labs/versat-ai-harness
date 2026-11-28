@@ -3,11 +3,12 @@
 
 from __future__ import annotations
 
+import importlib.util
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Any
-
 
 ROOT = Path(__file__).resolve().parents[2]
 SEMVER = re.compile(
@@ -20,6 +21,9 @@ SEMVER = re.compile(
 PLUGIN_NAME = "versat-ai-harness"
 MARKETPLACE_NAME = "versat"
 MARKETPLACE_LABEL = "Versat Plugins"
+REPOSITORY_SLUG = "versat-labs/versat-ai-harness"
+CLAUDE_MIRRORED_FIELDS = ("name", "version", "description", "author", "repository")
+INSTRUCTION_ROOTS = ("", "project-templates/base")
 PORTABLE_SCHEMA = "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json"
 EXPECTED_SKILLS = {
     "architecture-review",
@@ -79,11 +83,111 @@ def validate_skill(skill_name: str, errors: list[str]) -> None:
         errors.append(f"skills/{skill_name}/SKILL.md must declare name: {skill_name}")
 
 
+def load_instruction_check():
+    """Load the consumer instruction check shipped next to this validator."""
+    path = Path(__file__).resolve().parents[1] / "project" / "instructions.py"
+    spec = importlib.util.spec_from_file_location("project_instructions", path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules.setdefault(spec.name, module)
+    # Loading must not write __pycache__ into the package (it is a check input).
+    previous, sys.dont_write_bytecode = sys.dont_write_bytecode, True
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.dont_write_bytecode = previous
+    return module
+
+
+def validate_instruction_entry_points(errors: list[str]) -> None:
+    instructions = load_instruction_check()
+    for relative in INSTRUCTION_ROOTS:
+        base = ROOT / relative if relative else ROOT
+        prefix = f"{relative}/" if relative else ""
+        if not (base / "AGENTS.md").is_file() or (base / "AGENTS.md").is_symlink():
+            errors.append(f"missing {prefix}AGENTS.md")
+            continue
+        for finding in instructions.check(base):
+            errors.append(f"{prefix}{finding.path} {finding.problem}")
+
+
+def validate_claude_manifest(
+    manifest: dict[str, Any] | None,
+    portable: dict[str, Any] | None,
+    errors: list[str],
+) -> None:
+    if manifest is None:
+        return
+    require_equal(manifest.get("name"), PLUGIN_NAME, "Claude Plugin name", errors)
+    if portable is not None:
+        for field in CLAUDE_MIRRORED_FIELDS:
+            require_equal(
+                manifest.get(field),
+                portable.get(field),
+                f"Claude Plugin {field}",
+                errors,
+            )
+    require_equal(
+        manifest.get("agents"),
+        [],
+        "Claude Plugin agents (role guidance must not register as subagents)",
+        errors,
+    )
+
+
+def validate_claude_marketplace(
+    catalog: dict[str, Any] | None, version: str, errors: list[str]
+) -> str | None:
+    if catalog is None:
+        return None
+    require_equal(
+        catalog.get("name"), MARKETPLACE_NAME, "Claude marketplace name", errors
+    )
+    owner = catalog.get("owner")
+    if (
+        not isinstance(owner, dict)
+        or not isinstance(owner.get("name"), str)
+        or not owner["name"].strip()
+    ):
+        errors.append("Claude marketplace owner must define a non-empty name")
+    entries = catalog.get("plugins")
+    if not isinstance(entries, list):
+        errors.append("Claude marketplace plugins must be an array")
+        return None
+    matching = [
+        entry
+        for entry in entries
+        if isinstance(entry, dict) and entry.get("name") == PLUGIN_NAME
+    ]
+    if len(matching) != 1:
+        errors.append(
+            "Claude marketplace must contain exactly one versat-ai-harness entry"
+        )
+        return None
+    source = matching[0].get("source")
+    if not isinstance(source, dict):
+        errors.append("Claude marketplace Plugin source must be an object")
+        return None
+    require_equal(
+        source.get("source"), "github", "Claude marketplace source type", errors
+    )
+    require_equal(
+        source.get("repo"), REPOSITORY_SLUG, "Claude marketplace repository", errors
+    )
+    require_equal(
+        source.get("ref"), f"v{version}", "Claude marketplace release reference", errors
+    )
+    ref = source.get("ref")
+    return ref if isinstance(ref, str) else None
+
+
 def validate() -> list[str]:
     errors: list[str] = []
     portable = load_json("plugin.json", errors)
     compatibility = load_json(".codex-plugin/plugin.json", errors)
     marketplace = load_json(".agents/plugins/marketplace.json", errors)
+    claude_manifest = load_json(".claude-plugin/plugin.json", errors)
+    claude_marketplace = load_json(".claude-plugin/marketplace.json", errors)
+    codex_ref: str | None = None
 
     try:
         version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
@@ -229,6 +333,8 @@ def validate() -> list[str]:
                         "marketplace release reference",
                         errors,
                     )
+                    if isinstance(source.get("ref"), str):
+                        codex_ref = source["ref"]
                 policy = entry.get("policy")
                 if not isinstance(policy, dict):
                     errors.append("marketplace Plugin policy must be an object")
@@ -246,6 +352,14 @@ def validate() -> list[str]:
                     errors.append(
                         "marketplace Plugin category must be a non-empty string"
                     )
+
+    validate_claude_manifest(claude_manifest, portable, errors)
+    claude_ref = validate_claude_marketplace(claude_marketplace, version, errors)
+    if codex_ref is not None and claude_ref is not None and codex_ref != claude_ref:
+        errors.append(
+            f"Codex and Claude catalogs must select the same release: {codex_ref!r} != {claude_ref!r}"
+        )
+    validate_instruction_entry_points(errors)
 
     return errors
 
