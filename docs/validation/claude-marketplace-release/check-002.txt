@@ -1,14 +1,14 @@
-Quality comparison base: 577512598afe2f9a296f3b7a92acff9f40b961f2
-Changelog: required by 48 path(s), including '.agents/plugins/marketplace.json'.
+Quality comparison base: b6b0a2abae51ec7724a2f6cb8f3c8325d0148df1
+Changelog: required by 28 path(s), including '.agents/plugins/marketplace.json'.
 Changelog: found a new Unreleased entry.
-Ruff: checking 10 changed Python source file(s).
+Ruff: checking 5 changed Python source file(s).
 All checks passed!
-10 files already formatted
+5 files already formatted
 Portable Plugin package validation passed.
-{"schema_version": 1, "repository": "", "mode": "policy", "applicability": "unknown", "result": "pass", "public_ready": false, "policy": {"id": "versat-public-github", "version": "2.0.0", "path": "core/public-repository-security.yaml", "digest": "babd93d88981ea3b92fb88f53575e46038f4871cd9a874620fc506e6835affc6"}, "provider": {"version": "0.5.0", "commit": "5d77d73a93ec4a2560ac91c213cf7d14f970e8ef", "dirty": true, "mode": "source"}, "controls": [], "evidence": {}}
-SDD validation: pass
+{"schema_version": 1, "repository": "", "mode": "policy", "applicability": "unknown", "result": "pass", "public_ready": false, "policy": {"id": "versat-public-github", "version": "2.0.0", "path": "core/public-repository-security.yaml", "digest": "babd93d88981ea3b92fb88f53575e46038f4871cd9a874620fc506e6835affc6"}, "provider": {"version": "0.5.0", "commit": "a57f29baae8a84a571fb1d805ae1cb8a34a07186", "dirty": true, "mode": "source"}, "controls": [], "evidence": {}}
+SDD validation: fail
 Declared contract checks only; archive inventory is historical unless selected for live delivery. No proof of semantic adequacy, execution authenticity, human identity, remote CI, merge or deployment.
-claude-marketplace-release: {"assessed":0,"local_scenarios":21,"open_findings":0,"regression_obligations":7,"requirements":{"REQ-001":"unverified","REQ-002":"unverified","REQ-003":"unverified","REQ-004":"unverified","REQ-005":"unverified","REQ-006":"unverified"},"results":0,"stale_results":0}
+claude-marketplace-release: {"assessed":0,"local_scenarios":21,"open_findings":1,"regression_obligations":7,"requirements":{"REQ-001":"unverified","REQ-002":"unverified","REQ-003":"unverified","REQ-004":"unverified","REQ-005":"unverified","REQ-006":"unverified"},"results":7,"stale_results":3}
 add-sifen-skill: {"assessed":11,"local_scenarios":10,"open_findings":0,"regression_obligations":1,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass"},"results":4,"stale_results":0}
 automated-test-execution: {"assessed":50,"local_scenarios":27,"open_findings":0,"regression_obligations":23,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass"},"results":8,"stale_results":0}
 coding-standards: {"assessed":20,"local_scenarios":13,"open_findings":0,"regression_obligations":7,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass"},"results":5,"stale_results":0}
@@ -23,6 +23,11 @@ issue-creation-skill: {"assessed":28,"local_scenarios":23,"open_findings":0,"reg
 portfolio-licensing-policy: {"assessed":24,"local_scenarios":18,"open_findings":0,"regression_obligations":6,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass"},"results":6,"stale_results":0}
 public-repository-security: {"assessed":38,"local_scenarios":31,"open_findings":0,"regression_obligations":7,"requirements":{"REQ-001":"pass","REQ-002":"pass","REQ-003":"pass","REQ-004":"pass","REQ-005":"pass","REQ-006":"pass","REQ-007":"pass","REQ-008":"pass","REQ-009":"pass","REQ-010":"pass","REQ-011":"pass","REQ-012":"pass","REQ-013":"pass"},"results":7,"stale_results":0}
 retire-branch-administration-ruleset: {"assessed":9,"local_scenarios":6,"open_findings":0,"regression_obligations":3,"requirements":{"REQ-001":"pass","REQ-002":"pass"},"results":2,"stale_results":0}
+VALIDATION_FAILED: <repo>/specs/changes/claude-marketplace-release/tasks.md: CHECK-003 has a recorded failure
+INPUT_STALE: <repo>/specs/changes/claude-marketplace-release/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-001
+INPUT_STALE: <repo>/specs/changes/claude-marketplace-release/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-002
+INPUT_STALE: <repo>/specs/changes/claude-marketplace-release/tasks.md: Rerun affected check, do not relabel old evidence: CHECK-006
+ACCEPTANCE_GAP: <repo>/specs/changes/claude-marketplace-release/tasks.md: FIND-001: claude plugin validate passes with an additional warning that root CLAUDE.md is not loaded as plugin context; Design R3 accepts only agent frontmatter and icon warnings. The root CLAUDE.md is required by REQ-006 for repository sessions, so the check expectation, not the implementation, needs review.
 WARNING LEGACY_EXEMPT: <repo>/specs/archive/agent-project-layout: Immutable legacy dossier: v2 approval and evidence gates were not verified
 WARNING LEGACY_HISTORICAL_ARCHIVE: <repo>/specs/archive/agent-project-layout: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
 WARNING LEGACY_EXEMPT: <repo>/specs/archive/align-language-standard: Immutable legacy dossier: v2 approval and evidence gates were not verified
@@ -39,22 +44,22 @@ WARNING LEGACY_EXEMPT: <repo>/specs/archive/shortcut-git-convention: Immutable l
 WARNING LEGACY_HISTORICAL_ARCHIVE: <repo>/specs/archive/shortcut-git-convention: Historical archive record preserved; merge evidence requires human review and v2 readiness remains unverified
 .....................................................................................................................................................................................................................
 ----------------------------------------------------------------------
-Ran 213 tests in 48.028s
+Ran 213 tests in 51.983s
 
 OK
 ................................................
 ----------------------------------------------------------------------
-Ran 48 tests in 22.135s
+Ran 48 tests in 24.573s
 
 OK
 ...............
 ----------------------------------------------------------------------
-Ran 15 tests in 1.751s
+Ran 15 tests in 2.288s
 
 OK
 .............
 ----------------------------------------------------------------------
-Ran 13 tests in 0.328s
+Ran 13 tests in 0.306s
 
 OK
-Versat AI Harness package, SDD contract and validator tests passed.
+Validation failed with 1 error(s).

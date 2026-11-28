@@ -24,6 +24,6 @@ test_manifest_must_not_register_role_guidance (tests.validators.test_plugin_clau
 test_missing_claude_files_are_rejected (tests.validators.test_plugin_claude.ClaudePackageTests.test_missing_claude_files_are_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 2.812s
+Ran 24 tests in 2.880s
 
 OK

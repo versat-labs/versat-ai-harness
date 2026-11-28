@@ -52,19 +52,9 @@ validation:
     - check: CHECK-001
       result: pass
       evidence: docs/validation/claude-marketplace-release/check-001.txt
-      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
-      input_digest_before: "9ea5c04df1f48275c3f0046c7352279d5b15d0a3ff97ef8d69562c40b1b1436c"
-      input_digest_after: "9ea5c04df1f48275c3f0046c7352279d5b15d0a3ff97ef8d69562c40b1b1436c"
-      context:
-        execution: local
-        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
-        observed: true
-    - check: CHECK-002
-      result: pass
-      evidence: docs/validation/claude-marketplace-release/check-002.txt
-      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
-      input_digest_before: "282e30fbb67696eb8a095ea5080807d3f16f89dce60981c719cc780e07e5c7d4"
-      input_digest_after: "282e30fbb67696eb8a095ea5080807d3f16f89dce60981c719cc780e07e5c7d4"
+      revision: "Working tree of commit a57f29baae8a84a571fb1d805ae1cb8a34a07186 before evidence files"
+      input_digest_before: "cb277b152d3b942c457321042d839903ec69d7b74ffa024f212e658a0903b009"
+      input_digest_after: "cb277b152d3b942c457321042d839903ec69d7b74ffa024f212e658a0903b009"
       context:
         execution: local
         environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
@@ -99,20 +89,10 @@ validation:
         execution: local
         environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
         observed: true
-    - check: CHECK-006
-      result: pass
-      evidence: docs/validation/claude-marketplace-release/check-006.md
-      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
-      input_digest_before: "dec5cc6923097c1bfa1535595806cc2e0bc87473a51554336fee25e3174685d1"
-      input_digest_after: "dec5cc6923097c1bfa1535595806cc2e0bc87473a51554336fee25e3174685d1"
-      context:
-        execution: local
-        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
-        observed: true
     - check: CHECK-008
       result: pass
       evidence: docs/validation/claude-marketplace-release/check-008.txt
-      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      revision: "Working tree of commit a57f29baae8a84a571fb1d805ae1cb8a34a07186 before evidence files"
       input_digest_before: "638cf441c6f22be7c35c51ac4184991d160345bacdf94816fd95de543d71a7a3"
       input_digest_after: "638cf441c6f22be7c35c51ac4184991d160345bacdf94816fd95de543d71a7a3"
       context:
@@ -170,6 +150,8 @@ TASK-001 to TASK-006 implemented. The quality check requires a new note under `#
 ## Validation evidence
 
 CHECK-001, 002, 004, 005, 006 and 008 passed with identical before/after input digests. CHECK-003 failed its declared expectation: `claude plugin validate .` passed with warnings, but besides the accepted agent-frontmatter and icon warnings it reported `root: CLAUDE.md at the plugin root is not loaded as project context` (FIND-001). The root CLAUDE.md is intended for repository sessions (REQ-006.1, verified by CHECK-005), so resolving this needs a Design revision of CHECK-003's accepted warnings. CHECK-005 also showed that Claude Code loads no project instructions from directories inside the session scratchpad; the base-template copy was rerun outside it. Assessments are pending the FIND-001 decision.
+
+The first full run also exposed that the Plugin validator, by importing `validators/project/instructions.py`, wrote `__pycache__` into validator inputs and made results look stale. Commit a57f29b stops bytecode writing during that import (routine implementation fix). CHECK-001 and CHECK-008 were rerun on that commit and passed. CHECK-002 and CHECK-006 results were withdrawn because their inputs changed (validator fix and the Unreleased note); CHECK-002 cannot pass while FIND-001 keeps a recorded failure in this dossier, so both rerun after FIND-001 is resolved.
 
 ## Delivery
 
