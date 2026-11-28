@@ -1,0 +1,24 @@
+# CHECK-005 Claude instruction loading
+Claude Code 2.1.332, isolated empty CLAUDE_CONFIG_DIR, non-interactive sessions with no tools allowed. Source revision 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef.
+
+## repository root
+1. **Loaded instruction files:** two files were loaded.
+   - `<repo>/CLAUDE.md` contains only `@AGENTS.md`, which imports the other file.
+   - `<repo>/AGENTS.md` was pulled in through that import, and its full content is in my context.
+
+2. **First sentence from AGENTS.md** (it comes right after the `# Versat AI Harness` heading):
+
+   > "This repository is the source of truth for Versat's AI-assisted development standards and workflows."
+
+## copy of project-templates/base inside the session scratchpad (diagnostic)
+(1) No project instruction files are in my context. Nothing from CLAUDE.md, AGENTS.md or any similar file was loaded. What I have is the system prompt, the environment details, the skill and agent listings, and an automatic reminder with account and commit-attribution details. None of that comes from a project file.
+
+(2) There is no AGENTS.md content in my context, so I have no first sentence to quote. If the repository has an AGENTS.md, it wasn't loaded into this session.
+
+Diagnostic: the copy under the session scratchpad (a /tmp path owned by the Claude Code session) loaded no project instructions at all, so the location, not CLAUDE.md, prevented loading. The same copy placed at /home/user/check005-base-tmp (deleted afterwards) loaded both files:
+
+## copy of project-templates/base outside the scratchpad
+1. **Loaded instruction files:** `CLAUDE.md` and `AGENTS.md`, both at `/home/user/check005-base-tmp/`. `CLAUDE.md` holds only the line `@AGENTS.md`, which imports `AGENTS.md`.
+
+2. **First sentence from AGENTS.md, verbatim:**
+   > "Read `.versat/project.yaml`, `.versat/standards.lock`, active changes under `specs/changes/` and applicable repository documentation before working."

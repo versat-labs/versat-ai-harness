@@ -47,10 +47,88 @@ review:
     revision: 2
     digest: dd5dac3144088ebeb3bf04388c04f0a17e5c98e5c107d66632592173f051dd31
 validation:
-  plan_digest: null
-  results: []
+  plan_digest: dd5dac3144088ebeb3bf04388c04f0a17e5c98e5c107d66632592173f051dd31
+  results:
+    - check: CHECK-001
+      result: pass
+      evidence: docs/validation/claude-marketplace-release/check-001.txt
+      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      input_digest_before: "9ea5c04df1f48275c3f0046c7352279d5b15d0a3ff97ef8d69562c40b1b1436c"
+      input_digest_after: "9ea5c04df1f48275c3f0046c7352279d5b15d0a3ff97ef8d69562c40b1b1436c"
+      context:
+        execution: local
+        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
+        observed: true
+    - check: CHECK-002
+      result: pass
+      evidence: docs/validation/claude-marketplace-release/check-002.txt
+      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      input_digest_before: "282e30fbb67696eb8a095ea5080807d3f16f89dce60981c719cc780e07e5c7d4"
+      input_digest_after: "282e30fbb67696eb8a095ea5080807d3f16f89dce60981c719cc780e07e5c7d4"
+      context:
+        execution: local
+        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
+        observed: true
+    - check: CHECK-003
+      result: fail
+      evidence: docs/validation/claude-marketplace-release/check-003.txt
+      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      input_digest_before: "24335effa5391573e7591d815efa1449ef90de3b367045029718537fd8f0c7e4"
+      input_digest_after: "24335effa5391573e7591d815efa1449ef90de3b367045029718537fd8f0c7e4"
+      context:
+        execution: local
+        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
+        observed: true
+    - check: CHECK-004
+      result: pass
+      evidence: docs/validation/claude-marketplace-release/check-004.txt
+      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      input_digest_before: "a54c0111decb472d6d9c559f31be22344b7845bbad3d18fb3a6dd21ae982ae11"
+      input_digest_after: "a54c0111decb472d6d9c559f31be22344b7845bbad3d18fb3a6dd21ae982ae11"
+      context:
+        execution: local
+        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
+        observed: true
+    - check: CHECK-005
+      result: pass
+      evidence: docs/validation/claude-marketplace-release/check-005.txt
+      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      input_digest_before: "5bd9ea7666fb111c0c96d2ca0c84caa322334fd63c30f98be94bf0cca12a1f0f"
+      input_digest_after: "5bd9ea7666fb111c0c96d2ca0c84caa322334fd63c30f98be94bf0cca12a1f0f"
+      context:
+        execution: local
+        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
+        observed: true
+    - check: CHECK-006
+      result: pass
+      evidence: docs/validation/claude-marketplace-release/check-006.md
+      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      input_digest_before: "dec5cc6923097c1bfa1535595806cc2e0bc87473a51554336fee25e3174685d1"
+      input_digest_after: "dec5cc6923097c1bfa1535595806cc2e0bc87473a51554336fee25e3174685d1"
+      context:
+        execution: local
+        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
+        observed: true
+    - check: CHECK-008
+      result: pass
+      evidence: docs/validation/claude-marketplace-release/check-008.txt
+      revision: "Working tree of commit 5d77d73a93ec4a2560ac91c213cf7d14f970e8ef (implementation) before evidence files"
+      input_digest_before: "638cf441c6f22be7c35c51ac4184991d160345bacdf94816fd95de543d71a7a3"
+      input_digest_after: "638cf441c6f22be7c35c51ac4184991d160345bacdf94816fd95de543d71a7a3"
+      context:
+        execution: local
+        environment: "Linux container, Python 3.13, Ruff 0.14.14, Claude Code 2.1.332"
+        observed: true
   assessments: []
-  findings: []
+  findings:
+    - id: FIND-001
+      source: {plan: "CHECK-003 expected observations"}
+      category: contradicts
+      state: open
+      evidence: docs/validation/claude-marketplace-release/check-003.txt
+      description: claude plugin validate passes with an additional warning that root CLAUDE.md is not loaded as plugin context; Design R3 accepts only agent frontmatter and icon warnings. The root CLAUDE.md is required by REQ-006 for repository sessions, so the check expectation, not the implementation, needs review.
+      tasks: [TASK-007]
+      checks: [CHECK-003]
 closure: active
 ---
 
@@ -91,7 +169,7 @@ TASK-001 to TASK-006 implemented. The quality check requires a new note under `#
 
 ## Validation evidence
 
-No check has been executed for this plan.
+CHECK-001, 002, 004, 005, 006 and 008 passed with identical before/after input digests. CHECK-003 failed its declared expectation: `claude plugin validate .` passed with warnings, but besides the accepted agent-frontmatter and icon warnings it reported `root: CLAUDE.md at the plugin root is not loaded as project context` (FIND-001). The root CLAUDE.md is intended for repository sessions (REQ-006.1, verified by CHECK-005), so resolving this needs a Design revision of CHECK-003's accepted warnings. CHECK-005 also showed that Claude Code loads no project instructions from directories inside the session scratchpad; the base-template copy was rerun outside it. Assessments are pending the FIND-001 decision.
 
 ## Delivery
 
