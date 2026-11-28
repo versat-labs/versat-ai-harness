@@ -35,3 +35,4 @@ Do not silently rewrite an accepted decision. Create a new ADR, reference the pr
 - [ADR-0018 — Verify public repository security through a versioned policy and read-only observations](0018-public-repository-security-verification.md) (branch administration provision superseded by ADR-0020)
 - [ADR-0019 — Use English for GitHub issue definitions](0019-github-issue-language.md)
 - [ADR-0020 — Retire universal branch administration from the public GitHub baseline](0020-retire-universal-branch-administration.md)
+- [ADR-0021 — Distribute the root package to Claude through a second exact-ref catalog](0021-claude-plugin-adapter.md) (proposed)

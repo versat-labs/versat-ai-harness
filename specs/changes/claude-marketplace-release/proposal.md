@@ -47,10 +47,14 @@ impact:
       reason: Keep Codex catalog versat / Versat Plugins, plugin versat-ai-harness, URL and policy; only its ref advances.
 review:
   revision: 1
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream: {}
-  approval: null
+  approval:
+    source: Current conversation reply to the Gate 1 request for Proposal/Requirements R1 including REQ-006
+    quote: Sim
+    revision: 1
+    digest: 9c4c65f9751a6e3accfa59f68b1f3b2f03bcae1def5abf3d9c2c69da0ff54af4
 ---
 
 # Proposal
@@ -106,4 +110,4 @@ Approve Proposal/Requirements R1: Claude manifest and catalog at the root with e
 
 ## Planning review
 
-Presented for Gate 1 as R1. No approval recorded yet.
+Proposal/Requirements R1 (with REQ-006) was presented for Gate 1 and approved by the owner with “Sim” under digest `9c4c65f9751a6e3accfa59f68b1f3b2f03bcae1def5abf3d9c2c69da0ff54af4`. This unlocks Design only.
