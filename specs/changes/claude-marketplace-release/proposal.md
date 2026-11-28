@@ -54,10 +54,14 @@ impact:
       reason: Keep AGENTS.md as shared project guidance and the existing artifact rules; add the import-only CLAUDE.md entry point for projects that have AGENTS.md.
 review:
   revision: 3
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream: {}
-  approval: null
+  approval:
+    source: Current conversation reply to the Gate 1 request for Proposal/Requirements R3
+    quote: Sim, aprovo a R3
+    revision: 3
+    digest: 6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429
 ---
 
 # Proposal
@@ -123,3 +127,5 @@ After Design R1 was presented, the owner asked to add the Standard rule and audi
 The owner approved Proposal/Requirements R2 with “Sim, aprovo a R2” under digest `84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e`. This unlocks Design R2 only.
 
 Design R2 was then approved (“Sim, aprovo o Design R2”, digest `e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa`) and Tasks R1 presented. At Gate 3 the owner chose to update the base template lock (“Opção (b), reabra o Gate 1”): REQ-005 acceptance 2 now requires `harness.version: 0.5.0` in `project-templates/base/.versat/standards.lock`. Proposal/Requirements moved to R3 awaiting approval; R1 and R2 approvals are historical, and Design R2 and Tasks R1 are superseded.
+
+The owner approved Proposal/Requirements R3 with “Sim, aprovo a R3” under digest `6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429`. This unlocks Design R3 only.

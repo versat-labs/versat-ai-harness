@@ -106,7 +106,8 @@ validation:
         from READMEs and workspace setup; native steps not observed by CHECK-004 labelled unverified;
         no changes under specs/archive, docs/validation of other changes, docs/handoffs or
         docs/releases/0.4.0-*; git ls-remote shows v0.4.0 still at c191f3b; no consumer lockfile, Standards
-        snapshot or profile template other than the base CLAUDE.md changed; project-templates README
+        snapshot or profile template changed other than the base CLAUDE.md and the base
+        .versat/standards.lock harness.version, which reads 0.5.0; project-templates README
         documents CLAUDE.md adoption as a reviewed migration that surfaces existing CLAUDE.md conflicts;
         scripts/release/README documents tag-after-merge, both catalogs and that refresh/update observations
         are recorded as observed or unverified; guidance does not claim v0.5.0 installable before the tag;
@@ -240,11 +241,11 @@ regression:
     checks: [CHECK-006, CHECK-008]
     rationale: Review confirms the existing Agent Artifact rules (AGENTS.md as shared guidance, no native agent registration claims) are unchanged; CHECK-008 confirms projects without AGENTS.md get no new finding.
 review:
-  revision: 2
-  state: superseded
+  revision: 3
+  state: awaiting-approval
   blockers: []
   upstream:
-    proposal: 84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e
+    proposal: 6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429
   approval: null
 ---
 
@@ -267,11 +268,11 @@ See [ADR-0021](../../../docs/decisions/0021-claude-plugin-adapter.md) (proposed 
 5. **Guidance**: `docs/user-docs/guides/claude-setup.md` with `.pt.md`/`.es.md` (add marketplace, install, enable auto-update or `claude plugin update versat-ai-harness@versat`, verify version/Skill paths, recover by reinstalling an exact earlier tag via `owner/repo#vX.Y.Z`); install line in the three READMEs; link from workspace setup; `project-templates/README.md` consumer migration step for `CLAUDE.md`; `scripts/release/README.md` release order.
 6. **Standard**: add to `standards/core/agent-artifacts.md` a table row "Claude instruction entry point | `CLAUDE.md` | Imports `AGENTS.md` for Claude" and a short subsection: a project that has `AGENTS.md` MUST provide `CLAUDE.md` whose only content is `@AGENTS.md`; `CLAUDE.md` MUST NOT contain instructions; `AGENTS.md` remains the canonical guidance. Standards are versioned with the Harness release (no per-file version in `standards/index.yaml`), so 0.5.0 carries the change. Add Claude memory documentation to its external format references.
 7. **Consumer check**: `validators/project/instructions.py --root <project>` (read-only, standard library only) implements the rule as a function returning findings, and prints findings with the affected Standard and remediation; exit 1 on findings. The Plugin validator calls the same function for the root and `project-templates/base/`. `validators/project/README.md` documents it; `skills/project-audit/SKILL.md` step 4 links that README as an applicable deterministic validator, without restating the rule. Bootstrap and maintenance need no Skill change: they obtain `CLAUDE.md` from the `base` template and the reviewed migration (`project-templates/README.md`).
-8. **Release 0.5.0**: bump VERSION, three manifests, both catalog refs; CHANGELOG moves Unreleased into `## [0.5.0] - <merge date>` and adds this change. The existing `0.4.0` heading is corrected from "Unreleased candidate" to its published date 2026-11-24 without editing its entries. The GitHub release body is the 0.5.0 CHANGELOG section.
+8. **Release 0.5.0**: bump VERSION, three manifests, both catalog refs and `project-templates/base/.versat/standards.lock` `harness.version` (other lock fields unchanged); CHANGELOG moves Unreleased into `## [0.5.0] - <merge date>` and adds this change. The existing `0.4.0` heading is corrected from "Unreleased candidate" to its published date 2026-11-24 without editing its entries. The GitHub release body is the 0.5.0 CHANGELOG section.
 
 ## Boundaries and contracts
 
-Root package, canonical directories and Codex catalog identity are unchanged. The consumer check covers only the instruction entry point; it is not a general project validator. `agents/` stays role guidance on both clients. Consumer lockfiles and Standards snapshots are not touched. `AGENTS.md` stays the only instruction source; `CLAUDE.md` adds nothing.
+Root package, canonical directories and Codex catalog identity are unchanged. The consumer check covers only the instruction entry point; it is not a general project validator. `agents/` stays role guidance on both clients. Existing consumer lockfiles and Standards snapshots are not touched; only the base template lock version follows the release. `AGENTS.md` stays the only instruction source; `CLAUDE.md` adds nothing.
 
 ## Data, security and permissions
 
@@ -302,3 +303,5 @@ CHECK-001 covers structural contracts and the six package regression obligations
 ## Planning review
 
 Design R1 (digest `80a7d9f5fef955c73dd9a6a8dccfacd2afdf187733091daff8f5eed46ca025c0`) was presented and not approved; it was superseded by Proposal/Requirements R2. Design R2 adds the Agent Artifact Standard rule, the consumer instruction check (CHECK-008) and their coverage, and is presented for Gate 2 with the updated ADR-0021 (proposed). The owner approved Design R2 with “Sim, aprovo o Design R2” under digest `e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa`; ADR-0021 is accepted with it. This unlocked Tasks only. Design R2 was superseded when Proposal/Requirements R3 changed REQ-005 acceptance 2; its approval above is historical.
+
+Design R3 binds to Proposal/Requirements R3 and adds the base template lock update (`harness.version: 0.5.0`) to the release step and CHECK-006; nothing else changes. Presented for Gate 2 with ADR-0021 (accepted with Design R2, unchanged). No approval recorded yet.
