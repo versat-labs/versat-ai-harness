@@ -30,7 +30,7 @@ requirements:
     statement: Existing package, governance and consumer boundaries are preserved.
     acceptance:
       - The complete repository validation (./scripts/validate/run.sh) and quality checks pass on the final source, including the existing Codex marketplace regression tests.
-      - No consumer lockfile, Standards snapshot or project template is silently updated to 0.5.0 or latest; Skills keep resolving Standards through standards/index.yaml.
+      - The base project template's .versat/standards.lock declares harness.version 0.5.0 so newly bootstrapped projects select the release that contains the CLAUDE.md rule; no other template content beyond the base CLAUDE.md changes, no existing consumer lockfile or Standards snapshot is updated to 0.5.0 or latest, and Skills keep resolving Standards through standards/index.yaml.
       - Merge requires the existing protected PR, required CI and review; planning approval does not authorize tag, release or merge.
   - id: REQ-006
     statement: Claude reads the canonical AGENTS.md instructions in this repository and in consumer projects through a CLAUDE.md that only imports it, as required by the Versat Standards and detected by project audit.

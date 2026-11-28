@@ -36,7 +36,7 @@ tasks:
     status: pending
 review:
   revision: 1
-  state: awaiting-approval
+  state: superseded
   blockers: []
   upstream:
     proposal: 84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e
@@ -77,7 +77,7 @@ Not part of the pre-merge completion gate: after merge and with scoped administr
 
 ## Planning review
 
-Tasks R1 presented for Gate 3. No approval recorded yet. Tasks approval ends planning; implementation requires an explicit request.
+Tasks R1 (digest `88b5463ccc1ed9eb5a64f7d53e08e1e721293c396ecd5ecb6890450c8ce58081`) was presented for Gate 3 and not approved; it is superseded by Proposal/Requirements R3. Tasks approval ends planning; implementation requires an explicit request.
 
 ## Progress
 

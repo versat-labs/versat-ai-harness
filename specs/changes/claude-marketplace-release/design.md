@@ -241,15 +241,11 @@ regression:
     rationale: Review confirms the existing Agent Artifact rules (AGENTS.md as shared guidance, no native agent registration claims) are unchanged; CHECK-008 confirms projects without AGENTS.md get no new finding.
 review:
   revision: 2
-  state: approved
+  state: superseded
   blockers: []
   upstream:
     proposal: 84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e
-  approval:
-    source: Current conversation reply to the Gate 2 request for Design R2 and ADR-0021
-    quote: Sim, aprovo o Design R2
-    revision: 2
-    digest: e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa
+  approval: null
 ---
 
 # Design
@@ -305,4 +301,4 @@ CHECK-001 covers structural contracts and the six package regression obligations
 
 ## Planning review
 
-Design R1 (digest `80a7d9f5fef955c73dd9a6a8dccfacd2afdf187733091daff8f5eed46ca025c0`) was presented and not approved; it was superseded by Proposal/Requirements R2. Design R2 adds the Agent Artifact Standard rule, the consumer instruction check (CHECK-008) and their coverage, and is presented for Gate 2 with the updated ADR-0021 (proposed). The owner approved Design R2 with “Sim, aprovo o Design R2” under digest `e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa`; ADR-0021 is accepted with it. This unlocks Tasks only.
+Design R1 (digest `80a7d9f5fef955c73dd9a6a8dccfacd2afdf187733091daff8f5eed46ca025c0`) was presented and not approved; it was superseded by Proposal/Requirements R2. Design R2 adds the Agent Artifact Standard rule, the consumer instruction check (CHECK-008) and their coverage, and is presented for Gate 2 with the updated ADR-0021 (proposed). The owner approved Design R2 with “Sim, aprovo o Design R2” under digest `e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa`; ADR-0021 is accepted with it. This unlocked Tasks only. Design R2 was superseded when Proposal/Requirements R3 changed REQ-005 acceptance 2; its approval above is historical.

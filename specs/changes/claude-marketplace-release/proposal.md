@@ -53,15 +53,11 @@ impact:
       targets: [REQ-006]
       reason: Keep AGENTS.md as shared project guidance and the existing artifact rules; add the import-only CLAUDE.md entry point for projects that have AGENTS.md.
 review:
-  revision: 2
-  state: approved
+  revision: 3
+  state: awaiting-approval
   blockers: []
   upstream: {}
-  approval:
-    source: Current conversation reply to the Gate 1 request for Proposal/Requirements R2
-    quote: Sim, aprovo a R2
-    revision: 2
-    digest: 84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e
+  approval: null
 ---
 
 # Proposal
@@ -85,6 +81,7 @@ The repository root is a portable plugin with a Codex manifest and a Codex catal
 - Import-only CLAUDE.md (`@AGENTS.md`) at the root and in the `base` project template, with a validator check that it adds no rules.
 - Agent Artifact Standard rule: a project with `AGENTS.md` provides an import-only `CLAUDE.md`.
 - A deterministic consumer instruction entry-point check used by `project-audit`; bootstrap and maintenance keep obtaining the file through the `base` template and reviewed migrations.
+- Base template `.versat/standards.lock` `harness.version` set to 0.5.0, as in previous releases.
 - Version bump to 0.5.0, CHANGELOG, release notes; after merge and with authority, tag `v0.5.0` and GitHub release.
 - An ADR if Design concludes the multi-client catalog is a significant structural decision (extends ADR-0011).
 
@@ -124,3 +121,5 @@ Proposal/Requirements R1 (with REQ-006) was presented for Gate 1 and approved by
 After Design R1 was presented, the owner asked to add the Standard rule and audit detection for CLAUDE.md (“Sim, inclua os itens 1 e 2 e reapresente a R2”). REQ-006 gained acceptance positions 5 and 6 and a fourth impact item, so Proposal/Requirements moved to R2 awaiting approval; the R1 approval above is historical. Design R1 is superseded; because Design files exist only after their upstream gate is approved, it was removed from the active dossier and remains in Git history at commit `7fc47b6`. It will be revised after R2 approval.
 
 The owner approved Proposal/Requirements R2 with “Sim, aprovo a R2” under digest `84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e`. This unlocks Design R2 only.
+
+Design R2 was then approved (“Sim, aprovo o Design R2”, digest `e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa`) and Tasks R1 presented. At Gate 3 the owner chose to update the base template lock (“Opção (b), reabra o Gate 1”): REQ-005 acceptance 2 now requires `harness.version: 0.5.0` in `project-templates/base/.versat/standards.lock`. Proposal/Requirements moved to R3 awaiting approval; R1 and R2 approvals are historical, and Design R2 and Tasks R1 are superseded.
