@@ -31,8 +31,8 @@ impact:
         artifact: proposal
         locator: "## Current contract baseline"
       effect: preserve
-      targets: [REQ-001, REQ-005]
-      reason: The Claude package reuses the root tree; no copied Skills or Standards.
+      targets: [REQ-001, REQ-005, REQ-006]
+      reason: The Claude package reuses the root tree and CLAUDE.md only imports AGENTS.md; no copied Skills, Standards or instructions.
     - source:
         change: harness-marketplace-transition
         requirement: REQ-001
@@ -62,7 +62,8 @@ The repository root is a portable plugin with a Codex manifest and a Codex catal
 ## Expected outcome
 
 1. Claude users add the marketplace from `versat-labs/versat-ai-harness` and install `versat-ai-harness@versat`, getting the same Skills and canonical resources.
-2. Release v0.5.0; both catalogs select `v0.5.0`, so the main-tracking ChatGPT catalog offers the new version to the existing installation.
+2. Claude sessions in this repository and in consumer projects read the canonical AGENTS.md through an import-only CLAUDE.md.
+3. Release v0.5.0; both catalogs select `v0.5.0`, so the main-tracking ChatGPT catalog offers the new version to the existing installation.
 
 ## Scope
 
@@ -70,6 +71,7 @@ The repository root is a portable plugin with a Codex manifest and a Codex catal
 - Plugin validator and tests extended to the Claude manifest/catalog and cross-catalog version agreement.
 - Decide handling of `agents/` role guidance for Claude (Design).
 - EN/PT/ES setup guidance for Claude; README pointers.
+- Import-only CLAUDE.md (`@AGENTS.md`) at the root and in the `base` project template, with a validator check that it adds no rules.
 - Version bump to 0.5.0, CHANGELOG, release notes; after merge and with authority, tag `v0.5.0` and GitHub release.
 - An ADR if Design concludes the multi-client catalog is a significant structural decision (extends ADR-0011).
 
@@ -77,7 +79,7 @@ The repository root is a portable plugin with a Codex manifest and a Codex catal
 
 - Changing the Codex catalog identity, policy or plugin name.
 - Publishing to Anthropic's official marketplace or any third-party directory.
-- Updating consumer projects, lockfiles or templates to 0.5.0.
+- Updating consumer projects or lockfiles to 0.5.0, or adding CLAUDE.md to existing consumers outside a reviewed migration.
 - Forcing auto-update on users' clients; agent-driven install/uninstall in users' workspaces.
 - Moving or editing v0.4.0.
 
@@ -96,11 +98,11 @@ See `impact` metadata. Risks:
 
 ## Current contract baseline
 
-Observed at `b6b0a2a` (main): VERSION `0.4.0`; `plugin.json` and `.codex-plugin/plugin.json` at 0.4.0; `.agents/plugins/marketplace.json` = `versat` / `Versat Plugins`, one `versat-ai-harness` entry, `source: url` to the repository `.git`, `ref: v0.4.0`, AVAILABLE/ON_INSTALL. No `.claude-plugin/`. `validators/plugin/validate.py` enforces manifest/version agreement and Codex catalog identity/ref. Remote tags v0.2.0, v0.3.0, v0.4.0; release v0.4.0 published. CHANGELOG still labels 0.4.0 "Unreleased candidate" and has an Unreleased section.
+Observed at `b6b0a2a` (main): VERSION `0.4.0`; `plugin.json` and `.codex-plugin/plugin.json` at 0.4.0; `.agents/plugins/marketplace.json` = `versat` / `Versat Plugins`, one `versat-ai-harness` entry, `source: url` to the repository `.git`, `ref: v0.4.0`, AVAILABLE/ON_INSTALL. No `.claude-plugin/` and no CLAUDE.md at the root or in `project-templates/base/` (which provides AGENTS.md). `validators/plugin/validate.py` enforces manifest/version agreement and Codex catalog identity/ref. Remote tags v0.2.0, v0.3.0, v0.4.0; release v0.4.0 published. CHANGELOG still labels 0.4.0 "Unreleased candidate" and has an Unreleased section.
 
 ## Proposal acceptance criterion
 
-Approve Proposal/Requirements R1: Claude manifest and catalog at the root with exact-tag selection, validator coverage, trilingual guidance, and release v0.5.0 with both catalogs at `v0.5.0`, tag created only after merge with scoped authority.
+Approve Proposal/Requirements R1: Claude manifest and catalog at the root with exact-tag selection, validator coverage, trilingual guidance, import-only CLAUDE.md at the root and in the base template, and release v0.5.0 with both catalogs at `v0.5.0`, tag created only after merge with scoped authority.
 
 ## Planning review
 
