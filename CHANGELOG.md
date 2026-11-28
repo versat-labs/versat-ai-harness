@@ -12,6 +12,7 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ### Added
 
+- proposed ADR-0021 for distributing the root package to Claude through a second exact-ref catalog and an import-only `CLAUDE.md`; implementation is pending.
 - `github-issue-creation` Skill that drafts an English GitHub issue from a prompt using the applicable issue form, asks only for missing required fields and Origin, links the Portfolio project after confirmation, and routes suspected vulnerabilities to private reporting.
 - index-resolved public GitHub security policy, read-only live/offline verification, safe configuration rendering and mandatory readiness guidance for bootstrap, audit and maintenance; exact release publication and consumer adoption remain separate.
 - index-resolved coding and changelog standards, with pinned Python lint and formatting checks and Git-based changelog validation in the Harness and Python reference integration.
