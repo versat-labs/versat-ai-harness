@@ -243,11 +243,15 @@ regression:
     rationale: Review confirms the existing Agent Artifact rules (AGENTS.md as shared guidance, no native agent registration claims) are unchanged; CHECK-008 confirms projects without AGENTS.md get no new finding.
 review:
   revision: 4
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream:
     proposal: 6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429
-  approval: null
+  approval:
+    source: Current conversation reply to the Gate 2 request for Design R4
+    quote: Sim, aprovo o Design R4
+    revision: 4
+    digest: 8c75656c935c80892399ac61a56b8633ee01f26d4b08108f95bc0d3edde82557
 ---
 
 # Design
@@ -307,4 +311,4 @@ Design R1 (digest `80a7d9f5fef955c73dd9a6a8dccfacd2afdf187733091daff8f5eed46ca02
 
 Design R3 binds to Proposal/Requirements R3 and adds the base template lock update (`harness.version: 0.5.0`) to the release step and CHECK-006; nothing else changes. Presented for Gate 2 with ADR-0021 (accepted with Design R2, unchanged). The owner approved Design R3 with “Sim, aprovo o Design R3” under digest `5a31b8cfacb94274d7ce44c9222f59a5dbcefe990daadc58c900d67df4cc9284`. This unlocks Tasks only.
 
-During implementation, CHECK-003 failed its declared expectation (FIND-001): `claude plugin validate` also warns that root CLAUDE.md is not loaded as plugin context. The owner asked to reopen Gate 2 (“Sim, reabra o Gate 2 com o Design R4”). Design R4 adds that notice to CHECK-003's accepted warnings, with the reason; nothing else changes. Design R3 approval above is historical. Presented for Gate 2. No approval recorded yet.
+During implementation, CHECK-003 failed its declared expectation (FIND-001): `claude plugin validate` also warns that root CLAUDE.md is not loaded as plugin context. The owner asked to reopen Gate 2 (“Sim, reabra o Gate 2 com o Design R4”). Design R4 adds that notice to CHECK-003's accepted warnings, with the reason; nothing else changes. Design R3 approval above is historical. Presented for Gate 2. The owner approved Design R4 with “Sim, aprovo o Design R4” under digest `8c75656c935c80892399ac61a56b8633ee01f26d4b08108f95bc0d3edde82557`. This unlocks Tasks R3 only.

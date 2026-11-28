@@ -35,12 +35,12 @@ tasks:
     requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006]
     status: pending
 review:
-  revision: 2
-  state: superseded
+  revision: 3
+  state: awaiting-approval
   blockers: []
   upstream:
     proposal: 6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429
-    design: 5a31b8cfacb94274d7ce44c9222f59a5dbcefe990daadc58c900d67df4cc9284
+    design: 8c75656c935c80892399ac61a56b8633ee01f26d4b08108f95bc0d3edde82557
   approval: null
 validation:
   plan_digest: dd5dac3144088ebeb3bf04388c04f0a17e5c98e5c107d66632592173f051dd31
@@ -139,7 +139,9 @@ Tasks R1 (digest `88b5463ccc1ed9eb5a64f7d53e08e1e721293c396ecd5ecb6890450c8ce580
 
 Tasks R2 binds to Proposal/Requirements R3 and Design R3; TASK-006 now includes the base template lock version. Presented for Gate 3. The owner approved Tasks R2 and authorized implementation with “Sim, aprovo as Tasks R2 e pode implementar” under digest `dd5dac3144088ebeb3bf04388c04f0a17e5c98e5c107d66632592173f051dd31`. Planning is complete. This does not authorize marking the PR ready, merging, tagging or releasing.
 
-Tasks R2 is superseded by Design R4 (CHECK-003 expectation revised for FIND-001); its approval above is historical. Implementation progress and evidence are preserved and will be rerun under the revised plan. Tasks approval ends planning; implementation requires an explicit request.
+Tasks R2 is superseded by Design R4 (CHECK-003 expectation revised for FIND-001); its approval above is historical. Implementation progress and evidence are preserved and will be rerun under the revised plan.
+
+Tasks R3 binds to Design R4; task descriptions, dependencies and completion conditions are unchanged from R2. TASK-001 to TASK-006 remain completed; TASK-007 reruns every required check under this plan. Presented for Gate 3. No approval recorded yet. Tasks approval ends planning; implementation requires an explicit request.
 
 ## Progress
 
