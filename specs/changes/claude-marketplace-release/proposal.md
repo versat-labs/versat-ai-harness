@@ -54,10 +54,14 @@ impact:
       reason: Keep AGENTS.md as shared project guidance and the existing artifact rules; add the import-only CLAUDE.md entry point for projects that have AGENTS.md.
 review:
   revision: 2
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream: {}
-  approval: null
+  approval:
+    source: Current conversation reply to the Gate 1 request for Proposal/Requirements R2
+    quote: Sim, aprovo a R2
+    revision: 2
+    digest: 84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e
 ---
 
 # Proposal
@@ -118,3 +122,5 @@ Approve Proposal/Requirements R1: Claude manifest and catalog at the root with e
 Proposal/Requirements R1 (with REQ-006) was presented for Gate 1 and approved by the owner with “Sim” under digest `9c4c65f9751a6e3accfa59f68b1f3b2f03bcae1def5abf3d9c2c69da0ff54af4`. This unlocks Design only.
 
 After Design R1 was presented, the owner asked to add the Standard rule and audit detection for CLAUDE.md (“Sim, inclua os itens 1 e 2 e reapresente a R2”). REQ-006 gained acceptance positions 5 and 6 and a fourth impact item, so Proposal/Requirements moved to R2 awaiting approval; the R1 approval above is historical. Design R1 is superseded; because Design files exist only after their upstream gate is approved, it was removed from the active dossier and remains in Git history at commit `7fc47b6`. It will be revised after R2 approval.
+
+The owner approved Proposal/Requirements R2 with “Sim, aprovo a R2” under digest `84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e`. This unlocks Design R2 only.
