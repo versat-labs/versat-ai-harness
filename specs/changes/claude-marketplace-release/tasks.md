@@ -23,7 +23,7 @@ tasks:
     requirements: [REQ-003, REQ-004, REQ-006]
     status: pending
   - id: TASK-006
-    description: Prepare release 0.5.0 by updating VERSION, the three manifests and both catalog refs to 0.5.0/v0.5.0, moving Unreleased into a dated 0.5.0 CHANGELOG section with this change, and correcting the 0.4.0 heading to 2026-11-24.
+    description: Prepare release 0.5.0 by updating VERSION, the three manifests, both catalog refs and the base template .versat/standards.lock harness.version to 0.5.0/v0.5.0, moving Unreleased into a dated 0.5.0 CHANGELOG section with this change, and correcting the 0.4.0 heading to 2026-11-24.
     requirements: [REQ-004, REQ-005]
     status: pending
   - id: TASK-007
@@ -35,12 +35,12 @@ tasks:
     requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006]
     status: pending
 review:
-  revision: 1
-  state: superseded
+  revision: 2
+  state: awaiting-approval
   blockers: []
   upstream:
-    proposal: 84e1f18e758f8ff57deca1160bc5202ce8a40591f5875da659d0831ab026193e
-    design: e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa
+    proposal: 6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429
+    design: 5a31b8cfacb94274d7ce44c9222f59a5dbcefe990daadc58c900d67df4cc9284
   approval: null
 validation:
   plan_digest: null
@@ -77,7 +77,9 @@ Not part of the pre-merge completion gate: after merge and with scoped administr
 
 ## Planning review
 
-Tasks R1 (digest `88b5463ccc1ed9eb5a64f7d53e08e1e721293c396ecd5ecb6890450c8ce58081`) was presented for Gate 3 and not approved; it is superseded by Proposal/Requirements R3. Tasks approval ends planning; implementation requires an explicit request.
+Tasks R1 (digest `88b5463ccc1ed9eb5a64f7d53e08e1e721293c396ecd5ecb6890450c8ce58081`) was presented for Gate 3 and not approved; it is superseded by Proposal/Requirements R3.
+
+Tasks R2 binds to Proposal/Requirements R3 and Design R3; TASK-006 now includes the base template lock version. Presented for Gate 3. No approval recorded yet. Tasks approval ends planning; implementation requires an explicit request. Tasks approval ends planning; implementation requires an explicit request.
 
 ## Progress
 

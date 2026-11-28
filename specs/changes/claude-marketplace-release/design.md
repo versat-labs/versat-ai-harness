@@ -242,11 +242,15 @@ regression:
     rationale: Review confirms the existing Agent Artifact rules (AGENTS.md as shared guidance, no native agent registration claims) are unchanged; CHECK-008 confirms projects without AGENTS.md get no new finding.
 review:
   revision: 3
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream:
     proposal: 6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429
-  approval: null
+  approval:
+    source: Current conversation reply to the Gate 2 request for Design R3
+    quote: Sim, aprovo o Design R3
+    revision: 3
+    digest: 5a31b8cfacb94274d7ce44c9222f59a5dbcefe990daadc58c900d67df4cc9284
 ---
 
 # Design
@@ -304,4 +308,4 @@ CHECK-001 covers structural contracts and the six package regression obligations
 
 Design R1 (digest `80a7d9f5fef955c73dd9a6a8dccfacd2afdf187733091daff8f5eed46ca025c0`) was presented and not approved; it was superseded by Proposal/Requirements R2. Design R2 adds the Agent Artifact Standard rule, the consumer instruction check (CHECK-008) and their coverage, and is presented for Gate 2 with the updated ADR-0021 (proposed). The owner approved Design R2 with “Sim, aprovo o Design R2” under digest `e6e9cca75e5d9d33eaeced674836e58cfe5eb59b2966400fbb48932602880efa`; ADR-0021 is accepted with it. This unlocked Tasks only. Design R2 was superseded when Proposal/Requirements R3 changed REQ-005 acceptance 2; its approval above is historical.
 
-Design R3 binds to Proposal/Requirements R3 and adds the base template lock update (`harness.version: 0.5.0`) to the release step and CHECK-006; nothing else changes. Presented for Gate 2 with ADR-0021 (accepted with Design R2, unchanged). No approval recorded yet.
+Design R3 binds to Proposal/Requirements R3 and adds the base template lock update (`harness.version: 0.5.0`) to the release step and CHECK-006; nothing else changes. Presented for Gate 2 with ADR-0021 (accepted with Design R2, unchanged). The owner approved Design R3 with “Sim, aprovo o Design R3” under digest `5a31b8cfacb94274d7ce44c9222f59a5dbcefe990daadc58c900d67df4cc9284`. This unlocks Tasks only.
