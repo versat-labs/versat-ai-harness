@@ -5,27 +5,27 @@ tasks:
   - id: TASK-001
     description: Add .claude-plugin/plugin.json mirroring plugin.json identity with agents [] and .claude-plugin/marketplace.json (versat, owner, one versat-ai-harness github entry at the exact v<VERSION> tag).
     requirements: [REQ-001, REQ-002]
-    status: pending
+    status: completed
   - id: TASK-002
     description: Implement validators/project/instructions.py (read-only import-only CLAUDE.md check with findings, remediation and exit status), document it in validators/project/README.md, and add import-only CLAUDE.md files at the root and in project-templates/base.
     requirements: [REQ-006]
-    status: pending
+    status: completed
   - id: TASK-003
     description: Extend validators/plugin/validate.py with Claude manifest, Claude catalog, cross-catalog ref and CLAUDE.md checks (reusing TASK-002), add tests/validators/test_plugin_claude.py and tests/validators/test_project_instructions.py, register them in scripts/validate/run.sh and update validators/plugin/README.md.
     requirements: [REQ-001, REQ-002, REQ-004, REQ-005, REQ-006]
-    status: pending
+    status: completed
   - id: TASK-004
     description: Add the Claude instruction entry-point rule and Claude memory reference to standards/core/agent-artifacts.md and link the consumer check from skills/project-audit/SKILL.md without restating the rule.
     requirements: [REQ-006]
-    status: pending
+    status: completed
   - id: TASK-005
     description: Write docs/user-docs/guides/claude-setup.md with aligned .pt.md and .es.md, add install lines to the three READMEs, link from workspace setup, document CLAUDE.md adoption in project-templates/README.md and the two-catalog tag-after-merge order in scripts/release/README.md.
     requirements: [REQ-003, REQ-004, REQ-006]
-    status: pending
+    status: completed
   - id: TASK-006
     description: Prepare release 0.5.0 by updating VERSION, the three manifests, both catalog refs and the base template .versat/standards.lock harness.version to 0.5.0/v0.5.0, moving Unreleased into a dated 0.5.0 CHANGELOG section with this change, and correcting the 0.4.0 heading to 2026-11-24.
     requirements: [REQ-004, REQ-005]
-    status: pending
+    status: completed
   - id: TASK-007
     description: Execute CHECK-001 to CHECK-006 and CHECK-008 on the final source with input snapshots, record evidence under docs/validation/claude-marketplace-release and assess all 21 acceptance positions and 7 regression obligations.
     requirements: [REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006]
@@ -36,12 +36,16 @@ tasks:
     status: pending
 review:
   revision: 2
-  state: awaiting-approval
+  state: approved
   blockers: []
   upstream:
     proposal: 6b3f2794954ddda85128da6d43f495adff3cc0f20a667854da4b13b346a15429
     design: 5a31b8cfacb94274d7ce44c9222f59a5dbcefe990daadc58c900d67df4cc9284
-  approval: null
+  approval:
+    source: Current conversation reply to the Gate 3 request for Tasks R2
+    quote: Sim, aprovo as Tasks R2 e pode implementar
+    revision: 2
+    digest: dd5dac3144088ebeb3bf04388c04f0a17e5c98e5c107d66632592173f051dd31
 validation:
   plan_digest: null
   results: []
@@ -52,12 +56,12 @@ closure: active
 
 # Tasks
 
-- [ ] TASK-001 — Claude manifest and catalog
-- [ ] TASK-002 — Consumer instruction check and import-only CLAUDE.md files
-- [ ] TASK-003 — Plugin validator extension, tests and runner registration
-- [ ] TASK-004 — Agent Artifact Standard rule and audit link
-- [ ] TASK-005 — EN/PT/ES Claude guidance, READMEs, template migration and release procedure
-- [ ] TASK-006 — Release 0.5.0 version and changelog preparation
+- [x] TASK-001 — Claude manifest and catalog
+- [x] TASK-002 — Consumer instruction check and import-only CLAUDE.md files
+- [x] TASK-003 — Plugin validator extension, tests and runner registration
+- [x] TASK-004 — Agent Artifact Standard rule and audit link
+- [x] TASK-005 — EN/PT/ES Claude guidance, READMEs, template migration and release procedure
+- [x] TASK-006 — Release 0.5.0 version and changelog preparation
 - [ ] TASK-007 — Execute required checks and record evidence
 - [ ] TASK-008 — Documentary archive preparation
 
@@ -79,11 +83,11 @@ Not part of the pre-merge completion gate: after merge and with scoped administr
 
 Tasks R1 (digest `88b5463ccc1ed9eb5a64f7d53e08e1e721293c396ecd5ecb6890450c8ce58081`) was presented for Gate 3 and not approved; it is superseded by Proposal/Requirements R3.
 
-Tasks R2 binds to Proposal/Requirements R3 and Design R3; TASK-006 now includes the base template lock version. Presented for Gate 3. No approval recorded yet. Tasks approval ends planning; implementation requires an explicit request. Tasks approval ends planning; implementation requires an explicit request.
+Tasks R2 binds to Proposal/Requirements R3 and Design R3; TASK-006 now includes the base template lock version. Presented for Gate 3. The owner approved Tasks R2 and authorized implementation with “Sim, aprovo as Tasks R2 e pode implementar” under digest `dd5dac3144088ebeb3bf04388c04f0a17e5c98e5c107d66632592173f051dd31`. Planning is complete. This does not authorize marking the PR ready, merging, tagging or releasing. Tasks approval ends planning; implementation requires an explicit request.
 
 ## Progress
 
-No task has started.
+TASK-001 to TASK-006 implemented. The quality check requires a new note under `## [Unreleased]` in every PR that changes non-exempt paths, so the release keeps an Unreleased section with “No changes since 0.5.0.” and moves the prior entries into `## [0.5.0] - 2026-11-28`; adjust the date if the merge happens on a later day. Guides state that tags before v0.5.0 have no Claude catalog, so Claude recovery pins v0.5.0 or later.
 
 ## Validation evidence
 

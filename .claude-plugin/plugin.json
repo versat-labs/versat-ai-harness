@@ -1,0 +1,18 @@
+{
+  "name": "versat-ai-harness",
+  "version": "0.5.0",
+  "description": "Governance, SDD, bootstrap and audits for AI-assisted Versat projects.",
+  "author": {
+    "name": "Versat"
+  },
+  "homepage": "https://github.com/versat-labs/versat-ai-harness",
+  "repository": "https://github.com/versat-labs/versat-ai-harness",
+  "license": "Apache-2.0",
+  "keywords": [
+    "architecture",
+    "governance",
+    "sdd",
+    "project-bootstrap"
+  ],
+  "agents": []
+}

@@ -11,6 +11,7 @@ Para desarrolladores, revisores y mantenedores, incluidos colaboradores externos
 [Inicio rápido: obtener un primer plan SDD](docs/user-docs/quickstart.es.md) · [Contexto del producto](docs/product/overview.es.md)
 
 - [Preparar el entorno](docs/user-docs/guides/workspace-setup.es.md)
+- [Preparar Claude](docs/user-docs/guides/claude-setup.es.md)
 - [SDD con Codex](docs/user-docs/guides/sdd-with-codex.es.md)
 - [Entrega mediante GitHub](docs/user-docs/guides/github-delivery.es.md)
 - [Iniciar un proyecto](docs/user-docs/guides/project-bootstrap.es.md)
@@ -23,19 +24,28 @@ Para desarrolladores, revisores y mantenedores, incluidos colaboradores externos
 
 - [Transición del marketplace: identidades nueva y heredada](docs/user-docs/guides/marketplace-transition.es.md)
 
-## Repositorio público; candidata 0.4.0 sin release
+## Repositorio público; 0.5.0 en preparación
 
-El repositorio es público y la licencia Apache-2.0 y los avisos revisados están integrados en main. La versión 0.4.0 sigue siendo una candidata sin release: la etiqueta v0.4.0 y la release todavía no están disponibles. Las aprobaciones del texto y las evidencias históricas mantienen su alcance original.
+El repositorio es público y la licencia Apache-2.0 y los avisos revisados están integrados en main. La versión 0.4.0 se publicó el 2026-11-24. La versión 0.5.0 agrega soporte para Claude; su tag v0.5.0 se crea en el commit de merge después de la revisión. Las aprobaciones del texto y las evidencias históricas mantienen su alcance original.
 
 La protección de main y la prueba interna de controles de PR fueron verificadas. Private Vulnerability Reporting está habilitado; comportamiento de fork/CI externo, recepción/confidencialidad de reportes e instalación/actualización/recuperación nativa del Plugin siguen pendientes. La pausa de escrituras terminó; el trabajo normal sigue mediante PRs protegidas.
 
-[Notas de la candidata 0.4.0 y verificaciones pendientes](docs/releases/0.4.0-candidate.es.md)
+[Notas de la candidata 0.4.0 y verificaciones pendientes (histórico)](docs/releases/0.4.0-candidate.es.md)
 
 [Licencia](LICENSE) · [Contribución](docs/user-docs/guides/contributing.es.md) · [Reporte de seguridad](docs/user-docs/guides/security-reporting.es.md)
 
 ## Estado actual y adopción
 
-VERSION y manifiestos ahora declaran el candidato local 0.4.0. Su catálogo en el repositorio selecciona v0.4.0, que no debe importarse como release disponible antes de crear y verificar esa etiqueta exacta bajo autorización separada. Esta preparación local no cambia instalaciones ni pins de consumidores; la referencia publicada anterior es v0.3.0. Los dos usuarios actuales prevén reinstalación manual posterior; la sincronización de main puede interrumpir la configuración existente. La guía de transición explica el alcance aceptado y las pruebas nativas pendientes.
+VERSION y los tres manifiestos declaran 0.5.0. El catálogo de Codex (`.agents/plugins/marketplace.json`) y el catálogo de Claude (`.claude-plugin/marketplace.json`) seleccionan v0.5.0, disponible solo después de crear ese tag exacto; la referencia publicada más reciente es v0.4.0. Publicar una release no cambia los pins de los consumidores.
+
+Instala en Claude Code:
+
+```text
+/plugin marketplace add versat-labs/versat-ai-harness
+/plugin install versat-ai-harness@versat
+```
+
+Consulta [Preparar Claude](docs/user-docs/guides/claude-setup.es.md) para actualización, verificación y recuperación.
 
 Los administradores gestionan importación del marketplace y política de instalación. Usa este repositorio como fuente, autentica con acceso de lectura, revisa la release exacta importada y confirma disponibilidad para los miembros. Sigue la interfaz actual de administración; la política del marketplace es AVAILABLE y no demuestra instalación automática. Los miembros pueden usar [la preparación del entorno](docs/user-docs/guides/workspace-setup.es.md).
 

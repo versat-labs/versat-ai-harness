@@ -6,13 +6,22 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 
 ## [Unreleased]
 
+### Changed
+
+- No changes since 0.5.0.
+
+## [0.5.0] - 2026-11-28
+
 ### Fixed
 
 - Validate the resources of every packaged Skill after relocation, including SIFEN.
 
 ### Added
 
-- ADR-0021 (accepted) for distributing the root package to Claude through a second exact-ref catalog, an import-only `CLAUDE.md` required by the Agent Artifact Standard and a read-only consumer check for project audits; implementation is pending.
+- Claude support: `.claude-plugin/plugin.json` and the `versat` Claude marketplace (`.claude-plugin/marketplace.json`) selecting the exact release tag, with `agents: []` so root role guidance is not registered as Claude subagents (ADR-0021).
+- Agent Artifact Standard rule: every project with `AGENTS.md` provides a `CLAUDE.md` that only imports it; the root and the base template include it.
+- read-only consumer check `validators/project/instructions.py`, used by project audits, and Plugin validator checks for the Claude manifest, Claude catalog, matching catalog references and `CLAUDE.md`.
+- EN/PT/ES Claude setup guide with install, update, verification and recovery steps; native install from GitHub and updates remain unverified until observed after the release.
 - `github-issue-creation` Skill that drafts an English GitHub issue from a prompt using the applicable issue form, asks only for missing required fields and Origin, links the Portfolio project after confirmation, and routes suspected vulnerabilities to private reporting.
 - index-resolved public GitHub security policy, read-only live/offline verification, safe configuration rendering and mandatory readiness guidance for bootstrap, audit and maintenance; exact release publication and consumer adoption remain separate.
 - index-resolved coding and changelog standards, with pinned Python lint and formatting checks and Git-based changelog validation in the Harness and Python reference integration.
@@ -22,8 +31,9 @@ The format follows Keep a Changelog, and the project follows Semantic Versioning
 - GitHub issue titles and descriptions now default to English. Teams may discuss issues in Spanish and record resulting scope or acceptance changes in the English description.
 - Public GitHub policy 2.0.0 reserves tag administration for administrators and allows ordinary branch operations under existing repository permissions. Main still requires reviewed pull requests.
 - rename the candidate marketplace to `versat` while keeping plugin `versat-ai-harness`; document later manual reinstallation for the two current users and retain explicit pending native/external checks.
+- the Codex and Claude catalogs and the base template lock select v0.5.0; the release procedure documents tag-after-merge for both catalogs.
 
-## [0.4.0] - Unreleased candidate
+## [0.4.0] - 2026-11-24
 
 ### Prepared
 

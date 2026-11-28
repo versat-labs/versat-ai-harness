@@ -16,11 +16,13 @@ OpenAI documents folder selection in [Projects and chats](https://learn.chatgpt.
 
 Ask Codex to report the working directory, selected provider version and where it found versat-sdd. The paths must belong to the intended project/provider. If access or a Skill is missing, stop that workflow and ask the repository or workspace owner to resolve it. Do not copy policy from another release or assume automatic installation. A repository without identity metadata needs an explicit classification before bootstrap or migration.
 
+To use the Harness in Claude Code instead of Codex, follow [Claude setup](claude-setup.md).
+
 [Continue to quickstart](../quickstart.md)
 
 ## Candidate installation, exact updates and recovery
 
-The local 0.4.0 candidate uses marketplace `versat` / `Versat Plugins`, retaining plugin `versat-ai-harness`. The exact v0.4.0 tag is not yet available. The owner reports only Elvis and Everton as current users; both will reinstall manually later. Managed main tracking is accepted for this scope, including possible interruption/manual repair; no preliminary pin or isolated rehearsal is required for source delivery. Native identity/sync behavior remains unverified. See the [transition and recovery guide](marketplace-transition.md).
+Update: v0.4.0 was published on 2026-11-24, and both repository catalogs now select v0.5.0, available once its tag is created after merge. The rest of this paragraph records the earlier candidate state. The local 0.4.0 candidate uses marketplace `versat` / `Versat Plugins`, retaining plugin `versat-ai-harness`. The exact v0.4.0 tag is not yet available. The owner reports only Elvis and Everton as current users; both will reinstall manually later. Managed main tracking is accepted for this scope, including possible interruption/manual repair; no preliminary pin or isolated rehearsal is required for source delivery. Native identity/sync behavior remains unverified. See the [transition and recovery guide](marketplace-transition.md).
 
 ## Historical legacy rehearsal — not transition instructions
 

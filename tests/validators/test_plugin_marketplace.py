@@ -3,12 +3,11 @@
 import importlib.util
 import json
 import re
-from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from pathlib import Path
 from unittest.mock import patch
-
 
 REPOSITORY = Path(__file__).resolve().parents[2]
 SPEC = importlib.util.spec_from_file_location(
@@ -29,6 +28,12 @@ class MarketplaceContractTests(unittest.TestCase):
             "VERSION",
             "plugin.json",
             ".codex-plugin/plugin.json",
+            ".claude-plugin/plugin.json",
+            ".claude-plugin/marketplace.json",
+            "AGENTS.md",
+            "CLAUDE.md",
+            "project-templates/base/AGENTS.md",
+            "project-templates/base/CLAUDE.md",
             "project-templates/base/.versat/standards.lock",
         ] + [f"skills/{name}/SKILL.md" for name in VALIDATOR.EXPECTED_SKILLS]
         for relative in files:
@@ -42,6 +47,8 @@ class MarketplaceContractTests(unittest.TestCase):
                 REPOSITORY / "tests/fixtures/marketplace-transition/catalog.json"
             ).read_text()
         )
+        version = (REPOSITORY / "VERSION").read_text().strip()
+        self.catalog["plugins"][0]["source"]["ref"] = f"v{version}"
         self.root_patch = patch.object(VALIDATOR, "ROOT", self.root)
         self.root_patch.start()
         self.addCleanup(self.root_patch.stop)

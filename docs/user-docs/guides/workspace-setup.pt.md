@@ -16,11 +16,13 @@ A OpenAI documenta a seleção de pastas em [Projects and chats (inglês)](https
 
 Peça ao Codex para informar diretório de trabalho, versão do provedor e onde encontrou versat-sdd. Os caminhos devem pertencer ao projeto/provedor pretendido. Se faltar acesso ou uma Skill, pare esse fluxo e procure o responsável pelo repositório ou workspace. Não copie políticas de outra release nem presuma instalação automática. Um repositório sem metadados de identidade precisa ser classificado antes de bootstrap ou migração.
 
+Para usar o Harness no Claude Code em vez do Codex, siga [Preparar o Claude](claude-setup.pt.md).
+
 [Continuar para o início rápido](../quickstart.pt.md)
 
 ## Instalação candidata, atualizações exatas e recuperação
 
-A candidata local 0.4.0 usa o marketplace `versat` / `Versat Plugins`, preservando o plugin `versat-ai-harness`. A tag exata v0.4.0 ainda não está disponível. O proprietário informa que somente Elvis e Everton usam o Harness; ambos reinstalarão manualmente depois. O acompanhamento da main é aceito neste escopo, incluindo possível interrupção/reparo manual; pin prévio ou ensaio isolado não são requisitos para entregar o código. Identidade/sincronização nativa continuam não verificadas. Veja o [guia de transição e recuperação](marketplace-transition.pt.md).
+Atualização: a v0.4.0 foi publicada em 2026-11-24, e os dois catálogos do repositório agora selecionam a v0.5.0, disponível quando sua tag for criada após o merge. O restante deste parágrafo registra o estado anterior da candidata. A candidata local 0.4.0 usa o marketplace `versat` / `Versat Plugins`, preservando o plugin `versat-ai-harness`. A tag exata v0.4.0 ainda não está disponível. O proprietário informa que somente Elvis e Everton usam o Harness; ambos reinstalarão manualmente depois. O acompanhamento da main é aceito neste escopo, incluindo possível interrupção/reparo manual; pin prévio ou ensaio isolado não são requisitos para entregar o código. Identidade/sincronização nativa continuam não verificadas. Veja o [guia de transição e recuperação](marketplace-transition.pt.md).
 
 ## Ensaio legado histórico — não são instruções de transição
 

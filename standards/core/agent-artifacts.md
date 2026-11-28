@@ -2,7 +2,7 @@
 
 ## Scope and responsibilities
 
-These rules apply when a consumer project defines Skills, custom agents or operational workflows, regardless of its profile. Projects without these artifacts are not required to create empty directories. Plugin packaging is a separate contract.
+These rules apply when a consumer project defines Skills, custom agents or operational workflows, regardless of its profile. Projects without these artifacts are not required to create empty directories. The Claude instruction entry point rule applies to every project that has a root `AGENTS.md`, whether or not it defines these artifacts. Plugin packaging is a separate contract.
 
 | Artifact | Project path | Responsibility |
 |---|---|---|
@@ -10,10 +10,20 @@ These rules apply when a consumer project defines Skills, custom agents or opera
 | Codex custom agent | `.codex/agents/<agent-name>.toml` | Execution role, instructions and supported runtime configuration |
 | Versat workflow | `workflows/<workflow-name>/workflow.md` | Ordered composition of named Skills to achieve an operational outcome |
 | Shared project guidance | `AGENTS.md` | Instructions that apply to work in the repository or a subtree |
+| Claude instruction entry point | `CLAUDE.md` | Imports `AGENTS.md` for Claude; holds no instructions of its own |
 
 Paths are relative to the project root. Artifact names MUST use English lowercase hyphen-case. `SKILL.md` MUST retain its uppercase spelling for discovery; `workflow.md` MUST use lowercase. Each artifact MUST remain versioned with the project. Do not create duplicate sources merely to satisfy different directory conventions.
 
 These artifacts MAY implement business operations or support development. They are not a replacement for the source layout of a separately deployed application: runtime code and resources MUST follow that application's declared architecture.
+
+## Claude instruction entry point
+
+- A project that has a root `AGENTS.md` MUST provide a root `CLAUDE.md` whose only content is the import line `@AGENTS.md`.
+- `CLAUDE.md` MUST NOT contain instructions, rules or other imports. `AGENTS.md` remains the canonical shared project guidance.
+- Both files MUST be regular files, not symlinks.
+- Existing projects MUST adopt `CLAUDE.md` through a reviewed migration. A pre-existing project-specific `CLAUDE.md` MUST be surfaced as a conflict and its content moved to `AGENTS.md` only after review; it MUST NOT be overwritten silently.
+
+The Harness provides a read-only [deterministic check](../../validators/project/README.md#claude-instruction-entry-point) for this rule.
 
 ## Skills
 
@@ -60,5 +70,6 @@ New agent and hybrid projects MUST use the composed template layout. Existing co
 - [Codex Skills](https://learn.chatgpt.com/docs/build-skills)
 - [Codex custom agents](https://learn.chatgpt.com/docs/agent-configuration/subagents#custom-agents)
 - [Codex project guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
+- [Claude Code memory and imports](https://code.claude.com/docs/en/memory)
 
 These references describe executor formats; Versat policy remains in the versioned Standards resolved by the project.

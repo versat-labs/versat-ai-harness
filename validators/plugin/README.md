@@ -4,7 +4,10 @@
 
 - portable and Codex compatibility manifests are valid and agree;
 - Plugin identity matches the semantic repository version;
-- the marketplace selects the exact release tag;
+- the Codex marketplace (`.agents/plugins/marketplace.json`) selects the exact release tag;
+- the Claude manifest (`.claude-plugin/plugin.json`) mirrors the portable identity and declares `agents: []`, so root role guidance is not registered as Claude subagents;
+- the Claude marketplace (`.claude-plugin/marketplace.json`) is named `versat`, has an owner and one `versat-ai-harness` GitHub entry at the exact release tag, and both catalogs select the same tag;
+- `CLAUDE.md` at the root and in `project-templates/base/` only imports `AGENTS.md`, using the [consumer instruction check](../project/README.md#claude-instruction-entry-point);
 - required Skills and canonical runtime directories exist;
 - former nested Plugin entry points are absent.
 
